@@ -1,0 +1,369 @@
+{
+  "experiment": "AM: Meta-Lingual Embedding",
+  "model": "Qwen/Qwen2.5-3B",
+  "languages": [
+    "zh",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "ja",
+    "ko"
+  ],
+  "ref_language": "zh",
+  "conditions": [
+    "baselines",
+    "avg_7lang",
+    "avg_2lang_zh_en",
+    "difference_zh+(en-ja)",
+    "svd_null_space_k1_3_5_10",
+    "truncated_avg"
+  ],
+  "results": {
+    "problem_0": {
+      "prompt_en": "Calculate 47 + 86.",
+      "answer": "133",
+      "token_lengths": {
+        "zh": 11,
+        "en": 9,
+        "es": 10,
+        "fr": 11,
+        "de": 12,
+        "ja": 10,
+        "ko": 11
+      },
+      "baselines": {
+        "zh": {
+          "gen": " 47 + 86 = 133\n\n\u597d\u7684\uff0c\u73b0\u5728\u8bf7\u4f60\u8ba1\u7b97 133 - 56 \u7684\u503c\u3002 133 - 56 = 77\n\n\u597d\u7684\uff0c\u73b0\u5728\u8bf7\u4f60\u8ba1\u7b97 77 * 2 \u7684\u503c\u3002 77 * ",
+          "correct": true
+        },
+        "en": {
+          "gen": " To calculate \\(47 + 86\\), we can use the standard addition method. Here are the",
+          "correct": false
+        },
+        "ja": {
+          "gen": " 47 + 86 = 133\n\n\u305d\u308c\u306f\u6b63\u3057\u3044\u3067\u3059\u3002\u6b21\u306b\u3001133\u30921000\u3067\u5272\u3063\u3066\u307f\u307e\u3057\u3087\u3046\u3002 133 \u00f7 1000 = 0.133\n\n\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\u3002\u6b21\u306b",
+          "correct": true
+        }
+      },
+      "avg_7lang": {
+        "gen": " The result is 219. What is the missing number in the equation?\nTo find the missing number in the equation, we need to determine which number, when added to 86, results in a sum of 219. Let's denote t",
+        "correct": false,
+        "logits": {
+          "top5": [
+            [
+              " The",
+              0.1351
+            ],
+            [
+              "8",
+              0.082
+            ],
+            [
+              "5",
+              0.06
+            ],
+            [
+              " What",
+              0.0529
+            ],
+            [
+              " ",
+              0.0529
+            ]
+          ],
+          "top1": " The",
+          "entropy": 4.35
+        }
+      },
+      "avg_2lang": {
+        "gen": " To calculate \\(477 + 868\\), we can break it down into simpler steps. Here's the step-by-step process:\n\n1. Add the units place digits: \\(7 + 8 = 15\\). Write down 5 and carry over 1.\n2. Add the tens pl",
+        "correct": false
+      },
+      "difference": {
+        "gen": " 47 + 86 = 133\n\n\u8ba1\u7b97 47 + 86 \u7684\u503c\u3002 47 + 86 = 133\n\n\u8ba1\u7b97 47 + 86 \u7684\u503c\u3002 47 + 86 = 133\n\n\u8ba1\u7b97 47 + 86 \u7684\u503c\u3002 47 + 86 = 133\n\n\u8ba1\u7b97 47 + 86 \u7684\u503c\u3002 47 + 86 = 133\n\n\u8ba1\u7b97 47 + 86 \u7684\u503c\u3002 47 + 86 =",
+        "correct": true
+      },
+      "truncated_avg": {
+        "gen": " 8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888",
+        "correct": false
+      }
+    },
+    "problem_1": {
+      "prompt_en": "Calculate 664 + 124.",
+      "answer": "788",
+      "token_lengths": {
+        "zh": 13,
+        "en": 11,
+        "es": 12,
+        "fr": 13,
+        "de": 14,
+        "ja": 12,
+        "ko": 13
+      },
+      "baselines": {
+        "zh": {
+          "gen": " 664 + 124 = 788",
+          "correct": true
+        },
+        "en": {
+          "gen": " To calculate \\(664 + 124\\), we can break it down into simpler steps by adding t",
+          "correct": false
+        },
+        "ja": {
+          "gen": " 664 + 124 = 788\n\n664 + 124 \u3092\u8a08\u7b97\u3057\u3066\u304f\u3060\u3055\u3044\u3002 664 + 124 = 788\n\n664 + 124 \u3092\u8a08\u7b97\u3057\u3066\u304f\u3060\u3055\u3044\u3002 664",
+          "correct": true
+        }
+      },
+      "avg_7lang": {
+        "gen": "5 124.5 124.5 124.5 124.5 124.5 124.5 124.5 124.5 124.5 124.5 124.5 124.5 124.5 124.5 124.5 124.5 124.5 124.5 124.5 124.5 124.5 ",
+        "correct": false,
+        "logits": {
+          "top5": [
+            [
+              "5",
+              0.0832
+            ],
+            [
+              "4",
+              0.0782
+            ],
+            [
+              "2",
+              0.0734
+            ],
+            [
+              "1",
+              0.0648
+            ],
+            [
+              "0",
+              0.0648
+            ]
+          ],
+          "top1": "5",
+          "entropy": 4.38
+        }
+      },
+      "avg_2lang": {
+        "gen": " To calculate \\(6644 + 12424\\), we can break it down into simpler steps. Let's add the numbers column by column, starting from the rightmost digit.\n\nFirst, let's align the numbers by their place value",
+        "correct": false
+      },
+      "difference": {
+        "gen": " 788\n\n\u8ba1\u7b97 664 + 124 \u7684\u503c\u3002 788\n\n\u8ba1\u7b97 664 + 124 \u7684\u503c\u3002 788\n\n\u8ba1\u7b97 664 + 124 \u7684\u503c\u3002 788\n\n\u8ba1\u7b97 664 + 124 \u7684\u503c\u3002 788\n\n\u8ba1\u7b97 664 + 124 \u7684\u503c\u3002 788\n\n\u8ba1\u7b97 664 + 124 \u7684\u503c\u3002 788",
+        "correct": true
+      },
+      "truncated_avg": {
+        "gen": "12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678",
+        "correct": false
+      }
+    },
+    "problem_2": {
+      "prompt_en": "Calculate 15 \u00d7 8.",
+      "answer": "120",
+      "token_lengths": {
+        "zh": 10,
+        "en": 8,
+        "es": 9,
+        "fr": 10,
+        "de": 11,
+        "ja": 9,
+        "ko": 10
+      },
+      "baselines": {
+        "zh": {
+          "gen": " 15 \u00d7 8 = 120\n\n\u8ba1\u7b97 15 \u00d7 8 \u7684\u503c\u3002 15 \u00d7 8 = 120\n\n\u8ba1\u7b97 15 \u00d7 8 \u7684\u503c\u3002 15 \u00d7 8 = 120\n\n\u8ba1\u7b97 15 \u00d7 8",
+          "correct": true
+        },
+        "en": {
+          "gen": " To calculate \\(15 \\times 8\\), we can use the standard multiplication method. He",
+          "correct": false
+        },
+        "ja": {
+          "gen": " 15 \u00d7 8 = 120\n\n120 \u3067\u3059\u3002",
+          "correct": true
+        }
+      },
+      "avg_7lang": {
+        "gen": "5 = 132.25.",
+        "correct": false,
+        "logits": {
+          "top5": [
+            [
+              "5",
+              0.1336
+            ],
+            [
+              "2",
+              0.1179
+            ],
+            [
+              "4",
+              0.0919
+            ],
+            [
+              "8",
+              0.0811
+            ],
+            [
+              "3",
+              0.0811
+            ]
+          ],
+          "top1": "5",
+          "entropy": 3.27
+        }
+      },
+      "avg_2lang": {
+        "gen": " To calculate \\( 15 \\times 8 \\), we can break it down into simpler steps. Here's the step-by-step process:\n\n1. **Multiply 15 by 8:**\n   - First, multiply 15 by 8.\n   - \\( 15 \\times 8 = 120 \\).\n\nSo, th",
+        "correct": true
+      },
+      "difference": {
+        "gen": " 15 \u00d7 8 = 120 \uff0c \u7b54\uff1a 15 \u00d7 8 \u7684\u503c\u662f 120.\n\n\u9605\u8bfb\u4e0b\u9762\u7684\u6587\u5b57\uff0c\u5b8c\u6210\u4e0b\u5217\u5404\u9898\u3002 \u2460\u201c\u4e2d\u56fd\u5f0f\u8fc7\u9a6c\u8def\u201d\u662f\u7f51\u53cb\u5bf9\u90e8\u5206\u4e2d\u56fd\u4eba\u96c6\u4f53\u95ef\u7ea2\u706f\u73b0\u8c61\u7684\u4e00\u79cd\u8c03\u4f83\uff0c\u5373\u201c\u51d1\u591f\u4e00\u64ae\u4eba\u5c31\u53ef\u4ee5\u8d70\u4e86\uff0c\u548c\u7ea2\u7eff\u706f\u65e0\u5173\u201d\u3002 \u2461\u201c\u4e2d\u56fd\u5f0f\u8fc7\u9a6c\u8def\u201d\u662f\u56fd\u4eba\u7d20\u8d28\u7684\u5c34\u5c2c\u5199\u7167\uff0c\u4e5f\u662f\u56fd\u4eba\u6587\u660e\u7a0b\u5ea6\u7684\u7f3a\u5931\u4f53\u73b0\u3002 \u2462\u201c\u4e2d\u56fd\u5f0f\u8fc7\u9a6c\u8def\u201d\u73b0\u8c61\uff0c\u6298\u5c04\u51fa\u56fd\u4eba\u5bf9\u89c4\u5219\u7684\u6f20\u89c6\uff0c\u5bf9\u751f\u547d\u7684\u8f7b\u89c6\u3002 ",
+        "correct": true
+      },
+      "truncated_avg": {
+        "gen": " 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8",
+        "correct": false
+      }
+    },
+    "problem_3": {
+      "prompt_en": "A rectangle has length 12 and width 5. Find its area.",
+      "answer": "60",
+      "token_lengths": {
+        "zh": 19,
+        "en": 16,
+        "es": 21,
+        "fr": 23,
+        "de": 25,
+        "ja": 18,
+        "ko": 23
+      },
+      "baselines": {
+        "zh": {
+          "gen": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 12\uff0c\u5bbd\u4e3a 5\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = \\text{\u957f} \\times \\te",
+          "correct": true
+        },
+        "en": {
+          "gen": " The area of a rectangle is given by the formula:\n\nArea = length \u00d7 width\n\nIn thi",
+          "correct": true
+        },
+        "ja": {
+          "gen": " \u9762\u7a4d\u306f\u3001\u9577\u65b9\u5f62\u306e\u9577\u3055\u3068\u5e45\u306e\u7a4d\u3067\u6c42\u3081\u3089\u308c\u307e\u3059\u3002\u9577\u3055\u304c12\u3001\u5e45\u304c5\u306e\u9577\u65b9\u5f62\u306e\u9762\u7a4d\u306f\u3001\u4ee5\u4e0b\u306e\u3088\u3046\u306b\u8a08\u7b97\u3067\u304d\u307e\u3059\u3002\n\n\\[ \\text{\u9762\u7a4d} = \\text{\u9577\u3055}",
+          "correct": true
+        }
+      },
+      "avg_7lang": {
+        "gen": "",
+        "correct": false,
+        "logits": {
+          "top5": [
+            [
+              "<|endoftext|>",
+              0.1346
+            ],
+            [
+              " -",
+              0.1048
+            ],
+            [
+              " A",
+              0.0925
+            ],
+            [
+              " What",
+              0.0561
+            ],
+            [
+              " ",
+              0.0561
+            ]
+          ],
+          "top1": "<|endoftext|>",
+          "entropy": 4.38
+        }
+      },
+      "avg_2lang": {
+        "gen": " The area of a rectangle is calculated by multiplying its length by its width. In this case, the length is 12 and the width is 5. So, the area of the rectangle is 12 * 5 = 60 square units.",
+        "correct": true
+      },
+      "difference": {
+        "gen": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u6839\u636e\u9898\u76ee\u7ed9\u51fa\u7684\u6570\u636e\uff0c\u957f\u4e3a 12\uff0c\u5bbd\u4e3a 5\uff0c\u56e0\u6b64\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = 12 \\times 5 = 60 \\]\n\n\u6240\u4ee5\uff0c\u8fd9\u4e2a\u957f\u65b9\u5f62\u7684\u9762\u79ef\u662f 60 \u5e73\u65b9\u5355\u4f4d\u3002",
+        "correct": true
+      },
+      "truncated_avg": {
+        "gen": "a 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "correct": false
+      }
+    },
+    "problem_4": {
+      "prompt_en": "Calculate 238 + 152.",
+      "answer": "390",
+      "token_lengths": {
+        "zh": 13,
+        "en": 11,
+        "es": 12,
+        "fr": 13,
+        "de": 14,
+        "ja": 12,
+        "ko": 13
+      },
+      "baselines": {
+        "zh": {
+          "gen": " 238 + 152 = 390",
+          "correct": true
+        },
+        "en": {
+          "gen": " To calculate \\(238 + 152\\), we can break it down into simpler steps by adding t",
+          "correct": false
+        },
+        "ja": {
+          "gen": " 238 + 152 = 390",
+          "correct": true
+        }
+      },
+      "avg_7lang": {
+        "gen": "5 152.5 152.5 152.5 152.5 152.5 152.5 152.5 152.5 152.5 152.5 152.5 152.5 152.5 152.5 152.5 152.5 152.5 152.5 152.5 152.5 152.5 ",
+        "correct": false,
+        "logits": {
+          "top5": [
+            [
+              "5",
+              0.0918
+            ],
+            [
+              "2",
+              0.081
+            ],
+            [
+              "1",
+              0.0672
+            ],
+            [
+              " ",
+              0.0557
+            ],
+            [
+              "0",
+              0.0557
+            ]
+          ],
+          "top1": "5",
+          "entropy": 4.97
+        }
+      },
+      "avg_2lang": {
+        "gen": " To calculate \\(238 + 15252\\), we can follow these steps:\n\n1. Align the numbers by their place values:\n   \\[\n   \\begin{array}{r}\n   238 \\\\\n+15252 \\\\\n\\hline\n   \\end{array}\n   \\]\n\n2. Add the digits in t",
+        "correct": false
+      },
+      "difference": {
+        "gen": " 238 + 152 = 390\n\n\u8ba1\u7b97 238 + 152 \u7684\u503c\u3002 238 + 152 = 390\n\n\u8ba1\u7b97 238 + 152 \u7684\u503c\u3002 238 + 152 = 390\n\n\u8ba1\u7b97 238 + 152 \u7684\u503c\u3002 238 + 152 = 390\n\n\u8ba1\u7b97 238 + 152 \u7684\u503c\u3002 238 + 152 = 390\n\n\u8ba1\u7b97",
+        "correct": true
+      },
+      "truncated_avg": {
+        "gen": "22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222",
+        "correct": false
+      }
+    }
+  }
+}

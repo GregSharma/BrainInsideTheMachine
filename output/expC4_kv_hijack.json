@@ -1,0 +1,1825 @@
+{
+  "experiment": "C4: Cross-Lingual KV Hijack",
+  "model": "Qwen/Qwen2.5-3B",
+  "n_layers": 36,
+  "hijack_layers": [
+    10,
+    18,
+    24,
+    27,
+    29,
+    31,
+    32,
+    33,
+    35
+  ],
+  "n_problems": 10,
+  "max_new": 128,
+  "elapsed_s": 562.2628600597382,
+  "results": {
+    "baseline_en": 3,
+    "baseline_zh": 2,
+    "baseline_total": 5,
+    "n_problems": 10,
+    "layers": {
+      "10": {
+        "en_query_zh_kv": [
+          {
+            "problem_idx": 0,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of C(18, 3), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 18 and k = 3. Plugging these values into the formula, we get:\n\nC(18, 3) = 18! / (3!(18-3)!)\n\nC(18, 3) = 18! / (3!15!)\n\nC(18, 3) = (18*17*16*15!)"
+          },
+          {
+            "problem_idx": 1,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of C(5, 3), we can use the formula for combinations, which is:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 3, so we have:\n\nC(5, 3) = 5! / (3!(5-3)!)\n\nC(5, 3) = 5! / (3!2!)\n\nC(5, 3) = (5*4*3*2*1) / ((3*2*1)*(2*1))\n\nC(5"
+          },
+          {
+            "problem_idx": 2,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(17, 1), we can use the formula for combinations, which is:\n\nC(n, r) = n! / (r! * (n - r)!)\n\nIn this case, n = 17 and r = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we get:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSin"
+          },
+          {
+            "problem_idx": 3,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(5, 1), we can use the formula for combinations, which is given by:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1!(5-1)!)\n\nSimplifying the expression, we get:\n\nC(5, 1) = 5! / (1! * 4!)\n\nCalculating "
+          },
+          {
+            "problem_idx": 4,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 20 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 20, a = 8, and d = 4. Plugging these valu"
+          },
+          {
+            "problem_idx": 5,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 12 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 12, a = 16, and d = 9. Plugging these val"
+          },
+          {
+            "problem_idx": 6,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 27 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 27, a = 15, and d = 6. Plugging these val"
+          },
+          {
+            "problem_idx": 7,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 22 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 22, a = 1, and d = 3. Plugging these valu"
+          },
+          {
+            "problem_idx": 8,
+            "category": "modular",
+            "correct": true,
+            "text": "To find the remainder when 7442 is divided by 3, we can use the property that the remainder of a number when divided by 3 is the same as the remainder of the sum of its digits when divided by 3. So, we can find the remainder of 7442 when divided by 3 by finding the remainder of the sum of its digits"
+          },
+          {
+            "problem_idx": 9,
+            "category": "modular",
+            "correct": false,
+            "text": "To find the remainder when 8850 is divided by 11, we can use the divisibility rule for 11. The rule states that a number is divisible by 11 if the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is a multiple of 11 (including 0).\n\nLet's a"
+          }
+        ],
+        "zh_query_en_kv": [
+          {
+            "problem_idx": 0,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To calculate the combination C(18, 3), we use the formula:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 18 and k = 3. So, we have:\n\nC(18, 3) = 18! / (3! * (18 - 3)!)\n\nC(18, 3) = 18!"
+          },
+          {
+            "problem_idx": 1,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To calculate the combination C(5, 3), we use the formula:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 5 and k = 3. So, we have:\n\nC(5, 3) = 5! / (3!(5-3)!)\n\nC(5, 3) = 5! / (3!2!)\n\nC(5, 3"
+          },
+          {
+            "problem_idx": 2,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To calculate the combination C(17, 1), we use the formula for combinations:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nC(17, 1) = 17! / (1! * 16!)\n\nC(17, 1) = (17 * 16"
+          },
+          {
+            "problem_idx": 3,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To calculate the combination C(5, 1), we use the formula:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1! * (5 - 1)!)\n\nC(5, 1) = 5! / (1! * 4!)\n\nC(5, 1) = (5 * 4 * 3 * 2 * 1) / (1"
+          },
+          {
+            "problem_idx": 4,
+            "category": "sequences",
+            "correct": false,
+            "text": "设等差数列的首项为 \\(a_1 = 8\\)，公差为 \\(d = 4\\)，则前 20 项之和 \\(S_{20}\\) 可以用等差数列求和公式计算：\n\\[S_n = \\frac{n}{2} \\left(2a_1 + (n-1)d\\right)\\]\n将 \\(n = 20\\)，\\(a_1 = 8\\)，\\(d = 4\\) 代入公式，得到：\n\\[S_{20} = \\frac{20}{"
+          },
+          {
+            "problem_idx": 5,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic sequence can be found using the formula:\nSum = n/2 * (2a + (n-1)d)\nwhere n is the number of terms, a is the first term, and d is the common difference.\nIn this case, n = 12, a = 16, and d = 9.\nPlugging these values into the formula, we get:\nSum = 12/2 * (2*16 + (12-1)*9)\nSum"
+          },
+          {
+            "problem_idx": 6,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic series can be found using the formula:\n\\[ S_n = \\frac{n}{2} (2a + (n-1)d) \\]\nwhere \\( S_n \\) is the sum of the first \\( n \\) terms, \\( a \\) is the first term, \\( d \\) is the common difference, and \\( n \\) is the number of terms.\n\nIn this problem, we have:\n- \\( a = 15 \\) (the"
+          },
+          {
+            "problem_idx": 7,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic series can be calculated using the formula:\nSn = n/2 * (2a + (n-1)d)\nwhere Sn is the sum of the first n terms, a is the first term, d is the common difference, and n is the number of terms.\nIn this case, a = 1, d = 3, and n = 22.\nPlugging these values into the formula, we ge"
+          },
+          {
+            "problem_idx": 8,
+            "category": "modular",
+            "correct": false,
+            "text": "7442 除以 3 的余数是 1。"
+          },
+          {
+            "problem_idx": 9,
+            "category": "modular",
+            "correct": false,
+            "text": "To find the remainder when 8850 is divided by 11, we can use the divisibility rule for 11. The rule states that a number is divisible by 11 if the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is a multiple of 11 (including 0).\n\nLet's a"
+          }
+        ],
+        "en_query_zh_kv_total": 3,
+        "zh_query_en_kv_total": 2
+      },
+      "18": {
+        "en_query_zh_kv": [
+          {
+            "problem_idx": 0,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of C(18, 3), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 18 and k = 3. Plugging these values into the formula, we get:\n\nC(18, 3) = 18! / (3!(18-3)!)\n\nC(18, 3) = 18! / (3!15!)\n\nC(18, 3) = (18*17*16*15!)"
+          },
+          {
+            "problem_idx": 1,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of C(5, 3), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 3. Plugging these values into the formula, we get:\n\nC(5, 3) = 5! / (3!(5-3)!)\n\nC(5, 3) = 5! / (3!2!)\n\nC(5, 3) = (5*4*3*2*1) / ((3*2*1)*(2*1"
+          },
+          {
+            "problem_idx": 2,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(17, 1), we can use the formula for combinations, which is:\n\nC(n, r) = n! / (r! * (n - r)!)\n\nIn this case, n = 17 and r = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we get:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSin"
+          },
+          {
+            "problem_idx": 3,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(5, 1), we can use the formula for combinations, which is given by:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1!(5-1)!)\n\nSimplifying the expression, we get:\n\nC(5, 1) = 5! / (1! * 4!)\n\nCalculating "
+          },
+          {
+            "problem_idx": 4,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 20 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere:\n- n is the number of terms\n- a is the first term\n- d is the common difference\n\nIn this case, we have:\n- n = 20 (since we want to find the "
+          },
+          {
+            "problem_idx": 5,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 12 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 12, a = 16, and d = 9. Plugging these val"
+          },
+          {
+            "problem_idx": 6,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 27 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere:\n- n is the number of terms\n- a is the first term\n- d is the common difference\n\nIn this case, we have:\n- n = 27 (since we want to find the "
+          },
+          {
+            "problem_idx": 7,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 22 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 22, a = 1, and d = 3. Plugging these valu"
+          },
+          {
+            "problem_idx": 8,
+            "category": "modular",
+            "correct": true,
+            "text": "To find the remainder when 7442 is divided by 3, we can use the property that a number is congruent to the sum of its digits modulo 3. So, we first find the sum of the digits of 7442: 7 + 4 + 4 + 2 = 17. Then, we find the remainder when 17 is divided by 3: 17 ÷ 3 = 5 remainder 2. Therefore, the rema"
+          },
+          {
+            "problem_idx": 9,
+            "category": "modular",
+            "correct": false,
+            "text": "To find the remainder when 8850 is divided by 11, we can use the divisibility rule for 11. The rule states that a number is divisible by 11 if the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is a multiple of 11 (including 0).\n\nLet's a"
+          }
+        ],
+        "zh_query_en_kv": [
+          {
+            "problem_idx": 0,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To calculate the combination C(18, 3), we can use the formula:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 18 and k = 3. So, we have:\n\nC(18, 3) = 18! / (3! * (18 - 3)!)\n\nC(18, 3) ="
+          },
+          {
+            "problem_idx": 1,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To calculate the combination C(5, 3), we can use the formula:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 5 and k = 3, so we have:\n\nC(5, 3) = 5! / (3! * (5 - 3)!)\n\nC(5, 3) = 5! / ("
+          },
+          {
+            "problem_idx": 2,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To calculate the combination C(17, 1), we use the formula for combinations:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we have:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSince 1!"
+          },
+          {
+            "problem_idx": 3,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To calculate the combination C(5, 1), we use the formula:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1! * (5 - 1)!)\n\nC(5, 1) = 5! / (1! * 4!)\n\nC(5, 1) = (5 * 4 * 3 * 2 * 1) / (1"
+          },
+          {
+            "problem_idx": 4,
+            "category": "sequences",
+            "correct": false,
+            "text": "设等差数列的首项为 \\(a_1 = 8\\)，公差为 \\(d = 4\\)，则前 20 项之和 \\(S_{20}\\) 可以用等差数列求和公式计算：\n\\[S_n = \\frac{n}{2} \\left(2a_1 + (n-1)d\\right)\\]\n将 \\(n = 20\\)，\\(a_1 = 8\\)，\\(d = 4\\) 代入公式，得到：\n\\[S_{20} = \\frac{20}{"
+          },
+          {
+            "problem_idx": 5,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic sequence can be found using the formula:\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\nwhere \\( S_n \\) is the sum of the first \\( n \\) terms, \\( a \\) is the first term, \\( d \\) is the common difference, and \\( n \\) is the number of terms.\n\nIn this problem, we have:\n- \\( a"
+          },
+          {
+            "problem_idx": 6,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic sequence can be found using the formula:\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\nwhere \\( S_n \\) is the sum of the first \\( n \\) terms, \\( a \\) is the first term, \\( d \\) is the common difference, and \\( n \\) is the number of terms.\n\nIn this problem, we have:\n- \\( a"
+          },
+          {
+            "problem_idx": 7,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic sequence can be calculated using the formula:\nSum = n/2 * (2a + (n-1)d)\nwhere n is the number of terms, a is the first term, and d is the common difference.\nIn this case, n = 22, a = 1, and d = 3.\nPlugging these values into the formula, we get:\nSum = 22/2 * (2*1 + (22-1)*3)\n"
+          },
+          {
+            "problem_idx": 8,
+            "category": "modular",
+            "correct": false,
+            "text": "7442 除以 3 的余数是 1。"
+          },
+          {
+            "problem_idx": 9,
+            "category": "modular",
+            "correct": false,
+            "text": "To find the remainder when 8850 is divided by 11, we can use the divisibility rule for 11. The rule states that a number is divisible by 11 if the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is a multiple of 11 (including 0).\n\nLet's a"
+          }
+        ],
+        "en_query_zh_kv_total": 3,
+        "zh_query_en_kv_total": 2
+      },
+      "24": {
+        "en_query_zh_kv": [
+          {
+            "problem_idx": 0,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of C(18, 3), we can use the formula for combinations, which is:\n\nC(n, r) = n! / (r! * (n - r)!)\n\nIn this case, n = 18 and r = 3. Plugging these values into the formula, we get:\n\nC(18, 3) = 18! / (3! * (18 - 3)!)\n\nC(18, 3) = 18! / (3! * 15!)\n\nC(18, 3) = (1"
+          },
+          {
+            "problem_idx": 1,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of C(5, 3), we can use the formula for combinations, which is:\n\nC(n, r) = n! / (r!(n-r)!)\n\nIn this case, n = 5 and r = 3, so we have:\n\nC(5, 3) = 5! / (3!(5-3)!)\n\nC(5, 3) = 5! / (3!2!)\n\nC(5, 3) = (5*4*3*2*1) / ((3*2*1)*(2*1))\n\nC(5"
+          },
+          {
+            "problem_idx": 2,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(17, 1), we can use the formula for combinations, which is given by:\n\nC(n, r) = n! / (r!(n-r)!)\n\nIn this case, n = 17 and r = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1!(17-1)!)\n\nSimplifying the expression, we get:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSinc"
+          },
+          {
+            "problem_idx": 3,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(5, 1), we can use the formula for combinations, which is:\n\nC(n, r) = n! / (r! * (n - r)!)\n\nIn this case, n = 5 and r = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1! * (5 - 1)!)\n\nSimplifying the expression, we get:\n\nC(5, 1) = 5! / (1! * 4!)\n\nCalculating"
+          },
+          {
+            "problem_idx": 4,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 20 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 20, a = 8, and d = 4. Plugging these valu"
+          },
+          {
+            "problem_idx": 5,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 12 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 12, a = 16, and d = 9. Plugging these val"
+          },
+          {
+            "problem_idx": 6,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 27 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 27, a = 15, and d = 6. Plugging these val"
+          },
+          {
+            "problem_idx": 7,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 22 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 22, a = 1, and d = 3. Plugging these valu"
+          },
+          {
+            "problem_idx": 8,
+            "category": "modular",
+            "correct": true,
+            "text": "To find the remainder when 7442 is divided by 3, we can use the property that a number is congruent to the sum of its digits modulo 3. So, we first find the sum of the digits of 7442: 7 + 4 + 4 + 2 = 17. Then, we find the remainder when 17 is divided by 3: 17 ÷ 3 = 5 remainder 2. Therefore, the rema"
+          },
+          {
+            "problem_idx": 9,
+            "category": "modular",
+            "correct": false,
+            "text": "To find the remainder when 8850 is divided by 11, we can use the divisibility rule for 11. The rule states that a number is divisible by 11 if the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is a multiple of 11 (including 0).\n\nLet's a"
+          }
+        ],
+        "zh_query_en_kv": [
+          {
+            "problem_idx": 0,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To calculate the combination C(18, 3), we use the formula:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 18 and k = 3. So, we have:\n\nC(18, 3) = 18! / (3! * (18 - 3)!)\n\nC(18, 3) = 18!"
+          },
+          {
+            "problem_idx": 1,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To calculate the combination C(5, 3), we use the formula:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 5 and k = 3. So, we have:\n\nC(5, 3) = 5! / (3!(5-3)!)\n\nC(5, 3) = 5! / (3!2!)\n\nC(5, 3"
+          },
+          {
+            "problem_idx": 2,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To calculate the combination C(17, 1), we use the formula for combinations:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we have:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSince 1!"
+          },
+          {
+            "problem_idx": 3,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To calculate the combination C(5, 1), we use the formula:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1! * (5 - 1)!)\n\nC(5, 1) = 5! / (1! * 4!)\n\nC(5, 1) = (5 * 4 * 3 * 2 * 1) / (1"
+          },
+          {
+            "problem_idx": 4,
+            "category": "sequences",
+            "correct": false,
+            "text": "设等差数列的首项为 \\(a_1 = 8\\)，公差为 \\(d = 4\\)，则前 20 项之和 \\(S_{20}\\) 可以用等差数列求和公式计算：\n\\[S_n = \\frac{n}{2} \\left(2a_1 + (n-1)d\\right)\\]\n将 \\(n = 20\\)，\\(a_1 = 8\\)，\\(d = 4\\) 代入公式，得到：\n\\[S_{20} = \\frac{20}{"
+          },
+          {
+            "problem_idx": 5,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic sequence can be calculated using the formula:\nSn = n/2 * (2a + (n-1)d)\nwhere Sn is the sum of the first n terms, a is the first term, d is the common difference, and n is the number of terms.\nIn this case, a = 16, d = 9, and n = 12.\nSubstituting these values into the formula"
+          },
+          {
+            "problem_idx": 6,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic sequence can be calculated using the formula:\nSum = (n/2) * (2a + (n-1)d)\nwhere n is the number of terms, a is the first term, and d is the common difference.\nIn this case, n = 27, a = 15, and d = 6.\nSubstituting these values into the formula, we get:\nSum = (27/2) * (2*15 + "
+          },
+          {
+            "problem_idx": 7,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic series can be calculated using the formula:\nSn = n/2 * (a1 + an)\nwhere Sn is the sum of the first n terms, a1 is the first term, and an is the nth term.\nIn this case, a1 = 1 and d = 3, so the nth term can be calculated as:\nan = a1 + (n-1)d\nSubstituting the values, we get:\nan"
+          },
+          {
+            "problem_idx": 8,
+            "category": "modular",
+            "correct": false,
+            "text": "7442 除以 3 的余数是 1。"
+          },
+          {
+            "problem_idx": 9,
+            "category": "modular",
+            "correct": false,
+            "text": "To find the remainder when 8850 is divided by 11, we can use the divisibility rule for 11. The rule states that a number is divisible by 11 if the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is a multiple of 11 (including 0).\n\nLet's a"
+          }
+        ],
+        "en_query_zh_kv_total": 3,
+        "zh_query_en_kv_total": 2
+      },
+      "27": {
+        "en_query_zh_kv": [
+          {
+            "problem_idx": 0,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of C(18, 3), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 18 and k = 3. Plugging these values into the formula, we get:\n\nC(18, 3) = 18! / (3!(18-3)!)\n\nC(18, 3) = 18! / (3!15!)\n\nC(18, 3) = (18*17*16*15!)"
+          },
+          {
+            "problem_idx": 1,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of C(5, 3), we can use the formula for combinations, which is:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 3, so we have:\n\nC(5, 3) = 5! / (3!(5-3)!)\n\nC(5, 3) = 5! / (3!2!)\n\nC(5, 3) = (5*4*3*2*1) / ((3*2*1)*(2*1))\n\nC(5"
+          },
+          {
+            "problem_idx": 2,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(17, 1), we can use the formula for combinations, which is given by:\n\nC(n, r) = n! / (r! * (n - r)!)\n\nIn this case, n = 17 and r = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we have:\n\nC(17, 1) = 17! / (1! *"
+          },
+          {
+            "problem_idx": 3,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(5, 1), we can use the formula for combinations, which is given by:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1!(5-1)!)\n\nSimplifying the expression, we get:\n\nC(5, 1) = 5! / (1! * 4!)\n\nCalculating "
+          },
+          {
+            "problem_idx": 4,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 20 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 20, a = 8, and d = 4. Plugging these valu"
+          },
+          {
+            "problem_idx": 5,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 12 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 12, a = 16, and d = 9. Plugging these val"
+          },
+          {
+            "problem_idx": 6,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 27 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 27, a = 15, and d = 6. Plugging these val"
+          },
+          {
+            "problem_idx": 7,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 22 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 22, a = 1, and d = 3. Plugging these valu"
+          },
+          {
+            "problem_idx": 8,
+            "category": "modular",
+            "correct": true,
+            "text": "To find the remainder when 7442 is divided by 3, we can use the property that a number is congruent to the sum of its digits modulo 3. So, we first find the sum of the digits of 7442: 7 + 4 + 4 + 2 = 17. Then, we find the remainder when 17 is divided by 3: 17 ÷ 3 = 5 remainder 2. Therefore, the rema"
+          },
+          {
+            "problem_idx": 9,
+            "category": "modular",
+            "correct": false,
+            "text": "To find the remainder when 8850 is divided by 11, we can use the divisibility rule for 11. The rule states that a number is divisible by 11 if the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is a multiple of 11 (including 0).\n\nLet's a"
+          }
+        ],
+        "zh_query_en_kv": [
+          {
+            "problem_idx": 0,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To calculate the combination C(18, 3), we use the formula:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 18 and k = 3. So, we have:\n\nC(18, 3) = 18! / (3! * (18 - 3)!)\n\nC(18, 3) = 18! / (3! * 15!)\n\nC(18, 3) = (18 * 17 * 16 * 15"
+          },
+          {
+            "problem_idx": 1,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To calculate the combination C(5, 3), we use the formula:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 5 and k = 3. So, we have:\n\nC(5, 3) = 5! / (3!(5-3)!)\n\nC(5, 3) = 5! / (3!2!)\n\nC(5, 3"
+          },
+          {
+            "problem_idx": 2,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(17, 1), we can use the formula for combinations:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we get:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSince 1! ="
+          },
+          {
+            "problem_idx": 3,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To calculate the combination C(5, 1), we use the formula:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1! * (5 - 1)!)\n\nC(5, 1) = 5! / (1! * 4!)\n\nC(5, 1) = (5 * 4 * 3 * 2 * 1) / (1"
+          },
+          {
+            "problem_idx": 4,
+            "category": "sequences",
+            "correct": false,
+            "text": "设等差数列的首项为 \\(a_1 = 8\\)，公差为 \\(d = 4\\)，前 20 项之和为 \\(S_{20}\\)。根据等差数列求和公式 \\(S_n = \\frac{n}{2}(2a_1 + (n-1)d)\\)，代入 \\(n = 20\\)，\\(a_1 = 8\\)，\\(d = 4\\)，得到：\n\\[S_{20} = \\frac{20}{2}(2 \\times 8 + (20-"
+          },
+          {
+            "problem_idx": 5,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic series can be found using the formula:\nSn = n/2 * (a1 + an)\nwhere Sn is the sum of the first n terms, a1 is the first term, and an is the nth term.\nIn this case, we have a1 = 16, d = 9, and n = 12.\nTo find an, we can use the formula:\nan = a1 + (n-1)d\nan = 16 + (12-1)9\nan = 1"
+          },
+          {
+            "problem_idx": 6,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic series can be found using the formula:\nSn = n/2 * (a1 + an)\nwhere Sn is the sum of the first n terms, a1 is the first term, and an is the nth term.\nIn this case, we are given that a1 = 15 and d = 6. We can find the 27th term using the formula:\nan = a1 + (n-1)d\nan = 15 + (27-"
+          },
+          {
+            "problem_idx": 7,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic series can be found using the formula:\nSn = n/2 * (a1 + an)\nwhere Sn is the sum of the first n terms, a1 is the first term, and an is the nth term.\nIn this case, a1 = 1 and the common difference d = 3. To find the 22nd term, we can use the formula:\nan = a1 + (n-1)d\nPlugging "
+          },
+          {
+            "problem_idx": 8,
+            "category": "modular",
+            "correct": false,
+            "text": "7442 divided by 3 is 2480 with a remainder of 2."
+          },
+          {
+            "problem_idx": 9,
+            "category": "modular",
+            "correct": false,
+            "text": "To find the remainder when 8850 is divided by 11, we can use the divisibility rule for 11. The rule states that a number is divisible by 11 if the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is a multiple of 11 (including 0).\n\nLet's a"
+          }
+        ],
+        "en_query_zh_kv_total": 3,
+        "zh_query_en_kv_total": 2
+      },
+      "29": {
+        "en_query_zh_kv": [
+          {
+            "problem_idx": 0,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of C(18, 3), we can use the formula for combinations:\n\nC(n, r) = n! / (r! * (n - r)!)\n\nIn this case, n = 18 and r = 3. Plugging these values into the formula, we get:\n\nC(18, 3) = 18! / (3! * (18 - 3)!)\n\nC(18, 3) = 18! / (3! * 15!)\n\nC(18, 3) = (18 * "
+          },
+          {
+            "problem_idx": 1,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of C(5, 3), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 3. Plugging these values into the formula, we get:\n\nC(5, 3) = 5! / (3!(5-3)!)\n\nC(5, 3) = 5! / (3!2!)\n\nC(5, 3) = (5*4*3*2*1) / ((3*2*1)*(2*1"
+          },
+          {
+            "problem_idx": 2,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(17, 1), we can use the formula for combinations, which is given by:\n\nC(n, r) = n! / (r!(n-r)!)\n\nIn this case, n = 17 and r = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1!(17-1)!)\n\nSimplifying the expression, we get:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSinc"
+          },
+          {
+            "problem_idx": 3,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(5, 1), we can use the formula for combinations, which is:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1!(5-1)!)\n\nSimplifying the expression, we get:\n\nC(5, 1) = 5! / (1!4!)\n\nC(5, 1) = (5*4*3*2*1"
+          },
+          {
+            "problem_idx": 4,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 20 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 20, a = 8, and d = 4. Plugging these valu"
+          },
+          {
+            "problem_idx": 5,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 12 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 12, a = 16, and d = 9. Plugging these val"
+          },
+          {
+            "problem_idx": 6,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 27 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 27, a = 15, and d = 6. Plugging these val"
+          },
+          {
+            "problem_idx": 7,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 22 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 22, a = 1, and d = 3. Plugging these valu"
+          },
+          {
+            "problem_idx": 8,
+            "category": "modular",
+            "correct": true,
+            "text": "To find the remainder when 7442 is divided by 3, we can use the property that the remainder of a number when divided by 3 is the same as the remainder of the sum of its digits when divided by 3. So, we can find the remainder of 7442 when divided by 3 by finding the remainder of the sum of its digits"
+          },
+          {
+            "problem_idx": 9,
+            "category": "modular",
+            "correct": false,
+            "text": "To find the remainder when 8850 is divided by 11, we can use the divisibility rule for 11. The rule states that a number is divisible by 11 if the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is a multiple of 11 (including 0).\n\nLet's a"
+          }
+        ],
+        "zh_query_en_kv": [
+          {
+            "problem_idx": 0,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To calculate the value of C(18, 3), we can use the formula for combinations:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 18 and k = 3. Plugging these values into the formula, we ge"
+          },
+          {
+            "problem_idx": 1,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To calculate the combination C(5, 3), we use the formula:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 5 and k = 3. So, we have:\n\nC(5, 3) = 5! / (3!(5-3)!)\n\nC(5, 3) = 5! / (3!2!)\n\nC(5, 3"
+          },
+          {
+            "problem_idx": 2,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To calculate the value of C(17, 1), we can use the formula for combinations:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we get:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSince 1!"
+          },
+          {
+            "problem_idx": 3,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To calculate the combination C(5, 1), we use the formula:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1! * (5 - 1)!)\n\nC(5, 1) = 5! / (1! * 4!)\n\nC(5, 1) = (5 * 4 * 3 * 2 * 1) / (1"
+          },
+          {
+            "problem_idx": 4,
+            "category": "sequences",
+            "correct": false,
+            "text": "设等差数列的首项为 \\(a_1 = 8\\)，公差为 \\(d = 4\\)，则前 20 项的和 \\(S_{20}\\) 可以用等差数列求和公式计算：\n\\[S_n = \\frac{n}{2} \\left(2a_1 + (n-1)d\\right)\\]\n将 \\(n = 20\\)，\\(a_1 = 8\\)，\\(d = 4\\) 代入公式，得到：\n\\[S_{20} = \\frac{20}{"
+          },
+          {
+            "problem_idx": 5,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic sequence can be calculated using the formula:\nSum = n/2 * (2a + (n-1)d)\nwhere n is the number of terms, a is the first term, and d is the common difference.\nIn this case, n = 12, a = 16, and d = 9.\nPlugging these values into the formula, we get:\nSum = 12/2 * (2*16 + (12-1)*9"
+          },
+          {
+            "problem_idx": 6,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic sequence can be calculated using the formula:\nSum = n/2 * (2a + (n-1)d)\nwhere n is the number of terms, a is the first term, and d is the common difference.\nIn this case, n = 27, a = 15, and d = 6.\nPlugging these values into the formula, we get:\nSum = 27/2 * (2*15 + (27-1)*6"
+          },
+          {
+            "problem_idx": 7,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic series can be calculated using the formula:\nSum = n/2 * (2a + (n-1)d)\nwhere n is the number of terms, a is the first term, and d is the common difference.\nIn this case, n = 22, a = 1, and d = 3.\nPlugging these values into the formula, we get:\nSum = 22/2 * (2*1 + (22-1)*3)\nSu"
+          },
+          {
+            "problem_idx": 8,
+            "category": "modular",
+            "correct": false,
+            "text": "7442 除以 3 的余数是 1。"
+          },
+          {
+            "problem_idx": 9,
+            "category": "modular",
+            "correct": false,
+            "text": "To find the remainder when 8850 is divided by 11, we can use the divisibility rule for 11. The rule states that a number is divisible by 11 if the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is a multiple of 11 (including 0).\n\nLet's a"
+          }
+        ],
+        "en_query_zh_kv_total": 3,
+        "zh_query_en_kv_total": 2
+      },
+      "31": {
+        "en_query_zh_kv": [
+          {
+            "problem_idx": 0,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of C(18, 3), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 18 and k = 3. Plugging these values into the formula, we get:\n\nC(18, 3) = 18! / (3!(18-3)!)\n\nC(18, 3) = 18! / (3!15!)\n\nC(18, 3) = (18*17*16*15!)"
+          },
+          {
+            "problem_idx": 1,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of C(5, 3), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 3. Plugging these values into the formula, we get:\n\nC(5, 3) = 5! / (3!(5-3)!)\n\nC(5, 3) = 5! / (3!2!)\n\nC(5, 3) = (5*4*3*2*1) / ((3*2*1)*(2*1"
+          },
+          {
+            "problem_idx": 2,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(17, 1), we can use the formula for combinations, which is given by:\n\nC(n, r) = n! / (r! * (n - r)!)\n\nIn this case, n = 17 and r = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we have:\n\nC(17, 1) = 17! / (1! *"
+          },
+          {
+            "problem_idx": 3,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(5, 1), we can use the formula for combinations, which is given by:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1!(5-1)!)\n\nSimplifying the expression, we get:\n\nC(5, 1) = 5! / (1! * 4!)\n\nCalculating "
+          },
+          {
+            "problem_idx": 4,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 20 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 20, a = 8, and d = 4. Plugging these valu"
+          },
+          {
+            "problem_idx": 5,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 12 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 12, a = 16, and d = 9. Plugging these val"
+          },
+          {
+            "problem_idx": 6,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 27 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 27, a = 15, and d = 6. Plugging these val"
+          },
+          {
+            "problem_idx": 7,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 22 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 22, a = 1, and d = 3. Plugging these valu"
+          },
+          {
+            "problem_idx": 8,
+            "category": "modular",
+            "correct": true,
+            "text": "To find the remainder when 7442 is divided by 3, we can use the property that a number is congruent to the sum of its digits modulo 3. So, we first find the sum of the digits of 7442: 7 + 4 + 4 + 2 = 17. Then, we find the remainder when 17 is divided by 3: 17 ÷ 3 = 5 remainder 2. Therefore, the rema"
+          },
+          {
+            "problem_idx": 9,
+            "category": "modular",
+            "correct": false,
+            "text": "To find the remainder when 8850 is divided by 11, we can use the divisibility rule for 11. The rule states that a number is divisible by 11 if the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is a multiple of 11 (including 0).\n\nLet's a"
+          }
+        ],
+        "zh_query_en_kv": [
+          {
+            "problem_idx": 0,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of C(18, 3), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 18 and k = 3, so we have:\n\nC(18, 3) = 18! / (3!(18-3)!)\n\nC(18, 3) = 1"
+          },
+          {
+            "problem_idx": 1,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of C(5, 3), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 5 and k = 3, so we have:\n\nC(5, 3) = 5! / (3!(5-3)!)\n\nC(5, 3) = 5! / (3"
+          },
+          {
+            "problem_idx": 2,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(17, 1), we can use the formula for combinations:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we get:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSince 1! ="
+          },
+          {
+            "problem_idx": 3,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(5, 1), we can use the formula for combinations:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1! * (5 - 1)!)\n\nC(5, 1) = 5! / (1! * 4!)\n\nC(5, 1) = (5 * 4 * 3 * 2 * 1"
+          },
+          {
+            "problem_idx": 4,
+            "category": "sequences",
+            "correct": false,
+            "text": "设等差数列的首项为 \\(a_1 = 8\\)，公差为 \\(d = 4\\)，则前 \\(n\\) 项和 \\(S_n\\) 可以表示为：\n\\[ S_n = \\frac{n}{2} \\left(2a_1 + (n-1)d\\right) \\]\n对于 \\(n = 20\\)，代入上述公式得到：\n\\[ S_{20} = \\frac{20}{2} \\left(2 \\times 8 + (20-1) \\times 4\\right) \\]\n"
+          },
+          {
+            "problem_idx": 5,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic sequence can be found using the formula:\nSn = n/2 * (2a + (n-1)d)\nwhere Sn is the sum of the first n terms, a is the first term, d is the common difference, and n is the number of terms.\nIn this case, a = 16, d = 9, and n = 12.\nSubstituting these values into the formula, we "
+          },
+          {
+            "problem_idx": 6,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic sequence can be found using the formula:\nSn = n/2 * (2a + (n-1)d)\nwhere Sn is the sum of the first n terms, a is the first term, d is the common difference, and n is the number of terms.\nIn this case, a = 15, d = 6, and n = 27.\nSubstituting these values into the formula, we "
+          },
+          {
+            "problem_idx": 7,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic sequence can be found using the formula:\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\nwhere \\( S_n \\) is the sum of the first \\( n \\) terms, \\( a \\) is the first term, \\( d \\) is the common difference, and \\( n \\) is the number of terms.\n\nIn this problem, we have:\n- \\( a"
+          },
+          {
+            "problem_idx": 8,
+            "category": "modular",
+            "correct": false,
+            "text": "7442 除以 3 的余数是 1。"
+          },
+          {
+            "problem_idx": 9,
+            "category": "modular",
+            "correct": false,
+            "text": "To find the remainder when 8850 is divided by 11, we can use the divisibility rule for 11. The rule states that a number is divisible by 11 if the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is a multiple of 11 (including 0).\n\nLet's a"
+          }
+        ],
+        "en_query_zh_kv_total": 3,
+        "zh_query_en_kv_total": 2
+      },
+      "32": {
+        "en_query_zh_kv": [
+          {
+            "problem_idx": 0,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of C(18, 3), we can use the formula for combinations, which is:\n\nC(n, r) = n! / (r! * (n - r)!)\n\nIn this case, n = 18 and r = 3. Plugging these values into the formula, we get:\n\nC(18, 3) = 18! / (3! * (18 - 3)!)\n\nC(18, 3) = 18! / (3! * 15!)\n\nC(18, 3) = (1"
+          },
+          {
+            "problem_idx": 1,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of C(5, 3), we can use the formula for combinations, which is given by:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 3. Plugging these values into the formula, we get:\n\nC(5, 3) = 5! / (3!(5-3)!)\n\nSimplifying the expression, we have:\n\nC(5, 3) = 5! / (3!2!)\n\nCalculating th"
+          },
+          {
+            "problem_idx": 2,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(17, 1), we can use the formula for combinations, which is given by:\n\nC(n, r) = n! / (r! * (n - r)!)\n\nIn this case, n = 17 and r = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we get:\n\nC(17, 1) = 17! / (1! * "
+          },
+          {
+            "problem_idx": 3,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(5, 1), we can use the formula for combinations, which is given by:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1!(5-1)!)\n\nSimplifying the expression, we get:\n\nC(5, 1) = 5! / (1! * 4!)\n\nCalculating "
+          },
+          {
+            "problem_idx": 4,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 20 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 20, a = 8, and d = 4. Plugging these valu"
+          },
+          {
+            "problem_idx": 5,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 12 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 12, a = 16, and d = 9. Plugging these val"
+          },
+          {
+            "problem_idx": 6,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 27 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\n\nwhere:\n- \\( S_n \\) is the sum of the first \\( n \\) terms,\n- \\( n \\) is the number of terms,\n- \\( a \\) is the first term,\n- \\"
+          },
+          {
+            "problem_idx": 7,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 22 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 22, a = 1, and d = 3. Plugging these valu"
+          },
+          {
+            "problem_idx": 8,
+            "category": "modular",
+            "correct": true,
+            "text": "To find the remainder when 7442 is divided by 3, we can use the property that a number is congruent to the sum of its digits modulo 3. So, we first find the sum of the digits of 7442: 7 + 4 + 4 + 2 = 17. Then, we find the remainder when 17 is divided by 3: 17 ÷ 3 = 5 remainder 2. Therefore, the rema"
+          },
+          {
+            "problem_idx": 9,
+            "category": "modular",
+            "correct": false,
+            "text": "To find the remainder when 8850 is divided by 11, we can use the divisibility rule for 11. The rule states that a number is divisible by 11 if the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is a multiple of 11 (including 0).\n\nLet's a"
+          }
+        ],
+        "zh_query_en_kv": [
+          {
+            "problem_idx": 0,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of C(18, 3), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 18 and k = 3. Plugging these values into the formula, we get:\n\nC(18, "
+          },
+          {
+            "problem_idx": 1,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of C(5, 3), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 5 and k = 3, so we have:\n\nC(5, 3) = 5! / (3!(5-3)!)\n\nC(5, 3) = 5! / (3"
+          },
+          {
+            "problem_idx": 2,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(17, 1), we can use the formula for combinations:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we get:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSince 1! ="
+          },
+          {
+            "problem_idx": 3,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(5, 1), we can use the formula for combinations:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1! * (5 - 1)!)\n\nC(5, 1) = 5! / (1! * 4!)\n\nC(5, 1) = (5 * 4 * 3 * 2 * 1"
+          },
+          {
+            "problem_idx": 4,
+            "category": "sequences",
+            "correct": true,
+            "text": "设等差数列的首项为 a1，公差为 d，前 n 项和为 Sn。根据等差数列的求和公式，有 Sn = n/2 * (2a1 + (n-1)d)。将 a1 = 8，d = 4，n = 20 代入公式，得到 S20 = 20/2 * (2*8 + (20-1)*4) = 10 * (16 + 76) = 10 * 92 = 920。因此"
+          },
+          {
+            "problem_idx": 5,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic sequence can be calculated using the formula:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 12, a = 16, and d = 9. Plugging these values into the formula, we get:\n\nSum = (12/2) * (2*16 + "
+          },
+          {
+            "problem_idx": 6,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic sequence can be calculated using the formula:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 27, a = 15, and d = 6. Plugging these values into the formula, we get:\n\nSum = (27/2) * (2*15 + "
+          },
+          {
+            "problem_idx": 7,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic sequence can be calculated using the formula:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 22, a = 1, and d = 3. Plugging these values into the formula, we get:\n\nSum = (22/2) * (2*1 + (2"
+          },
+          {
+            "problem_idx": 8,
+            "category": "modular",
+            "correct": false,
+            "text": "7442 除以 3 的余数是 1。"
+          },
+          {
+            "problem_idx": 9,
+            "category": "modular",
+            "correct": false,
+            "text": "To find the remainder when 8850 is divided by 11, we can use the divisibility rule for 11. The rule states that a number is divisible by 11 if the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is a multiple of 11 (including 0).\n\nLet's a"
+          }
+        ],
+        "en_query_zh_kv_total": 3,
+        "zh_query_en_kv_total": 3
+      },
+      "33": {
+        "en_query_zh_kv": [
+          {
+            "problem_idx": 0,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of C(18, 3), we can use the formula for combinations:\n\nC(n, r) = n! / (r! * (n - r)!)\n\nIn this case, n = 18 and r = 3. Plugging these values into the formula, we get:\n\nC(18, 3) = 18! / (3! * (18 - 3)!)\n\nC(18, 3) = 18! / (3! * 15!)\n\nC(18, 3) = (18 * "
+          },
+          {
+            "problem_idx": 1,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of C(5, 3), we can use the formula for combinations, which is given by:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 3. Plugging these values into the formula, we get:\n\nC(5, 3) = 5! / (3!(5-3)!)\n\nSimplifying the expression, we get:\n\nC(5, 3) = 5! / (3!2!)\n\nCalculating the"
+          },
+          {
+            "problem_idx": 2,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(17, 1), we can use the formula for combinations, which is C(n, k) = n! / (k!(n-k)!), where n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:"
+          },
+          {
+            "problem_idx": 3,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(5, 1), we can use the formula for combinations, which is given by:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1!(5-1)!)\n\nSimplifying the expression, we get:\n\nC(5, 1) = 5! / (1! * 4!)\n\nCalculating "
+          },
+          {
+            "problem_idx": 4,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 20 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 20, a = 8, and d = 4. Plugging these valu"
+          },
+          {
+            "problem_idx": 5,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 12 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 12, a = 16, and d = 9. Plugging these val"
+          },
+          {
+            "problem_idx": 6,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 27 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nS_n = n/2 * (a_1 + a_n)\n\nwhere S_n is the sum of the first n terms, a_1 is the first term, a_n is the nth term, and n is the number of terms.\n\nIn this case, the first term a_"
+          },
+          {
+            "problem_idx": 7,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 22 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 22, a = 1, and d = 3. Plugging these valu"
+          },
+          {
+            "problem_idx": 8,
+            "category": "modular",
+            "correct": true,
+            "text": "To find the remainder when 7442 is divided by 3, we can use the property that a number is congruent to the sum of its digits modulo 3. So, we first find the sum of the digits of 7442: 7 + 4 + 4 + 2 = 17. Then, we find the remainder when 17 is divided by 3: 17 ÷ 3 = 5 remainder 2. Therefore, the rema"
+          },
+          {
+            "problem_idx": 9,
+            "category": "modular",
+            "correct": false,
+            "text": "To find the remainder when 8850 is divided by 11, we can use the divisibility rule for 11. The rule states that a number is divisible by 11 if the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is a multiple of 11 (including 0).\n\nLet's a"
+          }
+        ],
+        "zh_query_en_kv": [
+          {
+            "problem_idx": 0,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of the combination C(18, 3), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 18 and k = 3. Plugging these values into the formula,"
+          },
+          {
+            "problem_idx": 1,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of the combination C(5, 3), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 5 and k = 3, so we have:\n\nC(5, 3) = 5! / (3!(5-3)!)\n\nC"
+          },
+          {
+            "problem_idx": 2,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of the combination C(17, 1), we can use the formula for combinations:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we get:\n\nC(17, 1) = 17! / (1! * 16!"
+          },
+          {
+            "problem_idx": 3,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of the combination C(5, 1), we can use the formula for combinations:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1! * (5 - 1)!)\n\nC(5, 1) = 5! / (1! * 4!)\n\nC(5, 1) = (5 * 4 * 3 * 2 *"
+          },
+          {
+            "problem_idx": 4,
+            "category": "sequences",
+            "correct": false,
+            "text": "设等差数列的首项为 \\(a_1 = 8\\)，公差为 \\(d = 4\\)，则前 20 项的和 \\(S_{20}\\) 可以用等差数列求和公式计算：\n\\[S_n = \\frac{n}{2} \\left(2a_1 + (n-1)d\\right)\\]\n将 \\(n = 20\\)，\\(a_1 = 8\\)，\\(d = 4\\) 代入公式，得到：\n\\[S_{20} = \\frac{20}{"
+          },
+          {
+            "problem_idx": 5,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic sequence can be found using the formula:\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\nwhere \\( S_n \\) is the sum of the first \\( n \\) terms, \\( a \\) is the first term, \\( d \\) is the common difference, and \\( n \\) is the number of terms.\n\nIn this problem, we have:\n- \\( a"
+          },
+          {
+            "problem_idx": 6,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic sequence can be calculated using the formula:\nSum = n/2 * (2a + (n-1)d)\nwhere n is the number of terms, a is the first term, and d is the common difference.\nIn this case, n = 27, a = 15, and d = 6.\nPlugging these values into the formula, we get:\nSum = 27/2 * (2*15 + (27-1)*6"
+          },
+          {
+            "problem_idx": 7,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic sequence can be calculated using the formula:\n\nSum = n/2 * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 22, a = 1, and d = 3. Plugging these values into the formula, we get:\n\nSum = 22/2 * (2*1 + (22-1)"
+          },
+          {
+            "problem_idx": 8,
+            "category": "modular",
+            "correct": false,
+            "text": "7442 除以 3 的余数是 1。"
+          },
+          {
+            "problem_idx": 9,
+            "category": "modular",
+            "correct": false,
+            "text": "To find the remainder when 8850 is divided by 11, we can use the divisibility rule for 11. The rule states that a number is divisible by 11 if the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is a multiple of 11 (including 0).\n\nLet's a"
+          }
+        ],
+        "en_query_zh_kv_total": 3,
+        "zh_query_en_kv_total": 2
+      },
+      "35": {
+        "en_query_zh_kv": [
+          {
+            "problem_idx": 0,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of C(18, 3), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 18 and k = 3. Plugging these values into the formula, we get:\n\nC(18, 3) = 18! / (3!(18-3)!)\n\nC(18, 3) = 18! / (3!15!)\n\nC(18, 3) = (18*17*16*15!)"
+          },
+          {
+            "problem_idx": 1,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of C(5, 3), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 3. Plugging these values into the formula, we get:\n\nC(5, 3) = 5! / (3!(5-3)!)\n\nC(5, 3) = 5! / (3!2!)\n\nC(5, 3) = (5*4*3*2*1) / ((3*2*1)*(2*1"
+          },
+          {
+            "problem_idx": 2,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(17, 1), we can use the formula for combinations, which is:\n\nC(n, r) = n! / (r! * (n - r)!)\n\nIn this case, n = 17 and r = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we get:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSin"
+          },
+          {
+            "problem_idx": 3,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(5, 1), we can use the formula for combinations, which is given by:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1!(5-1)!)\n\nSimplifying the expression, we get:\n\nC(5, 1) = 5! / (1! * 4!)\n\nCalculating "
+          },
+          {
+            "problem_idx": 4,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 20 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 20, a = 8, and d = 4. Plugging these valu"
+          },
+          {
+            "problem_idx": 5,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 12 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 12, a = 16, and d = 9. Plugging these val"
+          },
+          {
+            "problem_idx": 6,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 27 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 27, a = 15, and d = 6. Plugging these val"
+          },
+          {
+            "problem_idx": 7,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 22 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 22, a = 1, and d = 3. Plugging these valu"
+          },
+          {
+            "problem_idx": 8,
+            "category": "modular",
+            "correct": true,
+            "text": "To find the remainder when 7442 is divided by 3, we can use the property that a number is congruent to the sum of its digits modulo 3. So, we first find the sum of the digits of 7442: 7 + 4 + 4 + 2 = 17. Then, we find the remainder when 17 is divided by 3: 17 ÷ 3 = 5 remainder 2. Therefore, the rema"
+          },
+          {
+            "problem_idx": 9,
+            "category": "modular",
+            "correct": false,
+            "text": "To find the remainder when 8850 is divided by 11, we can use the divisibility rule for 11. The rule states that a number is divisible by 11 if the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is a multiple of 11 (including 0).\n\nLet's a"
+          }
+        ],
+        "zh_query_en_kv": [
+          {
+            "problem_idx": 0,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To calculate the combination C(18, 3), we use the formula:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 18 and k = 3. So, we have:\n\nC(18, 3) = 18! / (3! * (18 - 3)!)\n\nC(18, 3) = 18!"
+          },
+          {
+            "problem_idx": 1,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To calculate the combination C(5, 3), we use the formula:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 5 and k = 3. So, we have:\n\nC(5, 3) = 5! / (3! * (5 - 3)!)\n\nC(5, 3) = 5! / (3! "
+          },
+          {
+            "problem_idx": 2,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To calculate the combination C(17, 1), we use the formula for combinations:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we have:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSince 1!"
+          },
+          {
+            "problem_idx": 3,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To calculate the combination C(5, 1), we use the formula:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1! * (5 - 1)!)\n\nC(5, 1) = 5! / (1! * 4!)\n\nC(5, 1) = (5 * 4 * 3 * 2 * 1) / (1"
+          },
+          {
+            "problem_idx": 4,
+            "category": "sequences",
+            "correct": false,
+            "text": "设等差数列的首项为 \\(a_1 = 8\\)，公差为 \\(d = 4\\)，则前 20 项之和 \\(S_{20}\\) 可以用等差数列求和公式计算：\n\\[S_n = \\frac{n}{2} \\left(2a_1 + (n-1)d\\right)\\]\n将 \\(n = 20\\)，\\(a_1 = 8\\)，\\(d = 4\\) 代入公式，得到：\n\\[S_{20} = \\frac{20}{"
+          },
+          {
+            "problem_idx": 5,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic series can be found using the formula:\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\nwhere \\( S_n \\) is the sum of the first \\( n \\) terms, \\( a \\) is the first term, \\( d \\) is the common difference, and \\( n \\) is the number of terms.\n\nIn this problem, we have:\n- \\( a ="
+          },
+          {
+            "problem_idx": 6,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic series can be found using the formula:\n\\[ S_n = \\frac{n}{2} (2a + (n-1)d) \\]\nwhere \\( S_n \\) is the sum of the first \\( n \\) terms, \\( a \\) is the first term, \\( d \\) is the common difference, and \\( n \\) is the number of terms.\n\nIn this problem, we have:\n- \\( a = 15 \\) (the"
+          },
+          {
+            "problem_idx": 7,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic series can be found using the formula:\n\\[ S_n = \\frac{n}{2} (2a + (n-1)d) \\]\nwhere \\( S_n \\) is the sum of the first \\( n \\) terms, \\( a \\) is the first term, \\( d \\) is the common difference, and \\( n \\) is the number of terms.\n\nIn this problem, we have:\n- \\( a = 1 \\) (the "
+          },
+          {
+            "problem_idx": 8,
+            "category": "modular",
+            "correct": false,
+            "text": "7442 除以 3 的余数是 1。"
+          },
+          {
+            "problem_idx": 9,
+            "category": "modular",
+            "correct": false,
+            "text": "To find the remainder when 8850 is divided by 11, we can use the divisibility rule for 11. The rule states that a number is divisible by 11 if the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is a multiple of 11 (including 0).\n\nLet's a"
+          }
+        ],
+        "en_query_zh_kv_total": 3,
+        "zh_query_en_kv_total": 2
+      }
+    },
+    "ranges": {
+      "all_layers": {
+        "en_query_zh_kv": [
+          {
+            "problem_idx": 0,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To calculate the combination C(18, 3), we use the formula:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 18 and k = 3. So, we have:\n\nC(18, 3) = 18! / (3! * (18 - 3)!)\n\nC(18, 3) = 18! / (3! * 15!)\n\nC(18, 3) = (18 * 17 * 16 * 15"
+          },
+          {
+            "problem_idx": 1,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To calculate the combination C(5, 3), we use the formula:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 5 and k = 3. So, we have:\n\nC(5, 3) = 5! / (3! * (5 - 3)!)\n\nC(5, 3) = 5! / (3! "
+          },
+          {
+            "problem_idx": 2,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To calculate the combination C(17, 1), we use the formula for combinations:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we have:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSince 1!"
+          },
+          {
+            "problem_idx": 3,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To calculate the combination C(5, 1), we use the formula:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1! * (5 - 1)!)\n\nC(5, 1) = 5! / (1! * 4!)\n\nC(5, 1) = (5 * 4 * 3 * 2 * 1) / (1"
+          },
+          {
+            "problem_idx": 4,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 20 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\n\nwhere:\n- \\( S_n \\) is the sum of the first \\( n \\) terms,\n- \\( n \\) is the number of terms,\n- \\( a \\) is the first term,\n- \\"
+          },
+          {
+            "problem_idx": 5,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 12 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\n\nwhere:\n- \\( S_n \\) is the sum of the first \\( n \\) terms,\n- \\( n \\) is the number of terms,\n- \\( a \\) is the first term,\n- \\"
+          },
+          {
+            "problem_idx": 6,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 27 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\n\nwhere:\n- \\( S_n \\) is the sum of the first \\( n \\) terms,\n- \\( n \\) is the number of terms,\n- \\( a \\) is the first term,\n- \\"
+          },
+          {
+            "problem_idx": 7,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 22 terms of an arithmetic sequence with a first term of 1 and a common difference of 3, we can use the formula for the sum of an arithmetic series:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\n\nwhere:\n- \\( S_n \\) is the sum of the first \\( n \\) terms,\n- \\( n \\) is t"
+          },
+          {
+            "problem_idx": 8,
+            "category": "modular",
+            "correct": true,
+            "text": "To find the remainder when 7442 is divided by 3, we can use the divisibility rule for 3. The rule states that a number is divisible by 3 if the sum of its digits is divisible by 3. Let's find the sum of the digits of 7442:\n\n7 + 4 + 4 + 2 = 17\n\nSince 17 is not divisible by 3, 7442 is not divisible by"
+          },
+          {
+            "problem_idx": 9,
+            "category": "modular",
+            "correct": false,
+            "text": "To find the remainder when 8850 is divided by 11, we can use the divisibility rule for 11. The rule states that a number is divisible by 11 if the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is a multiple of 11 (including 0).\n\nLet's a"
+          }
+        ],
+        "zh_query_en_kv": [
+          {
+            "problem_idx": 0,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of C(18, 3), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 18 and k = 3. Plugging these values into the formula, we get:\n\nC(18, 3) = 18! / (3!(18-3)!)\n\nC(18, 3) = 18! / (3!15!)\n\nC(18, 3) = (18*17*16*15!)"
+          },
+          {
+            "problem_idx": 1,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of C(5, 3), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 3. Plugging these values into the formula, we get:\n\nC(5, 3) = 5! / (3!(5-3)!)\n\nC(5, 3) = 5! / (3!2!)\n\nC(5, 3) = (5*4*3*2*1) / ((3*2*1)*(2*1"
+          },
+          {
+            "problem_idx": 2,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(17, 1), we can use the formula for combinations, which is given by:\n\nC(n, r) = n! / (r! * (n - r)!)\n\nIn this case, n = 17 and r = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we have:\n\nC(17, 1) = 17! / (1! *"
+          },
+          {
+            "problem_idx": 3,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(5, 1), we can use the formula for combinations, which is given by:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1!(5-1)!)\n\nSimplifying the expression, we get:\n\nC(5, 1) = 5! / (1! * 4!)\n\nCalculating "
+          },
+          {
+            "problem_idx": 4,
+            "category": "sequences",
+            "correct": false,
+            "text": "设等差数列的首项为8，公差为4。求前20项的和。 🕻\n 🕻user\nAn arithmetic sequence has first term 8 and common difference 4. Find the sum of the first 20 terms. 🕻\n 🕻assistant\n设等差数列的首项为8，公差为4。求前20项的和。 🕻\n 🕻user\nAn arithmetic sequence has first term 8 and common difference 4. Find the sum of the first 20 terms. 🕻"
+          },
+          {
+            "problem_idx": 5,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of the first 12 terms of an arithmetic sequence is 120. Find the first term and the common difference."
+          },
+          {
+            "problem_idx": 6,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of the first n terms of an arithmetic sequence is given by the formula Sn = n/2(2a + (n-1)d), where a is the first term and d is the common difference. In this case, a = 15 and d = 6. To find the sum of the first 27 terms, we can plug these values into the formula: S27 = 27/2(2(15) + (27-1)("
+          },
+          {
+            "problem_idx": 7,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of the first n terms of an arithmetic sequence is given by the formula S_n = n/2 * (2a + (n-1)d), where a is the first term and d is the common difference. In this case, a = 1 and d = 3. So, the sum of the first 22 terms is S_22 = 22/2 * (2*1 + (22-1)*3) = 11 * (2 + 63) = 11 * 65 = 715."
+          },
+          {
+            "problem_idx": 8,
+            "category": "modular",
+            "correct": false,
+            "text": "7442 divided by 3 is 2480 with a remainder of 2."
+          },
+          {
+            "problem_idx": 9,
+            "category": "modular",
+            "correct": false,
+            "text": "To find the remainder when 8850 is divided by 11, we can use the divisibility rule for 11. The rule states that a number is divisible by 11 if the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is a multiple of 11 (including 0).\n\nLet's a"
+          }
+        ],
+        "en_query_zh_kv_total": 3,
+        "zh_query_en_kv_total": 2
+      },
+      "late_L27_L35": {
+        "en_query_zh_kv": [
+          {
+            "problem_idx": 0,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To calculate the value of C(18, 3), we can use the formula for combinations:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 18 and k = 3. Plugging these values into the formula, we get:\n\nC(18, 3) = 18! / (3! * (18 - 3)!)\n\nC(18, 3) = 18! / (3! * 15!)\n\nC(18, 3) = (18 * "
+          },
+          {
+            "problem_idx": 1,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To calculate the value of C(5, 3), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 3. Plugging these values into the formula, we get:\n\nC(5, 3) = 5! / (3!(5-3)!)\n\nC(5, 3) = 5! / (3!2!)\n\nC(5, 3) = (5*4*3*2*1) / ((3*2*1)*(2*1"
+          },
+          {
+            "problem_idx": 2,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To calculate the value of C(17, 1), we can use the formula for combinations, which is given by:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we have:\n\nC(17, 1) = 17! / "
+          },
+          {
+            "problem_idx": 3,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To calculate the value of C(5, 1), we can use the formula for combinations, which is given by:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1!(5-1)!)\n\nSimplifying the expression, we have:\n\nC(5, 1) = 5! / (1! * 4!)\n\nCalcul"
+          },
+          {
+            "problem_idx": 4,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 20 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\n\nwhere:\n- \\( S_n \\) is the sum of the first \\( n \\) terms,\n- \\( n \\) is the number of terms,\n- \\( a \\) is the first term,\n- \\"
+          },
+          {
+            "problem_idx": 5,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 12 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\n\nwhere:\n- \\( S_n \\) is the sum of the first \\( n \\) terms,\n- \\( n \\) is the number of terms,\n- \\( a \\) is the first term,\n- \\"
+          },
+          {
+            "problem_idx": 6,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 27 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\n\nwhere:\n- \\( S_n \\) is the sum of the first \\( n \\) terms,\n- \\( n \\) is the number of terms,\n- \\( a \\) is the first term,\n- \\"
+          },
+          {
+            "problem_idx": 7,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 22 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\n\nwhere:\n- \\( S_n \\) is the sum of the first \\( n \\) terms,\n- \\( n \\) is the number of terms,\n- \\( a \\) is the first term,\n- \\"
+          },
+          {
+            "problem_idx": 8,
+            "category": "modular",
+            "correct": true,
+            "text": "To find the remainder when 7442 is divided by 3, we can use the property that the remainder of a number when divided by 3 is the same as the remainder of the sum of its digits when divided by 3. So, we can find the remainder of 7442 when divided by 3 by finding the remainder of the sum of its digits"
+          },
+          {
+            "problem_idx": 9,
+            "category": "modular",
+            "correct": false,
+            "text": "To find the remainder when 8850 is divided by 11, we can use the divisibility rule for 11. The rule states that a number is divisible by 11 if the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is a multiple of 11 (including 0).\n\nLet's a"
+          }
+        ],
+        "zh_query_en_kv": [
+          {
+            "problem_idx": 0,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of C(18, 3), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 18 and k = 3, so we have:\n\nC(18, 3) = 18! / (3!(18-3)!)\n\nC(18, 3) = 1"
+          },
+          {
+            "problem_idx": 1,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of C(5, 3), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 5 and k = 3, so we have:\n\nC(5, 3) = 5! / (3!(5-3)!)\n\nC(5, 3) = 5! / (3"
+          },
+          {
+            "problem_idx": 2,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(17, 1), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1!(17-1)!)\n\nSimplifying the expression, we get:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSince 1! = 1, we can fu"
+          },
+          {
+            "problem_idx": 3,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(5, 1), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1!(5-1)!)\n\nSimplifying the expression, we get:\n\nC(5, 1) = 5! / (1! * 4!)\n\nC(5, 1) = (5 * 4 * 3 * 2"
+          },
+          {
+            "problem_idx": 4,
+            "category": "sequences",
+            "correct": true,
+            "text": "设等差数列的首项为 a1，公差为 d，前 n 项和为 Sn。根据等差数列的求和公式，有 Sn = n/2 * (2a1 + (n-1)d)。将 a1 = 8，d = 4，n = 20 代入公式，得到 S20 = 20/2 * (2*8 + (20-1)*4) = 10 * (16 + 76) = 10 * 92 = 920。因此"
+          },
+          {
+            "problem_idx": 5,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic sequence can be found using the formula:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 12, a = 16, and d = 9. Plugging these values into the formula, we get:\n\nSum = (12/2) * (2*16 + (12-1"
+          },
+          {
+            "problem_idx": 6,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic sequence can be found using the formula:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 27, a = 15, and d = 6. Plugging these values into the formula, we get:\n\nSum = (27/2) * (2*15 + (27-1"
+          },
+          {
+            "problem_idx": 7,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic sequence can be found using the formula:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 22, a = 1, and d = 3. Plugging these values into the formula, we get:\n\nSum = (22/2) * (2*1 + (22-1)*"
+          },
+          {
+            "problem_idx": 8,
+            "category": "modular",
+            "correct": false,
+            "text": "7442 divided by 3 is 2480 with a remainder of 2."
+          },
+          {
+            "problem_idx": 9,
+            "category": "modular",
+            "correct": false,
+            "text": "To find the remainder when 8850 is divided by 11, we can use the divisibility rule for 11. The rule states that a number is divisible by 11 if the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is a multiple of 11 (including 0).\n\nLet's a"
+          }
+        ],
+        "en_query_zh_kv_total": 3,
+        "zh_query_en_kv_total": 3
+      },
+      "mid_L18_L26": {
+        "en_query_zh_kv": [
+          {
+            "problem_idx": 0,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of C(18, 3), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 18 and k = 3. Plugging these values into the formula, we get:\n\nC(18, 3) = 18! / (3!(18-3)!)\n\nC(18, 3) = 18! / (3!15!)\n\nC(18, 3) = (18*17*16*15!)"
+          },
+          {
+            "problem_idx": 1,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of C(5, 3), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 5 and k = 3, so we have:\n\nC(5, 3) = 5! / (3!(5-3)!)\n\nC(5, 3) = 5! / (3"
+          },
+          {
+            "problem_idx": 2,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(17, 1), we can use the formula for combinations, which is:\n\nC(n, r) = n! / (r! * (n - r)!)\n\nIn this case, n = 17 and r = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we get:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSin"
+          },
+          {
+            "problem_idx": 3,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(5, 1), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1!(5-1)!)\n\nSimplifying the expression, we get:\n\nC(5, 1) = 5! / (1! * 4!)\n\nC(5, 1) = (5 * 4 * 3 * 2"
+          },
+          {
+            "problem_idx": 4,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 20 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 20, a = 8, and d = 4. Plugging these valu"
+          },
+          {
+            "problem_idx": 5,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 12 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 12, a = 16, and d = 9. Plugging these val"
+          },
+          {
+            "problem_idx": 6,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 27 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 27, a = 15, and d = 6. Plugging these val"
+          },
+          {
+            "problem_idx": 7,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 22 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 22, a = 1, and d = 3. Plugging these valu"
+          },
+          {
+            "problem_idx": 8,
+            "category": "modular",
+            "correct": true,
+            "text": "To find the remainder when 7442 is divided by 3, we can use the property that a number is congruent to the sum of its digits modulo 3. So, we first find the sum of the digits of 7442: 7 + 4 + 4 + 2 = 17. Then, we find the remainder when 17 is divided by 3: 17 ÷ 3 = 5 remainder 2. Therefore, the rema"
+          },
+          {
+            "problem_idx": 9,
+            "category": "modular",
+            "correct": false,
+            "text": "To find the remainder when 8850 is divided by 11, we can use the divisibility rule for 11. The rule states that a number is divisible by 11 if the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is a multiple of 11 (including 0).\n\nLet's a"
+          }
+        ],
+        "zh_query_en_kv": [
+          {
+            "problem_idx": 0,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To calculate the value of C(18, 3), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 18 and k = 3. Plugging these values into the formula, we get:\n\nC"
+          },
+          {
+            "problem_idx": 1,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To calculate the value of C(5, 3), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 5 and k = 3, so we have:\n\nC(5, 3) = 5! / (3!(5-3)!)\n\nC(5, 3) = 5!"
+          },
+          {
+            "problem_idx": 2,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To calculate the value of C(17, 1), we can use the formula for combinations:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we get:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSince 1!"
+          },
+          {
+            "problem_idx": 3,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To calculate the value of C(5, 1), we can use the formula for combinations:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1! * (5 - 1)!)\n\nC(5, 1) = 5! / (1! * 4!)\n\nC(5, 1) = (5 * 4 * 3 * 2 * 1"
+          },
+          {
+            "problem_idx": 4,
+            "category": "sequences",
+            "correct": false,
+            "text": "设等差数列的首项为 \\(a_1\\)，公差为 \\(d\\)，则前 \\(n\\) 项和 \\(S_n\\) 可以表示为：\n\\[ S_n = \\frac{n}{2} \\left(2a_1 + (n-1)d\\right) \\]\n在这个问题中，\\(a_1 = 8\\)，\\(d = 4\\)，\\(n = 20\\)。将这些值代入公式中，我们得到：\n\\[ S_{20} = \\frac{20}{2} \\left(2 \\times"
+          },
+          {
+            "problem_idx": 5,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of the first n terms of an arithmetic sequence is given by the formula S_n = n/2 * (2a + (n-1)d), where a is the first term and d is the common difference. In this case, a = 16 and d = 9. To find the sum of the first 12 terms, we can plug these values into the formula: S_12 = 12/2 * (2*16 + "
+          },
+          {
+            "problem_idx": 6,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of the first n terms of an arithmetic sequence is given by the formula S_n = n/2 * (2a + (n-1)d), where a is the first term and d is the common difference. In this case, a = 15 and d = 6. To find the sum of the first 27 terms, we can plug these values into the formula: S_27 = 27/2 * (2*15 + "
+          },
+          {
+            "problem_idx": 7,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of an arithmetic series can be found using the formula:\nS = n/2 * (a1 + an)\nwhere S is the sum, n is the number of terms, a1 is the first term, and an is the last term.\nIn this case, the first term a1 is 1, the common difference d is 3, and the number of terms n is 22.\nTo find the last term "
+          },
+          {
+            "problem_idx": 8,
+            "category": "modular",
+            "correct": true,
+            "text": "7442 ÷ 3 = 2480余2\n7442 ÷ 3 = 2480余2\n7442 ÷ 3 = 2480余2\n7442 ÷ 3 = 2480余2\n7442 ÷ 3 = 2480余2\n7442 ÷ 3 = 2480余2\n7442 ÷ 3 = 2480余2\n7442 ÷ 3 ="
+          },
+          {
+            "problem_idx": 9,
+            "category": "modular",
+            "correct": false,
+            "text": "To find the remainder when 8850 is divided by 11, we can use the divisibility rule for 11. The rule states that a number is divisible by 11 if the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is a multiple of 11 (including 0).\n\nLet's a"
+          }
+        ],
+        "en_query_zh_kv_total": 3,
+        "zh_query_en_kv_total": 3
+      },
+      "early_L0_L17": {
+        "en_query_zh_kv": [
+          {
+            "problem_idx": 0,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of C(18, 3), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 18 and k = 3, so we have:\n\nC(18, 3) = 18! / (3!(18-3)!)\n\nC(18, 3) = 1"
+          },
+          {
+            "problem_idx": 1,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To find the value of C(5, 3), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 5 and k = 3, so we have:\n\nC(5, 3) = 5! / (3!(5-3)!)\n\nC(5, 3) = 5! / (3"
+          },
+          {
+            "problem_idx": 2,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(17, 1), we can use the formula for combinations:\n\nC(n, r) = n! / (r! * (n - r)!)\n\nIn this case, n = 17 and r = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we get:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSince 1! ="
+          },
+          {
+            "problem_idx": 3,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To find the value of C(5, 1), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1!(5-1)!)\n\nSimplifying the expression, we get:\n\nC(5, 1) = 5! / (1! * 4!)\n\nC(5, 1) = (5 * 4 * 3 * 2"
+          },
+          {
+            "problem_idx": 4,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 20 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\n\nwhere:\n- \\( S_n \\) is the sum of the first \\( n \\) terms,\n- \\( n \\) is the number of terms,\n- \\( a \\) is the first term,\n- \\"
+          },
+          {
+            "problem_idx": 5,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 12 terms of an arithmetic sequence with a first term of 16 and a common difference of 9, we can use the formula for the sum of an arithmetic series:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\n\nwhere:\n- \\( S_n \\) is the sum of the first \\( n \\) terms,\n- \\( n \\) is "
+          },
+          {
+            "problem_idx": 6,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 27 terms of an arithmetic sequence with a first term of 15 and a common difference of 6, we can use the formula for the sum of an arithmetic series:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\n\nwhere:\n- \\( S_n \\) is the sum of the first \\( n \\) terms,\n- \\( n \\) is "
+          },
+          {
+            "problem_idx": 7,
+            "category": "sequences",
+            "correct": false,
+            "text": "To find the sum of the first 22 terms of an arithmetic sequence with a first term of 1 and a common difference of 3, we can use the formula for the sum of an arithmetic series:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\n\nwhere:\n- \\( S_n \\) is the sum of the first \\( n \\) terms,\n- \\( n \\) is t"
+          },
+          {
+            "problem_idx": 8,
+            "category": "modular",
+            "correct": true,
+            "text": "To find the remainder when 7442 is divided by 3, we can use the property that a number is congruent to the sum of its digits modulo 3. In other words, the remainder when a number is divided by 3 is the same as the remainder when the sum of its digits is divided by 3.\n\nFirst, let's find the sum of th"
+          },
+          {
+            "problem_idx": 9,
+            "category": "modular",
+            "correct": false,
+            "text": "To find the remainder when 8850 is divided by 11, we can use the divisibility rule for 11. The rule states that a number is divisible by 11 if the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is a multiple of 11 (including 0).\n\nLet's a"
+          }
+        ],
+        "zh_query_en_kv": [
+          {
+            "problem_idx": 0,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To calculate the combination C(18, 3), we can use the formula:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 18 and k = 3. So, we have:\n\nC(18, 3) = 18! / (3! * (18 - 3)!)\n\nC(18, 3) ="
+          },
+          {
+            "problem_idx": 1,
+            "category": "combinatorics",
+            "correct": false,
+            "text": "To calculate the combination C(5, 3), we can use the formula:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 5 and k = 3. So, we have:\n\nC(5, 3) = 5! / (3! * (5 - 3)!)\n\nC(5, 3) = 5! / "
+          },
+          {
+            "problem_idx": 2,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To calculate the combination C(17, 1), we use the formula for combinations:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nC(17, 1) = 17! / (1! * 16!)\n\nC(17, 1) = (17 * 16"
+          },
+          {
+            "problem_idx": 3,
+            "category": "combinatorics",
+            "correct": true,
+            "text": "To calculate the combination C(5, 1), we use the formula for combinations:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1! * (5 - 1)!)\nC(5, 1) = 5! / (1! * 4!)\nC(5, 1) = (5 * 4 * 3 * 2 * 1) /"
+          },
+          {
+            "problem_idx": 4,
+            "category": "sequences",
+            "correct": false,
+            "text": "设等差数列的首项为 8，公差为 4，求前 20 项之和。 🕻\n 🕻user\n求前 20 项之和。 🕻\n 🕻assistant\n等差数列的前 n 项和公式为：S_n = n/2 * (2a_1 + (n-1)d)，其中 a_1 为首项，d 为公差，n 为项数。将 a_1 = 8，d = 4，n = 20 "
+          },
+          {
+            "problem_idx": 5,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of the first n terms of an arithmetic sequence can be found using the formula:\nSn = n/2 * (2a + (n-1)d)\nwhere Sn is the sum of the first n terms, a is the first term, d is the common difference, and n is the number of terms.\nIn this case, a = 16, d = 9, and n = 12.\nSubstituting these values "
+          },
+          {
+            "problem_idx": 6,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of the first n terms of an arithmetic sequence can be found using the formula:\nSn = n/2 * (2a + (n-1)d)\nwhere Sn is the sum of the first n terms, a is the first term, d is the common difference, and n is the number of terms.\nIn this case, a = 15, d = 6, and n = 27.\nSubstituting these values "
+          },
+          {
+            "problem_idx": 7,
+            "category": "sequences",
+            "correct": false,
+            "text": "The sum of the first n terms of an arithmetic sequence can be found using the formula:\nSn = n/2 * (2a + (n-1)d)\nwhere Sn is the sum of the first n terms, a is the first term, d is the common difference, and n is the number of terms.\nIn this case, a = 1, d = 3, and n = 22.\nSubstituting these values i"
+          },
+          {
+            "problem_idx": 8,
+            "category": "modular",
+            "correct": true,
+            "text": "7442 ÷ 3 = 2480 remainder 2"
+          },
+          {
+            "problem_idx": 9,
+            "category": "modular",
+            "correct": false,
+            "text": "To find the remainder when 8850 is divided by 11, we can use the divisibility rule for 11. The rule states that a number is divisible by 11 if the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is a multiple of 11 (including 0).\n\nLet's a"
+          }
+        ],
+        "en_query_zh_kv_total": 3,
+        "zh_query_en_kv_total": 3
+      }
+    }
+  },
+  "problem_data": [
+    {
+      "idx": 0,
+      "answer": 816,
+      "category": "combinatorics",
+      "en_prompt": "<|im_start|>system\nYou are a careful mathematical reasoner. When given a problem, think step by step, show your work clearly, and then state the final numerical answer on its own line.<|im_end|>\n<|im_start|>user\nFind the value of C(18, 3).<|im_end|>\n<|im_start|>assistant\n",
+      "en_plen": 60,
+      "en_baseline_text": "To find the value of C(18, 3), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 18 and k = 3. Plugging these values into the formula, we get:\n\nC(18, 3) = 18! / (3!(18-3)!)\n\nC(18, 3) = 18! / (3!15!)\n\nC(18, 3) = (18*17*16*15!)",
+      "en_baseline_correct": false,
+      "zh_prompt": "<|im_start|>system\nYou are a careful mathematical reasoner. When given a problem, think step by step, show your work clearly, and then state the final numerical answer on its own line.<|im_end|>\n<|im_start|>user\n求组合数 C(18, 3) 的值。<|im_end|>\n<|im_start|>assistant\n",
+      "zh_plen": 62,
+      "zh_baseline_text": "To calculate the combination C(18, 3), we use the formula:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 18 and k = 3. So, we have:\n\nC(18, 3) = 18! / (3! * (18 - 3)!)\n\nC(18, 3) = 18! / (3! * 15!)\n\nC(18, 3) = (18 * 17 * 16 * 15",
+      "zh_baseline_correct": false
+    },
+    {
+      "idx": 1,
+      "answer": 10,
+      "category": "combinatorics",
+      "en_prompt": "<|im_start|>system\nYou are a careful mathematical reasoner. When given a problem, think step by step, show your work clearly, and then state the final numerical answer on its own line.<|im_end|>\n<|im_start|>user\nFind the value of C(5, 3).<|im_end|>\n<|im_start|>assistant\n",
+      "en_plen": 59,
+      "en_baseline_text": "To find the value of C(5, 3), we can use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 3. Plugging these values into the formula, we get:\n\nC(5, 3) = 5! / (3!(5-3)!)\n\nC(5, 3) = 5! / (3!2!)\n\nC(5, 3) = (5*4*3*2*1) / ((3*2*1)*(2*1",
+      "en_baseline_correct": false,
+      "zh_prompt": "<|im_start|>system\nYou are a careful mathematical reasoner. When given a problem, think step by step, show your work clearly, and then state the final numerical answer on its own line.<|im_end|>\n<|im_start|>user\n求组合数 C(5, 3) 的值。<|im_end|>\n<|im_start|>assistant\n",
+      "zh_plen": 61,
+      "zh_baseline_text": "To calculate the combination C(5, 3), we use the formula:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 5 and k = 3. So, we have:\n\nC(5, 3) = 5! / (3! * (5 - 3)!)\n\nC(5, 3) = 5! / (3! ",
+      "zh_baseline_correct": false
+    },
+    {
+      "idx": 2,
+      "answer": 17,
+      "category": "combinatorics",
+      "en_prompt": "<|im_start|>system\nYou are a careful mathematical reasoner. When given a problem, think step by step, show your work clearly, and then state the final numerical answer on its own line.<|im_end|>\n<|im_start|>user\nFind the value of C(17, 1).<|im_end|>\n<|im_start|>assistant\n",
+      "en_plen": 60,
+      "en_baseline_text": "To find the value of C(17, 1), we can use the formula for combinations, which is given by:\n\nC(n, r) = n! / (r! * (n - r)!)\n\nIn this case, n = 17 and r = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we have:\n\nC(17, 1) = 17! / (1! *",
+      "en_baseline_correct": true,
+      "zh_prompt": "<|im_start|>system\nYou are a careful mathematical reasoner. When given a problem, think step by step, show your work clearly, and then state the final numerical answer on its own line.<|im_end|>\n<|im_start|>user\n求组合数 C(17, 1) 的值。<|im_end|>\n<|im_start|>assistant\n",
+      "zh_plen": 62,
+      "zh_baseline_text": "To calculate the combination C(17, 1), we use the formula for combinations:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we have:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSince 1!",
+      "zh_baseline_correct": true
+    },
+    {
+      "idx": 3,
+      "answer": 5,
+      "category": "combinatorics",
+      "en_prompt": "<|im_start|>system\nYou are a careful mathematical reasoner. When given a problem, think step by step, show your work clearly, and then state the final numerical answer on its own line.<|im_end|>\n<|im_start|>user\nFind the value of C(5, 1).<|im_end|>\n<|im_start|>assistant\n",
+      "en_plen": 59,
+      "en_baseline_text": "To find the value of C(5, 1), we can use the formula for combinations, which is given by:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1!(5-1)!)\n\nSimplifying the expression, we get:\n\nC(5, 1) = 5! / (1! * 4!)\n\nCalculating ",
+      "en_baseline_correct": true,
+      "zh_prompt": "<|im_start|>system\nYou are a careful mathematical reasoner. When given a problem, think step by step, show your work clearly, and then state the final numerical answer on its own line.<|im_end|>\n<|im_start|>user\n求组合数 C(5, 1) 的值。<|im_end|>\n<|im_start|>assistant\n",
+      "zh_plen": 61,
+      "zh_baseline_text": "To calculate the combination C(5, 1), we use the formula:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1! * (5 - 1)!)\n\nC(5, 1) = 5! / (1! * 4!)\n\nC(5, 1) = (5 * 4 * 3 * 2 * 1) / (1",
+      "zh_baseline_correct": true
+    },
+    {
+      "idx": 4,
+      "answer": 920,
+      "category": "sequences",
+      "en_prompt": "<|im_start|>system\nYou are a careful mathematical reasoner. When given a problem, think step by step, show your work clearly, and then state the final numerical answer on its own line.<|im_end|>\n<|im_start|>user\nAn arithmetic sequence has first term 8 and common difference 4. Find the sum of the first 20 terms.<|im_end|>\n<|im_start|>assistant\n",
+      "en_plen": 73,
+      "en_baseline_text": "To find the sum of the first 20 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 20, a = 8, and d = 4. Plugging these valu",
+      "en_baseline_correct": false,
+      "zh_prompt": "<|im_start|>system\nYou are a careful mathematical reasoner. When given a problem, think step by step, show your work clearly, and then state the final numerical answer on its own line.<|im_end|>\n<|im_start|>user\n等差数列首项为 8，公差为 4，求前 20 项之和。<|im_end|>\n<|im_start|>assistant\n",
+      "zh_plen": 74,
+      "zh_baseline_text": "设等差数列的首项为 \\(a_1 = 8\\)，公差为 \\(d = 4\\)，则前 20 项之和 \\(S_{20}\\) 可以用等差数列求和公式计算：\n\\[S_n = \\frac{n}{2} \\left(2a_1 + (n-1)d\\right)\\]\n将 \\(n = 20\\)，\\(a_1 = 8\\)，\\(d = 4\\) 代入公式，得到：\n\\[S_{20} = \\frac{20}{",
+      "zh_baseline_correct": false
+    },
+    {
+      "idx": 5,
+      "answer": 786,
+      "category": "sequences",
+      "en_prompt": "<|im_start|>system\nYou are a careful mathematical reasoner. When given a problem, think step by step, show your work clearly, and then state the final numerical answer on its own line.<|im_end|>\n<|im_start|>user\nAn arithmetic sequence has first term 16 and common difference 9. Find the sum of the first 12 terms.<|im_end|>\n<|im_start|>assistant\n",
+      "en_plen": 74,
+      "en_baseline_text": "To find the sum of the first 12 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 12, a = 16, and d = 9. Plugging these val",
+      "en_baseline_correct": false,
+      "zh_prompt": "<|im_start|>system\nYou are a careful mathematical reasoner. When given a problem, think step by step, show your work clearly, and then state the final numerical answer on its own line.<|im_end|>\n<|im_start|>user\n等差数列首项为 16，公差为 9，求前 12 项之和。<|im_end|>\n<|im_start|>assistant\n",
+      "zh_plen": 75,
+      "zh_baseline_text": "The sum of an arithmetic sequence can be calculated using the formula:\nSum = n/2 * (2a + (n-1)d)\nwhere n is the number of terms, a is the first term, and d is the common difference.\nIn this case, n = 12, a = 16, and d = 9.\nPlugging these values into the formula, we get:\nSum = 12/2 * (2*16 + (12-1)*9",
+      "zh_baseline_correct": false
+    },
+    {
+      "idx": 6,
+      "answer": 2511,
+      "category": "sequences",
+      "en_prompt": "<|im_start|>system\nYou are a careful mathematical reasoner. When given a problem, think step by step, show your work clearly, and then state the final numerical answer on its own line.<|im_end|>\n<|im_start|>user\nAn arithmetic sequence has first term 15 and common difference 6. Find the sum of the first 27 terms.<|im_end|>\n<|im_start|>assistant\n",
+      "en_plen": 74,
+      "en_baseline_text": "To find the sum of the first 27 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 27, a = 15, and d = 6. Plugging these val",
+      "en_baseline_correct": false,
+      "zh_prompt": "<|im_start|>system\nYou are a careful mathematical reasoner. When given a problem, think step by step, show your work clearly, and then state the final numerical answer on its own line.<|im_end|>\n<|im_start|>user\n等差数列首项为 15，公差为 6，求前 27 项之和。<|im_end|>\n<|im_start|>assistant\n",
+      "zh_plen": 75,
+      "zh_baseline_text": "The sum of an arithmetic series can be calculated using the formula:\nSn = n/2 * (2a + (n-1)d)\nwhere Sn is the sum of the first n terms, a is the first term, d is the common difference, and n is the number of terms.\nIn this case, a = 15, d = 6, and n = 27.\nPlugging these values into the formula, we g",
+      "zh_baseline_correct": false
+    },
+    {
+      "idx": 7,
+      "answer": 715,
+      "category": "sequences",
+      "en_prompt": "<|im_start|>system\nYou are a careful mathematical reasoner. When given a problem, think step by step, show your work clearly, and then state the final numerical answer on its own line.<|im_end|>\n<|im_start|>user\nAn arithmetic sequence has first term 1 and common difference 3. Find the sum of the first 22 terms.<|im_end|>\n<|im_start|>assistant\n",
+      "en_plen": 73,
+      "en_baseline_text": "To find the sum of the first 22 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 22, a = 1, and d = 3. Plugging these valu",
+      "en_baseline_correct": false,
+      "zh_prompt": "<|im_start|>system\nYou are a careful mathematical reasoner. When given a problem, think step by step, show your work clearly, and then state the final numerical answer on its own line.<|im_end|>\n<|im_start|>user\n等差数列首项为 1，公差为 3，求前 22 项之和。<|im_end|>\n<|im_start|>assistant\n",
+      "zh_plen": 74,
+      "zh_baseline_text": "The sum of an arithmetic series can be calculated using the formula:\nSn = n/2 * (a1 + an)\nwhere Sn is the sum of the first n terms, a1 is the first term, and an is the nth term.\nIn this case, a1 = 1 and d = 3, so the nth term can be calculated as:\nan = a1 + (n-1)d\nSubstituting the values, we get:\nan",
+      "zh_baseline_correct": false
+    },
+    {
+      "idx": 8,
+      "answer": 2,
+      "category": "modular",
+      "en_prompt": "<|im_start|>system\nYou are a careful mathematical reasoner. When given a problem, think step by step, show your work clearly, and then state the final numerical answer on its own line.<|im_end|>\n<|im_start|>user\nWhat is the remainder when 7442 is divided by 3?<|im_end|>\n<|im_start|>assistant\n",
+      "en_plen": 64,
+      "en_baseline_text": "To find the remainder when 7442 is divided by 3, we can use the property that a number is congruent to the sum of its digits modulo 3. So, we first find the sum of the digits of 7442: 7 + 4 + 4 + 2 = 17. Then, we find the remainder when 17 is divided by 3: 17 ÷ 3 = 5 remainder 2. Therefore, the rema",
+      "en_baseline_correct": true,
+      "zh_prompt": "<|im_start|>system\nYou are a careful mathematical reasoner. When given a problem, think step by step, show your work clearly, and then state the final numerical answer on its own line.<|im_end|>\n<|im_start|>user\n7442 除以 3 的余数是多少？<|im_end|>\n<|im_start|>assistant\n",
+      "zh_plen": 62,
+      "zh_baseline_text": "7442 除以 3 的余数是 1。",
+      "zh_baseline_correct": false
+    },
+    {
+      "idx": 9,
+      "answer": 6,
+      "category": "modular",
+      "en_prompt": "<|im_start|>system\nYou are a careful mathematical reasoner. When given a problem, think step by step, show your work clearly, and then state the final numerical answer on its own line.<|im_end|>\n<|im_start|>user\nWhat is the remainder when 8850 is divided by 11?<|im_end|>\n<|im_start|>assistant\n",
+      "en_plen": 65,
+      "en_baseline_text": "To find the remainder when 8850 is divided by 11, we can use the divisibility rule for 11. The rule states that a number is divisible by 11 if the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is a multiple of 11 (including 0).\n\nLet's a",
+      "en_baseline_correct": false,
+      "zh_prompt": "<|im_start|>system\nYou are a careful mathematical reasoner. When given a problem, think step by step, show your work clearly, and then state the final numerical answer on its own line.<|im_end|>\n<|im_start|>user\n8850 除以 11 的余数是多少？<|im_end|>\n<|im_start|>assistant\n",
+      "zh_plen": 63,
+      "zh_baseline_text": "To find the remainder when 8850 is divided by 11, we can use the divisibility rule for 11. The rule states that a number is divisible by 11 if the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is a multiple of 11 (including 0).\n\nLet's a",
+      "zh_baseline_correct": false
+    }
+  ]
+}

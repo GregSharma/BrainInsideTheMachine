@@ -1,0 +1,246 @@
+{
+  "L28": {
+    "pc0_zh_proj": -30.962196350097656,
+    "pc0_en_proj": 30.962200164794922,
+    "conditions": {
+      "natural_zh": [
+        {
+          "prompt_idx": 0,
+          "generation": "根据数学中的运算顺序，先进行乘法运算，再进行加法运算。因此，2 + 3 × 4 = 2 + 12 = 14。所以，2 + 3 × 4 的值为14。",
+          "mlp_input_pc0": -6.846944808959961,
+          "mlp_output_pc0": -4.507900714874268,
+          "residual_before_pc0": -28.255115509033203,
+          "residual_after_pc0": -28.255115509033203
+        },
+        {
+          "prompt_idx": 1,
+          "generation": "矩形的面积可以通过长乘以宽来计算。根据题目给出的数据，矩形的长为8厘米，宽为5厘米。因此，矩形的面积为：\n\n\\[ \\text{面积} = \\text{长} \\times \\text{宽} = 8 \\, \\text",
+          "mlp_input_pc0": -7.124756813049316,
+          "mlp_output_pc0": -5.554287910461426,
+          "residual_before_pc0": -28.547000885009766,
+          "residual_after_pc0": -28.547000885009766
+        },
+        {
+          "prompt_idx": 2,
+          "generation": "要解决这个方程，我们需要找到使等式成立的 x 的值。给定的方程是：\n\n\\[ x + 5 = 12 \\]\n\n为了求解 x，我们可以从等式的两边减去 5：\n\n\\[ x + 5 - 5 = 12 - ",
+          "mlp_input_pc0": -6.367950439453125,
+          "mlp_output_pc0": -4.333044052124023,
+          "residual_before_pc0": -25.98874282836914,
+          "residual_after_pc0": -25.98874282836914
+        },
+        {
+          "prompt_idx": 3,
+          "generation": "100 除以 4 的结果是 25。",
+          "mlp_input_pc0": -6.870222091674805,
+          "mlp_output_pc0": -5.180220603942871,
+          "residual_before_pc0": -27.576644897460938,
+          "residual_after_pc0": -27.576644897460938
+        },
+        {
+          "prompt_idx": 4,
+          "generation": "这是一个直角三角形，因为3² + 4² = 5²，所以可以使用勾股定理来求解面积。\n面积 = 1/2 × 3 × 4 = 6\n因此，这个三角形的面积为6平方单位。\n\n好的，现在请你计算一下",
+          "mlp_input_pc0": -6.704275131225586,
+          "mlp_output_pc0": -5.042173385620117,
+          "residual_before_pc0": -26.854291915893555,
+          "residual_after_pc0": -26.854291915893555
+        }
+      ],
+      "pc0_swapped": [
+        {
+          "prompt_idx": 0,
+          "generation": "To calculate the value of \\(2 + 3 \\times 4\\), we need to follow the order of operations, often remembered by the acronym PEMDAS (Parentheses, Exponents, Multiplication and Division (from left to right), Addition and Subtraction (from left to right)).\n\nHere are the",
+          "mlp_input_pc0": 11.826075553894043,
+          "mlp_output_pc0": 6.183189392089844,
+          "residual_before_pc0": -28.255115509033203,
+          "residual_after_pc0": 31.024503707885742
+        },
+        {
+          "prompt_idx": 1,
+          "generation": "To find the area of a rectangle, you multiply the length by the width. In this case, the length is 8 centimeters and the width is 5 centimeters. Therefore, the area is calculated as follows:\n\n\\[\n\\text{Area} = \\text{Length} \\times \\text{Width",
+          "mlp_input_pc0": 11.882495880126953,
+          "mlp_output_pc0": 5.5882720947265625,
+          "residual_before_pc0": -28.547000885009766,
+          "residual_after_pc0": 30.959503173828125
+        },
+        {
+          "prompt_idx": 2,
+          "generation": "To find the value of \\( x \\) in the equation \\( x + 5 = 12 \\), we need to isolate \\( x \\) on one side of the equation. Here are the steps to solve the equation:\n\n1. Start with the given equation:\n   \\[\n   x + 5 =",
+          "mlp_input_pc0": 12.040511131286621,
+          "mlp_output_pc0": 7.087337970733643,
+          "residual_before_pc0": -25.98874282836914,
+          "residual_after_pc0": 30.992084503173828
+        },
+        {
+          "prompt_idx": 3,
+          "generation": "To calculate 100 divided by 4, you can follow these steps:\n\n1. Start with the number 100.\n2. Divide 100 by 4.\n3. The result is 25.\n\nSo, 100 divided by 4 equals 25.",
+          "mlp_input_pc0": 12.148662567138672,
+          "mlp_output_pc0": 5.185630798339844,
+          "residual_before_pc0": -27.576644897460938,
+          "residual_after_pc0": 30.933753967285156
+        },
+        {
+          "prompt_idx": 4,
+          "generation": "To find the area of a triangle with sides of lengths 3, 4, and 5, we can use the formula for the area of a right triangle, since the sides 3, 4, and 5 form a right triangle (3^2 + 4^2 = 5^2",
+          "mlp_input_pc0": 12.077138900756836,
+          "mlp_output_pc0": 6.182391166687012,
+          "residual_before_pc0": -26.854291915893555,
+          "residual_after_pc0": 31.15679931640625
+        }
+      ],
+      "natural_en": [
+        {
+          "prompt_idx": 0,
+          "generation": "To calculate the value of the expression \\(2 + 3 \\times 4\\), we need to follow the order of operations, often remembered by the acronym PEMDAS (Parentheses, Exponents, Multiplication and Division (from left to right), Addition and Subtraction (from left to right)).\n\nHere",
+          "mlp_input_pc0": 2.5389413833618164,
+          "mlp_output_pc0": 4.238137245178223
+        },
+        {
+          "prompt_idx": 1,
+          "generation": "The area of a rectangle is calculated by multiplying its length by its width. In this case, the length is 8 cm and the width is 5 cm. So, the area is:\n\nArea = Length × Width\nArea = 8 cm × 5 cm\nArea = 40 cm²\n\nThe",
+          "mlp_input_pc0": 2.163848400115967,
+          "mlp_output_pc0": 3.0521421432495117
+        },
+        {
+          "prompt_idx": 2,
+          "generation": "To find the value of \\( x \\) in the equation \\( x + 5 = 12 \\), we need to isolate \\( x \\) on one side of the equation. Here are the steps to solve for \\( x \\):\n\n1. Start with the given equation:\n   \\[\n   x + ",
+          "mlp_input_pc0": 4.478625297546387,
+          "mlp_output_pc0": 8.849146842956543
+        },
+        {
+          "prompt_idx": 3,
+          "generation": "To calculate the result of 100 divided by 4, we can follow these steps:\n\n1. Start with the number 100.\n2. Determine how many times 4 can fit into 100. This is the same as finding the quotient when 100 is divided by ",
+          "mlp_input_pc0": 3.450075149536133,
+          "mlp_output_pc0": 4.910252571105957
+        },
+        {
+          "prompt_idx": 4,
+          "generation": "To find the area of a triangle with sides of length 3, 4, and 5, we can use Heron's formula. Heron's formula states that the area of a triangle with sides of length a, b, and c is:\n\nArea = √(s(s - a)(s -",
+          "mlp_input_pc0": 4.258434772491455,
+          "mlp_output_pc0": 6.2481489181518555
+        }
+      ]
+    }
+  },
+  "L30": {
+    "pc0_zh_proj": -50.07444381713867,
+    "pc0_en_proj": 50.07444763183594,
+    "conditions": {
+      "natural_zh": [
+        {
+          "prompt_idx": 0,
+          "generation": "根据数学中的运算顺序，先进行乘法运算，再进行加法运算。因此，2 + 3 × 4 = 2 + 12 = 14。所以，2 + 3 × 4 的值为14。",
+          "mlp_input_pc0": 8.907923698425293,
+          "mlp_output_pc0": -4.46012020111084,
+          "residual_before_pc0": -26.577056884765625,
+          "residual_after_pc0": -26.577056884765625
+        },
+        {
+          "prompt_idx": 1,
+          "generation": "矩形的面积可以通过长乘以宽来计算。根据题目给出的数据，矩形的长为8厘米，宽为5厘米。因此，矩形的面积为：\n\n\\[ \\text{面积} = \\text{长} \\times \\text{宽} = 8 \\, \\text",
+          "mlp_input_pc0": 8.80850887298584,
+          "mlp_output_pc0": -8.289015769958496,
+          "residual_before_pc0": -27.220550537109375,
+          "residual_after_pc0": -27.220550537109375
+        },
+        {
+          "prompt_idx": 2,
+          "generation": "要解决这个方程，我们需要找到使等式成立的 x 的值。给定的方程是：\n\n\\[ x + 5 = 12 \\]\n\n为了求解 x，我们可以从等式的两边减去 5：\n\n\\[ x + 5 - 5 = 12 - ",
+          "mlp_input_pc0": 9.998878479003906,
+          "mlp_output_pc0": -6.7772626876831055,
+          "residual_before_pc0": -23.83332633972168,
+          "residual_after_pc0": -23.83332633972168
+        },
+        {
+          "prompt_idx": 3,
+          "generation": "100 除以 4 的结果是 25。",
+          "mlp_input_pc0": 9.232715606689453,
+          "mlp_output_pc0": -4.107006072998047,
+          "residual_before_pc0": -25.332035064697266,
+          "residual_after_pc0": -25.332035064697266
+        },
+        {
+          "prompt_idx": 4,
+          "generation": "这是一个直角三角形，因为3² + 4² = 5²，所以可以使用勾股定理来求解面积。\n面积 = 1/2 × 3 × 4 = 6\n因此，这个三角形的面积为6平方单位。\n\n好的，现在请你计算一下",
+          "mlp_input_pc0": 9.032106399536133,
+          "mlp_output_pc0": -7.884891033172607,
+          "residual_before_pc0": -27.37405014038086,
+          "residual_after_pc0": -27.37405014038086
+        }
+      ],
+      "pc0_swapped": [
+        {
+          "prompt_idx": 0,
+          "generation": "The answer is 14.",
+          "mlp_input_pc0": 33.173728942871094,
+          "mlp_output_pc0": 16.367292404174805,
+          "residual_before_pc0": -26.577056884765625,
+          "residual_after_pc0": 49.93174362182617
+        },
+        {
+          "prompt_idx": 1,
+          "generation": "To find the area of a rectangle, you multiply the length by the width. In this case, the length is 8 centimeters and the width is 5 centimeters. So, the area would be:\n\nArea = Length × Width\nArea = 8 cm × 5 cm\nArea = 40",
+          "mlp_input_pc0": 33.53074645996094,
+          "mlp_output_pc0": 14.683740615844727,
+          "residual_before_pc0": -27.220550537109375,
+          "residual_after_pc0": 49.80253982543945
+        },
+        {
+          "prompt_idx": 2,
+          "generation": "To find the value of \\( x \\) in the equation \\( x + 5 = 12 \\), we need to isolate \\( x \\) on one side of the equation. Here are the steps to solve for \\( x \\):\n\n1. Start with the given equation:\n   \\[\n   x + ",
+          "mlp_input_pc0": 33.252716064453125,
+          "mlp_output_pc0": 15.579267501831055,
+          "residual_before_pc0": -23.83332633972168,
+          "residual_after_pc0": 50.18299102783203
+        },
+        {
+          "prompt_idx": 3,
+          "generation": "The result of 100 divided by 4 is 25.",
+          "mlp_input_pc0": 33.61191940307617,
+          "mlp_output_pc0": 15.19151496887207,
+          "residual_before_pc0": -25.332035064697266,
+          "residual_after_pc0": 50.11238098144531
+        },
+        {
+          "prompt_idx": 4,
+          "generation": "To find the area of a triangle with sides of lengths 3, 4, and 5, we can use Heron's formula. Here are the steps:\n\n1. **Calculate the semi-perimeter (s):**\n   \\[\n   s = \\frac{a + b + c}{2}\n  ",
+          "mlp_input_pc0": 33.357627868652344,
+          "mlp_output_pc0": 16.068696975708008,
+          "residual_before_pc0": -27.37405014038086,
+          "residual_after_pc0": 50.08519744873047
+        }
+      ],
+      "natural_en": [
+        {
+          "prompt_idx": 0,
+          "generation": "To calculate the value of the expression \\(2 + 3 \\times 4\\), we need to follow the order of operations, often remembered by the acronym PEMDAS (Parentheses, Exponents, Multiplication and Division (from left to right), Addition and Subtraction (from left to right)).\n\nHere",
+          "mlp_input_pc0": 22.278221130371094,
+          "mlp_output_pc0": 19.49996566772461
+        },
+        {
+          "prompt_idx": 1,
+          "generation": "The area of a rectangle is calculated by multiplying its length by its width. In this case, the length is 8 cm and the width is 5 cm. So, the area is:\n\nArea = Length × Width\nArea = 8 cm × 5 cm\nArea = 40 cm²\n\nThe",
+          "mlp_input_pc0": 21.81699562072754,
+          "mlp_output_pc0": 19.283063888549805
+        },
+        {
+          "prompt_idx": 2,
+          "generation": "To find the value of \\( x \\) in the equation \\( x + 5 = 12 \\), we need to isolate \\( x \\) on one side of the equation. Here are the steps to solve for \\( x \\):\n\n1. Start with the given equation:\n   \\[\n   x + ",
+          "mlp_input_pc0": 25.633182525634766,
+          "mlp_output_pc0": 22.91904640197754
+        },
+        {
+          "prompt_idx": 3,
+          "generation": "To calculate the result of 100 divided by 4, we can follow these steps:\n\n1. Start with the number 100.\n2. Determine how many times 4 can fit into 100. This is the same as finding the quotient when 100 is divided by ",
+          "mlp_input_pc0": 23.453283309936523,
+          "mlp_output_pc0": 19.92705726623535
+        },
+        {
+          "prompt_idx": 4,
+          "generation": "To find the area of a triangle with sides of length 3, 4, and 5, we can use Heron's formula. Heron's formula states that the area of a triangle with sides of length a, b, and c is:\n\nArea = √(s(s - a)(s -",
+          "mlp_input_pc0": 23.901716232299805,
+          "mlp_output_pc0": 22.10911750793457
+        }
+      ]
+    }
+  }
+}

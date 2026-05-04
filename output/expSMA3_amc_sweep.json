@@ -1,0 +1,150 @@
+{
+  "experiment": "expSMA3_amc_sweep",
+  "description": "SMA with AMC 12A 2025, letter-based grading, optimized hooks",
+  "model": "Qwen/Qwen2.5-3B",
+  "max_new_tokens": 512,
+  "n_problems": 1,
+  "test_mode": true,
+  "system_prompt": "You are solving an AMC 12A multiple choice math problem. Think step by step, show your work, then clearly state your final answer as (A), (B), (C), (D), or (E).",
+  "answer_key": {
+    "1": "E",
+    "2": "B",
+    "3": "A",
+    "4": "B",
+    "6": "B",
+    "7": "C",
+    "8": "E",
+    "9": "E",
+    "11": "A",
+    "12": "B",
+    "13": "D",
+    "15": "C",
+    "16": "D",
+    "17": "A",
+    "18": "C",
+    "19": "E",
+    "21": "A",
+    "22": "E",
+    "23": "C"
+  },
+  "conditions": [
+    "baseline",
+    "sma_a0.3",
+    "sma_a0.5",
+    "sma_a1.0",
+    "uniform",
+    "random_s42",
+    "inverse"
+  ],
+  "summary": {
+    "baseline": {
+      "correct": 0,
+      "total": 1
+    },
+    "sma_a0.3": {
+      "correct": 0,
+      "total": 1
+    },
+    "sma_a0.5": {
+      "correct": 0,
+      "total": 1
+    },
+    "sma_a1.0": {
+      "correct": 0,
+      "total": 1
+    },
+    "uniform": {
+      "correct": 0,
+      "total": 1
+    },
+    "random_s42": {
+      "correct": 0,
+      "total": 1
+    },
+    "inverse": {
+      "correct": 0,
+      "total": 1
+    }
+  },
+  "results": [
+    {
+      "problem_num": 1,
+      "condition": "baseline",
+      "correct_answer": "E",
+      "predicted": "A",
+      "match": false,
+      "grading_method": "answer_is",
+      "output": "Andy travels for 1 hour and 30 minutes, covering a distance of 8 miles. Therefore, Andy's distance from the starting point is 8 miles. Betsy travels for 1 hour and 30 minutes, covering a distance of 12 miles. Therefore, Betsy's distance from the starting point is 12 miles. Andy and Betsy are traveling in perpendicular directions, so we can use the Pythagorean theorem to find the distance between them. Let's call this distance d. We have:\n\nd^2 = 8^2 + 12^2\nd^2 = 64 + 144\nd^2 = 208\nd = √208 ≈ 14.42 miles\n\nNow, let's find the time it takes for Andy and Betsy to be 14.42 miles apart. We can use the formula:\n\ndistance = rate × time\n\nFor Andy, we have:\n\n14.42 = 8 × time\ntime = 14.42 / 8\ntime ≈ 1.8025 hours\n\nFor Betsy, we have:\n\n14.42 = 12 × time\ntime = 14.42 / 12\ntime ≈ 1.2017 hours\n\nSince Andy leaves at 1:30 and Betsy leaves at 2:30, we need to add the time it takes for them to be 14.42 miles apart to their respective departure times. For Andy, we have:\n\n1:30 + 1.8025 hours ≈ 3:30\n\nFor Betsy, we have:\n\n2:30 + 1.2017 hours ≈ 3:30\n\nTherefore, Andy and Betsy will be exactly the same distance from their common starting point at 3:30. The answer is (A).",
+      "gen_tokens": 416,
+      "gen_time_s": 6.97
+    },
+    {
+      "problem_num": 1,
+      "condition": "sma_a0.3",
+      "correct_answer": "E",
+      "predicted": null,
+      "match": false,
+      "grading_method": "none",
+      "output": "Andy and Betsy both live in Mathville. Andy leaves Mathville on his bicycle at 1:30, traveling due north at a steady 8 miles per hour. Betsy leaves on her bicycle from the same point at 2:30, traveling due east at a steady 12 miles per hour. At what time will they be exactly the same distance from their common starting point?\n\n(A)  3:30     (B)  3:45     (C)  4:00     (D)  4:15     (E)  4:30 🥙\n\nLet's solve this problem step by step.\n\n1. **Determine the distance Andy travels before Betsy starts:**\n   - Andy starts at 1:30 and travels for 1 hour (until 2:30) at 8 miles per hour.\n   - Distance Andy travels = 8 miles/hour * 1 hour = 8 miles.\n\n2. **Determine the distance Betsy travels before they are equidistant from the starting point:**\n   - Let \\( t \\) be the time in hours after 2:30 when they are equidistant from the starting point.\n   - In \\( t \\) hours, Andy travels \\( 8t \\) miles north.\n   - In \\( t \\) hours, Betsy travels \\( 12t \\) miles east.\n   - The distance from the starting point for Andy is \\( \\sqrt{(8t)^2 + 0^2} = 8t \\) miles (since he is only moving north).\n   - The distance from the starting point for Betsy is \\( \\sqrt{0^2 + (12t)^2} = 12t \\) miles (since she is only moving east).\n   - They are equidistant when \\( 8t = 12t \\), but this is not possible since they are moving in perpendicular directions. Instead, we need to find when the sum of the squares of their distances from the starting point is equal.\n\n3. **Set up the equation for when they are equidistant:**\n   - The distance from the starting point for Andy is \\( 8t \\) miles.\n   - The distance from the starting point for Betsy is \\( 12t \\) miles.\n   - The sum of the squares of their distances from the starting point is \\( (",
+      "gen_tokens": 512,
+      "gen_time_s": 10.59
+    },
+    {
+      "problem_num": 1,
+      "condition": "sma_a0.5",
+      "correct_answer": "E",
+      "predicted": null,
+      "match": false,
+      "grading_method": "none",
+      "output": "To solve this problem, we need to determine the time at which Andy and Betsy are equidistant from their starting point. Let's break down the problem step by step.\n\n1. **Determine the distance Andy travels before Betsy starts:**\n   Andy starts at 1:30 and travels at 8 miles per hour. By 2:30, he has been traveling for 1 hour. Therefore, the distance Andy has traveled by 2:30 is:\n   \\[\n   \\text{Distance} = \\text{Speed} \\times \\text{Time} = 8 \\text{ miles/hour} \\times 1 \\text{ hour} = 8 \\text{ miles}\n   \\]\n   So, by 2:30, Andy is 8 miles north of his starting point.\n\n2. **Determine the distance Betsy travels before they are equidistant:**\n   Let \\( t \\) be the time in hours after 2:30 when Andy and Betsy are equidistant from their starting point. In this time, Andy will have traveled an additional \\( 8t \\) miles north, and Betsy will have traveled \\( 12t \\) miles east. Since they are traveling in perpendicular directions, the distance from their starting point to Andy will be the hypotenuse of a right triangle with legs 8 miles (the distance Andy has traveled) and \\( 8t \\) miles (the distance Andy will travel in \\( t \\) hours). The distance from their starting point to Betsy will be the hypotenuse of a right triangle with legs 8 miles (the distance Betsy has traveled) and \\( 12t \\) miles (the distance Betsy will travel in \\( t \\) hours).\n\n   The distance from their starting point to Andy is:\n   \\[\n   \\sqrt{(8 + 8t)^2 + (8t)^2}\n   \\]\n   The distance from their starting point to Betsy is:\n   \\[\n   \\sqrt{(8 + 12t)^2 + (8t)^2}\n   \\]\n   Since they are equidistant, we set these two distances equal to each other:\n   \\[\n   \\sqrt{(8 + 8t)^2 + (8t)^2} = \\sqrt{(8 + 12t)^2 + (8t)^2}\n   \\]\n   Squaring both sides, we get",
+      "gen_tokens": 512,
+      "gen_time_s": 10.59
+    },
+    {
+      "problem_num": 1,
+      "condition": "sma_a1.0",
+      "correct_answer": "E",
+      "predicted": null,
+      "match": false,
+      "grading_method": "none",
+      "output": "Let's break down the problem step by step.\n\n1. **Determine the distance Andy travels before Betsy starts:**\n   - Andy starts at 1:30 PM and travels at 8 mph.\n   - Betsy starts at 2:30 PM, so Andy has been traveling for 1 hour and 30 minutes (1.5 hours).\n   - Distance Andy travels in 1.5 hours = \\(8 \\text{ mph} \\times 1.5 \\text{ hours} = 12 \\text{ miles}\\).\n\n2. **Determine the time when Andy and Betsy are equidistant from the starting point:**\n   - Let \\(t\\) be the time in hours after 2:00 PM when they are equidistant.\n   - Andy will have traveled \\(8t\\) miles at time \\(t\\).\n   - Betsy will have traveled \\(12(t-1)\\) miles at time \\(t\\).\n   - Since they are equidistant, the distances traveled by Andy and Betsy must be equal:\n     \\[\n     8t = 12(t-1)\n     \\]\n   - Simplifying the equation:\n     \\[\n     8t = 12(t-1) \\implies 8t = 12t - 12 \\implies 4t = 12 \\implies t = 3\n     \\]\n   - So, they are equidistant 3 hours after 2:00 PM, which is 5:00 PM.\n\nTherefore, the correct answer is \\(\\boxed{5}\\).",
+      "gen_tokens": 342,
+      "gen_time_s": 7.02
+    },
+    {
+      "problem_num": 1,
+      "condition": "uniform",
+      "correct_answer": "E",
+      "predicted": "A",
+      "match": false,
+      "grading_method": "answer_is",
+      "output": "Andy travels for 1 hour and 30 minutes, covering a distance of 8 miles. Therefore, Andy's distance from the starting point is 8 miles. Betsy travels for 1 hour and 30 minutes, covering a distance of 12 miles. Therefore, Betsy's distance from the starting point is 12 miles. Andy and Betsy are traveling in perpendicular directions, so we can use the Pythagorean theorem to find the distance between them. Let's call this distance d. We have:\n\nd^2 = 8^2 + 12^2\nd^2 = 64 + 144\nd^2 = 208\nd = √208 ≈ 14.42 miles\n\nNow, let's find the time it takes for Andy and Betsy to be 14.42 miles apart. We can use the formula:\n\ndistance = rate × time\n\nFor Andy, we have:\n\n14.42 = 8 × time\ntime = 14.42 / 8\ntime ≈ 1.8025 hours\n\nFor Betsy, we have:\n\n14.42 = 12 × time\ntime = 14.42 / 12\ntime ≈ 1.2017 hours\n\nSince Andy leaves at 1:30 and Betsy leaves at 2:30, we need to add the time it takes for them to be 14.42 miles apart to their respective departure times. For Andy, we have:\n\n1:30 + 1.8025 hours ≈ 3:30\n\nFor Betsy, we have:\n\n2:30 + 1.2017 hours ≈ 3:30\n\nTherefore, Andy and Betsy will be exactly the same distance from their common starting point at 3:30. The answer is (A).",
+      "gen_tokens": 416,
+      "gen_time_s": 8.56
+    },
+    {
+      "problem_num": 1,
+      "condition": "random_s42",
+      "correct_answer": "E",
+      "predicted": null,
+      "match": false,
+      "grading_method": "none",
+      "output": "Let's solve this problem step by step.\n\n1. **Determine the distance Andy travels before Betsy starts:**\n   Andy leaves at 1:30 and travels at 8 miles per hour. By 2:30, he has been traveling for 1 hour. Therefore, the distance Andy has traveled by 2:30 is:\n   \\[\n   \\text{Distance} = \\text{Speed} \\times \\text{Time} = 8 \\, \\text{miles/hour} \\times 1 \\, \\text{hour} = 8 \\, \\text{miles}\n   \\]\n\n2. **Determine the distance Betsy travels before they are equidistant from their starting point:**\n   Let \\( t \\) be the time in hours after 2:30 when they are equidistant from their starting point. Betsy travels at 12 miles per hour, so the distance she travels in \\( t \\) hours is:\n   \\[\n   \\text{Distance} = 12 \\, \\text{miles/hour} \\times t \\, \\text{hours} = 12t \\, \\text{miles}\n   \\]\n\n3. **Set up the equation for equidistant distances:**\n   At the time they are equidistant, the distance Andy has traveled (8 miles) plus the distance Betsy has traveled (12t miles) should be equal to the distance Betsy would have traveled if she had started at the same time as Andy. Since Andy has already traveled 8 miles, the distance Betsy needs to travel to be equidistant is:\n   \\[\n   12t = 8\n   \\]\n\n4. **Solve for \\( t \\):**\n   \\[\n   t = \\frac{8}{12} = \\frac{2}{3} \\, \\text{hours}\n   \\]\n\n5. **Convert \\( t \\) to minutes:**\n   \\[\n   t = \\frac{2}{3} \\, \\text{hours} \\times 60 \\, \\text{minutes/hour} = 40 \\, \\text{minutes}\n   \\]\n\n6. **Determine the time when they are equidistant:**\n   Betsy starts at 2:30, so 40 minutes after 2:30 is:\n   \\[\n   2:3",
+      "gen_tokens": 512,
+      "gen_time_s": 10.68
+    },
+    {
+      "problem_num": 1,
+      "condition": "inverse",
+      "correct_answer": "E",
+      "predicted": null,
+      "match": false,
+      "grading_method": "none",
+      "output": "To solve this problem, we need to determine the time at which Andy and Betsy are exactly the same distance from their starting point. Let's break down the problem step by step.\n\n1. Andy leaves Mathville on his bicycle at 1:30, traveling due north at a steady 8 miles per hour.\n2. Betsy leaves on her bicycle from the same point at 2:30, traveling due east at a steady 12 miles per hour.\n3. We need to find the time at which they are exactly the same distance from their starting point.\n\nLet's denote the time at which they are exactly the same distance from their starting point as \\( t \\) hours after 1:30.\n\n1. After \\( t \\) hours, Andy will have traveled \\( 8t \\) miles north.\n2. After \\( t \\) hours, Betsy will have traveled \\( 12t \\) miles east.\n3. The distance from their starting point to Andy will be \\( \\sqrt{(8t)^2 + (0)^2} = 8t \\) miles.\n4. The distance from their starting point to Betsy will be \\( \\sqrt{(12t)^2 + (0)^2} = 12t \\) miles.\n\nWe need to find the time \\( t \\) when \\( 8t = 12t \\).\n\n1. Set up the equation: \\( 8t = 12t \\).\n2. Subtract \\( 8t \\) from both sides: \\( 0 = 4t \\).\n3. Divide both sides by 4: \\( 0 = t \\).\n\nThe time \\( t \\) when they are exactly the same distance from their starting point is \\( 0 \\) hours after 1:30.\n\n1. Therefore, the time is \\( 1:30 \\).\n\nThe final answer is \\(\\boxed{1:30}\\).",
+      "gen_tokens": 404,
+      "gen_time_s": 8.44
+    }
+  ],
+  "wall_time_s": 63.2,
+  "timestamp": "2026-04-18 07:49:01"
+}

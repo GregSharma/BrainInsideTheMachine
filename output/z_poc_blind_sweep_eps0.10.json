@@ -1,0 +1,338 @@
+{
+  "residual": true,
+  "dropout": 0.1,
+  "eps_base": 0.1,
+  "eps_per_lang": {
+    "Chinese": 0.16666666666666669,
+    "English": 0.5,
+    "Spanish": 1.25,
+    "Arabic": 2.0,
+    "Japanese": 2.0,
+    "Korean": 2.0,
+    "Swahili": 2.0
+  },
+  "transform_conds": {
+    "Chinese": 1.139138102531433,
+    "English": 1.5039411783218384,
+    "Spanish": 2.411451816558838,
+    "Arabic": 6.932705879211426,
+    "Japanese": 5.205485820770264,
+    "Korean": 5.832651138305664,
+    "Swahili": 7.401777744293213
+  },
+  "best_test_mse": 0.04470345750451088,
+  "best_epoch": 60,
+  "test_mse": 0.04470345750451088,
+  "per_lang_converged": {
+    "Chinese": true,
+    "English": false,
+    "Spanish": false,
+    "Arabic": false,
+    "Japanese": false,
+    "Korean": false,
+    "Swahili": false
+  },
+  "best_procrustes_layer": 2,
+  "results_by_layer": {
+    "0": {
+      "procrustes_r2": {
+        "English": 0.38297057151794434,
+        "Spanish": 0.5690881013870239,
+        "Arabic": 0.354625403881073,
+        "Japanese": 0.14173465967178345,
+        "Korean": 0.33329254388809204,
+        "Swahili": 0.15346693992614746
+      },
+      "affine_r2": {
+        "English": 0.5968049764633179,
+        "Spanish": 0.7070127725601196,
+        "Arabic": 0.5911500453948975,
+        "Japanese": 0.532192051410675,
+        "Korean": 0.5444782972335815,
+        "Swahili": 0.5103555917739868
+      },
+      "procrustes_residual": {
+        "English": 0.6354707479476929,
+        "Spanish": 0.531051754951477,
+        "Arabic": 0.6499030590057373,
+        "Japanese": 0.7494685649871826,
+        "Korean": 0.660556972026825,
+        "Swahili": 0.7443284392356873
+      },
+      "raw_nn": {
+        "English": 0.01,
+        "Spanish": 0.015,
+        "Arabic": 0.005,
+        "Japanese": 0.0,
+        "Korean": 0.005,
+        "Swahili": 0.02
+      },
+      "proc_nn": {
+        "English": 0.82,
+        "Spanish": 0.915,
+        "Arabic": 0.81,
+        "Japanese": 0.74,
+        "Korean": 0.715,
+        "Swahili": 0.725
+      },
+      "affine_nn": {
+        "English": 0.765,
+        "Spanish": 0.875,
+        "Arabic": 0.705,
+        "Japanese": 0.62,
+        "Korean": 0.63,
+        "Swahili": 0.595
+      }
+    },
+    "1": {
+      "procrustes_r2": {
+        "English": 0.5898197889328003,
+        "Spanish": 0.658707320690155,
+        "Arabic": 0.48617613315582275,
+        "Japanese": 0.3429463505744934,
+        "Korean": 0.4768010377883911,
+        "Swahili": 0.3515121340751648
+      },
+      "affine_r2": {
+        "English": 0.6934835910797119,
+        "Spanish": 0.7406926155090332,
+        "Arabic": 0.639628529548645,
+        "Japanese": 0.5924805402755737,
+        "Korean": 0.6067039966583252,
+        "Swahili": 0.5697330236434937
+      },
+      "procrustes_residual": {
+        "English": 0.5313802361488342,
+        "Spanish": 0.4847095012664795,
+        "Arabic": 0.5947373509407043,
+        "Japanese": 0.672540545463562,
+        "Korean": 0.6001384854316711,
+        "Swahili": 0.6681423187255859
+      },
+      "raw_nn": {
+        "English": 0.0,
+        "Spanish": 0.005,
+        "Arabic": 0.005,
+        "Japanese": 0.0,
+        "Korean": 0.005,
+        "Swahili": 0.025
+      },
+      "proc_nn": {
+        "English": 0.95,
+        "Spanish": 0.975,
+        "Arabic": 0.945,
+        "Japanese": 0.92,
+        "Korean": 0.92,
+        "Swahili": 0.895
+      },
+      "affine_nn": {
+        "English": 0.92,
+        "Spanish": 0.98,
+        "Arabic": 0.9,
+        "Japanese": 0.835,
+        "Korean": 0.845,
+        "Swahili": 0.77
+      }
+    },
+    "2": {
+      "procrustes_r2": {
+        "English": 0.6401025056838989,
+        "Spanish": 0.656794011592865,
+        "Arabic": 0.5046681761741638,
+        "Japanese": 0.4113510847091675,
+        "Korean": 0.4710647463798523,
+        "Swahili": 0.3743351697921753
+      },
+      "affine_r2": {
+        "English": 0.7226316332817078,
+        "Spanish": 0.7378312945365906,
+        "Arabic": 0.6641521453857422,
+        "Japanese": 0.630595326423645,
+        "Korean": 0.5996488928794861,
+        "Swahili": 0.5794709324836731
+      },
+      "procrustes_residual": {
+        "English": 0.5105342268943787,
+        "Spanish": 0.4985547363758087,
+        "Arabic": 0.5989402532577515,
+        "Japanese": 0.652925431728363,
+        "Korean": 0.6189231276512146,
+        "Swahili": 0.673141360282898
+      },
+      "raw_nn": {
+        "English": 0.0,
+        "Spanish": 0.01,
+        "Arabic": 0.005,
+        "Japanese": 0.0,
+        "Korean": 0.0,
+        "Swahili": 0.02
+      },
+      "proc_nn": {
+        "English": 0.965,
+        "Spanish": 0.99,
+        "Arabic": 0.98,
+        "Japanese": 0.965,
+        "Korean": 0.935,
+        "Swahili": 0.945
+      },
+      "affine_nn": {
+        "English": 0.945,
+        "Spanish": 0.98,
+        "Arabic": 0.94,
+        "Japanese": 0.935,
+        "Korean": 0.915,
+        "Swahili": 0.88
+      }
+    },
+    "3": {
+      "procrustes_r2": {
+        "English": 0.6548340320587158,
+        "Spanish": 0.6347647905349731,
+        "Arabic": 0.39944571256637573,
+        "Japanese": 0.33620256185531616,
+        "Korean": 0.391279935836792,
+        "Swahili": 0.1658846139907837
+      },
+      "affine_r2": {
+        "English": 0.7366173267364502,
+        "Spanish": 0.7356541156768799,
+        "Arabic": 0.6717075109481812,
+        "Japanese": 0.6322470903396606,
+        "Korean": 0.578778862953186,
+        "Swahili": 0.5624691247940063
+      },
+      "procrustes_residual": {
+        "English": 0.5097450613975525,
+        "Spanish": 0.5243549346923828,
+        "Arabic": 0.6723805665969849,
+        "Japanese": 0.706898033618927,
+        "Korean": 0.6769363284111023,
+        "Swahili": 0.7924138903617859
+      },
+      "raw_nn": {
+        "English": 0.0,
+        "Spanish": 0.005,
+        "Arabic": 0.01,
+        "Japanese": 0.005,
+        "Korean": 0.005,
+        "Swahili": 0.015
+      },
+      "proc_nn": {
+        "English": 0.97,
+        "Spanish": 0.985,
+        "Arabic": 0.98,
+        "Japanese": 0.985,
+        "Korean": 0.96,
+        "Swahili": 0.96
+      },
+      "affine_nn": {
+        "English": 0.965,
+        "Spanish": 0.985,
+        "Arabic": 0.95,
+        "Japanese": 0.935,
+        "Korean": 0.935,
+        "Swahili": 0.905
+      }
+    },
+    "4": {
+      "procrustes_r2": {
+        "English": 0.6613714694976807,
+        "Spanish": 0.5973151922225952,
+        "Arabic": 0.311326801776886,
+        "Japanese": 0.23030555248260498,
+        "Korean": 0.3541904091835022,
+        "Swahili": -0.12096583843231201
+      },
+      "affine_r2": {
+        "English": 0.7432800531387329,
+        "Spanish": 0.7306868433952332,
+        "Arabic": 0.6780411601066589,
+        "Japanese": 0.6329615116119385,
+        "Korean": 0.5733499526977539,
+        "Swahili": 0.5585728883743286
+      },
+      "procrustes_residual": {
+        "English": 0.5156561136245728,
+        "Spanish": 0.5623167753219604,
+        "Arabic": 0.7353683710098267,
+        "Japanese": 0.7774233818054199,
+        "Korean": 0.7121158242225647,
+        "Swahili": 0.9381980895996094
+      },
+      "raw_nn": {
+        "English": 0.0,
+        "Spanish": 0.005,
+        "Arabic": 0.005,
+        "Japanese": 0.005,
+        "Korean": 0.005,
+        "Swahili": 0.005
+      },
+      "proc_nn": {
+        "English": 0.98,
+        "Spanish": 0.995,
+        "Arabic": 0.985,
+        "Japanese": 0.99,
+        "Korean": 0.97,
+        "Swahili": 0.945
+      },
+      "affine_nn": {
+        "English": 0.97,
+        "Spanish": 0.975,
+        "Arabic": 0.955,
+        "Japanese": 0.95,
+        "Korean": 0.93,
+        "Swahili": 0.91
+      }
+    },
+    "5": {
+      "procrustes_r2": {
+        "English": 0.6638526916503906,
+        "Spanish": 0.5729433298110962,
+        "Arabic": 0.2709733247756958,
+        "Japanese": 0.1704728603363037,
+        "Korean": 0.2995702028274536,
+        "Swahili": -0.2177581787109375
+      },
+      "affine_r2": {
+        "English": 0.7447913289070129,
+        "Spanish": 0.7208881974220276,
+        "Arabic": 0.677975058555603,
+        "Japanese": 0.630879282951355,
+        "Korean": 0.5631459355354309,
+        "Swahili": 0.5627068281173706
+      },
+      "procrustes_residual": {
+        "English": 0.5208311080932617,
+        "Spanish": 0.587049663066864,
+        "Arabic": 0.7670149803161621,
+        "Japanese": 0.8181772828102112,
+        "Korean": 0.751820981502533,
+        "Swahili": 0.9913172125816345
+      },
+      "raw_nn": {
+        "English": 0.0,
+        "Spanish": 0.0,
+        "Arabic": 0.01,
+        "Japanese": 0.0,
+        "Korean": 0.005,
+        "Swahili": 0.015
+      },
+      "proc_nn": {
+        "English": 0.975,
+        "Spanish": 1.0,
+        "Arabic": 0.98,
+        "Japanese": 0.99,
+        "Korean": 0.97,
+        "Swahili": 0.965
+      },
+      "affine_nn": {
+        "English": 0.97,
+        "Spanish": 0.98,
+        "Arabic": 0.955,
+        "Japanese": 0.97,
+        "Korean": 0.945,
+        "Swahili": 0.935
+      }
+    }
+  }
+}

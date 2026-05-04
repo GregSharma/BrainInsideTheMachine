@@ -1,0 +1,66 @@
+{
+  "baseline": {
+    "scores": {
+      "en": 12,
+      "zh": 9
+    },
+    "safe": 13,
+    "time": 196.15134596824646
+  },
+  "static_surgery": {
+    "scores": {
+      "en": 13,
+      "zh": 15
+    },
+    "safe": 16,
+    "time": 128.78967142105103
+  },
+  "dynamic_L13": {
+    "scores": {
+      "en": 13,
+      "zh": 10
+    },
+    "safe": 15,
+    "time": 197.1656243801117
+  },
+  "dynamic_all": {
+    "scores": {
+      "en": 8,
+      "zh": 3
+    },
+    "safe": 5,
+    "time": 214.0952389240265
+  },
+  "dynamic_a0.25": {
+    "scores": {
+      "en": 14,
+      "zh": 10
+    },
+    "safe": 16,
+    "time": 141.716646194458
+  },
+  "dynamic_a0.5": {
+    "scores": {
+      "en": 15,
+      "zh": 8
+    },
+    "safe": 16,
+    "time": 133.50347352027893
+  },
+  "dynamic_a0.75": {
+    "scores": {
+      "en": 11,
+      "zh": 6
+    },
+    "safe": 11,
+    "time": 157.0061798095703
+  },
+  "dynamic_plus_surgery": {
+    "scores": {
+      "en": 12,
+      "zh": 11
+    },
+    "safe": 14,
+    "time": 135.58841919898987
+  }
+}

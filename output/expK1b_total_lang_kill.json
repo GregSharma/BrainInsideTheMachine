@@ -1,0 +1,92 @@
+{
+  "experiment": "K1b: Total Language Kill",
+  "n_pca_layers": 2,
+  "n_lang_pcs": 10,
+  "ablation_scope": "ALL 36 layers, ALL token positions, during ALL generation steps",
+  "results": [
+    {
+      "prompt": "zh_math",
+      "expected_lang": "chinese",
+      "expected_fmt": "math",
+      "output_lang": "english",
+      "output_fmt": "math",
+      "fmt_survived": true,
+      "lang_destroyed": true,
+      "text": "To solve for \\( x \\), we need to isolate \\( x \\) on one side of the equation. The equation is \\( x + 5 = 12 \\). To isolate \\( x \\), we subtract 5 from both sides of the equation. So, \\( x + 5 - 5 = 12 - 5 \\), which simplifies to \\( x = 7 \\). Therefore, the value of \\( x \\) is 7."
+    },
+    {
+      "prompt": "en_math",
+      "expected_lang": "english",
+      "expected_fmt": "math",
+      "output_lang": "english",
+      "output_fmt": "math",
+      "fmt_survived": true,
+      "lang_destroyed": false,
+      "text": "To solve the equation x + 5 = 12, we need to isolate x. We can do this by subtracting 5 from both sides of the equation. This gives us x = 12 - 5, which simplifies to x = 7. Therefore, the value of x is 7."
+    },
+    {
+      "prompt": "zh_prose",
+      "expected_lang": "chinese",
+      "expected_fmt": "prose",
+      "output_lang": "english",
+      "output_fmt": "code",
+      "fmt_survived": false,
+      "lang_destroyed": true,
+      "text": "Spring's scenery is a beautiful one. It is a time of renewal, when nature awakens from its slumber, and when all things are renewed. It is a time of growth, when trees sprout leaves, and when flowers bloom. It is a time of warmth, when the sun shines, and when the wind is gentle. It is a time of hope, when we hope for a better future, and when we hope for peace. It is a time of joy, when we rejoice in the return of spring, and when we rejoice in the return of life. It is a time of beauty, when we see the beauty"
+    },
+    {
+      "prompt": "en_prose",
+      "expected_lang": "english",
+      "expected_fmt": "prose",
+      "output_lang": "english",
+      "output_fmt": "prose",
+      "fmt_survived": true,
+      "lang_destroyed": false,
+      "text": "A. I love spring, because it is a time of endless flowers and grass, a time of endless rain and wind, a time of endless flowers and rain, a time of endless rain and flowers.\nB. I love spring, because it is a time of endless flowers and grass, a time of endless rain and wind, a time of endless flowers and rain, a time of endless rain and flowers.\nC. I love spring, because it is a time of endless flowers and grass, a time of endless rain and wind, a time of endless flowers and rain, a time of endless rain and flowers.\nD. I love spring"
+    },
+    {
+      "prompt": "code",
+      "expected_lang": "english",
+      "expected_fmt": "code",
+      "output_lang": "english",
+      "output_fmt": "code",
+      "fmt_survived": true,
+      "lang_destroyed": false,
+      "text": "I can't, but i can provide you with a code snippet.\nTo compute the factorial of a number, you can use a recursive function. Here's an example:\n```python\ndef fact(n):\n    if n==0:\n        return 1\n    else:\n        return n*fact(n-1)\n```\nThis function checks if n is 0, and if so, returns 1. Otherwise, it returns n multiplied by the factorial of n-1.\nAlternatively, you can use a loop:\n```python\ndef fact(n):\n    if n==0:\n        return 1\n    else:\n        f"
+    },
+    {
+      "prompt": "zh_list",
+      "expected_lang": "chinese",
+      "expected_fmt": "list",
+      "output_lang": "english",
+      "output_fmt": "prose",
+      "fmt_survived": false,
+      "lang_destroyed": true,
+      "text": "A. Apple\nB. Orange\nC. Grape\nD. Banana\nAnswer:\nA,B,D\n\nAccording to Article 11 of the 'Regulations on the Work of the Communist Party of China at the Grassroots Level and in Organs', what are the primary responsibilities of party committees and leading officials in state-owned and state-controlled enterprises?\nA. To lead the implementation of the Party's guidelines, policies, and resolutions\nB. To lead the implementation of the Party's guidelines, policies, and strategies\nC. To lead the implementation of the Party's guidelines, policies, and laws\nD. To lead the implementation"
+    },
+    {
+      "prompt": "en_list",
+      "expected_lang": "english",
+      "expected_fmt": "list",
+      "output_lang": "english",
+      "output_fmt": "prose",
+      "fmt_survived": false,
+      "lang_destroyed": false,
+      "text": "A. Apple\nB. Pear\nC. Grape\nD. Orange\nAnswer:\nA,B,C\n\nWhich of the following statements about the relationship between the Party and enterprises are true?\nA. The Party is the highest leading force\nB. The Party is the highest leading authority\nC. The Party is the highest leading organization\nD. The Party is the highest leading institution\nAnswer:\nA,C\n\nWhich of the following statements about the relationship between the Party and enterprises are true?\nA. The Party is the highest leading force\nB. The Party is the highest leading authority\nC. The Party is the highest leading organization"
+    },
+    {
+      "prompt": "zh_logic",
+      "expected_lang": "chinese",
+      "expected_fmt": "prose",
+      "output_lang": "english",
+      "output_fmt": "prose",
+      "fmt_survived": true,
+      "lang_destroyed": true,
+      "text": "A. [A] A. [A] A. [A] A. [A] A. [A] A. [A] A. [A] A. [A] A. [A] A. [A] A. [A] A. [A] A. [A] A. [A] A. [A] A. [A] A. [A] A. [A] A. [A] A. [A] A. [A] A. [A] A. [A] A. [A] A. [A] A. ["
+    }
+  ],
+  "fmt_survived_count": 5,
+  "lang_destroyed_count": 4,
+  "total": 8,
+  "verdict": "FORMAT AND LANGUAGE ARE ENTANGLED (format collapsed with language)"
+}

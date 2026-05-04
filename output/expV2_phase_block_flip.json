@@ -1,0 +1,303 @@
+{
+  "experiment": "V2: Phase Block TC0 Flip",
+  "model": "Qwen/Qwen2.5-3B",
+  "scale": -0.5,
+  "max_tokens": 128,
+  "results": {
+    "baseline": {
+      "math": 2,
+      "trans": 1,
+      "n_layers": 0,
+      "math_details": [
+        {
+          "prompt": "Calculate 47 + 86.",
+          "found": false,
+          "output": " To calculate \\(47 + 86\\), we can use the standard addition method. Here are the steps:\n\n1. **Align the numbers by their place values:**\n   \\[\n   \\begin{array}{c@{}c@{}c}\n     & 4 & 7 \\\\\n   + & 8 & 6 "
+        },
+        {
+          "prompt": "What is the remainder when 100 is divided by 7?",
+          "found": false,
+          "output": " To find the remainder when 100 is divided by 7, we can use the division algorithm, which states that for any integers \\(a\\) and \\(b\\) (with \\(b > 0\\)), there exist unique integers \\(q\\) (the quotient"
+        },
+        {
+          "prompt": "Find the value of C(10, 3).",
+          "found": true,
+          "output": " The value of C(10, 3) is 120."
+        },
+        {
+          "prompt": "A rectangle has length 12 and width 5. Find its area.",
+          "found": true,
+          "output": " The area of a rectangle is given by the formula:\n\nArea = length \u00d7 width\n\nIn this case, the length is 12 and the width is 5. So, the area of the rectangle is:\n\nArea = 12 \u00d7 5 = 60 square units"
+        },
+        {
+          "prompt": "Calculate 15 \u00d7 8.",
+          "found": false,
+          "output": " To calculate \\(15 \\times 8\\), we can use the standard multiplication method. Here are the steps:\n\n1. Write down the numbers to be multiplied:\n   \\[\n   \\begin{array}{c}\n     15 \\\\\n   \\times 8 \\\\\n   \\e"
+        },
+        {
+          "prompt": "An arithmetic sequence has first term 2 and common difference 3. Find the sum of the first 5 terms.",
+          "found": false,
+          "output": " To find the sum of the first 5 terms of an arithmetic sequence with the first term \\(a = 2\\) and common difference \\(d = 3\\), we can use the formula for the sum of the first \\(n\\) terms of an arithme"
+        },
+        {
+          "prompt": "Calculate 387 \u00d7 29.",
+          "found": false,
+          "output": " To calculate \\(387 \\times 29\\), we can use the standard multiplication algorithm. Here are the steps:\n\n1. **Multiply 387 by 9 (the ones digit of 29):**\n   \\[\n   387 \\times 9 = 3483\n   \\]\n   Write dow"
+        },
+        {
+          "prompt": "What is the remainder when 7654 is divided by 37?",
+          "found": false,
+          "output": " To find the remainder when 7654 is divided by 37, we can use the modulus operation. The modulus operation (%) gives the remainder of a division of two numbers. Here's the step-by-step process:\n\n1. Pe"
+        },
+        {
+          "prompt": "An arithmetic sequence has first term 7 and common difference 11. Find the sum of the first 25 terms.",
+          "found": false,
+          "output": " To find the sum of the first 25 terms of an arithmetic sequence with the first term \\(a = 7\\) and common difference \\(d = 11\\), we can use the formula for the sum of the first \\(n\\) terms of an arith"
+        },
+        {
+          "prompt": "A rectangle has length 47 and width 33. Find its area.",
+          "found": false,
+          "output": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven the length is 47 and the width is 33, we substitute these values into the formula:\n\n"
+        }
+      ]
+    },
+    "adversarial_L9-L17": {
+      "math": 1,
+      "trans": 2,
+      "n_layers": 9,
+      "math_details": [
+        {
+          "prompt": "Calculate 47 + 86.",
+          "found": false,
+          "output": " To calculate \\(47 + 86\\), we can use the standard addition method. Here are the steps:\n\n1. Add the ones place: \\(7 + 6 = 13\\). Write down the 3 and carry over the 1 to the tens place.\n2. Add the tens"
+        },
+        {
+          "prompt": "What is the remainder when 100 is divided by 7?",
+          "found": false,
+          "output": " To find the remainder when 100 is divided by 7, we can use the division algorithm, which states that for any integers \\(a\\) and \\(b\\) (with \\(b > 0\\)), there exist unique integers \\(q\\) (the quotient"
+        },
+        {
+          "prompt": "Find the value of C(10, 3).",
+          "found": false,
+          "output": " To find the value of \\( C(10, 3) \\), we need to calculate the binomial coefficient, which is the number of ways to choose 3 elements from a set of 10 elements without regard to the order of selection"
+        },
+        {
+          "prompt": "A rectangle has length 12 and width 5. Find its area.",
+          "found": true,
+          "output": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle is 12 and the width is 5, we substitute these value"
+        },
+        {
+          "prompt": "Calculate 15 \u00d7 8.",
+          "found": false,
+          "output": " To calculate \\(15 \\times 8\\), we can use the standard multiplication method. Here are the steps:\n\n1. Write down the numbers to be multiplied:\n   \\[\n   \\begin{array}{r}\n     15 \\\\\n   \\times 8 \\\\\n   \\e"
+        },
+        {
+          "prompt": "An arithmetic sequence has first term 2 and common difference 3. Find the sum of the first 5 terms.",
+          "found": false,
+          "output": " To find the sum of the first 5 terms of an arithmetic sequence with the first term \\(a = 2\\) and common difference \\(d = 3\\), we can follow these steps:\n\n1. Identify the first 5 terms of the sequence"
+        },
+        {
+          "prompt": "Calculate 387 \u00d7 29.",
+          "found": false,
+          "output": " To calculate \\(387 \\times 29\\), we can use the standard multiplication algorithm. Here are the steps:\n\n1. **Multiply 387 by 9 (the ones digit of 29):**\n   \\[\n   387 \\times 9 = 3483\n   \\]\n   Write dow"
+        },
+        {
+          "prompt": "What is the remainder when 7654 is divided by 37?",
+          "found": false,
+          "output": " To find the remainder when 7654 is divided by 37, we can use the modulus operation. The modulus operation gives the remainder of a division of one number by another. In Python, the modulus operation "
+        },
+        {
+          "prompt": "An arithmetic sequence has first term 7 and common difference 11. Find the sum of the first 25 terms.",
+          "found": false,
+          "output": " To find the sum of the first 25 terms of an arithmetic sequence with the first term \\(a = 7\\) and common difference \\(d = 11\\), we can use the formula for the sum of the first \\(n\\) terms of an arith"
+        },
+        {
+          "prompt": "A rectangle has length 47 and width 33. Find its area.",
+          "found": false,
+          "output": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle is 47 and the width is 33, we substitute these valu"
+        }
+      ]
+    },
+    "cooperative_L18-L21": {
+      "math": 3,
+      "trans": 1,
+      "n_layers": 4,
+      "math_details": [
+        {
+          "prompt": "Calculate 47 + 86.",
+          "found": true,
+          "output": " To calculate \\(47 + 86\\), we can follow these steps:\n\n1. Add the units digits: \\(7 + 6 = 13\\). Write down 3 and carry over 1.\n2. Add the tens digits along with the carry-over: \\(4 + 8 + 1 = 13\\). Wri"
+        },
+        {
+          "prompt": "What is the remainder when 100 is divided by 7?",
+          "found": false,
+          "output": " To find the remainder when 100 is divided by 7, we can use the division algorithm, which states that for any integers \\(a\\) and \\(b\\) (with \\(b > 0\\)), there exist unique integers \\(q\\) (the quotient"
+        },
+        {
+          "prompt": "Find the value of C(10, 3).",
+          "found": true,
+          "output": " The value of C(10, 3) is 120."
+        },
+        {
+          "prompt": "A rectangle has length 12 and width 5. Find its area.",
+          "found": true,
+          "output": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle is 12 and the width is 5, we substitute these value"
+        },
+        {
+          "prompt": "Calculate 15 \u00d7 8.",
+          "found": false,
+          "output": " To calculate \\(15 \\times 8\\), we can use the standard multiplication method. Here are the steps:\n\n1. Write down the numbers to be multiplied:\n   \\[\n   \\begin{array}{r}\n     15 \\\\\n   \\times 8 \\\\\n   \\e"
+        },
+        {
+          "prompt": "An arithmetic sequence has first term 2 and common difference 3. Find the sum of the first 5 terms.",
+          "found": false,
+          "output": " To find the sum of the first 5 terms of an arithmetic sequence with the first term \\(a = 2\\) and common difference \\(d = 3\\), we can use the formula for the sum of the first \\(n\\) terms of an arithme"
+        },
+        {
+          "prompt": "Calculate 387 \u00d7 29.",
+          "found": false,
+          "output": " To calculate \\(387 \\times 29\\), we can use the standard multiplication algorithm. Here are the steps:\n\n1. **Multiply 387 by 9 (the ones digit of 29):**\n   \\[\n   387 \\times 9 = 3483\n   \\]\n   Write dow"
+        },
+        {
+          "prompt": "What is the remainder when 7654 is divided by 37?",
+          "found": false,
+          "output": " To find the remainder when 7654 is divided by 37, we can use the modulus operation. The modulus operation (%) gives the remainder of a division of two numbers. Here's the step-by-step process:\n\n1. Pe"
+        },
+        {
+          "prompt": "An arithmetic sequence has first term 7 and common difference 11. Find the sum of the first 25 terms.",
+          "found": false,
+          "output": " To find the sum of the first 25 terms of an arithmetic sequence, we can use the formula for the sum of the first \\( n \\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right"
+        },
+        {
+          "prompt": "A rectangle has length 47 and width 33. Find its area.",
+          "found": false,
+          "output": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven the length is 47 and the width is 33, we substitute these values into the formula:\n\n"
+        }
+      ]
+    },
+    "ramp_L22-L26": {
+      "math": 2,
+      "trans": 1,
+      "n_layers": 5,
+      "math_details": [
+        {
+          "prompt": "Calculate 47 + 86.",
+          "found": true,
+          "output": "2 - 12.89. To calculate \\(47 + 86.2 - 12.89\\), we will follow these steps:\n\n1. Add 47 and 86.2.\n2. Subtract 12.89 from the result of the addition.\n\nLet's start with the first step:\n\n\\[47 + 86.2 = 133."
+        },
+        {
+          "prompt": "What is the remainder when 100 is divided by 7?",
+          "found": false,
+          "output": " To find the remainder when 100 is divided by 7, we can use the division algorithm, which states that for any integers \\(a\\) and \\(b\\) (with \\(b > 0\\)), there exist unique integers \\(q\\) (the quotient"
+        },
+        {
+          "prompt": "Find the value of C(10, 3).",
+          "found": false,
+          "output": " To find the value of \\( C(10, 3) \\), which represents the number of combinations of 10 items taken 3 at a time, we use the formula for combinations:\n\n\\[\nC(n, r) = \\frac{n!}{r!(n-r)!}\n\\]\n\nHere, \\( n ="
+        },
+        {
+          "prompt": "A rectangle has length 12 and width 5. Find its area.",
+          "found": true,
+          "output": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle is 12 and the width is 5, we substitute these value"
+        },
+        {
+          "prompt": "Calculate 15 \u00d7 8.",
+          "found": false,
+          "output": "5 + 15 \u00d7 1.5 using the distributive property of multiplication over addition. To calculate \\(15 \\times 8.5 + 15 \\times 1.5\\) using the distributive property of multiplication over addition, we can fol"
+        },
+        {
+          "prompt": "An arithmetic sequence has first term 2 and common difference 3. Find the sum of the first 5 terms.",
+          "found": false,
+          "output": " To find the sum of the first 5 terms of an arithmetic sequence with the first term \\(a = 2\\) and common difference \\(d = 3\\), we can use the formula for the sum of the first \\(n\\) terms of an arithme"
+        },
+        {
+          "prompt": "Calculate 387 \u00d7 29.",
+          "found": false,
+          "output": " To calculate \\(387 \\times 29\\), we can use the standard multiplication algorithm. Here are the steps:\n\n1. **Multiply 387 by 9 (the ones digit of 29):**\n   \\[\n   387 \\times 9 = 3483\n   \\]\n   Write dow"
+        },
+        {
+          "prompt": "What is the remainder when 7654 is divided by 37?",
+          "found": false,
+          "output": " To find the remainder when 7654 is divided by 37, we can use the modulus operation. The modulus operation gives the remainder of a division of two numbers. In Python, the modulus operation is represe"
+        },
+        {
+          "prompt": "An arithmetic sequence has first term 7 and common difference 11. Find the sum of the first 25 terms.",
+          "found": false,
+          "output": " To find the sum of the first 25 terms of an arithmetic sequence with the first term \\(a = 7\\) and common difference \\(d = 11\\), we can use the formula for the sum of the first \\(n\\) terms of an arith"
+        },
+        {
+          "prompt": "A rectangle has length 47 and width 33. Find its area.",
+          "found": false,
+          "output": " Then, find the area of a square with side length equal to the diagonal of the rectangle. Express your answer as a common fraction.\nTo solve the problem, we need to follow these steps:\n\n1. Calculate t"
+        }
+      ]
+    },
+    "all_L9-L26": {
+      "math": 3,
+      "trans": 2,
+      "n_layers": 18,
+      "math_details": [
+        {
+          "prompt": "Calculate 47 + 86.",
+          "found": true,
+          "output": "4 - 23.12. To calculate \\(47 + 86.4 - 23.12\\), we will follow these steps:\n\n1. Add 47 and 86.4.\n2. Subtract 23.12 from the result of the addition.\n\nLet's start with the first step:\n\n\\[47 + 86.4 = 133."
+        },
+        {
+          "prompt": "What is the remainder when 100 is divided by 7?",
+          "found": true,
+          "output": " We can use long division to find the remainder.\nDividing 100 by 7 gives a quotient of 14 and a remainder of 2.\nTherefore, the remainder when 100 is divided by 7 is $\\boxed{2}$.The answer is: 2"
+        },
+        {
+          "prompt": "Find the value of C(10, 3).",
+          "found": false,
+          "output": " To find the value of \\( C(10, 3) \\), which represents the number of combinations of 10 items taken 3 at a time, we use the combination formula:\n\n\\[\nC(n, r) = \\frac{n!}{r!(n-r)!}\n\\]\n\nHere, \\( n = 10 \\"
+        },
+        {
+          "prompt": "A rectangle has length 12 and width 5. Find its area.",
+          "found": true,
+          "output": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle is 12 and the width is 5, we substitute these value"
+        },
+        {
+          "prompt": "Calculate 15 \u00d7 8.",
+          "found": false,
+          "output": "5 + 15 \u00d7 1.5 using the distributive property of multiplication over addition. To calculate \\(15 \\times 8.5 + 15 \\times 1.5\\) using the distributive property of multiplication over addition, we can fol"
+        },
+        {
+          "prompt": "An arithmetic sequence has first term 2 and common difference 3. Find the sum of the first 5 terms.",
+          "found": false,
+          "output": " To find the sum of the first 5 terms of an arithmetic sequence with the first term \\(a = 2\\) and common difference \\(d = 3\\), we can use the formula for the sum of the first \\(n\\) terms of an arithme"
+        },
+        {
+          "prompt": "Calculate 387 \u00d7 29.",
+          "found": false,
+          "output": " To calculate \\(387 \\times 29\\), we can use the standard multiplication algorithm. Here are the steps:\n\n1. **Multiply 387 by 9 (the ones digit of 29):**\n   \\[\n   387 \\times 9 = 3483\n   \\]\n   Write dow"
+        },
+        {
+          "prompt": "What is the remainder when 7654 is divided by 37?",
+          "found": false,
+          "output": " To find the remainder when 7654 is divided by 37, we can use the modulus operation. The modulus operation gives the remainder of a division of one number by another. In Python, the modulus operation "
+        },
+        {
+          "prompt": "An arithmetic sequence has first term 7 and common difference 11. Find the sum of the first 25 terms.",
+          "found": false,
+          "output": " To find the sum of the first 25 terms of an arithmetic sequence with the first term \\(a = 7\\) and common difference \\(d = 11\\), we can use the formula for the sum of the first \\(n\\) terms of an arith"
+        },
+        {
+          "prompt": "A rectangle has length 47 and width 33. Find its area.",
+          "found": false,
+          "output": " Round your answer to the nearest whole number.\nTo find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven the length is 47 and the width is 33,"
+        }
+      ]
+    }
+  },
+  "additivity": {
+    "baseline": 2,
+    "adversarial": 1,
+    "cooperative": 3,
+    "ramp": 2,
+    "all": 3,
+    "sum_blocks": 2,
+    "superadditive": true
+  },
+  "runtime_seconds": 134.1063711643219
+}

@@ -1,0 +1,103 @@
+=== Colab Experiment Log Mirror — Sun Apr  5 09:10:16 PM EDT 2026 ===
+Monitoring: retrieved-merge-plenty-expansion.trycloudflare.com
+
+=== 9B check Sun Apr  5 09:15:50 PM EDT 2026 ===
+Loading Qwen/Qwen3.5-9B...
+  Loaded in 60s — 32 layers, d=4096
+  Intervention window: L8-L24 (17 layers)
+  Fit layers: [8, 12, 16, 20, 24]
+
+Computing language directions...
+  L8: |diff|=2.48, Cohen's d=39.50
+  L12: |diff|=3.31, Cohen's d=40.08
+=== 9B check Sun Apr  5 09:21:02 PM EDT 2026 ===
+Loading Qwen/Qwen3.5-9B...
+  Loaded in 60s — 32 layers, d=4096
+  Intervention window: L8-L24 (17 layers)
+  Fit layers: [8, 12, 16, 20, 24]
+
+Computing language directions...
+  L8: |diff|=2.48, Cohen's d=39.50
+  L12: |diff|=3.31, Cohen's d=40.08
+  L16: |diff|=4.67, Cohen's d=48.67
+  L20: |diff|=17.21, Cohen's d=82.06
+  L24: |diff|=21.69, Cohen's d=91.76
+
+============================================================
+Condition: baseline (scale=1.0)
+============================================================
+=== 9B check Sun Apr  5 09:26:15 PM EDT 2026 ===
+  L8: |diff|=2.48, Cohen's d=39.50
+  L12: |diff|=3.31, Cohen's d=40.08
+  L16: |diff|=4.67, Cohen's d=48.67
+  L20: |diff|=17.21, Cohen's d=82.06
+  L24: |diff|=21.69, Cohen's d=91.76
+Condition: baseline (scale=1.0)
+  EN: 4/10, ZH: 1/10, Total: 5/20
+Condition: flip_lang (scale=-1.0)
+---
+  EN 1: ✓ (ans=60, got=60, lang=en)
+  EN 2: ✗ (ans=2, got=0, lang=en)
+  EN 3: ✗ (ans=120, got=40, lang=en)
+  EN 4: ✗ (ans=40, got=3, lang=en)
+  EN 5: ✗ (ans=11223, got=1, lang=en)
+  EN 6: ✗ (ans=120, got=10, lang=en)
+  EN 7: ✗ (ans=34, got=206, lang=en)
+  EN 8: ✗ (ans=3475, got=25, lang=en)
+  EN 9: ✗ (ans=1551, got=47, lang=en)
+  ZH 0: ✗ (ans=133, got=13, lang=zh)
+  ZH 1: ✓ (ans=60, got=60, lang=zh)
+  ZH 2: ✗ (ans=2, got=100, lang=zh)
+  ZH 3: ✓ (ans=120, got=120, lang=zh)
+  ZH 4: ✗ (ans=40, got=27, lang=zh)
+  ZH 5: ✗ (ans=11223, got=27, lang=zh)
+=== 9B check Sun Apr  5 09:31:28 PM EDT 2026 ===
+Condition: baseline (scale=1.0)
+  EN: 4/10, ZH: 1/10, Total: 5/20
+Condition: flip_lang (scale=-1.0)
+  EN: 2/10, ZH: 2/10, Total: 4/20
+Condition: flip_random (scale=-1.0)
+  EN: 3/10, ZH: 1/10, Total: 4/20
+---
+============================================================
+PROJECT_1D WEIGHT SURGERY (permanent weight modification)
+============================================================
+  EN 0: ✓ (ans=133, got=133, lang=en)
+  EN 1: ✓ (ans=60, got=60, lang=en)
+  EN 2: ✗ (ans=2, got=0, lang=en)
+  EN 3: ✓ (ans=120, got=120, lang=en)
+  EN 4: ✗ (ans=40, got=3, lang=en)
+  EN 5: ✓ (ans=11223, got=11223, lang=en)
+  EN 6: ✗ (ans=120, got=10, lang=en)
+  EN 7: ✗ (ans=34, got=8648648648648, lang=en)
+  EN 8: ✗ (ans=3475, got=25, lang=en)
+  EN 9: ✗ (ans=1551, got=47, lang=en)
+  ZH 0: ✗ (ans=133, got=13, lang=zh)
+  ZH 1: ✓ (ans=60, got=60, lang=zh)
+=== 14B check Sun Apr  5 09:46:34 PM EDT 2026 ===
+  L12: |diff|=15.29, Cohen's d=97.44
+  L18: |diff|=17.46, Cohen's d=79.02
+  L24: |diff|=12.09, Cohen's d=57.66
+  L30: |diff|=19.87, Cohen's d=69.78
+  L36: |diff|=50.90, Cohen's d=99.29
+Condition: baseline (scale=1.0)
+  EN: 2/10, ZH: 3/10, Total: 5/20
+Condition: flip_lang (scale=-1.0)
+  EN: 1/10, ZH: 4/10, Total: 5/20
+Condition: flip_random (scale=-1.0)
+---
+  ZH 7: ✗ (ans=34, got=22, lang=zh)
+  ZH 8: ✗ (ans=3475, got=25, lang=zh)
+  ZH 9: ✓ (ans=1551, got=1551, lang=zh)
+
+  EN: 1/10, ZH: 4/10, Total: 5/20
+
+============================================================
+Condition: flip_random (scale=-1.0)
+============================================================
+  EN 0: ✓ (ans=133, got=133, lang=en)
+  EN 1: ✓ (ans=60, got=60, lang=en)
+  EN 2: ✗ (ans=2, got=7, lang=en)
+  EN 3: ✗ (ans=120, got=5, lang=en)
+  EN 4: ✗ (ans=40, got=3, lang=en)
+  EN 5: ✗ (ans=11223, got=387, lang=en)

@@ -1,0 +1,31 @@
+{
+  "experiment": "AR: Cross-Model Logit Averaging \u2014 1.5B",
+  "model": "Qwen/Qwen2.5-1.5B",
+  "n_layers": 28,
+  "d_model": 1536,
+  "quantized": false,
+  "baseline_zh": {
+    "correct": 14,
+    "total": 20
+  },
+  "baseline_en": {
+    "correct": 5,
+    "total": 20
+  },
+  "logit_avg": {
+    "correct": 11,
+    "total": 20
+  },
+  "flip_scale_-0.5": {
+    "correct": 7,
+    "total": 20
+  },
+  "flip_scale_-1.0": {
+    "correct": 6,
+    "total": 20
+  },
+  "flip_scale_-1.5": {
+    "correct": 7,
+    "total": 20
+  }
+}

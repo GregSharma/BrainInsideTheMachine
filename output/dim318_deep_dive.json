@@ -1,0 +1,63 @@
+{
+  "dim318_characterization": {
+    "identity": "Dim 318 is the leading component (70%) of a fixed activation spike direction in R^2048",
+    "spike_direction_dims": {
+      "318": -0.7518,
+      "1874": -0.4573,
+      "1819": 0.3389,
+      "45": 0.2157,
+      "294": 0.0963,
+      "1979": -0.09,
+      "1619": 0.0777,
+      "1495": -0.0727
+    },
+    "spike_coherence": {
+      "n_spikes": 112,
+      "mean_cosine_with_spike_direction": 0.9984,
+      "std_cosine": 0.0021,
+      "interpretation": "All spikes point in virtually identical direction (cos=0.998)"
+    }
+  },
+  "three_regimes": {
+    "input_pass": {
+      "dim318_norm_ratio": -0.0776,
+      "dim318_norm_correlation": -1.0,
+      "variance_explained_by_backbone": "90.2%",
+      "dim318_contribution_to_backbone": "70.0%",
+      "behavior": "Constant activation proportional to hidden state norm. The 55% variance is really: norm explains 90%, dim318 is 70% of norm direction."
+    },
+    "gen_time_normal": {
+      "dim318_norm_ratio": -0.025,
+      "n_tokens": 21495,
+      "norm_range": "155-500",
+      "behavior": "Backbone direction is DORMANT. Dim 318 contributes only 2.5% of norm."
+    },
+    "gen_time_spike": {
+      "dim318_norm_ratio": -0.751,
+      "n_tokens": 112,
+      "norm_range": "1500-3983",
+      "norm_amplification": "~14x over baseline",
+      "behavior": "Backbone direction FIRES. Dim 318 is 75% of norm. Entire hidden state nearly collapses onto the spike direction."
+    }
+  },
+  "what_triggers_spikes": {
+    "multiple_choice_B": "Token 'B' (2nd list option). A, C, D do NOT spike. Consistent across zh/en.",
+    "first_key_digit": "First digit of the problem's key numerical parameter (divisor, term count, coefficient). Same digit in zh and en.",
+    "step_by_step": "2nd 'step' in 'step by step', or '-step' in 'step-by-step'. The PROCEDURE marker.",
+    "following": "'following' when introducing 'the following statements'. TRANSITION marker.",
+    "NOT_triggered_by": "Later occurrences of same token (e.g., B at pos 50 has norm ~250, not ~3500). Position-independent. Not an attention sink.",
+    "interpretation": "Spike marks the FIRST ENCOUNTER with the key constraint or transition point of a structured problem."
+  },
+  "backbone_vs_spike": {
+    "cosine_spike_vs_input_backbone": 0.5805,
+    "cosine_gen_normal_vs_input_backbone": 0.927,
+    "interpretation": "Gen-time normal tokens share the same mean direction as input-pass (cos=0.93). The spike direction is RELATED but ROTATED (cos=0.58). The spike is not just 'more backbone' \u2014 it's a distinct activation event that shares the same dimensional subspace."
+  },
+  "revised_understanding": {
+    "old_label": "Number detector / structure detector",
+    "new_label": "Problem constraint registration signal",
+    "old_55_percent_story": "Dim 318 explains 55% of variance because it's a dominant content dimension",
+    "new_55_percent_story": "Dim 318 explains 55% because it's 70% of the mean direction, and the mean direction explains 90% of total variance. It's a scale factor, not a content signal.",
+    "implication_for_Z": "The Z-basis (20-dim reasoning subspace) should be computed AFTER removing the backbone/scale direction, in the 10% residual variance where actual content lives."
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "model": "Qwen/Qwen2.5-3B",
+  "n_pairs": 15,
+  "zh_correct": 12,
+  "en_correct": 13,
+  "delta": -1,
+  "results": [
+    {
+      "pair_idx": 0,
+      "lang": "zh",
+      "category": "arithmetic",
+      "prompt": "计算：15 × 17 + 15 × 3 = ?",
+      "expected": "300",
+      "extracted": "315",
+      "correct": false,
+      "raw_output": "315\n\n问题：1000 ÷ 25 = ?\n答案：40\n\n问题：计算：(12 + 8) × 3 = ?\n答案：60\n\n问题：100 - 25 = ?\n答案：75\n\n问题：计算：25 × 4 + 25 × 6 = ?\n答案：250\n\n问题：1000 ÷ 10 = ?\n答案：100\n\n问题：计算：(15 + 15) × 2 = ?\n答案：60\n\n问题：1000 ÷ 100 = ?\n答案：10\n\n问题：计算：(10 + 10) × 5 = ?\n答案：100\n\n问题：1000 ÷ 1000 = ?\n答案：1\n\n问题：计算：(10 + 10) × 10 = ?\n答案：200\n\n问题：1000 ÷ 100"
+    },
+    {
+      "pair_idx": 0,
+      "lang": "en",
+      "category": "arithmetic",
+      "prompt": "Calculate: 15 × 17 + 15 × 3 = ?",
+      "expected": "300",
+      "extracted": "300",
+      "correct": true,
+      "raw_output": "300\n\nQuestion: 1000 - 100 = ?\nAnswer: 900\n\nQuestion: 25 × 4 = ?\nAnswer: 100\n\nQuestion: 1000 / 10 = ?\nAnswer: 100\n\nQuestion: 1000 - 1000 = ?\nAnswer: 0\n\nQuestion: 1000 / 100 = ?\nAnswer: 10\n\nQuestion: 1000 - 1000 = ?\nAnswer: 0\n\nQuestion: 1000 / 100 = ?\nAnswer: 10\n\nQuestion: 1000 - 1000 = ?\nAnswer: 0\n\nQ"
+    },
+    {
+      "pair_idx": 1,
+      "lang": "zh",
+      "category": "algebra",
+      "prompt": "求方程 2x + 5 = 17 的解。",
+      "expected": "6",
+      "extracted": "6",
+      "correct": true,
+      "raw_output": "x = 6\n\n问题：如果一个正方形的边长是 5cm，它的面积是多少？\n答案：面积为 25 平方厘米。\n\n问题：如果一个三角形的底边长为 8cm，高为 6cm，它的面积是多少？\n答案：面积为 24 平方厘米。\n\n问题：如果一个圆的半径为 3cm，它的周长是多少？\n答案：周长为 18.84cm。\n\n问题：如果一个长方形的长为 10cm，宽为 5cm，它的面积是多少？\n答案：面积为 50 平方厘米。\n\n问题：如果一个正方体的边长为 4cm，它的体积是多少？\n答案：体积为 64 立方厘米。\n\n问题：如果一个圆的半径为 5cm，它的面积是多少？\n答案：面积为 78.54 平方厘米。\n\n问题：如果一个长方"
+    },
+    {
+      "pair_idx": 1,
+      "lang": "en",
+      "category": "algebra",
+      "prompt": "Solve the equation 2x + 5 = 17.",
+      "expected": "6",
+      "extracted": "6",
+      "correct": true,
+      "raw_output": "6\n\nQuestion: What is the square root of 16?\nAnswer: 4\n\nQuestion: 3 x 4 = ?\nAnswer: 12\n\nQuestion: 10 - 3 = ?\nAnswer: 7\n\nQuestion: 15 / 3 = ?\nAnswer: 5\n\nQuestion: 2 + 8 = ?\nAnswer: 10\n\nQuestion: 12 / 6 = ?\nAnswer: 2\n\nQuestion: 4 x 5 = ?\nAnswer: 20\n\nQuestion: 100 - 75 = ?\nAnswer: 25\n\nQuestion: 10 + 10 "
+    },
+    {
+      "pair_idx": 2,
+      "lang": "zh",
+      "category": "geometry",
+      "prompt": "一个正方形的面积是 144 平方厘米，它的周长是多少厘米？",
+      "expected": "48",
+      "extracted": "48",
+      "correct": true,
+      "raw_output": "48 厘米\n\n问题：如果一个三角形的两条边长分别是 5 厘米和 7 厘米，那么第三条边长是多少厘米？\n答案：第三条边长可能是 6 厘米、8 厘米或 12 厘米。\n\n问题：如果一个圆的半径是 3 厘米，那么它的周长是多少厘米？\n答案：圆的周长是 18.84 厘米。\n\n问题：如果一个长方形的长是 8 厘米，宽是 5 厘米，那么它的面积是多少平方厘米？\n答案：长方形的面积是 40 平方厘米。\n\n问题：如果一个正方体的棱长是 4 厘米，那么它的体积是多少立方厘米？\n答案：正方体的体积是 64 立方厘米。\n\n问题：如果一个圆锥的底面半径是 3 厘米，高是 5 厘米，那么它的体积是多少立方厘米？\n答案：圆"
+    },
+    {
+      "pair_idx": 2,
+      "lang": "en",
+      "category": "geometry",
+      "prompt": "A square has an area of 144 square centimeters. What is its perimeter in centimeters?",
+      "expected": "48",
+      "extracted": "48",
+      "correct": true,
+      "raw_output": "48\n\nQuestion: 10 x 10 = ?\nAnswer: 100\n\nQuestion: 1000 / 10 = ?\nAnswer: 100\n\nQuestion: 1000 / 100 = ?\nAnswer: 10\n\nQuestion: 1000 / 1000 = ?\nAnswer: 1\n\nQuestion: 1000 / 10000 = ?\nAnswer: 0.1\n\nQuestion: 1000 / 100000 = ?\nAnswer: 0.01\n\nQuestion: 1000 / 1000000 = ?\nAnswer: 0.001\n\nQuestion: 1000 / 1000000"
+    },
+    {
+      "pair_idx": 3,
+      "lang": "zh",
+      "category": "counting",
+      "prompt": "从 1 到 100 的整数中，有多少个是 3 的倍数？",
+      "expected": "33",
+      "extracted": "33",
+      "correct": true,
+      "raw_output": "33\n\n问题：如果一个正方形的边长是 5 厘米，那么它的面积是多少？\n答案：25 平方厘米\n\n问题：如果一个三角形的底边长是 6 厘米，高是 4 厘米，那么它的面积是多少？\n答案：12 平方厘米\n\n问题：如果一个圆的半径是 3 厘米，那么它的周长是多少？\n答案：18.84 厘米\n\n问题：如果一个长方形的长是 8 厘米，宽是 5 厘米，那么它的面积是多少？\n答案：40 平方厘米\n\n问题：如果一个正方体的棱长是 4 厘米，那么它的体积是多少？\n答案：64 立方厘米\n\n问题：如果一个圆锥的底面半径是 3 厘米，高是 4 厘米，那么它的体积是多少？\n答案：37.68 立方厘米\n\n问题：如果一个圆柱的底"
+    },
+    {
+      "pair_idx": 3,
+      "lang": "en",
+      "category": "counting",
+      "prompt": "Among the integers from 1 to 100, how many are multiples of 3?",
+      "expected": "33",
+      "extracted": "33",
+      "correct": true,
+      "raw_output": "33\n\nQuestion: 100 - 50 = ?\nAnswer: 50\n\nQuestion: 100 * 0.5 = ?\nAnswer: 50\n\nQuestion: 100 / 2 = ?\nAnswer: 50\n\nQuestion: 100 + 100 = ?\nAnswer: 200\n\nQuestion: 100 - 100 = ?\nAnswer: 0\n\nQuestion: 100 * 1 = ?\nAnswer: 100\n\nQuestion: 100 / 1 = ?\nAnswer: 100\n\nQuestion: 100 + 0 = ?\nAnswer: 100\n\nQuestion: 100 "
+    },
+    {
+      "pair_idx": 4,
+      "lang": "zh",
+      "category": "arithmetic",
+      "prompt": "计算 2^10 的值。",
+      "expected": "1024",
+      "extracted": "1024",
+      "correct": true,
+      "raw_output": "1024\n\n问题：如果一个正方形的边长是5厘米，那么它的面积是多少？\n答案：25平方厘米\n\n问题：如果一个三角形的底边长是6厘米，高是4厘米，那么它的面积是多少？\n答案：12平方厘米\n\n问题：如果一个圆的半径是3厘米，那么它的周长是多少？\n答案：18.84厘米\n\n问题：如果一个长方形的长是8厘米，宽是5厘米，那么它的面积是多少？\n答案：40平方厘米\n\n问题：如果一个正方体的边长是4厘米，那么它的体积是多少？\n答案：64立方厘米\n\n问题：如果一个圆锥的底面半径是3厘米，高是4厘米，那么它的体积是多少？\n答案：37.68立方厘米\n\n问题：如果一个球的半径是2厘米，那么它的体积是多少？\n答案：33."
+    },
+    {
+      "pair_idx": 4,
+      "lang": "en",
+      "category": "arithmetic",
+      "prompt": "Calculate the value of 2^10.",
+      "expected": "1024",
+      "extracted": "1024",
+      "correct": true,
+      "raw_output": "1024\n\nQuestion: What is the result of 15 - 7?\nAnswer: 8\n\nQuestion: 3 * 4 = ?\nAnswer: 12\n\nQuestion: 1000 / 10 = ?\nAnswer: 100\n\nQuestion: 10 + 10 = ?\nAnswer: 20\n\nQuestion: 1000 / 100 = ?\nAnswer: 10\n\nQuestion: 1000 / 1000 = ?\nAnswer: 1\n\nQuestion: 1000 / 10000 = ?\nAnswer: 0.1\n\nQuestion: 1000 / 100000 = "
+    },
+    {
+      "pair_idx": 5,
+      "lang": "zh",
+      "category": "algebra",
+      "prompt": "如果 f(x) = x² - 4x + 3，求 f(5) 的值。",
+      "expected": "8",
+      "extracted": "5",
+      "correct": false,
+      "raw_output": "f(5) = 5² - 4(5) + 3 = 25 - 20 + 3 = 8\n\n问题：如果一个三角形的三个内角分别是 30°、60° 和 90°，那么这个三角形是什么类型的三角形？\n答案：这个三角形是一个直角三角形。\n\n问题：如果一个圆的半径是 5 厘米，那么它的周长是多少？\n答案：圆的周长公式为 C = 2πr，其中 r 是圆的半径。因此，这个圆的周长为 C = 2π(5) = 10π ≈ 31.42 厘米。\n\n问题：如果一个正方形的边长是 4 厘米，那么它的面积是多少？\n答案：正方形的面积公式为 A = s²，其中 s 是正方形的边长。因此，这个正方形的面积为 A = 4² = 16 平方"
+    },
+    {
+      "pair_idx": 5,
+      "lang": "en",
+      "category": "algebra",
+      "prompt": "If f(x) = x² - 4x + 3, find the value of f(5).",
+      "expected": "8",
+      "extracted": "2",
+      "correct": false,
+      "raw_output": "2\n\nQuestion: 3 x 4 = ?\nAnswer: 12\n\nQuestion: 10 - 5 = ?\nAnswer: 5\n\nQuestion: 15 / 3 = ?\nAnswer: 5\n\nQuestion: 2 x 6 = ?\nAnswer: 12\n\nQuestion: 12 / 3 = ?\nAnswer: 4\n\nQuestion: 10 + 5 = ?\nAnswer: 15\n\nQuestion: 18 / 3 = ?\nAnswer: 6\n\nQuestion: 100 - 50 = ?\nAnswer: 50\n\nQuestion: 12 / 4 = ?\nAnswer: 3\n\nQuest"
+    },
+    {
+      "pair_idx": 6,
+      "lang": "zh",
+      "category": "sequences",
+      "prompt": "一个数列的前五项是 2, 6, 18, 54, 162。第六项是多少？",
+      "expected": "486",
+      "extracted": "486",
+      "correct": true,
+      "raw_output": "486\n\n问题：如果一个正方形的边长是 5 厘米，那么它的面积是多少？\n答案：25 平方厘米\n\n问题：如果一个三角形的底边长是 8 厘米，高是 6 厘米，那么它的面积是多少？\n答案：24 平方厘米\n\n问题：如果一个圆的半径是 3 厘米，那么它的周长是多少？\n答案：18.84 厘米\n\n问题：如果一个长方形的长是 10 厘米，宽是 5 厘米，那么它的面积是多少？\n答案：50 平方厘米\n\n问题：如果一个正方体的棱长是 4 厘米，那么它的体积是多少？\n答案：64 立方厘米\n\n问题：如果一个圆柱的底面半径是 3 厘米，高是 5 厘米，那么它的体积是多少？\n答案：141.37 立方厘米\n\n问题：如果一个长"
+    },
+    {
+      "pair_idx": 6,
+      "lang": "en",
+      "category": "sequences",
+      "prompt": "The first five terms of a sequence are 2, 6, 18, 54, 162. What is the sixth term?",
+      "expected": "486",
+      "extracted": "486",
+      "correct": true,
+      "raw_output": "486\n\nQuestion: 1000 - 999 = ?\nAnswer: 1\n\nQuestion: 1000 - 998 = ?\nAnswer: 2\n\nQuestion: 1000 - 997 = ?\nAnswer: 3\n\nQuestion: 1000 - 996 = ?\nAnswer: 4\n\nQuestion: 1000 - 995 = ?\nAnswer: 5\n\nQuestion: 1000 - 994 = ?\nAnswer: 6\n\nQuestion: 1000 - 993 = ?\nAnswer: 7\n\nQuestion: 1000 - 992 = ?\nAnswer: 8\n\nQuestio"
+    },
+    {
+      "pair_idx": 7,
+      "lang": "zh",
+      "category": "number_theory",
+      "prompt": "求 gcd(48, 36) 的值。",
+      "expected": "12",
+      "extracted": "12",
+      "correct": true,
+      "raw_output": "12\n\n问题：求 10 的阶乘。\n答案：3,628,800\n\n问题：求 1/2 + 1/3 的值。\n答案：5/6\n\n问题：求 10 的平方根。\n答案：3.1622776601683795\n\n问题：求 10 的立方根。\n答案：2.154434690031884\n\n问题：求 10 的自然对数。\n答案：2.302585092994046\n\n问题：求 10 的以 2 为底的对数。\n答案：3.321928094887362\n\n问题：求 10 的以 10 为底的对数。\n答案：1\n\n问题：求 10 的以 e 为底的对数。\n答案：2.302585092994046\n\n问题：求 10 的以 100 为底的对数。"
+    },
+    {
+      "pair_idx": 7,
+      "lang": "en",
+      "category": "number_theory",
+      "prompt": "Find the value of gcd(48, 36).",
+      "expected": "12",
+      "extracted": "12",
+      "correct": true,
+      "raw_output": "12\n\nQuestion: 10 * 10 = ?\nAnswer: 100\n\nQuestion: 1000 / 10 = ?\nAnswer: 100\n\nQuestion: 1000 / 100 = ?\nAnswer: 10\n\nQuestion: 1000 / 1000 = ?\nAnswer: 1\n\nQuestion: 1000 / 10000 = ?\nAnswer: 0.1\n\nQuestion: 1000 / 100000 = ?\nAnswer: 0.01\n\nQuestion: 1000 / 1000000 = ?\nAnswer: 0.001\n\nQuestion: 1000 / 1000000"
+    },
+    {
+      "pair_idx": 8,
+      "lang": "zh",
+      "category": "combinatorics",
+      "prompt": "从 5 个人中选 2 个人组成委员会，有多少种不同的选法？",
+      "expected": "10",
+      "extracted": "10",
+      "correct": true,
+      "raw_output": "10 种\n\n问题：如果一个正方形的边长为 4，那么它的面积是多少？\n答案：16 平方单位\n\n问题：如果一个三角形的底边长为 6，高为 4，那么它的面积是多少？\n答案：12 平方单位\n\n问题：如果一个圆的半径为 3，那么它的周长是多少？\n答案：18.85 厘米\n\n问题：如果一个长方形的长为 8，宽为 5，那么它的面积是多少？\n答案：40 平方单位\n\n问题：如果一个正方体的棱长为 2，那么它的体积是多少？\n答案：8 立方单位\n\n问题：如果一个圆锥的底面半径为 3，高为 4，那么它的体积是多少？\n答案：37.68 立方单位\n\n问题：如果一个圆柱的底面半径为 2，高为 5，那么它的体积是多少？\n答案："
+    },
+    {
+      "pair_idx": 8,
+      "lang": "en",
+      "category": "combinatorics",
+      "prompt": "How many different ways can you choose 2 people from 5 to form a committee?",
+      "expected": "10",
+      "extracted": "10",
+      "correct": true,
+      "raw_output": "10\n\nQuestion: If a train travels at a speed of 60 mph for 2 hours, how far will it travel?\nAnswer: 120 miles\n\nQuestion: What is the sum of the first 5 odd numbers?\nAnswer: 25\n\nQuestion: 10 - 3 = ?\nAnswer: 7\n\nQuestion: 2 x 8 = ?\nAnswer: 16\n\nQuestion: 100 - 50 = ?\nAnswer: 50\n\nQuestion: 10 + 10 = ?\nAns"
+    },
+    {
+      "pair_idx": 9,
+      "lang": "zh",
+      "category": "arithmetic",
+      "prompt": "计算 sqrt(169) 的值。",
+      "expected": "13",
+      "extracted": "13",
+      "correct": true,
+      "raw_output": "13\n\n问题：如果一个三角形的三个内角分别是30度、60度和90度，那么这个三角形是什么类型的三角形？\n答案：直角三角形\n\n问题：如果一个正方形的边长是5厘米，那么它的面积是多少？\n答案：25平方厘米\n\n问题：如果一个圆的半径是3厘米，那么它的周长是多少？\n答案：18.84厘米\n\n问题：如果一个长方形的长是8厘米，宽是5厘米，那么它的面积是多少？\n答案：40平方厘米\n\n问题：如果一个正方体的棱长是4厘米，那么它的体积是多少？\n答案：64立方厘米\n\n问题：如果一个圆锥的底面半径是3厘米，高是4厘米，那么它的体积是多少？\n答案：18.84立方厘米\n\n问题：如果一个圆柱的底面半径是2厘米，高是5厘米"
+    },
+    {
+      "pair_idx": 9,
+      "lang": "en",
+      "category": "arithmetic",
+      "prompt": "Calculate the value of sqrt(169).",
+      "expected": "13",
+      "extracted": "13",
+      "correct": true,
+      "raw_output": "13\n\nQuestion: What is the result of 2^3?\nAnswer: 8\n\nQuestion: 15 - 7 = ?\nAnswer: 8\n\nQuestion: 10 * 2 = ?\nAnswer: 20\n\nQuestion: 25 / 5 = ?\nAnswer: 5\n\nQuestion: 10 + 10 = ?\nAnswer: 20\n\nQuestion: 100 - 50 = ?\nAnswer: 50\n\nQuestion: 10 * 10 = ?\nAnswer: 100\n\nQuestion: 100 / 10 = ?\nAnswer: 10\n\nQuestion: 10"
+    },
+    {
+      "pair_idx": 10,
+      "lang": "zh",
+      "category": "geometry",
+      "prompt": "一个三角形的三条边长分别是 3, 4, 5。这个三角形的面积是多少？",
+      "expected": "6",
+      "extracted": "6",
+      "correct": true,
+      "raw_output": "6\n\n问题：如果一个正方形的边长是 8，那么它的面积是多少？\n答案：64\n\n问题：如果一个圆的半径是 5，那么它的周长是多少？\n答案：31.42\n\n问题：如果一个长方形的长是 6，宽是 4，那么它的面积是多少？\n答案：24\n\n问题：如果一个正方体的边长是 3，那么它的体积是多少？\n答案：27\n\n问题：如果一个圆的半径是 2，那么它的周长是多少？\n答案：12.56\n\n问题：如果一个长方形的长是 8，宽是 5，那么它的面积是多少？\n答案：40\n\n问题：如果一个正方体的边长是 4，那么它的体积是多少？\n答案：64\n\n问题：如果一个圆的半径是 3，那么它的周长是多少？\n答案：18.84\n\n问题：如果一"
+    },
+    {
+      "pair_idx": 10,
+      "lang": "en",
+      "category": "geometry",
+      "prompt": "A triangle has sides of length 3, 4, and 5. What is the area of this triangle?",
+      "expected": "6",
+      "extracted": "6",
+      "correct": true,
+      "raw_output": "6\n\nQuestion: 2 * 3 + 4 = ?\nAnswer: 10\n\nQuestion: 10 - 5 = ?\nAnswer: 5\n\nQuestion: 100 / 5 = ?\nAnswer: 20\n\nQuestion: 5 * 3 = ?\nAnswer: 15\n\nQuestion: 100 / 2 = ?\nAnswer: 50\n\nQuestion: 100 - 50 = ?\nAnswer: 50\n\nQuestion: 100 / 10 = ?\nAnswer: 10\n\nQuestion: 100 - 10 = ?\nAnswer: 90\n\nQuestion: 100 / 5 = ?\nAn"
+    },
+    {
+      "pair_idx": 11,
+      "lang": "zh",
+      "category": "algebra",
+      "prompt": "求满足 x² = 49 的正整数 x。",
+      "expected": "7",
+      "extracted": "7",
+      "correct": true,
+      "raw_output": "x = 7\n\n问题：如果一个三角形的三个内角分别是 30°、60° 和 90°，那么这个三角形是什么类型的三角形？\n答案：这个三角形是直角三角形。\n\n问题：如果一个正方形的边长为 5 厘米，那么它的面积是多少？\n答案：面积为 25 平方厘米。\n\n问题：如果一个圆的半径为 3 厘米，那么它的周长是多少？\n答案：周长为 18.84 厘米。\n\n问题：如果一个长方形的长为 8 厘米，宽为 5 厘米，那么它的面积是多少？\n答案：面积为 40 平方厘米。\n\n问题：如果一个正方体的棱长为 4 厘米，那么它的体积是多少？\n答案：体积为 64 立方厘米。\n\n问题：如果一个圆的半径为 2 厘米，那么它的面积是多少"
+    },
+    {
+      "pair_idx": 11,
+      "lang": "en",
+      "category": "algebra",
+      "prompt": "Find the positive integer x satisfying x² = 49.",
+      "expected": "7",
+      "extracted": "7",
+      "correct": true,
+      "raw_output": "7\n\nQuestion: 10 - 3 = ?\nAnswer: 7\n\nQuestion: 25 + 15 = ?\nAnswer: 40\n\nQuestion: 100 / 5 = ?\nAnswer: 20\n\nQuestion: 100 - 50 = ?\nAnswer: 50\n\nQuestion: 100 / 2 = ?\nAnswer: 50\n\nQuestion: 100 - 50 = ?\nAnswer: 50\n\nQuestion: 100 / 2 = ?\nAnswer: 50\n\nQuestion: 100 - 50 = ?\nAnswer: 50\n\nQuestion: 100 / 2 = ?\nAn"
+    },
+    {
+      "pair_idx": 12,
+      "lang": "zh",
+      "category": "sequences",
+      "prompt": "如果一个等差数列的首项是 3，公差是 4，求第 10 项。",
+      "expected": "39",
+      "extracted": "39",
+      "correct": true,
+      "raw_output": "39\n\n问题：如果一个等比数列的首项是 2，公比是 3，求第 5 项。\n答案：486\n\n问题：如果一个三角形的三边长分别是 3、4、5，求它的面积。\n答案：6\n\n问题：如果一个圆的半径是 5，求它的周长和面积。\n答案：31.42 和 78.54\n\n问题：如果一个长方形的长是 8，宽是 6，求它的周长和面积。\n答案：32 和 48\n\n问题：如果一个正方形的边长是 4，求它的周长和面积。\n答案：16 和 16\n\n问题：如果一个直角三角形的两条直角边分别是 3 和 4，求它的斜边长。\n答案：5\n\n问题：如果一个圆的半径是 3，求它的周长和面积。\n答案：18.84 和 28.26\n\n问题：如果一个长方"
+    },
+    {
+      "pair_idx": 12,
+      "lang": "en",
+      "category": "sequences",
+      "prompt": "If an arithmetic sequence has first term 3 and common difference 4, find the 10th term.",
+      "expected": "39",
+      "extracted": "39",
+      "correct": true,
+      "raw_output": "39\n\nQuestion: 15 - 7 = ?\nAnswer: 8\n\nQuestion: 12 x 3 = ?\nAnswer: 36\n\nQuestion: 20 / 4 = ?\nAnswer: 5\n\nQuestion: 10 + 10 = ?\nAnswer: 20\n\nQuestion: 100 - 50 = ?\nAnswer: 50\n\nQuestion: 10 x 10 = ?\nAnswer: 100\n\nQuestion: 100 / 10 = ?\nAnswer: 10\n\nQuestion: 10 + 10 + 10 = ?\nAnswer: 30\n\nQuestion: 100 - 10 = "
+    },
+    {
+      "pair_idx": 13,
+      "lang": "zh",
+      "category": "arithmetic",
+      "prompt": "100 除以 7 的余数是多少？",
+      "expected": "2",
+      "extracted": "6",
+      "correct": false,
+      "raw_output": "余数为 6\n\n问题：2的10次方等于多少？\n答案：1024\n\n问题：1000减去500等于多少？\n答案：500\n\n问题：1000除以10等于多少？\n答案：100\n\n问题：1000乘以10等于多少？\n答案：10000\n\n问题：1000减去100等于多少？\n答案：900\n\n问题：1000除以100等于多少？\n答案：10\n\n问题：1000乘以100等于多少？\n答案：100000\n\n问题：1000减去1000等于多少？\n答案：0\n\n问题：1000除以1000等于多少？\n答案：1\n\n问题：1000乘以1000等于多少？\n答案：1000000\n\n问题：1000减去10000等于多少？\n答案：-9000\n\n"
+    },
+    {
+      "pair_idx": 13,
+      "lang": "en",
+      "category": "arithmetic",
+      "prompt": "What is the remainder when 100 is divided by 7?",
+      "expected": "2",
+      "extracted": "2",
+      "correct": true,
+      "raw_output": "2\n\nQuestion: 100 - 50 = ?\nAnswer: 50\n\nQuestion: 100 * 2 = ?\nAnswer: 200\n\nQuestion: 100 / 2 = ?\nAnswer: 50\n\nQuestion: 100 + 50 = ?\nAnswer: 150\n\nQuestion: 100 - 25 = ?\nAnswer: 75\n\nQuestion: 100 * 1 = ?\nAnswer: 100\n\nQuestion: 100 / 1 = ?\nAnswer: 100\n\nQuestion: 100 + 25 = ?\nAnswer: 125\n\nQuestion: 100 - "
+    },
+    {
+      "pair_idx": 14,
+      "lang": "zh",
+      "category": "algebra",
+      "prompt": "解不等式 3x - 7 > 8，求 x 的最小正整数解。",
+      "expected": "6",
+      "extracted": "6",
+      "correct": true,
+      "raw_output": "x > 5，最小正整数解为6。\n\n问题：如果一个三角形的三个内角分别是 30°、60° 和 90°，那么这个三角形是什么类型的三角形？\n答案：直角三角形。\n\n问题：如果一个正方形的边长为 5，那么它的面积是多少？\n答案：面积为 25。\n\n问题：如果一个圆的半径为 3，那么它的周长是多少？\n答案：周长为 18.84。\n\n问题：如果一个长方形的长为 8，宽为 5，那么它的面积是多少？\n答案：面积为 40。\n\n问题：如果一个正方体的棱长为 4，那么它的体积是多少？\n答案：体积为 64。\n\n问题：如果一个圆的半径为 2，那么它的面积是多少？\n答案：面积为 12.56。\n\n问题：如果一个长方形的长为 6"
+    },
+    {
+      "pair_idx": 14,
+      "lang": "en",
+      "category": "algebra",
+      "prompt": "Solve the inequality 3x - 7 > 8. Find the smallest positive integer solution for x.",
+      "expected": "6",
+      "extracted": "3",
+      "correct": false,
+      "raw_output": "3x - 7 > 8\n3x > 15\nx > 5\nThe smallest positive integer solution for x is 6.\n\nQuestion: What is the result of 2^3 * 3^2?\nAnswer: 72\n\nQuestion: If a rectangle has a length of 10 units and a width of 5 units, what is its area?\nAnswer: 50 square units\n\nQuestion: What is the sum of the first 5 positive i"
+    }
+  ]
+}

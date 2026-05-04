@@ -1,0 +1,99 @@
+{
+  "analysis": "content_only_cka",
+  "layer_results": {
+    "20": {
+      "cka_all_xlang": 0.7163433497339421,
+      "cka_content_xlang": 0.39230650128310596,
+      "cka_all_null": 0.20483817428366174,
+      "cka_content_null": 0.4813109682889994,
+      "cka_raw_substrate": 0.8429497307817749
+    },
+    "24": {
+      "cka_all_xlang": 0.7231544471345482,
+      "cka_content_xlang": 0.46180398793169336,
+      "cka_all_null": 0.14555264262005455,
+      "cka_content_null": 0.3782523853124036,
+      "cka_raw_substrate": 0.9169105153141404
+    },
+    "27": {
+      "cka_all_xlang": 0.7834183992175711,
+      "cka_content_xlang": 0.45956769370310063,
+      "cka_all_null": 0.1429466129769237,
+      "cka_content_null": 0.4616827443284905,
+      "cka_raw_substrate": 0.9497585640198407
+    },
+    "30": {
+      "cka_all_xlang": 0.7903911707551072,
+      "cka_content_xlang": 0.4269763371127466,
+      "cka_all_null": 0.13007038204445456,
+      "cka_content_null": 0.41101757998836924,
+      "cka_raw_substrate": 0.9187272590405038
+    },
+    "32": {
+      "cka_all_xlang": 0.763349682440954,
+      "cka_content_xlang": 0.5316361415230376,
+      "cka_all_null": 0.12861584252232508,
+      "cka_content_null": 0.40991281077309866,
+      "cka_raw_substrate": 0.9405068167369164
+    },
+    "35": {
+      "cka_all_xlang": 0.6154750714369078,
+      "cka_content_xlang": 0.4869765858164803,
+      "cka_all_null": 0.18264169460821708,
+      "cka_content_null": 0.49153021863778956,
+      "cka_raw_substrate": 0.8911216077589813
+    }
+  },
+  "per_layer_content_count_sample": [
+    [
+      0,
+      "en",
+      38
+    ],
+    [
+      0,
+      "zh",
+      39
+    ],
+    [
+      1,
+      "en",
+      37
+    ],
+    [
+      1,
+      "zh",
+      38
+    ],
+    [
+      2,
+      "en",
+      38
+    ],
+    [
+      2,
+      "zh",
+      39
+    ],
+    [
+      3,
+      "en",
+      37
+    ],
+    [
+      3,
+      "zh",
+      38
+    ],
+    [
+      4,
+      "en",
+      50
+    ],
+    [
+      4,
+      "zh",
+      49
+    ]
+  ]
+}

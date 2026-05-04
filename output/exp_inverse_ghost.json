@@ -1,0 +1,67 @@
+{
+  "none": {
+    "system_prompt": null,
+    "n_prompt_tokens": 218,
+    "encoding_kl": {
+      "convention": 8.522227290086448e-06,
+      "rand_0": 1.7596001271158457e-05,
+      "rand_1": 2.8110516723245382e-05,
+      "rand_2": 2.7580244932323694e-05,
+      "rand_3": 2.9719609301537275e-05,
+      "rand_4": 3.000925062224269e-05
+    },
+    "convention_anisotropy": 0.32034684299142424
+  },
+  "math_reasoner": {
+    "system_prompt": "You are a mathematical reasoner. Think step by step and solve carefully.",
+    "n_prompt_tokens": 233,
+    "encoding_kl": {
+      "convention": 2.953753573819995e-05,
+      "rand_0": 1.329503720626235e-05,
+      "rand_1": 2.565875183790922e-05,
+      "rand_2": 6.651403964497149e-06,
+      "rand_3": 1.0392657713964581e-05,
+      "rand_4": 1.7147394828498363e-05
+    },
+    "convention_anisotropy": 2.0191014123023576
+  },
+  "amc_solver": {
+    "system_prompt": "You are solving an AMC 12A multiple choice math problem. Think step by step, show your work, then clearly state your final answer as (A), (B), (C), (D), or (E).",
+    "n_prompt_tokens": 264,
+    "encoding_kl": {
+      "convention": 2.8818147256970406e-05,
+      "rand_0": 2.8187321731820703e-05,
+      "rand_1": 6.22494553681463e-06,
+      "rand_2": 1.3272510841488838e-05,
+      "rand_3": 2.102172584272921e-05,
+      "rand_4": 2.0362145733088255e-05
+    },
+    "convention_anisotropy": 1.6177491036877079
+  },
+  "generic_helper": {
+    "system_prompt": "You are a helpful assistant.",
+    "n_prompt_tokens": 224,
+    "encoding_kl": {
+      "convention": 2.9116636142134666e-05,
+      "rand_0": 3.219582140445709e-05,
+      "rand_1": 2.894748467952013e-05,
+      "rand_2": 2.225162461400032e-05,
+      "rand_3": 1.8187507521361113e-05,
+      "rand_4": 2.6285764761269093e-05
+    },
+    "convention_anisotropy": 1.1385408696175066
+  },
+  "identity_only": {
+    "system_prompt": "You are a mathematician.",
+    "n_prompt_tokens": 224,
+    "encoding_kl": {
+      "convention": 2.7967962523689494e-05,
+      "rand_0": 1.5001118299551308e-05,
+      "rand_1": 2.8347058105282485e-05,
+      "rand_2": 2.228253288194537e-05,
+      "rand_3": 1.618138048797846e-05,
+      "rand_4": 1.906492980197072e-05
+    },
+    "convention_anisotropy": 1.3862404566867805
+  }
+}

@@ -1,0 +1,1618 @@
+[
+  {
+    "en": "x = 7\nx = x * 2\nx = x - 5\nx = x // 3\nWhat is the value of x after this code runs?",
+    "domain": "code_tracing",
+    "structure": "arithmetic",
+    "answer": "3",
+    "zh": "x = 7\nx = x * 2\nx = x - 5\nx = x // 3\n这段代码运行后，x 的值是多少？",
+    "es": "x = 7\nx = x * 2\nx = x - 5\nx = x // 3\n¿Cuál es el valor de x después de ejecutar este código?"
+  },
+  {
+    "en": "s = 'abc'\ns = s + 'de'\ns = s * 2\ns = s[1:6]\nWhat is the value of s after this code runs?",
+    "domain": "code_tracing",
+    "structure": "string",
+    "answer": "bcdea",
+    "zh": "s = 'abc'\ns = s + 'de'\ns = s * 2\ns = s[1:6]\n这段代码运行后，s 的值是多少？",
+    "es": "s = 'abc'\ns = s + 'de'\ns = s * 2\ns = s[1:6]\n¿Cuál es el valor de s después de ejecutar este código?"
+  },
+  {
+    "en": "lst = [4, 2, 9]\nlst[1] = lst[2] - lst[0]\nlst.append(lst[1] * 2)\nlst[0], lst[3] = lst[3], lst[0]\nWhat is the value of lst after this code runs?",
+    "domain": "code_tracing",
+    "structure": "listop",
+    "answer": "[4, 7, 9, 2]",
+    "zh": "lst = [4, 2, 9]\nlst[1] = lst[2] - lst[0]\nlst.append(lst[1] * 2)\nlst[0], lst[3] = lst[3], lst[0]\n这段代码运行后，lst 的值是多少？",
+    "es": "lst = [4, 2, 9]\nlst[1] = lst[2] - lst[0]\nlst.append(lst[1] * 2)\nlst[0], lst[3] = lst[3], lst[0]\n¿Cuál es el valor de lst después de ejecutar este código?"
+  },
+  {
+    "en": "n = 1\nfor i in range(3):\n    n = n * (i + 2)\nWhat is the value of n after this code runs?",
+    "domain": "code_tracing",
+    "structure": "accumulator",
+    "answer": "24",
+    "zh": "n = 1\nfor i in range(3):\n    n = n * (i + 2)\n这段代码运行后，n 的值是多少？",
+    "es": "n = 1\nfor i in range(3):\n    n = n * (i + 2)\n¿Cuál es el valor de n después de ejecutar este código?"
+  },
+  {
+    "en": "x = 5\ny = 12\nif y % x == 2:\n    x = x + 3\nelse:\n    x = x - 2\nWhat is the value of x after this code runs?",
+    "domain": "code_tracing",
+    "structure": "conditional",
+    "answer": "8",
+    "zh": "x = 5\ny = 12\nif y % x == 2:\n    x = x + 3\nelse:\n    x = x - 2\n这段代码运行后，x 的值是多少？",
+    "es": "x = 5\ny = 12\nif y % x == 2:\n    x = x + 3\nelse:\n    x = x - 2\n¿Cuál es el valor de x después de ejecutar este código?"
+  },
+  {
+    "en": "a = 10\nb = 20\na, b = b, a\na = a + b\nWhat is the value of a after this code runs?",
+    "domain": "code_tracing",
+    "structure": "swap",
+    "answer": "30",
+    "zh": "a = 10\nb = 20\na, b = b, a\na = a + b\n这段代码运行后，a 的值是多少？",
+    "es": "a = 10\nb = 20\na, b = b, a\na = a + b\n¿Cuál es el valor de a después de ejecutar este código?"
+  },
+  {
+    "en": "total = 0\nfor i in range(1, 5):\n    if i % 2 == 0:\n        total += i\nWhat is the value of total after this code runs?",
+    "domain": "code_tracing",
+    "structure": "modular",
+    "answer": "6",
+    "zh": "total = 0\nfor i in range(1, 5):\n    if i % 2 == 0:\n        total += i\n这段代码运行后，total 的值是多少？",
+    "es": "total = 0\nfor i in range(1, 5):\n    if i % 2 == 0:\n        total += i\n¿Cuál es el valor de total después de ejecutar este código?"
+  },
+  {
+    "en": "bits = 6\nbits = bits | 3\nbits = bits ^ 5\nWhat is the value of bits after this code runs?",
+    "domain": "code_tracing",
+    "structure": "bitwise",
+    "answer": "4",
+    "zh": "bits = 6\nbits = bits | 3\nbits = bits ^ 5\n这段代码运行后，bits 的值是多少？",
+    "es": "bits = 6\nbits = bits | 3\nbits = bits ^ 5\n¿Cuál es el valor de bits después de ejecutar este código?"
+  },
+  {
+    "en": "x = 4\ny = x * 2\nz = y // x\nx = z + y\nWhat is the value of x after this code runs?",
+    "domain": "code_tracing",
+    "structure": "nested",
+    "answer": "10",
+    "zh": "x = 4\ny = x * 2\nz = y // x\nx = z + y\n这段代码运行后，x 的值是多少？",
+    "es": "x = 4\ny = x * 2\nz = y // x\nx = z + y\n¿Cuál es el valor de x después de ejecutar este código?"
+  },
+  {
+    "en": "flag = False\nfor n in [3, 5, 7]:\n    if n % 2 == 0:\n        flag = True\nWhat is the value of flag after this code runs?",
+    "domain": "code_tracing",
+    "structure": "boolean",
+    "answer": "False",
+    "zh": "flag = False\nfor n in [3, 5, 7]:\n    if n % 2 == 0:\n        flag = True\n这段代码运行后，flag 的值是多少？",
+    "es": "flag = False\nfor n in [3, 5, 7]:\n    if n % 2 == 0:\n        flag = True\n¿Cuál es el valor de flag después de ejecutar este código?"
+  },
+  {
+    "en": "s = 'hi'\ns = s + str(len(s))\ns = s * 2\ns = s[1:-1]\nWhat is the value of s after this code runs?",
+    "domain": "code_tracing",
+    "structure": "string",
+    "answer": "i2hi",
+    "zh": "s = 'hi'\ns = s + str(len(s))\ns = s * 2\ns = s[1:-1]\n这段代码运行后，s 的值是多少？",
+    "es": "s = 'hi'\ns = s + str(len(s))\ns = s * 2\ns = s[1:-1]\n¿Cuál es el valor de s después de ejecutar este código?"
+  },
+  {
+    "en": "nums = [1, 2, 3]\nnums[0] += nums[2]\nnums[2] = nums[1] * 2\nWhat is the value of nums after this code runs?",
+    "domain": "code_tracing",
+    "structure": "listop",
+    "answer": "[4, 2, 4]",
+    "zh": "nums = [1, 2, 3]\nnums[0] += nums[2]\nnums[2] = nums[1] * 2\n这段代码运行后，nums 的值是多少？",
+    "es": "nums = [1, 2, 3]\nnums[0] += nums[2]\nnums[2] = nums[1] * 2\n¿Cuál es el valor de nums después de ejecutar este código?"
+  },
+  {
+    "en": "a = 7\nb = 3\nc = a // b\nif c * b != a:\n    c = c + 1\nWhat is the value of c after this code runs?",
+    "domain": "code_tracing",
+    "structure": "conditional",
+    "answer": "3",
+    "zh": "a = 7\nb = 3\nc = a // b\nif c * b != a:\n    c = c + 1\n这段代码运行后，c 的值是多少？",
+    "es": "a = 7\nb = 3\nc = a // b\nif c * b != a:\n    c = c + 1\n¿Cuál es el valor de c después de ejecutar este código?"
+  },
+  {
+    "en": "s = 'abcde'\ns = s[2:] + s[:2]\ns = s[::-1]\nWhat is the value of s after this code runs?",
+    "domain": "code_tracing",
+    "structure": "string",
+    "answer": "baced",
+    "zh": "s = 'abcde'\ns = s[2:] + s[:2]\ns = s[::-1]\n这段代码运行后，s 的值是多少？",
+    "es": "s = 'abcde'\ns = s[2:] + s[:2]\ns = s[::-1]\n¿Cuál es el valor de s después de ejecutar este código?"
+  },
+  {
+    "en": "n = 0\nfor i in range(2, 6):\n    n += i % 3\nWhat is the value of n after this code runs?",
+    "domain": "code_tracing",
+    "structure": "modular",
+    "answer": "6",
+    "zh": "n = 0\nfor i in range(2, 6):\n    n += i % 3\n这段代码运行后，n 的值是多少？",
+    "es": "n = 0\nfor i in range(2, 6):\n    n += i % 3\n¿Cuál es el valor de n después de ejecutar este código?"
+  },
+  {
+    "en": "x = 1\nfor i in range(4):\n    x = x + i\nWhat is the value of x after this code runs?",
+    "domain": "code_tracing",
+    "structure": "accumulator",
+    "answer": "7",
+    "zh": "x = 1\nfor i in range(4):\n    x = x + i\n这段代码运行后，x 的值是多少？",
+    "es": "x = 1\nfor i in range(4):\n    x = x + i\n¿Cuál es el valor de x después de ejecutar este código?"
+  },
+  {
+    "en": "lst = [0, 1, 2]\nlst[2] = lst[1]\nlst[0] = lst[2]\nlst.append(lst[0] + lst[1])\nWhat is the value of lst after this code runs?",
+    "domain": "code_tracing",
+    "structure": "listop",
+    "answer": "[1, 1, 1, 2]",
+    "zh": "lst = [0, 1, 2]\nlst[2] = lst[1]\nlst[0] = lst[2]\nlst.append(lst[0] + lst[1])\n这段代码运行后，lst 的值是多少？",
+    "es": "lst = [0, 1, 2]\nlst[2] = lst[1]\nlst[0] = lst[2]\nlst.append(lst[0] + lst[1])\n¿Cuál es el valor de lst después de ejecutar este código?"
+  },
+  {
+    "en": "a = 5\nb = 8\nif a < b:\n    b = a * 2\nelse:\n    b = a // 2\na = b - a\nWhat is the value of a after this code runs?",
+    "domain": "code_tracing",
+    "structure": "conditional",
+    "answer": "5",
+    "zh": "a = 5\nb = 8\nif a < b:\n    b = a * 2\nelse:\n    b = a // 2\na = b - a\n这段代码运行后，a 的值是多少？",
+    "es": "a = 5\nb = 8\nif a < b:\n    b = a * 2\nelse:\n    b = a // 2\na = b - a\n¿Cuál es el valor de a después de ejecutar este código?"
+  },
+  {
+    "en": "count = 0\nfor i in range(3, 8):\n    if i % 2 == 1:\n        count += 1\nWhat is the value of count after this code runs?",
+    "domain": "code_tracing",
+    "structure": "loop_counter",
+    "answer": "3",
+    "zh": "count = 0\nfor i in range(3, 8):\n    if i % 2 == 1:\n        count += 1\n这段代码运行后，count 的值是多少？",
+    "es": "count = 0\nfor i in range(3, 8):\n    if i % 2 == 1:\n        count += 1\n¿Cuál es el valor de count después de ejecutar este código?"
+  },
+  {
+    "en": "x = 13\nx = x & 7\nx = x << 1\nWhat is the value of x after this code runs?",
+    "domain": "code_tracing",
+    "structure": "bitwise",
+    "answer": "10",
+    "zh": "x = 13\nx = x & 7\nx = x << 1\n这段代码运行后，x 的值是多少？",
+    "es": "x = 13\nx = x & 7\nx = x << 1\n¿Cuál es el valor de x después de ejecutar este código?"
+  },
+  {
+    "en": "s = 'python'\ns = s[1:4]\ns = s + s[-1]\nWhat is the value of s after this code runs?",
+    "domain": "code_tracing",
+    "structure": "string",
+    "answer": "ythh",
+    "zh": "s = 'python'\ns = s[1:4]\ns = s + s[-1]\n这段代码运行后，s 的值是多少？",
+    "es": "s = 'python'\ns = s[1:4]\ns = s + s[-1]\n¿Cuál es el valor de s después de ejecutar este código?"
+  },
+  {
+    "en": "lst = [1, 3, 5]\nlst[0], lst[2] = lst[2], lst[0]\nlst[1] += lst[0]\nWhat is the value of lst after this code runs?",
+    "domain": "code_tracing",
+    "structure": "swap",
+    "answer": "[5, 8, 1]",
+    "zh": "lst = [1, 3, 5]\nlst[0], lst[2] = lst[2], lst[0]\nlst[1] += lst[0]\n这段代码运行后，lst 的值是多少？",
+    "es": "lst = [1, 3, 5]\nlst[0], lst[2] = lst[2], lst[0]\nlst[1] += lst[0]\n¿Cuál es el valor de lst después de ejecutar este código?"
+  },
+  {
+    "en": "n = 0\nfor i in range(5):\n    if i % 2 != 0:\n        n += i\nWhat is the value of n after this code runs?",
+    "domain": "code_tracing",
+    "structure": "modular",
+    "answer": "4",
+    "zh": "n = 0\nfor i in range(5):\n    if i % 2 != 0:\n        n += i\n这段代码运行后，n 的值是多少？",
+    "es": "n = 0\nfor i in range(5):\n    if i % 2 != 0:\n        n += i\n¿Cuál es el valor de n después de ejecutar este código?"
+  },
+  {
+    "en": "x = 13\ny = 2 * x + 1\nz = y % 5\nx = z * 3\nWhat is the value of x after this code runs?",
+    "domain": "code_tracing",
+    "structure": "nested",
+    "answer": "3",
+    "zh": "x = 13\ny = 2 * x + 1\nz = y % 5\nx = z * 3\n这段代码运行后，x 的值是多少？",
+    "es": "x = 13\ny = 2 * x + 1\nz = y % 5\nx = z * 3\n¿Cuál es el valor de x después de ejecutar este código?"
+  },
+  {
+    "en": "flag = True\nfor c in 'hello':\n    if c == 'l':\n        flag = not flag\nWhat is the value of flag after this code runs?",
+    "domain": "code_tracing",
+    "structure": "boolean",
+    "answer": "False",
+    "zh": "flag = True\nfor c in 'hello':\n    if c == 'l':\n        flag = not flag\n这段代码运行后，flag 的值是多少？",
+    "es": "flag = True\nfor c in 'hello':\n    if c == 'l':\n        flag = not flag\n¿Cuál es el valor de flag después de ejecutar este código?"
+  },
+  {
+    "en": "x = 5\nx = x * 2\nx = x - 3\nx = x + x // 2\nWhat is the value of x after this code runs?",
+    "domain": "code_tracing",
+    "structure": "arithmetic",
+    "answer": "12",
+    "zh": "x = 5\nx = x * 2\nx = x - 3\nx = x + x // 2\n这段代码运行后，x 的值是多少？",
+    "es": "x = 5\nx = x * 2\nx = x - 3\nx = x + x // 2\n¿Cuál es el valor de x después de ejecutar este código?"
+  },
+  {
+    "en": "s = 'abc'\ns = s + 'de'\ns = s[1:4] + s[0]\nWhat is the value of s after this code runs?",
+    "domain": "code_tracing",
+    "structure": "string",
+    "answer": "bcd a",
+    "zh": "s = 'abc'\ns = s + 'de'\ns = s[1:4] + s[0]\n这段代码运行后，s 的值是多少？",
+    "es": "s = 'abc'\ns = s + 'de'\ns = s[1:4] + s[0]\n¿Cuál es el valor de s después de ejecutar este código?"
+  },
+  {
+    "en": "lst = [1, 2, 3]\nlst[0], lst[2] = lst[2], lst[0]\nlst.append(lst[1] + lst[0])\nWhat is the value of lst after this code runs?",
+    "domain": "code_tracing",
+    "structure": "swap",
+    "answer": "[3, 2, 1, 5]",
+    "zh": "lst = [1, 2, 3]\nlst[0], lst[2] = lst[2], lst[0]\nlst.append(lst[1] + lst[0])\n这段代码运行后，lst 的值是多少？",
+    "es": "lst = [1, 2, 3]\nlst[0], lst[2] = lst[2], lst[0]\nlst.append(lst[1] + lst[0])\n¿Cuál es el valor de lst después de ejecutar este código?"
+  },
+  {
+    "en": "n = 7\nif n % 2 == 0:\n    n = n // 2\nelse:\n    n = n * 2 + 1\nWhat is the value of n after this code runs?",
+    "domain": "code_tracing",
+    "structure": "conditional",
+    "answer": "15",
+    "zh": "n = 7\nif n % 2 == 0:\n    n = n // 2\nelse:\n    n = n * 2 + 1\n这段代码运行后，n 的值是多少？",
+    "es": "n = 7\nif n % 2 == 0:\n    n = n // 2\nelse:\n    n = n * 2 + 1\n¿Cuál es el valor de n después de ejecutar este código?"
+  },
+  {
+    "en": "acc = 1\nfor i in range(2, 5):\n    acc *= i\nWhat is the value of acc after this code runs?",
+    "domain": "code_tracing",
+    "structure": "accumulator",
+    "answer": "24",
+    "zh": "acc = 1\nfor i in range(2, 5):\n    acc *= i\n这段代码运行后，acc 的值是多少？",
+    "es": "acc = 1\nfor i in range(2, 5):\n    acc *= i\n¿Cuál es el valor de acc después de ejecutar este código?"
+  },
+  {
+    "en": "total = 0\nfor x in [1, 2, 3]:\n    total += x * x\nWhat is the value of total after this code runs?",
+    "domain": "code_tracing",
+    "structure": "loop_counter",
+    "answer": "14",
+    "zh": "total = 0\nfor x in [1, 2, 3]:\n    total += x * x\n这段代码运行后，total 的值是多少？",
+    "es": "total = 0\nfor x in [1, 2, 3]:\n    total += x * x\n¿Cuál es el valor de total después de ejecutar este código?"
+  },
+  {
+    "en": "num = 13\nnum = num % 5\nnum += 2\nWhat is the value of num after this code runs?",
+    "domain": "code_tracing",
+    "structure": "modular",
+    "answer": "5",
+    "zh": "num = 13\nnum = num % 5\nnum += 2\n这段代码运行后，num 的值是多少？",
+    "es": "num = 13\nnum = num % 5\nnum += 2\n¿Cuál es el valor de num después de ejecutar este código?"
+  },
+  {
+    "en": "a = 6\nb = 3\na = a ^ b\nb = a & b\nWhat is the value of b after this code runs?",
+    "domain": "code_tracing",
+    "structure": "bitwise",
+    "answer": "2",
+    "zh": "a = 6\nb = 3\na = a ^ b\nb = a & b\n这段代码运行后，b 的值是多少？",
+    "es": "a = 6\nb = 3\na = a ^ b\nb = a & b\n¿Cuál es el valor de b después de ejecutar este código?"
+  },
+  {
+    "en": "flag = True\nif 3 * 2 < 5:\n    flag = not flag\nelse:\n    flag = flag and False\nWhat is the value of flag after this code runs?",
+    "domain": "code_tracing",
+    "structure": "boolean",
+    "answer": "False",
+    "zh": "flag = True\nif 3 * 2 < 5:\n    flag = not flag\nelse:\n    flag = flag and False\n这段代码运行后，flag 的值是多少？",
+    "es": "flag = True\nif 3 * 2 < 5:\n    flag = not flag\nelse:\n    flag = flag and False\n¿Cuál es el valor de flag después de ejecutar este código?"
+  },
+  {
+    "en": "x = 4\ny = x\nx = x + 1\ny = y * x\nWhat is the value of y after this code runs?",
+    "domain": "code_tracing",
+    "structure": "nested",
+    "answer": "20",
+    "zh": "x = 4\ny = x\nx = x + 1\ny = y * x\n这段代码运行后，y 的值是多少？",
+    "es": "x = 4\ny = x\nx = x + 1\ny = y * x\n¿Cuál es el valor de y después de ejecutar este código?"
+  },
+  {
+    "en": "lst = [10, 20, 30]\nlst.insert(1, lst.pop())\nlst.append(len(lst))\nWhat is the value of lst after this code runs?",
+    "domain": "code_tracing",
+    "structure": "listop",
+    "answer": "[10, 30, 20, 4]",
+    "zh": "lst = [10, 20, 30]\nlst.insert(1, lst.pop())\nlst.append(len(lst))\n这段代码运行后，lst 的值是多少？",
+    "es": "lst = [10, 20, 30]\nlst.insert(1, lst.pop())\nlst.append(len(lst))\n¿Cuál es el valor de lst después de ejecutar este código?"
+  },
+  {
+    "en": "s = 'hello'\ns = s.upper()\ns = s[1:4]\ns = s[::-1]\nWhat is the value of s after this code runs?",
+    "domain": "code_tracing",
+    "structure": "string",
+    "answer": "LLE",
+    "zh": "s = 'hello'\ns = s.upper()\ns = s[1:4]\ns = s[::-1]\n这段代码运行后，s 的值是多少？",
+    "es": "s = 'hello'\ns = s.upper()\ns = s[1:4]\ns = s[::-1]\n¿Cuál es el valor de s después de ejecutar este código?"
+  },
+  {
+    "en": "x = 2\ny = 3\nfor i in range(2):\n    x = x + y\ny = x - y\nWhat is the value of y after this code runs?",
+    "domain": "code_tracing",
+    "structure": "loop_counter",
+    "answer": "8",
+    "zh": "x = 2\ny = 3\nfor i in range(2):\n    x = x + y\ny = x - y\n这段代码运行后，y 的值是多少？",
+    "es": "x = 2\ny = 3\nfor i in range(2):\n    x = x + y\ny = x - y\n¿Cuál es el valor de y después de ejecutar este código?"
+  },
+  {
+    "en": "result = 1\nfor i in range(1, 4):\n    if i % 2 == 0:\n        result += i\n    else:\n        result *= i\nWhat is the value of result after this code runs?",
+    "domain": "code_tracing",
+    "structure": "conditional",
+    "answer": "9",
+    "zh": "result = 1\nfor i in range(1, 4):\n    if i % 2 == 0:\n        result += i\n    else:\n        result *= i\n这段代码运行后，result 的值是多少？",
+    "es": "result = 1\nfor i in range(1, 4):\n    if i % 2 == 0:\n        result += i\n    else:\n        result *= i\n¿Cuál es el valor de result después de ejecutar este código?"
+  },
+  {
+    "en": "b = False\nfor i in range(3):\n    b = not b\nWhat is the value of b after this code runs?",
+    "domain": "code_tracing",
+    "structure": "boolean",
+    "answer": "True",
+    "zh": "b = False\nfor i in range(3):\n    b = not b\n这段代码运行后，b 的值是多少？",
+    "es": "b = False\nfor i in range(3):\n    b = not b\n¿Cuál es el valor de b después de ejecutar este código?"
+  },
+  {
+    "en": "a = 8\nb = 3\na, b = b, a % b\na += b\nWhat is the value of a after this code runs?",
+    "domain": "code_tracing",
+    "structure": "swap",
+    "answer": "3",
+    "zh": "a = 8\nb = 3\na, b = b, a % b\na += b\n这段代码运行后，a 的值是多少？",
+    "es": "a = 8\nb = 3\na, b = b, a % b\na += b\n¿Cuál es el valor de a después de ejecutar este código?"
+  },
+  {
+    "en": "x = 7\nx = (x + 2) // 3\nx = x * 4 - 1\nWhat is the value of x after this code runs?",
+    "domain": "code_tracing",
+    "structure": "arithmetic",
+    "answer": "11",
+    "zh": "x = 7\nx = (x + 2) // 3\nx = x * 4 - 1\n这段代码运行后，x 的值是多少？",
+    "es": "x = 7\nx = (x + 2) // 3\nx = x * 4 - 1\n¿Cuál es el valor de x después de ejecutar este código?"
+  },
+  {
+    "en": "lst = ['a', 'b', 'c']\nlst[1] = lst[2]\nlst[2] = lst[0] + lst[1]\nlst = lst[::-1]\nWhat is the value of lst after this code runs?",
+    "domain": "code_tracing",
+    "structure": "listop",
+    "answer": "['cb', 'c', 'a']",
+    "zh": "lst = ['a', 'b', 'c']\nlst[1] = lst[2]\nlst[2] = lst[0] + lst[1]\nlst = lst[::-1]\n这段代码运行后，lst 的值是多少？",
+    "es": "lst = ['a', 'b', 'c']\nlst[1] = lst[2]\nlst[2] = lst[0] + lst[1]\nlst = lst[::-1]\n¿Cuál es el valor de lst después de ejecutar este código?"
+  },
+  {
+    "en": "n = 15\nif n % 4 == 3:\n    n = n // 3\nelse:\n    n = n * 2\nWhat is the value of n after this code runs?",
+    "domain": "code_tracing",
+    "structure": "conditional",
+    "answer": "5",
+    "zh": "n = 15\nif n % 4 == 3:\n    n = n // 3\nelse:\n    n = n * 2\n这段代码运行后，n 的值是多少？",
+    "es": "n = 15\nif n % 4 == 3:\n    n = n // 3\nelse:\n    n = n * 2\n¿Cuál es el valor de n después de ejecutar este código?"
+  },
+  {
+    "en": "val = 1\nfor i in range(1, 5):\n    val = (val + i) % 3\nWhat is the value of val after this code runs?",
+    "domain": "code_tracing",
+    "structure": "modular",
+    "answer": "2",
+    "zh": "val = 1\nfor i in range(1, 5):\n    val = (val + i) % 3\n这段代码运行后，val 的值是多少？",
+    "es": "val = 1\nfor i in range(1, 5):\n    val = (val + i) % 3\n¿Cuál es el valor de val después de ejecutar este código?"
+  },
+  {
+    "en": "x = 1\nfor i in range(4):\n    x = (x << 1) | 1\nWhat is the value of x after this code runs?",
+    "domain": "code_tracing",
+    "structure": "bitwise",
+    "answer": "15",
+    "zh": "x = 1\nfor i in range(4):\n    x = (x << 1) | 1\n这段代码运行后，x 的值是多少？",
+    "es": "x = 1\nfor i in range(4):\n    x = (x << 1) | 1\n¿Cuál es el valor de x después de ejecutar este código?"
+  },
+  {
+    "en": "s = 'foo'\ns = s + str(len(s))\ns = s[1:4]\nWhat is the value of s after this code runs?",
+    "domain": "code_tracing",
+    "structure": "string",
+    "answer": "oo3",
+    "zh": "s = 'foo'\ns = s + str(len(s))\ns = s[1:4]\n这段代码运行后，s 的值是多少？",
+    "es": "s = 'foo'\ns = s + str(len(s))\ns = s[1:4]\n¿Cuál es el valor de s después de ejecutar este código?"
+  },
+  {
+    "en": "lst = [2, 3]\nfor i in range(2):\n    lst.append(lst[-1] + lst[-2])\nWhat is the value of lst after this code runs?",
+    "domain": "code_tracing",
+    "structure": "loop_counter",
+    "answer": "[2, 3, 5, 8]",
+    "zh": "lst = [2, 3]\nfor i in range(2):\n    lst.append(lst[-1] + lst[-2])\n这段代码运行后，lst 的值是多少？",
+    "es": "lst = [2, 3]\nfor i in range(2):\n    lst.append(lst[-1] + lst[-2])\n¿Cuál es el valor de lst después de ejecutar este código?"
+  },
+  {
+    "en": "a = 4\nb = 9\nif a * 2 > b:\n    b = b - a\nelse:\n    b = b + a\na = b // 2\nWhat is the value of a after this code runs?",
+    "domain": "code_tracing",
+    "structure": "nested",
+    "answer": "2",
+    "zh": "a = 4\nb = 9\nif a * 2 > b:\n    b = b - a\nelse:\n    b = b + a\na = b // 2\n这段代码运行后，a 的值是多少？",
+    "es": "a = 4\nb = 9\nif a * 2 > b:\n    b = b - a\nelse:\n    b = b + a\na = b // 2\n¿Cuál es el valor de a después de ejecutar este código?"
+  },
+  {
+    "en": "sum_ = 0\nfor i in range(2, 7):\n    if i % 2 == 0:\n        sum_ += i\nWhat is the value of sum_ after this code runs?",
+    "domain": "code_tracing",
+    "structure": "accumulator",
+    "answer": "12",
+    "zh": "sum_ = 0\nfor i in range(2, 7):\n    if i % 2 == 0:\n        sum_ += i\n这段代码运行后，sum_ 的值是多少？",
+    "es": "sum_ = 0\nfor i in range(2, 7):\n    if i % 2 == 0:\n        sum_ += i\n¿Cuál es el valor de sum_ después de ejecutar este código?"
+  },
+  {
+    "en": "Alice's house is west of the library. The park is north of the library. What direction is Alice's house from the park?",
+    "domain": "spatial",
+    "structure": "triangle",
+    "answer": "southwest",
+    "zh": "爱丽丝的家在图书馆的西边。公园在图书馆的北边。那么爱丽丝的家在公园的什么方向？",
+    "es": "La casa de Alicia está al oeste de la biblioteca. El parque está al norte de la biblioteca. ¿En qué dirección está la casa de Alicia desde el parque?"
+  },
+  {
+    "en": "The bakery is east of the school. The post office is north of the bakery. If you walk from the school to the post office, which direction do you travel?",
+    "domain": "spatial",
+    "structure": "linear_2",
+    "answer": "northeast",
+    "zh": "面包店在学校的东边。邮局在面包店的北边。如果你从学校走到邮局，你要朝哪个方向走？",
+    "es": "La panadería está al este de la escuela. La oficina de correos está al norte de la panadería. Si caminas desde la escuela hasta la oficina de correos, ¿en qué dirección viajas?"
+  },
+  {
+    "en": "City A is south of City B. City C is east of City A. What direction is City C from City B?",
+    "domain": "spatial",
+    "structure": "triangle",
+    "answer": "southeast",
+    "zh": "A市在B市的南边。C市在A市的东边。那么C市在B市的什么方向？",
+    "es": "La Ciudad A está al sur de la Ciudad B. La Ciudad C está al este de la Ciudad A. ¿En qué dirección está la Ciudad C desde la Ciudad B?"
+  },
+  {
+    "en": "The fountain is west of the museum. The theater is north of the museum. The café is east of the theater. What direction is the café from the fountain?",
+    "domain": "spatial",
+    "structure": "4chain",
+    "answer": "northeast",
+    "zh": "喷泉在博物馆的西边。剧院在博物馆的北边。咖啡馆在剧院的东边。那么咖啡馆在喷泉的什么方向？",
+    "es": "La fuente está al oeste del museo. El teatro está al norte del museo. El café está al este del teatro. ¿En qué dirección está el café desde la fuente?"
+  },
+  {
+    "en": "Tom is standing north of Sara. Sara is east of Ben. What direction is Tom from Ben?",
+    "domain": "spatial",
+    "structure": "triangle",
+    "answer": "northeast",
+    "zh": "汤姆站在萨拉的北边。萨拉在本的东边。那么汤姆在本的什么方向？",
+    "es": "Tom está al norte de Sara. Sara está al este de Ben. ¿En qué dirección está Tom desde Ben?"
+  },
+  {
+    "en": "The hospital is south of the stadium. The stadium is west of the mall. What direction is the hospital from the mall?",
+    "domain": "spatial",
+    "structure": "linear_3",
+    "answer": "southwest",
+    "zh": "医院在体育场的南边。体育场在商场的西边。那么医院在商场的什么方向？",
+    "es": "El hospital está al sur del estadio. El estadio está al oeste del centro comercial. ¿En qué dirección está el hospital desde el centro comercial?"
+  },
+  {
+    "en": "The red car is parked east of the blue car. The green car is parked north of the red car. Which car is furthest north?",
+    "domain": "spatial",
+    "structure": "superlative",
+    "answer": "green car",
+    "zh": "红色汽车停在蓝色汽车的东边。绿色汽车停在红色汽车的北边。哪辆车最靠北？",
+    "es": "El coche rojo está estacionado al este del coche azul. El coche verde está estacionado al norte del coche rojo. ¿Qué coche está más al norte?"
+  },
+  {
+    "en": "The mountain is northwest of the river. The forest is south of the mountain. What direction is the forest from the river?",
+    "domain": "spatial",
+    "structure": "linear_3",
+    "answer": "west",
+    "zh": "山在河流的西北方。森林在山的南边。那么森林在河流的什么方向？",
+    "es": "La montaña está al noroeste del río. El bosque está al sur de la montaña. ¿En qué dirección está el bosque desde el río?"
+  },
+  {
+    "en": "Point X is southwest of Point Y. Point Z is directly east of Point X. What direction is Point Z from Point Y?",
+    "domain": "spatial",
+    "structure": "triangle",
+    "answer": "south",
+    "zh": "X点在Y点的西南方。Z点在X点的正东方。那么Z点在Y点的什么方向？",
+    "es": "El punto X está al suroeste del punto Y. El punto Z está directamente al este del punto X. ¿En qué dirección está el punto Z desde el punto Y?"
+  },
+  {
+    "en": "Anna is east of the bakery. The bakery is north of the cinema. If you walk from Anna to the cinema, which direction do you travel?",
+    "domain": "spatial",
+    "structure": "linear_3",
+    "answer": "southwest",
+    "zh": "安娜在面包店的东边。面包店在电影院的北边。如果你从安娜走到电影院，你要朝哪个方向走？",
+    "es": "Anna está al este de la panadería. La panadería está al norte del cine. Si caminas desde Anna hasta el cine, ¿en qué dirección viajas?"
+  },
+  {
+    "en": "The tower is west of the lake. The village is south of the tower. The farm is north of the lake. Which is furthest south?",
+    "domain": "spatial",
+    "structure": "superlative",
+    "answer": "village",
+    "zh": "塔在湖的西边。村庄在塔的南边。农场在湖的北边。哪个位置最南？",
+    "es": "La torre está al oeste del lago. El pueblo está al sur de la torre. La granja está al norte del lago. ¿Cuál está más al sur?"
+  },
+  {
+    "en": "The bus stop is northeast of the train station. The grocery store is west of the bus stop. What direction is the grocery store from the train station?",
+    "domain": "spatial",
+    "structure": "triangle",
+    "answer": "northwest",
+    "zh": "公交车站在火车站的东北方。杂货店在公交车站的西边。杂货店在火车站的什么方向？",
+    "es": "La parada de autobús está al noreste de la estación de tren. La tienda de comestibles está al oeste de la parada de autobús. ¿En qué dirección está la tienda de comestibles desde la estación de tren?"
+  },
+  {
+    "en": "The statue is south of the museum. The gallery is east of the museum. What direction is the statue from the gallery?",
+    "domain": "spatial",
+    "structure": "triangle",
+    "answer": "southwest",
+    "zh": "雕像在博物馆的南边。画廊在博物馆的东边。雕像在画廊的什么方向？",
+    "es": "La estatua está al sur del museo. La galería está al este del museo. ¿En qué dirección está la estatua desde la galería?"
+  },
+  {
+    "en": "Sam is north of Linda. Jake is east of Linda. What direction is Sam from Jake?",
+    "domain": "spatial",
+    "structure": "triangle",
+    "answer": "northwest",
+    "zh": "Sam 在 Linda 的北边。Jake 在 Linda 的东边。Sam 在 Jake 的什么方向？",
+    "es": "Sam está al norte de Linda. Jake está al este de Linda. ¿En qué dirección está Sam desde Jake?"
+  },
+  {
+    "en": "The lighthouse is north of the beach. The pier is west of the lighthouse. What direction is the pier from the beach?",
+    "domain": "spatial",
+    "structure": "linear_3",
+    "answer": "northwest",
+    "zh": "灯塔在海滩的北边。码头在灯塔的西边。码头在海滩的什么方向？",
+    "es": "El faro está al norte de la playa. El muelle está al oeste del faro. ¿En qué dirección está el muelle desde la playa?"
+  },
+  {
+    "en": "The gym is southwest of the library. The library is directly north of the café. If you walk from the café to the gym, which direction do you travel?",
+    "domain": "spatial",
+    "structure": "linear_3",
+    "answer": "northwest",
+    "zh": "健身房在图书馆的西南方。图书馆正北方是咖啡馆。如果你从咖啡馆走到健身房，你会朝哪个方向走？",
+    "es": "El gimnasio está al suroeste de la biblioteca. La biblioteca está directamente al norte del café. Si caminas desde el café hasta el gimnasio, ¿en qué dirección viajas?"
+  },
+  {
+    "en": "The orange is north of the apple. The banana is west of the orange. What direction is the banana from the apple?",
+    "domain": "spatial",
+    "structure": "triangle",
+    "answer": "northwest",
+    "zh": "橙子在苹果的北边。香蕉在橙子的西边。香蕉在苹果的什么方向？",
+    "es": "La naranja está al norte de la manzana. El plátano está al oeste de la naranja. ¿En qué dirección está el plátano desde la manzana?"
+  },
+  {
+    "en": "Building A is east of Building B. Building C is south of Building B. Building D is west of Building C. What direction is Building D from Building A?",
+    "domain": "spatial",
+    "structure": "4chain",
+    "answer": "southwest",
+    "zh": "A楼在B楼的东边。C楼在B楼的南边。D楼在C楼的西边。D楼在A楼的什么方向？",
+    "es": "El Edificio A está al este del Edificio B. El Edificio C está al sur del Edificio B. El Edificio D está al oeste del Edificio C. ¿En qué dirección está el Edificio D desde el Edificio A?"
+  },
+  {
+    "en": "The station is north of the square. The market is east of the station. The café is south of the market. What direction is the café from the square?",
+    "domain": "spatial",
+    "structure": "4chain",
+    "answer": "northeast",
+    "zh": "车站在广场的北边。市场在车站的东边。咖啡馆在市场的南边。咖啡馆在广场的什么方向？",
+    "es": "La estación está al norte de la plaza. El mercado está al este de la estación. El café está al sur del mercado. ¿En qué dirección está el café desde la plaza?"
+  },
+  {
+    "en": "The green house is east of the blue house. The yellow house is south of the green house. Which house is furthest east?",
+    "domain": "spatial",
+    "structure": "superlative",
+    "answer": "yellow house",
+    "zh": "绿色的房子在蓝色房子的东边。黄色的房子在绿色房子的南边。哪个房子最东边？",
+    "es": "La casa verde está al este de la casa azul. La casa amarilla está al sur de la casa verde. ¿Qué casa está más al este?"
+  },
+  {
+    "en": "The tree is north of the pond. The bench is west of the tree. The flowerbed is south of the bench. What direction is the flowerbed from the pond?",
+    "domain": "spatial",
+    "structure": "4chain",
+    "answer": "northwest",
+    "zh": "树在池塘的北边。长椅在树的西边。花坛在长椅的南边。花坛在池塘的什么方向？",
+    "es": "El árbol está al norte del estanque. El banco está al oeste del árbol. El parterre de flores está al sur del banco. ¿En qué dirección está el parterre de flores desde el estanque?"
+  },
+  {
+    "en": "The coffee shop is northwest of the bank. The library is north of the coffee shop. What direction is the library from the bank?",
+    "domain": "spatial",
+    "structure": "linear_3",
+    "answer": "north-northwest",
+    "zh": "咖啡店在银行的西北方。图书馆在咖啡店的北边。图书馆在银行的什么方向？",
+    "es": "La cafetería está al noroeste del banco. La biblioteca está al norte de la cafetería. ¿En qué dirección está la biblioteca desde el banco?"
+  },
+  {
+    "en": "The taxi stand is southeast of the hotel. The cinema is north of the taxi stand. What direction is the cinema from the hotel?",
+    "domain": "spatial",
+    "structure": "triangle",
+    "answer": "east",
+    "zh": "出租车站在酒店的东南方。电影院在出租车站的北边。电影院在酒店的什么方向？",
+    "es": "La parada de taxis está al sureste del hotel. El cine está al norte de la parada de taxis. ¿En qué dirección está el cine desde el hotel?"
+  },
+  {
+    "en": "The playground is west of the school. The ice cream truck is north of the playground. Who is furthest north?",
+    "domain": "spatial",
+    "structure": "superlative",
+    "answer": "ice cream truck",
+    "zh": "操场在学校的西边。冰淇淋车在操场的北边。谁最北？",
+    "es": "El parque infantil está al oeste de la escuela. El camión de helados está al norte del parque infantil. ¿Quién está más al norte?"
+  },
+  {
+    "en": "The lake is north of the cabin. The cave is west of the lake. The lookout is north of the cave. What direction is the lookout from the cabin?",
+    "domain": "spatial",
+    "structure": "4chain",
+    "answer": "northwest",
+    "zh": "湖在小屋的北边。洞穴在湖的西边。瞭望台在洞穴的北边。瞭望台在小屋的什么方向？",
+    "es": "El lago está al norte de la cabaña. La cueva está al oeste del lago. El mirador está al norte de la cueva. ¿En qué dirección está el mirador desde la cabaña?"
+  },
+  {
+    "en": "Alice is east of the library. The library is north of the school. What direction is Alice from the school?",
+    "domain": "spatial",
+    "structure": "linear_2",
+    "answer": "northeast",
+    "zh": "Alice 在图书馆的东边。图书馆在学校的北边。Alice 在学校的什么方向？",
+    "es": "Alicia está al este de la biblioteca. La biblioteca está al norte de la escuela. ¿En qué dirección está Alicia desde la escuela?"
+  },
+  {
+    "en": "The museum is south of the park. The cafe is west of the museum. If you walk from the cafe to the park, which direction do you travel?",
+    "domain": "spatial",
+    "structure": "linear_2",
+    "answer": "northeast",
+    "zh": "博物馆在公园的南边。咖啡馆在博物馆的西边。如果你从咖啡馆走到公园，你会朝哪个方向走？",
+    "es": "El museo está al sur del parque. El café está al oeste del museo. Si caminas desde el café hasta el parque, ¿en qué dirección viajas?"
+  },
+  {
+    "en": "John's house is north of the supermarket. The post office is east of the supermarket. The bakery is west of John's house. What direction is the bakery from the post office?",
+    "domain": "spatial",
+    "structure": "triangle",
+    "answer": "northwest",
+    "zh": "John 的家在超市的北边。邮局在超市的东边。面包店在 John 的家的西边。面包店在邮局的什么方向？",
+    "es": "La casa de Juan está al norte del supermercado. La oficina de correos está al este del supermercado. La panadería está al oeste de la casa de Juan. ¿En qué dirección está la panadería desde la oficina de correos?"
+  },
+  {
+    "en": "City A is northeast of City B. City B is southeast of City C. What direction is City A from City C?",
+    "domain": "spatial",
+    "structure": "linear_2",
+    "answer": "east",
+    "zh": "A市在B市的东北方。B市在C市的东南方。A市在C市的什么方向？",
+    "es": "La Ciudad A está al noreste de la Ciudad B. La Ciudad B está al sureste de la Ciudad C. ¿En qué dirección está la Ciudad A desde la Ciudad C?"
+  },
+  {
+    "en": "The hospital is west of the cinema. The stadium is north of the hospital. What direction is the stadium from the cinema?",
+    "domain": "spatial",
+    "structure": "linear_2",
+    "answer": "northwest",
+    "zh": "医院在电影院的西边。体育场在医院的北边。体育场在电影院的什么方向？",
+    "es": "El hospital está al oeste del cine. El estadio está al norte del hospital. ¿En qué dirección está el estadio desde el cine?"
+  },
+  {
+    "en": "Sarah is south of the river. The river is west of the mountain. Tom is east of Sarah. What direction is Tom from the mountain?",
+    "domain": "spatial",
+    "structure": "triangle",
+    "answer": "southeast",
+    "zh": "Sarah 在河的南边。河在山的西边。Tom 在 Sarah 的东边。Tom 在山的什么方向？",
+    "es": "Sarah está al sur del río. El río está al oeste de la montaña. Tom está al este de Sarah. ¿En qué dirección está Tom desde la montaña?"
+  },
+  {
+    "en": "The bus stop is directly north of the library. The bakery is east of the bus stop. The pharmacy is south of the bakery. If you walk from the pharmacy to the library, which direction do you travel?",
+    "domain": "spatial",
+    "structure": "4chain",
+    "answer": "west",
+    "zh": "公交车站正好在图书馆的北边。面包店在公交车站的东边。药店在面包店的南边。如果你从药店走到图书馆，你要朝哪个方向走？",
+    "es": "La parada de autobús está directamente al norte de la biblioteca. La panadería está al este de la parada de autobús. La farmacia está al sur de la panadería. Si caminas desde la farmacia hasta la biblioteca, ¿en qué dirección viajas?"
+  },
+  {
+    "en": "The orange tree is east of the well. The barn is south of the orange tree. The chicken coop is west of the barn. What direction is the chicken coop from the well?",
+    "domain": "spatial",
+    "structure": "triangle",
+    "answer": "southeast",
+    "zh": "橙树在水井的东边。谷仓在橙树的南边。鸡舍在谷仓的西边。鸡舍在水井的什么方向？",
+    "es": "El naranjo está al este del pozo. El granero está al sur del naranjo. El gallinero está al oeste del granero. ¿En qué dirección está el gallinero desde el pozo?"
+  },
+  {
+    "en": "The lighthouse is at the center. The cabin is northwest of the lighthouse. The dock is southeast of the cabin. What direction is the dock from the lighthouse?",
+    "domain": "spatial",
+    "structure": "diagonal",
+    "answer": "northwest",
+    "zh": "灯塔在中心。小屋在灯塔的西北方。码头在小屋的东南方。码头在灯塔的什么方向？",
+    "es": "El faro está en el centro. La cabaña está al noroeste del faro. El muelle está al sureste de la cabaña. ¿En qué dirección está el muelle desde el faro?"
+  },
+  {
+    "en": "Point X is due east of Point Y. Point Z is north of Point X. What direction is Point Z from Point Y?",
+    "domain": "spatial",
+    "structure": "linear_2",
+    "answer": "northeast",
+    "zh": "点 X 正好在点 Y 的东边。点 Z 在点 X 的北边。点 Z 在点 Y 的什么方向？",
+    "es": "El Punto X está justo al este del Punto Y. El Punto Z está al norte del Punto X. ¿En qué dirección está el Punto Z desde el Punto Y?"
+  },
+  {
+    "en": "The station is south of the plaza. The gallery is west of the station. The hotel is east of the plaza. Who is furthest south: the station, gallery, or hotel?",
+    "domain": "spatial",
+    "structure": "branch",
+    "answer": "gallery",
+    "zh": "车站在广场的南边。画廊在车站的西边。酒店在广场的东边。谁最南边：车站、画廊还是酒店？",
+    "es": "La estación está al sur de la plaza. La galería está al oeste de la estación. El hotel está al este de la plaza. ¿Quién está más al sur: la estación, la galería o el hotel?"
+  },
+  {
+    "en": "The tower is west of the bridge. The fountain is north of the bridge. The monument is east of the fountain. What direction is the monument from the tower?",
+    "domain": "spatial",
+    "structure": "triangle",
+    "answer": "northeast",
+    "zh": "塔在桥的西边。喷泉在桥的北边。纪念碑在喷泉的东边。纪念碑在塔的什么方向？",
+    "es": "La torre está al oeste del puente. La fuente está al norte del puente. El monumento está al este de la fuente. ¿En qué dirección está el monumento desde la torre?"
+  },
+  {
+    "en": "Emma is south of Liam. Noah is west of Emma. Olivia is north of Noah. What direction is Olivia from Liam?",
+    "domain": "spatial",
+    "structure": "4chain",
+    "answer": "northwest",
+    "zh": "Emma 在 Liam 的南边。Noah 在 Emma 的西边。Olivia 在 Noah 的北边。Olivia 在 Liam 的什么方向？",
+    "es": "Emma está al sur de Liam. Noah está al oeste de Emma. Olivia está al norte de Noah. ¿En qué dirección está Olivia desde Liam?"
+  },
+  {
+    "en": "The red car is parked east of the blue car. The yellow car is north of the red car. The green car is south of the blue car. Who is furthest north: the blue car, yellow car, or green car?",
+    "domain": "spatial",
+    "structure": "superlative",
+    "answer": "yellow car",
+    "zh": "红色汽车停在蓝色汽车的东边。黄色汽车在红色汽车的北边。绿色汽车在蓝色汽车的南边。谁最北边：蓝色汽车、黄色汽车还是绿色汽车？",
+    "es": "El coche rojo está estacionado al este del coche azul. El coche amarillo está al norte del coche rojo. El coche verde está al sur del coche azul. ¿Quién está más al norte: el coche azul, el coche amarillo o el coche verde?"
+  },
+  {
+    "en": "The pine tree is northeast of the pond. The bench is southwest of the pine tree. What direction is the bench from the pond?",
+    "domain": "spatial",
+    "structure": "diagonal",
+    "answer": "same location",
+    "zh": "松树在池塘的东北方。长椅在松树的西南方。长椅在池塘的什么方向？",
+    "es": "El pino está al noreste del estanque. El banco está al suroeste del pino. ¿En qué dirección está el banco desde el estanque?"
+  },
+  {
+    "en": "The bakery is north of the school. The school is west of the fire station. What direction is the bakery from the fire station?",
+    "domain": "spatial",
+    "structure": "linear_2",
+    "answer": "northwest",
+    "zh": "面包店在学校的北边。学校在消防站的西边。面包店在消防站的什么方向？",
+    "es": "La panadería está al norte de la escuela. La escuela está al oeste de la estación de bomberos. ¿En qué dirección está la panadería desde la estación de bomberos?"
+  },
+  {
+    "en": "House A is southeast of House B. House C is northeast of House A. What direction is House C from House B?",
+    "domain": "spatial",
+    "structure": "linear_3",
+    "answer": "east",
+    "zh": "A 房子在 B 房子的东南方。C 房子在 A 房子的东北方。C 房子在 B 房子的什么方向？",
+    "es": "La Casa A está al sureste de la Casa B. La Casa C está al noreste de la Casa A. ¿En qué dirección está la Casa C desde la Casa B?"
+  },
+  {
+    "en": "The lake is west of the hill. The cave is east of the lake. The meadow is north of the cave. What direction is the meadow from the hill?",
+    "domain": "spatial",
+    "structure": "4chain",
+    "answer": "northeast",
+    "zh": "湖在山丘的西边。洞穴在湖的东边。草地在洞穴的北边。草地在山丘的什么方向？",
+    "es": "El lago está al oeste de la colina. La cueva está al este del lago. El prado está al norte de la cueva. ¿En qué dirección está el prado desde la colina?"
+  },
+  {
+    "en": "Point M is north of Point N. Point O is west of Point N. Point P is south of Point O. If you walk from Point P to Point M, which direction do you travel?",
+    "domain": "spatial",
+    "structure": "branch",
+    "answer": "northeast",
+    "zh": "点 M 在点 N 的北边。点 O 在点 N 的西边。点 P 在点 O 的南边。如果你从点 P 走到点 M，你要朝哪个方向走？",
+    "es": "El Punto M está al norte del Punto N. El Punto O está al oeste del Punto N. El Punto P está al sur del Punto O. Si caminas desde el Punto P hasta el Punto M, ¿en qué dirección viajas?"
+  },
+  {
+    "en": "The school is south of the park. The library is east of the school. The museum is north of the library. What direction is the museum from the park?",
+    "domain": "spatial",
+    "structure": "4chain",
+    "answer": "east",
+    "zh": "学校在公园的南边。图书馆在学校的东边。博物馆在图书馆的北边。博物馆在公园的什么方向？",
+    "es": "La escuela está al sur del parque. La biblioteca está al este de la escuela. El museo está al norte de la biblioteca. ¿En qué dirección está el museo desde el parque?"
+  },
+  {
+    "en": "City X is directly west of City Y. City Z is south of City X. If you travel from City Z to City Y, which direction do you go?",
+    "domain": "spatial",
+    "structure": "triangle",
+    "answer": "northeast",
+    "zh": "城市 X 正好在城市 Y 的西边。城市 Z 在城市 X 的南边。如果你从城市 Z 去城市 Y，你要朝哪个方向走？",
+    "es": "La Ciudad X está directamente al oeste de la Ciudad Y. La Ciudad Z está al sur de la Ciudad X. Si viajas desde la Ciudad Z hasta la Ciudad Y, ¿en qué dirección vas?"
+  },
+  {
+    "en": "The dog is north of the cat. The rabbit is west of the dog. The fox is south of the rabbit. Who is furthest west: the cat, dog, rabbit, or fox?",
+    "domain": "spatial",
+    "structure": "superlative",
+    "answer": "rabbit",
+    "zh": "狗在猫的北边。兔子在狗的西边。狐狸在兔子的南边。谁最西边：猫、狗、兔子还是狐狸？",
+    "es": "El perro está al norte del gato. El conejo está al oeste del perro. El zorro está al sur del conejo. ¿Quién está más al oeste: el gato, el perro, el conejo o el zorro?"
+  },
+  {
+    "en": "The post office is south of the school. The library is east of the post office. The market is north of the library. What direction is the market from the school?",
+    "domain": "spatial",
+    "structure": "4chain",
+    "answer": "southeast",
+    "zh": "邮局在学校的南边。图书馆在邮局的东边。市场在图书馆的北边。市场在学校的什么方向？",
+    "es": "La oficina de correos está al sur de la escuela. La biblioteca está al este de la oficina de correos. El mercado está al norte de la biblioteca. ¿En qué dirección está el mercado desde la escuela?"
+  },
+  {
+    "en": "Anna is east of Bob. Bob is north of Carla. Daniel is west of Anna. What direction is Daniel from Carla?",
+    "domain": "spatial",
+    "structure": "4chain",
+    "answer": "northeast",
+    "zh": "Anna 在 Bob 的东边。Bob 在 Carla 的北边。Daniel 在 Anna 的西边。Daniel 在 Carla 的什么方向？",
+    "es": "Anna está al este de Bob. Bob está al norte de Carla. Daniel está al oeste de Anna. ¿En qué dirección está Daniel desde Carla?"
+  },
+  {
+    "en": "The store is north of the house. The park is west of the store. The playground is south of the park. What direction is the playground from the house?",
+    "domain": "spatial",
+    "structure": "4chain",
+    "answer": "northwest",
+    "zh": "商店在房子的北边。公园在商店的西边。操场在公园的南边。操场在房子的什么方向？",
+    "es": "La tienda está al norte de la casa. El parque está al oeste de la tienda. El parque infantil está al sur del parque. ¿En qué dirección está el parque infantil desde la casa?"
+  },
+  {
+    "en": "Emma forgot to set her alarm, so she woke up late and missed her bus. If Emma had not forgotten to set her alarm, would she have missed her bus?",
+    "domain": "counterfactual",
+    "structure": "chain_3",
+    "answer": "no",
+    "zh": "艾玛忘记设闹钟，所以她起晚了并错过了公交车。如果艾玛没有忘记设闹钟，她还会错过公交车吗？",
+    "es": "Emma olvidó poner su alarma, así que se despertó tarde y perdió el autobús. Si Emma no hubiera olvidado poner su alarma, ¿habría perdido el autobús?"
+  },
+  {
+    "en": "A heavy rainstorm caused the river to overflow, which flooded the nearby park. If the rainstorm had not occurred, would the park still have flooded?",
+    "domain": "counterfactual",
+    "structure": "chain_3",
+    "answer": "no",
+    "zh": "一场大暴雨导致河水泛滥，淹没了附近的公园。如果没有这场暴雨，公园还会被淹吗？",
+    "es": "Una fuerte tormenta hizo que el río se desbordara, lo que inundó el parque cercano. Si la tormenta no hubiera ocurrido, ¿el parque igual se habría inundado?"
+  },
+  {
+    "en": "The soccer team trained every day and also reviewed their strategies before the final game. They won the championship. If they had not reviewed their strategies, would they still have won?",
+    "domain": "counterfactual",
+    "structure": "redundant_paths",
+    "answer": "cannot determine",
+    "zh": "足球队每天训练，并且在决赛前复习了他们的战术。他们赢得了冠军。如果他们没有复习战术，还会赢吗？",
+    "es": "El equipo de fútbol entrenó todos los días y también revisó sus estrategias antes del partido final. Ganaron el campeonato. Si no hubieran revisado sus estrategias, ¿igual habrían ganado?"
+  },
+  {
+    "en": "A chef accidentally used salt instead of sugar, so the cake tasted bad. If the chef had not made this mistake, would the cake still have tasted bad?",
+    "domain": "counterfactual",
+    "structure": "single_cause",
+    "answer": "no",
+    "zh": "一位厨师不小心用盐代替了糖，所以蛋糕味道很差。如果厨师没有犯这个错误，蛋糕还会味道很差吗？",
+    "es": "Un chef usó accidentalmente sal en vez de azúcar, así que el pastel sabía mal. Si el chef no hubiera cometido este error, ¿el pastel igual habría sabido mal?"
+  },
+  {
+    "en": "A company launched an ad campaign and lowered their prices. Sales increased afterward. If they had not lowered their prices, would sales still have increased?",
+    "domain": "counterfactual",
+    "structure": "redundant_paths",
+    "answer": "cannot determine",
+    "zh": "一家公司开展了广告活动并降低了价格。之后销量增加了。如果他们没有降价，销量还会增加吗？",
+    "es": "Una empresa lanzó una campaña publicitaria y bajó sus precios. Las ventas aumentaron después. Si no hubieran bajado los precios, ¿las ventas igual habrían aumentado?"
+  },
+  {
+    "en": "Two friends planned a picnic, but one caught a cold and canceled. The picnic did not happen. If the friend had not caught a cold, would the picnic have happened?",
+    "domain": "counterfactual",
+    "structure": "single_cause",
+    "answer": "yes",
+    "zh": "两个朋友计划去野餐，但其中一个感冒了并取消了计划。野餐没有进行。如果朋友没有感冒，野餐会进行吗？",
+    "es": "Dos amigos planearon un picnic, pero uno se resfrió y canceló. El picnic no se realizó. Si el amigo no se hubiera resfriado, ¿el picnic se habría realizado?"
+  },
+  {
+    "en": "A student needed both a completed application and a recommendation letter to qualify for a scholarship. She forgot to submit the application and did not qualify. If she had submitted the application, would she have qualified?",
+    "domain": "counterfactual",
+    "structure": "fork",
+    "answer": "cannot determine",
+    "zh": "一名学生需要提交完整的申请和推荐信才能获得奖学金。她忘记提交申请，因此没有获得资格。如果她提交了申请，她会获得资格吗？",
+    "es": "Una estudiante necesitaba tanto una solicitud completa como una carta de recomendación para calificar a una beca. Olvidó enviar la solicitud y no calificó. Si hubiera enviado la solicitud, ¿habría calificado?"
+  },
+  {
+    "en": "A car wouldn’t start because the battery was dead. If the battery had not been dead, would the car have started?",
+    "domain": "counterfactual",
+    "structure": "single_cause",
+    "answer": "yes",
+    "zh": "一辆车因为电池没电无法启动。如果电池没有没电，车会启动吗？",
+    "es": "Un coche no arrancaba porque la batería estaba descargada. Si la batería no hubiera estado descargada, ¿el coche habría arrancado?"
+  },
+  {
+    "en": "A construction project was delayed because either the materials arrived late or the workers refused overtime. If the materials had arrived on time, would the project still have been delayed?",
+    "domain": "counterfactual",
+    "structure": "redundant_paths",
+    "answer": "cannot determine",
+    "zh": "一个建筑项目因为材料到货晚或者工人拒绝加班而被延误。如果材料按时到达，项目还会被延误吗？",
+    "es": "Un proyecto de construcción se retrasó porque o los materiales llegaron tarde o los trabajadores se negaron a hacer horas extra. Si los materiales hubieran llegado a tiempo, ¿el proyecto igual se habría retrasado?"
+  },
+  {
+    "en": "A new medication was prescribed to a patient, and as a result, their symptoms improved. If the medication had not been prescribed, would their symptoms have improved?",
+    "domain": "counterfactual",
+    "structure": "common_cause",
+    "answer": "cannot determine",
+    "zh": "一位病人被开了一种新药，结果症状有所改善。如果没有开这种药，症状还会改善吗？",
+    "es": "Se le recetó un nuevo medicamento a un paciente y, como resultado, sus síntomas mejoraron. Si no se le hubiera recetado el medicamento, ¿sus síntomas igual habrían mejorado?"
+  },
+  {
+    "en": "A flight was canceled because of mechanical failure. If there had not been a mechanical failure, would the flight have been canceled?",
+    "domain": "counterfactual",
+    "structure": "single_cause",
+    "answer": "cannot determine",
+    "zh": "一架航班因为机械故障被取消。如果没有机械故障，航班还会被取消吗？",
+    "es": "Un vuelo fue cancelado por una falla mecánica. Si no hubiera habido una falla mecánica, ¿el vuelo igual habría sido cancelado?"
+  },
+  {
+    "en": "A rare plant requires both sunlight and frequent watering to thrive. The owner forgot to water it, and the plant died. If the owner had watered it, would the plant have thrived?",
+    "domain": "counterfactual",
+    "structure": "fork",
+    "answer": "cannot determine",
+    "zh": "一种稀有植物需要阳光和频繁浇水才能茁壮成长。主人忘记浇水，植物死了。如果主人浇了水，植物会茁壮成长吗？",
+    "es": "Una planta rara requiere tanto luz solar como riego frecuente para prosperar. El dueño olvidó regarla y la planta murió. Si el dueño la hubiera regado, ¿la planta habría prosperado?"
+  },
+  {
+    "en": "A burglar alarm was triggered because a window was left open and a strong wind blew through. If the window had not been left open, would the alarm still have gone off?",
+    "domain": "counterfactual",
+    "structure": "fork",
+    "answer": "no",
+    "zh": "一个窃贼报警器被触发，是因为窗户被打开且有强风吹过。如果窗户没有被打开，报警器还会响吗？",
+    "es": "Una alarma de robo se activó porque una ventana quedó abierta y entró un viento fuerte. Si la ventana no hubiera quedado abierta, ¿la alarma igual se habría activado?"
+  },
+  {
+    "en": "During a group project, one member compiled the report while another designed the slides. The project was completed on time. If the slide designer had not contributed, would the project still have been completed on time?",
+    "domain": "counterfactual",
+    "structure": "redundant_paths",
+    "answer": "cannot determine",
+    "zh": "在一个小组项目中，一名成员编写了报告，另一名成员设计了幻灯片。项目按时完成。如果设计幻灯片的成员没有贡献，项目还会按时完成吗？",
+    "es": "Durante un proyecto grupal, un miembro compiló el informe mientras otro diseñó las diapositivas. El proyecto se completó a tiempo. Si el diseñador de las diapositivas no hubiera contribuido, ¿el proyecto igual se habría completado a tiempo?"
+  },
+  {
+    "en": "A runner tripped over a loose stone, fell, and sprained their ankle. If the stone had not been loose, would the runner have sprained their ankle?",
+    "domain": "counterfactual",
+    "structure": "chain_3",
+    "answer": "no",
+    "zh": "一名跑步者被一块松动的石头绊倒，摔倒并扭伤了脚踝。如果石头没有松动，跑步者还会扭伤脚踝吗？",
+    "es": "Un corredor tropezó con una piedra suelta, cayó y se torció el tobillo. Si la piedra no hubiera estado suelta, ¿el corredor igual se habría torcido el tobillo?"
+  },
+  {
+    "en": "A birthday party was held outdoors. If it had rained, the party would have moved indoors. If it had not rained, would the party still have been outdoors?",
+    "domain": "counterfactual",
+    "structure": "preventive",
+    "answer": "yes",
+    "zh": "一个生日派对在户外举行。如果下雨，派对会转到室内。如果没有下雨，派对还会在户外吗？",
+    "es": "Se celebró una fiesta de cumpleaños al aire libre. Si hubiera llovido, la fiesta se habría hecho en el interior. Si no hubiera llovido, ¿la fiesta igual habría sido al aire libre?"
+  },
+  {
+    "en": "A computer virus entered the network through an unpatched vulnerability. If the vulnerability had been patched, would the virus still have entered?",
+    "domain": "counterfactual",
+    "structure": "enabling",
+    "answer": "no",
+    "zh": "一台计算机病毒通过一个未修补的漏洞进入了网络。如果该漏洞已被修补，病毒还会进入吗？",
+    "es": "Un virus informático entró a la red por una vulnerabilidad sin parchear. Si la vulnerabilidad hubiera estado parcheada, ¿el virus igual habría entrado?"
+  },
+  {
+    "en": "A person's loan was denied after a background check revealed a low credit score. If the background check had not been performed, would the loan have been denied?",
+    "domain": "counterfactual",
+    "structure": "mediator",
+    "answer": "cannot determine",
+    "zh": "一个人在背景调查中被发现信用分低，贷款被拒绝。如果没有进行背景调查，贷款还会被拒绝吗？",
+    "es": "A una persona le negaron un préstamo después de que una verificación de antecedentes reveló un bajo puntaje de crédito. Si no se hubiera realizado la verificación de antecedentes, ¿igual le habrían negado el préstamo?"
+  },
+  {
+    "en": "A tree fell onto a power line during a storm. If there had been no storm, would the tree still have fallen onto the power line?",
+    "domain": "counterfactual",
+    "structure": "common_cause",
+    "answer": "cannot determine",
+    "zh": "一棵树在暴风雨中倒在了电线上。如果没有暴风雨，这棵树还会倒在电线上吗？",
+    "es": "Un árbol cayó sobre una línea eléctrica durante una tormenta. Si no hubiera habido tormenta, ¿el árbol igual habría caído sobre la línea eléctrica?"
+  },
+  {
+    "en": "A marathon runner won the race because they trained intensely. If the runner had not trained intensely, would they still have won?",
+    "domain": "counterfactual",
+    "structure": "single_cause",
+    "answer": "cannot determine",
+    "zh": "一名马拉松选手因为刻苦训练赢得了比赛。如果这名选手没有刻苦训练，还会赢吗？",
+    "es": "Un corredor de maratón ganó la carrera porque entrenó intensamente. Si el corredor no hubiera entrenado intensamente, ¿igual habría ganado?"
+  },
+  {
+    "en": "A conference was rescheduled because the keynote speaker was unavailable and the venue was double-booked. If the speaker had been available, would the conference still have been rescheduled?",
+    "domain": "counterfactual",
+    "structure": "redundant_paths",
+    "answer": "cannot determine",
+    "zh": "一次会议被重新安排，因为主旨发言人无法出席，并且场地被双重预订。如果主旨发言人能够出席，这次会议还会被重新安排吗？",
+    "es": "Una conferencia fue reprogramada porque el orador principal no estaba disponible y el lugar estaba reservado dos veces. Si el orador hubiera estado disponible, ¿la conferencia aún habría sido reprogramada?"
+  },
+  {
+    "en": "A student missed an exam because their alarm didn't ring and traffic was heavy. If the alarm had rung, would the student still have missed the exam?",
+    "domain": "counterfactual",
+    "structure": "redundant_paths",
+    "answer": "cannot determine",
+    "zh": "一名学生错过了考试，因为闹钟没有响，而且交通很拥堵。如果闹钟响了，这名学生还会错过考试吗？",
+    "es": "Un estudiante perdió un examen porque su alarma no sonó y había mucho tráfico. Si la alarma hubiera sonado, ¿el estudiante aún habría perdido el examen?"
+  },
+  {
+    "en": "A glass broke when it was dropped on a tile floor. If it had not been dropped, would the glass still have broken?",
+    "domain": "counterfactual",
+    "structure": "single_cause",
+    "answer": "no",
+    "zh": "一个玻璃杯掉在瓷砖地板上时碎了。如果没有掉落，这个玻璃杯还会碎吗？",
+    "es": "Un vaso se rompió cuando se cayó al suelo de baldosas. Si no se hubiera caído, ¿el vaso aún se habría roto?"
+  },
+  {
+    "en": "A store offered a discount to attract customers, and also put up a new sign. Sales increased. If the discount had not been offered, would sales still have increased?",
+    "domain": "counterfactual",
+    "structure": "redundant_paths",
+    "answer": "cannot determine",
+    "zh": "一家商店为了吸引顾客提供了折扣，还挂上了新招牌。销售额增加了。如果没有提供折扣，销售额还会增加吗？",
+    "es": "Una tienda ofreció un descuento para atraer clientes y también colocó un nuevo letrero. Las ventas aumentaron. Si no se hubiera ofrecido el descuento, ¿las ventas aún habrían aumentado?"
+  },
+  {
+    "en": "A bee stung a person because the person waved their arms and wore bright colors. If the person had not worn bright colors, would the bee still have stung them?",
+    "domain": "counterfactual",
+    "structure": "redundant_paths",
+    "answer": "cannot determine",
+    "zh": "一个人被蜜蜂蜇了，因为他挥动手臂并且穿着鲜艳的衣服。如果他没有穿鲜艳的衣服，蜜蜂还会蜇他吗？",
+    "es": "Una abeja picó a una persona porque la persona agitó los brazos y vestía colores brillantes. Si la persona no hubiera vestido colores brillantes, ¿la abeja aún la habría picado?"
+  },
+  {
+    "en": "A meeting was postponed because the organizer forgot to send out the invites. If the organizer had sent out the invites, would the meeting still have been postponed?",
+    "domain": "counterfactual",
+    "structure": "single_cause",
+    "answer": "no",
+    "zh": "一次会议被推迟，因为组织者忘记发送邀请。如果组织者发送了邀请，这次会议还会被推迟吗？",
+    "es": "Una reunión fue pospuesta porque el organizador olvidó enviar las invitaciones. Si el organizador hubiera enviado las invitaciones, ¿la reunión aún habría sido pospuesta?"
+  },
+  {
+    "en": "During a cooking class, Maria forgot to add yeast to her bread dough. As a result, the bread did not rise and remained dense. If Maria had remembered to add the yeast, would the bread still have been dense?",
+    "domain": "counterfactual",
+    "structure": "single_cause",
+    "answer": "no",
+    "zh": "在一次烹饪课上，玛丽亚忘记在面团中加入酵母。因此，面包没有发起来，变得很硬。如果玛丽亚记得加酵母，面包还会很硬吗？",
+    "es": "Durante una clase de cocina, María olvidó agregar levadura a la masa de pan. Como resultado, el pan no subió y quedó denso. Si María hubiera recordado agregar la levadura, ¿el pan aún habría quedado denso?"
+  },
+  {
+    "en": "The soccer team won their match because both their star striker scored two goals and the goalkeeper saved a penalty. If the goalkeeper had not saved the penalty, would the team still have won?",
+    "domain": "counterfactual",
+    "structure": "redundant_paths",
+    "answer": "cannot determine",
+    "zh": "足球队赢得了比赛，因为他们的明星前锋进了两球，守门员还扑出了一个点球。如果守门员没有扑出点球，这支球队还会赢吗？",
+    "es": "El equipo de fútbol ganó su partido porque su delantero estrella anotó dos goles y el portero atajó un penalti. Si el portero no hubiera atajado el penalti, ¿el equipo aún habría ganado?"
+  },
+  {
+    "en": "A traveler missed her flight because the taxi arrived late, which caused her to get stuck in traffic and arrive at the airport after the gate closed. If the taxi had arrived on time, would she still have missed her flight?",
+    "domain": "counterfactual",
+    "structure": "chain_3",
+    "answer": "no",
+    "zh": "一位旅客错过了航班，因为出租车来晚了，导致她陷入交通堵塞，等到达机场时登机口已经关闭。如果出租车准时到达，她还会错过航班吗？",
+    "es": "Una viajera perdió su vuelo porque el taxi llegó tarde, lo que hizo que quedara atrapada en el tráfico y llegara al aeropuerto después de que cerrara la puerta de embarque. Si el taxi hubiera llegado a tiempo, ¿ella aún habría perdido su vuelo?"
+  },
+  {
+    "en": "A construction project was delayed because it rained heavily and because key materials were not delivered on time. If it had not rained heavily, would the project still have been delayed?",
+    "domain": "counterfactual",
+    "structure": "fork",
+    "answer": "yes",
+    "zh": "一个建筑项目被延误了，因为下了大雨，而且关键材料没有按时送达。如果没有下大雨，这个项目还会被延误吗？",
+    "es": "Un proyecto de construcción se retrasó porque llovió mucho y porque los materiales clave no se entregaron a tiempo. Si no hubiera llovido mucho, ¿el proyecto aún se habría retrasado?"
+  },
+  {
+    "en": "John’s computer crashed right before his presentation. The crash was caused by a power outage, which was itself caused by maintenance work on the electrical grid. If the maintenance work had not occurred, would John's computer still have crashed?",
+    "domain": "counterfactual",
+    "structure": "chain_3",
+    "answer": "no",
+    "zh": "约翰的电脑在他演示前崩溃了。崩溃是由于停电引起的，而停电是因为电网维护工作。如果没有进行维护工作，约翰的电脑还会崩溃吗？",
+    "es": "La computadora de John se bloqueó justo antes de su presentación. El fallo fue causado por un corte de energía, que a su vez fue causado por trabajos de mantenimiento en la red eléctrica. Si el mantenimiento no hubiera ocurrido, ¿la computadora de John aún se habría bloqueado?"
+  },
+  {
+    "en": "In a biology experiment, the plants grew poorly. This was due to either insufficient sunlight or lack of water; both conditions were present. If the plants had received enough water but still lacked sunlight, would they still have grown poorly?",
+    "domain": "counterfactual",
+    "structure": "redundant_paths",
+    "answer": "yes",
+    "zh": "在一次生物实验中，植物长势很差。这是因为阳光不足或缺水，且两种情况都存在。如果植物得到了足够的水但仍然缺少阳光，它们还会长得很差吗？",
+    "es": "En un experimento de biología, las plantas crecieron mal. Esto se debió a la falta de luz solar o a la falta de agua; ambas condiciones estaban presentes. Si las plantas hubieran recibido suficiente agua pero aún les faltara luz solar, ¿aún habrían crecido mal?"
+  },
+  {
+    "en": "A group dinner was successful because everyone brought a dish and the host prepared enough seating. If the host had not prepared enough seating, would the dinner still have been successful?",
+    "domain": "counterfactual",
+    "structure": "fork",
+    "answer": "cannot determine",
+    "zh": "一次聚餐很成功，因为每个人都带了一道菜，主人还准备了足够的座位。如果主人没有准备足够的座位，这次聚餐还会成功吗？",
+    "es": "Una cena grupal fue exitosa porque todos llevaron un platillo y el anfitrión preparó suficientes asientos. Si el anfitrión no hubiera preparado suficientes asientos, ¿la cena aún habría sido exitosa?"
+  },
+  {
+    "en": "A factory avoided a machine breakdown by performing regular maintenance, which prevented overheating. If the maintenance had not been performed, would the machine have avoided breakdown?",
+    "domain": "counterfactual",
+    "structure": "preventive",
+    "answer": "no",
+    "zh": "一家工厂通过定期维护避免了机器故障，这防止了过热。如果没有进行维护，机器还会避免故障吗？",
+    "es": "Una fábrica evitó una avería de la máquina realizando mantenimiento regular, lo que previno el sobrecalentamiento. Si no se hubiera realizado el mantenimiento, ¿la máquina habría evitado la avería?"
+  },
+  {
+    "en": "A basketball game ended in a tie because the home team made a last-second three-pointer and the visitors missed two free throws. If the home team had not made the three-pointer, would the game still have ended in a tie?",
+    "domain": "counterfactual",
+    "structure": "fork",
+    "answer": "no",
+    "zh": "一场篮球比赛以平局结束，因为主队在最后一秒投进了三分球，客队错失了两个罚球。如果主队没有投进三分球，这场比赛还会平局吗？",
+    "es": "Un partido de baloncesto terminó en empate porque el equipo local encestó un triple en el último segundo y los visitantes fallaron dos tiros libres. Si el equipo local no hubiera encestado el triple, ¿el partido aún habría terminado en empate?"
+  },
+  {
+    "en": "Lisa was able to finish her marathon because she trained for months and the weather was cool. If the weather had not been cool, would she still have finished?",
+    "domain": "counterfactual",
+    "structure": "fork",
+    "answer": "cannot determine",
+    "zh": "莉萨能够完成马拉松，是因为她训练了几个月，而且天气很凉爽。如果天气不凉爽，她还会完成比赛吗？",
+    "es": "Lisa pudo terminar su maratón porque entrenó durante meses y el clima era fresco. Si el clima no hubiera sido fresco, ¿ella aún habría terminado?"
+  },
+  {
+    "en": "A company avoided bankruptcy because a key investor provided emergency funds. If the investor had not provided funds, would the company still have avoided bankruptcy?",
+    "domain": "counterfactual",
+    "structure": "single_cause",
+    "answer": "no",
+    "zh": "一家公司避免了破产，因为一位关键投资者提供了紧急资金。如果投资者没有提供资金，这家公司还会避免破产吗？",
+    "es": "Una empresa evitó la bancarrota porque un inversionista clave proporcionó fondos de emergencia. Si el inversionista no hubiera proporcionado fondos, ¿la empresa aún habría evitado la bancarrota?"
+  },
+  {
+    "en": "A town experienced a blackout because both the main and backup power lines failed at the same time. If the main power line had not failed, would the blackout still have happened?",
+    "domain": "counterfactual",
+    "structure": "redundant_paths",
+    "answer": "no",
+    "zh": "一个小镇发生了停电，因为主电线和备用电线同时发生故障。如果主电线没有故障，还会发生停电吗？",
+    "es": "Un pueblo experimentó un apagón porque tanto la línea eléctrica principal como la de respaldo fallaron al mismo tiempo. Si la línea principal no hubiera fallado, ¿el apagón aún habría ocurrido?"
+  },
+  {
+    "en": "Sally got sick after eating a salad that contained both spoiled lettuce and contaminated dressing. If the dressing had not been contaminated, would Sally still have gotten sick?",
+    "domain": "counterfactual",
+    "structure": "fork",
+    "answer": "cannot determine",
+    "zh": "萨莉在吃了既有变质生菜又有被污染调料的沙拉后生病了。如果调料没有被污染，萨莉还会生病吗？",
+    "es": "Sally se enfermó después de comer una ensalada que contenía lechuga en mal estado y aderezo contaminado. Si el aderezo no hubiera estado contaminado, ¿Sally aún se habría enfermado?"
+  },
+  {
+    "en": "A scheduled meeting was successful because the organizer sent reminders and all participants logged in on time. If the organizer had not sent reminders, would the meeting still have been successful?",
+    "domain": "counterfactual",
+    "structure": "fork",
+    "answer": "cannot determine",
+    "zh": "一次预定的会议很成功，因为组织者发送了提醒，所有参与者都准时上线。如果组织者没有发送提醒，这次会议还会成功吗？",
+    "es": "Una reunión programada fue exitosa porque el organizador envió recordatorios y todos los participantes se conectaron a tiempo. Si el organizador no hubiera enviado recordatorios, ¿la reunión aún habría sido exitosa?"
+  },
+  {
+    "en": "A leak in the roof led to water damage in the house. The leak was caused by a broken shingle. If the shingle had not broken, would there have been water damage?",
+    "domain": "counterfactual",
+    "structure": "single_cause",
+    "answer": "no",
+    "zh": "屋顶漏水导致了房屋的水损坏。漏水是由于一块瓦片破损引起的。如果瓦片没有破损，还会有水损坏吗？",
+    "es": "Una gotera en el techo provocó daños por agua en la casa. La gotera fue causada por una teja rota. Si la teja no se hubiera roto, ¿habría habido daños por agua?"
+  },
+  {
+    "en": "A hiker avoided getting lost because he had both a map and a GPS device. If he had not brought the GPS, would he still have avoided getting lost?",
+    "domain": "counterfactual",
+    "structure": "redundant_paths",
+    "answer": "yes",
+    "zh": "一名徒步旅行者没有迷路，因为他带了地图和GPS设备。如果他没有带GPS，他还会避免迷路吗？",
+    "es": "Un excursionista evitó perderse porque tenía tanto un mapa como un dispositivo GPS. Si no hubiera llevado el GPS, ¿aun así habría evitado perderse?"
+  },
+  {
+    "en": "A student passed the exam because she studied hard, and the exam questions matched the topics she had reviewed. If the questions had not matched her study topics, would she still have passed?",
+    "domain": "counterfactual",
+    "structure": "fork",
+    "answer": "cannot determine",
+    "zh": "一名学生通过了考试，因为她努力学习，而且考试题目与她复习的内容相符。如果题目没有与她复习的内容相符，她还会通过考试吗？",
+    "es": "Una estudiante aprobó el examen porque estudió mucho y las preguntas del examen coincidieron con los temas que había repasado. Si las preguntas no hubieran coincidido con los temas que estudió, ¿aun así habría aprobado?"
+  },
+  {
+    "en": "A neighbor's dog barked loudly, waking up the entire street. The dog barked because it saw a squirrel run across the yard. If the squirrel had not run across the yard, would the dog still have barked?",
+    "domain": "counterfactual",
+    "structure": "single_cause",
+    "answer": "cannot determine",
+    "zh": "邻居家的狗叫得很大声，吵醒了整条街。狗叫是因为它看到一只松鼠跑过院子。如果松鼠没有跑过院子，狗还会叫吗？",
+    "es": "El perro del vecino ladró fuerte, despertando a toda la calle. El perro ladró porque vio a una ardilla cruzar el patio. Si la ardilla no hubiera cruzado el patio, ¿el perro habría ladrado igual?"
+  },
+  {
+    "en": "The garden survived the drought because it was watered regularly, and mulch was used to retain moisture. If the garden had not been watered regularly, would it still have survived?",
+    "domain": "counterfactual",
+    "structure": "fork",
+    "answer": "cannot determine",
+    "zh": "花园在干旱中幸存下来，因为定期浇水，并且使用了覆盖物来保持水分。如果花园没有定期浇水，它还能幸存下来吗？",
+    "es": "El jardín sobrevivió a la sequía porque fue regado regularmente y se usó mantillo para retener la humedad. Si el jardín no hubiera sido regado regularmente, ¿aun así habría sobrevivido?"
+  },
+  {
+    "en": "A financial transaction was flagged as suspicious because it exceeded the threshold amount and originated from a foreign country. If the transaction had not exceeded the threshold, would it still have been flagged?",
+    "domain": "counterfactual",
+    "structure": "fork",
+    "answer": "cannot determine",
+    "zh": "一笔金融交易被标记为可疑，因为它超过了阈值金额并且来自外国。如果该交易没有超过阈值，它还会被标记吗？",
+    "es": "Una transacción financiera fue marcada como sospechosa porque superó el monto límite y se originó en un país extranjero. Si la transacción no hubiera superado el límite, ¿aun así habría sido marcada?"
+  },
+  {
+    "en": "The traffic jam was caused by both an accident on the highway and road construction on the main street. If the accident had not happened, would there still have been a traffic jam?",
+    "domain": "counterfactual",
+    "structure": "redundant_paths",
+    "answer": "yes",
+    "zh": "交通堵塞是由于高速公路上的事故和主干道上的道路施工共同造成的。如果事故没有发生，还会有交通堵塞吗？",
+    "es": "El atasco de tráfico fue causado tanto por un accidente en la autopista como por obras en la calle principal. Si el accidente no hubiera ocurrido, ¿aun así habría habido un atasco?"
+  },
+  {
+    "en": "A student failed to submit his assignment on time because his laptop crashed and the campus WiFi was down. If the laptop had not crashed, would he still have failed to submit on time?",
+    "domain": "counterfactual",
+    "structure": "fork",
+    "answer": "cannot determine",
+    "zh": "一名学生未能按时提交作业，因为他的笔记本电脑崩溃了，并且校园WiFi也断了。如果笔记本电脑没有崩溃，他还会未能按时提交吗？",
+    "es": "Un estudiante no entregó su tarea a tiempo porque su portátil se averió y el WiFi del campus no funcionaba. Si el portátil no se hubiera averiado, ¿aun así habría fallado en entregar a tiempo?"
+  },
+  {
+    "en": "A sports team lost the game because their best player was injured, which forced them to use a substitute who made a crucial mistake. If the best player had not been injured, would the team still have lost?",
+    "domain": "counterfactual",
+    "structure": "chain_3",
+    "answer": "cannot determine",
+    "zh": "一支运动队输掉了比赛，因为他们最好的球员受伤了，导致他们不得不用一名替补球员，而替补球员犯了一个关键错误。如果最好的球员没有受伤，这支队伍还会输吗？",
+    "es": "Un equipo deportivo perdió el partido porque su mejor jugador se lesionó, lo que obligó a usar un suplente que cometió un error crucial. Si el mejor jugador no se hubiera lesionado, ¿el equipo igual habría perdido?"
+  },
+  {
+    "en": "A tree fell during the storm because it was old and the wind was exceptionally strong. If the tree had not been old, would it still have fallen?",
+    "domain": "counterfactual",
+    "structure": "fork",
+    "answer": "cannot determine",
+    "zh": "一棵树在暴风雨中倒下了，因为它很老，而且风特别大。如果这棵树不老，它还会倒下吗？",
+    "es": "Un árbol cayó durante la tormenta porque era viejo y el viento era excepcionalmente fuerte. Si el árbol no hubiera sido viejo, ¿igual habría caído?"
+  },
+  {
+    "en": "A museum was able to open on time because the renovations finished early, which allowed the exhibits to be installed ahead of schedule. If the renovations had not finished early, would the museum still have opened on time?",
+    "domain": "counterfactual",
+    "structure": "mediator",
+    "answer": "cannot determine",
+    "zh": "博物馆能够按时开放，因为装修提前完成，这使得展品能提前布置。如果装修没有提前完成，博物馆还能按时开放吗？",
+    "es": "Un museo pudo abrir a tiempo porque las renovaciones terminaron antes de lo previsto, lo que permitió instalar las exhibiciones con anticipación. Si las renovaciones no hubieran terminado antes, ¿el museo igual habría abierto a tiempo?"
+  },
+  {
+    "en": "1. The city of Eldoria is north of Lake Vareen. 2. Lake Vareen is east of the Forest of Myra. 3. The Forest of Myra is south of Mount Keld. 4. The town of Draston grows apples. 5. What direction is Mount Keld from Eldoria?",
+    "domain": "multihop",
+    "structure": "spatial_chain",
+    "answer": "northwest",
+    "zh": "1. 埃尔多利亚城在瓦林湖以北。2. 瓦林湖在迈拉森林以东。3. 迈拉森林在凯尔德山以南。4. 德拉斯顿镇种植苹果。5. 凯尔德山在埃尔多利亚城的什么方向？",
+    "es": "1. La ciudad de Eldoria está al norte del Lago Vareen. 2. El Lago Vareen está al este del Bosque de Myra. 3. El Bosque de Myra está al sur del Monte Keld. 4. El pueblo de Draston cultiva manzanas. 5. ¿En qué dirección está el Monte Keld desde Eldoria?"
+  },
+  {
+    "en": "1. Anna is the daughter of Maria. 2. Maria is the sister of John. 3. John owns a bakery. 4. Who is Anna's uncle?",
+    "domain": "multihop",
+    "structure": "genealogy",
+    "answer": "John",
+    "zh": "1. 安娜是玛丽亚的女儿。2. 玛丽亚是约翰的姐妹。3. 约翰拥有一家面包店。4. 谁是安娜的叔叔？",
+    "es": "1. Anna es hija de María. 2. María es hermana de John. 3. John es dueño de una panadería. 4. ¿Quién es el tío de Anna?"
+  },
+  {
+    "en": "1. Clawbeaks are a subset of Sky Raptors. 2. All Sky Raptors are carnivorous. 3. There are 12 species of Clawbeaks. 4. Are all Clawbeaks carnivorous?",
+    "domain": "multihop",
+    "structure": "classification",
+    "answer": "yes",
+    "zh": "1. 爪喙鸟是天鹰的一种。2. 所有天鹰都是食肉的。3. 爪喙鸟有12个物种。4. 所有爪喙鸟都是食肉的吗？",
+    "es": "1. Los Clawbeaks son un subconjunto de Sky Raptors. 2. Todos los Sky Raptors son carnívoros. 3. Hay 12 especies de Clawbeaks. 4. ¿Todos los Clawbeaks son carnívoros?"
+  },
+  {
+    "en": "1. Tournament round 1 occurs before round 2. 2. Round 2 occurs before the semifinals. 3. The finals happen after the semifinals. 4. Medals are awarded during the finals. 5. Which round immediately precedes the semifinals?",
+    "domain": "multihop",
+    "structure": "temporal",
+    "answer": "round 2",
+    "zh": "1. 锦标赛第一轮在第二轮之前进行。2. 第二轮在半决赛之前进行。3. 决赛在半决赛之后进行。4. 奖牌在决赛期间颁发。5. 哪一轮紧接在半决赛之前？",
+    "es": "1. La ronda 1 del torneo ocurre antes que la ronda 2. 2. La ronda 2 ocurre antes de las semifinales. 3. La final ocurre después de las semifinales. 4. Las medallas se entregan durante la final. 5. ¿Qué ronda precede inmediatamente a las semifinales?"
+  },
+  {
+    "en": "1. The city of Lorin is east of the River Galt. 2. The River Galt is south of the Mountains of Mir. 3. The Desert of Solas is west of the River Galt. 4. Which direction is the Mountains of Mir from Lorin?",
+    "domain": "multihop",
+    "structure": "spatial_chain",
+    "answer": "northwest",
+    "zh": "1. 洛林城在加尔特河以东。2. 加尔特河在米尔山以南。3. 索拉斯沙漠在加尔特河以西。4. 米尔山在洛林城的什么方向？",
+    "es": "1. La ciudad de Lorin está al este del Río Galt. 2. El Río Galt está al sur de las Montañas de Mir. 3. El Desierto de Solas está al oeste del Río Galt. 4. ¿En qué dirección están las Montañas de Mir desde Lorin?"
+  },
+  {
+    "en": "1. The Omega Club is a division of the Solaris Organization. 2. The Solaris Organization is headquartered in New Terra. 3. The Lambda Club is unrelated to Solaris. 4. Where is the Omega Club headquartered?",
+    "domain": "multihop",
+    "structure": "membership",
+    "answer": "New Terra",
+    "zh": "1. 欧米伽俱乐部是索拉里斯组织的一个分部。2. 索拉里斯组织总部设在新特拉。3. 兰姆达俱乐部与索拉里斯无关。4. 欧米伽俱乐部的总部在哪里？",
+    "es": "1. El Club Omega es una división de la Organización Solaris. 2. La Organización Solaris tiene su sede en New Terra. 3. El Club Lambda no está relacionado con Solaris. 4. ¿Dónde tiene su sede el Club Omega?"
+  },
+  {
+    "en": "1. All players in Team Ruby wear red shirts. 2. Sasha is a member of Team Ruby. 3. Sasha's favorite color is blue. 4. What color shirt does Sasha wear?",
+    "domain": "multihop",
+    "structure": "classification",
+    "answer": "red",
+    "zh": "1. 红宝石队的所有队员都穿红色衬衫。2. 萨莎是红宝石队的成员。3. 萨莎最喜欢的颜色是蓝色。4. 萨莎穿什么颜色的衬衫？",
+    "es": "1. Todos los jugadores del Equipo Ruby usan camisetas rojas. 2. Sasha es miembro del Equipo Ruby. 3. El color favorito de Sasha es azul. 4. ¿De qué color es la camiseta que usa Sasha?"
+  },
+  {
+    "en": "1. The Silver Medal is given to the runner-up. 2. The runner-up is the player who finishes in 2nd place. 3. The Golden Medal is for 1st place. 4. What place does the Silver Medal winner finish?",
+    "domain": "multihop",
+    "structure": "transitive_2",
+    "answer": "2nd",
+    "zh": "1. 银牌颁给亚军。2. 亚军是获得第二名的选手。3. 金牌颁给第一名。4. 获得银牌的人是第几名？",
+    "es": "1. La Medalla de Plata se otorga al subcampeón. 2. El subcampeón es el jugador que termina en 2º lugar. 3. La Medalla de Oro es para el 1º lugar. 4. ¿En qué lugar termina el ganador de la Medalla de Plata?"
+  },
+  {
+    "en": "1. The Blue Ridge Trail is longer than the Red Peak Trail. 2. The Red Peak Trail is longer than the Green Meadow Path. 3. The Green Meadow Path is 4 miles long. 4. Which trail is the shortest?",
+    "domain": "multihop",
+    "structure": "numerical",
+    "answer": "Green Meadow Path",
+    "zh": "1. 蓝岭小径比红峰小径长。2. 红峰小径比绿草地小径长。3. 绿草地小径长4英里。4. 哪条小径最短？",
+    "es": "1. El Sendero Blue Ridge es más largo que el Sendero Red Peak. 2. El Sendero Red Peak es más largo que el Camino Green Meadow. 3. El Camino Green Meadow mide 4 millas. 4. ¿Cuál es el sendero más corto?"
+  },
+  {
+    "en": "1. The recipe calls for 3 cups of flour per batch. 2. One cake uses 2 batches. 3. Sugar is not used in this recipe. 4. How many cups of flour are needed for one cake?",
+    "domain": "multihop",
+    "structure": "numerical",
+    "answer": "6",
+    "zh": "1. 这个食谱每份需要3杯面粉。2. 一个蛋糕需要2份。3. 这个食谱不使用糖。4. 做一个蛋糕需要多少杯面粉？",
+    "es": "1. La receta requiere 3 tazas de harina por lote. 2. Un pastel utiliza 2 lotes. 3. El azúcar no se usa en esta receta. 4. ¿Cuántas tazas de harina se necesitan para un pastel?"
+  },
+  {
+    "en": "1. The Coral League includes teams from the Pacific region. 2. The Seadragons are a team in the Coral League. 3. The Polar League includes teams from the Arctic region. 4. From which region are the Seadragons?",
+    "domain": "multihop",
+    "structure": "membership",
+    "answer": "Pacific",
+    "zh": "1. 珊瑚联盟包括来自太平洋地区的队伍。2. 海龙队是珊瑚联盟的一支队伍。3. 极地联盟包括来自北极地区的队伍。4. 海龙队来自哪个地区？",
+    "es": "1. La Liga Coral incluye equipos de la región del Pacífico. 2. Los Seadragons son un equipo de la Liga Coral. 3. La Liga Polar incluye equipos de la región Ártica. 4. ¿De qué región son los Seadragons?"
+  },
+  {
+    "en": "1. The king’s brother is Lord Bennet. 2. Lord Bennet’s son is Sir Cedric. 3. Sir Cedric is not a knight. 4. What is the king’s relationship to Sir Cedric?",
+    "domain": "multihop",
+    "structure": "genealogy",
+    "answer": "uncle",
+    "zh": "1. 国王的兄弟是贝内特勋爵。2. 贝内特勋爵的儿子是塞德里克爵士。3. 塞德里克爵士不是骑士。4. 国王与塞德里克爵士是什么关系？",
+    "es": "1. El hermano del rey es Lord Bennet. 2. El hijo de Lord Bennet es Sir Cedric. 3. Sir Cedric no es caballero. 4. ¿Cuál es la relación del rey con Sir Cedric?"
+  },
+  {
+    "en": "1. The Dusk Festival is held in Autumn. 2. Autumn comes after Summer. 3. The Spring Festival is held before Summer. 4. In which season is the Dusk Festival?",
+    "domain": "multihop",
+    "structure": "temporal",
+    "answer": "Autumn",
+    "zh": "1. 黄昏节在秋季举行。2. 秋季在夏季之后。3. 春节在夏季之前举行。4. 黄昏节在哪个季节？",
+    "es": "1. El Festival del Ocaso se celebra en otoño. 2. El otoño viene después del verano. 3. El Festival de Primavera se celebra antes del verano. 4. ¿En qué estación se celebra el Festival del Ocaso?"
+  },
+  {
+    "en": "1. The market is west of the library. 2. The bakery is north of the market. 3. The post office is south of the library. 4. Which direction is the bakery from the library?",
+    "domain": "multihop",
+    "structure": "spatial_chain",
+    "answer": "northwest",
+    "zh": "1. 市场在图书馆的西边。2. 面包店在市场的北边。3. 邮局在图书馆的南边。4. 面包店在图书馆的哪个方向？",
+    "es": "1. El mercado está al oeste de la biblioteca. 2. La panadería está al norte del mercado. 3. La oficina de correos está al sur de la biblioteca. 4. ¿En qué dirección está la panadería desde la biblioteca?"
+  },
+  {
+    "en": "1. The genus Felira includes all Felira tigers. 2. Felira tigers have striped fur. 3. Some Felira tigers are born white. 4. Do all members of genus Felira have striped fur?",
+    "domain": "multihop",
+    "structure": "classification",
+    "answer": "yes",
+    "zh": "1. 费利拉属包括所有费利拉虎。2. 费利拉虎有条纹皮毛。3. 有些费利拉虎天生是白色的。4. 费利拉属的所有成员都有条纹皮毛吗？",
+    "es": "1. El género Felira incluye todos los tigres Felira. 2. Los tigres Felira tienen pelaje a rayas. 3. Algunos tigres Felira nacen blancos. 4. ¿Todos los miembros del género Felira tienen pelaje a rayas?"
+  },
+  {
+    "en": "1. A full deck of Star Cards contains 60 cards. 2. Each player starts with 20 Star Cards. 3. The winner is the player who collects all cards. 4. How many cards are in a full deck?",
+    "domain": "multihop",
+    "structure": "numerical",
+    "answer": "60",
+    "zh": "1. 一副完整的星卡有60张牌。2. 每个玩家起始有20张星卡。3. 收集所有牌的玩家获胜。4. 一副完整的牌有多少张？",
+    "es": "1. Un mazo completo de Cartas Estrella contiene 60 cartas. 2. Cada jugador comienza con 20 Cartas Estrella. 3. El ganador es el jugador que reúne todas las cartas. 4. ¿Cuántas cartas hay en un mazo completo?"
+  },
+  {
+    "en": "1. The capital of Brell is Norv. 2. The capital of Rynth is Doma. 3. Brell is east of Rynth. 4. What is the capital of the country east of Rynth?",
+    "domain": "multihop",
+    "structure": "spatial_chain",
+    "answer": "Norv",
+    "zh": "1. 布雷尔的首都是诺夫。2. 林斯的首都是多玛。3. 布雷尔在林斯的东边。4. 林斯东边国家的首都是什么？",
+    "es": "1. La capital de Brell es Norv. 2. La capital de Rynth es Doma. 3. Brell está al este de Rynth. 4. ¿Cuál es la capital del país al este de Rynth?"
+  },
+  {
+    "en": "1. The Solar Race starts before noon. 2. The Lunar Race starts after the Solar Race. 3. The Star Relay is the last event. 4. Which event is first?",
+    "domain": "multihop",
+    "structure": "temporal",
+    "answer": "Solar Race",
+    "zh": "1. 太阳赛在中午前开始。2. 月亮赛在太阳赛之后开始。3. 星星接力赛是最后一个项目。4. 哪个项目是第一个？",
+    "es": "1. La Carrera Solar comienza antes del mediodía. 2. La Carrera Lunar comienza después de la Carrera Solar. 3. El Relevo Estelar es el último evento. 4. ¿Qué evento es primero?"
+  },
+  {
+    "en": "1. The Emerald Bookstore is on Fifth Avenue. 2. The Jade Cafe is next to the Emerald Bookstore. 3. The Sapphire Library is across from the Jade Cafe. 4. On which street is the Jade Cafe?",
+    "domain": "multihop",
+    "structure": "spatial_chain",
+    "answer": "Fifth Avenue",
+    "zh": "1. 翡翠书店在第五大道上。2. 翡翠书店旁边是翡翠咖啡馆。3. 蓝宝石图书馆在翡翠咖啡馆的对面。4. 翡翠咖啡馆在哪条街上？",
+    "es": "1. La Librería Esmeralda está en la Quinta Avenida. 2. El Café Jade está junto a la Librería Esmeralda. 3. La Biblioteca Zafiro está frente al Café Jade. 4. ¿En qué calle está el Café Jade?"
+  },
+  {
+    "en": "1. The main ingredient in Cloud Bread is flour. 2. Cloud Bread is used to make Sky Sandwiches. 3. Cheese is not used in Cloud Bread. 4. What is the main ingredient in Sky Sandwiches?",
+    "domain": "multihop",
+    "structure": "transitive_2",
+    "answer": "flour",
+    "zh": "1. 云面包的主要成分是面粉。2. 云面包用来做天空三明治。3. 云面包不含奶酪。4. 天空三明治的主要成分是什么？",
+    "es": "1. El ingrediente principal del Pan Nube es la harina. 2. El Pan Nube se usa para hacer Sándwiches del Cielo. 3. El queso no se usa en el Pan Nube. 4. ¿Cuál es el ingrediente principal de los Sándwiches del Cielo?"
+  },
+  {
+    "en": "1. The River Elan flows through the city of Markel. 2. Markel is east of Velin. 3. The city of Darn is south of Markel. 4. What river flows through the city east of Velin?",
+    "domain": "multihop",
+    "structure": "spatial_chain",
+    "answer": "Elan",
+    "zh": "1. 埃兰河流经马凯尔市。2. 马凯尔在维林的东边。3. 达恩市在马凯尔的南边。4. 流经维林东边城市的河流是什么？",
+    "es": "1. El río Elan pasa por la ciudad de Markel. 2. Markel está al este de Velin. 3. La ciudad de Darn está al sur de Markel. 4. ¿Qué río pasa por la ciudad al este de Velin?"
+  },
+  {
+    "en": "1. A squad consists of 5 soldiers. 2. A platoon contains 4 squads. 3. A company consists of 3 platoons. 4. How many soldiers are in a company?",
+    "domain": "multihop",
+    "structure": "numerical",
+    "answer": "60",
+    "zh": "1. 一个班由5名士兵组成。2. 一个排有4个班。3. 一个连由3个排组成。4. 一个连有多少名士兵？",
+    "es": "1. Un escuadrón consiste en 5 soldados. 2. Un pelotón contiene 4 escuadrones. 3. Una compañía consiste en 3 pelotones. 4. ¿Cuántos soldados hay en una compañía?"
+  },
+  {
+    "en": "1. The player who scores the highest wins the match. 2. Matches are played after practice sessions. 3. Trophies are awarded to winners. 4. When are matches played?",
+    "domain": "multihop",
+    "structure": "temporal",
+    "answer": "after practice sessions",
+    "zh": "1. 得分最高的选手赢得比赛。2. 比赛在训练后进行。3. 奖杯颁发给获胜者。4. 比赛什么时候进行？",
+    "es": "1. El jugador que obtiene la puntuación más alta gana el partido. 2. Los partidos se juegan después de las sesiones de práctica. 3. Los trofeos se otorgan a los ganadores. 4. ¿Cuándo se juegan los partidos?"
+  },
+  {
+    "en": "1. The lighthouse is north of the harbor. 2. The harbor is east of the village. 3. The market is west of the village. 4. Which direction is the lighthouse from the village?",
+    "domain": "multihop",
+    "structure": "spatial_chain",
+    "answer": "northeast",
+    "zh": "1. 灯塔在港口的北边。2. 港口在村庄的东边。3. 市场在村庄的西边。4. 灯塔在村庄的哪个方向？",
+    "es": "1. El faro está al norte del puerto. 2. El puerto está al este del pueblo. 3. El mercado está al oeste del pueblo. 4. ¿En qué dirección está el faro desde el pueblo?"
+  },
+  {
+    "en": "1. The Crimson Order is part of the Eastern Alliance. 2. The Eastern Alliance’s flag is blue. 3. The Western Union’s flag is green. 4. What color is the Crimson Order’s flag?",
+    "domain": "multihop",
+    "structure": "membership",
+    "answer": "blue",
+    "zh": "1. 赤红骑士团属于东部联盟。2. 东部联盟的旗帜是蓝色的。3. 西部联盟的旗帜是绿色的。4. 赤红骑士团的旗帜是什么颜色？",
+    "es": "1. La Orden Carmesí es parte de la Alianza del Este. 2. La bandera de la Alianza del Este es azul. 3. La bandera de la Unión Occidental es verde. 4. ¿De qué color es la bandera de la Orden Carmesí?"
+  },
+  {
+    "en": "1. Each tree in the orchard produces 40 apples. 2. There are 10 trees in the orchard. 3. Half of the apples are used for juice. 4. How many apples does the orchard produce?",
+    "domain": "multihop",
+    "structure": "numerical",
+    "answer": "400",
+    "zh": "1. 果园里的每棵树结40个苹果。2. 果园里有10棵树。3. 一半的苹果用来榨汁。4. 果园一共产多少个苹果？",
+    "es": "1. Cada árbol en el huerto produce 40 manzanas. 2. Hay 10 árboles en el huerto. 3. La mitad de las manzanas se usan para jugo. 4. ¿Cuántas manzanas produce el huerto?"
+  },
+  {
+    "en": "1. The city of Larton is north of Miville. 2. Miville is east of Tharn. 3. Tharn has a famous river. 4. The capital of the region is Larton. 5. Which city is north of the city that is east of Tharn?",
+    "domain": "multihop",
+    "structure": "spatial_chain",
+    "answer": "Larton",
+    "zh": "1. 拉顿市在米维尔的北边。2. 米维尔在萨恩的东边。3. 萨恩有一条著名的河流。4. 该地区的首都是拉顿。5. 哪个城市在萨恩东边城市的北边？",
+    "es": "1. La ciudad de Larton está al norte de Miville. 2. Miville está al este de Tharn. 3. Tharn tiene un río famoso. 4. La capital de la región es Larton. 5. ¿Qué ciudad está al norte de la ciudad que está al este de Tharn?"
+  },
+  {
+    "en": "1. In the game of Stravik, a pawn can move forward to an empty square. 2. A pawn on D4 is directly behind the square D5. 3. The square D5 is empty. 4. Stravik uses a 10x10 board. 5. Where can the pawn on D4 legally move?",
+    "domain": "multihop",
+    "structure": "transitive_2",
+    "answer": "D5",
+    "zh": "1. 在斯特拉维克游戏中，兵可以向前移动到空格。2. D4上的兵正好在D5格的后面。3. D5格是空的。4. 斯特拉维克使用10x10的棋盘。5. D4上的兵可以合法走到哪里？",
+    "es": "1. En el juego de Stravik, un peón puede avanzar a una casilla vacía. 2. Un peón en D4 está directamente detrás de la casilla D5. 3. La casilla D5 está vacía. 4. Stravik utiliza un tablero de 10x10. 5. ¿A dónde puede moverse legalmente el peón en D4?"
+  },
+  {
+    "en": "1. The Kestrel is a type of bird. 2. All birds have feathers. 3. Feathers are made of keratin. 4. The Kestrel is found in Mirthwood. 5. What are the feathers of a Kestrel made of?",
+    "domain": "multihop",
+    "structure": "classification",
+    "answer": "keratin",
+    "zh": "1. 游隼是一种鸟。2. 所有鸟都有羽毛。3. 羽毛由角蛋白构成。4. 游隼分布在米尔斯林。5. 游隼的羽毛由什么构成？",
+    "es": "1. El cernícalo es un tipo de ave. 2. Todas las aves tienen plumas. 3. Las plumas están hechas de queratina. 4. El cernícalo se encuentra en Mirthwood. 5. ¿De qué están hechas las plumas de un cernícalo?"
+  },
+  {
+    "en": "1. Tobias is the son of Elena. 2. Elena is the daughter of Gregor. 3. Gregor was born in 1950. 4. Elena works as a teacher. 5. Who is Tobias's grandfather?",
+    "domain": "multihop",
+    "structure": "genealogy",
+    "answer": "Gregor",
+    "zh": "1. 托比亚斯是埃琳娜的儿子。2. 埃琳娜是格雷戈尔的女儿。3. 格雷戈尔出生于1950年。4. 埃琳娜是一名教师。5. 托比亚斯的祖父是谁？",
+    "es": "1. Tobias es el hijo de Elena. 2. Elena es la hija de Gregor. 3. Gregor nació en 1950. 4. Elena trabaja como profesora. 5. ¿Quién es el abuelo de Tobias?"
+  },
+  {
+    "en": "1. The festival of Velnor occurs after the harvest. 2. The harvest happens in September. 3. The festival lasts for three days. 4. Velnor is famous for its dances. 5. When does the festival of Velnor occur?",
+    "domain": "multihop",
+    "structure": "temporal",
+    "answer": "after September",
+    "zh": "1. 维尔诺节在收获之后举行。2. 收获发生在九月。3. 节日持续三天。4. 维尔诺以其舞蹈而闻名。5. 维尔诺节在什么时候举行？",
+    "es": "1. El festival de Velnor ocurre después de la cosecha. 2. La cosecha ocurre en septiembre. 3. El festival dura tres días. 4. Velnor es famoso por sus danzas. 5. ¿Cuándo ocurre el festival de Velnor?"
+  },
+  {
+    "en": "1. The Redleaf tree grows in the Vale of Tyn. 2. The Vale of Tyn is west of the city of Merrow. 3. The city of Merrow is on the coast. 4. Redleaf trees have red leaves in autumn. 5. What is west of the city of Merrow?",
+    "domain": "multihop",
+    "structure": "spatial_chain",
+    "answer": "Vale of Tyn",
+    "zh": "1. 红叶树生长在泰恩谷。2. 泰恩谷位于梅罗市的西边。3. 梅罗市位于海岸上。4. 红叶树在秋天有红色的叶子。5. 梅罗市的西边是什么？",
+    "es": "1. El árbol Redleaf crece en el Valle de Tyn. 2. El Valle de Tyn está al oeste de la ciudad de Merrow. 3. La ciudad de Merrow está en la costa. 4. Los árboles Redleaf tienen hojas rojas en otoño. 5. ¿Qué está al oeste de la ciudad de Merrow?"
+  },
+  {
+    "en": "1. The Zarnian chess club is part of the Regional Chess League. 2. The Regional Chess League is governed by the National Chess Federation. 3. The Zarnian chess club has 24 members. 4. Who governs the Zarnian chess club?",
+    "domain": "multihop",
+    "structure": "membership",
+    "answer": "National Chess Federation",
+    "zh": "1. 扎尼安国际象棋俱乐部是地区国际象棋联盟的一部分。2. 地区国际象棋联盟由国家国际象棋联合会管理。3. 扎尼安国际象棋俱乐部有24名成员。4. 谁管理扎尼安国际象棋俱乐部？",
+    "es": "1. El club de ajedrez Zarnian es parte de la Liga Regional de Ajedrez. 2. La Liga Regional de Ajedrez está gobernada por la Federación Nacional de Ajedrez. 3. El club de ajedrez Zarnian tiene 24 miembros. 4. ¿Quién gobierna el club de ajedrez Zarnian?"
+  },
+  {
+    "en": "1. The Grand Oak is taller than the Silver Pine. 2. The Silver Pine is taller than the Willow. 3. The Willow is next to a pond. 4. Which tree is the tallest?",
+    "domain": "multihop",
+    "structure": "transitive_3",
+    "answer": "Grand Oak",
+    "zh": "1. 大橡树比银松高。2. 银松比柳树高。3. 柳树在池塘旁边。4. 哪棵树最高？",
+    "es": "1. El Gran Roble es más alto que el Pino Plateado. 2. El Pino Plateado es más alto que el Sauce. 3. El Sauce está junto a un estanque. 4. ¿Qué árbol es el más alto?"
+  },
+  {
+    "en": "1. In 2040, Luna became mayor of Rivertown. 2. In 2042, the new bridge was built in Rivertown. 3. Luna's favorite color is green. 4. Who was mayor when the new bridge was built?",
+    "domain": "multihop",
+    "structure": "temporal",
+    "answer": "Luna",
+    "zh": "1. 2040年，露娜成为河镇镇长。2. 2042年，河镇建起了新桥。3. 露娜最喜欢的颜色是绿色。4. 新桥建成时，谁是镇长？",
+    "es": "1. En 2040, Luna se convirtió en alcaldesa de Rivertown. 2. En 2042, se construyó el nuevo puente en Rivertown. 3. El color favorito de Luna es el verde. 4. ¿Quién era alcaldesa cuando se construyó el nuevo puente?"
+  },
+  {
+    "en": "1. Recipe A uses 3 eggs. 2. Each egg weighs 60 grams. 3. Recipe A also uses 200 grams of flour. 4. What is the total weight of eggs used in Recipe A?",
+    "domain": "multihop",
+    "structure": "numerical",
+    "answer": "180 grams",
+    "zh": "1. A食谱用3个鸡蛋。2. 每个鸡蛋重60克。3. A食谱还用200克面粉。4. A食谱中鸡蛋的总重量是多少？",
+    "es": "1. La receta A usa 3 huevos. 2. Cada huevo pesa 60 gramos. 3. La receta A también usa 200 gramos de harina. 4. ¿Cuál es el peso total de los huevos usados en la receta A?"
+  },
+  {
+    "en": "1. The family of Narlins belongs to the House of Fenn. 2. The House of Fenn is part of the High Council. 3. The Narlins family lives in the eastern province. 4. What council includes the family of Narlins?",
+    "domain": "multihop",
+    "structure": "membership",
+    "answer": "High Council",
+    "zh": "1. 纳林家族属于芬家族。2. 芬家族是高议会的一部分。3. 纳林家族住在东部省份。4. 哪个议会包括纳林家族？",
+    "es": "1. La familia de los Narlins pertenece a la Casa de Fenn. 2. La Casa de Fenn es parte del Alto Consejo. 3. La familia Narlins vive en la provincia oriental. 4. ¿Qué consejo incluye a la familia de los Narlins?"
+  },
+  {
+    "en": "1. The planet Zeta orbits the star Vion. 2. The star Vion is in the Glaron system. 3. Zeta has two moons. 4. In which system does the planet Zeta orbit?",
+    "domain": "multihop",
+    "structure": "transitive_2",
+    "answer": "Glaron",
+    "zh": "1. 行星泽塔围绕维昂恒星运行。2. 维昂恒星位于格拉伦星系。3. 泽塔有两颗卫星。4. 泽塔行星在哪个星系运行？",
+    "es": "1. El planeta Zeta orbita la estrella Vion. 2. La estrella Vion está en el sistema Glaron. 3. Zeta tiene dos lunas. 4. ¿En qué sistema orbita el planeta Zeta?"
+  },
+  {
+    "en": "1. The sword of Eldrin is kept in the Vault of Kings. 2. The Vault of Kings is beneath the palace. 3. The palace stands at the center of Eldrin. 4. The Vault is guarded by knights. 5. Where is the sword of Eldrin located relative to the center of Eldrin?",
+    "domain": "multihop",
+    "structure": "spatial_chain",
+    "answer": "beneath the center",
+    "zh": "1. 埃尔德林之剑保存在国王宝库。2. 国王宝库在宫殿下方。3. 宫殿位于埃尔德林的中心。4. 宝库由骑士守卫。5. 埃尔德林之剑相对于埃尔德林中心的位置在哪里？",
+    "es": "1. La espada de Eldrin se guarda en la Bóveda de los Reyes. 2. La Bóveda de los Reyes está debajo del palacio. 3. El palacio está en el centro de Eldrin. 4. La Bóveda está custodiada por caballeros. 5. ¿Dónde se encuentra la espada de Eldrin en relación con el centro de Eldrin?"
+  },
+  {
+    "en": "1. All snakes are reptiles. 2. Reptiles are cold-blooded. 3. The Emerald Viper is a snake. 4. Emerald Vipers are green. 5. What is the blood temperature type of an Emerald Viper?",
+    "domain": "multihop",
+    "structure": "classification",
+    "answer": "cold-blooded",
+    "zh": "1. 所有蛇都是爬行动物。2. 爬行动物是冷血动物。3. 翡翠蝰蛇是一种蛇。4. 翡翠蝰蛇是绿色的。5. 翡翠蝰蛇的血液温度类型是什么？",
+    "es": "1. Todas las serpientes son reptiles. 2. Los reptiles son de sangre fría. 3. La Víbora Esmeralda es una serpiente. 4. Las Víboras Esmeralda son verdes. 5. ¿Cuál es el tipo de temperatura sanguínea de una Víbora Esmeralda?"
+  },
+  {
+    "en": "1. The town of Berrin is 15 km south of Glin. 2. The village of Marn is 10 km north of Glin. 3. Glin has a large market. 4. Which place is furthest north?",
+    "domain": "multihop",
+    "structure": "spatial_chain",
+    "answer": "Marn",
+    "zh": "1. 贝林镇在格林以南15公里处。2. 马恩村在格林以北10公里处。3. 格林有一个大集市。4. 哪个地方最北？",
+    "es": "1. El pueblo de Berrin está a 15 km al sur de Glin. 2. La aldea de Marn está a 10 km al norte de Glin. 3. Glin tiene un gran mercado. 4. ¿Qué lugar está más al norte?"
+  },
+  {
+    "en": "1. The game of Quorbi is played in three rounds. 2. Each round lasts 12 minutes. 3. The game is popular in Lintor. 4. What is the total duration of a game of Quorbi?",
+    "domain": "multihop",
+    "structure": "numerical",
+    "answer": "36 minutes",
+    "zh": "1. 奎尔比游戏分三轮进行。2. 每轮持续12分钟。3. 该游戏在林托很受欢迎。4. 一场奎尔比游戏总共持续多长时间？",
+    "es": "1. El juego de Quorbi se juega en tres rondas. 2. Cada ronda dura 12 minutos. 3. El juego es popular en Lintor. 4. ¿Cuál es la duración total de un juego de Quorbi?"
+  },
+  {
+    "en": "1. The animal known as a grolf is a type of mammal. 2. Mammals give birth to live young. 3. The grolf has blue fur. 4. How do grolfs reproduce?",
+    "domain": "multihop",
+    "structure": "classification",
+    "answer": "give birth to live young",
+    "zh": "1. 被称为格罗夫的动物是一种哺乳动物。2. 哺乳动物胎生。3. 格罗夫有蓝色的毛皮。4. 格罗夫如何繁殖？",
+    "es": "1. El animal conocido como grolf es un tipo de mamífero. 2. Los mamíferos dan a luz crías vivas. 3. El grolf tiene pelaje azul. 4. ¿Cómo se reproducen los grolfs?"
+  },
+  {
+    "en": "1. The eldest child in the family is named Rika. 2. Rika's younger brother is Hugo. 3. Hugo's favorite subject is math. 4. Who is older, Rika or Hugo?",
+    "domain": "multihop",
+    "structure": "genealogy",
+    "answer": "Rika",
+    "zh": "1. 家中年龄最大的小孩叫莉卡。2. 莉卡的弟弟是雨果。3. 雨果最喜欢的科目是数学。4. 谁年纪更大，莉卡还是雨果？",
+    "es": "1. La hija mayor de la familia se llama Rika. 2. El hermano menor de Rika es Hugo. 3. La materia favorita de Hugo es matemáticas. 4. ¿Quién es mayor, Rika o Hugo?"
+  },
+  {
+    "en": "1. The book 'Shadows of Dawn' was published in 2010. 2. 'Shadows of Dawn' was adapted into a film in 2015. 3. The author of the book is Mara Leen. 4. Which came first, the book or the film?",
+    "domain": "multihop",
+    "structure": "temporal",
+    "answer": "book",
+    "zh": "1. 《黎明之影》这本书出版于2010年。2. 《黎明之影》于2015年被改编成电影。3. 该书作者是玛拉·林。4. 哪个先出现，书还是电影？",
+    "es": "1. El libro 'Sombras del Amanecer' fue publicado en 2010. 2. 'Sombras del Amanecer' fue adaptado a una película en 2015. 3. La autora del libro es Mara Leen. 4. ¿Qué vino primero, el libro o la película?"
+  },
+  {
+    "en": "1. The Silver Falcons are part of the East League. 2. The East League is one of four leagues in the National Sports Association. 3. The Silver Falcons wear blue uniforms. 4. Which association includes the Silver Falcons?",
+    "domain": "multihop",
+    "structure": "membership",
+    "answer": "National Sports Association",
+    "zh": "1. 银鹰队属于东部联盟。2. 东部联盟是国家体育协会的四个联盟之一。3. 银鹰队穿蓝色队服。4. 哪个协会包括银鹰队？",
+    "es": "1. Los Halcones Plateados son parte de la Liga del Este. 2. La Liga del Este es una de las cuatro ligas en la Asociación Nacional de Deportes. 3. Los Halcones Plateados visten uniformes azules. 4. ¿Qué asociación incluye a los Halcones Plateados?"
+  },
+  {
+    "en": "1. The river Elinn flows through Marrowdale. 2. Marrowdale is south of the city of Quell. 3. The river Elinn is famous for trout fishing. 4. The city of Quell is the largest in the region. 5. Which river flows south of Quell?",
+    "domain": "multihop",
+    "structure": "spatial_chain",
+    "answer": "Elinn",
+    "zh": "1. 埃林河流经马罗代尔。2. 马罗代尔在奎尔市以南。3. 埃林河以鳟鱼垂钓闻名。4. 奎尔市是该地区最大的城市。5. 哪条河流在奎尔以南流淌？",
+    "es": "1. El río Elinn pasa por Marrowdale. 2. Marrowdale está al sur de la ciudad de Quell. 3. El río Elinn es famoso por la pesca de truchas. 4. La ciudad de Quell es la más grande de la región. 5. ¿Qué río pasa al sur de Quell?"
+  },
+  {
+    "en": "1. The Jasper beetle is an insect. 2. All insects have six legs. 3. Beetles have hard shells. 4. How many legs does a Jasper beetle have?",
+    "domain": "multihop",
+    "structure": "classification",
+    "answer": "six",
+    "zh": "1. 碧玉甲虫是一种昆虫。2. 所有昆虫都有六条腿。3. 甲虫有坚硬的外壳。4. 碧玉甲虫有几条腿？",
+    "es": "1. El escarabajo Jasper es un insecto. 2. Todos los insectos tienen seis patas. 3. Los escarabajos tienen caparazones duros. 4. ¿Cuántas patas tiene un escarabajo Jasper?"
+  },
+  {
+    "en": "1. The kingdom of Yara was founded before the kingdom of Velis. 2. The kingdom of Velis was founded in 1200. 3. The kingdom of Yara is known for its mountains. 4. Which kingdom was founded first?",
+    "domain": "multihop",
+    "structure": "temporal",
+    "answer": "Yara",
+    "zh": "1. 亚拉王国成立早于维利斯王国。2. 维利斯王国成立于1200年。3. 亚拉王国以其山脉闻名。4. 哪个王国最早成立？",
+    "es": "1. El reino de Yara fue fundado antes que el reino de Velis. 2. El reino de Velis fue fundado en 1200. 3. El reino de Yara es conocido por sus montañas. 4. ¿Qué reino fue fundado primero?"
+  },
+  {
+    "en": "1. The village of Brin is 7 km west of Tarn. 2. The city of Eld is 4 km east of Tarn. 3. Tarn is famous for its cheese. 4. Which place is furthest west?",
+    "domain": "multihop",
+    "structure": "spatial_chain",
+    "answer": "Brin",
+    "zh": "1. 布林村在塔恩以西7公里。2. 埃尔德市在塔恩以东4公里。3. 塔恩以其奶酪闻名。4. 哪个地方最靠西？",
+    "es": "1. El pueblo de Brin está a 7 km al oeste de Tarn. 2. La ciudad de Eld está a 4 km al este de Tarn. 3. Tarn es famosa por su queso. 4. ¿Qué lugar está más al oeste?"
+  },
+  {
+    "en": "1. The Carrow family belongs to the Guild of Artisans. 2. The Guild of Artisans is part of the Federation of Crafts. 3. The Carrow family is famous for pottery. 4. What federation includes the Carrow family?",
+    "domain": "multihop",
+    "structure": "membership",
+    "answer": "Federation of Crafts",
+    "zh": "1. 卡罗家族属于工匠公会。2. 工匠公会是手工艺联合会的一部分。3. 卡罗家族以陶器闻名。4. 哪个联合会包括卡罗家族？",
+    "es": "1. La familia Carrow pertenece al Gremio de Artesanos. 2. El Gremio de Artesanos forma parte de la Federación de Artes y Oficios. 3. La familia Carrow es famosa por la alfarería. 4. ¿Qué federación incluye a la familia Carrow?"
+  }
+]

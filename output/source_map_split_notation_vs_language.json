@@ -1,0 +1,179 @@
+{
+  "analysis": "notation_vs_language_split",
+  "notation_results": [
+    {
+      "subset": "notation",
+      "layer": 20,
+      "n_empty_profiles": 0,
+      "cka_xLang_same": 0.6423673008392307,
+      "cka_sameLang_diff": 0.3188389254994492,
+      "cka_xLang_diff": 0.3474584301724939,
+      "cos_xLang_same_mean": 0.9292499843368862,
+      "cos_sameLang_diff_mean": 0.8937908964186061,
+      "paired_delta_mean": 0.03545908791828013,
+      "paired_delta_n_positive": 15,
+      "paired_delta_n_total": 20
+    },
+    {
+      "subset": "notation",
+      "layer": 24,
+      "n_empty_profiles": 0,
+      "cka_xLang_same": 0.6002226432186841,
+      "cka_sameLang_diff": 0.3033133072660695,
+      "cka_xLang_diff": 0.4758433458911443,
+      "cos_xLang_same_mean": 0.9601824648618148,
+      "cos_sameLang_diff_mean": 0.9166035463851614,
+      "paired_delta_mean": 0.04357891847665341,
+      "paired_delta_n_positive": 20,
+      "paired_delta_n_total": 20
+    },
+    {
+      "subset": "notation",
+      "layer": 27,
+      "n_empty_profiles": 0,
+      "cka_xLang_same": 0.6836636409539283,
+      "cka_sameLang_diff": 0.313711038287974,
+      "cka_xLang_diff": 0.5073185994944982,
+      "cos_xLang_same_mean": 0.9614215800950083,
+      "cos_sameLang_diff_mean": 0.9089015440618392,
+      "paired_delta_mean": 0.05252003603316906,
+      "paired_delta_n_positive": 18,
+      "paired_delta_n_total": 20
+    },
+    {
+      "subset": "notation",
+      "layer": 30,
+      "n_empty_profiles": 0,
+      "cka_xLang_same": 0.6891022383863131,
+      "cka_sameLang_diff": 0.2986891611349617,
+      "cka_xLang_diff": 0.4378033720293901,
+      "cos_xLang_same_mean": 0.9564156885245533,
+      "cos_sameLang_diff_mean": 0.9005109705725878,
+      "paired_delta_mean": 0.05590471795196546,
+      "paired_delta_n_positive": 17,
+      "paired_delta_n_total": 20
+    },
+    {
+      "subset": "notation",
+      "layer": 32,
+      "n_empty_profiles": 0,
+      "cka_xLang_same": 0.5517114018500217,
+      "cka_sameLang_diff": 0.26342953043931383,
+      "cka_xLang_diff": 0.4223197145699272,
+      "cos_xLang_same_mean": 0.9505450021885326,
+      "cos_sameLang_diff_mean": 0.8914876665516716,
+      "paired_delta_mean": 0.05905733563686122,
+      "paired_delta_n_positive": 17,
+      "paired_delta_n_total": 20
+    },
+    {
+      "subset": "notation",
+      "layer": 35,
+      "n_empty_profiles": 0,
+      "cka_xLang_same": 0.28277691766715396,
+      "cka_sameLang_diff": 0.21406210330594394,
+      "cka_xLang_diff": 0.27993992595604117,
+      "cos_xLang_same_mean": 0.9157016703958432,
+      "cos_sameLang_diff_mean": 0.8652807876664805,
+      "paired_delta_mean": 0.05042088272936267,
+      "paired_delta_n_positive": 18,
+      "paired_delta_n_total": 20
+    }
+  ],
+  "language_results": [
+    {
+      "subset": "language",
+      "layer": 20,
+      "n_empty_profiles": 0,
+      "cka_xLang_same": 0.9480076838616259,
+      "cka_sameLang_diff": 0.13870171535434667,
+      "cka_xLang_diff": 0.17862582942607533,
+      "cos_xLang_same_mean": 0.9241860146381399,
+      "cos_sameLang_diff_mean": 0.9216342620426186,
+      "paired_delta_mean": 0.002551752595521456,
+      "paired_delta_n_positive": 12,
+      "paired_delta_n_total": 20
+    },
+    {
+      "subset": "language",
+      "layer": 24,
+      "n_empty_profiles": 0,
+      "cka_xLang_same": 0.8990429567253301,
+      "cka_sameLang_diff": 0.1411330598283288,
+      "cka_xLang_diff": 0.21165502848961068,
+      "cos_xLang_same_mean": 0.9192584504076899,
+      "cos_sameLang_diff_mean": 0.921172804898238,
+      "paired_delta_mean": -0.0019143544905481924,
+      "paired_delta_n_positive": 9,
+      "paired_delta_n_total": 20
+    },
+    {
+      "subset": "language",
+      "layer": 27,
+      "n_empty_profiles": 0,
+      "cka_xLang_same": 0.8834032099087196,
+      "cka_sameLang_diff": 0.19621618763481768,
+      "cka_xLang_diff": 0.2790301770953647,
+      "cos_xLang_same_mean": 0.9065188353612446,
+      "cos_sameLang_diff_mean": 0.9036232577160378,
+      "paired_delta_mean": 0.0028955776452067373,
+      "paired_delta_n_positive": 12,
+      "paired_delta_n_total": 20
+    },
+    {
+      "subset": "language",
+      "layer": 30,
+      "n_empty_profiles": 0,
+      "cka_xLang_same": 0.7215955703931988,
+      "cka_sameLang_diff": 0.18323974548393265,
+      "cka_xLang_diff": 0.3491436635377186,
+      "cos_xLang_same_mean": 0.8982303496041336,
+      "cos_sameLang_diff_mean": 0.8912529821951249,
+      "paired_delta_mean": 0.006977367409008645,
+      "paired_delta_n_positive": 12,
+      "paired_delta_n_total": 20
+    },
+    {
+      "subset": "language",
+      "layer": 32,
+      "n_empty_profiles": 0,
+      "cka_xLang_same": 0.6924829311117952,
+      "cka_sameLang_diff": 0.18704402113297905,
+      "cka_xLang_diff": 0.37406456257902326,
+      "cos_xLang_same_mean": 0.8913247561045079,
+      "cos_sameLang_diff_mean": 0.8869593103863568,
+      "paired_delta_mean": 0.004365445718151212,
+      "paired_delta_n_positive": 11,
+      "paired_delta_n_total": 20
+    },
+    {
+      "subset": "language",
+      "layer": 35,
+      "n_empty_profiles": 0,
+      "cka_xLang_same": 0.4849820699971645,
+      "cka_sameLang_diff": 0.2429688860548751,
+      "cka_xLang_diff": 0.3706114523235684,
+      "cos_xLang_same_mean": 0.857311826923357,
+      "cos_sameLang_diff_mean": 0.8809436077762584,
+      "paired_delta_mean": -0.023631780852901046,
+      "paired_delta_n_positive": 5,
+      "paired_delta_n_total": 20
+    }
+  ],
+  "config": {
+    "source": "/home/greg/Desktop/Projects/BrainInsideTheMachine/output/exp_causal_source_map_3b.json",
+    "n_complete": 20,
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "layers": [
+      20,
+      24,
+      27,
+      30,
+      32,
+      35
+    ]
+  }
+}

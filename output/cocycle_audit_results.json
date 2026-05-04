@@ -1,0 +1,161 @@
+{
+  "input_pca5": {
+    "n_pca": 5,
+    "var_explained": 0.6578603982925415,
+    "mean_cv_r2": 0.8155727903048197,
+    "min_cv_r2": 0.662728625535965,
+    "max_cv_r2": 0.958898377418518,
+    "cocycle_mean": 0.11441972851753235,
+    "cocycle_median": 0.09421965479850769
+  },
+  "input_pca10": {
+    "n_pca": 10,
+    "var_explained": 0.8466413021087646,
+    "mean_cv_r2": 0.9147983258678798,
+    "min_cv_r2": 0.8010329961776733,
+    "max_cv_r2": 0.9943562388420105,
+    "cocycle_mean": 0.06774239987134933,
+    "cocycle_median": 0.04867582023143768
+  },
+  "input_pca20": {
+    "n_pca": 20,
+    "var_explained": 0.9380191564559937,
+    "mean_cv_r2": 0.9451175022692906,
+    "min_cv_r2": 0.8828839182853698,
+    "max_cv_r2": 0.9964372515678406,
+    "cocycle_mean": 0.0672646015882492,
+    "cocycle_median": 0.05658941715955734
+  },
+  "input_pca50": {
+    "n_pca": 50,
+    "var_explained": 0.9887282848358154,
+    "mean_cv_r2": 0.8896388590335846,
+    "min_cv_r2": 0.833001685142517,
+    "max_cv_r2": 0.9850006997585297,
+    "cocycle_mean": 0.05820493400096893,
+    "cocycle_median": 0.05556368827819824
+  },
+  "input_pca2048": {
+    "n_pca": 2048,
+    "var_explained": 1.0,
+    "mean_cv_r2": 0.9309820212069013,
+    "min_cv_r2": 0.8782082736492157,
+    "max_cv_r2": 0.9693560361862182,
+    "cocycle_mean": 0.016348209232091904,
+    "cocycle_median": 0.015287572517991066
+  },
+  "gen_nn_pca5": {
+    "n_pca": 5,
+    "nn_same_prob": 0,
+    "nn_same_lang": 65,
+    "top3_same_prob": 2,
+    "n_total": 80,
+    "nn_same_prob_frac": 0.0,
+    "chance": 0.0379746835443038
+  },
+  "gen_nn_pca10": {
+    "n_pca": 10,
+    "nn_same_prob": 2,
+    "nn_same_lang": 67,
+    "top3_same_prob": 6,
+    "n_total": 80,
+    "nn_same_prob_frac": 0.025,
+    "chance": 0.0379746835443038
+  },
+  "gen_nn_pca20": {
+    "n_pca": 20,
+    "nn_same_prob": 1,
+    "nn_same_lang": 66,
+    "top3_same_prob": 4,
+    "n_total": 80,
+    "nn_same_prob_frac": 0.0125,
+    "chance": 0.0379746835443038
+  },
+  "gen_nn_pca50": {
+    "n_pca": 50,
+    "nn_same_prob": 1,
+    "nn_same_lang": 59,
+    "top3_same_prob": 8,
+    "n_total": 80,
+    "nn_same_prob_frac": 0.0125,
+    "chance": 0.0379746835443038
+  },
+  "sample_size_15": {
+    "n_train": 15,
+    "n_test": 50,
+    "mean_r2": 0.8749002502078101,
+    "min_r2": 0.5493666529655457
+  },
+  "sample_size_30": {
+    "n_train": 30,
+    "n_test": 50,
+    "mean_r2": 0.9268790994371686,
+    "min_r2": 0.843428909778595
+  },
+  "sample_size_50": {
+    "n_train": 50,
+    "n_test": 50,
+    "mean_r2": 0.9531620542208353,
+    "min_r2": 0.8924805521965027
+  },
+  "sample_size_100": {
+    "n_train": 100,
+    "n_test": 50,
+    "mean_r2": 0.9564203307742164,
+    "min_r2": 0.9144448041915894
+  },
+  "sample_size_150": {
+    "n_train": 150,
+    "n_test": 50,
+    "mean_r2": 0.938184897104899,
+    "min_r2": 0.8525505065917969
+  },
+  "sample_size_180": {
+    "n_train": 180,
+    "n_test": 20,
+    "mean_r2": 0.9254606706755502,
+    "min_r2": 0.7624887824058533
+  },
+  "cka_frac_0.1": {
+    "frac": 0.1,
+    "mean_cka": 0.1959019899368286,
+    "min_cka": 0.007834333926439285,
+    "max_cka": 0.6713374853134155
+  },
+  "cka_frac_0.2": {
+    "frac": 0.2,
+    "mean_cka": 0.38090577721595764,
+    "min_cka": 0.13564491271972656,
+    "max_cka": 0.6986045241355896
+  },
+  "cka_frac_0.3": {
+    "frac": 0.3,
+    "mean_cka": 0.22067075967788696,
+    "min_cka": 0.005859933793544769,
+    "max_cka": 0.7015612125396729
+  },
+  "cka_frac_0.5": {
+    "frac": 0.5,
+    "mean_cka": 0.6831941604614258,
+    "min_cka": 0.6197598576545715,
+    "max_cka": 0.7467073202133179
+  },
+  "cka_frac_0.7": {
+    "frac": 0.7,
+    "mean_cka": 0.4046311378479004,
+    "min_cka": 0.15691353380680084,
+    "max_cka": 0.6662957072257996
+  },
+  "cka_frac_0.9": {
+    "frac": 0.9,
+    "mean_cka": 0.662208616733551,
+    "min_cka": 0.6141663789749146,
+    "max_cka": 0.7040435671806335
+  },
+  "cka_frac_1.0": {
+    "frac": 1.0,
+    "mean_cka": 0.5595554113388062,
+    "min_cka": 0.4281955063343048,
+    "max_cka": 0.7216134071350098
+  }
+}

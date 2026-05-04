@@ -1,0 +1,607 @@
+{
+  "experiment": "AA: Centrifuge \u2014 Layer-by-Layer Alternating Language Flip",
+  "adversarial_layers": [
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "scale": 1.0,
+  "n_problems": 20,
+  "conditions": {
+    "baseline": {
+      "accuracy": 9,
+      "median_fat": 14.0,
+      "n": 20,
+      "results": [
+        {
+          "prompt": "Calculate 664 + 124.",
+          "answer": "788",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To calculate \\(664 + 124\\), we can break it down into simpler steps by adding t"
+        },
+        {
+          "prompt": "Calculate 769 + 291.",
+          "answer": "1060",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To calculate \\(769 + 291\\), we can break it down into simpler steps by adding t"
+        },
+        {
+          "prompt": "Find the value of C(9, 5).",
+          "answer": "126",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To find the value of \\( C(9, 5) \\), we need to calculate the binomial coefficie"
+        },
+        {
+          "prompt": "Find the value of C(9, 4).",
+          "answer": "126",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To find the value of \\( C(9, 4) \\), we need to calculate the binomial coefficie"
+        },
+        {
+          "prompt": "What is the remainder when 1014 is divided by 17?",
+          "answer": "11",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To find the remainder when 1014 is divided by 17, we can use the division algor"
+        },
+        {
+          "prompt": "What is the remainder when 1154 is divided by 5?",
+          "answer": "4",
+          "correct": true,
+          "fat": 10,
+          "gen_preview": " To find the remainder when 1154 is divided by 5, we can use the modulo operatio"
+        },
+        {
+          "prompt": "A rectangle has length 34 and width 35. Find its a",
+          "answer": "1190",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{le"
+        },
+        {
+          "prompt": "A rectangle has length 12 and width 5. Find its ar",
+          "answer": "60",
+          "correct": true,
+          "fat": 55,
+          "gen_preview": " The area of a rectangle is given by the formula:\n\nArea = length \u00d7 width\n\nIn thi"
+        },
+        {
+          "prompt": "An arithmetic sequence has first term 9 and common",
+          "answer": "1596",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To find the sum of the first 24 terms of an arithmetic sequence, we can use the"
+        },
+        {
+          "prompt": "An arithmetic sequence has first term 7 and common",
+          "answer": "407",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To find the sum of the first 11 terms of an arithmetic sequence, we can use the"
+        },
+        {
+          "prompt": "\u8ba1\u7b97 664 + 124 \u7684\u503c\u3002",
+          "answer": "788",
+          "correct": true,
+          "fat": 14,
+          "gen_preview": " 664 + 124 = 788"
+        },
+        {
+          "prompt": "\u8ba1\u7b97 769 + 291 \u7684\u503c\u3002",
+          "answer": "1060",
+          "correct": true,
+          "fat": 15,
+          "gen_preview": " 769 + 291 = 1060"
+        },
+        {
+          "prompt": "\u6c42\u7ec4\u5408\u6570 C(9, 5) \u7684\u503c\u3002",
+          "answer": "126",
+          "correct": true,
+          "fat": 4,
+          "gen_preview": " 126\n\n\u6c42\u7ec4\u5408\u6570 C(9, 5) \u7684\u503c\u3002 126\n\n\u6c42\u7ec4\u5408\u6570 C(9, 5) \u7684\u503c\u3002 126\n\n\u6c42\u7ec4\u5408\u6570 C(9, 5) \u7684\u503c\u3002 126\n\n\u6c42\u7ec4\u5408\u6570 C(9"
+        },
+        {
+          "prompt": "\u6c42\u7ec4\u5408\u6570 C(9, 4) \u7684\u503c\u3002",
+          "answer": "126",
+          "correct": true,
+          "fat": 4,
+          "gen_preview": " 126\n\n\u6c42\u7ec4\u5408\u6570 C(9, 4) \u7684\u503c\u3002 126\n\n\u6c42\u7ec4\u5408\u6570 C(9, 4) \u7684\u503c\u3002 126\n\n\u6c42\u7ec4\u5408\u6570 C(9, 4) \u7684\u503c\u3002 126\n\n\u6c42\u7ec4\u5408\u6570 C(9"
+        },
+        {
+          "prompt": "1014 \u9664\u4ee5 17 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f",
+          "answer": "11",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " 1014 \u9664\u4ee5 17 \u7684\u4f59\u6570\u662f 1014 \u00f7 17 = 60 \u2026 14 \uff0c \u6240\u4ee5 1014 \u9664\u4ee5 17 \u7684\u4f59\u6570\u662f 14. \u6545\u7b54\u6848\u4e3a\uff1a 14.\n\n\u9605\u8bfb\u4e0b\u9762\u7684\u6587\u5b57"
+        },
+        {
+          "prompt": "1154 \u9664\u4ee5 5 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f",
+          "answer": "4",
+          "correct": true,
+          "fat": 5,
+          "gen_preview": " 1154 \u9664\u4ee5 5 \u7684\u4f59\u6570\u662f 4\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u7b97\u4e00\u4e0b 1154 \u4e58\u4ee5 5 \u7684\u7ed3\u679c\u662f\u591a\u5c11\u3002 1154 \u4e58\u4ee5 5 \u7684\u7ed3\u679c\u662f 5770\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u7b97\u4e00\u4e0b "
+        },
+        {
+          "prompt": "\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 34\uff0c\u5bbd\u4e3a 35\uff0c\u6c42\u5176\u9762\u79ef\u3002",
+          "answer": "1190",
+          "correct": true,
+          "fat": 72,
+          "gen_preview": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 34\uff0c\u5bbd\u4e3a 35\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = 34 \\times 35 \\]\n\n\u8ba1"
+        },
+        {
+          "prompt": "\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 12\uff0c\u5bbd\u4e3a 5\uff0c\u6c42\u5176\u9762\u79ef\u3002",
+          "answer": "60",
+          "correct": true,
+          "fat": 65,
+          "gen_preview": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 12\uff0c\u5bbd\u4e3a 5\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = \\text{\u957f} \\times \\te"
+        },
+        {
+          "prompt": "\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 9\uff0c\u516c\u5dee\u4e3a 5\uff0c\u6c42\u524d 24 \u9879\u4e4b\u548c\u3002",
+          "answer": "1596",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " 1260\n\n\u5728\u300a\u7ea2\u697c\u68a6\u300b\u4e2d\uff0c\u8d3e\u5b9d\u7389\u7684\u8868\u59b9\u662f\uff08 \uff09 \u8d3e\u5143\u6625\n\n\u300a\u7ea2\u697c\u68a6\u300b\u4e2d\uff0c\u8d3e\u5b9d\u7389\u7684\u8868\u59b9\u662f\uff08 \uff09 \u8d3e\u5143\u6625\n\n\u300a\u7ea2\u697c\u68a6\u300b\u4e2d\uff0c\u8d3e\u5b9d\u7389\u7684\u8868\u59b9\u662f\uff08 \uff09 \u8d3e\u5143\u6625\n\n\u300a\u7ea2\u697c"
+        },
+        {
+          "prompt": "\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 7\uff0c\u516c\u5dee\u4e3a 6\uff0c\u6c42\u524d 11 \u9879\u4e4b\u548c\u3002",
+          "answer": "407",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " 11\u00d77+6\u00d711\u00d710\u00f72=11\u00d7\uff087+30\uff09=441\n\n\u5728\u7b49\u5dee\u6570\u5217{an}\u4e2d\uff0ca1=1\uff0ca3=5\uff0c\u5219a5=\uff08 \uff09 . A\u3001 7 B\u3001 8 C\u3001 9 D\u3001 "
+        }
+      ]
+    },
+    "sustained": {
+      "accuracy": 10,
+      "median_fat": 14.5,
+      "n": 20,
+      "results": [
+        {
+          "prompt": "Calculate 664 + 124.",
+          "answer": "788",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To calculate \\(664 + 124\\), we can break it down into simpler steps by adding t"
+        },
+        {
+          "prompt": "Calculate 769 + 291.",
+          "answer": "1060",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To calculate \\(769 + 291\\), we can break it down into simpler steps by adding t"
+        },
+        {
+          "prompt": "Find the value of C(9, 5).",
+          "answer": "126",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To find the value of \\( C(9, 5) \\), we need to calculate the number of combinat"
+        },
+        {
+          "prompt": "Find the value of C(9, 4).",
+          "answer": "126",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To find the value of \\( C(9, 4) \\), we need to calculate the binomial coefficie"
+        },
+        {
+          "prompt": "What is the remainder when 1014 is divided by 17?",
+          "answer": "11",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To find the remainder when 1014 is divided by 17, we can use the division algor"
+        },
+        {
+          "prompt": "What is the remainder when 1154 is divided by 5?",
+          "answer": "4",
+          "correct": true,
+          "fat": 10,
+          "gen_preview": " To find the remainder when 1154 is divided by 5, we can use the division algori"
+        },
+        {
+          "prompt": "A rectangle has length 34 and width 35. Find its a",
+          "answer": "1190",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{le"
+        },
+        {
+          "prompt": "A rectangle has length 12 and width 5. Find its ar",
+          "answer": "60",
+          "correct": true,
+          "fat": 98,
+          "gen_preview": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{le"
+        },
+        {
+          "prompt": "An arithmetic sequence has first term 9 and common",
+          "answer": "1596",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To find the sum of the first 24 terms of an arithmetic sequence with the first "
+        },
+        {
+          "prompt": "An arithmetic sequence has first term 7 and common",
+          "answer": "407",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To find the sum of the first 11 terms of an arithmetic sequence with the first "
+        },
+        {
+          "prompt": "\u8ba1\u7b97 664 + 124 \u7684\u503c\u3002",
+          "answer": "788",
+          "correct": true,
+          "fat": 14,
+          "gen_preview": " 664 + 124 = 788"
+        },
+        {
+          "prompt": "\u8ba1\u7b97 769 + 291 \u7684\u503c\u3002",
+          "answer": "1060",
+          "correct": true,
+          "fat": 15,
+          "gen_preview": " 769 + 291 = 1060"
+        },
+        {
+          "prompt": "\u6c42\u7ec4\u5408\u6570 C(9, 5) \u7684\u503c\u3002",
+          "answer": "126",
+          "correct": true,
+          "fat": 4,
+          "gen_preview": " 126\n\n\u6c42\u7ec4\u5408\u6570 C(9, 5) \u7684\u503c\u3002 126\n\n\u6c42\u7ec4\u5408\u6570 C(9, 5) \u7684\u503c\u3002 126\n\n\u6c42\u7ec4\u5408\u6570 C(9, 5) \u7684\u503c\u3002 126\n\n\u6c42\u7ec4\u5408\u6570 C(9"
+        },
+        {
+          "prompt": "\u6c42\u7ec4\u5408\u6570 C(9, 4) \u7684\u503c\u3002",
+          "answer": "126",
+          "correct": true,
+          "fat": 4,
+          "gen_preview": " 126\n\n\u6c42\u7ec4\u5408\u6570 C(9, 4) \u7684\u503c\u3002 126\n\n\u6c42\u7ec4\u5408\u6570 C(9, 4) \u7684\u503c\u3002 126\n\n\u6c42\u7ec4\u5408\u6570 C(9, 4) \u7684\u503c\u3002 126\n\n\u6c42\u7ec4\u5408\u6570 C(9"
+        },
+        {
+          "prompt": "1014 \u9664\u4ee5 17 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f",
+          "answer": "11",
+          "correct": true,
+          "fat": 33,
+          "gen_preview": " 1014 \u9664\u4ee5 17 \u7684\u4f59\u6570\u662f 1014 \u00f7 17 = 59 \u2026 11 \uff0c \u6240\u4ee5 1014 \u9664\u4ee5 17 \u7684\u4f59\u6570\u662f 11 \uff0e \u6545\u7b54\u6848\u4e3a\uff1a 11 \uff0e\n\n\u9605\u8bfb\u4e0b\u9762\u7684"
+        },
+        {
+          "prompt": "1154 \u9664\u4ee5 5 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f",
+          "answer": "4",
+          "correct": true,
+          "fat": 5,
+          "gen_preview": " 1154 \u9664\u4ee5 5 \u7684\u4f59\u6570\u662f 4\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u95ee 1154 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 1154 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f 3\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u95ee 1154 \u9664\u4ee5 9"
+        },
+        {
+          "prompt": "\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 34\uff0c\u5bbd\u4e3a 35\uff0c\u6c42\u5176\u9762\u79ef\u3002",
+          "answer": "1190",
+          "correct": true,
+          "fat": 81,
+          "gen_preview": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u6839\u636e\u9898\u76ee\u7ed9\u51fa\u7684\u6570\u636e\uff0c\u957f\u4e3a 34\uff0c\u5bbd\u4e3a 35\uff0c\u56e0\u6b64\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{Area} = \\text{Length} "
+        },
+        {
+          "prompt": "\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 12\uff0c\u5bbd\u4e3a 5\uff0c\u6c42\u5176\u9762\u79ef\u3002",
+          "answer": "60",
+          "correct": true,
+          "fat": 44,
+          "gen_preview": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 12\uff0c\u5bbd\u4e3a 5\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a \\(12 \\times 5 = 60\\)\u3002\u6240\u4ee5\uff0c\u8fd9\u4e2a\u957f\u65b9\u5f62\u7684\u9762\u79ef\u662f 60"
+        },
+        {
+          "prompt": "\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 9\uff0c\u516c\u5dee\u4e3a 5\uff0c\u6c42\u524d 24 \u9879\u4e4b\u548c\u3002",
+          "answer": "1596",
+          "correct": false,
+          "fat": null,
+          "gen_preview": "_\u767e\u5ea6\u77e5\u9053\\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 9\uff0c\u516c\u5dee\u4e3a 5\uff0c\u6c42\u524d 24 \u9879\u4e4b\u548c\u3002\\n\u5206\u4eab\\n\u4e3e\u62a5\\n1\u4e2a\u56de\u7b54\\n#\u70ed\u8bae# \u7259\u9f7f\u662f\u8d8a\u65e9\u77eb\u6b63\u8d8a\u597d\u5417\uff1f\\n\u767e\u5ea6\u7f51\u53cb012345678"
+        },
+        {
+          "prompt": "\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 7\uff0c\u516c\u5dee\u4e3a 6\uff0c\u6c42\u524d 11 \u9879\u4e4b\u548c\u3002",
+          "answer": "407",
+          "correct": false,
+          "fat": null,
+          "gen_preview": "_\u767e\u5ea6\u77e5\u9053\\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 7\uff0c\u516c\u5dee\u4e3a 6\uff0c\u6c42\u524d 11 \u9879\u4e4b\u548c\u3002\\n\u5206\u4eab\\n\u4e3e\u62a5\\n1\u4e2a\u56de\u7b54\\n#\u70ed\u8bae# \u4f60\u89c1\u8fc7\u54ea\u4e9b\u56e0\u4e3a\u8001\u677f\u4f5c\u6b7b\u5bfc\u81f4\u5012\u95ed\u7684\u516c\u53f8\uff1f\\n\u767e\u5ea6\u7f51\u53cb1"
+        }
+      ]
+    },
+    "alternating": {
+      "accuracy": 8,
+      "median_fat": 14.5,
+      "n": 20,
+      "results": [
+        {
+          "prompt": "Calculate 664 + 124.",
+          "answer": "788",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To calculate \\(664 + 124\\), we can break it down into simpler steps by adding t"
+        },
+        {
+          "prompt": "Calculate 769 + 291.",
+          "answer": "1060",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To calculate \\(769 + 291\\), we can break it down into simpler steps by adding t"
+        },
+        {
+          "prompt": "Find the value of C(9, 5).",
+          "answer": "126",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To find the value of \\( C(9, 5) \\), we need to calculate the binomial coefficie"
+        },
+        {
+          "prompt": "Find the value of C(9, 4).",
+          "answer": "126",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To find the value of \\( C(9, 4) \\), we need to calculate the binomial coefficie"
+        },
+        {
+          "prompt": "What is the remainder when 1014 is divided by 17?",
+          "answer": "11",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To find the remainder when 1014 is divided by 17, we can use the division algor"
+        },
+        {
+          "prompt": "What is the remainder when 1154 is divided by 5?",
+          "answer": "4",
+          "correct": true,
+          "fat": 10,
+          "gen_preview": " To find the remainder when 1154 is divided by 5, we can use the modulo operatio"
+        },
+        {
+          "prompt": "A rectangle has length 34 and width 35. Find its a",
+          "answer": "1190",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{le"
+        },
+        {
+          "prompt": "A rectangle has length 12 and width 5. Find its ar",
+          "answer": "60",
+          "correct": true,
+          "fat": 50,
+          "gen_preview": " The area of a rectangle is calculated by multiplying its length by its width. I"
+        },
+        {
+          "prompt": "An arithmetic sequence has first term 9 and common",
+          "answer": "1596",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To find the sum of the first 24 terms of an arithmetic sequence, we can use the"
+        },
+        {
+          "prompt": "An arithmetic sequence has first term 7 and common",
+          "answer": "407",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To find the sum of the first 11 terms of an arithmetic sequence, we can use the"
+        },
+        {
+          "prompt": "\u8ba1\u7b97 664 + 124 \u7684\u503c\u3002",
+          "answer": "788",
+          "correct": true,
+          "fat": 14,
+          "gen_preview": " 664 + 124 = 788"
+        },
+        {
+          "prompt": "\u8ba1\u7b97 769 + 291 \u7684\u503c\u3002",
+          "answer": "1060",
+          "correct": true,
+          "fat": 15,
+          "gen_preview": " 769 + 291 = 1060"
+        },
+        {
+          "prompt": "\u6c42\u7ec4\u5408\u6570 C(9, 5) \u7684\u503c\u3002",
+          "answer": "126",
+          "correct": true,
+          "fat": 4,
+          "gen_preview": " 126\n\n\u6c42\u7ec4\u5408\u6570 C(9, 5) \u7684\u503c\u3002 126\n\n\u6c42\u7ec4\u5408\u6570 C(9, 5) \u7684\u503c\u3002 126\n\n\u6c42\u7ec4\u5408\u6570 C(9, 5) \u7684\u503c\u3002 126\n\n\u6c42\u7ec4\u5408\u6570 C(9"
+        },
+        {
+          "prompt": "\u6c42\u7ec4\u5408\u6570 C(9, 4) \u7684\u503c\u3002",
+          "answer": "126",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " \u7ec4\u5408\u6570 C(9, 4) \u8868\u793a\u4ece 9 \u4e2a\u4e0d\u540c\u5143\u7d20\u4e2d\u9009\u53d6 4 \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\uff0c\u5176\u8ba1\u7b97\u516c\u5f0f\u4e3a\uff1a\n\nC(n, k) = n! / (k! * (n - k)!)\n\n\u5176"
+        },
+        {
+          "prompt": "1014 \u9664\u4ee5 17 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f",
+          "answer": "11",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " 1014 \u9664\u4ee5 17 \u7684\u4f59\u6570\u662f 1014 \u00f7 17 = 60 \u2026 14 \uff0c \u6240\u4ee5 1014 \u9664\u4ee5 17 \u7684\u4f59\u6570\u662f 14. \u6545\u7b54\u6848\u4e3a\uff1a 14.\n\n\u9605\u8bfb\u4e0b\u9762\u7684\u6587\u5b57"
+        },
+        {
+          "prompt": "1154 \u9664\u4ee5 5 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f",
+          "answer": "4",
+          "correct": true,
+          "fat": 5,
+          "gen_preview": " 1154 \u9664\u4ee5 5 \u7684\u4f59\u6570\u662f 4\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u7b97\u4e00\u4e0b 1154 \u4e58\u4ee5 5 \u7684\u7ed3\u679c\u662f\u591a\u5c11\u3002 1154 \u4e58\u4ee5 5 \u7684\u7ed3\u679c\u662f 5770\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u7b97\u4e00\u4e0b "
+        },
+        {
+          "prompt": "\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 34\uff0c\u5bbd\u4e3a 35\uff0c\u6c42\u5176\u9762\u79ef\u3002",
+          "answer": "1190",
+          "correct": true,
+          "fat": 72,
+          "gen_preview": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 34\uff0c\u5bbd\u4e3a 35\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = 34 \\times 35 \\]\n\n\u8ba1"
+        },
+        {
+          "prompt": "\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 12\uff0c\u5bbd\u4e3a 5\uff0c\u6c42\u5176\u9762\u79ef\u3002",
+          "answer": "60",
+          "correct": true,
+          "fat": 65,
+          "gen_preview": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 12\uff0c\u5bbd\u4e3a 5\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = \\text{\u957f} \\times \\te"
+        },
+        {
+          "prompt": "\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 9\uff0c\u516c\u5dee\u4e3a 5\uff0c\u6c42\u524d 24 \u9879\u4e4b\u548c\u3002",
+          "answer": "1596",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " 1260\n\n\u5728\u300a\u7ea2\u697c\u68a6\u300b\u4e2d\uff0c\u8d3e\u5b9d\u7389\u7684\u8868\u59b9\u662f\uff08 \uff09 \u8d3e\u5143\u6625\n\n\u300a\u7ea2\u697c\u68a6\u300b\u4e2d\uff0c\u8d3e\u5b9d\u7389\u7684\u8868\u59b9\u662f\uff08 \uff09 \u8d3e\u5143\u6625\n\n\u300a\u7ea2\u697c\u68a6\u300b\u4e2d\uff0c\u8d3e\u5b9d\u7389\u7684\u8868\u59b9\u662f\uff08 \uff09 \u8d3e\u5143\u6625\n\n\u300a\u7ea2\u697c"
+        },
+        {
+          "prompt": "\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 7\uff0c\u516c\u5dee\u4e3a 6\uff0c\u6c42\u524d 11 \u9879\u4e4b\u548c\u3002",
+          "answer": "407",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " 11\u00d77+6\u00d711\u00d710\u00f72=11\u00d7\uff087+30\uff09=441\n\n\u5728\u7b49\u5dee\u6570\u5217{an}\u4e2d\uff0ca1=1\uff0ca3=5\uff0c\u5219a5=\uff08 \uff09 . A\u3001 7 B\u3001 8 C\u3001 9 D\u3001 "
+        }
+      ]
+    },
+    "random_alt": {
+      "accuracy": 8,
+      "median_fat": 32.5,
+      "n": 20,
+      "results": [
+        {
+          "prompt": "Calculate 664 + 124.",
+          "answer": "788",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To calculate \\(664 + 124\\), we can break it down into simpler steps by adding t"
+        },
+        {
+          "prompt": "Calculate 769 + 291.",
+          "answer": "1060",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To calculate \\(769 + 291\\), we can break it down into simpler steps by adding t"
+        },
+        {
+          "prompt": "Find the value of C(9, 5).",
+          "answer": "126",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To find the value of \\( C(9, 5) \\), we need to calculate the binomial coefficie"
+        },
+        {
+          "prompt": "Find the value of C(9, 4).",
+          "answer": "126",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To find the value of \\( C(9, 4) \\), we need to calculate the binomial coefficie"
+        },
+        {
+          "prompt": "What is the remainder when 1014 is divided by 17?",
+          "answer": "11",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To find the remainder when 1014 is divided by 17, we can use the modulo operati"
+        },
+        {
+          "prompt": "What is the remainder when 1154 is divided by 5?",
+          "answer": "4",
+          "correct": true,
+          "fat": 10,
+          "gen_preview": " To find the remainder when 1154 is divided by 5, we can use the modulo operatio"
+        },
+        {
+          "prompt": "A rectangle has length 34 and width 35. Find its a",
+          "answer": "1190",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{le"
+        },
+        {
+          "prompt": "A rectangle has length 12 and width 5. Find its ar",
+          "answer": "60",
+          "correct": true,
+          "fat": 50,
+          "gen_preview": " The area of a rectangle is calculated by multiplying its length by its width. I"
+        },
+        {
+          "prompt": "An arithmetic sequence has first term 9 and common",
+          "answer": "1596",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To find the sum of the first 24 terms of an arithmetic sequence, we can use the"
+        },
+        {
+          "prompt": "An arithmetic sequence has first term 7 and common",
+          "answer": "407",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " To find the sum of the first 11 terms of an arithmetic sequence, we can use the"
+        },
+        {
+          "prompt": "\u8ba1\u7b97 664 + 124 \u7684\u503c\u3002",
+          "answer": "788",
+          "correct": true,
+          "fat": 14,
+          "gen_preview": " 664 + 124 = 788"
+        },
+        {
+          "prompt": "\u8ba1\u7b97 769 + 291 \u7684\u503c\u3002",
+          "answer": "1060",
+          "correct": true,
+          "fat": 15,
+          "gen_preview": " 769 + 291 = 1060"
+        },
+        {
+          "prompt": "\u6c42\u7ec4\u5408\u6570 C(9, 5) \u7684\u503c\u3002",
+          "answer": "126",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " \u7ec4\u5408\u6570 C(9, 5) \u8868\u793a\u4ece 9 \u4e2a\u4e0d\u540c\u5143\u7d20\u4e2d\u9009\u53d6 5 \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\u3002\u6839\u636e\u7ec4\u5408\u6570\u7684\u5b9a\u4e49\uff0c\u53ef\u4ee5\u4f7f\u7528\u9636\u4e58\u6765\u8ba1\u7b97\uff1a\n\n\\[ C(n, k) = \\frac{n!"
+        },
+        {
+          "prompt": "\u6c42\u7ec4\u5408\u6570 C(9, 4) \u7684\u503c\u3002",
+          "answer": "126",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " \u7ec4\u5408\u6570 C(9, 4) \u8868\u793a\u4ece 9 \u4e2a\u4e0d\u540c\u5143\u7d20\u4e2d\u9009\u53d6 4 \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\u3002\u6839\u636e\u7ec4\u5408\u6570\u7684\u5b9a\u4e49\uff0c\u53ef\u4ee5\u4f7f\u7528\u9636\u4e58\u6765\u8ba1\u7b97\uff1a\n\n\\[ C(n, k) = \\frac{n!"
+        },
+        {
+          "prompt": "1014 \u9664\u4ee5 17 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f",
+          "answer": "11",
+          "correct": true,
+          "fat": 54,
+          "gen_preview": " 1014 \u9664\u4ee5 17 \u7684\u4f59\u6570\u662f 1014 % 17 = 1014 - 17 * 59 = 1014 - 1003 = 11\n\n1014 \u9664\u4ee5 17 \u7684\u4f59\u6570\u662f\u591a"
+        },
+        {
+          "prompt": "1154 \u9664\u4ee5 5 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f",
+          "answer": "4",
+          "correct": true,
+          "fat": 5,
+          "gen_preview": " 1154 \u9664\u4ee5 5 \u7684\u4f59\u6570\u662f 4\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u7b97\u4e00\u4e0b 1154 \u4e58\u4ee5 5 \u7684\u7ed3\u679c\u662f\u591a\u5c11\u3002 1154 \u4e58\u4ee5 5 \u7684\u7ed3\u679c\u662f 5770\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u7b97\u4e00\u4e0b "
+        },
+        {
+          "prompt": "\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 34\uff0c\u5bbd\u4e3a 35\uff0c\u6c42\u5176\u9762\u79ef\u3002",
+          "answer": "1190",
+          "correct": true,
+          "fat": 72,
+          "gen_preview": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 34\uff0c\u5bbd\u4e3a 35\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = 34 \\times 35 \\]\n\n\u8ba1"
+        },
+        {
+          "prompt": "\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 12\uff0c\u5bbd\u4e3a 5\uff0c\u6c42\u5176\u9762\u79ef\u3002",
+          "answer": "60",
+          "correct": true,
+          "fat": 65,
+          "gen_preview": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 12\uff0c\u5bbd\u4e3a 5\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = \\text{\u957f} \\times \\te"
+        },
+        {
+          "prompt": "\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 9\uff0c\u516c\u5dee\u4e3a 5\uff0c\u6c42\u524d 24 \u9879\u4e4b\u548c\u3002",
+          "answer": "1596",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " \u9996\u9879 a1=9\uff0c\u516c\u5dee d=5\uff0c\u9879\u6570 n=24\uff0c\u6c42\u524d 24 \u9879\u4e4b\u548c Sn\u3002\n\n\u89e3\uff1a\u6839\u636e\u7b49\u5dee\u6570\u5217\u6c42\u548c\u516c\u5f0f Sn=n(a1+an)/2\uff0c\u5176\u4e2d an=a1+(n-1)"
+        },
+        {
+          "prompt": "\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 7\uff0c\u516c\u5dee\u4e3a 6\uff0c\u6c42\u524d 11 \u9879\u4e4b\u548c\u3002",
+          "answer": "407",
+          "correct": false,
+          "fat": null,
+          "gen_preview": " \u9996\u9879 a1 = 7\uff0c\u516c\u5dee d = 6\uff0c\u6c42\u524d 11 \u9879\u4e4b\u548c\u3002\n\n\u6839\u636e\u7b49\u5dee\u6570\u5217\u6c42\u548c\u516c\u5f0f\uff0c\u524d n \u9879\u548c Sn = n/2 * (2a1 + (n-1)d)\uff0c\u5c06 n "
+        }
+      ]
+    }
+  },
+  "runtime_seconds": 185.57978320121765
+}

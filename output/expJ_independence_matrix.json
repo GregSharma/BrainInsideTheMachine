@@ -1,0 +1,2143 @@
+{
+  "experiment": "J: Full Independence Matrix",
+  "baselines": {
+    "zh_math": {
+      "prompt": "如果 x + 5 = 12，求 x 的值。",
+      "generation": "要解决这个方程，我们需要找到使等式成立的 x 的值。给定的方程是：\n\n\\[ x + 5 = 12 \\]\n\n为了求解 x，我们可以从等式的两边减去 5：\n\n\\[ x + 5 - 5 = 12 - 5 \\]\n\n这样，等式就简化为：\n\n\\[ x = 7 \\]\n\n因此，x 的值是 7。",
+      "classification": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 56,
+        "en_chars": 6
+      }
+    },
+    "en_math": {
+      "prompt": "If x + 5 = 12, find the value of x.",
+      "generation": "To find the value of \\( x \\) in the equation \\( x + 5 = 12 \\), we need to isolate \\( x \\) on one side of the equation. Here are the steps to solve for \\( x \\):\n\n1. Start with the given equation:\n   \\[\n   x + 5 = 12\n   \\]\n\n2. To isolate \\( x \\), we need to get rid of the 5 on the left side of the equation. We do this by subtracting 5 from both sides of the equation:\n   \\[\n   x + 5 - 5 = 12",
+      "classification": {
+        "language": "english",
+        "format": "math_expression",
+        "zh_chars": 0,
+        "en_chars": 224
+      }
+    },
+    "zh_prose": {
+      "prompt": "请描述一下春天的景色。",
+      "generation": "春天，这个充满生机与希望的季节，以其独特的魅力吸引着每一个人。当冬日的寒冷逐渐退去，大地开始苏醒，万物复苏，春天便悄然而至。\n\n在春天里，天空通常呈现出一种淡淡的蓝色，阳光明媚而温暖，让人感到心情愉悦。微风轻拂，带来了花香和草香，空气中弥漫着一种清新而甜美的气息。树木开始抽出嫩绿的新芽，花朵竞相开放，五彩斑斓，如樱花、桃花、梨花等，它们在阳光下绽放着美丽的笑容，为大地披上了一层绚丽的色彩。\n\n",
+      "classification": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 172,
+        "en_chars": 0
+      }
+    },
+    "en_prose": {
+      "prompt": "Describe the scenery of spring.",
+      "generation": "Spring is a season of renewal and growth, and the scenery is nothing short of breathtaking. The trees and flowers are in full bloom, and the air is filled with the sweet scent of blossoms. The grass is green and lush, and the birds are singing their sweet melodies. The sun is shining brightly, and the sky is a beautiful shade of blue. The scenery of spring is truly a sight to behold.",
+      "classification": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 305
+      }
+    },
+    "code": {
+      "prompt": "Write a Python function to compute factorial.",
+      "generation": "def factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)",
+      "classification": {
+        "language": "english",
+        "format": "code",
+        "zh_chars": 0,
+        "en_chars": 43
+      }
+    },
+    "zh_list": {
+      "prompt": "列出三种常见的水果。",
+      "generation": "以下是三种常见的水果：\n\n1. 苹果：苹果是一种非常受欢迎的水果，它有多种不同的品种，包括红苹果、绿苹果和黄苹果等。苹果富含维生素C、纤维素和抗氧化剂，有助于保持身体健康。\n\n2. 香蕉：香蕉是一种营养丰富的水果，它含有钾、维生素B6和膳食纤维。香蕉还具有抗炎和抗氧化的特性，有助于缓解压力和改善睡眠质量。\n\n3. 橙子：橙子是一种富含维生素C的水果，它还有助于增强免疫系统和促进消化。橙子还含有抗氧化剂，有助于预防",
+      "classification": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 170,
+        "en_chars": 3
+      }
+    },
+    "en_list": {
+      "prompt": "List three common fruits.",
+      "generation": "1. Apple\n2. Banana\n3. Orange",
+      "classification": {
+        "language": "english",
+        "format": "list",
+        "zh_chars": 0,
+        "en_chars": 17
+      }
+    },
+    "translate": {
+      "prompt": "Translate '你好世界' to English.",
+      "generation": "'你好世界' translates to 'Hello World' in English.",
+      "classification": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 4,
+        "en_chars": 31
+      }
+    },
+    "zh_logic": {
+      "prompt": "如果所有的猫都是动物，而小白是一只猫，那么小白是什么？",
+      "generation": "回答上面的问题，给出具体的推理逻辑。\n根据题目中的信息，我们可以进行以下推理：\n\n1. **前提条件**：\n   - 所有的猫都是动物。\n   - 小白是一只猫。\n\n2. **逻辑推理**：\n   - 既然所有的猫都是动物，那么任何一只猫也一定是动物。\n   - 因此，如果小白是一只猫，那么小白也一定是动物。\n\n综上所述，小白是动物。",
+      "classification": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 108,
+        "en_chars": 0
+      }
+    }
+  },
+  "matrix": [
+    {
+      "source": "zh_math",
+      "target": "en_math",
+      "generation": "x = 7\n\nHere's the reasoning:\n\n1. We are given the equation x + 5 = 12.\n2. To isolate x, we need to get rid of the +5 on the left side of the equation.\n3. We can do this by subtracting 5 from both sides of the equation: x + 5 - 5 = 12 - 5.\n4. Simplifying both sides, we get x = 7.\n\nTherefore, the value of x is 7.",
+      "output_cls": {
+        "language": "english",
+        "format": "math_solution",
+        "zh_chars": 0,
+        "en_chars": 194
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 56,
+        "en_chars": 6
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "math_expression",
+        "zh_chars": 0,
+        "en_chars": 224
+      },
+      "lang_follows_source": false,
+      "fmt_follows_target": false
+    },
+    {
+      "source": "zh_math",
+      "target": "zh_prose",
+      "generation": "在春天，大自然开始苏醒，万物复苏。树木抽出嫩绿的新芽，花朵竞相开放，五彩缤纷。小草从地里探出头来，与花儿争奇斗艳。微风拂过，带来阵阵花香，让人心旷神怡。河流解冻，潺潺流水声悦耳动听。春天是一个充满生机与希望的季节。",
+      "output_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 93,
+        "en_chars": 0
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 56,
+        "en_chars": 6
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 172,
+        "en_chars": 0
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "zh_math",
+      "target": "en_prose",
+      "generation": "在春天，大自然呈现出一片生机勃勃的景象。树木开始抽出嫩绿的新芽，花朵竞相开放，五彩缤纷，散发出阵阵芬芳。微风轻拂，带来阵阵花香，让人心旷神怡。河流和湖泊也变得清澈见底，水面上漂浮着嫩绿的水草，鱼儿在水中欢快地游弋。田野里，麦苗茁壮成长，一片片金黄色的麦田在阳光下闪耀着光芒。春天的天空湛蓝如洗，白云悠闲地飘荡，阳光明媚，温暖而舒适。整个世界仿佛都被春天",
+      "output_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 157,
+        "en_chars": 0
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 56,
+        "en_chars": 6
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 305
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "zh_math",
+      "target": "code",
+      "generation": "在Python中，我们可以使用递归或循环来计算一个数的阶乘。这里我将提供两种方法的实现。\n\n### 方法一：使用递归\n\n递归是一种直接利用函数自身来解决问题的方法。对于阶乘，递归函数可以定义为：\n\n- 如果输入的数是0或1，则返回1。\n- 否则，返回该数乘以它的前一个阶乘。\n\n```python\ndef factorial(n):\n    if n == 0 or n == 1:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\n# 测试\nprint",
+      "output_cls": {
+        "language": "mixed",
+        "format": "code",
+        "zh_chars": 104,
+        "en_chars": 63
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 56,
+        "en_chars": 6
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "code",
+        "zh_chars": 0,
+        "en_chars": 43
+      },
+      "lang_follows_source": false,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "zh_math",
+      "target": "zh_list",
+      "generation": "今天，我将向您介绍三种常见的水果：苹果、香蕉和橙子。\n1. 苹果：苹果是一种非常受欢迎的水果，它有许多不同的品种，包括红苹果、绿苹果和黄苹果。苹果是一种富含维生素C和纤维素的水果，可以作为健康饮食的一部分。苹果还可以用于制作各种食品，如苹果派、苹果酱和苹果汁。\n2. 香蕉：香蕉是一种非常受欢迎的水果，它是一种富含钾和维生素B6的水果。香蕉可以作为健康饮食的一部分，也可以用于制作各种食品，如香蕉面包、香蕉奶昔和香蕉冰淇淋",
+      "output_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 180,
+        "en_chars": 2
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 56,
+        "en_chars": 6
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 170,
+        "en_chars": 3
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "zh_math",
+      "target": "en_list",
+      "generation": "根据您提供的信息，以下是三种常见的水果：\n1. 苹果\n2. 香蕉\n3. 橙子",
+      "output_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 24,
+        "en_chars": 0
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 56,
+        "en_chars": 6
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "list",
+        "zh_chars": 0,
+        "en_chars": 17
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "zh_math",
+      "target": "translate",
+      "generation": "在中文中，'你好世界'是一个常见的问候语，意思是“你好，世界”。将其翻译成英文，可以是 \"Hello, World!\"。",
+      "output_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 34,
+        "en_chars": 10
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 56,
+        "en_chars": 6
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 4,
+        "en_chars": 31
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "zh_math",
+      "target": "zh_logic",
+      "generation": "在逻辑上，如果所有的猫都是动物，而小白是一只猫，那么小白就是一只动物。这是因为“所有的猫都是动物”这个陈述意味着任何被归类为猫的生物都必须是动物。因此，小白作为一只猫，必然符合这个定义，从而它也是动物。",
+      "output_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 90,
+        "en_chars": 0
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 56,
+        "en_chars": 6
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 108,
+        "en_chars": 0
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": false
+    },
+    {
+      "source": "en_math",
+      "target": "zh_math",
+      "generation": "以 x + 5 = 12 为例，我们可以使用代数方法来求解 x 的值。\n首先，我们可以将等式两边都减去 5，得到：\nx + 5 - 5 = 12 - 5\nx = 7\n因此，x 的值为 7。\n另一种方法是使用反向思维，将等式两边都除以 5，得到：\nx + 5 / 5 = 12 / 5\nx + 1 = 2.4\n然后，将等式两边都减去 1，得到：\nx",
+      "output_cls": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 73,
+        "en_chars": 8
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "math_expression",
+        "zh_chars": 0,
+        "en_chars": 224
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 56,
+        "en_chars": 6
+      },
+      "lang_follows_source": false,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "en_math",
+      "target": "zh_prose",
+      "generation": "With the arrival of spring, the world is filled with a sense of renewal and rejuvenation. The air is crisp and fresh, and the sun shines brightly, casting a warm glow over everything it touches. The trees begin to bud and bloom, their leaves turning green and their flowers in a riot of colors. The grass turns from brown to green, and the birds return to sing their sweet melodies. The flowers are in full bloom, and the air is filled with the sweet fragrance of blooming flowers. The world is a beautiful and vibrant place in the spring, and it is a time of hope and renewal.",
+      "output_cls": {
+        "language": "english",
+        "format": "code",
+        "zh_chars": 0,
+        "en_chars": 457
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "math_expression",
+        "zh_chars": 0,
+        "en_chars": 224
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 172,
+        "en_chars": 0
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": false
+    },
+    {
+      "source": "en_math",
+      "target": "en_prose",
+      "generation": "In spring, the scenery is filled with vibrant colors and a sense of renewal. The trees and flowers are in full bloom, with their leaves and petals glowing in the sunlight. The air is filled with the sweet scent of blooming flowers, and the chirping of birds can be heard everywhere. The grass is green and lush, and the rivers and streams are full of life as the water flows freely. The weather is warm and sunny, and the days are longer, making it the perfect time to enjoy the outdoors. Overall, spring is a beautiful time of year, with a fresh and rejuvenating atmosphere that fills the senses.",
+      "output_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 475
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "math_expression",
+        "zh_chars": 0,
+        "en_chars": 224
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 305
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "en_math",
+      "target": "code",
+      "generation": "The factorial of a non-negative integer n is the product of all positive integers less than or equal to n. For example, the factorial of 5 is 5 x 4 x 3 x 2 x 1 = 120. The factorial of 0 is defined to be 1.\n\nWrite a Python function that takes an integer n as input and returns the factorial of n. Your function should handle the case where n is negative by raising a ValueError with an appropriate error message.\n\nYour code should pass the following assertions:\n```python\nassert factorial(5) == 120\nassert factorial(0)",
+      "output_cls": {
+        "language": "english",
+        "format": "code",
+        "zh_chars": 0,
+        "en_chars": 385
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "math_expression",
+        "zh_chars": 0,
+        "en_chars": 224
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "code",
+        "zh_chars": 0,
+        "en_chars": 43
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "en_math",
+      "target": "zh_list",
+      "generation": "With the following information, please provide three common fruits:\n1. Apple\n2. Banana\n3. Orange",
+      "output_cls": {
+        "language": "english",
+        "format": "list",
+        "zh_chars": 0,
+        "en_chars": 74
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "math_expression",
+        "zh_chars": 0,
+        "en_chars": 224
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 170,
+        "en_chars": 3
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "en_math",
+      "target": "en_list",
+      "generation": "With a sweet taste and a variety of colors, fruits are a great source of vitamins and minerals. Here are three common fruits:\n\n1. Apple: Apples are a popular fruit that are available in many different varieties. They are a good source of fiber, vitamin C, and antioxidants.\n\n2. Banana: Bananas are a popular fruit that are easy to eat and are a good source of potassium, vitamin C, and vitamin B6.\n\n3. Orange: Oranges are a popular fruit that are a good source of vitamin C, fiber, and antioxidants. They are also a good source of folate and potassium.",
+      "output_cls": {
+        "language": "english",
+        "format": "list",
+        "zh_chars": 0,
+        "en_chars": 426
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "math_expression",
+        "zh_chars": 0,
+        "en_chars": 224
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "list",
+        "zh_chars": 0,
+        "en_chars": 17
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "en_math",
+      "target": "translate",
+      "generation": "In English, '你好世界' translates to 'Hello World'.",
+      "output_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 4,
+        "en_chars": 31
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "math_expression",
+        "zh_chars": 0,
+        "en_chars": 224
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 4,
+        "en_chars": 31
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "en_math",
+      "target": "zh_logic",
+      "generation": "A. 动物\nB. 植物\nC. 机器人\nD. 无生命物体\n答案:\nA\n\n下列哪个词与“happy”意思相反？\nA. sad\nB. happy\nC. angry\n答案:\nA\n\n下列哪个词与“happy”意思相反？\nA. sad\nB. happy\nC. angry\n答案:\nA\n\n下列哪个词与“happy”意思相反？\nA. sad\nB. happy\nC. angry\n答案:\nA\n\n下列哪个词与“happy”意思相反？\nA. sad\nB. happy\nC. angry",
+      "output_cls": {
+        "language": "mixed",
+        "format": "prose",
+        "zh_chars": 60,
+        "en_chars": 92
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "math_expression",
+        "zh_chars": 0,
+        "en_chars": 224
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 108,
+        "en_chars": 0
+      },
+      "lang_follows_source": false,
+      "fmt_follows_target": false
+    },
+    {
+      "source": "zh_prose",
+      "target": "zh_math",
+      "generation": "欢迎来到数学世界！让我们一起解决这个问题。\n首先，我们需要理解等式的意思。等式表示两个表达式相等。在这个问题中，等式是 x + 5 = 12。这意味着 x 和 5 相加等于 12。\n现在，我们需要解出 x 的值。为了做到这一点，我们需要将等式两边都减去 5。这样，我们就可以得到 x 的值。\nx + 5 - 5 = 12 - 5\nx = 7\n因此，x 的值是 7。\n希望这个解释对你有帮助！如果你有任何问题",
+      "output_cls": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 125,
+        "en_chars": 7
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 172,
+        "en_chars": 0
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 56,
+        "en_chars": 6
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "zh_prose",
+      "target": "en_math",
+      "generation": "欢迎来到数学世界！让我们一起来解决这个问题吧！\n首先，我们需要将等式两边都减去5，以求出x的值。\nx + 5 = 12\nx + 5 - 5 = 12 - 5\nx = 7\n因此，x的值为7。",
+      "output_cls": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 45,
+        "en_chars": 5
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 172,
+        "en_chars": 0
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "math_expression",
+        "zh_chars": 0,
+        "en_chars": 224
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": false
+    },
+    {
+      "source": "zh_prose",
+      "target": "en_prose",
+      "generation": "欢迎来到春天！春天是一年四季中最美丽的季节之一。在这个季节里，大自然开始苏醒，万物复苏。树木开始长出嫩绿的新叶，花朵开始绽放，草地开始变绿，河流开始流动。天空变得湛蓝，阳光变得温暖，微风拂面，让人感到舒适和愉悦。春天的景色是如此美丽，让人不禁感叹大自然的神奇和美丽。",
+      "output_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 118,
+        "en_chars": 0
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 172,
+        "en_chars": 0
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 305
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "zh_prose",
+      "target": "code",
+      "generation": "欢迎使用Python函数来计算阶乘。以下是一个简单的函数，用于计算给定数字的阶乘：\n\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)\n```\n\n这个函数使用递归方法来计算阶乘。如果输入的数字是0，函数返回1（因为0的阶乘定义为1）。否则，函数将输入的数字与函数自身调用的结果相乘，直到输入的数字为0为止。\n\n例如，调用`factorial(5)`将返回`120`",
+      "output_cls": {
+        "language": "mixed",
+        "format": "code",
+        "zh_chars": 106,
+        "en_chars": 64
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 172,
+        "en_chars": 0
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "code",
+        "zh_chars": 0,
+        "en_chars": 43
+      },
+      "lang_follows_source": false,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "zh_prose",
+      "target": "zh_list",
+      "generation": "欢迎来到水果世界！以下是三种常见的水果：\n1. 苹果：苹果是一种非常受欢迎的水果，它有多种颜色和口味，包括红色、绿色和黄色。苹果富含维生素C和纤维素，有助于消化和保持健康。\n2. 香蕉：香蕉是一种非常受欢迎的水果，它是一种高能量的水果，富含钾和维生素B6。香蕉可以作为早餐或零食，也可以用来制作甜点或饮料。\n3. 橙子：橙子是一种非常受欢迎的水果，它富含维生素C和纤维素。橙子可以作为早餐或零食，也可以用来制作",
+      "output_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 170,
+        "en_chars": 3
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 172,
+        "en_chars": 0
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 170,
+        "en_chars": 3
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "zh_prose",
+      "target": "en_list",
+      "generation": "欢迎来到问答环节！请问您想了解哪些关于水果的问题呢？",
+      "output_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 24,
+        "en_chars": 0
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 172,
+        "en_chars": 0
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "list",
+        "zh_chars": 0,
+        "en_chars": 17
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": false
+    },
+    {
+      "source": "zh_prose",
+      "target": "translate",
+      "generation": "欢迎来到世界。",
+      "output_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 6,
+        "en_chars": 0
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 172,
+        "en_chars": 0
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 4,
+        "en_chars": 31
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "zh_prose",
+      "target": "zh_logic",
+      "generation": "动物。\n\n好的，那么如果所有的狗都是动物，而小黑是一只狗，那么小黑是什么？\n小黑是一只动物。\n\n那么如果所有的鸟都是动物，而小明是一只鸟，那么小明是什么？\n小明是一只动物。\n\n好的，那么如果所有的鱼都是动物，而小鱼是一条鱼，那么小鱼是什么？\n小鱼是一只动物。\n\n那么如果所有的植物都是动物，而小草是一棵植物，那么小草是什么？\n小草是一只动物。\n\n好的，那么如果所有的动物都是植物，而小花是一朵花，那么小花是什么？\n小",
+      "output_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 170,
+        "en_chars": 0
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 172,
+        "en_chars": 0
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 108,
+        "en_chars": 0
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": false
+    },
+    {
+      "source": "en_prose",
+      "target": "zh_math",
+      "generation": "The value of x is 7.",
+      "output_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 13
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 305
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 56,
+        "en_chars": 6
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": false
+    },
+    {
+      "source": "en_prose",
+      "target": "en_math",
+      "generation": "The value of x is 7.",
+      "output_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 13
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 305
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "math_expression",
+        "zh_chars": 0,
+        "en_chars": 224
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": false
+    },
+    {
+      "source": "en_prose",
+      "target": "zh_prose",
+      "generation": "To describe the scenery of spring, I would say that it is a time of renewal and growth. The air is fresh and crisp, with a hint of warmth in the breeze. The trees are budding with new leaves, and the flowers are blooming in a variety of colors. The grass is green and lush, and the birds are singing their sweet melodies. Overall, spring is a time of beauty and vitality, with everything coming back to life after a long winter.",
+      "output_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 336
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 305
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 172,
+        "en_chars": 0
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "en_prose",
+      "target": "code",
+      "generation": "The factorial of a non-negative integer n is the product of all positive integers less than or equal to n. For example, the factorial of 5 is 5 x 4 x 3 x 2 x 1 = 120. The factorial of 0 is defined to be 1.\n\nWrite a Python function that takes an integer n as input and returns the factorial of n. Your function should handle the case where n is negative by raising a ValueError with an appropriate error message.\n\nYour code should pass the following assertions:\n```python\nassert factorial(5) == 120\nassert factorial(0)",
+      "output_cls": {
+        "language": "english",
+        "format": "code",
+        "zh_chars": 0,
+        "en_chars": 385
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 305
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "code",
+        "zh_chars": 0,
+        "en_chars": 43
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "en_prose",
+      "target": "zh_list",
+      "generation": "To answer this question, I will list three common fruits that are widely consumed around the world.\n\n1. Apple: Apples are one of the most popular fruits in the world. They are available in various colors, sizes, and flavors, and can be eaten raw or cooked. Apples are rich in vitamins, minerals, and antioxidants, making them a healthy choice for snacks or meals.\n\n2. Banana: Bananas are another popular fruit that is widely consumed in many parts of the world. They are easy to eat and can be used in various recipes, such as smoothies, desserts, and snacks. Bananas are rich in potassium",
+      "output_cls": {
+        "language": "english",
+        "format": "list",
+        "zh_chars": 0,
+        "en_chars": 463
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 305
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 170,
+        "en_chars": 3
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "en_prose",
+      "target": "en_list",
+      "generation": "The three common fruits are apples, bananas, and oranges.",
+      "output_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 46
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 305
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "list",
+        "zh_chars": 0,
+        "en_chars": 17
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": false
+    },
+    {
+      "source": "en_prose",
+      "target": "translate",
+      "generation": "The translation of '你好世界' to English is 'Hello World'.",
+      "output_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 4,
+        "en_chars": 37
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 305
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 4,
+        "en_chars": 31
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "en_prose",
+      "target": "zh_logic",
+      "generation": "The answer to this question is: 小白是一只动物。因为所有的猫都是动物，而小白是一只猫，所以小白也是一只动物。",
+      "output_cls": {
+        "language": "mixed",
+        "format": "prose",
+        "zh_chars": 34,
+        "en_chars": 25
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 305
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 108,
+        "en_chars": 0
+      },
+      "lang_follows_source": false,
+      "fmt_follows_target": false
+    },
+    {
+      "source": "code",
+      "target": "zh_math",
+      "generation": "For the equation x + 5 = 12, we need to isolate x. To do this, we subtract 5 from both sides of the equation:\n\nx + 5 - 5 = 12 - 5\n\nThis simplifies to:\n\nx = 7\n\nSo, the value of x is 7.",
+      "output_cls": {
+        "language": "english",
+        "format": "math_solution",
+        "zh_chars": 0,
+        "en_chars": 108
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "code",
+        "zh_chars": 0,
+        "en_chars": 43
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 56,
+        "en_chars": 6
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "code",
+      "target": "en_math",
+      "generation": "For the value of x to be 7, the equation x + 5 = 12 must be true. To find the value of x, we need to isolate x on one side of the equation. We can do this by subtracting 5 from both sides of the equation:\n\nx + 5 - 5 = 12 - 5\n\nThis simplifies to:\n\nx = 7\n\nSo, the value of x is 7.",
+      "output_cls": {
+        "language": "english",
+        "format": "math_solution",
+        "zh_chars": 0,
+        "en_chars": 178
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "code",
+        "zh_chars": 0,
+        "en_chars": 43
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "math_expression",
+        "zh_chars": 0,
+        "en_chars": 224
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": false
+    },
+    {
+      "source": "code",
+      "target": "zh_prose",
+      "generation": "In spring, the world is awash with vibrant colors and a sense of renewal. The air is filled with the sweet scent of blooming flowers, and the trees are adorned with delicate blossoms that dance in the gentle breeze. The grass is green and lush, and the birds are singing their sweet melodies. The sun is warm and the days are long, and the world seems to be waking up from its winter slumber. It's a time of hope and new beginnings, and the beauty of spring is truly something to behold.",
+      "output_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 385
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "code",
+        "zh_chars": 0,
+        "en_chars": 43
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 172,
+        "en_chars": 0
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "code",
+      "target": "en_prose",
+      "generation": "In spring, the scenery is filled with vibrant colors and a sense of renewal. The trees and flowers are in full bloom, with their leaves and petals glowing in the sunlight. The air is filled with the sweet scent of blooming flowers, and the chirping of birds can be heard everywhere. The grass is green and lush, and the rivers and streams are full of life as the water flows freely. Overall, the scenery of spring is a beautiful and peaceful sight to behold.",
+      "output_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 365
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "code",
+        "zh_chars": 0,
+        "en_chars": 43
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 305
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "code",
+      "target": "zh_list",
+      "generation": "This task is asking you to provide three examples of common fruits. Here are three examples:\n\n1. Apples\n2. Bananas\n3. Oranges",
+      "output_cls": {
+        "language": "english",
+        "format": "list",
+        "zh_chars": 0,
+        "en_chars": 95
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "code",
+        "zh_chars": 0,
+        "en_chars": 43
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 170,
+        "en_chars": 3
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "code",
+      "target": "en_list",
+      "generation": "This task is asking you to list three common fruits. Here are three examples:\n\n1. Apple\n2. Banana\n3. Orange",
+      "output_cls": {
+        "language": "english",
+        "format": "list",
+        "zh_chars": 0,
+        "en_chars": 79
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "code",
+        "zh_chars": 0,
+        "en_chars": 43
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "list",
+        "zh_chars": 0,
+        "en_chars": 17
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "code",
+      "target": "translate",
+      "generation": "With the help of a translation tool, I can translate the Chinese phrase '你好世界' to English as 'Hello World'.",
+      "output_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 4,
+        "en_chars": 79
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "code",
+        "zh_chars": 0,
+        "en_chars": 43
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 4,
+        "en_chars": 31
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "code",
+      "target": "zh_logic",
+      "generation": "In this case, the statement \"all cats are animals\" is a generalization that applies to all cats, including the specific case of \"小白\" (which means \"little white\" in Chinese, but in this context, it's likely referring to a specific cat). Since \"小白\" is a cat, it follows that \"小白\" is also an animal. Therefore, \"小白\" is an animal.",
+      "output_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 8,
+        "en_chars": 237
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "code",
+        "zh_chars": 0,
+        "en_chars": 43
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 108,
+        "en_chars": 0
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": false
+    },
+    {
+      "source": "zh_list",
+      "target": "zh_math",
+      "generation": "x + 5 = 12\n要解这个方程，我们需要将 x 的值从等式中分离出来。为此，我们可以从等式的两边减去 5。\nx + 5 - 5 = 12 - 5\nx = 7\n因此，x 的值是 7。\n\n好的，现在请你计算一下 2 的 3 次方。\n2 的 3 次方等于 2 × 2 × 2，即 8。",
+      "output_cls": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 59,
+        "en_chars": 5
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 170,
+        "en_chars": 3
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 56,
+        "en_chars": 6
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "zh_list",
+      "target": "en_math",
+      "generation": "x = 7\n\nHere's the reasoning:\n\n1. We are given the equation x + 5 = 12.\n2. To find the value of x, we need to isolate it on one side of the equation.\n3. We can do this by subtracting 5 from both sides of the equation: x + 5 - 5 = 12 - 5.\n4. Simplifying, we get x = 7.\n\nTherefore, the value of x is 7.",
+      "output_cls": {
+        "language": "english",
+        "format": "math_solution",
+        "zh_chars": 0,
+        "en_chars": 186
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 170,
+        "en_chars": 3
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "math_expression",
+        "zh_chars": 0,
+        "en_chars": 224
+      },
+      "lang_follows_source": false,
+      "fmt_follows_target": false
+    },
+    {
+      "source": "zh_list",
+      "target": "zh_prose",
+      "generation": "春天的景色是生机勃勃的，万物复苏，草木萌发，花儿绽放，鸟儿欢唱，人们也纷纷走出家门，感受春天的气息。天空湛蓝，阳光明媚，微风拂面，让人感到舒适愉悦。田野里，麦苗青青，油菜花黄，一片生机盎然的景象。公园里，樱花、桃花、杏花等花卉竞相开放，五彩缤纷，美不胜收。河流湖泊也逐渐解冻，水波荡漾，鱼儿畅游，生机勃勃。春天是一个充满希望和活力的季节，让人感受到",
+      "output_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 148,
+        "en_chars": 0
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 170,
+        "en_chars": 3
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 172,
+        "en_chars": 0
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "zh_list",
+      "target": "en_prose",
+      "generation": "春季的景色是美丽的，充满了生机和活力。春天的天空是湛蓝的，阳光明媚，温暖而舒适。树木开始发芽，花朵绽放，草地上的小草也逐渐长高。河流和湖泊也变得清澈，水面上漂浮着嫩绿的水草。春天的景色让人感到愉悦和放松，是人们享受户外活动和旅行的好季节。",
+      "output_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 107,
+        "en_chars": 0
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 170,
+        "en_chars": 3
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 305
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "zh_list",
+      "target": "code",
+      "generation": "这里是一个简单的Python函数，用于计算给定数字的阶乘：\n\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)\n```\n\n这个函数使用了递归的方法来计算阶乘。如果输入的数字是0，那么函数返回1（因为0的阶乘是1）。否则，函数将输入的数字与函数自身调用的结果相乘，直到输入的数字为0为止。",
+      "output_cls": {
+        "language": "mixed",
+        "format": "code",
+        "zh_chars": 90,
+        "en_chars": 55
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 170,
+        "en_chars": 3
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "code",
+        "zh_chars": 0,
+        "en_chars": 43
+      },
+      "lang_follows_source": false,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "zh_list",
+      "target": "en_list",
+      "generation": "这些水果包括苹果、香蕉和橙子。",
+      "output_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 13,
+        "en_chars": 0
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 170,
+        "en_chars": 3
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "list",
+        "zh_chars": 0,
+        "en_chars": 17
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": false
+    },
+    {
+      "source": "zh_list",
+      "target": "translate",
+      "generation": "'你好世界' translates to 'Hello World' in English.",
+      "output_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 4,
+        "en_chars": 31
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 170,
+        "en_chars": 3
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 4,
+        "en_chars": 31
+      },
+      "lang_follows_source": false,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "zh_list",
+      "target": "zh_logic",
+      "generation": "小白是一只动物。\n\n好的，那请你告诉我，动物有哪些特征？\n动物通常具有以下特征：有生命体，能够呼吸，能够移动，能够感知环境，能够消化食物，能够繁殖后代，能够适应环境等等。\n\n那请你告诉我，动物的种类有哪些？\n动物的种类非常多，可以分为无脊椎动物和脊椎动物两大类。无脊椎动物包括昆虫、蜘蛛、蜗牛、虾、蟹等；脊椎动物包括鱼类、两栖类、爬行类、鸟类、哺乳类等。\n\n好的，那请你告诉我，哺乳动物有哪些特征？\n哺乳动物的特征包括",
+      "output_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 171,
+        "en_chars": 0
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 170,
+        "en_chars": 3
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 108,
+        "en_chars": 0
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": false
+    },
+    {
+      "source": "en_list",
+      "target": "zh_math",
+      "generation": "Here is the step-by-step solution to the equation x + 5 = 12:\n\n1. Start with the given equation:\n   \\[\n   x + 5 = 12\n   \\]\n\n2. To isolate \\( x \\), subtract 5 from both sides of the equation:\n   \\[\n   x + 5 - 5 = 12 - 5\n   \\]\n\n3. Simplify both sides:\n   \\[\n   x = 7\n   \\]\n\nSo, the value of \\( x \\) is \\(\\boxed{7}\\).",
+      "output_cls": {
+        "language": "english",
+        "format": "math_solution",
+        "zh_chars": 0,
+        "en_chars": 150
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "list",
+        "zh_chars": 0,
+        "en_chars": 17
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 56,
+        "en_chars": 6
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "en_list",
+      "target": "en_math",
+      "generation": "Here, we are given the equation x + 5 = 12. To find the value of x, we need to isolate x on one side of the equation. We can do this by subtracting 5 from both sides of the equation:\n\nx + 5 - 5 = 12 - 5\n\nThis simplifies to:\n\nx = 7\n\nSo, the value of x is 7.",
+      "output_cls": {
+        "language": "english",
+        "format": "math_solution",
+        "zh_chars": 0,
+        "en_chars": 164
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "list",
+        "zh_chars": 0,
+        "en_chars": 17
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "math_expression",
+        "zh_chars": 0,
+        "en_chars": 224
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": false
+    },
+    {
+      "source": "en_list",
+      "target": "zh_prose",
+      "generation": "To describe the scenery of spring, I would say that it is a time of renewal and growth. The air is fresh and crisp, with a hint of warmth in the breeze. The trees are budding with new leaves, and the flowers are blooming in a riot of colors. The grass is green and lush, and the birds are singing their sweet melodies. It's a time of hope and new beginnings, with everything feeling fresh and alive. Overall, spring is a beautiful and vibrant season that brings a sense of renewal and rejuvenation to the world.",
+      "output_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 403
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "list",
+        "zh_chars": 0,
+        "en_chars": 17
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 172,
+        "en_chars": 0
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "en_list",
+      "target": "en_prose",
+      "generation": "With the arrival of spring, the scenery changes dramatically. The trees and flowers begin to bloom, and the air is filled with the sweet scent of blossoms. The grass turns green, and the birds start singing their songs. The weather becomes warmer, and the days are longer. The scenery is a beautiful mix of colors, with the bright green of the grass, the vibrant colors of the flowers, and the blue sky above. It is a time of renewal and growth, and a perfect time to enjoy the outdoors.",
+      "output_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 385
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "list",
+        "zh_chars": 0,
+        "en_chars": 17
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 305
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "en_list",
+      "target": "code",
+      "generation": "The factorial of a non-negative integer n is the product of all positive integers less than or equal to n. For example, the factorial of 5 is 5 x 4 x 3 x 2 x 1 = 120. The factorial of 0 is defined to be 1.\n\nWrite a Python function that takes an integer n as input and returns the factorial of n. Your function should handle the case where n is negative by raising a ValueError with an appropriate error message.\n\nYour code should pass the following assertions:\n```python\nassert factorial(5) == 120\nassert factorial(0)",
+      "output_cls": {
+        "language": "english",
+        "format": "code",
+        "zh_chars": 0,
+        "en_chars": 385
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "list",
+        "zh_chars": 0,
+        "en_chars": 17
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "code",
+        "zh_chars": 0,
+        "en_chars": 43
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "en_list",
+      "target": "zh_list",
+      "generation": "To list three common fruits, I will choose apples, bananas, and oranges. These are widely available and popular fruits that are commonly consumed around the world.",
+      "output_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 133
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "list",
+        "zh_chars": 0,
+        "en_chars": 17
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 170,
+        "en_chars": 3
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": false
+    },
+    {
+      "source": "en_list",
+      "target": "translate",
+      "generation": "To translate the phrase '你好世界' to English, I will follow these steps:\n\n1. Identify the characters in the phrase: '你好世界' consists of the Chinese characters '你好' and '世界'.\n2. Translate each character individually: '你好' translates to 'Hello' in English, and '世界' translates to 'World' in English.\n3. Combine the translated characters to form the English phrase: '你好世界' translates to 'Hello World' in English.\n\nSo, the translation of '你好世界' to English is 'Hello World'.\nYou are an AI assistant. User will you give you a task. Your",
+      "output_cls": {
+        "language": "english",
+        "format": "list",
+        "zh_chars": 24,
+        "en_chars": 372
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "list",
+        "zh_chars": 0,
+        "en_chars": 17
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 4,
+        "en_chars": 31
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": false
+    },
+    {
+      "source": "en_list",
+      "target": "zh_logic",
+      "generation": "To determine what \"小白\" is, we need to follow the logical steps provided in the question:\n\n1. **Identify the given information:**\n   - All cats are animals.\n   - \"小白\" is a cat.\n\n2. **Apply the logical steps:**\n   - Since \"小白\" is a cat (given information).\n   - And all cats are animals (given information).\n\n3. **Conclusion:**\n   - Therefore, \"小白\" is an animal.\n\nSo, the final answer is: \"小白\" is an animal.",
+      "output_cls": {
+        "language": "english",
+        "format": "list",
+        "zh_chars": 10,
+        "en_chars": 257
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "list",
+        "zh_chars": 0,
+        "en_chars": 17
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 108,
+        "en_chars": 0
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "translate",
+      "target": "zh_math",
+      "generation": "A. 17\nB. 7\nC. 12\nD. 5\n答案:\nB\n\n下列关于细胞结构与功能的描述，哪一项是正确的？\nA. 细胞膜上的糖蛋白参与细胞间的信息传递\nB. 细胞核是细胞代谢与遗传活动的中心\nC. 线粒体是细胞内唯一产生ATP的场所\nD. 溶酶体能够合成多种水解酶，用于分解衰老或受损的细胞器\n答案:\nA\n\n下列关于物质性质的描述，哪一项是正确的？\nA.",
+      "output_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 116,
+        "en_chars": 14
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 4,
+        "en_chars": 31
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 56,
+        "en_chars": 6
+      },
+      "lang_follows_source": false,
+      "fmt_follows_target": false
+    },
+    {
+      "source": "translate",
+      "target": "en_math",
+      "generation": "A. 17\nB. 7\nC. 12\nD. 5\nAnswer:\nB\n\nWhich of the following statements about the relationship between the human body's internal environment and homeostasis is incorrect?\nA. The internal environment is the direct living environment for cells.\nB. The internal environment is the site for cells to carry out normal life activities and metabolism.\nC. The internal environment is the main site for cells to exchange substances with the external environment.\nD. The internal environment is the site for the occurrence of all life activities.\nAnswer:\nD\n\nWhich of the following statements about the relationship between",
+      "output_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 486
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 4,
+        "en_chars": 31
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "math_expression",
+        "zh_chars": 0,
+        "en_chars": 224
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": false
+    },
+    {
+      "source": "translate",
+      "target": "zh_prose",
+      "generation": "This is a description of the scenery in spring.\n春天的景色是美丽的，万物复苏，生机勃勃。春天的天空是湛蓝的，阳光明媚，微风拂面，让人感到舒适和愉悦。春天的花朵是五彩缤纷的，有桃花、樱花、杏花、梨花等，它们在春风中摇曳生姿，散发出阵阵清香。春天的草木是翠绿的，嫩芽初生，生机勃勃。春天的河流是清澈的，水波荡漾，鱼儿在水中嬉戏。春天的田野是金黄的，麦苗茁壮成长",
+      "output_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 133,
+        "en_chars": 38
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 4,
+        "en_chars": 31
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 172,
+        "en_chars": 0
+      },
+      "lang_follows_source": false,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "translate",
+      "target": "en_prose",
+      "generation": "A. The scenery of spring is beautiful, with flowers blooming and birds singing. The grass is green and the trees are lush, and the air is fresh and pleasant. The scenery of spring is like a painting, with a variety of colors and a sense of harmony. It is a season of renewal and growth, and a time to enjoy the beauty of nature.",
+      "output_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 256
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 4,
+        "en_chars": 31
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 305
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "translate",
+      "target": "code",
+      "generation": "The factorial of a non-negative integer n is the product of all positive integers less than or equal to n. For example, the factorial of 5 is 5*4*3*2*1 = 120. The factorial of 0 is defined to be 1.\n\nWrite a Python function named `factorial` that takes an integer `n` as input and returns the factorial of `n`. Your function should handle the case when `n` is negative by raising a `ValueError` with the message \"Factorial is not defined for negative numbers\".\n\nYour code should pass the following assertions:\n```python\n",
+      "output_cls": {
+        "language": "english",
+        "format": "code",
+        "zh_chars": 0,
+        "en_chars": 388
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 4,
+        "en_chars": 31
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "code",
+        "zh_chars": 0,
+        "en_chars": 43
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "translate",
+      "target": "zh_list",
+      "generation": "Any fruit is a fruit, but I'll give you three common fruits that are widely consumed around the world:\n\n1. **Apple**: Apples are one of the most popular fruits globally. They come in various colors, including red, green, and yellow, and are known for their crisp texture and sweet or tart flavor. Apples are versatile and can be eaten raw, cooked, or juiced.\n\n2. **Banana**: Bananas are a staple fruit in many diets due to their availability, affordability, and nutritional value. They are rich in potassium, vitamin C, and fiber. Bananas can be eaten fresh, used in",
+      "output_cls": {
+        "language": "english",
+        "format": "list",
+        "zh_chars": 0,
+        "en_chars": 435
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 4,
+        "en_chars": 31
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 170,
+        "en_chars": 3
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "translate",
+      "target": "en_list",
+      "generation": "Any fruit will do, but here are three common fruits: apples, bananas, and oranges.",
+      "output_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 64
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 4,
+        "en_chars": 31
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "list",
+        "zh_chars": 0,
+        "en_chars": 17
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": false
+    },
+    {
+      "source": "translate",
+      "target": "zh_logic",
+      "generation": "A. 动物\nB. 人\nC. 狗\nD. 鱼\n答案:\nA\n\n下列哪个词与“speak”属于同一类别？\nA. speak\nB. speak\nC. speak\nD. speak\n答案:\nA\n\n下列哪个词与“happy”最不相关？\nA. happy\nB. sad\nC. happy\nD. happy\n答案:\nB\n\n下列哪个词与'快乐'最不相关？\nA. happy\nB. sad\nC. happy\nD. happy\n答案:\nB\n\n下列哪个词与'快乐'",
+      "output_cls": {
+        "language": "mixed",
+        "format": "prose",
+        "zh_chars": 55,
+        "en_chars": 86
+      },
+      "src_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 4,
+        "en_chars": 31
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 108,
+        "en_chars": 0
+      },
+      "lang_follows_source": false,
+      "fmt_follows_target": false
+    },
+    {
+      "source": "zh_logic",
+      "target": "zh_math",
+      "generation": "这是一道简单的代数方程求解题。我们可以使用代数的基本原理来解题。\n首先，我们需要将方程中的常数项移到等号的另一边。这可以通过将等号两边同时减去5来实现。\nx + 5 - 5 = 12 - 5\nx = 7\n因此，x 的值为 7。\n解题过程如下：\n1. 将等号两边同时减去5，得到 x = 7。\n2. 因此，x 的值为 7。\n答案：x = 7。",
+      "output_cls": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 98,
+        "en_chars": 6
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 108,
+        "en_chars": 0
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 56,
+        "en_chars": 6
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "zh_logic",
+      "target": "en_math",
+      "generation": "这道题的意思是：如果 x + 5 = 12，那么 x 的值是多少？\n解题过程：\n首先，我们需要将等式两边都减去 5，以求出 x 的值。\nx + 5 - 5 = 12 - 5\nx = 7\n因此，x 的值是 7。\n答案：7",
+      "output_cls": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 46,
+        "en_chars": 6
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 108,
+        "en_chars": 0
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "math_expression",
+        "zh_chars": 0,
+        "en_chars": 224
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": false
+    },
+    {
+      "source": "zh_logic",
+      "target": "zh_prose",
+      "generation": "这两个月，春天的景色非常美丽。在春天，树木开始发芽，花朵开始绽放，草地开始变绿。天空也变得湛蓝，阳光明媚，微风拂面，让人感到非常舒适。春天的景色让人感到生机勃勃，充满希望和活力。",
+      "output_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 77,
+        "en_chars": 0
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 108,
+        "en_chars": 0
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 172,
+        "en_chars": 0
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "zh_logic",
+      "target": "en_prose",
+      "generation": "这两句诗描绘了春天的景色，春天是万物复苏的季节，万物都开始苏醒，生机勃勃。春天的天空是湛蓝的，阳光明媚，微风拂面，让人感到舒适和愉悦。春天的大地是绿油油的，花儿盛开，草木葱茏，鸟儿在枝头欢快地歌唱。春天的河流是清澈的，水波荡漾，鱼儿在水中自由自在地游动。春天的田野是金黄的，麦苗茁壮成长，农民们在田间忙碌着。春天的山林是翠绿的，树木",
+      "output_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 147,
+        "en_chars": 0
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 108,
+        "en_chars": 0
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 305
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "zh_logic",
+      "target": "code",
+      "generation": "这两行代码的目的是计算一个数的阶乘。第一行代码定义了一个函数 `factorial`，它接受一个参数 `n`，表示要计算的阶乘的数。第二行代码调用这个函数，传入参数 `5`，并打印出结果。\n\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)\n\nprint(factorial(5))\n```\n\n这段代码的输出结果是 `120`，因为 5 的阶乘等于 5 * 4 * 3 * ",
+      "output_cls": {
+        "language": "mixed",
+        "format": "code",
+        "zh_chars": 84,
+        "en_chars": 73
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 108,
+        "en_chars": 0
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "code",
+        "zh_chars": 0,
+        "en_chars": 43
+      },
+      "lang_follows_source": false,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "zh_logic",
+      "target": "zh_list",
+      "generation": "这两道题的答案是：苹果、香蕉、橙子。",
+      "output_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 14,
+        "en_chars": 0
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 108,
+        "en_chars": 0
+      },
+      "tgt_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 170,
+        "en_chars": 3
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": false
+    },
+    {
+      "source": "zh_logic",
+      "target": "en_list",
+      "generation": "这道题要求列出三种常见的水果。以下是三种常见的水果：\n1. 苹果\n2. 香蕉\n3. 橙子",
+      "output_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 30,
+        "en_chars": 0
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 108,
+        "en_chars": 0
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "list",
+        "zh_chars": 0,
+        "en_chars": 17
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    },
+    {
+      "source": "zh_logic",
+      "target": "translate",
+      "generation": "这是一道简单的翻译题，需要将中文句子“你好世界”翻译成英文。根据中文和英文的语法和词汇，可以得出正确的翻译是“Hello, World!”。因此，答案是“Hello, World!”。",
+      "output_cls": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 54,
+        "en_chars": 20
+      },
+      "src_baseline_cls": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 108,
+        "en_chars": 0
+      },
+      "tgt_baseline_cls": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 4,
+        "en_chars": 31
+      },
+      "lang_follows_source": true,
+      "fmt_follows_target": true
+    }
+  ],
+  "summary": {
+    "total_cross": 72,
+    "lang_follows_source": 59,
+    "lang_follows_source_pct": 0.8194444444444444,
+    "fmt_follows_target": 47,
+    "fmt_follows_target_pct": 0.6527777777777778,
+    "both_independent": 40,
+    "both_independent_pct": 0.5555555555555556,
+    "lang_failures": [
+      {
+        "src": "zh_math",
+        "tgt": "en_math",
+        "expected": "chinese",
+        "got": "english"
+      },
+      {
+        "src": "zh_math",
+        "tgt": "code",
+        "expected": "chinese",
+        "got": "mixed"
+      },
+      {
+        "src": "en_math",
+        "tgt": "zh_math",
+        "expected": "english",
+        "got": "chinese"
+      },
+      {
+        "src": "en_math",
+        "tgt": "zh_logic",
+        "expected": "english",
+        "got": "mixed"
+      },
+      {
+        "src": "zh_prose",
+        "tgt": "code",
+        "expected": "chinese",
+        "got": "mixed"
+      },
+      {
+        "src": "en_prose",
+        "tgt": "zh_logic",
+        "expected": "english",
+        "got": "mixed"
+      },
+      {
+        "src": "zh_list",
+        "tgt": "en_math",
+        "expected": "chinese",
+        "got": "english"
+      },
+      {
+        "src": "zh_list",
+        "tgt": "code",
+        "expected": "chinese",
+        "got": "mixed"
+      },
+      {
+        "src": "zh_list",
+        "tgt": "translate",
+        "expected": "chinese",
+        "got": "english"
+      },
+      {
+        "src": "translate",
+        "tgt": "zh_math",
+        "expected": "english",
+        "got": "chinese"
+      },
+      {
+        "src": "translate",
+        "tgt": "zh_prose",
+        "expected": "english",
+        "got": "chinese"
+      },
+      {
+        "src": "translate",
+        "tgt": "zh_logic",
+        "expected": "english",
+        "got": "mixed"
+      },
+      {
+        "src": "zh_logic",
+        "tgt": "code",
+        "expected": "chinese",
+        "got": "mixed"
+      }
+    ],
+    "fmt_failures": [
+      {
+        "src": "zh_math",
+        "tgt": "en_math",
+        "expected": "math_expression",
+        "got": "math_solution"
+      },
+      {
+        "src": "zh_math",
+        "tgt": "zh_logic",
+        "expected": "list",
+        "got": "prose"
+      },
+      {
+        "src": "en_math",
+        "tgt": "zh_prose",
+        "expected": "prose",
+        "got": "code"
+      },
+      {
+        "src": "en_math",
+        "tgt": "zh_logic",
+        "expected": "list",
+        "got": "prose"
+      },
+      {
+        "src": "zh_prose",
+        "tgt": "en_math",
+        "expected": "math_expression",
+        "got": "math_solution"
+      },
+      {
+        "src": "zh_prose",
+        "tgt": "en_list",
+        "expected": "list",
+        "got": "prose"
+      },
+      {
+        "src": "zh_prose",
+        "tgt": "zh_logic",
+        "expected": "list",
+        "got": "prose"
+      },
+      {
+        "src": "en_prose",
+        "tgt": "zh_math",
+        "expected": "math_solution",
+        "got": "prose"
+      },
+      {
+        "src": "en_prose",
+        "tgt": "en_math",
+        "expected": "math_expression",
+        "got": "prose"
+      },
+      {
+        "src": "en_prose",
+        "tgt": "en_list",
+        "expected": "list",
+        "got": "prose"
+      },
+      {
+        "src": "en_prose",
+        "tgt": "zh_logic",
+        "expected": "list",
+        "got": "prose"
+      },
+      {
+        "src": "code",
+        "tgt": "en_math",
+        "expected": "math_expression",
+        "got": "math_solution"
+      },
+      {
+        "src": "code",
+        "tgt": "zh_logic",
+        "expected": "list",
+        "got": "prose"
+      },
+      {
+        "src": "zh_list",
+        "tgt": "en_math",
+        "expected": "math_expression",
+        "got": "math_solution"
+      },
+      {
+        "src": "zh_list",
+        "tgt": "en_list",
+        "expected": "list",
+        "got": "prose"
+      },
+      {
+        "src": "zh_list",
+        "tgt": "zh_logic",
+        "expected": "list",
+        "got": "prose"
+      },
+      {
+        "src": "en_list",
+        "tgt": "en_math",
+        "expected": "math_expression",
+        "got": "math_solution"
+      },
+      {
+        "src": "en_list",
+        "tgt": "zh_list",
+        "expected": "list",
+        "got": "prose"
+      },
+      {
+        "src": "en_list",
+        "tgt": "translate",
+        "expected": "prose",
+        "got": "list"
+      },
+      {
+        "src": "translate",
+        "tgt": "zh_math",
+        "expected": "math_solution",
+        "got": "prose"
+      },
+      {
+        "src": "translate",
+        "tgt": "en_math",
+        "expected": "math_expression",
+        "got": "prose"
+      },
+      {
+        "src": "translate",
+        "tgt": "en_list",
+        "expected": "list",
+        "got": "prose"
+      },
+      {
+        "src": "translate",
+        "tgt": "zh_logic",
+        "expected": "list",
+        "got": "prose"
+      },
+      {
+        "src": "zh_logic",
+        "tgt": "en_math",
+        "expected": "math_expression",
+        "got": "math_solution"
+      },
+      {
+        "src": "zh_logic",
+        "tgt": "zh_list",
+        "expected": "list",
+        "got": "prose"
+      }
+    ],
+    "independence_ratio": 1.0385863685539127,
+    "p_lang": 0.8194444444444444,
+    "p_fmt": 0.6527777777777778,
+    "p_both_observed": 0.5555555555555556,
+    "p_both_expected": 0.5349151234567902
+  }
+}

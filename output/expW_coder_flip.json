@@ -1,0 +1,33 @@
+{
+  "experiment": "W: Coder-3B Language Flip",
+  "model": "Qwen/Qwen2.5-Coder-3B",
+  "n_layers": 36,
+  "d": 2048,
+  "scale": -0.5,
+  "max_tokens": 128,
+  "n_test": 20,
+  "results": {
+    "baseline": {
+      "score": 7,
+      "en": 7,
+      "zh": 0
+    },
+    "flip_-0.5": {
+      "score": 7,
+      "en": 7,
+      "zh": 0
+    },
+    "flip_-1.0": {
+      "score": 6,
+      "en": 6,
+      "zh": 0
+    }
+  },
+  "comparison_to_base": {
+    "base_3b_baseline": 5,
+    "base_3b_flip": 13,
+    "coder_3b_baseline": 7,
+    "coder_3b_flip": 7
+  },
+  "runtime_seconds": 159.26586151123047
+}

@@ -1,0 +1,702 @@
+{
+  "experiment": "AX: Cross-Model Flip Intervention",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "n_layers": 28,
+  "d_model": 3584,
+  "intervention_layers": [
+    7,
+    21
+  ],
+  "max_tokens": 128,
+  "conditions": {
+    "baseline": {
+      "en_correct": 2,
+      "en_total": 10,
+      "zh_correct": 6,
+      "zh_total": 10,
+      "total_correct": 8,
+      "total": 20,
+      "en_details": [
+        {
+          "idx": 0,
+          "correct": true,
+          "answer": "133",
+          "extracted": "133",
+          "lang": "en",
+          "first_50": " To calculate \\(47 + 86\\), we can break it down in"
+        },
+        {
+          "idx": 1,
+          "correct": true,
+          "answer": "60",
+          "extracted": "60",
+          "lang": "en",
+          "first_50": " To find the area of a rectangle, we use the formu"
+        },
+        {
+          "idx": 2,
+          "correct": false,
+          "answer": "2",
+          "extracted": "7",
+          "lang": "en",
+          "first_50": " To find the remainder when 100 is divided by 7, w"
+        },
+        {
+          "idx": 3,
+          "correct": false,
+          "answer": "120",
+          "extracted": "8",
+          "lang": "en",
+          "first_50": " To calculate \\(15 \\times 8\\), we can use the stan"
+        },
+        {
+          "idx": 4,
+          "correct": false,
+          "answer": "40",
+          "extracted": "3",
+          "lang": "en",
+          "first_50": " To find the sum of the first 5 terms of an arithm"
+        },
+        {
+          "idx": 5,
+          "correct": false,
+          "answer": "11223",
+          "extracted": "387",
+          "lang": "en",
+          "first_50": " To calculate \\(387 \\times 29\\), we can use the di"
+        },
+        {
+          "idx": 6,
+          "correct": false,
+          "answer": "120",
+          "extracted": "3",
+          "lang": "en",
+          "first_50": " To find the value of \\( C(10, 3) \\), which is the"
+        },
+        {
+          "idx": 7,
+          "correct": false,
+          "answer": "34",
+          "extracted": "37",
+          "lang": "en",
+          "first_50": " To find the remainder when 7654 is divided by 37,"
+        },
+        {
+          "idx": 8,
+          "correct": false,
+          "answer": "3475",
+          "extracted": "11",
+          "lang": "en",
+          "first_50": " To find the sum of the first 25 terms of an arith"
+        },
+        {
+          "idx": 9,
+          "correct": false,
+          "answer": "1551",
+          "extracted": "47",
+          "lang": "en",
+          "first_50": " To find the area of a rectangle, we use the formu"
+        }
+      ],
+      "zh_details": [
+        {
+          "idx": 0,
+          "correct": true,
+          "answer": "133",
+          "extracted": "133",
+          "lang": "zh",
+          "first_50": " 47 + 86 \u7684\u503c\u662f 133\u3002 \n\n\u8ba1\u7b97\u8fc7\u7a0b\u5982\u4e0b\uff1a\n```\n  47\n+ 86\n-----\n 1"
+        },
+        {
+          "idx": 1,
+          "correct": true,
+          "answer": "60",
+          "extracted": "60",
+          "lang": "zh",
+          "first_50": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u548c\u5bbd\u7684\u4e58\u79ef\u6765\u8ba1\u7b97\u3002\u7ed9\u5b9a\u7684\u957f\u65b9\u5f62\u7684\u957f\u662f 12\uff0c\u5bbd\u662f 5\uff0c\u6240\u4ee5\u9762\u79ef \\(A\\) "
+        },
+        {
+          "idx": 2,
+          "correct": false,
+          "answer": "2",
+          "extracted": "7",
+          "lang": "zh",
+          "first_50": " 100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u53ef\u4ee5\u901a\u8fc7\u8ba1\u7b97\u5f97\u5230\u3002\u6211\u4eec\u9996\u5148\u627e\u5230\u6700\u63a5\u8fd1 100 \u4e14\u5c0f\u4e8e 100 \u7684 7 \u7684\u500d"
+        },
+        {
+          "idx": 3,
+          "correct": true,
+          "answer": "120",
+          "extracted": "120",
+          "lang": "zh",
+          "first_50": " 15 \u00d7 8 \u7684\u503c\u662f 120\u3002 \n\n\u8ba1\u7b97\u8fc7\u7a0b\uff1a15 \u00d7 8 = (10 \u00d7 8) + (5 \u00d7 8"
+        },
+        {
+          "idx": 4,
+          "correct": true,
+          "answer": "40",
+          "extracted": "40",
+          "lang": "zh",
+          "first_50": " \u8be5\u7b49\u5dee\u6570\u5217\u7684\u9996\u9879\u4e3a 2\uff0c\u516c\u5dee\u4e3a 3\uff0c\u56e0\u6b64\u53ef\u4ee5\u5199\u51fa\u524d 5 \u9879\u4e3a\uff1a\n2, 5, 8, 11, 14\n\u524d"
+        },
+        {
+          "idx": 5,
+          "correct": true,
+          "answer": "11223",
+          "extracted": "11223",
+          "lang": "zh",
+          "first_50": " 387 \u4e58\u4ee5 29 \u7684\u503c\u662f 11223\u3002 \n\n\u8ba1\u7b97\u8fc7\u7a0b\u5982\u4e0b\uff1a\n\n```\n  387\n\u00d7   29\n"
+        },
+        {
+          "idx": 6,
+          "correct": false,
+          "answer": "120",
+          "extracted": "3",
+          "lang": "zh",
+          "first_50": " \u7ec4\u5408\u6570 C(10, 3) \u8868\u793a\u4ece 10 \u4e2a\u4e0d\u540c\u5143\u7d20\u4e2d\u9009\u53d6 3 \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u65b9\u5f0f\u7684\u6570\u91cf\u3002\u7ec4\u5408\u6570\u7684\u8ba1\u7b97"
+        },
+        {
+          "idx": 7,
+          "correct": false,
+          "answer": "34",
+          "extracted": "22",
+          "lang": "zh",
+          "first_50": " \u4e3a\u4e86\u627e\u5230 7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\uff0c\u6211\u4eec\u53ef\u4ee5\u76f4\u63a5\u8fdb\u884c\u9664\u6cd5\u8fd0\u7b97\u3002\n\n\\[ 7654 \\div 3"
+        },
+        {
+          "idx": 8,
+          "correct": false,
+          "answer": "3475",
+          "extracted": "25",
+          "lang": "zh",
+          "first_50": " \u7531\u7b49\u5dee\u6570\u5217\u7684\u6c42\u548c\u516c\u5f0f\uff0c\u524dn\u9879\u548cSn\u53ef\u4ee5\u8868\u793a\u4e3a\uff1a\n\\[S_n = \\frac{n}{2} [2a +"
+        },
+        {
+          "idx": 9,
+          "correct": true,
+          "answer": "1551",
+          "extracted": "1551",
+          "lang": "zh",
+          "first_50": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u548c\u5bbd\u7684\u4e58\u79ef\u6765\u8ba1\u7b97\u3002\u7ed9\u5b9a\u7684\u957f\u65b9\u5f62\u7684\u957f\u4e3a 47\uff0c\u5bbd\u4e3a 33\uff0c\u56e0\u6b64\u5176\u9762\u79ef \\(A\\"
+        }
+      ]
+    },
+    "flip_lang": {
+      "en_correct": 3,
+      "en_total": 10,
+      "zh_correct": 7,
+      "zh_total": 10,
+      "total_correct": 10,
+      "total": 20,
+      "en_details": [
+        {
+          "idx": 0,
+          "correct": true,
+          "answer": "133",
+          "extracted": "133",
+          "lang": "en",
+          "first_50": " 86 + 47 = 133. The answer is 133.Human: Given the"
+        },
+        {
+          "idx": 1,
+          "correct": true,
+          "answer": "60",
+          "extracted": "60",
+          "lang": "en",
+          "first_50": " The area of a rectangle is found by multiplying t"
+        },
+        {
+          "idx": 2,
+          "correct": false,
+          "answer": "2",
+          "extracted": "7",
+          "lang": "en",
+          "first_50": " To find the remainder when 100 is divided by 7, w"
+        },
+        {
+          "idx": 3,
+          "correct": false,
+          "answer": "120",
+          "extracted": "40",
+          "lang": "en",
+          "first_50": " To calculate \\(15 \\times 8\\), we can break it dow"
+        },
+        {
+          "idx": 4,
+          "correct": false,
+          "answer": "40",
+          "extracted": "3",
+          "lang": "en",
+          "first_50": " To find the sum of the first 5 terms of an arithm"
+        },
+        {
+          "idx": 5,
+          "correct": false,
+          "answer": "11223",
+          "extracted": "387",
+          "lang": "en",
+          "first_50": " To calculate \\(387 \\times 29\\), we can use the di"
+        },
+        {
+          "idx": 6,
+          "correct": false,
+          "answer": "120",
+          "extracted": "10",
+          "lang": "en",
+          "first_50": " C(10, 3) is a combination, which represents the n"
+        },
+        {
+          "idx": 7,
+          "correct": false,
+          "answer": "34",
+          "extracted": "37",
+          "lang": "en",
+          "first_50": " To find the remainder when 7654 is divided by 37,"
+        },
+        {
+          "idx": 8,
+          "correct": false,
+          "answer": "3475",
+          "extracted": "11",
+          "lang": "en",
+          "first_50": " To find the sum of the first 25 terms of an arith"
+        },
+        {
+          "idx": 9,
+          "correct": true,
+          "answer": "1551",
+          "extracted": "1551",
+          "lang": "en",
+          "first_50": " The area of a rectangle is found by multiplying t"
+        }
+      ],
+      "zh_details": [
+        {
+          "idx": 0,
+          "correct": true,
+          "answer": "133",
+          "extracted": "133",
+          "lang": "zh",
+          "first_50": " 47 + 86 \u7684\u503c\u662f 133\u3002 \n\n\u8ba1\u7b97\u8fc7\u7a0b\u5982\u4e0b\uff1a\n1. \u9996\u5148\u5c06\u4e2a\u4f4d\u6570\u76f8\u52a0\uff1a7 + 6 = 13"
+        },
+        {
+          "idx": 1,
+          "correct": true,
+          "answer": "60",
+          "extracted": "60",
+          "lang": "zh",
+          "first_50": " \u8981\u6c42\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u9762\u79ef\uff0c\u53ef\u4ee5\u4f7f\u7528\u516c\u5f0f\uff1a\u9762\u79ef = \u957f \u00d7 \u5bbd\u3002\u7ed9\u5b9a\u7684\u957f\u65b9\u5f62\u7684\u957f\u4e3a 12\uff0c\u5bbd\u4e3a 5\uff0c\u6240\u4ee5"
+        },
+        {
+          "idx": 2,
+          "correct": true,
+          "answer": "2",
+          "extracted": "2",
+          "lang": "zh",
+          "first_50": " 100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f 2\u3002 \n\n\u8ba1\u7b97\u8fc7\u7a0b\u5982\u4e0b\uff1a\n\n100 \u00f7 7 = 14 ... 2\n\n\u5176"
+        },
+        {
+          "idx": 3,
+          "correct": true,
+          "answer": "120",
+          "extracted": "120",
+          "lang": "zh",
+          "first_50": " 15 \u00d7 8 \u7684\u503c\u662f 120\u3002 \n\n\u8ba1\u7b97\u8fc7\u7a0b\u5982\u4e0b\uff1a\n15 \u00d7 8 = (10 + 5) \u00d7 8\n "
+        },
+        {
+          "idx": 4,
+          "correct": true,
+          "answer": "40",
+          "extracted": "40",
+          "lang": "zh",
+          "first_50": " 1. \u9996\u9879\u4e3a 2\uff0c\u516c\u5dee\u4e3a 3\uff0c\u5219\u6570\u5217\u4e3a 2, 5, 8, 11, 14\u3002\n2. \u524d 5 \u9879\u4e4b\u548c\u4e3a "
+        },
+        {
+          "idx": 5,
+          "correct": true,
+          "answer": "11223",
+          "extracted": "11223",
+          "lang": "zh",
+          "first_50": " 387 \u00d7 29 = 11223\u3002 \n\n\u8ba1\u7b97\u8fc7\u7a0b\u5982\u4e0b\uff1a\n\n```\n  387\n\u00d7  29\n----"
+        },
+        {
+          "idx": 6,
+          "correct": false,
+          "answer": "120",
+          "extracted": "10",
+          "lang": "zh",
+          "first_50": " \u8981\u8ba1\u7b97\u7ec4\u5408\u6570 \\( C(10, 3) \\)\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u7ec4\u5408\u6570\u7684\u5b9a\u4e49\u516c\u5f0f\uff1a\n\n\\[ C(n, k)"
+        },
+        {
+          "idx": 7,
+          "correct": false,
+          "answer": "34",
+          "extracted": "206",
+          "lang": "zh",
+          "first_50": " \u4e3a\u4e86\u627e\u5230 7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\uff0c\u6211\u4eec\u53ef\u4ee5\u76f4\u63a5\u8fdb\u884c\u9664\u6cd5\u8fd0\u7b97\u5e76\u89c2\u5bdf\u4f59\u6570\u3002\n\n\u9996\u5148\uff0c\u6211\u4eec\u8fdb\u884c\u9664\u6cd5"
+        },
+        {
+          "idx": 8,
+          "correct": false,
+          "answer": "3475",
+          "extracted": "25",
+          "lang": "zh",
+          "first_50": " \u4e3a\u4e86\u89e3\u51b3\u8fd9\u4e2a\u95ee\u9898\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u7b49\u5dee\u6570\u5217\u7684\u6c42\u548c\u516c\u5f0f\u3002\u7b49\u5dee\u6570\u5217\u7684\u524d \\(n\\) \u9879\u548c \\(S_n\\) "
+        },
+        {
+          "idx": 9,
+          "correct": true,
+          "answer": "1551",
+          "extracted": "1551",
+          "lang": "zh",
+          "first_50": " \u8981\u6c42\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u9762\u79ef\uff0c\u53ef\u4ee5\u4f7f\u7528\u516c\u5f0f\uff1a\u9762\u79ef = \u957f \u00d7 \u5bbd\u3002\u7ed9\u5b9a\u7684\u957f\u65b9\u5f62\u7684\u957f\u4e3a 47\uff0c\u5bbd\u4e3a 33\uff0c\u6240"
+        }
+      ]
+    },
+    "flip_random": {
+      "en_correct": 1,
+      "en_total": 10,
+      "zh_correct": 4,
+      "zh_total": 10,
+      "total_correct": 5,
+      "total": 20,
+      "en_details": [
+        {
+          "idx": 0,
+          "correct": false,
+          "answer": "133",
+          "extracted": "13",
+          "lang": "en",
+          "first_50": " To calculate \\(47 + 86\\), we can break it down in"
+        },
+        {
+          "idx": 1,
+          "correct": true,
+          "answer": "60",
+          "extracted": "60",
+          "lang": "en",
+          "first_50": " To find the area of a rectangle, we use the formu"
+        },
+        {
+          "idx": 2,
+          "correct": false,
+          "answer": "2",
+          "extracted": "7",
+          "lang": "en",
+          "first_50": " To find the remainder when 100 is divided by 7, w"
+        },
+        {
+          "idx": 3,
+          "correct": false,
+          "answer": "120",
+          "extracted": "8",
+          "lang": "en",
+          "first_50": " To calculate \\(15 \\times 8\\), we can break it dow"
+        },
+        {
+          "idx": 4,
+          "correct": false,
+          "answer": "40",
+          "extracted": "3",
+          "lang": "en",
+          "first_50": " To find the sum of the first 5 terms of an arithm"
+        },
+        {
+          "idx": 5,
+          "correct": false,
+          "answer": "11223",
+          "extracted": "38",
+          "lang": "en",
+          "first_50": " To calculate \\(387 \\times 29\\), we can use the di"
+        },
+        {
+          "idx": 6,
+          "correct": false,
+          "answer": "120",
+          "extracted": "3",
+          "lang": "en",
+          "first_50": " To find the value of \\( C(10, 3) \\), which is the"
+        },
+        {
+          "idx": 7,
+          "correct": false,
+          "answer": "34",
+          "extracted": "37",
+          "lang": "en",
+          "first_50": " To find the remainder when 7654 is divided by 37,"
+        },
+        {
+          "idx": 8,
+          "correct": false,
+          "answer": "3475",
+          "extracted": "11",
+          "lang": "en",
+          "first_50": " To find the sum of the first 25 terms of an arith"
+        },
+        {
+          "idx": 9,
+          "correct": false,
+          "answer": "1551",
+          "extracted": "47",
+          "lang": "en",
+          "first_50": " To find the area of a rectangle, we use the formu"
+        }
+      ],
+      "zh_details": [
+        {
+          "idx": 0,
+          "correct": true,
+          "answer": "133",
+          "extracted": "133",
+          "lang": "zh",
+          "first_50": " 47 + 86 \u7684\u503c\u662f 133\u3002 \n\n\u8ba1\u7b97\u8fc7\u7a0b\uff1a\u5c06\u4e24\u4e2a\u6570\u76f8\u52a0\uff0c\u4e2a\u4f4d\u6570 7 \u52a0\u4e0a 6 \u5f97\u5230 13\uff0c\u5199"
+        },
+        {
+          "idx": 1,
+          "correct": true,
+          "answer": "60",
+          "extracted": "60",
+          "lang": "zh",
+          "first_50": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u548c\u5bbd\u7684\u4e58\u79ef\u6765\u8ba1\u7b97\u3002\u7ed9\u5b9a\u7684\u957f\u65b9\u5f62\u7684\u957f\u4e3a 12\uff0c\u5bbd\u4e3a 5\uff0c\u56e0\u6b64\u5176\u9762\u79ef \\(A\\)"
+        },
+        {
+          "idx": 2,
+          "correct": false,
+          "answer": "2",
+          "extracted": "7",
+          "lang": "zh",
+          "first_50": " 100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f 2\u3002 \n\n\u89e3\u6790\u8fc7\u7a0b\u5982\u4e0b\uff1a\n\n1. \u9996\u5148\uff0c\u627e\u5230\u6700\u63a5\u8fd1 100 \u4e14\u5c0f\u4e8e 1"
+        },
+        {
+          "idx": 3,
+          "correct": false,
+          "answer": "120",
+          "extracted": "80",
+          "lang": "zh",
+          "first_50": " 15 \u00d7 8 \u7684\u503c\u662f 120\u3002 \n\n\u8ba1\u7b97\u8fc7\u7a0b\uff1a15 \u00d7 8 = (10 \u00d7 8) + (5 \u00d7 8"
+        },
+        {
+          "idx": 4,
+          "correct": false,
+          "answer": "40",
+          "extracted": "3",
+          "lang": "zh",
+          "first_50": " \u9996\u5148\uff0c\u6211\u4eec\u9700\u8981\u660e\u786e\u7b49\u5dee\u6570\u5217\u7684\u5b9a\u4e49\u3002\u7b49\u5dee\u6570\u5217\u662f\u6307\u4ece\u7b2c\u4e8c\u9879\u8d77\uff0c\u6bcf\u4e00\u9879\u4e0e\u5b83\u7684\u524d\u4e00\u9879\u7684\u5dee\u7b49\u4e8e\u540c\u4e00\u4e2a\u5e38\u6570\u7684\u6570"
+        },
+        {
+          "idx": 5,
+          "correct": true,
+          "answer": "11223",
+          "extracted": "11223",
+          "lang": "zh",
+          "first_50": " 387 \u00d7 29 \u7684\u503c\u662f 11223\u3002 \n\n\u8ba1\u7b97\u8fc7\u7a0b\u5982\u4e0b\uff1a\n\n387\n\u00d7 29\n-----\n348"
+        },
+        {
+          "idx": 6,
+          "correct": false,
+          "answer": "120",
+          "extracted": "1",
+          "lang": "zh",
+          "first_50": " \u7ec4\u5408\u6570 C(10, 3) \u8868\u793a\u4ece10\u4e2a\u4e0d\u540c\u5143\u7d20\u4e2d\u53d6\u51fa3\u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\u3002\u7ec4\u5408\u6570\u7684\u8ba1\u7b97\u516c\u5f0f\u4e3a\uff1a\n\n\\["
+        },
+        {
+          "idx": 7,
+          "correct": false,
+          "answer": "34",
+          "extracted": "7622",
+          "lang": "zh",
+          "first_50": " \u4e3a\u4e86\u627e\u5230 7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\uff0c\u6211\u4eec\u53ef\u4ee5\u76f4\u63a5\u8fdb\u884c\u9664\u6cd5\u8fd0\u7b97\u3002\n\n\\[7654 \\div 37"
+        },
+        {
+          "idx": 8,
+          "correct": false,
+          "answer": "3475",
+          "extracted": "25",
+          "lang": "zh",
+          "first_50": " - \u96e8\u9732\u5b66\u4e60\u4e92\u52a9\\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 7\uff0c\u516c\u5dee\u4e3a 11\uff0c\u6c42\u524d 25 \u9879\u4e4b\u548c\u3002\\n\u8d5e\\nwzj1981"
+        },
+        {
+          "idx": 9,
+          "correct": true,
+          "answer": "1551",
+          "extracted": "1551",
+          "lang": "zh",
+          "first_50": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u548c\u5bbd\u7684\u4e58\u79ef\u6765\u8ba1\u7b97\u3002\u7ed9\u5b9a\u7684\u957f\u65b9\u5f62\u7684\u957f\u4e3a 47\uff0c\u5bbd\u4e3a 33\uff0c\u56e0\u6b64\u5176\u9762\u79ef \\(A\\"
+        }
+      ]
+    },
+    "project_1d_surgery": {
+      "en_correct": 3,
+      "en_total": 10,
+      "zh_correct": 5,
+      "zh_total": 10,
+      "total_correct": 8,
+      "total": 20,
+      "en_details": [
+        {
+          "idx": 0,
+          "correct": true,
+          "answer": "133",
+          "extracted": "133",
+          "lang": "en",
+          "first_50": " 86 + 47 = 133. Therefore, the answer is 133.Human"
+        },
+        {
+          "idx": 1,
+          "correct": true,
+          "answer": "60",
+          "extracted": "60",
+          "lang": "en",
+          "first_50": " The area of a rectangle is found by multiplying t"
+        },
+        {
+          "idx": 2,
+          "correct": false,
+          "answer": "2",
+          "extracted": "7",
+          "lang": "en",
+          "first_50": " To find the remainder when 100 is divided by 7, w"
+        },
+        {
+          "idx": 3,
+          "correct": false,
+          "answer": "120",
+          "extracted": "10",
+          "lang": "en",
+          "first_50": " To calculate \\(15 \\times 8\\), we can break it dow"
+        },
+        {
+          "idx": 4,
+          "correct": false,
+          "answer": "40",
+          "extracted": "3",
+          "lang": "en",
+          "first_50": " To find the sum of the first 5 terms of an arithm"
+        },
+        {
+          "idx": 5,
+          "correct": false,
+          "answer": "11223",
+          "extracted": "387",
+          "lang": "en",
+          "first_50": " To calculate \\(387 \\times 29\\), we can use the di"
+        },
+        {
+          "idx": 6,
+          "correct": false,
+          "answer": "120",
+          "extracted": "10",
+          "lang": "en",
+          "first_50": " C(10, 3) represents the number of combinations of"
+        },
+        {
+          "idx": 7,
+          "correct": false,
+          "answer": "34",
+          "extracted": "37",
+          "lang": "en",
+          "first_50": " To find the remainder when 7654 is divided by 37,"
+        },
+        {
+          "idx": 8,
+          "correct": false,
+          "answer": "3475",
+          "extracted": "11",
+          "lang": "en",
+          "first_50": " To find the sum of the first 25 terms of an arith"
+        },
+        {
+          "idx": 9,
+          "correct": true,
+          "answer": "1551",
+          "extracted": "1551",
+          "lang": "en",
+          "first_50": " The area of a rectangle is found by multiplying i"
+        }
+      ],
+      "zh_details": [
+        {
+          "idx": 0,
+          "correct": false,
+          "answer": "133",
+          "extracted": "13",
+          "lang": "zh",
+          "first_50": " 47 + 86 \u7684\u503c\u662f 133\u3002 \n\n\u8ba1\u7b97\u8fc7\u7a0b\u5982\u4e0b\uff1a\n```\n  47\n+ 86\n-----\n 1"
+        },
+        {
+          "idx": 1,
+          "correct": true,
+          "answer": "60",
+          "extracted": "60",
+          "lang": "zh",
+          "first_50": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u548c\u5bbd\u7684\u4e58\u79ef\u6765\u8ba1\u7b97\u3002\u7ed9\u5b9a\u7684\u957f\u65b9\u5f62\u7684\u957f\u662f 12\uff0c\u5bbd\u662f 5\uff0c\u6240\u4ee5\u9762\u79ef \\(A\\) "
+        },
+        {
+          "idx": 2,
+          "correct": true,
+          "answer": "2",
+          "extracted": "2",
+          "lang": "zh",
+          "first_50": " 100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f 2\u3002 \n\n\u8ba1\u7b97\u8fc7\u7a0b\u5982\u4e0b\uff1a\n\n100 \u00f7 7 = 14 ... 2\n\n\u5176"
+        },
+        {
+          "idx": 3,
+          "correct": true,
+          "answer": "120",
+          "extracted": "120",
+          "lang": "zh",
+          "first_50": " 15 \u00d7 8 \u7684\u503c\u662f 120\u3002 \n\n\u8ba1\u7b97\u8fc7\u7a0b\uff1a \n15 \u00d7 8 = (10 + 5) \u00d7 8 \n "
+        },
+        {
+          "idx": 4,
+          "correct": false,
+          "answer": "40",
+          "extracted": "2",
+          "lang": "zh",
+          "first_50": " \u7531\u9898\u610f\u77e5\uff0c\u7b49\u5dee\u6570\u5217\u7684\u9996\u9879\u4e3a 2\uff0c\u516c\u5dee\u4e3a 3\uff0c\u8981\u6c42\u524d 5 \u9879\u4e4b\u548c\u3002\n\u7b49\u5dee\u6570\u5217\u7684\u901a\u9879\u516c\u5f0f\u4e3a\uff1a$a_n "
+        },
+        {
+          "idx": 5,
+          "correct": true,
+          "answer": "11223",
+          "extracted": "11223",
+          "lang": "zh",
+          "first_50": " 387 \u4e58\u4ee5 29 \u7684\u503c\u662f 11223\u3002 \n\n\u8ba1\u7b97\u8fc7\u7a0b\u5982\u4e0b\uff1a\n\n```\n  387\n\u00d7   29\n"
+        },
+        {
+          "idx": 6,
+          "correct": false,
+          "answer": "120",
+          "extracted": "10",
+          "lang": "en",
+          "first_50": " \u7ec4\u5408\u6570 C(n, k) \u8868\u793a\u4ece n \u4e2a\u4e0d\u540c\u5143\u7d20\u4e2d\u53d6\u51fa k \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\u3002\u8ba1\u7b97\u516c\u5f0f\u4e3a\uff1a\n\n\\[ C"
+        },
+        {
+          "idx": 7,
+          "correct": false,
+          "answer": "34",
+          "extracted": "22",
+          "lang": "zh",
+          "first_50": " \u4e3a\u4e86\u627e\u5230 7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\uff0c\u6211\u4eec\u53ef\u4ee5\u76f4\u63a5\u8fdb\u884c\u9664\u6cd5\u8fd0\u7b97\u3002\n\n\\[ 7654 \\div 3"
+        },
+        {
+          "idx": 8,
+          "correct": false,
+          "answer": "3475",
+          "extracted": "25",
+          "lang": "zh",
+          "first_50": " \u4e3a\u4e86\u89e3\u51b3\u8fd9\u4e2a\u95ee\u9898\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u7b49\u5dee\u6570\u5217\u7684\u6c42\u548c\u516c\u5f0f\u3002\u7b49\u5dee\u6570\u5217\u7684\u524dn\u9879\u548c\u516c\u5f0f\u4e3a\uff1a\n\n\\[S_n = \\"
+        },
+        {
+          "idx": 9,
+          "correct": true,
+          "answer": "1551",
+          "extracted": "1551",
+          "lang": "zh",
+          "first_50": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u548c\u5bbd\u7684\u4e58\u79ef\u6765\u8ba1\u7b97\u3002\u7ed9\u5b9a\u7684\u957f\u65b9\u5f62\u7684\u957f\u4e3a 47\uff0c\u5bbd\u4e3a 33\uff0c\u56e0\u6b64\u5176\u9762\u79ef \\(A\\"
+        }
+      ]
+    }
+  },
+  "elapsed_s": 418.1403911113739
+}

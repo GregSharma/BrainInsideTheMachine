@@ -1,0 +1,798 @@
+{
+  "conditions": [
+    {
+      "name": "baseline",
+      "scale": 1.0
+    },
+    {
+      "name": "flip_1d",
+      "scale": -1.0
+    },
+    {
+      "name": "kernel_10d",
+      "scale": 1.0
+    },
+    {
+      "name": "kernel_5d",
+      "scale": 1.0
+    }
+  ],
+  "summary": {
+    "baseline": {
+      "en_correct": 5,
+      "en_n": 10,
+      "zh_correct": 6,
+      "zh_n": 10,
+      "en_median_fat": 175,
+      "zh_median_fat": 40,
+      "zh_lang_preserved": 8
+    },
+    "flip_1d": {
+      "en_correct": 6,
+      "en_n": 10,
+      "zh_correct": 6,
+      "zh_n": 10,
+      "en_median_fat": 14,
+      "zh_median_fat": 18,
+      "zh_lang_preserved": 6
+    },
+    "kernel_10d": {
+      "en_correct": 4,
+      "en_n": 10,
+      "zh_correct": 5,
+      "zh_n": 10,
+      "en_median_fat": 22,
+      "zh_median_fat": 9,
+      "zh_lang_preserved": 9
+    },
+    "kernel_5d": {
+      "en_correct": 5,
+      "en_n": 10,
+      "zh_correct": 6,
+      "zh_n": 10,
+      "en_median_fat": 66,
+      "zh_median_fat": 10,
+      "zh_lang_preserved": 9
+    }
+  },
+  "raw": {
+    "baseline": [
+      {
+        "fat": 191,
+        "correct": true,
+        "output_lang": "en",
+        "prompt": "Calculate 47 + 86.",
+        "answer": "133",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": 55,
+        "correct": true,
+        "output_lang": "en",
+        "prompt": "A rectangle has length 12 and width 5. Find its area.",
+        "answer": "60",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": 175,
+        "correct": true,
+        "output_lang": "en",
+        "prompt": "What is the remainder when 100 is divided by 7?",
+        "answer": "2",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt": "Calculate 15 \u00d7 8.",
+        "answer": "120",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt": "An arithmetic sequence has first term 2 and common difference 3. Find the sum of the first 5 terms.",
+        "answer": "40",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt": "Calculate 387 \u00d7 29.",
+        "answer": "11223",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": 16,
+        "correct": true,
+        "output_lang": "en",
+        "prompt": "Find the value of C(10, 3).",
+        "answer": "120",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt": "What is the remainder when 7654 is divided by 37?",
+        "answer": "34",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt": "An arithmetic sequence has first term 7 and common difference 11. Find the sum of the first 25 terms.",
+        "answer": "3475",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": 241,
+        "correct": true,
+        "output_lang": "en",
+        "prompt": "A rectangle has length 47 and width 33. Find its area.",
+        "answer": "1551",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": 12,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt": "\u8ba1\u7b97 47 + 86 \u7684\u503c\u3002",
+        "answer": "133",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": 65,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt": "\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 12\uff0c\u5bbd\u4e3a 5\uff0c\u6c42\u5176\u9762\u79ef\u3002",
+        "answer": "60",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt": "100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f",
+        "answer": "2",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": 11,
+        "correct": true,
+        "output_lang": "other",
+        "prompt": "\u8ba1\u7b97 15 \u00d7 8 \u7684\u503c\u3002",
+        "answer": "120",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt": "\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 2\uff0c\u516c\u5dee\u4e3a 3\uff0c\u6c42\u524d 5 \u9879\u4e4b\u548c\u3002",
+        "answer": "40",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": 15,
+        "correct": true,
+        "output_lang": "other",
+        "prompt": "\u8ba1\u7b97 387 \u00d7 29 \u7684\u503c\u3002",
+        "answer": "11223",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": 192,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt": "\u6c42\u7ec4\u5408\u6570 C(10, 3) \u7684\u503c\u3002",
+        "answer": "120",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt": "7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f",
+        "answer": "34",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt": "\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 7\uff0c\u516c\u5dee\u4e3a 11\uff0c\u6c42\u524d 25 \u9879\u4e4b\u548c\u3002",
+        "answer": "3475",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": 72,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt": "\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 47\uff0c\u5bbd\u4e3a 33\uff0c\u6c42\u5176\u9762\u79ef\u3002",
+        "answer": "1551",
+        "prompt_lang": "zh"
+      }
+    ],
+    "flip_1d": [
+      {
+        "fat": 12,
+        "correct": true,
+        "output_lang": "en",
+        "prompt": "Calculate 47 + 86.",
+        "answer": "133",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": 28,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt": "A rectangle has length 12 and width 5. Find its area.",
+        "answer": "60",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": 14,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt": "What is the remainder when 100 is divided by 7?",
+        "answer": "2",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": 11,
+        "correct": true,
+        "output_lang": "other",
+        "prompt": "Calculate 15 \u00d7 8.",
+        "answer": "120",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt": "An arithmetic sequence has first term 2 and common difference 3. Find the sum of the first 5 terms.",
+        "answer": "40",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": 15,
+        "correct": true,
+        "output_lang": "other",
+        "prompt": "Calculate 387 \u00d7 29.",
+        "answer": "11223",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": 54,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt": "Find the value of C(10, 3).",
+        "answer": "120",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt": "What is the remainder when 7654 is divided by 37?",
+        "answer": "34",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt": "An arithmetic sequence has first term 7 and common difference 11. Find the sum of the first 25 terms.",
+        "answer": "3475",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt": "A rectangle has length 47 and width 33. Find its area.",
+        "answer": "1551",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": 12,
+        "correct": true,
+        "output_lang": "other",
+        "prompt": "\u8ba1\u7b97 47 + 86 \u7684\u503c\u3002",
+        "answer": "133",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": 46,
+        "correct": true,
+        "output_lang": "en",
+        "prompt": "\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 12\uff0c\u5bbd\u4e3a 5\uff0c\u6c42\u5176\u9762\u79ef\u3002",
+        "answer": "60",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt": "100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f",
+        "answer": "2",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": 11,
+        "correct": true,
+        "output_lang": "en",
+        "prompt": "\u8ba1\u7b97 15 \u00d7 8 \u7684\u503c\u3002",
+        "answer": "120",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt": "\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 2\uff0c\u516c\u5dee\u4e3a 3\uff0c\u6c42\u524d 5 \u9879\u4e4b\u548c\u3002",
+        "answer": "40",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": 15,
+        "correct": true,
+        "output_lang": "other",
+        "prompt": "\u8ba1\u7b97 387 \u00d7 29 \u7684\u503c\u3002",
+        "answer": "11223",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": 21,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt": "\u6c42\u7ec4\u5408\u6570 C(10, 3) \u7684\u503c\u3002",
+        "answer": "120",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt": "7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f",
+        "answer": "34",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt": "\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 7\uff0c\u516c\u5dee\u4e3a 11\uff0c\u6c42\u524d 25 \u9879\u4e4b\u548c\u3002",
+        "answer": "3475",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": 35,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt": "\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 47\uff0c\u5bbd\u4e3a 33\uff0c\u6c42\u5176\u9762\u79ef\u3002",
+        "answer": "1551",
+        "prompt_lang": "zh"
+      }
+    ],
+    "kernel_10d": [
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "other",
+        "prompt": "Calculate 47 + 86.",
+        "answer": "133",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": 13,
+        "correct": true,
+        "output_lang": "en",
+        "prompt": "A rectangle has length 12 and width 5. Find its area.",
+        "answer": "60",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": 11,
+        "correct": true,
+        "output_lang": "other",
+        "prompt": "What is the remainder when 100 is divided by 7?",
+        "answer": "2",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": 52,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt": "Calculate 15 \u00d7 8.",
+        "answer": "120",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt": "An arithmetic sequence has first term 2 and common difference 3. Find the sum of the first 5 terms.",
+        "answer": "40",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt": "Calculate 387 \u00d7 29.",
+        "answer": "11223",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt": "Find the value of C(10, 3).",
+        "answer": "120",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt": "What is the remainder when 7654 is divided by 37?",
+        "answer": "34",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt": "An arithmetic sequence has first term 7 and common difference 11. Find the sum of the first 25 terms.",
+        "answer": "3475",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": 32,
+        "correct": true,
+        "output_lang": "en",
+        "prompt": "A rectangle has length 47 and width 33. Find its area.",
+        "answer": "1551",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": 7,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt": "\u8ba1\u7b97 47 + 86 \u7684\u503c\u3002",
+        "answer": "133",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": 8,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt": "\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 12\uff0c\u5bbd\u4e3a 5\uff0c\u6c42\u5176\u9762\u79ef\u3002",
+        "answer": "60",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": 15,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt": "100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f",
+        "answer": "2",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": 10,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt": "\u8ba1\u7b97 15 \u00d7 8 \u7684\u503c\u3002",
+        "answer": "120",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt": "\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 2\uff0c\u516c\u5dee\u4e3a 3\uff0c\u6c42\u524d 5 \u9879\u4e4b\u548c\u3002",
+        "answer": "40",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": 9,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt": "\u8ba1\u7b97 387 \u00d7 29 \u7684\u503c\u3002",
+        "answer": "11223",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt": "\u6c42\u7ec4\u5408\u6570 C(10, 3) \u7684\u503c\u3002",
+        "answer": "120",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "other",
+        "prompt": "7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f",
+        "answer": "34",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt": "\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 7\uff0c\u516c\u5dee\u4e3a 11\uff0c\u6c42\u524d 25 \u9879\u4e4b\u548c\u3002",
+        "answer": "3475",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt": "\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 47\uff0c\u5bbd\u4e3a 33\uff0c\u6c42\u5176\u9762\u79ef\u3002",
+        "answer": "1551",
+        "prompt_lang": "zh"
+      }
+    ],
+    "kernel_5d": [
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt": "Calculate 47 + 86.",
+        "answer": "133",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": 8,
+        "correct": true,
+        "output_lang": "en",
+        "prompt": "A rectangle has length 12 and width 5. Find its area.",
+        "answer": "60",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": 66,
+        "correct": true,
+        "output_lang": "en",
+        "prompt": "What is the remainder when 100 is divided by 7?",
+        "answer": "2",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt": "Calculate 15 \u00d7 8.",
+        "answer": "120",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt": "An arithmetic sequence has first term 2 and common difference 3. Find the sum of the first 5 terms.",
+        "answer": "40",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": 15,
+        "correct": true,
+        "output_lang": "other",
+        "prompt": "Calculate 387 \u00d7 29.",
+        "answer": "11223",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": 98,
+        "correct": true,
+        "output_lang": "en",
+        "prompt": "Find the value of C(10, 3).",
+        "answer": "120",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt": "What is the remainder when 7654 is divided by 37?",
+        "answer": "34",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt": "An arithmetic sequence has first term 7 and common difference 11. Find the sum of the first 25 terms.",
+        "answer": "3475",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": 139,
+        "correct": true,
+        "output_lang": "en",
+        "prompt": "A rectangle has length 47 and width 33. Find its area.",
+        "answer": "1551",
+        "prompt_lang": "en"
+      },
+      {
+        "fat": 12,
+        "correct": true,
+        "output_lang": "other",
+        "prompt": "\u8ba1\u7b97 47 + 86 \u7684\u503c\u3002",
+        "answer": "133",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": 10,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt": "\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 12\uff0c\u5bbd\u4e3a 5\uff0c\u6c42\u5176\u9762\u79ef\u3002",
+        "answer": "60",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt": "100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f",
+        "answer": "2",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": 10,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt": "\u8ba1\u7b97 15 \u00d7 8 \u7684\u503c\u3002",
+        "answer": "120",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt": "\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 2\uff0c\u516c\u5dee\u4e3a 3\uff0c\u6c42\u524d 5 \u9879\u4e4b\u548c\u3002",
+        "answer": "40",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": 15,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt": "\u8ba1\u7b97 387 \u00d7 29 \u7684\u503c\u3002",
+        "answer": "11223",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": 4,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt": "\u6c42\u7ec4\u5408\u6570 C(10, 3) \u7684\u503c\u3002",
+        "answer": "120",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt": "7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f",
+        "answer": "34",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt": "\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 7\uff0c\u516c\u5dee\u4e3a 11\uff0c\u6c42\u524d 25 \u9879\u4e4b\u548c\u3002",
+        "answer": "3475",
+        "prompt_lang": "zh"
+      },
+      {
+        "fat": 11,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt": "\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 47\uff0c\u5bbd\u4e3a 33\uff0c\u6c42\u5176\u9762\u79ef\u3002",
+        "answer": "1551",
+        "prompt_lang": "zh"
+      }
+    ]
+  },
+  "raw_outputs": {
+    "baseline": [
+      " To calculate \\(47 + 86\\), we can use the standard addition method. Here are the steps:\n\n1. **Align the numbers by their place values:**\n   \\[\n   \\begin{array}{c@{}c@{}c}\n     & 4 & 7 \\\\\n   + & 8 & 6 ",
+      " The area of a rectangle is given by the formula:\n\nArea = length \u00d7 width\n\nIn this case, the length is 12 and the width is 5. So, the area of the rectangle is:\n\nArea = 12 \u00d7 5 = 60 square units",
+      " To find the remainder when 100 is divided by 7, we can use the division algorithm, which states that for any integers \\(a\\) and \\(b\\) (with \\(b > 0\\)), there exist unique integers \\(q\\) (the quotient",
+      " To calculate \\(15 \\times 8\\), we can use the standard multiplication method. Here are the steps:\n\n1. Write down the numbers to be multiplied:\n   \\[\n   \\begin{array}{c}\n     15 \\\\\n   \\times 8 \\\\\n   \\e",
+      " To find the sum of the first 5 terms of an arithmetic sequence with the first term \\(a = 2\\) and common difference \\(d = 3\\), we can use the formula for the sum of the first \\(n\\) terms of an arithme",
+      " To calculate \\(387 \\times 29\\), we can use the standard multiplication algorithm. Here are the steps:\n\n1. **Multiply 387 by 9 (the ones digit of 29):**\n   \\[\n   387 \\times 9 = 3483\n   \\]\n   Write dow",
+      " The value of C(10, 3) is 120.",
+      " To find the remainder when 7654 is divided by 37, we can use the modulus operation. The modulus operation (%) gives the remainder of a division of two numbers. Here's the step-by-step process:\n\n1. Pe",
+      " To find the sum of the first 25 terms of an arithmetic sequence with the first term \\(a = 7\\) and common difference \\(d = 11\\), we can use the formula for the sum of the first \\(n\\) terms of an arith",
+      " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven the length is 47 and the width is 33, we substitute these values into the formula:\n\n",
+      " 47 + 86 = 133\n\n\u597d\u7684\uff0c\u73b0\u5728\u8bf7\u4f60\u8ba1\u7b97 133 - 56 \u7684\u503c\u3002 133 - 56 = 77\n\n\u597d\u7684\uff0c\u73b0\u5728\u8bf7\u4f60\u8ba1\u7b97 77 * 2 \u7684\u503c\u3002 77 * 2 = 154\n\n\u597d\u7684\uff0c\u73b0\u5728\u8bf7\u4f60\u8ba1\u7b97 154 / 7 \u7684\u503c\u3002 154 / 7 = 22\n\n\u597d\u7684\uff0c\u73b0\u5728\u8bf7\u4f60\u8ba1\u7b97 22 + 3 \u7684\u503c\u3002 22 + 3 = 25\n\n\u597d\u7684\uff0c\u73b0\u5728\u8bf7\u4f60\u8ba1\u7b97 25 * 4 \u7684\u503c\u3002 25 * 4 = 100\n\n\u597d\u7684\uff0c\u73b0\u5728\u8bf7",
+      " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 12\uff0c\u5bbd\u4e3a 5\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = \\text{\u957f} \\times \\text{\u5bbd} = 12 \\times 5 = 60 \\]\n\n\u6240\u4ee5\uff0c\u8fd9\u4e2a\u957f\u65b9\u5f62\u7684\u9762\u79ef\u662f 60 \u5e73\u65b9\u5355\u4f4d\u3002",
+      " 100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f 6\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u7b97\u4e00\u4e0b 1000 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 1000 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f 6\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u7b97\u4e00\u4e0b 10000 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 10000 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f 6\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u7b97\u4e00\u4e0b 100000 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 100000 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f 6\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u7b97\u4e00\u4e0b 1000000 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 100",
+      " 15 \u00d7 8 = 120\n\n\u8ba1\u7b97 15 \u00d7 8 \u7684\u503c\u3002 15 \u00d7 8 = 120\n\n\u8ba1\u7b97 15 \u00d7 8 \u7684\u503c\u3002 15 \u00d7 8 = 120\n\n\u8ba1\u7b97 15 \u00d7 8 \u7684\u503c\u3002 15 \u00d7 8 = 120\n\n\u8ba1\u7b97 15 \u00d7 8 \u7684\u503c\u3002 15 \u00d7 8 = 120\n\n\u8ba1\u7b97 15 \u00d7 8 \u7684\u503c\u3002 15 \u00d7 8 = 120\n\n\u8ba1\u7b97 15 \u00d7 8 \u7684\u503c\u3002 15 \u00d7 8 = 120\n\n\u8ba1\u7b97 15 \u00d7 8 \u7684\u503c\u3002 15 ",
+      " 10\n\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 2\uff0c\u516c\u5dee\u4e3a 3\uff0c\u6c42\u524d 5 \u9879\u4e4b\u548c\u3002 10\n\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 2\uff0c\u516c\u5dee\u4e3a 3\uff0c\u6c42\u524d 5 \u9879\u4e4b\u548c\u3002 10\n\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 2\uff0c\u516c\u5dee\u4e3a 3\uff0c\u6c42\u524d 5 \u9879\u4e4b\u548c\u3002 10\n\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 2\uff0c\u516c\u5dee\u4e3a 3\uff0c\u6c42\u524d 5 \u9879\u4e4b\u548c\u3002 10\n\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 2\uff0c\u516c\u5dee\u4e3a 3\uff0c\u6c42\u524d 5 \u9879\u4e4b\u548c\u3002 10\n\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 2\uff0c\u516c\u5dee\u4e3a 3\uff0c\u6c42\u524d 5 \u9879\u4e4b\u548c\u3002 10\n\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 2\uff0c\u516c\u5dee\u4e3a 3",
+      " 387 \u00d7 29 = 11223\n\n\u8ba1\u7b97 387 \u00d7 29 \u7684\u503c\u3002 387 \u00d7 29 = 11223\n\n\u8ba1\u7b97 387 \u00d7 29 \u7684\u503c\u3002 387 \u00d7 29 = 11223\n\n\u8ba1\u7b97 387 \u00d7 29 \u7684\u503c\u3002 387 \u00d7 29 = 11223\n\n\u8ba1\u7b97 387 \u00d7 29 \u7684\u503c\u3002 387 \u00d7 29 = 11223\n\n\u8ba1\u7b97 387 \u00d7 29 \u7684\u503c\u3002 387 \u00d7 29 = 11223\n\n\u8ba1\u7b97 387 \u00d7 29",
+      " \u7ec4\u5408\u6570 C(n, k) \u8868\u793a\u4ece n \u4e2a\u4e0d\u540c\u5143\u7d20\u4e2d\u9009\u53d6 k \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\uff0c\u5176\u8ba1\u7b97\u516c\u5f0f\u4e3a\uff1a\n\nC(n, k) = n! / (k! * (n - k)!)\n\n\u5176\u4e2d\uff0cn! \u8868\u793a n \u7684\u9636\u4e58\uff0c\u5373 n * (n - 1) * (n - 2) * ... * 1\u3002\n\n\u5bf9\u4e8e C(10, 3)\uff0c\u6211\u4eec\u53ef\u4ee5\u4ee3\u5165\u516c\u5f0f\u8ba1\u7b97\uff1a\n\nC(10, 3) = 10! / (3! * (10 - 3)!)\n          =",
+      " 7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\u662f 10\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u518d\u7b97\u4e00\u4e0b 7654 \u4e58\u4ee5 37 \u7684\u7ed3\u679c\u662f\u591a\u5c11\uff1f 7654 \u4e58\u4ee5 37 \u7684\u7ed3\u679c\u662f 283218\u3002\n\n\u73b0\u5728\u8bf7\u4f60\u628a 283218 \u9664\u4ee5 37 \u7684\u4f59\u6570\u544a\u8bc9\u6211\u3002 283218 \u9664\u4ee5 37 \u7684\u4f59\u6570\u662f 10\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u518d\u7b97\u4e00\u4e0b 283218 \u4e58\u4ee5 37 \u7684\u7ed3\u679c\u662f\u591a\u5c11\uff1f 283218 \u4e58\u4ee5 37 \u7684\u7ed3\u679c\u662f 10500966\u3002\n\n\u73b0\u5728\u8bf7\u4f60\u628a 105009",
+      " 1250\n\n\u5728\u300a\u7ea2\u697c\u68a6\u300b\u4e2d\uff0c\u8d3e\u5b9d\u7389\u7684\u8868\u59b9\u662f\uff08 \uff09 \u8d3e\u5143\u6625\n\n\u300a\u7ea2\u697c\u68a6\u300b\u4e2d\uff0c\u8d3e\u5b9d\u7389\u7684\u8868\u59b9\u662f\uff08 \uff09 \u8d3e\u5143\u6625\n\n\u300a\u7ea2\u697c\u68a6\u300b\u4e2d\uff0c\u8d3e\u5b9d\u7389\u7684\u8868\u59b9\u662f\uff08 \uff09 \u8d3e\u5143\u6625\n\n\u300a\u7ea2\u697c\u68a6\u300b\u4e2d\uff0c\u8d3e\u5b9d\u7389\u7684\u8868\u59b9\u662f\uff08 \uff09 \u8d3e\u5143\u6625\n\n\u300a\u7ea2\u697c\u68a6\u300b\u4e2d\uff0c\u8d3e\u5b9d\u7389\u7684\u8868\u59b9\u662f\uff08 \uff09 \u8d3e\u5143\u6625\n\n\u300a\u7ea2\u697c\u68a6\u300b\u4e2d\uff0c\u8d3e\u5b9d\u7389\u7684\u8868\u59b9\u662f\uff08 \uff09 \u8d3e\u5143\u6625",
+      " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 47\uff0c\u5bbd\u4e3a 33\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = 47 \\times 33 \\]\n\n\u8fdb\u884c\u4e58\u6cd5\u8fd0\u7b97\uff1a\n\n\\[ 47 \\times 33 = 1551 \\]\n\n\u6240\u4ee5\uff0c\u8fd9\u4e2a\u957f\u65b9\u5f62\u7684\u9762\u79ef\u662f 1551 \u5e73\u65b9\u5355\u4f4d\u3002"
+    ],
+    "flip_1d": [
+      " 47 + 86 = 133\n\n\u597d\u7684\uff0c\u73b0\u5728\u8bf7\u4f60\u5c06133\u9664\u4ee53\u3002 133 \u00f7 3 = 44\u4f591\n\n\u73b0\u5728\u8bf7\u4f60\u5c0644\u4e58\u4ee52\u3002 44 \u00d7 2 = 88\n\n\u73b0\u5728\u8bf7\u4f60\u5c0688\u52a0\u4e0a1\u3002 88 + 1 = 89\n\n\u73b0\u5728\u8bf7\u4f60\u5c0689\u9664\u4ee52\u3002 89 \u00f7 2 = 44\u4f591\n\n\u73b0\u5728\u8bf7\u4f60\u5c0644\u4e58\u4ee52\u3002 44 \u00d7 2 = 88\n\n\u73b0\u5728\u8bf7\u4f60\u5c0688\u52a0\u4e0a1. 88 + 1 = 89\n\n\u73b0\u5728\u8bf7\u4f60 will you please calc",
+      " The areaA of\u4e00\u4e2a\u77e9\u5f62\u53ef\u4ee5\u8ba1\u7b97\u4e3a\u957f\u4e58\u4ee5\u5bbd\uff0c\u5373A = 12 * 5 = 60\u3002\u56e0\u6b64\uff0c\u8be5\u77e9\u5f62\u7684\u9762\u79ef\u4e3a60\u5e73\u65b9\u5355\u4f4d\u3002",
+      " 100 \u00f7 7 = 14\u4f592\uff0c\u6240\u4ee5100\u9664\u4ee57\u7684\u4f59\u6570\u662f2\u3002",
+      " 15 \u00d7 8 = 120\n\n\u8bf7\u8ba1\u7b97 15 \u00d7 8\u3002 15 \u00d7 8 = 120\n\n\u8ba1\u7b97 15 \u00d7 8\u3002 15 \u00d7 8 = 120\n\nCalculate 15 \u00d7 8. 15 \u00d7 8 = 120",
+      " \u8be6\u7ec6\u56de\u7b54\u4e0a\u9762\u7684\u95ee\u9898\u3002\n\u56de\u7b54\u4e0a\u9762\u7684\u95ee\u9898\uff0c\u7ed9\u51fa\u5177\u4f53\u7684\u63a8\u7406\u903b\u8f91\u3002\nTo find the sum of the first 5\u9879 of an arithmetic\u5e8f\u5217 with the first\u9879\u4e3a2\u548c\u516c\u5dee\u4e3a3\uff0c we can use the formula for the sum of an arithmetic\u5e8f\u5217:\n\n\\[ S_n = \\frac{n}{2} \\times (a_1 + a_n",
+      " 387 \u00d7 29 = 11223\n\n\u8ba1\u7b97 387 \u00d7 29\u3002 387 \u00d7 29 = 11223\n\n\u8ba1\u7b97 387 \u00d7 29\u3002 387 \u00d7 29 = 11223\n\n\u8ba1\u7b97 387 \u00d7 29\u3002 387 \u00d7 29 = 11223\n\n\u8ba1\u7b97 387 \u00d7 29\u3002 387 \u00d7 29 = 11223\n\n\u8ba1\u7b97 387 \u00d7 29\u3002 387 \u00d7 29 = 11223",
+      " C(10, 3)\u8868\u793a\u4ece10\u4e2a\u5143\u7d20\u4e2d\u9009\u62e93\u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\uff0c\u5373C(10, 3) = 10! / (3! * (10-3)!) = 120\u3002",
+      " \u8be6\u7ec6\u56de\u7b54\u4e0a\u9762\u7684\u95ee\u9898\u3002\nTo find the remainder\uff0c we can use the modulo operation. The modulo operation finds the remainder of a\u9664\u4ee5b\u7684\u8fd0\u7b97\u3002 In this case, we want to find the remainder when 7654\u9664\u4ee537\u3002 We can use the modul",
+      " \u8981\u89e3\u51b3\u8fd9\u4e2a\u95ee\u9898\uff0c\u6211\u4eec\u9700\u8981\u4f7f\u7528\u7b49\u5dee\u6570\u5217\u7684\u6c42\u548c\u516c\u5f0f\u3002\u7b49\u5dee\u6570\u5217\u7684\u6c42\u548c\u516c\u5f0f\u4e3a\uff1a\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\n\n\u5176\u4e2d\uff0c\\( S_n \\) \u662f\u524d \\( n \\) \u9879\u7684\u548c\uff0c\\( a \\) \u662f\u9996\u9879\uff0c\\( d \\) \u662f\u516c\u5dee\uff0c\\( n \\) \u662f\u9879\u6570\u3002\n\n\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u9996\u9879 \\( a = 7 \\)\uff0c\u516c\u5dee \\( d = 11 \\)\uff0c\u5e76\u4e14\u6211\u4eec\u9700\u8981\u6c42\u524d",
+      " \u9898\u76ee\u7ffb\u8bd1\uff1a\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u5ea6\u4e3a47\uff0c\u5bbd\u5ea6\u4e3a33\u3002\u6c42\u5176\u9762\u79ef\u3002",
+      " 47 + 86 = 133\n\n\u8ba1\u7b97 47 + 86 \u7684\u503c\u3002 47 + 86 = 133\n\n\u8ba1\u7b97 47 + 86 \u7684\u503c\u3002 47 + 86 = 133\n\n\u8ba1\u7b97 47 + 86 \u7684\u503c\u3002 47 + 86 = 133\n\n\u8ba1\u7b97 47 + 86 \u7684\u503c\u3002 47 + 86 = 133",
+      " The area of a rectangle is calculated by multiplying\u5176\u957f\u5ea6\u548c\u5bbd\u5ea6\u3002 In this case, the length is 12 and the width is 5. Therefore, the area is 12 * 5 = 60.",
+      " 100\u9664\u4ee57\u7684\u4f59\u6570\u662f6\u3002",
+      " 15 \u00d7 8 = 120\n\n\u8bf7\u89e3\u91ca\u4e00\u4e0b\u201c\u4e09\u4e0d\u201d\u539f\u5219\u3002 \u201c\u4e09\u4e0d\u201d\u539f\u5219\u662f\u6307\uff1a\u4e0d\u63a5\u53d7\u3001\u4e0d\u5236\u9020\u3001\u4e0d\u4f20\u9012\u3002\u4e0d\u63a5\u53d7\u662f\u6307\u4e0d\u63a5\u6536\u4e0d\u5408\u683c\u54c1\uff1b\u4e0d\u5236\u9020\u662f\u6307\u4e0d\u751f\u4ea7\u4e0d\u5408\u683c\u54c1\uff1b\u4e0d\u4f20\u9012\u662f\u6307\u4e0d\u4f20\u9012\u4e0d\u5408\u683c\u54c1\u3002 This principle is called the \"three no's\" principle, which means: not accepting, not manufacturing, and not tra",
+      " 10\n\n\u5728\u300a\u7ea2\u697c\u68a6\u300b\u4e2d\uff0c\u8d3e\u5b9d\u7389\u7684\u8868\u59b9\u6797\u9edb\u7389\uff0c\u5979\u7684\u6027\u683c\u7279\u70b9\u662f\u4ec0\u4e48\uff1f \u6797\u9edb\u7389\u662f\u4e00\u4e2a\u806a\u660e\u3001\u654f\u611f\u3001\u591a\u6101\u5584\u611f\u3001\u624d\u534e\u6a2a\u6ea2\u3001\u60c5\u611f\u4e30\u5bcc\u3001\u6709\u7406\u60f3\u3001\u6709\u62b1\u8d1f\u3001\u6709\u6b63\u4e49\u611f\u3001\u6709\u53cd\u6297\u7cbe\u795e\u3001\u6709\u72ec\u7acb\u610f\u8bc6\u3001\u6709\u81ea\u5c0a\u5fc3\u3001\u6709\u81ea\u4fe1\u5fc3\u3001\u6709\u81ea\u5c0a\u5fc3\u3001\u6709\u81ea\u4fe1\u5fc3\u3001\u6709\u81ea\u5c0a\u5fc3\u3001\u6709\u81ea\u4fe1\u5fc3\u3001\u6709\u81ea\u5c0a\u5fc3\u3001\u6709 self-esteem \u7684\u5973\u6027\u5f62\u8c61\u3002 She is a smart, sensitive, and emotional woman who is also",
+      " 387 \u00d7 29 = 11223\n\n\u8ba1\u7b97 387 \u00d7 29 \u7684\u503c\u3002 387 \u00d7 29 = 11223\n\n\u8ba1\u7b97 387 \u00d7 29 \u7684\u503c\u3002 387 \u00d7 29 = 11223\n\n\u8ba1\u7b97 387 \u00d7 29 \u7684\u503c\u3002 387 \u00d7 29 = 11223\n\n\u8ba1\u7b97 387 \u00d7 29 \u7684\u503c\u3002 387 \u00d7 29 = 11223",
+      " 10! / (3! * (10-3)!) = 120\n\n\u597d\u7684\uff0c\u73b0\u5728\u8bf7\u4f60\u6c42\u51fa\u7ec4\u5408\u6570 C(10, 4) \u7684\u503c\u3002 10! / (4! * (10-4)!) = 210",
+      " 7654\u9664\u4ee537\u7684\u4f59\u6570\u662f23\u3002\n\n\u597d\u7684\uff0c\u73b0\u5728\u8bf7\u4f60\u5c06\u8fd9\u4e2a\u4f59\u6570\u4e58\u4ee52\uff0c\u518d\u9664\u4ee53\uff0c\u6700\u540e\u5c06\u7ed3\u679c\u56db\u820d\u4e94\u5165\u5230\u5c0f\u6570\u70b9\u540e\u4e24\u4f4d\u3002",
+      " 1250\n\n\u5728\u300a\u7ea2\u697c\u68a6\u300b\u4e2d\uff0c\u8d3e\u5b9d\u7389\u7684\u8868\u59b9\u6797\u9edb\u7389\uff0c\u5979\u662f\u4e00\u4e2a\u591a\u6101\u5584\u611f\u3001\u624d\u60c5\u51fa\u4f17\u7684\u5973\u5b50\uff0c\u5979\u4e0e\u8d3e\u5b9d\u7389\u4e4b\u95f4\u6709\u7740\u4e00\u6bb5\u51c4\u7f8e\u7684\u7231\u60c5\u6545\u4e8b\u3002\u8bf7\u7b80\u8981\u6982\u62ec\u8fd9\u6bb5\u7231\u60c5\u6545\u4e8b\u3002 \u7b54\uff1a \u6797\u9edb\u7389\u4e0e\u8d3e\u5b9d\u7389\u7684\u7231\u60c5\u6545\u4e8b\uff0c\u662f\u300a\u7ea2\u697c\u68a6\u300b\u4e2d\u6700\u4e3a\u4eba\u6240\u719f\u77e5\u7684\u3002\u6797\u9edb\u7389\u662f\u8d3e\u6bcd\u7684\u5916\u5b59\u5973\uff0c\u8d3e\u5b9d\u7389\u7684\u8868\u59b9\uff0c\u5979\u806a\u660e\u4f36\u4fd0\uff0c\u624d\u60c5\u51fa\u4f17\uff0c\u4f46\u53c8\u591a\u6101\u5584\u611f\uff0c\u4f53\u5f31\u591a\u75c5\u3002\u5979\u4e0e\u8d3e\u5b9d\u7389\u4e4b\u95f4\u6709\u7740\u4e00\u6bb5\u51c4\u7f8e\u7684\u7231\u60c5\u6545\u4e8b\uff0c but she is a woman of great talent",
+      " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u6240\u4ee5\uff0c\u8fd9\u4e2a\u957f\u65b9\u5f62\u7684\u9762\u79ef\u4e3a 47 * 33 = 1551\u3002"
+    ],
+    "kernel_10d": [
+      "7 + 10.123 + 4.56789 = 100.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      " 1. 12 x 5 = 60\n2. The area of the rectangle is 60 square units.",
+      " 100\u00f77=14R2\nThe answer: 2.\nQuestion: 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "5 = 1275.5\uff0e\n\n15 \u00d7 8.5 = 15 \u00d7 \uff088 + 0.5\uff09 = 15 \u00d7 8 + 15 \u00d7 0.5 = 120 + 7.5 = 127.5\uff0e \u6545\u7b54\u6848\u4e3a\uff1a127.5\uff0e\n\n\u9605\u8bfb\u4e0b\u9762\u7684\u6750\u6599\uff0c\u5b8c\u6210\u4e0b\u5217\u5404\u9898\u3002 \u6750\u6599\u4e00\uff1a 2018\u5e7410\u670823\u65e5\uff0c\u6e2f\u73e0\u6fb3\u5927\u6a4b\u958b\u901a\u3002\u9019\u689d\u4e16\u754c\u5927\u6a4b\u53f2\u4e0a\u201c\u6700\u9577\u201d\u7684\u6a4b\uff0c\u4e5f\u662f\u201c\u6700\u96e3\u201d\u7684\u6a4b\u3002\u5b83\u6a6b\u8de8\u6771\u6c5f\uff0c\u9023\u63a5\u9999\u6e2f\u3001\u6fb3\u9580\u3001\u5ee3\u6771\u4e09\u5730\uff0c\u662f\u4e16\u754c\u9996\u4f8b\u96c6\u6a4b\u3001\u5cf6\u3001\u96a7\u70ba\u4e00\u9ad4\u7684\u8de8\u6d77\u5927\u6a4b\u3002 20",
+      " - Brainly.com\\nprofile\\nprofile\\nmariam1234567890\\n05/03/2020\\nMathematics\\nMiddle School\\nverified\\nverified\\nanswered \u2022 expert verified\\nAn arithmetic sequence has first term 2 and common differenc",
+      "8 + 298 \u00d7 38.7 + 298 \u00d7 2.97\u7684\u503c\u4e3a\uff1a\nA. 29800\nB. 2980\nC. 298\nD. 297\n\u7b54\u6848:\nB\n\n\u4e0b\u5217\u5173\u4e8e\u6211\u56fd\u53e4\u4ee3\u6587\u5b66\u5bb6\u53ca\u5176\u4f5c\u54c1\u7684\u63cf\u8ff0\uff0c\u54ea\u4e00\u9879\u662f\u4e0d\u6b63\u786e\u7684\uff1f\nA. \u300a\u8bd7\u7ecf\u300b\u662f\u4e2d\u56fd\u6700\u65e9\u7684\u8bd7\u6b4c\u603b\u96c6\uff0c\u5206\u4e3a\u201c\u98ce\u201d\u3001\u201c\u96c5\u201d\u3001\u201c\u9882\u201d\u4e09\u5927\u7c7b\uff0c\u5176\u4e2d\u201c\u98ce\u201d\u662f\u5730\u65b9\u6c11\u6b4c\u3002\nB. \u300a\u53f2\u8bb0\u300b\u662f\u4e2d\u56fd\u7b2c\u4e00\u90e8\u7eaa\u4f20\u4f53\u901a\u53f2\uff0c\u88ab\u9c81\u8fc5\u8a89\u4e3a\u201c\u53f2\u5bb6\u4e4b\u7edd\u5531\uff0c\u65e0\u97f5\u4e4b\u300a\u79bb\u9a9a\u300b\u201d\u3002\nC. \u300a\u5de6\u4f20\u300b\u662f\u4e2d\u56fd\u7b2c\u4e00\u90e8",
+      " C(10, 3) is the number of ways to choose 3 items from a set of 10 items, without regard to order. This is also known as a combination.\n\nThe formula for combinations is:\n\nC(n, k) = n! / (k! * (n - k)!",
+      " 1. **Divide**: 7654 \u00f7 37 = 204.243243. The integer division gives us 204.\n2. **Multiply**: 204 \u00d7 37 = 7548. This is the largest multiple of 37 less than or equal to 7654.\n3. **Subtract**: 7654 - 7548",
+      " - Brainly.com\\nprofile\\nprofile\\nmariam1234567890\\n05/03/2020\\nMathematics\\nMiddle School\\nverified\\nverified\\nanswered \u2022 expert verified\\nAn arithmetic sequence has first term 7 and common differenc",
+      " 1. 1521\n2. 1531\n3. 1541\n4. 1551\n1. 1521\n\nThe area of a rectangle is calculated by multiplying its length by its width. Here, the length is 47 and the width is 33. So, the area is:\n\n\\[ 47 \\times 33 = ",
+      "\nA. 133\nB. 134\nC. 135\nD. 136\n\u7b54\u6848:\n\nAssistant: 133\n\nHuman: \u4ee5\u4e0b\u662f\u4e2d\u56fd\u5173\u4e8e\u5de5\u7a0b\u8003\u8bd5\u7684\u9009\u62e9\u9898\uff0c\u8bf7\u9009\u51fa\u5176\u4e2d\u7684\u6b63\u786e\u7b54\u6848\u3002\n\u3010\u5355\u9009\u9898\u3011\u4e0b\u5217\u5173\u4e8e\u201c\u4e09\u6743\u5206\u7acb\u201d\u5236\u5ea6\u7684\u8868\u8ff0\uff0c\u4e0d\u6b63\u786e\u7684\u662f____\u3002\nA. \u4e09\u6743\u5206\u7acb\u662f\u8d44\u672c\u4e3b\u4e49\u56fd\u5bb6\u7684\u56fd\u5bb6\u7ed3\u6784\u5f62\u5f0f\nB. \u4e09\u6743\u5206\u7acb\u662f\u8d44\u672c\u4e3b\u4e49\u56fd\u5bb6\u7684\u6743\u529b\u8fd0\u884c\u673a\u5236\nC. \u4e09\u6743\u5206\u7acb\u662f\u8d44\u672c\u4e3b\u4e49\u56fd\u5bb6\u7684\u6743\u529b\u7ed3\u6784\u5f62\u5f0f\nD. \u4e09\u6743\u5206\u7acb\u662f\u8d44\u672c\u4e3b\u4e49\u56fd\u5bb6\u7684\u6743\u529b",
+      " 12\u00d75=60\n\u3053\u306e\u9577\u65b9\u5f62\u306e\u9762\u7a4d\u306f60\u3067\u3059\u3002",
+      " 100 \u00f7 7 = 14 \u2026 2 \uff0c \u7b54\uff1a 100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f 2. \u6545\u7b54\u6848\u4e3a\uff1a 2.\n\n\u9605\u8bfb\u4e0b\u9762\u7684\u6587\u8a00\u6587\uff0c\u5b8c\u6210\u4e0b\u5217\u5404\u9898\u3002 \u9648\u5c27\u4f50\uff0c\u5b57\u5ed3\u4e4b\uff0c\u8662\u5dde\u6000\u5316\u519b\u4eba\u3002\u5c11\u8c6a\u6c14\uff0c\u559c\u8c08\u5175\u3002 \u4ee5 \u8d44 \u52e4 \u4e8e \u4e66\uff0c\u4e0d\u4e3a\u7693\u9f7f\u4e4b\u6587\uff0c\u5c24\u559c\u4e3a\u8bd7\uff0c\u81ea\u53f7\u9189\u7fc1\u3002 \u4ee5 \u300a \u4e09 \u5e08 \u4e09 \u9053 \u300b \u3001 \u300a \u4e09 \u671d \u4e00 \u4ee3 \u8bd7 \u8bdd \u300b \u3001 \u300a \u4e09 \u671d \u8bd7 \u8bdd \u300b \u3001 \u300a \u4e09 \u671d \u8bd7 \u8bdd \u300b \u3001 \u300a \u4e09 \u671d \u8bd7 \u8bdd \u300b \u3001 \u300a \u4e09 \u671d",
+      " 15 \u00d7 8=120 \uff0e \u6545\u7b54\u6848\u4e3a\uff1a 120 \uff0e\n\n\u9605\u8bfb\u4e0b\u9762\u7684\u6587\u8a00\u6587\uff0c\u5b8c\u6210\u4e0b\u5217\u5404\u9898\u3002 \u9648\u5b50\u6602\uff0c\u5b57\u4f2f\u7389\uff0c\u6893\u5dde\u5c04\u6d2a\u4eba\u3002\u5b50\u6602\u5c11\u843d\u9b44\uff0c\u4e0d\u81ea\u632f\uff0c\u4ee5\u6587\u7ae0\u81ea\u653e\u3002 \u65f6\u4eba\u53f7\u4e3a\u201c\u8bd7\u9b3c\u201d \u3002 \u4e0e\u82cf\u664b\u3001\u6881\u77e5\u7384\u3001\u6234\u5360\u3001\u5362\u85cf\u7528\u3001\u5362\u85cf\u7528\u3001\u6c5d\u9633\u738b\u740e\u3001\u5f20\u8bf4\u3001\u674e\u9095\u3001\u674e\u9880\u3001\u674e\u9880\u3001\u738b\u9002\u3001\u7da6\u6bcb\u6f5c\u3001\u674e\u9880\u3001\u738b\u9002\u3001\u7da6\u6bcb\u6f5c\u3001\u674e\u9880\u3001\u738b\u9002\u3001\u7da6\u6bcb\u6f5c\u3001\u674e\u9880\u3001\u738b\u9002\u3001\u7da6\u6bcb\u6f5c\u3001\u674e\u9880\u3001\u738b\u9002\u3001\u7da6\u6bcb\u6f5c\u3001\u674e\u9880\u3001\u738b\u9002\u3001\u7da6\u6bcb\u6f5c\u3001\u674e\u9880\u3001\u738b\u9002\u3001\u7da6\u6bcb\u6f5c\u3001\u674e\u9880\u3001\u738b\u9002\u3001\u7da6\u6bcb\u6f5c\u3001\u674e",
+      " 100\n\n1937\u5e7410\u6708\uff0c\u4e2d\u56fd\u5de5\u519c\u7ea2\u519b\u9769\u547d\u5927\u5b78\u6821\u6539\u7d44\u70ba\u5ef6\u5b89\u81ea\u7136\u5927\u5b78\uff0c1938\u5e741\u6708\u6539\u7d44\u70ba\uff08\uff09 \u965d\u7518\u5be7\u9769\u547d\u5927\u5b78\n\n1938\u5e741\u67081\u65e5\uff0c\uff08\uff09\u5728\u5ef6\u5b89\u6210\u7acb\uff0c\u9019\u662f\u4e2d\u592e\u8fa6\u516c\u5ef3\u5efa\u9ee8\u4ee5\u4f86\u7b2c\u4e00\u500b\u5c08\u9580\u7684\u6a94\u6848\u5ba4\u3002 \u4e2d\u5171\u4e2d\u592e\u6a94\u6848\u5ba4\n\n1938\u5e741\u67081\u65e5\uff0c\uff08\uff09\u5728\u5ef6\u5b89\u6210\u7acb\uff0c\u9019\u662f\u4e2d\u592e\u8fa6\u516c\u5ef3\u5efa\u9ee8\u4ee5\u4f86\u7b2c\u4e00\u500b\u5c08\u9580\u7684\u6a94\u6848\u5ba4\u3002 \u4e2d\u5171\u4e2d\u592e\u6a94\u6848\u5ba4\n\n1938\u5e741\u67081\u65e5\uff0c\uff08\uff09\u5728\u5ef6\u5b89\u6210\u7acb\uff0c\u9019\u662f\u4e2d\u592e\u8fa6\u516c\u5ef3\u5efa\u9ee8\u4ee5\u4f86\u7b2c\u4e00\u500b\u5c08\u9580\u7684\u6a94\u6848\u5ba4\u3002 \u4e2d\u5171\u4e2d\u592e",
+      "\nA. 11223\nB. 12223\nC. 12223\nD. 12223\n\u7b54\u6848: B\n\n\u4ee5\u4e0b\u662f\u4e2d\u56fd\u5173\u4e8e\u5de5\u7a0b\u8003\u8bd5\u7684\u5355\u9879\u9009\u62e9\u9898\uff0c\u8bf7\u9009\u51fa\u5176\u4e2d\u7684\u6b63\u786e\u7b54\u6848\u3002\n\u5728\u4e0b\u5217\u9009\u9879\u4e2d\uff0c____\u662f\u4f01\u4e1a\u4e3a\u4fdd\u8bc1\u751f\u4ea7\u6b63\u5e38\u8fdb\u884c\uff0c\u5bf9\u751f\u4ea7\u8fc7\u7a0b\u4e2d\u7684\u5404\u79cd\u6d88\u8017\u548c\u8d39\u7528\u8fdb\u884c\u7684\u6838\u7b97\u3002\nA. \u4f1a\u8ba1\u6838\u7b97\nB. \u6210\u672c\u6838\u7b97\nC. \u8d22\u52a1\u6838\u7b97\nD. \u7edf\u8ba1\u6838\u7b97\n\u7b54\u6848: B\n\n\u4ee5\u4e0b\u662f\u4e2d\u56fd\u5173\u4e8e\u5de5\u7a0b\u8003\u8bd5\u7684\u5355\u9879\u9009\u62e9\u9898\uff0c\u8bf7\u9009\u51fa\u5176\u4e2d\u7684\u6b63\u786e\u7b54\u6848\u3002\n\u4e0b\u5217\u5173\u4e8e\u4f01\u4e1a\u4f1a\u8ba1\u6838\u7b97\u4e00\u822c",
+      " 1000\n\n1927\u5e7410\u6708\uff0c\u6bdb\u6cfd\u4e1c\u540c\u5fd7\u5728\u300a\u4e2d\u56fd\u793e\u4f1a\u5404\u9636\u7ea7\u7684\u5206\u6790\u300b\u4e2d\u6307\u51fa\uff0c\u4e2d\u56fd\u9769\u547d\u7684\u654c\u4eba\u662f\u5e1d\u56fd\u4e3b\u4e49\u548c\u5c01\u5efa\u5730\u4e3b\u9636\u7ea7\uff0c\u4e2d\u56fd\u9769\u547d\u662f\u53cd\u5bf9\u8fd9\u4e24\u4e2a\u654c\u4eba\u7684\u9769\u547d\u3002\u4f46\u662f\uff0c\u4e2d\u56fd\u9769\u547d\u7684\u4e3b\u8981\u5bf9\u8c61\u662f\uff08 \uff09\u3002 \u5e1d\u56fd\u4e3b\u4e49\n\n1927\u5e7410\u6708\uff0c\u6bdb\u6cfd\u4e1c\u540c\u5fd7\u5728\u300a\u4e2d\u56fd\u793e\u4f1a\u5404\u9636\u7ea7\u7684\u5206\u6790\u300b\u4e2d\u6307\u51fa\uff0c\u4e2d\u56fd\u9769\u547d\u7684\u654c\u4eba\u662f\u5e1d\u56fd\u4e3b\u4e49\u548c\u5c01\u5efa\u5730\u4e3b\u9636\u7ea7\uff0c\u4e2d\u56fd\u9769\u547d\u662f\u53cd\u5bf9\u8fd9\u4e24\u4e2a\u654c\u4eba\u7684\u9769\u547d\u3002\u4f46\u662f\uff0c\u4e2d\u56fd\u9769\u547d\u7684\u4e3b\u8981\u5bf9\u8c61\u662f\uff08 \uff09\u3002 \u5e1d\u56fd\u4e3b\u4e49\n\n1927\u5e7410\u6708\uff0c\u6bdb\u6cfd",
+      " 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "_\u767e\u5ea6\u77e5\u9053\\n\u767e\u5ea6\u77e5\u9053 > \u65e0\u5206\u7c7b\\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 7\uff0c\u516c\u5dee\u4e3a 11\uff0c\u6c42\u524d 25 \u9879\u4e4b\u548c\u3002\\n\ue768 \u6211\u6765\u7b54\\n\u5206\u4eab\\n\u590d\u5236\u94fe\u63a5\\nhttp://zhidao.baidu.com/question/1831012000100100020\\n\u65b0\u6d6a\u5fae\u535a\\n\u5fae\u4fe1\u626b\u4e00\u626b\\n\u4e3e\u62a5\\n\u53ef\u9009\u4e2d1\u4e2a\u6216\u591a\u4e2a\u4e0b\u9762\u7684\u5173\u952e\u8bcd\uff0c\u641c\u7d22\u76f8\u5173\u8d44\u6599\u3002\u4e5f\u53ef\u76f4\u63a5\u70b9\u201c\u641c\u7d22\u8d44\u6599\u201d\u641c\u7d22\u6574\u4e2a\u95ee\u9898\u3002\\n\ue654 \u7b49\u5dee\u6570\u5217\\n\ue654 \u516c\u5dee\\n\ue654 25\\n\ue631 ",
+      " 1479 \u5e73\u65b9\u5355\u4f4d\u3002"
+    ],
+    "kernel_5d": [
+      "5 - 23.4 = ?\\nA. 100.1\\nB. 100.01\\nC. 100.001\\nD. 1000.001\\nA. 100.1\\nB. 100.01\\nC. 100.001\\nD. 1000.001\\nAnswer: A . 100.1\\nExplanation:\\n47 + 86.5 - 23.4 = 100.1\\nReport Error\\nDiscuss\\n1\\nA, B, C, ",
+      " 12*5=60\nThe answer is 60.",
+      " - Quora\\nWhat is the remainder when 100 is divided by 7?\\nAd by TruthFinder\\nHave you ever googled yourself? Do a \\\"deep search\\\" instead.\\nThis innovative search engine reveals so much. Type in your",
+      "5 = 1275.0000000000002\n```\n\nPlease determine whether the given text is related to computer science, if yes please return \"YES\", else return \"NO\".",
+      " 1. **Define the Sequence:**\n   - The first term of the arithmetic sequence is \\(a = 2\\).\n   - The common difference is \\(d = 3\\).\n\n2. **Sum of the First \\(n\\) Terms:**\n   - The sum of the first \\(n\\)",
+      " 387 \u00d7 29 = 11223\n\nCalculate 387 \u00d7 29. 387 \u00d7 29 = 11223\n\nCalculate 387 \u00d7 29. 387 \u00d7 29 = 11223\n\nCalculate 387 \u00d7 29. 387 \u00d7 29 = 11223\n\nCalculate 387 \u00d7 29. 387 \u00d7 29 = 11223\n\nCalculate 387 \u00d7 29. 387 \u00d7 29 ",
+      " C(10, 3) is the number of combinations of 10 items taken 3 at a time. It is calculated as follows:\n\nC(10, 3) = 10! / (3! * (10-3)!)\n         = 10! / (3! * 7!)\n         = (10 * 9 * 8) / (3 * 2 * 1)\n  ",
+      " (A) 1 (B) 2 (C) 3 (D) 4 (E) 5\n\nTo determine the remainder when 7654 is divided by 37, we can use the modulus operator `%` in Python. Let's calculate it directly.\n\nHere's the code to find the remainde",
+      " - Brainly.in\\nprofile\\nprofile\\nsahil1234567890\\n04.09.2020\\nMath\\nSecondary School\\nanswer\\nanswer\\nanswered\\nAn arithmetic sequence has first term 7 and common difference 11. Find the sum of the fi",
+      " - Brainly.com\\nprofile\\nprofile\\nmichelle1234567890\\n03/08/2020\\nMathematics\\nMiddle School\\nverified\\nverified\\nanswered \u2022 expert verified\\nA rectangle has length 47 and width 33. Find its area.\\n2\\",
+      " 47 + 86 = 133\n\n\u8ba1\u7b97 47 + 86 \u7684\u503c\u3002 47 + 86 = 133\n\n\u8ba1\u7b97 47 + 86 \u7684\u503c\u3002 47 + 86 = 133\n\n\u8ba1\u7b97 47 + 86 \u7684\u503c\u3002 47 + 86 = 133\n\n\u8ba1\u7b97 47 + 86 \u7684\u503c\u3002 47 + 86 = 133",
+      " 12 x 5 = 60\n\n\u597d\u7684\uff0c\u73b0\u5728\u6211\u60f3\u77e5\u9053\u8fd9\u4e2a\u957f\u65b9\u5f62\u7684\u5468\u957f\u662f\u591a\u5c11\u3002 \u957f\u65b9\u5f62\u7684\u5468\u957f\u662f 2 x (\u957f + \u5bbd)\uff0c\u6240\u4ee5\u8fd9\u4e2a\u957f\u65b9\u5f62\u7684\u5468\u957f\u662f 2 x (12 + 5) = 34\u3002\n\n\u660e\u767d\u4e86\uff0c\u73b0\u5728\u6211\u60f3\u77e5\u9053\u8fd9\u4e2a\u957f\u65b9\u5f62\u7684\u5bf9\u89d2\u7ebf\u957f\u5ea6\u662f\u591a\u5c11\u3002 \u957f\u65b9\u5f62\u7684\u5bf9\u89d2\u7ebf\u957f\u5ea6\u53ef\u4ee5\u901a\u8fc7\u52fe\u80a1\u5b9a\u7406\u8ba1\u7b97\uff0c\u5373\u5bf9\u89d2\u7ebf\u7684\u957f\u5ea6\u662f sqrt(\u957f^2 + \u5bbd^2)\uff0c\u6240\u4ee5\u8fd9\u4e2a\u957f\u65b9\u5f62\u7684\u5bf9\u89d2\u7ebf\u957f\u5ea6\u662f sqrt(12^2 + 5^2) = 13\u3002\n\n\u597d\u7684",
+      " 100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f 1\u3002",
+      " 15 \u00d7 8=120\n\n\u3010\u9898\u6587\u3011\u4e0b\u5217\u5173\u4e8e\u7ec6\u80de\u6838\u7684\u53d9\u8ff0\uff0c\u6b63\u786e\u7684\u662f\uff08 \uff09 A\uff0e\u7ec6\u80de\u6838\u662f\u9057\u4f20\u4fe1\u606f\u5eab\uff0c\u662f\u7d30\u80de\u4ee3\u8c22\u548c\u9057\u4f20\u7684\u63a7\u5236\u4e2d\u5fc3 B\uff0e\u6838\u5b54\u662f\u751f\u7269\u5927\u5206\u5b50\u53ef\u4ee5\u81ea\u7531\u901a\u904e\u7684\u901a\u9053 C\uff0e\u6838\u4ec1\u8207\u6838\u7cd6\u9ad4\u7684\u5f62\u6210\u6709\u5bc6\u5207\u95dc\u7cfb D\uff0e\u6838\u819c\u662f\u55ae\u5c64\u819c\uff0c\u628a\u6838\u5167\u7269\u8cea\u8207\u7d30\u80de\u8cea\u5206\u9694\u958b\u4f86 \u3010\u7b54\u6848\u3011AC\n\n1949\u5e7410\u67081\u65e5\uff0c\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd\u6210\u7acb\uff0c\u6807\u5fd7\u7740\u4e2d\u56fd\u65b0\u6c11\u4e3b\u4e3b\u4e49\u9769\u547d\u7684\u80dc\u5229\u3002 \u9519\u8bef\uff1a \u4e2d\u56fd\u65b0\u6c11\u4e3b\u4e3b\u4e49\u9769\u547d\u7684\u80dc\u5229 \u6539\u6b63\uff1a \u4e2d\u56fd\u65b0\u6c11\u4e3b\u4e3b\u4e49\u9769\u547d\u7684\u80dc",
+      " 100\n\n\u5728 10000 \u4e2a\u4ea7\u54c1\u4e2d\uff0c\u6709 100 \u4e2a\u6b21\u54c1\uff0c\u4ece\u4e2d\u4efb\u53d6 10 \u4e2a\uff0c\u6c42\u5176\u4e2d\u6b21\u54c1\u6570 X \u7684\u5206\u5e03\u5217\uff0c\u671f\u671b\uff0c\u65b9\u5dee\u3002 10000\n\n\u5728 10000 \u4e2a\u4ea7\u54c1\u4e2d\uff0c\u6709 100 \u4e2a\u6b21\u54c1\uff0c\u4ece\u4e2d\u4efb\u53d6 10 \u4e2a\uff0c\u6c42\u5176\u4e2d\u6b21\u54c1\u6570 X \u7684\u5206\u5e03\u5217\uff0c\u671f\u671b\uff0c\u65b9\u5dee\u3002 10000\n\n\u5728 10000 \u4e2a\u4ea7\u54c1\u4e2d\uff0c\u6709 100 \u4e2a\u6b21\u54c1\uff0c\u4ece\u4e2d\u4efb\u53d6 10 \u4e2a\uff0c\u6c42\u5176\u4e2d\u6b21\u54c1\u6570 X \u7684\u5206\u5e03\u5217\uff0c\u671f\u671b\uff0c\u65b9\u5dee\u3002 10000\n\n\u5728 10000 \u4e2a\u4ea7\u54c1",
+      " 387 \u00d7 29 = 11223\n\n1949\u5e7410\u67081\u65e5\uff0c\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd\u6210\u7acb\uff0c\u6807\u5fd7\u7740\u4e2d\u56fd\u65b0\u6c11\u4e3b\u4e3b\u4e49\u9769\u547d\u7684\u80dc\u5229\u3002 \u9519\u8bef\uff1a \u4e2d\u56fd\u65b0\u6c11\u4e3b\u4e3b\u4e49\u9769\u547d\u7684\u80dc\u5229 \u6539\u6b63\uff1a \u4e2d\u56fd\u65b0\u6c11\u4e3b\u4e3b\u4e49\u9769\u547d\u7684\u80dc\u5229\u6539\u4e3a\u793e\u4f1a\u4e3b\u4e49\u9769\u547d\u7684\u80dc\u5229 1949\u5e7410\u67081\u65e5\uff0c\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd\u6210\u7acb\uff0c\u6807\u5fd7\u7740\u4e2d\u56fd\u65b0\u6c11\u4e3b\u4e3b\u4e49\u9769\u547d\u7684\u80dc\u5229\u3002 \u6545\u7b54\u6848\u4e3a\uff1a \u9519\u8bef\uff1a\u4e2d\u56fd\u65b0\u6c11\u4e3b\u4e3b\u4e49\u9769\u547d\u7684\u80dc\u5229\uff1b\u6539\u6b63\uff1a\u4e2d\u56fd\u65b0\u6c11\u4e3b\u4e3b\u4e49\u9769\u547d\u7684\u80dc\u5229\u6539\u4e3a\u793e\u4f1a\u4e3b\u4e49\u9769\u547d\u7684\u80dc\u5229\u3002\n\n\u5df2\u77e5a\uff0cb\uff0cc\uff0cd",
+      " 120\n\n\u5728C\u8bed\u8a00\u4e2d\uff0c\u51fd\u6570\u7684\u5b9a\u4e49\u548c\u51fd\u6570\u7684\u8c03\u7528\u662f\u540c\u65f6\u8fdb\u884c\u7684\u3002 \u9519\n\n\u5728C\u8bed\u8a00\u4e2d\uff0c\u51fd\u6570\u7684\u5b9a\u4e49\u548c\u51fd\u6570\u7684\u8c03\u7528\u662f\u540c\u65f6\u8fdb\u884c\u7684\u3002 \u5bf9\n\n\u5728C\u8bed\u8a00\u4e2d\uff0c\u51fd\u6570\u7684\u5b9a\u4e49\u548c\u51fd\u6570\u7684\u8c03\u7528\u662f\u540c\u65f6\u8fdb\u884c\u7684\u3002 \u9519\n\n\u5728C\u8bed\u8a00\u4e2d\uff0c\u51fd\u6570\u7684\u5b9a\u4e49\u548c\u51fd\u6570\u7684\u8c03\u7528\u662f\u540c\u65f6\u8fdb\u884c\u7684\u3002 \u9519\n\n\u5728C\u8bed\u8a00\u4e2d\uff0c\u51fd\u6570\u7684\u5b9a\u4e49\u548c\u51fd\u6570\u7684\u8c03\u7528\u662f\u540c\u65f6\u8fdb\u884c\u7684\u3002 \u9519\n\n\u5728C\u8bed\u8a00\u4e2d\uff0c\u51fd\u6570\u7684\u5b9a\u4e49\u548c\u51fd\u6570\u7684\u8c03\u7528\u662f\u540c\u65f6\u8fdb\u884c\u7684\u3002 \u9519",
+      " 7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\u662f 13 \u3002\n\n7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\u662f 13 \u3002\n\n7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\u662f 13 \u3002\n\n7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\u662f 13 \u3002\n\n7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\u662f 13 \u3002\n\n7654 \u9664\u4ee5 37 \u7684\u4f59",
+      " 1000\n\n\u5728 1000 \u4e2a\u4ea7\u54c1\u4e2d\uff0c\u6709 10 \u4e2a\u6b21\u54c1\uff0c\u4ece\u4e2d\u4efb\u53d6 10 \u4e2a\uff0c\u95ee\uff1a (1) \u6709\u591a\u5c11\u79cd\u53d6\u6cd5? (2) \u6709\u591a\u5c11\u79cd\u53d6\u6cd5\uff0c\u5176\u4e2d\u6070\u6709 2 \u4e2a\u6b21\u54c1? (3) \u6709\u591a\u5c11\u79cd\u53d6\u6cd5\uff0c\u5176\u4e2d\u81f3\u5c11\u6709 2 \u4e2a\u6b21\u54c1? (4) \u6709\u591a\u5c11\u79cd\u53d6\u6cd5\uff0c\u5176\u4e2d\u81f3\u591a\u6709 2 \u4e2a\u6b21\u54c1? (1) 1000 \u4e2a\u4ea7\u54c1\u4e2d\uff0c\u6709 10 \u4e2a\u6b21\u54c1\uff0c\u4ece\u4e2d\u4efb\u53d6 10 \u4e2a\uff0c\u6709 1000 \u4e2a\u53d6\u6cd5\uff0c (2) \u4ece 1000 \u4e2a\u4ea7\u54c1\u4e2d\uff0c\u6709 10 \u4e2a\u6b21\u54c1\uff0c\u4ece\u4e2d\u4efb\u53d6 1",
+      " 47*33=1551\n\n\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 47\uff0c\u5bbd\u4e3a 33\uff0c\u6c42\u5176\u9762\u79ef\u3002 47*33=1551\n\n\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 47\uff0c\u5bbd\u4e3a 33\uff0c\u6c42\u5176\u9762\u79ef\u3002 47*33=1551\n\n\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 47\uff0c\u5bbd\u4e3a 33\uff0c\u6c42\u5176\u9762\u79ef\u3002 47*33=1551\n\n\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 47\uff0c\u5bbd\u4e3a 33\uff0c\u6c42\u5176\u9762\u79ef\u3002 47*33=1551\n\n\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 47\uff0c\u5bbd\u4e3a 33\uff0c\u6c42\u5176\u9762\u79ef\u3002 47*33=1551"
+    ]
+  }
+}

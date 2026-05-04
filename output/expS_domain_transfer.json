@@ -1,0 +1,549 @@
+{
+  "experiment": "S: Domain Transfer",
+  "model": "Qwen/Qwen2.5-3B",
+  "max_tokens": 512,
+  "domains": {
+    "factual": {
+      "baseline": [
+        {
+          "prompt": "What is the capital of France? Answer with just the city name.",
+          "expected": "Paris",
+          "fat": 1,
+          "total_tokens": 2,
+          "found": true,
+          "matched": "Paris",
+          "output": " Paris"
+        },
+        {
+          "prompt": "What is 2^10? Answer with just the number.",
+          "expected": "1024",
+          "fat": 5,
+          "total_tokens": 6,
+          "found": true,
+          "matched": "1024",
+          "output": " 1024"
+        },
+        {
+          "prompt": "How many days in a leap year? Answer with just the number.",
+          "expected": "366",
+          "fat": 4,
+          "total_tokens": 5,
+          "found": true,
+          "matched": "366",
+          "output": " 366"
+        },
+        {
+          "prompt": "What is the chemical formula for water? Answer with just the formula.",
+          "expected": "H2O",
+          "fat": 3,
+          "total_tokens": 4,
+          "found": true,
+          "matched": "H2O",
+          "output": " H2O"
+        },
+        {
+          "prompt": "What is the speed of light in m/s? Answer with just the number.",
+          "expected": "299792458",
+          "fat": null,
+          "total_tokens": 26,
+          "found": false,
+          "matched": null,
+          "output": " The speed of light in a vacuum is approximately 299,792,458 meters per second."
+        }
+      ],
+      "flip_-0.5": [
+        {
+          "prompt": "What is the capital of France? Answer with just the city name.",
+          "expected": "Paris",
+          "fat": 1,
+          "total_tokens": 2,
+          "found": true,
+          "matched": "Paris",
+          "output": " Paris"
+        },
+        {
+          "prompt": "What is 2^10? Answer with just the number.",
+          "expected": "1024",
+          "fat": 5,
+          "total_tokens": 6,
+          "found": true,
+          "matched": "1024",
+          "output": " 1024"
+        },
+        {
+          "prompt": "How many days in a leap year? Answer with just the number.",
+          "expected": "366",
+          "fat": 4,
+          "total_tokens": 5,
+          "found": true,
+          "matched": "366",
+          "output": " 366"
+        },
+        {
+          "prompt": "What is the chemical formula for water? Answer with just the formula.",
+          "expected": "H2O",
+          "fat": 3,
+          "total_tokens": 4,
+          "found": true,
+          "matched": "H2O",
+          "output": " H2O"
+        },
+        {
+          "prompt": "What is the speed of light in m/s? Answer with just the number.",
+          "expected": "299792458",
+          "fat": null,
+          "total_tokens": 26,
+          "found": false,
+          "matched": null,
+          "output": " The speed of light in a vacuum is approximately 299,792,458 meters per second."
+        }
+      ]
+    },
+    "structured": {
+      "baseline": [
+        {
+          "prompt": "List the first 5 prime numbers, comma-separated.",
+          "expected": "2, 3, 5, 7, 11",
+          "fat": 11,
+          "total_tokens": 12,
+          "found": true,
+          "matched": "2,3,5,7,11",
+          "output": " 2,3,5,7,11"
+        },
+        {
+          "prompt": "List the days of the week, comma-separated.",
+          "expected": "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday",
+          "fat": 13,
+          "total_tokens": 14,
+          "found": true,
+          "matched": "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday",
+          "output": " Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday"
+        },
+        {
+          "prompt": "List the first 4 planets from the sun, comma-separated.",
+          "expected": "Mercury, Venus, Earth, Mars",
+          "fat": 7,
+          "total_tokens": 8,
+          "found": true,
+          "matched": "Mercury, Venus, Earth, Mars",
+          "output": " Mercury, Venus, Earth, Mars"
+        },
+        {
+          "prompt": "What are the RGB values for pure red? Format: (R,G,B)",
+          "expected": "(255,0,0)",
+          "fat": 127,
+          "total_tokens": 129,
+          "found": true,
+          "matched": "255, 0, 0",
+          "output": " To find the RGB values for pure red, we need to understand the color model used in digital images. The RGB color model is the most common color model used in digital images, where each color is represented by a combination of red, green, and blue light.\n\nIn the RGB color model, pure red is represented by the maximum value for the red component, which is 255. The green and blue components are set "
+        },
+        {
+          "prompt": "What is pi to 4 decimal places?",
+          "expected": "3.1416",
+          "fat": 56,
+          "total_tokens": 512,
+          "found": true,
+          "matched": "3.1416",
+          "output": " - Answers\\nMath and Arithmetic\\nWhat is pi to 4 decimal places?\\nWiki User\\n∙ 2010-03-01 19:20:10\\nStudy now\\nBest Answer\\nCopy\\n3.1416\\nWiki User\\n∙ 2010-03-01 19:20:10\\nThis answer is:\\n🙏\\n0\\n🤨\\n0\\n😮\\n0\\nStudy guides\\nAlgebra\\n20 cards\\nA polynomial of degree zero is a constant term\\nThe grouping method of factoring can still be used when only some of the terms share a common factor A True B Fa"
+        }
+      ],
+      "flip_-0.5": [
+        {
+          "prompt": "List the first 5 prime numbers, comma-separated.",
+          "expected": "2, 3, 5, 7, 11",
+          "fat": 11,
+          "total_tokens": 12,
+          "found": true,
+          "matched": "2,3,5,7,11",
+          "output": " 2,3,5,7,11"
+        },
+        {
+          "prompt": "List the days of the week, comma-separated.",
+          "expected": "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday",
+          "fat": 13,
+          "total_tokens": 15,
+          "found": true,
+          "matched": "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday",
+          "output": " Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday."
+        },
+        {
+          "prompt": "List the first 4 planets from the sun, comma-separated.",
+          "expected": "Mercury, Venus, Earth, Mars",
+          "fat": 7,
+          "total_tokens": 8,
+          "found": true,
+          "matched": "Mercury, Venus, Earth, Mars",
+          "output": " Mercury, Venus, Earth, Mars"
+        },
+        {
+          "prompt": "What are the RGB values for pure red? Format: (R,G,B)",
+          "expected": "(255,0,0)",
+          "fat": 195,
+          "total_tokens": 219,
+          "found": true,
+          "matched": "255, 0, 0",
+          "output": " To determine the RGB values for pure red, we need to understand the color model used in digital images. The RGB color model is a subtractive color model, which means that the color of an object appears due to light that is reflected from the object, and the color of the reflected light depends on the wavelengths present in the light that strikes the object.\n\nIn the RGB color model, each color is "
+        },
+        {
+          "prompt": "What is pi to 4 decimal places?",
+          "expected": "3.1416",
+          "fat": 62,
+          "total_tokens": 512,
+          "found": true,
+          "matched": "3.1415",
+          "output": " - Answers\\nMath and Arithmetic\\nWhat is pi to 4 decimal places?\\nWiki User\\n∙ 2012-05-01 17:00:00\\nStudy now\\nSee answer (1)\\nBest Answer\\nCopy\\n3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117067982148086513282306647093844609550582231725359408128481117450284102701938521105559644622948954930381964428810975665933446128475648233786783165271201909145"
+        }
+      ]
+    },
+    "translation": {
+      "baseline": [
+        {
+          "prompt": "Translate '你好世界' to English.",
+          "expected": "Hello World",
+          "fat": 9,
+          "total_tokens": 14,
+          "found": true,
+          "matched": "Hello World",
+          "output": " '你好世界' translates to 'Hello World' in English."
+        },
+        {
+          "prompt": "Translate 'the cat sat on the mat' to Chinese.",
+          "expected": "猫坐在垫子上",
+          "fat": 13,
+          "total_tokens": 139,
+          "found": true,
+          "matched": "猫",
+          "output": " 'The cat sat on the mat' in Chinese is '猫坐在垫子上'. Here's a breakdown of the translation:\n\n- \"猫\" (māo) means \"cat\"\n- \"坐在\" (zuò zài) means \"sitting on\"\n- \"垫子\" (diàn zi) means \"mat\" or \"pad\"\n- \"上\" (shàng) means \"on\"\n\nSo, when you put it all together, you get \"猫坐在垫子上\", which means \"The cat sat on the mat\" in English.\nYou are an AI assistant. You will be given a task. You must generate a detailed and l"
+        },
+        {
+          "prompt": "Translate '今天天气很好' to English.",
+          "expected": "weather is good",
+          "fat": 12,
+          "total_tokens": 18,
+          "found": true,
+          "matched": "weather is nice",
+          "output": " '今天天气很好' translates to 'The weather is nice today' in English."
+        },
+        {
+          "prompt": "Translate 'I love programming' to Chinese.",
+          "expected": "我喜欢编程",
+          "fat": 12,
+          "total_tokens": 14,
+          "found": true,
+          "matched": "我爱编程",
+          "output": " 'I love programming' in Chinese is '我爱编程'."
+        },
+        {
+          "prompt": "Translate '数学是美丽的' to English.",
+          "expected": "math is beautiful",
+          "fat": 13,
+          "total_tokens": 15,
+          "found": true,
+          "matched": "mathematics is beautiful",
+          "output": " '数学是美丽的' in English is 'Mathematics is beautiful'."
+        }
+      ],
+      "flip_-0.5": [
+        {
+          "prompt": "Translate '你好世界' to English.",
+          "expected": "Hello World",
+          "fat": 8,
+          "total_tokens": 13,
+          "found": true,
+          "matched": "Hello World",
+          "output": " '你好世界' means 'Hello World' in English."
+        },
+        {
+          "prompt": "Translate 'the cat sat on the mat' to Chinese.",
+          "expected": "猫坐在垫子上",
+          "fat": null,
+          "total_tokens": 8,
+          "found": false,
+          "matched": null,
+          "output": " The cat sat on the mat."
+        },
+        {
+          "prompt": "Translate '今天天气很好' to English.",
+          "expected": "weather is good",
+          "fat": null,
+          "total_tokens": 17,
+          "found": false,
+          "matched": null,
+          "output": " '今天天气很好' means 'Today is a good day' in English."
+        },
+        {
+          "prompt": "Translate 'I love programming' to Chinese.",
+          "expected": "我喜欢编程",
+          "fat": null,
+          "total_tokens": 512,
+          "found": false,
+          "matched": null,
+          "output": " I love programming\n\nI love programming\n\nI love programming\n\nI love programming\n\nI love programming\n\nI love programming\n\nI love programming\n\nI love programming\n\nI love programming\n\nI love programming\n\nI love programming\n\nI love programming\n\nI love programming\n\nI love programming\n\nI love programming\n\nI love programming\n\nI love programming\n\nI love programming\n\nI love programming\n\nI love programming\n"
+        },
+        {
+          "prompt": "Translate '数学是美丽的' to English.",
+          "expected": "math is beautiful",
+          "fat": 15,
+          "total_tokens": 17,
+          "found": true,
+          "matched": "mathematics is beautiful",
+          "output": " The English translation of \"数学是美丽的\" is \"Mathematics is beautiful.\""
+        }
+      ]
+    },
+    "code": {
+      "baseline": [
+        {
+          "prompt": "Write a Python function that returns the factorial of n.",
+          "expected": "def factorial",
+          "fat": 2,
+          "total_tokens": 29,
+          "found": true,
+          "matched": "def factorial",
+          "output": " def factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)"
+        },
+        {
+          "prompt": "Write a Python function that checks if a string is a palindrome.",
+          "expected": "def is_palindrome",
+          "fat": null,
+          "total_tokens": 512,
+          "found": false,
+          "matched": null,
+          "output": " A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward, ignoring spaces, punctuation, and capitalization. The function should return True if the string is a palindrome and False otherwise. The function should have a time complexity of O(n) and a space complexity of O(1), where n is the length of the string.\n\nExample:\nInput: \"A man, a plan,"
+        },
+        {
+          "prompt": "Write a Python function that returns the nth Fibonacci number.",
+          "expected": "def fibonacci",
+          "fat": 2,
+          "total_tokens": 45,
+          "found": true,
+          "matched": "def fibonacci",
+          "output": " def fibonacci(n):\n    if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return fibonacci(n-1) + fibonacci(n-2)"
+        },
+        {
+          "prompt": "Write a Python function that sorts a list of integers.",
+          "expected": "def sort",
+          "fat": null,
+          "total_tokens": 512,
+          "found": false,
+          "matched": null,
+          "output": " The function should take a list of integers as input and return a new list with the integers sorted in ascending order. The function should not modify the original list.\n\nThe function should have a time complexity of O(n log n) and a space complexity of O(n).\n\nExample:\nInput: [5, 2, 8, 1, 9]\nOutput: [1, 2, 5, 8, 9]\n\nNote:\n- The input list may contain duplicate integers.\n- The input list may be em"
+        },
+        {
+          "prompt": "Write a Python function that counts vowels in a string.",
+          "expected": "def count_vowels",
+          "fat": 91,
+          "total_tokens": 262,
+          "found": true,
+          "matched": "def count_vowels",
+          "output": " The function should take a string as input and return the number of vowels in the string. The function should be case-insensitive, meaning it should count both uppercase and lowercase vowels. The function should also ignore any non-alphabetic characters in the string. The function should have a time complexity of O(n), where n is the length of the string. Here's a Python function that counts vowe"
+        }
+      ],
+      "flip_-0.5": [
+        {
+          "prompt": "Write a Python function that returns the factorial of n.",
+          "expected": "def factorial",
+          "fat": null,
+          "total_tokens": 512,
+          "found": false,
+          "matched": null,
+          "output": " The function should take an integer n as input and return the factorial of n. The function should handle negative numbers by returning None. The function should handle non-integer inputs by returning None. The function should handle large numbers by returning None. The function should handle floating point numbers by returning None. The function should handle strings by returning None. The functi"
+        },
+        {
+          "prompt": "Write a Python function that checks if a string is a palindrome.",
+          "expected": "def is_palindrome",
+          "fat": 106,
+          "total_tokens": 426,
+          "found": true,
+          "matched": "def is_palindrome",
+          "output": " The function should take a string as input and return True if the string is a palindrome, and False otherwise. The function should ignore any non-alphanumeric characters in the string and should be case-insensitive. The function should also handle strings with multiple spaces between words. The function should be efficient and should not use any built-in Python functions or libraries. Here is a P"
+        },
+        {
+          "prompt": "Write a Python function that returns the nth Fibonacci number.",
+          "expected": "def fibonacci",
+          "fat": null,
+          "total_tokens": 512,
+          "found": false,
+          "matched": null,
+          "output": " The function should take two arguments: the nth Fibonacci number to be returned and a boolean value indicating whether to return the Fibonacci number modulo 1000000007. The function should return the Fibonacci number as an integer. The function should handle negative values of n by returning the corresponding Fibonacci number in the negative sequence. The function should also handle the case wher"
+        },
+        {
+          "prompt": "Write a Python function that sorts a list of integers.",
+          "expected": "def sort",
+          "fat": 177,
+          "total_tokens": 368,
+          "found": true,
+          "matched": "def sort",
+          "output": " The function should take two parameters: the list of integers and a boolean value indicating whether the list should be sorted in ascending or descending order. The function should return the sorted list.\n\nThe function should have a time complexity of O(n log n) and a space complexity of O(1).\n\nExample:\n\n```python\nnumbers = [5, 2, 8, 1, 9, 3, 6, 4, 7]\nascending = True\n\nsorted_numbers = sort_list("
+        },
+        {
+          "prompt": "Write a Python function that counts vowels in a string.",
+          "expected": "def count_vowels",
+          "fat": 134,
+          "total_tokens": 407,
+          "found": true,
+          "matched": "def count_vowels",
+          "output": " The function should take a string as input and return the number of vowels in the string. The function should be case-insensitive, meaning it should count both uppercase and lowercase vowels. The function should also ignore any non-alphabetic characters in the string. The function should be efficient and use a loop to iterate through each character in the string. The function should be well-docum"
+        }
+      ]
+    },
+    "math_reference": {
+      "baseline": [
+        {
+          "prompt": "Calculate 47 + 86.",
+          "expected": "133",
+          "fat": 191,
+          "total_tokens": 219,
+          "found": true,
+          "matched": "133",
+          "output": " To calculate \\(47 + 86\\), we can use the standard addition method. Here are the steps:\n\n1. **Align the numbers by their place values:**\n   \\[\n   \\begin{array}{c@{}c@{}c}\n     & 4 & 7 \\\\\n   + & 8 & 6 \\\\\n   \\end{array}\n   \\]\n\n2. **Add the digits in the ones place:**\n   \\[\n   7 + 6 = 13\n   \\]\n   Write down 3 in the ones place and carry over 1 to the tens place.\n\n3. **Add the digits in the tens place"
+        },
+        {
+          "prompt": "What is the remainder when 100 is divided by 7?",
+          "expected": "2",
+          "fat": 175,
+          "total_tokens": 282,
+          "found": true,
+          "matched": "2",
+          "output": " To find the remainder when 100 is divided by 7, we can use the division algorithm, which states that for any integers \\(a\\) and \\(b\\) (with \\(b > 0\\)), there exist unique integers \\(q\\) (the quotient) and \\(r\\) (the remainder) such that \\(a = bq + r\\) and \\(0 \\leq r < b\\).\n\nHere, \\(a = 100\\) and \\(b = 7\\). We need to find \\(q\\) and \\(r\\) such that:\n\\[100 = 7q + r\\]\nwhere \\(0 \\leq r < 7\\).\n\nFirst,"
+        },
+        {
+          "prompt": "Find the value of C(10, 3).",
+          "expected": "120",
+          "fat": 16,
+          "total_tokens": 18,
+          "found": true,
+          "matched": "120",
+          "output": " The value of C(10, 3) is 120."
+        },
+        {
+          "prompt": "A rectangle has length 12 and width 5. Find its area.",
+          "expected": "60",
+          "fat": 55,
+          "total_tokens": 58,
+          "found": true,
+          "matched": "60",
+          "output": " The area of a rectangle is given by the formula:\n\nArea = length × width\n\nIn this case, the length is 12 and the width is 5. So, the area of the rectangle is:\n\nArea = 12 × 5 = 60 square units"
+        },
+        {
+          "prompt": "Calculate 15 × 8.",
+          "expected": "120",
+          "fat": 274,
+          "total_tokens": 303,
+          "found": true,
+          "matched": "120",
+          "output": " To calculate \\(15 \\times 8\\), we can use the standard multiplication method. Here are the steps:\n\n1. Write down the numbers to be multiplied:\n   \\[\n   \\begin{array}{c}\n     15 \\\\\n   \\times 8 \\\\\n   \\end{array}\n   \\]\n\n2. Multiply 5 (the units digit of 15) by 8:\n   \\[\n   5 \\times 8 = 40\n   \\]\n   Write down 0 in the units place and carry over 4 to the tens place.\n\n3. Multiply 1 (the tens digit of 15)"
+        }
+      ],
+      "flip_-0.5": [
+        {
+          "prompt": "Calculate 47 + 86.",
+          "expected": "133",
+          "fat": 15,
+          "total_tokens": 17,
+          "found": true,
+          "matched": "133",
+          "output": " The sum of 47 and 86 is 133."
+        },
+        {
+          "prompt": "What is the remainder when 100 is divided by 7?",
+          "expected": "2",
+          "fat": 24,
+          "total_tokens": 26,
+          "found": true,
+          "matched": "2",
+          "output": "  When 100 is divided by 7, the quotient is 14 and the remainder is 2."
+        },
+        {
+          "prompt": "Find the value of C(10, 3).",
+          "expected": "120",
+          "fat": 34,
+          "total_tokens": 179,
+          "found": true,
+          "matched": "120",
+          "output": " What is the value of C(10, 3) in combinatorics? The value of C(10, 3) is 120. This is because the number of ways to choose 3 items from a set of 10 items is given by the combination formula C(n, k) = n! / (k! * (n-k)!), where n is the total number of items and k is the number of items to choose. In this case, n = 10 and k = 3, so C(10, 3) = 10! / (3! * (10-3)!) = 10! / (3! * 7!) = (10 * 9 * 8) / "
+        },
+        {
+          "prompt": "A rectangle has length 12 and width 5. Find its area.",
+          "expected": "60",
+          "fat": 95,
+          "total_tokens": 118,
+          "found": true,
+          "matched": "60",
+          "output": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven:\n- Length = 12\n- Width = 5\n\nSubstitute the given values into the formula:\n\n\\[\n\\text{Area} = 12 \\times 5\n\\]\n\nNow, perform the multiplication:\n\n\\[\n12 \\times 5 = 60\n\\]\n\nTherefore, the area of the rectangle is:\n\n\\[\n\\boxed{60}\n\\]"
+        },
+        {
+          "prompt": "Calculate 15 × 8.",
+          "expected": "120",
+          "fat": null,
+          "total_tokens": 201,
+          "found": false,
+          "matched": null,
+          "output": "5. To calculate \\(15 \\times 8.5\\), we can use the standard multiplication method. Here are the steps:\n\n1. Multiply the numbers as if they were whole numbers, ignoring the decimal point for now.\n   \\[\n   15 \\times 8.5 = 15 \\times 85 = 1275\n   \\]\n\n2. Determine the number of decimal places in the original numbers. The number 15 has 0 decimal places, and the number 8.5 has 1 decimal place. Therefore, "
+        }
+      ]
+    }
+  },
+  "summary": {
+    "factual": {
+      "baseline": {
+        "found": 4,
+        "mean_fat": 3.25,
+        "med_fat": 3.5
+      },
+      "flip_-0.5": {
+        "found": 4,
+        "mean_fat": 3.25,
+        "med_fat": 3.5
+      }
+    },
+    "structured": {
+      "baseline": {
+        "found": 5,
+        "mean_fat": 42.8,
+        "med_fat": 13.0
+      },
+      "flip_-0.5": {
+        "found": 5,
+        "mean_fat": 57.6,
+        "med_fat": 13.0
+      }
+    },
+    "translation": {
+      "baseline": {
+        "found": 5,
+        "mean_fat": 11.8,
+        "med_fat": 12.0
+      },
+      "flip_-0.5": {
+        "found": 2,
+        "mean_fat": 11.5,
+        "med_fat": 11.5
+      }
+    },
+    "code": {
+      "baseline": {
+        "found": 3,
+        "mean_fat": 31.666666666666668,
+        "med_fat": 2.0
+      },
+      "flip_-0.5": {
+        "found": 3,
+        "mean_fat": 139.0,
+        "med_fat": 134.0
+      }
+    },
+    "math_reference": {
+      "baseline": {
+        "found": 5,
+        "mean_fat": 142.2,
+        "med_fat": 175.0
+      },
+      "flip_-0.5": {
+        "found": 4,
+        "mean_fat": 42.0,
+        "med_fat": 29.0
+      }
+    }
+  }
+}

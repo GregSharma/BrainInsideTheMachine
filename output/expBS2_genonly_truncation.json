@@ -1,0 +1,209 @@
+{
+  "experiment": "BS2",
+  "title": "Generation-Only SVD Truncation",
+  "hypothesis": "Prefill needs full dim for encoding; generation reasoning may be low-rank",
+  "model": "Qwen/Qwen2.5-3B",
+  "runtime_seconds": 1235,
+  "conditions": {
+    "baseline": {
+      "desc": "none",
+      "results": {
+        "en": {
+          "correct": 2,
+          "total": 20,
+          "mean_fat": 4.5,
+          "lang_pres": {
+            "zh": 0,
+            "en": 20,
+            "unk": 0
+          }
+        },
+        "zh": {
+          "correct": 10,
+          "total": 20,
+          "mean_fat": 8.3,
+          "lang_pres": {
+            "zh": 16,
+            "en": 1,
+            "unk": 3
+          }
+        }
+      }
+    },
+    "gen_k20": {
+      "desc": "gen_only L9-L26 k=20",
+      "results": {
+        "en": {
+          "correct": 0,
+          "total": 20,
+          "mean_fat": -1,
+          "lang_pres": {
+            "zh": 0,
+            "en": 20,
+            "unk": 0
+          }
+        },
+        "zh": {
+          "correct": 0,
+          "total": 20,
+          "mean_fat": -1,
+          "lang_pres": {
+            "zh": 0,
+            "en": 0,
+            "unk": 20
+          }
+        }
+      }
+    },
+    "gen_k50": {
+      "desc": "gen_only L9-L26 k=50",
+      "results": {
+        "en": {
+          "correct": 0,
+          "total": 20,
+          "mean_fat": -1,
+          "lang_pres": {
+            "zh": 0,
+            "en": 20,
+            "unk": 0
+          }
+        },
+        "zh": {
+          "correct": 0,
+          "total": 20,
+          "mean_fat": -1,
+          "lang_pres": {
+            "zh": 0,
+            "en": 0,
+            "unk": 20
+          }
+        }
+      }
+    },
+    "gen_k200": {
+      "desc": "gen_only L9-L26 k=200",
+      "results": {
+        "en": {
+          "correct": 0,
+          "total": 20,
+          "mean_fat": -1,
+          "lang_pres": {
+            "zh": 0,
+            "en": 17,
+            "unk": 3
+          }
+        },
+        "zh": {
+          "correct": 0,
+          "total": 20,
+          "mean_fat": -1,
+          "lang_pres": {
+            "zh": 0,
+            "en": 0,
+            "unk": 20
+          }
+        }
+      }
+    },
+    "gen_k500": {
+      "desc": "gen_only L9-L26 k=500",
+      "results": {
+        "en": {
+          "correct": 0,
+          "total": 20,
+          "mean_fat": -1,
+          "lang_pres": {
+            "zh": 0,
+            "en": 16,
+            "unk": 4
+          }
+        },
+        "zh": {
+          "correct": 0,
+          "total": 20,
+          "mean_fat": -1,
+          "lang_pres": {
+            "zh": 0,
+            "en": 0,
+            "unk": 20
+          }
+        }
+      }
+    },
+    "always_k200": {
+      "desc": "always L9-L26 k=200",
+      "results": {
+        "en": {
+          "correct": 0,
+          "total": 20,
+          "mean_fat": -1,
+          "lang_pres": {
+            "zh": 0,
+            "en": 20,
+            "unk": 0
+          }
+        },
+        "zh": {
+          "correct": 0,
+          "total": 20,
+          "mean_fat": -1,
+          "lang_pres": {
+            "zh": 0,
+            "en": 20,
+            "unk": 0
+          }
+        }
+      }
+    },
+    "gen_L16_k200": {
+      "desc": "gen_only L16 k=200",
+      "results": {
+        "en": {
+          "correct": 0,
+          "total": 20,
+          "mean_fat": -1,
+          "lang_pres": {
+            "zh": 0,
+            "en": 20,
+            "unk": 0
+          }
+        },
+        "zh": {
+          "correct": 0,
+          "total": 20,
+          "mean_fat": -1,
+          "lang_pres": {
+            "zh": 3,
+            "en": 0,
+            "unk": 17
+          }
+        }
+      }
+    },
+    "prefill_k200": {
+      "desc": "prefill_only L9-L26 k=200",
+      "results": {
+        "en": {
+          "correct": 0,
+          "total": 20,
+          "mean_fat": -1,
+          "lang_pres": {
+            "zh": 0,
+            "en": 20,
+            "unk": 0
+          }
+        },
+        "zh": {
+          "correct": 0,
+          "total": 20,
+          "mean_fat": -1,
+          "lang_pres": {
+            "zh": 0,
+            "en": 20,
+            "unk": 0
+          }
+        }
+      }
+    }
+  }
+}

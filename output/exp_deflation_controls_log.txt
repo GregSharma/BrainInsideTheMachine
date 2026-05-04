@@ -1,0 +1,122 @@
+Loading model...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:   6%|▌         | 27/434 [00:00<00:01, 260.88it/s]Loading weights:  23%|██▎       | 99/434 [00:00<00:00, 521.48it/s]Loading weights:  40%|███▉      | 172/434 [00:00<00:00, 615.09it/s]Loading weights:  56%|█████▋    | 245/434 [00:00<00:00, 652.84it/s]Loading weights:  74%|███████▍  | 323/434 [00:00<00:00, 686.30it/s]Loading weights:  92%|█████████▏| 399/434 [00:00<00:00, 690.61it/s]Loading weights: 100%|██████████| 434/434 [00:00<00:00, 658.94it/s]
+Loaded. 36 layers.
+
+======================================================================
+PART 1: p12 CONTROL BATTERY
+======================================================================
+
+--- p12 / baseline ---
+    2048 tok, 33.8s, ans=?, loop=True
+    tail: ...c{16200}{4102650} = \frac{16200}{4102650} = \frac{16200}{4102650} = \frac{16200}{4102650} = \frac{16200}{4102650} = \frac{16200}{4102650} = \frac{1620
+
+--- p12 / soft_a0.1 ---
+    1053 tok, 21.5s, ans=?, loop=False
+    tail: ...} = \frac{4050}{4050} = -\frac{3}{2}    \]  Thus, the harmonic mean of all the real roots of the 4050th degree polynomial is \(\boxed{-\frac{3}{2}}\).
+
+--- p12 / soft_s42 ---
+    1053 tok, 21.6s, ans=?, loop=False
+    tail: ...} = \frac{4050}{4050} = -\frac{3}{2}    \]  Thus, the harmonic mean of all the real roots of the 4050th degree polynomial is \(\boxed{-\frac{3}{2}}\).
+
+--- p12 / soft_s123 ---
+    1053 tok, 21.5s, ans=?, loop=False
+    tail: ...} = \frac{4050}{4050} = -\frac{3}{2}    \]  Thus, the harmonic mean of all the real roots of the 4050th degree polynomial is \(\boxed{-\frac{3}{2}}\).
+
+--- p12 / soft_s777 ---
+    1053 tok, 21.5s, ans=?, loop=False
+    tail: ...} = \frac{4050}{4050} = -\frac{3}{2}    \]  Thus, the harmonic mean of all the real roots of the 4050th degree polynomial is \(\boxed{-\frac{3}{2}}\).
+
+--- p12 / temp0.3_s42 ---
+    728 tok, 12.0s, ans=?, loop=False
+    tail: ...\cdot 2025} = \frac{4050}{8100} = \frac{1}{2}    \]  Therefore, the harmonic mean of all the real roots of the polynomial is \(\boxed{-\frac{2}{3}}\).
+
+--- p12 / temp0.3_s123 ---
+    1112 tok, 18.3s, ans=?, loop=False
+    tail: ...   H = \frac{2025}{k}    \]  6. **Final Answer:**    The harmonic mean of all the real roots of the polynomial is:    \[    \boxed{-\frac{5}{3}}    \]
+
+--- p12 / temp0.3_s777 ---
+    634 tok, 10.5s, ans=D, loop=False
+    tail: ...e of the polynomial, the harmonic mean of the roots is: \[ \text{Harmonic Mean} = -\frac{5}{6} \]  Thus, the correct answer is: \[ \boxed{\text{D}} \]
+
+--- p12 / temp0.5_s42 ---
+    2048 tok, 33.9s, ans=?, loop=True
+    tail: ...an. Let's redo the calculation:  H = n / Σ(1/x) = 4050 / (4/3) = 4050 * (3/4) = 3037.5  We made the same mistake in calculating the harmonic mean. Let
+
+--- p12 / temp0.5_s123 ---
+    905 tok, 14.9s, ans=?, loop=False
+    tail: ...= 1 / (450 + 1/2)  17. Finally, we get:  H = 1 / (450.5)  18. Therefore, the harmonic mean of all the real roots of the given polynomial is:  H = -6/5
+
+--- p12 / temp0.5_s777 ---
+    840 tok, 13.8s, ans=C, loop=False
+    tail: ... we can calculate the harmonic mean of all the real roots of the 4050th degree polynomial:  H = 1 / (H_1 * H_2 * ... * H_2025)  The answer is (C) -6/5
+
+
+======================================================================
+PART 2: BREADTH TEST (baseline vs soft_a0.1)
+======================================================================
+
+--- p3 / baseline ---
+    575 tok, 9.4s, ans=d (correct=A), loop=False
+
+--- p3 / soft_a0.1 ---
+    700 tok, 14.4s, ans=d (correct=A), loop=False
+
+--- p4 / baseline ---
+    2048 tok, 33.6s, ans=? (correct=B), loop=True
+
+--- p4 / soft_a0.1 ---
+    535 tok, 10.9s, ans=d (correct=B), loop=False
+
+--- p7 / baseline ---
+    2048 tok, 33.6s, ans=? (correct=C), loop=True
+
+--- p7 / soft_a0.1 ---
+    2048 tok, 41.0s, ans=? (correct=C), loop=True
+
+--- p9 / baseline ---
+    711 tok, 11.6s, ans=E (correct=E), loop=False
+
+--- p9 / soft_a0.1 ---
+    1375 tok, 27.8s, ans=? (correct=E), loop=False
+  p12/baseline: (from part 1) 2048tok ans=?
+  p12/soft_a0.1: (from part 1) 1053tok ans=?
+
+Saved to output/exp_deflation_controls.json
+
+
+======================================================================
+SUMMARY
+======================================================================
+
+--- P12 CONTROL BATTERY ---
+Condition              Tok  Ans  Loop  Correct
+baseline              2048    ?  LOOP       no
+soft_a0.1             1053    ?  stop       no
+soft_s42              1053    ?  stop       no
+soft_s123             1053    ?  stop       no
+soft_s777             1053    ?  stop       no
+temp0.3_s42            728    ?  stop       no
+temp0.3_s123          1112    ?  stop       no
+temp0.3_s777           634    D  stop       no
+temp0.5_s42           2048    ?  LOOP       no
+temp0.5_s123           905    ?  stop       no
+temp0.5_s777           840    C  stop       no
+
+--- BREADTH TEST ---
+Problem  Condition         Tok  Ans  Correct  Match
+p3       baseline          575    d        A     no
+p3       soft_a0.1         700    d        A     no
+p4       baseline         2048    ?        B     no
+p4       soft_a0.1         535    d        B     no
+p7       baseline         2048    ?        C     no
+p7       soft_a0.1        2048    ?        C     no
+p9       baseline          711    E        E    YES
+p9       soft_a0.1        1375    ?        E     no
+p12      baseline         2048    ?        B     no
+p12      soft_a0.1        1053    ?        B     no
+
+--- TEMPERATURE vs DEFLATION (p12) ---
+  temp=0.3: answers=['?', '?', 'D'], loops=0/3
+  temp=0.5: answers=['?', '?', 'C'], loops=1/3
+  soft_a0.1: answers=['?', '?', '?', '?']

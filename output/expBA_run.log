@@ -1,0 +1,213 @@
+Loading Qwen2.5-3B...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:   0%|          | 1/434 [00:00<00:46,  9.33it/s]Loading weights:  18%|█▊        | 77/434 [00:00<00:00, 433.43it/s]Loading weights:  40%|███▉      | 173/434 [00:00<00:00, 663.52it/s]Loading weights:  56%|█████▌    | 241/434 [00:00<00:00, 630.66it/s]Loading weights:  70%|███████   | 305/434 [00:00<00:00, 600.21it/s]Loading weights:  89%|████████▉ | 387/434 [00:00<00:00, 664.28it/s]Loading weights: 100%|██████████| 434/434 [00:00<00:00, 599.48it/s]
+  36 layers, d=2048
+
+Loading Z basis...
+  L0: Z basis shape (20, 2048)
+  L4: Z basis shape (20, 2048)
+  L8: Z basis shape (20, 2048)
+  L12: Z basis shape (20, 2048)
+  L16: Z basis shape (20, 2048)
+  L20: Z basis shape (20, 2048)
+  L24: Z basis shape (20, 2048)
+  L28: Z basis shape (20, 2048)
+  L32: Z basis shape (20, 2048)
+  L35: Z basis shape (20, 2048)
+Z bases loaded for all layers.
+
+============================================================
+Condition: baseline (mode=baseline, layers=None)
+============================================================
+  EN 0: ✗ (ans=133, got=13, lang=en)
+  EN 1: ✓ (ans=60, got=60, lang=en)
+  EN 2: ✗ (ans=2, got=7, lang=en)
+  EN 3: ✗ (ans=120, got=40, lang=en)
+  EN 4: ✗ (ans=40, got=3, lang=en)
+  EN 5: ✗ (ans=11223, got=7740, lang=en)
+  EN 6: ✓ (ans=120, got=120, lang=en)
+  EN 7: ✗ (ans=34, got=7654, lang=en)
+  EN 8: ✗ (ans=3475, got=11, lang=en)
+  EN 9: ✗ (ans=1551, got=47, lang=en)
+  ZH 0: ✗ (ans=133, got=25, lang=zh)
+  ZH 1: ✓ (ans=60, got=60, lang=zh)
+  ZH 2: ✗ (ans=2, got=100000, lang=zh)
+  ZH 3: ✓ (ans=120, got=120, lang=zh)
+  ZH 4: ✗ (ans=40, got=10, lang=zh)
+  ZH 5: ✓ (ans=11223, got=11223, lang=zh)
+  ZH 6: ✗ (ans=120, got=10, lang=zh)
+  ZH 7: ✗ (ans=34, got=37, lang=zh)
+  ZH 8: ✗ (ans=3475, got=1250, lang=zh)
+  ZH 9: ✓ (ans=1551, got=1551, lang=zh)
+
+  EN: 2/10, ZH: 4/10, Total: 6/20
+
+============================================================
+Condition: z_input_all (mode=z_input, layers=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35])
+============================================================
+  EN 0: ✗ (ans=133, got=, lang=en)
+  EN 1: ✗ (ans=60, got=, lang=en)
+  EN 2: ✗ (ans=2, got=, lang=en)
+  EN 3: ✗ (ans=120, got=, lang=en)
+  EN 4: ✗ (ans=40, got=, lang=en)
+  EN 5: ✗ (ans=11223, got=, lang=en)
+  EN 6: ✗ (ans=120, got=, lang=en)
+  EN 7: ✗ (ans=34, got=, lang=en)
+  EN 8: ✗ (ans=3475, got=, lang=en)
+  EN 9: ✗ (ans=1551, got=, lang=en)
+  ZH 0: ✗ (ans=133, got=, lang=en)
+  ZH 1: ✗ (ans=60, got=, lang=en)
+  ZH 2: ✗ (ans=2, got=, lang=en)
+  ZH 3: ✗ (ans=120, got=, lang=en)
+  ZH 4: ✗ (ans=40, got=, lang=en)
+  ZH 5: ✗ (ans=11223, got=, lang=en)
+  ZH 6: ✗ (ans=120, got=, lang=en)
+  ZH 7: ✗ (ans=34, got=, lang=en)
+  ZH 8: ✗ (ans=3475, got=, lang=en)
+  ZH 9: ✗ (ans=1551, got=, lang=en)
+
+  EN: 0/10, ZH: 0/10, Total: 0/20
+
+============================================================
+Condition: z_output_all (mode=z_output, layers=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35])
+============================================================
+  EN 0: ✗ (ans=133, got=, lang=en)
+  EN 1: ✗ (ans=60, got=, lang=en)
+  EN 2: ✗ (ans=2, got=, lang=en)
+  EN 3: ✗ (ans=120, got=, lang=en)
+  EN 4: ✗ (ans=40, got=, lang=en)
+  EN 5: ✗ (ans=11223, got=, lang=en)
+  EN 6: ✗ (ans=120, got=, lang=en)
+  EN 7: ✗ (ans=34, got=7777777777777777777777777777777777777777777777777777777777777777777777777777, lang=en)
+  EN 8: ✗ (ans=3475, got=, lang=en)
+  EN 9: ✗ (ans=1551, got=, lang=en)
+  ZH 0: ✗ (ans=133, got=, lang=en)
+  ZH 1: ✗ (ans=60, got=, lang=en)
+  ZH 2: ✗ (ans=2, got=, lang=zh)
+  ZH 3: ✗ (ans=120, got=, lang=en)
+  ZH 4: ✗ (ans=40, got=, lang=en)
+  ZH 5: ✗ (ans=11223, got=, lang=en)
+  ZH 6: ✗ (ans=120, got=, lang=zh)
+  ZH 7: ✗ (ans=34, got=, lang=zh)
+  ZH 8: ✗ (ans=3475, got=, lang=en)
+  ZH 9: ✗ (ans=1551, got=, lang=en)
+
+  EN: 0/10, ZH: 0/10, Total: 0/20
+
+============================================================
+Condition: z_output_complement_all (mode=z_output_complement, layers=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35])
+============================================================
+  EN 0: ✗ (ans=133, got=10, lang=en)
+  EN 1: ✗ (ans=60, got=84, lang=en)
+  EN 2: ✗ (ans=2, got=1, lang=en)
+  EN 3: ✗ (ans=120, got=2, lang=en)
+  EN 4: ✗ (ans=40, got=3, lang=en)
+  EN 5: ✗ (ans=11223, got=1000, lang=en)
+  EN 6: ✗ (ans=120, got=7, lang=en)
+  EN 7: ✗ (ans=34, got=7654, lang=en)
+  EN 8: ✗ (ans=3475, got=11, lang=en)
+  EN 9: ✗ (ans=1551, got=3431, lang=en)
+  ZH 0: ✗ (ans=133, got=53, lang=zh)
+  ZH 1: ✗ (ans=60, got=17, lang=zh)
+  ZH 2: ✗ (ans=2, got=1, lang=zh)
+  ZH 3: ✓ (ans=120, got=120, lang=zh)
+  ZH 4: ✗ (ans=40, got=10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, lang=zh)
+  ZH 5: ✓ (ans=11223, got=11223, lang=zh)
+  ZH 6: ✗ (ans=120, got=3, lang=zh)
+  ZH 7: ✗ (ans=34, got=1, lang=zh)
+  ZH 8: ✗ (ans=3475, got=10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, lang=zh)
+  ZH 9: ✗ (ans=1551, got=17, lang=zh)
+
+  EN: 0/10, ZH: 2/10, Total: 2/20
+
+============================================================
+Condition: z_output_adversarial (mode=z_output, layers=[9, 10, 11, 12, 13, 14, 15, 16, 17])
+============================================================
+  EN 0: ✗ (ans=133, got=99, lang=en)
+  EN 1: ✗ (ans=60, got=1, lang=en)
+  EN 2: ✗ (ans=2, got=1, lang=en)
+  EN 3: ✗ (ans=120, got=85, lang=en)
+  EN 4: ✗ (ans=40, got=3, lang=en)
+  EN 5: ✗ (ans=11223, got=29, lang=en)
+  EN 6: ✗ (ans=120, got=5, lang=zh)
+  EN 7: ✗ (ans=34, got=13624, lang=en)
+  EN 8: ✗ (ans=3475, got=1, lang=en)
+  EN 9: ✗ (ans=1551, got=, lang=en)
+  ZH 0: ✗ (ans=133, got=2, lang=zh)
+  ZH 1: ✗ (ans=60, got=5, lang=en)
+  ZH 2: ✗ (ans=2, got=9, lang=zh)
+  ZH 3: ✗ (ans=120, got=8, lang=zh)
+  ZH 4: ✗ (ans=40, got=2, lang=en)
+  ZH 5: ✗ (ans=11223, got=387, lang=zh)
+  ZH 6: ✗ (ans=120, got=, lang=en)
+  ZH 7: ✗ (ans=34, got=999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999, lang=en)
+  ZH 8: ✗ (ans=3475, got=, lang=en)
+  ZH 9: ✗ (ans=1551, got=1, lang=en)
+
+  EN: 0/10, ZH: 0/10, Total: 0/20
+
+============================================================
+Condition: z_output_cooperative (mode=z_output, layers=[18, 19, 20, 21, 22, 23, 24, 25, 26])
+============================================================
+  EN 0: ✗ (ans=133, got=100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, lang=en)
+  EN 1: ✗ (ans=60, got=, lang=en)
+  EN 2: ✗ (ans=2, got=10, lang=en)
+  EN 3: ✗ (ans=120, got=15, lang=en)
+  EN 4: ✗ (ans=40, got=5, lang=en)
+  EN 5: ✗ (ans=11223, got=3, lang=en)
+  EN 6: ✗ (ans=120, got=5, lang=en)
+  EN 7: ✗ (ans=34, got=37, lang=en)
+  EN 8: ✗ (ans=3475, got=25, lang=en)
+  EN 9: ✗ (ans=1551, got=47, lang=en)
+  ZH 0: ✗ (ans=133, got=, lang=zh)
+  ZH 1: ✗ (ans=60, got=12, lang=zh)
+  ZH 2: ✗ (ans=2, got=000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, lang=en)
+  ZH 3: ✗ (ans=120, got=8, lang=zh)
+  ZH 4: ✗ (ans=40, got=1, lang=zh)
+  ZH 5: ✗ (ans=11223, got=1, lang=zh)
+  ZH 6: ✗ (ans=120, got=3, lang=zh)
+  ZH 7: ✗ (ans=34, got=20167543789546789678967896789678967896789678967896789678967896789678967896789678967896789678967896789678967896789678967896789, lang=en)
+  ZH 8: ✗ (ans=3475, got=2, lang=en)
+  ZH 9: ✗ (ans=1551, got=2670000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, lang=zh)
+
+  EN: 0/10, ZH: 0/10, Total: 0/20
+
+============================================================
+Condition: z_output_L9_L26 (mode=z_output, layers=[9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26])
+============================================================
+  EN 0: ✗ (ans=133, got=3446, lang=en)
+  EN 1: ✗ (ans=60, got=4333, lang=en)
+  EN 2: ✗ (ans=2, got=, lang=en)
+  EN 3: ✗ (ans=120, got=3, lang=en)
+  EN 4: ✗ (ans=40, got=, lang=en)
+  EN 5: ✗ (ans=11223, got=1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111, lang=en)
+  EN 6: ✗ (ans=120, got=, lang=en)
+  EN 7: ✗ (ans=34, got=, lang=en)
+  EN 8: ✗ (ans=3475, got=0, lang=en)
+  EN 9: ✗ (ans=1551, got=6, lang=en)
+  ZH 0: ✗ (ans=133, got=, lang=en)
+  ZH 1: ✗ (ans=60, got=, lang=en)
+  ZH 2: ✗ (ans=2, got=, lang=en)
+  ZH 3: ✗ (ans=120, got=, lang=en)
+  ZH 4: ✗ (ans=40, got=, lang=en)
+  ZH 5: ✗ (ans=11223, got=, lang=zh)
+  ZH 6: ✗ (ans=120, got=, lang=en)
+  ZH 7: ✗ (ans=34, got=666666666666666666666666666666666666666666666666666666666666666666666666666666666000000000000000000000000000000000000000000000, lang=en)
+  ZH 8: ✗ (ans=3475, got=, lang=en)
+  ZH 9: ✗ (ans=1551, got=, lang=en)
+
+  EN: 0/10, ZH: 0/10, Total: 0/20
+
+============================================================
+SUMMARY
+============================================================
+  baseline                      : EN=2/10, ZH=4/10, Total=6/20
+  z_input_all                   : EN=0/10, ZH=0/10, Total=0/20
+  z_output_all                  : EN=0/10, ZH=0/10, Total=0/20
+  z_output_complement_all       : EN=0/10, ZH=2/10, Total=2/20
+  z_output_adversarial          : EN=0/10, ZH=0/10, Total=0/20
+  z_output_cooperative          : EN=0/10, ZH=0/10, Total=0/20
+  z_output_L9_L26               : EN=0/10, ZH=0/10, Total=0/20
+
+Total time: 318s
+Saved: output/expBA_z_mlp_decomposition.json

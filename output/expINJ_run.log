@@ -1,0 +1,744 @@
+################################################################################
+  Exp INJ: Hidden-State Injection
+################################################################################
+Model:    Qwen/Qwen2.5-3B
+Problems: 3
+L* sweep: [15, 20, 25, 27, 30, 33]
+Max gen:  256
+
+Loading model...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:   0%|          | 1/434 [00:00<02:00,  3.58it/s]Loading weights:  17%|█▋        | 75/434 [00:00<00:01, 236.71it/s]Loading weights:  26%|██▌       | 112/434 [00:00<00:01, 257.43it/s]Loading weights:  34%|███▍      | 147/434 [00:00<00:01, 275.21it/s]Loading weights:  42%|████▏     | 183/434 [00:00<00:00, 286.28it/s]Loading weights:  50%|█████     | 219/434 [00:00<00:00, 275.63it/s]Loading weights:  59%|█████▉    | 255/434 [00:01<00:00, 281.84it/s]Loading weights:  67%|██████▋   | 291/434 [00:01<00:00, 293.19it/s]Loading weights:  75%|███████▌  | 327/434 [00:01<00:00, 286.78it/s]Loading weights:  84%|████████▎ | 363/434 [00:01<00:00, 291.31it/s]Loading weights:  91%|█████████ | 393/434 [00:01<00:00, 266.18it/s]Loading weights:  97%|█████████▋| 421/434 [00:01<00:00, 258.37it/s]Loading weights: 100%|██████████| 434/434 [00:01<00:00, 257.86it/s]
+  Loaded in 3.5s
+
+
+======================================================================
+  L* = 15
+======================================================================
+
+--- Problem 1: Solve for x: 3x + 7 = 22... ---
+  cos(EN, ZH) at L15 = 0.9565
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+
+  [EN→EN] The mathematical operation being performed in the given statement is the calculation of the sum of two numbers. The reasoning behind this operation is to find the total value when two or more quantiti
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [ZH→EN] The mathematical operation being performed is the calculation of the sum of two numbers.
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [NOISE→EN] 
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [BASELINE] The mathematical operation being performed in the given statement is the calculation of the sum of two numbers. In this case, the numbers are 10 and 20. The sum of these two numbers is 30.
+
+--- Problem 2: What is the area of a triangle with base 10 and he... ---
+  cos(EN, ZH) at L15 = 0.9351
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+
+  [EN→EN] The mathematical operation being performed is the calculation of the sum of two numbers.
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [ZH→EN] The mathematical operation being performed is the calculation of the sum of two numbers.
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [NOISE→EN] 'start' 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+ 🕒
+
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [BASELINE] The mathematical operation being performed in the given statement is the calculation of the sum of two numbers. In this case, the numbers are 10 and 20. The sum of these two numbers is 30.
+
+--- Problem 3: Find the GCD of 84 and 120... ---
+  cos(EN, ZH) at L15 = 0.9395
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+
+  [EN→EN] The mathematical operation being performed is the calculation of the sum of two numbers.
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [ZH→EN] The mathematical operation being performed is the calculation of the sum of two numbers.
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [NOISE→EN] 
+The mathematical operation being performed in the given scenario is the calculation of the area of a rectangle. Here's a detailed explanation of the process:
+
+1. **Identify the dimensions**: The firs
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [BASELINE] The mathematical operation being performed in the given statement is the calculation of the sum of two numbers. In this case, the numbers are 10 and 20. The sum of these two numbers is 30.
+
+
+======================================================================
+  L* = 20
+======================================================================
+
+--- Problem 1: Solve for x: 3x + 7 = 22... ---
+  cos(EN, ZH) at L20 = 0.9736
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+
+  [EN→EN] The mathematical operation being performed is the calculation of the sum of two numbers. In this case, the two numbers are 10 and 20. The sum of these two numbers is 30.
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [ZH→EN] The mathematical operation being performed is the calculation of the sum of two numbers. In this case, the two numbers are 10 and 20. The sum of these two numbers is 30.
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [NOISE→EN] ines
+The mathematical operation being performed in the given statement is the calculation of the sum of two numbers. The statement is asking for the sum of 10 and 15, which can be represented as 10 + 
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [BASELINE] The mathematical operation being performed in the given statement is the calculation of the sum of two numbers. In this case, the numbers are 10 and 20. The sum of these two numbers is 30.
+
+--- Problem 2: What is the area of a triangle with base 10 and he... ---
+  cos(EN, ZH) at L20 = 0.9570
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+
+  [EN→EN] The mathematical operation being performed in the given statement is the calculation of the sum of two numbers. The statement is asking for the sum of 10 and 15. To find the sum, you add the two numbe
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [ZH→EN] The mathematical operation being performed is the calculation of the sum of two numbers. In this case, the two numbers are 10 and 20. The sum of these two numbers is 30.
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [NOISE→EN]  🎓
+ mathematical operation or reasoning is being performed 🎓
+ 🎓
+ mathematical operation or reasoning is being performed 🎓
+ 🎓
+ mathematical operation or reasoning is being performed 🎓
+ 🎓
+ mathematical 
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [BASELINE] The mathematical operation being performed in the given statement is the calculation of the sum of two numbers. In this case, the numbers are 10 and 20. The sum of these two numbers is 30.
+
+--- Problem 3: Find the GCD of 84 and 120... ---
+  cos(EN, ZH) at L20 = 0.9639
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+
+  [EN→EN] The mathematical operation being performed is the calculation of the sum of two numbers. In this case, the numbers are 10 and 20. The sum of these two numbers is 30.
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [ZH→EN] The mathematical operation being performed is the calculation of the sum of two numbers.
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [NOISE→EN]  🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+ 🎓️
+
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [BASELINE] The mathematical operation being performed in the given statement is the calculation of the sum of two numbers. In this case, the numbers are 10 and 20. The sum of these two numbers is 30.
+
+
+======================================================================
+  L* = 25
+======================================================================
+
+--- Problem 1: Solve for x: 3x + 7 = 22... ---
+  cos(EN, ZH) at L25 = 0.9766
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+
+  [EN→EN] To describe the mathematical operation or reasoning being performed, let's break down the given text step by step:
+
+1. 🕑 "mathematical operation": This phrase indicates that we are dealing with a math
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [ZH→EN] To perform the mathematical operation or reasoning, we need to follow these steps:
+
+1. Identify the given values: In this case, we have two numbers, 12 and 8.
+
+2. Determine the operation: The operatio
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [NOISE→EN] 
+To describe the mathematical operation or reasoning being performed, let's break down the given information step by step:
+
+1. **Identify the Context**: The context here is not explicitly provided, bu
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [BASELINE] The mathematical operation being performed in the given statement is the calculation of the sum of two numbers. In this case, the numbers are 10 and 20. The sum of these two numbers is 30.
+
+--- Problem 2: What is the area of a triangle with base 10 and he... ---
+  cos(EN, ZH) at L25 = 0.9512
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+
+  [EN→EN] The mathematical operation being performed in the given statement is the calculation of the sum of two numbers. In this case, the numbers are 10 and 20. The sum of these two numbers is 30.
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [ZH→EN] The mathematical operation being performed is the calculation of the sum of two numbers. In this case, the two numbers are 10 and 20. The sum of these two numbers is 30.
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [NOISE→EN]  ⌛
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [BASELINE] The mathematical operation being performed in the given statement is the calculation of the sum of two numbers. In this case, the numbers are 10 and 20. The sum of these two numbers is 30.
+
+--- Problem 3: Find the GCD of 84 and 120... ---
+  cos(EN, ZH) at L25 = 0.9629
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+
+  [EN→EN] To perform the mathematical operation or reasoning, we need to follow these steps:
+
+1. Identify the given values: In this case, we have two numbers, 12 and 8.
+
+2. Determine the operation: The operatio
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [ZH→EN] To perform the mathematical operation or reasoning, we need to follow these steps:
+
+1. Identify the given values: In this case, we have two numbers, 12 and 8.
+
+2. Determine the operation: The operatio
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [NOISE→EN]   🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+  🥗
+
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [BASELINE] The mathematical operation being performed in the given statement is the calculation of the sum of two numbers. In this case, the numbers are 10 and 20. The sum of these two numbers is 30.
+
+
+======================================================================
+  L* = 27
+======================================================================
+
+--- Problem 1: Solve for x: 3x + 7 = 22... ---
+  cos(EN, ZH) at L27 = 0.9614
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+
+  [EN→EN] To describe the mathematical operation or reasoning being performed, let's break down the given text step by step:
+
+1. 🕑 "mathematical operation": This phrase indicates that we are dealing with a math
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [ZH→EN] 要描述一个数学操作或推理的过程，我们需要具体了解这个操作或推理的上下文。请提供更多的信息，例如操作的公式、问题的陈述、推理的步骤等，这样我才能更准确地描述它。
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [NOISE→EN]  null
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ �
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [BASELINE] The mathematical operation being performed in the given statement is the calculation of the sum of two numbers. In this case, the numbers are 10 and 20. The sum of these two numbers is 30.
+
+--- Problem 2: What is the area of a triangle with base 10 and he... ---
+  cos(EN, ZH) at L27 = 0.9302
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+
+  [EN→EN] To describe the mathematical operation or reasoning being performed, let's break down the given text step by step:
+
+1. 🕑 "mathematical operation": This phrase indicates that we are dealing with a math
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [ZH→EN] 数学运算或推理的详细描述： 🕹️
+
+在这个问题中，我们正在进行一个简单的数学运算，具体来说是加法。加法是一种基本的算术运算，用于将两个或多个数值相加，以得到它们的总和。
+
+在这个例子中，我们有两个数值：10和20。我们需要将这两个数值相加，以得到它们的总和。具体步骤如下：
+
+1. 首先，我们将10和20相加，得到30。
+2. 然后，我们将30加上10，得到40。
+3. 最后，我们将40加上20，得
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [NOISE→EN]  🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+ 🥗
+
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [BASELINE] The mathematical operation being performed in the given statement is the calculation of the sum of two numbers. In this case, the numbers are 10 and 20. The sum of these two numbers is 30.
+
+--- Problem 3: Find the GCD of 84 and 120... ---
+  cos(EN, ZH) at L27 = 0.9502
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+
+  [EN→EN] To describe the mathematical operation or reasoning being performed, let's break down the given text step by step:
+
+1. 🕑 "mathematical operation": This phrase indicates that we are dealing with a math
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [ZH→EN] 要描述一个数学操作或推理的过程，我们需要具体了解这个操作或推理的上下文。请提供更多的信息，例如操作的公式、问题的陈述、推理的步骤等，这样我才能更准确地描述它。
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [NOISE→EN]  ëxample: 🥗
+ 🥗user
+ Describe in detail what mathematical operation or reasoning is being performed: 🥗
+ 🥗assistant
+ 🥗user
+ Describe in detail what mathematical operation or reasoning is being performed
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [BASELINE] The mathematical operation being performed in the given statement is the calculation of the sum of two numbers. In this case, the numbers are 10 and 20. The sum of these two numbers is 30.
+
+
+======================================================================
+  L* = 30
+======================================================================
+
+--- Problem 1: Solve for x: 3x + 7 = 22... ---
+  cos(EN, ZH) at L30 = 0.9316
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+
+  [EN→EN] To describe the mathematical operation or reasoning being performed, let's break down the given text step by step:
+
+1. 🕑 "mathematical operation": This phrase indicates that we are dealing with a math
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [ZH→EN] To describe the mathematical operation or reasoning being performed, let's break down the given text step by step:
+
+1. 🕑 "mathematical operation": This phrase indicates that we are dealing with a math
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [NOISE→EN]  and provide a step-by-step explanation of the process involved in solving the problem.
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [BASELINE] The mathematical operation being performed in the given statement is the calculation of the sum of two numbers. In this case, the numbers are 10 and 20. The sum of these two numbers is 30.
+
+--- Problem 2: What is the area of a triangle with base 10 and he... ---
+  cos(EN, ZH) at L30 = 0.8662
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+
+  [EN→EN] The mathematical operation being performed in the given statement is the calculation of the sum of two numbers. In this case, the numbers are 10 and 20. The sum of these two numbers is 30.
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [ZH→EN] 数学运算或推理的详细描述：
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [NOISE→EN]  a. Additionb. Subtractionc. Multiplicationd. Division
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 🎓
+ 
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [BASELINE] The mathematical operation being performed in the given statement is the calculation of the sum of two numbers. In this case, the numbers are 10 and 20. The sum of these two numbers is 30.
+
+--- Problem 3: Find the GCD of 84 and 120... ---
+  cos(EN, ZH) at L30 = 0.9209
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+
+  [EN→EN] To describe the mathematical operation or reasoning being performed, let's break down the given text step by step:
+
+1. 🕑 "mathematical operation": This phrase indicates that we are dealing with a math
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [ZH→EN] 要描述一个数学操作或推理的过程，我们需要具体了解这个操作或推理的上下文。请提供更多的信息，例如操作的公式、问题的陈述、推理的步骤等，这样我才能更准确地描述它。
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [NOISE→EN] ^
+"^" is a mathematical symbol that represents the operation of exponentiation. In this case, it is being used to raise the number 2 to the power of 3. The result of this operation is 8.
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [BASELINE] The mathematical operation being performed in the given statement is the calculation of the sum of two numbers. In this case, the numbers are 10 and 20. The sum of these two numbers is 30.
+
+
+======================================================================
+  L* = 33
+======================================================================
+
+--- Problem 1: Solve for x: 3x + 7 = 22... ---
+  cos(EN, ZH) at L33 = 0.9424
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+
+  [EN→EN] To describe the mathematical operation or reasoning being performed, let's break down the given text step by step:
+
+1. 🕑 "mathematical operation": This phrase indicates that we are dealing with a math
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [ZH→EN] To describe the mathematical operation or reasoning being performed, let's break down the given text step by step:
+
+1. 🕑 "mathematical operation": This phrase indicates that we are dealing with a math
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [NOISE→EN]  SCROLL DOWN FOR ANSWER
+SCROLL DOWN FOR ANSWER
+SCROLL DOWN FOR ANSWER
+SCROLL DOWN FOR ANSWER
+SCROLL DOWN FOR ANSWER
+SCROLL DOWN FOR ANSWER
+SCROLL DOWN FOR ANSWER
+SCROLL DOWN FOR ANSWER
+SCROLL DOWN FOR
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [BASELINE] The mathematical operation being performed in the given statement is the calculation of the sum of two numbers. In this case, the numbers are 10 and 20. The sum of these two numbers is 30.
+
+--- Problem 2: What is the area of a triangle with base 10 and he... ---
+  cos(EN, ZH) at L33 = 0.9004
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+
+  [EN→EN] The mathematical operation being performed in the given statement is the calculation of the sum of two numbers. In this case, the numbers are 10 and 20. The sum of these two numbers is 30.
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [ZH→EN] 三角形的面积可以通过以下公式计算：
+
+面积 = 底边长度 × 高 ÷ 2
+
+在这个公式中，底边长度是三角形的一条边的长度，高是这条边上的垂直距离。通过将底边长度和高相乘，然后除以2，就可以得到三角形的面积。
+
+例如，如果一个三角形的底边长度为5厘米，高为3厘米，那么它的面积就是：
+
+面积 = 5厘米 × 3厘米 ÷ 2 = 7.5平方厘米
+
+因此，通过这个公式，我们可以计算出任何三角形的面积。
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [NOISE→EN]  at the same time, the number of people who have been infected with the virus is increasing.
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [BASELINE] The mathematical operation being performed in the given statement is the calculation of the sum of two numbers. In this case, the numbers are 10 and 20. The sum of these two numbers is 30.
+
+--- Problem 3: Find the GCD of 84 and 120... ---
+  cos(EN, ZH) at L33 = 0.9282
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+
+  [EN→EN] To describe the mathematical operation or reasoning being performed, let's break down the given text step by step:
+
+1. 🕑 "mathematical operation": This phrase indicates that we are dealing with a math
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [ZH→EN] 要描述一个数学操作或推理的过程，我们需要具体了解这个操作或推理的上下文。请提供更多的信息，例如操作的公式、问题的陈述、推理的步骤等，这样我才能更准确地描述它。
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [NOISE→EN] 60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+  [BASELINE] The mathematical operation being performed in the given statement is the calculation of the sum of two numbers. In this case, the numbers are 10 and 20. The sum of these two numbers is 30.
+
+
+Wall time: 185s (3.1min)
+Saved: output/expINJ_hidden_injection.json

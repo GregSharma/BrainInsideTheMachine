@@ -1,0 +1,1385 @@
+{
+  "model": "Qwen/Qwen2.5-3B",
+  "splice_layer": 26,
+  "n_problems": 20,
+  "n_pca": 200,
+  "max_tokens": 64,
+  "pca_at_L26": {
+    "pc0_variance_explained": 0.3568788766860962,
+    "cohens_d": 11.478523254394531,
+    "zh_mean_proj": 0.23376581072807312,
+    "en_mean_proj": -0.15599077939987183,
+    "pc_cohens_d": [
+      11.478523254394531,
+      0.26419559121131897,
+      0.1182178407907486,
+      -0.010118033736944199,
+      -0.003716036444529891,
+      -0.11472532153129578,
+      0.09107785671949387,
+      -0.056303735822439194,
+      0.054266929626464844,
+      -0.00429947255179286
+    ]
+  },
+  "f_vector_analysis": {
+    "matched_f_cosine_mean": 0.9520831108093262,
+    "matched_f_cosine_std": 0.010147297754883766,
+    "scrambled_f_cosine_mean": 0.9263405799865723,
+    "z_score": 25.8339786529541
+  },
+  "summary": {
+    "baseline_zh": {
+      "lang_dist": {
+        "zh": 0.9,
+        "en": 0.0,
+        "mixed": 0.0,
+        "numeric": 0.1
+      },
+      "first_token_match_zh": null,
+      "first_token_match_en": null
+    },
+    "baseline_en": {
+      "lang_dist": {
+        "zh": 0.0,
+        "en": 1.0,
+        "mixed": 0.0,
+        "numeric": 0.0
+      },
+      "first_token_match_zh": null,
+      "first_token_match_en": null
+    },
+    "splice_raw": {
+      "lang_dist": {
+        "zh": 0.15,
+        "en": 0.6,
+        "mixed": 0.05,
+        "numeric": 0.2
+      },
+      "first_token_match_zh": 0.65,
+      "first_token_match_en": 0.0
+    },
+    "splice_pc0_swap": {
+      "lang_dist": {
+        "zh": 0.0,
+        "en": 1.0,
+        "mixed": 0.0,
+        "numeric": 0.0
+      },
+      "first_token_match_zh": 0.0,
+      "first_token_match_en": 1.0
+    },
+    "splice_random_dir": {
+      "lang_dist": {
+        "zh": 0.1,
+        "en": 0.5,
+        "mixed": 0.2,
+        "numeric": 0.2
+      },
+      "first_token_match_zh": 0.7,
+      "first_token_match_en": 0.0
+    },
+    "splice_scrambled": {
+      "lang_dist": {
+        "zh": 0.25,
+        "en": 0.55,
+        "mixed": 0.05,
+        "numeric": 0.15
+      },
+      "first_token_match_zh": 0.55,
+      "first_token_match_en": 0.0
+    },
+    "splice_reverse_steer": {
+      "lang_dist": {
+        "zh": 0.85,
+        "en": 0.0,
+        "mixed": 0.0,
+        "numeric": 0.15
+      },
+      "first_token_match_zh": 0.75,
+      "first_token_match_en": 0.0
+    }
+  },
+  "per_problem": [
+    {
+      "prob_idx": 0,
+      "category": 1,
+      "zh_prompt": "\u6c42\u7ec4\u5408\u6570 C(5, 1) \u7684\u503c\u3002",
+      "en_prompt": "Find the value of C(5, 1).",
+      "baseline_zh": {
+        "first_token": 44054,
+        "text": " \u7ec4\u5408\u6570 C(5, 1) \u8868\u793a\u4ece 5 \u4e2a\u5143\u7d20\u4e2d\u9009\u62e9 1 \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\u3002\u6839\u636e\u7ec4\u5408\u6570\u7684\u5b9a\u4e49\uff0cC(n, k) = n! / (k! * (n-k)!)\uff0c\u5176\u4e2d n! \u8868\u793a n \u7684\u9636",
+        "lang": "zh",
+        "n_tokens": 64
+      },
+      "baseline_en": {
+        "first_token": 2014,
+        "text": " To find the value of \\( C(5, 1) \\), we need to use the formula for combinations, which is given by:\n\n\\[\nC(n, k) = \\frac{n!}{k!(n-k)!}\n\\]\n\nIn this case, \\( n = 5 \\) and \\( k",
+        "lang": "en",
+        "n_tokens": 64
+      },
+      "splice_raw": {
+        "first_token": 220,
+        "text": "  Answer Choices: (A) 5 (B) 10 (C) 20 (D) 30\nThe problem is asking for the value of C(5, 1), which is the number of ways to choose 1 item from a set of 5 items. This is",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": false
+      },
+      "splice_pc0_swap": {
+        "first_token": 2014,
+        "text": " To find the value of \\( C(5, 1) \\), we need to use the formula for combinations, which is given by:\n\n\\[\nC(n, k) = \\frac{n!}{k!(n-k)!}\n\\]\n\nIn this case, \\( n = 5 \\) and \\( k",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": true,
+        "zh_pc0_proj": 0.24378958344459534,
+        "en_mean_proj": -0.15599077939987183
+      },
+      "splice_random_dir": {
+        "first_token": 73562,
+        "text": " \u5728\u6570\u5b66\u4e2d\uff0cC(n, k) \u8868\u793a\u4ece n \u4e2a\u5143\u7d20\u4e2d\u9009\u62e9 k \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\u3002C(5, 1) \u8868\u793a\u4ece 5 \u4e2a\u5143\u7d20\u4e2d\u9009\u62e9 1 \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\u3002\n\n\u6839\u636e\u7ec4\u5408\u6570\u7684\u516c\u5f0f\uff0cC(n, k",
+        "lang": "zh",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": false
+      },
+      "splice_scrambled": {
+        "first_token": 220,
+        "text": "  Answer Choices: (A) 5 (B) 10 (C) 20 (D) 30\nThe problem is asking for the value of C(5, 1), which is the number of ways to choose 1 item from a set of 5 items. This is",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": false,
+        "wrong_prob_idx": 7
+      },
+      "splice_reverse_steer": {
+        "first_token": 44054,
+        "text": " \u7ec4\u5408\u6570 C(5, 1) \u8868\u793a\u4ece 5 \u4e2a\u5143\u7d20\u4e2d\u9009\u62e9 1 \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\u3002\u6839\u636e\u7ec4\u5408\u6570\u7684\u5b9a\u4e49\uff0cC(n, k) = n! / (k! * (n-k)!)\uff0c\u5176\u4e2d n! \u8868\u793a n \u7684\u9636",
+        "lang": "zh",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false,
+        "en_pc0_proj": -0.10804621130228043,
+        "zh_mean_proj": 0.23376581072807312
+      },
+      "h26_cosine_zh_en": 0.8874190449714661
+    },
+    {
+      "prob_idx": 1,
+      "category": 2,
+      "zh_prompt": "6719 \u9664\u4ee5 15 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f",
+      "en_prompt": "What is the remainder when 6719 is divided by 15?",
+      "baseline_zh": {
+        "first_token": 220,
+        "text": " 6719 \u9664\u4ee5 15 \u7684\u4f59\u6570\u662f 4\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u518d\u7b97\u4e00\u4e0b 6719 \u4e58\u4ee5 15 \u7684\u7ed3\u679c\u662f\u591a\u5c11\uff1f 6719 \u4e58\u4ee5 15 \u7684\u7ed3\u679c\u662f 100785\u3002\n\n\u73b0\u5728\u8bf7\u4f60",
+        "lang": "zh",
+        "n_tokens": 64
+      },
+      "baseline_en": {
+        "first_token": 2014,
+        "text": " To find the remainder when 6719 is divided by 15, we can use the modulus operation. The modulus operation (%) gives the remainder of a division of two numbers. Here's the step-by-step process:\n\n1. Perform the division of 6719 by 15.\n2.",
+        "lang": "en",
+        "n_tokens": 64
+      },
+      "splice_raw": {
+        "first_token": 220,
+        "text": " 6719 divided by 15 is 447 with a remainder of 4.",
+        "lang": "en",
+        "n_tokens": 23,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false
+      },
+      "splice_pc0_swap": {
+        "first_token": 2014,
+        "text": " To find the remainder when 6719 is divided by 15, we can use the modulus operation. The modulus operation (%) gives the remainder of a division of two numbers. Here's the step-by-step process:\n\n1. Perform the division of 6719 by 15.\n2.",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": true,
+        "zh_pc0_proj": 0.20510557293891907,
+        "en_mean_proj": -0.15599077939987183
+      },
+      "splice_random_dir": {
+        "first_token": 220,
+        "text": " 1. **Calculate the Remainder**:\n   The remainder of the division of (6719) by (15) can be calculated using the modulus operation. Hence, the remainder is (6719 % 15 = 14).\n\n2. **Return the Remainder**:\n",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false
+      },
+      "splice_scrambled": {
+        "first_token": 220,
+        "text": " 6719 divided by 15 is 447 with a remainder of 4.",
+        "lang": "en",
+        "n_tokens": 23,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false,
+        "wrong_prob_idx": 8
+      },
+      "splice_reverse_steer": {
+        "first_token": 220,
+        "text": " 6719 \u9664\u4ee5 15 \u7684\u4f59\u6570\u662f 4\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u7b97\u4e00\u4e0b 6719 \u4e58\u4ee5 15 \u7684\u7ed3\u679c\u662f\u591a\u5c11\uff1f 6719 \u4e58\u4ee5 15 \u7684\u7ed3\u679c\u662f 100785\u3002\n\n\u73b0\u5728\u8bf7\u4f60\u628a",
+        "lang": "zh",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false,
+        "en_pc0_proj": -0.23644143342971802,
+        "zh_mean_proj": 0.23376581072807312
+      },
+      "h26_cosine_zh_en": 0.8450741767883301
+    },
+    {
+      "prob_idx": 2,
+      "category": 4,
+      "zh_prompt": "\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 20\uff0c\u516c\u5dee\u4e3a 9\uff0c\u6c42\u524d 8 \u9879\u4e4b\u548c\u3002",
+      "en_prompt": "An arithmetic sequence has first term 20 and common difference 9. Find the sum of the first 8 terms.",
+      "baseline_zh": {
+        "first_token": 220,
+        "text": " 104\n\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 20\uff0c\u516c\u5dee\u4e3a 9\uff0c\u6c42\u7b2c 8 \u9879\u3002 71\n\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 20\uff0c\u516c\u5dee\u4e3a 9\uff0c\u6c42\u7b2c 10 \u9879\u3002 89\n\n\u7b49\u5dee",
+        "lang": "zh",
+        "n_tokens": 64
+      },
+      "baseline_en": {
+        "first_token": 2014,
+        "text": " To find the sum of the first 8 terms of an arithmetic sequence with the first term \\(a = 20\\) and common difference \\(d = 9\\), we can use the formula for the sum of the first \\(n\\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2",
+        "lang": "en",
+        "n_tokens": 64
+      },
+      "splice_raw": {
+        "first_token": 220,
+        "text": " 1. **Identify the first term and common difference:**\n   The first term of the arithmetic sequence is (a = 20) and the common difference is (d = 9).\n\n2. **Calculate the sum of the first 8 terms:**\n   The sum of the first (n)",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false
+      },
+      "splice_pc0_swap": {
+        "first_token": 2014,
+        "text": " To find the sum of the first 8 terms of an arithmetic sequence with the first term \\(a = 20\\) and common difference \\(d = 9\\), we can use the formula for the sum of the first \\(n\\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": true,
+        "zh_pc0_proj": 0.2469167560338974,
+        "en_mean_proj": -0.15599077939987183
+      },
+      "splice_random_dir": {
+        "first_token": 220,
+        "text": " 1. **Identify the first term and common difference:**\n   The first term of the arithmetic sequence is (a = 20) and the common difference is (d = 9).\n\n2. **Calculate the sum of the first 8 terms:**\n   The sum of the first (n)",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false
+      },
+      "splice_scrambled": {
+        "first_token": 220,
+        "text": " 1. **Identify the first term and common difference:**\n   The first term of the arithmetic sequence is (a = 20) and the common difference is (d = 9).\n\n2. **Calculate the sum of the first 8 terms:**\n   The sum of the first (n)",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false,
+        "wrong_prob_idx": 9
+      },
+      "splice_reverse_steer": {
+        "first_token": 8908,
+        "text": " \u8981\u6c42\u524d 8 \u9879\u4e4b\u548c\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u7b49\u5dee\u6570\u5217\u7684\u6c42\u548c\u516c\u5f0f\u3002\u7b49\u5dee\u6570\u5217\u7684\u524d n \u9879\u548c\u516c\u5f0f\u4e3a\uff1a\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\n\n\u5176\u4e2d\uff1a\n",
+        "lang": "zh",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": false,
+        "en_pc0_proj": -0.1598292589187622,
+        "zh_mean_proj": 0.23376581072807312
+      },
+      "h26_cosine_zh_en": 0.876715898513794
+    },
+    {
+      "prob_idx": 3,
+      "category": 1,
+      "zh_prompt": "\u6c42\u7ec4\u5408\u6570 C(6, 1) \u7684\u503c\u3002",
+      "en_prompt": "Find the value of C(6, 1).",
+      "baseline_zh": {
+        "first_token": 44054,
+        "text": " \u7ec4\u5408\u6570 C(6, 1) \u8868\u793a\u4ece 6 \u4e2a\u5143\u7d20\u4e2d\u9009\u62e9 1 \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\u3002\u6839\u636e\u7ec4\u5408\u6570\u7684\u5b9a\u4e49\uff0cC(n, k) = n! / (k! * (n-k)!)\uff0c\u5176\u4e2d n! \u8868\u793a n \u7684\u9636",
+        "lang": "zh",
+        "n_tokens": 64
+      },
+      "baseline_en": {
+        "first_token": 2014,
+        "text": " To find the value of \\( C(6, 1) \\), we need to use the combination formula, which is given by:\n\n\\[\nC(n, k) = \\frac{n!}{k!(n-k)!}\n\\]\n\nIn this case, \\( n = 6 \\) and \\( k =",
+        "lang": "en",
+        "n_tokens": 64
+      },
+      "splice_raw": {
+        "first_token": 220,
+        "text": "  Answer Choices: (A) 6 (B) 15 (C) 20 (D) 30\nThe problem is asking for the value of C(6, 1), which is the number of ways to choose 1 item from a set of 6 items. This is",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": false
+      },
+      "splice_pc0_swap": {
+        "first_token": 2014,
+        "text": " To find the value of \\( C(6, 1) \\), we need to use the combination formula, which is given by:\n\n\\[\nC(n, k) = \\frac{n!}{k!(n-k)!}\n\\]\n\nIn this case, \\( n = 6 \\) and \\( k =",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": true,
+        "zh_pc0_proj": 0.2359718382358551,
+        "en_mean_proj": -0.15599077939987183
+      },
+      "splice_random_dir": {
+        "first_token": 356,
+        "text": " C(6, 1) is the number of ways to choose 1 item from a set of 6 items. This can be calculated using the formula:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n is the total number of items, k is the number of items",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": false
+      },
+      "splice_scrambled": {
+        "first_token": 8908,
+        "text": " \u8981\u8ba1\u7b97\u7ec4\u5408\u6570 \\(C(6, 1)\\)\uff0c\u6211\u4eec\u9700\u8981\u4f7f\u7528\u7ec4\u5408\u6570\u7684\u516c\u5f0f\uff1a\n\n\\[ C(n, k) = \\frac{n!}{k!(n-k)!} \\]\n\n\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\\(n = 6\\) \u548c \\(k = 1\\)\u3002\u5c06\u8fd9\u4e9b\u503c\u4ee3",
+        "lang": "zh",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": false,
+        "wrong_prob_idx": 10
+      },
+      "splice_reverse_steer": {
+        "first_token": 44054,
+        "text": " \u7ec4\u5408\u6570 C(6, 1) \u8868\u793a\u4ece 6 \u4e2a\u5143\u7d20\u4e2d\u9009\u62e9 1 \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\u3002\u6839\u636e\u7ec4\u5408\u6570\u7684\u5b9a\u4e49\uff0cC(n, k) = n! / (k! * (n - k)!)\uff0c\u5176\u4e2d n! \u8868\u793a n \u7684",
+        "lang": "zh",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false,
+        "en_pc0_proj": -0.1114230528473854,
+        "zh_mean_proj": 0.23376581072807312
+      },
+      "h26_cosine_zh_en": 0.8871137499809265
+    },
+    {
+      "prob_idx": 4,
+      "category": 2,
+      "zh_prompt": "1662 \u9664\u4ee5 6 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f",
+      "en_prompt": "What is the remainder when 1662 is divided by 6?",
+      "baseline_zh": {
+        "first_token": 220,
+        "text": " 1662 \u9664\u4ee5 6 \u7684\u4f59\u6570\u662f 0\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u518d\u7b97\u4e00\u4e0b 1662 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 1662 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f 3\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u518d\u7b97\u4e00\u4e0b ",
+        "lang": "zh",
+        "n_tokens": 64
+      },
+      "baseline_en": {
+        "first_token": 2014,
+        "text": " To find the remainder when 1662 is divided by 6, we can use the modulo operation. The modulo operation (%) gives the remainder of a division of two numbers. Here's the step-by-step process:\n\n1. Perform the division of 1662 by 6.\n2. The remainder",
+        "lang": "en",
+        "n_tokens": 64
+      },
+      "splice_raw": {
+        "first_token": 220,
+        "text": " 1662 divided by 6 is 277 with a remainder of 0.",
+        "lang": "en",
+        "n_tokens": 22,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false
+      },
+      "splice_pc0_swap": {
+        "first_token": 2014,
+        "text": " To find the remainder when 1662 is divided by 6, we can use the modulo operation. The modulo operation (%) gives the remainder of a division of two numbers. Here's the step-by-step process:\n\n1. Perform the division of 1662 by 6.\n2. The remainder",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": true,
+        "zh_pc0_proj": 0.22058428823947906,
+        "en_mean_proj": -0.15599077939987183
+      },
+      "splice_random_dir": {
+        "first_token": 220,
+        "text": " 1. We start with the integer (1662).\n2. To find the remainder of (1662) when divided by (6), we use the modulo operation.\n3. The modulo operation calculates the remainder of a division of two numbers. Specifically, (1662 % 6",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false
+      },
+      "splice_scrambled": {
+        "first_token": 220,
+        "text": " 1662 divided by 6 is 277 with a remainder of 0.",
+        "lang": "en",
+        "n_tokens": 22,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false,
+        "wrong_prob_idx": 11
+      },
+      "splice_reverse_steer": {
+        "first_token": 220,
+        "text": " 1662 \u9664\u4ee5 6 \u7684\u4f59\u6570\u662f 0\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u518d\u7b97\u4e00\u4e0b 1662 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 1662 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f 3\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u518d\u7b97\u4e00\u4e0b ",
+        "lang": "zh",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false,
+        "en_pc0_proj": -0.23183506727218628,
+        "zh_mean_proj": 0.23376581072807312
+      },
+      "h26_cosine_zh_en": 0.8394438028335571
+    },
+    {
+      "prob_idx": 5,
+      "category": 1,
+      "zh_prompt": "\u6c42\u7ec4\u5408\u6570 C(9, 4) \u7684\u503c\u3002",
+      "en_prompt": "Find the value of C(9, 4).",
+      "baseline_zh": {
+        "first_token": 220,
+        "text": " 126\n\n\u6c42\u7ec4\u5408\u6570 C(9, 4) \u7684\u503c\u3002 126\n\n\u6c42\u7ec4\u5408\u6570 C(9, 4) \u7684\u503c\u3002 126\n\n\u6c42\u7ec4\u5408\u6570 C(9, 4) \u7684\u503c\u3002 126\n\n\u6c42\u7ec4\u5408\u6570 C(",
+        "lang": "zh",
+        "n_tokens": 64
+      },
+      "baseline_en": {
+        "first_token": 2014,
+        "text": " To find the value of \\( C(9, 4) \\), we need to calculate the binomial coefficient, which is given by the formula:\n\n\\[\nC(n, k) = \\frac{n!}{k!(n-k)!}\n\\]\n\nIn this case, \\( n = 9 \\) and",
+        "lang": "en",
+        "n_tokens": 64
+      },
+      "splice_raw": {
+        "first_token": 220,
+        "text": "  Answer Choices: (A) 126 (B) 165 (C) 210 (D) 252\nThe problem is asking for the value of the combination C(9, 4), which is the number of ways to choose 4 items from a set",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false
+      },
+      "splice_pc0_swap": {
+        "first_token": 2014,
+        "text": " To find the value of \\( C(9, 4) \\), we need to calculate the binomial coefficient, which is given by the formula:\n\n\\[\nC(n, k) = \\frac{n!}{k!(n-k)!}\n\\]\n\nIn this case, \\( n = 9 \\) and",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": true,
+        "zh_pc0_proj": 0.23447002470493317,
+        "en_mean_proj": -0.15599077939987183
+      },
+      "splice_random_dir": {
+        "first_token": 220,
+        "text": "  Answer Choices: (A) 126 (B) 165 (C) 210 (D) 252\nThe problem is asking for the value of the combination C(9, 4), which is the number of ways to choose 4 items from a set",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false
+      },
+      "splice_scrambled": {
+        "first_token": 220,
+        "text": "  Answer Choices: (A) 126 (B) 165 (C) 210 (D) 252\nThe problem is asking for the value of the combination C(9, 4), which is the number of ways to choose 4 items from a set",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false,
+        "wrong_prob_idx": 12
+      },
+      "splice_reverse_steer": {
+        "first_token": 44054,
+        "text": " \u7ec4\u5408\u6570 C(9, 4) \u8868\u793a\u4ece 9 \u4e2a\u5143\u7d20\u4e2d\u9009\u62e9 4 \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\uff0c\u5373\u4ece 9 \u4e2a\u5143\u7d20\u4e2d\u53d6\u51fa 4 \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\uff0c\u4e0d\u8003\u8651\u987a\u5e8f\u3002\u6839\u636e\u7ec4\u5408\u6570\u7684\u5b9a\u4e49\uff0c\u53ef\u4ee5\u4f7f\u7528\u9636\u4e58\u6765",
+        "lang": "zh",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": false,
+        "en_pc0_proj": -0.125386044383049,
+        "zh_mean_proj": 0.23376581072807312
+      },
+      "h26_cosine_zh_en": 0.8913331031799316
+    },
+    {
+      "prob_idx": 6,
+      "category": 0,
+      "zh_prompt": "\u8ba1\u7b97 702 + 768 \u7684\u503c\u3002",
+      "en_prompt": "Calculate 702 + 768.",
+      "baseline_zh": {
+        "first_token": 220,
+        "text": " 702 + 768 = 1470",
+        "lang": "numeric",
+        "n_tokens": 16
+      },
+      "baseline_en": {
+        "first_token": 2014,
+        "text": " To calculate \\(702 + 768\\), we can use the standard addition method. Here are the steps:\n\n1. Align the numbers by their place values:\n   \\[\n   \\begin{array}{c@{}c@{}c}\n     & 7 & 0 & 2 \\\\\n",
+        "lang": "en",
+        "n_tokens": 64
+      },
+      "splice_raw": {
+        "first_token": 220,
+        "text": " 702 + 768 = 1470",
+        "lang": "numeric",
+        "n_tokens": 16,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false
+      },
+      "splice_pc0_swap": {
+        "first_token": 2014,
+        "text": " To calculate \\(702 + 768\\), we can use the standard addition method. Here are the steps:\n\n1. Align the numbers by their place values:\n   \\[\n   \\begin{array}{c@{}c@{}c}\n     & 7 & 0 & 2 \\\\\n",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": true,
+        "zh_pc0_proj": 0.22233587503433228,
+        "en_mean_proj": -0.15599077939987183
+      },
+      "splice_random_dir": {
+        "first_token": 220,
+        "text": " 702 + 768 = 1470",
+        "lang": "numeric",
+        "n_tokens": 16,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false
+      },
+      "splice_scrambled": {
+        "first_token": 8908,
+        "text": " \u8981\u8ba1\u7b97702 + 768\uff0c\u6211\u4eec\u53ef\u4ee5\u5c06\u8fd9\u4e24\u4e2a\u6570\u76f8\u52a0\uff1a\n\n702\n+768\n-----\n1470\n\n\u6240\u4ee5\uff0c702 + 768\u7684\u7ed3\u679c\u662f1470\u3002",
+        "lang": "zh",
+        "n_tokens": 53,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": false,
+        "wrong_prob_idx": 13
+      },
+      "splice_reverse_steer": {
+        "first_token": 220,
+        "text": " 702 + 768 = 1470",
+        "lang": "numeric",
+        "n_tokens": 16,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false,
+        "en_pc0_proj": -0.1406928449869156,
+        "zh_mean_proj": 0.23376581072807312
+      },
+      "h26_cosine_zh_en": 0.8811340928077698
+    },
+    {
+      "prob_idx": 7,
+      "category": 4,
+      "zh_prompt": "\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 17\uff0c\u516c\u5dee\u4e3a 7\uff0c\u6c42\u524d 26 \u9879\u4e4b\u548c\u3002",
+      "en_prompt": "An arithmetic sequence has first term 17 and common difference 7. Find the sum of the first 26 terms.",
+      "baseline_zh": {
+        "first_token": 220,
+        "text": " 17+17+7\u00d725=26\u00d717\u00f72=253\n\n1949\u5e7410\u67081\u65e5\uff0c\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd\u6210\u7acb\uff0c\u6807\u5fd7\u7740\u4e2d\u56fd\uff08 \uff09\u9769\u547d\u5df2\u7ecf\u53d6\u5f97\u57fa\u672c\u80dc\u5229\uff0c\u4e2d\u56fd\u4eba\u6c11\u5f53\u5bb6\u4f5c\u4e3b\u7684\u65f6\u4ee3\u5df2\u7ecf\u5230\u6765\uff0c\u4e2d\u56fd\u5386\u53f2\u7531\u6b64\u5f00\u8f9f\u4e86\u4e00\u4e2a",
+        "lang": "zh",
+        "n_tokens": 64
+      },
+      "baseline_en": {
+        "first_token": 2014,
+        "text": " To find the sum of the first 26 terms of an arithmetic sequence with the first term \\(a = 17\\) and common difference \\(d = 7\\), we can use the formula for the sum of the first \\(n\\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{",
+        "lang": "en",
+        "n_tokens": 64
+      },
+      "splice_raw": {
+        "first_token": 220,
+        "text": " 1. **Identify the given values:**\n   - First term (\\(a\\)): 17\n   - Common difference (\\(d\\)): 7\n   - Number of terms (\\(n\\)): 26\n\n2. **Use the formula for the sum of the first \\(n",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false
+      },
+      "splice_pc0_swap": {
+        "first_token": 2014,
+        "text": " To find the sum of the first 26 terms of an arithmetic sequence with the first term \\(a = 17\\) and common difference \\(d = 7\\), we can use the formula for the sum of the first \\(n\\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": true,
+        "zh_pc0_proj": 0.23372426629066467,
+        "en_mean_proj": -0.15599077939987183
+      },
+      "splice_random_dir": {
+        "first_token": 220,
+        "text": " 1. **Identify the given values:**\n   - First term (\\(a\\)): 17\n   - Common difference (\\(d\\)): 7\n   - Number of terms (\\(n\\)): 26\n\n2. **Use the formula for the sum of the first \\(n",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false
+      },
+      "splice_scrambled": {
+        "first_token": 220,
+        "text": " 1. **Identify the given values:**\n   - First term (\\(a\\)): 17\n   - Common difference (\\(d\\)): 7\n   - Number of terms (\\(n\\)): 26\n\n2. **Use the formula for the sum of the first \\(n",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false,
+        "wrong_prob_idx": 14
+      },
+      "splice_reverse_steer": {
+        "first_token": 8908,
+        "text": " \u8981\u6c42\u524d 26 \u9879\u4e4b\u548c\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u7b49\u5dee\u6570\u5217\u7684\u6c42\u548c\u516c\u5f0f\u3002\u7b49\u5dee\u6570\u5217\u7684\u6c42\u548c\u516c\u5f0f\u4e3a\uff1a\n\n\\[ S_n = \\frac{n}{2} (a_1 + a_n) \\]\n\n\u5176\u4e2d\uff1a\n- \\( S_n \\) \u662f\u524d",
+        "lang": "zh",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": false,
+        "en_pc0_proj": -0.18124978244304657,
+        "zh_mean_proj": 0.23376581072807312
+      },
+      "h26_cosine_zh_en": 0.8736100792884827
+    },
+    {
+      "prob_idx": 8,
+      "category": 2,
+      "zh_prompt": "4911 \u9664\u4ee5 16 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f",
+      "en_prompt": "What is the remainder when 4911 is divided by 16?",
+      "baseline_zh": {
+        "first_token": 220,
+        "text": " 4911 \u9664\u4ee5 16 \u7684\u4f59\u6570\u662f 15\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u7b97\u4e00\u4e0b 4911 \u4e58\u4ee5 16 \u7684\u7ed3\u679c\u662f\u591a\u5c11\uff1f 4911 \u4e58\u4ee5 16 \u7684\u7ed3\u679c\u662f 78576\u3002\n\n\u73b0\u5728\u8bf7\u4f60\u628a",
+        "lang": "zh",
+        "n_tokens": 64
+      },
+      "baseline_en": {
+        "first_token": 2014,
+        "text": " To find the remainder when 4911 is divided by 16, we can use the modulus operation. The modulus operation (%) gives the remainder of a division of two numbers. Here's the step-by-step process:\n\n1. Perform the division of 4911 by 16.\n2.",
+        "lang": "en",
+        "n_tokens": 64
+      },
+      "splice_raw": {
+        "first_token": 220,
+        "text": " 4911 divided by 16 is 306 with a remainder of 5.",
+        "lang": "en",
+        "n_tokens": 23,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false
+      },
+      "splice_pc0_swap": {
+        "first_token": 2014,
+        "text": " To find the remainder when 4911 is divided by 16, we can use the modulus operation. The modulus operation (%) gives the remainder of a division of two numbers. Here's the step-by-step process:\n\n1. Perform the division of 4911 by 16.\n2.",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": true,
+        "zh_pc0_proj": 0.198050856590271,
+        "en_mean_proj": -0.15599077939987183
+      },
+      "splice_random_dir": {
+        "first_token": 58230,
+        "text": " \u5c064911\u9664\u4ee516\u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\n\nWhat is the remainder when 4911 is divided by 16? \u5c064911\u9664\u4ee516\u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\n\nWhat is the remainder when 4911 is divided by 16?",
+        "lang": "mixed",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": false
+      },
+      "splice_scrambled": {
+        "first_token": 8908,
+        "text": " \u8981\u8ba1\u7b974911\u9664\u4ee516\u7684\u4f59\u6570\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u6a21\u8fd0\u7b97\u3002\u5177\u4f53\u6b65\u9aa4\u5982\u4e0b\uff1a\n\n1. \u8ba1\u7b974911\u9664\u4ee516\u7684\u5546\u548c\u4f59\u6570\u3002\n2. \u4f7f\u7528\u6a21\u8fd0\u7b97\u516c\u5f0f\uff1a\u4f59\u6570 = \u88ab\u9664\u6570 - (\u5546 \u00d7 ",
+        "lang": "zh",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": false,
+        "wrong_prob_idx": 16
+      },
+      "splice_reverse_steer": {
+        "first_token": 220,
+        "text": " 4911 \u9664\u4ee5 16 \u7684\u4f59\u6570\u662f 15\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u7b97\u4e00\u4e0b 4911 \u4e58\u4ee5 16 \u7684\u7ed3\u679c\u662f\u591a\u5c11\uff1f 4911 \u4e58\u4ee5 16 \u7684\u7ed3\u679c\u662f 78576\u3002\n\n\u73b0\u5728\u8bf7\u4f60\u628a",
+        "lang": "zh",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false,
+        "en_pc0_proj": -0.24953509867191315,
+        "zh_mean_proj": 0.23376581072807312
+      },
+      "h26_cosine_zh_en": 0.8248873353004456
+    },
+    {
+      "prob_idx": 9,
+      "category": 4,
+      "zh_prompt": "\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 8\uff0c\u516c\u5dee\u4e3a 2\uff0c\u6c42\u524d 16 \u9879\u4e4b\u548c\u3002",
+      "en_prompt": "An arithmetic sequence has first term 8 and common difference 2. Find the sum of the first 16 terms.",
+      "baseline_zh": {
+        "first_token": 220,
+        "text": " 16\u00d78+\uff0816-1\uff09\u00d72\u00d716/2=160+128=288\n\n\u5728\u7b49\u5dee\u6570\u5217{an}\u4e2d\uff0ca1=1\uff0ca3=5\uff0c\u5219a5= 9\n\n\u5728\u7b49\u5dee\u6570\u5217{",
+        "lang": "zh",
+        "n_tokens": 64
+      },
+      "baseline_en": {
+        "first_token": 2014,
+        "text": " To find the sum of the first 16 terms of an arithmetic sequence with the first term \\(a = 8\\) and common difference \\(d = 2\\), we can use the formula for the sum of the first \\(n\\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2",
+        "lang": "en",
+        "n_tokens": 64
+      },
+      "splice_raw": {
+        "first_token": 220,
+        "text": " 1. **Identify the parameters:**\n   - The first term of the arithmetic sequence is (a = 8).\n   - The common difference of the arithmetic sequence is (d = 2).\n   - The number of terms to be summed is (n = 16).\n\n2. **Calculate the",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false
+      },
+      "splice_pc0_swap": {
+        "first_token": 2014,
+        "text": " To find the sum of the first 16 terms of an arithmetic sequence with the first term \\(a = 8\\) and common difference \\(d = 2\\), we can use the formula for the sum of the first \\(n\\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": true,
+        "zh_pc0_proj": 0.2520075738430023,
+        "en_mean_proj": -0.15599077939987183
+      },
+      "splice_random_dir": {
+        "first_token": 220,
+        "text": " 1. **Identify the given values:**\n   - First term (\\(a\\)): 8\n   - Common difference (\\(d\\)): 2\n   - Number of terms (\\(n\\)): 16\n\n2. **Use the formula for the sum of the first \\(n\\)",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false
+      },
+      "splice_scrambled": {
+        "first_token": 220,
+        "text": " 1. **Identify the given values:**\n   - First term (\\(a\\)): 8\n   - Common difference (\\(d\\)): 2\n   - Number of terms (\\(n\\)): 16\n\n2. **Use the formula for the sum of the first \\(n\\)",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false,
+        "wrong_prob_idx": 17
+      },
+      "splice_reverse_steer": {
+        "first_token": 8908,
+        "text": " \u8981\u6c42\u524d 16 \u9879\u4e4b\u548c\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u7b49\u5dee\u6570\u5217\u7684\u6c42\u548c\u516c\u5f0f\u3002\u7b49\u5dee\u6570\u5217\u7684\u524d n \u9879\u548c\u516c\u5f0f\u4e3a\uff1a\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\n\n\u5176\u4e2d",
+        "lang": "zh",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": false,
+        "en_pc0_proj": -0.15371759235858917,
+        "zh_mean_proj": 0.23376581072807312
+      },
+      "h26_cosine_zh_en": 0.8815037608146667
+    },
+    {
+      "prob_idx": 10,
+      "category": 3,
+      "zh_prompt": "\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 41\uff0c\u5bbd\u4e3a 43\uff0c\u6c42\u5176\u9762\u79ef\u3002",
+      "en_prompt": "A rectangle has length 41 and width 43. Find its area.",
+      "baseline_zh": {
+        "first_token": 18137,
+        "text": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 41\uff0c\u5bbd\u4e3a 43\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = 41 \\times 43 \\]\n\n\u73b0\u5728\u6211\u4eec\u8fdb\u884c\u4e58\u6cd5\u8fd0\u7b97\uff1a\n\n\\[ 41 \\",
+        "lang": "zh",
+        "n_tokens": 64
+      },
+      "baseline_en": {
+        "first_token": 2014,
+        "text": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle is 41 and the width is 43, we substitute these values into the formula:\n\n\\[\n",
+        "lang": "en",
+        "n_tokens": 64
+      },
+      "splice_raw": {
+        "first_token": 18137,
+        "text": " \u957f\u65b9\u5f62\u7684\u957f\u5ea6\u4e3a41\uff0c\u5bbd\u5ea6\u4e3a43\u3002\u6c42\u5176\u9762\u79ef\u3002\n\nA rectangle has length 41 and width 43. Find its area. \u957f\u65b9\u5f62\u7684\u957f\u5ea6\u4e3a41\uff0c\u5bbd\u5ea6\u4e3a43\u3002\u6c42\u5176\u9762\u79ef\u3002\n\nA rectangle has length 41 and width",
+        "lang": "mixed",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false
+      },
+      "splice_pc0_swap": {
+        "first_token": 2014,
+        "text": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle is 41 and the width is 43, we substitute these values into the formula:\n\n\\[\n",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": true,
+        "zh_pc0_proj": 0.2697111964225769,
+        "en_mean_proj": -0.15599077939987183
+      },
+      "splice_random_dir": {
+        "first_token": 18137,
+        "text": " \u957f\u65b9\u5f62\u7684\u957f\u5ea6\u4e3a41\uff0c\u5bbd\u5ea6\u4e3a43\u3002\u6c42\u5176\u9762\u79ef\u3002\n\nA rectangle has length 41 and width 43. Find its area. \u957f\u65b9\u5f62\u7684\u957f\u5ea6\u4e3a41\uff0c\u5bbd\u5ea6\u4e3a43\u3002\u6c42\u5176\u9762\u79ef\u3002\n\nA rectangle has length 41 and width",
+        "lang": "mixed",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false
+      },
+      "splice_scrambled": {
+        "first_token": 8908,
+        "text": " \u8981\u8ba1\u7b97\u4e00\u4e2a\u77e9\u5f62\u7684\u9762\u79ef\uff0c\u6211\u4eec\u9700\u8981\u4f7f\u7528\u77e9\u5f62\u7684\u516c\u5f0f\uff1a\u9762\u79ef = \u957f\u5ea6 \u00d7 \u5bbd\u5ea6\u3002\n\n\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u77e9\u5f62\u7684\u957f\u5ea6\u662f 41\uff0c\u5bbd\u5ea6\u662f 43\u3002\u56e0\u6b64\uff0c\u6211\u4eec\u53ef\u4ee5\u5c06\u8fd9\u4e9b\u503c\u4ee3\u5165\u516c\u5f0f\u4e2d\u8fdb\u884c\u8ba1\u7b97\uff1a\n\n\u9762\u79ef = 4",
+        "lang": "zh",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": false,
+        "wrong_prob_idx": 18
+      },
+      "splice_reverse_steer": {
+        "first_token": 18137,
+        "text": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 41\uff0c\u5bbd\u4e3a 43\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = 41 \\times 43 \\]\n\n\u73b0\u5728\u6211\u4eec\u8fdb\u884c\u4e58\u6cd5\u8fd0\u7b97\uff1a\n\n\\[ 41 \\",
+        "lang": "zh",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false,
+        "en_pc0_proj": -0.1591573804616928,
+        "zh_mean_proj": 0.23376581072807312
+      },
+      "h26_cosine_zh_en": 0.8688676357269287
+    },
+    {
+      "prob_idx": 11,
+      "category": 0,
+      "zh_prompt": "\u8ba1\u7b97 628 + 280 \u7684\u503c\u3002",
+      "en_prompt": "Calculate 628 + 280.",
+      "baseline_zh": {
+        "first_token": 220,
+        "text": " 628 + 280 = 908\n\n\u8ba1\u7b97 628 + 28 \u7684\u503c\u3002 628 + 28 = 656\n\n\u8ba1\u7b97 628 + 2800 \u7684\u503c\u3002 628 + 280",
+        "lang": "zh",
+        "n_tokens": 64
+      },
+      "baseline_en": {
+        "first_token": 2014,
+        "text": " To calculate \\(628 + 280\\), we can follow these steps:\n\n1. Align the numbers by their place values:\n   \\[\n   \\begin{array}{c@{}c@{}c}\n     & 6 & 2 & 8 \\\\\n   + & 2 & ",
+        "lang": "en",
+        "n_tokens": 64
+      },
+      "splice_raw": {
+        "first_token": 220,
+        "text": " 628 + 280 = 908",
+        "lang": "numeric",
+        "n_tokens": 15,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false
+      },
+      "splice_pc0_swap": {
+        "first_token": 2014,
+        "text": " To calculate \\(628 + 280\\), we can follow these steps:\n\n1. Align the numbers by their place values:\n   \\[\n   \\begin{array}{c@{}c@{}c}\n     & 6 & 2 & 8 \\\\\n   + & 2 & ",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": true,
+        "zh_pc0_proj": 0.22106239199638367,
+        "en_mean_proj": -0.15599077939987183
+      },
+      "splice_random_dir": {
+        "first_token": 220,
+        "text": " 628 + 280 = 908",
+        "lang": "numeric",
+        "n_tokens": 15,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false
+      },
+      "splice_scrambled": {
+        "first_token": 220,
+        "text": " 628 + 280 = 908",
+        "lang": "numeric",
+        "n_tokens": 15,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false,
+        "wrong_prob_idx": 20
+      },
+      "splice_reverse_steer": {
+        "first_token": 220,
+        "text": " 628 + 280 = 908\n\n\u8ba1\u7b97 628 + 28 \u7684\u503c\u3002 628 + 28 = 656\n\n\u8ba1\u7b97 628 + 2800 \u7684\u503c\u3002 628 + 280",
+        "lang": "zh",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false,
+        "en_pc0_proj": -0.1447659134864807,
+        "zh_mean_proj": 0.23376581072807312
+      },
+      "h26_cosine_zh_en": 0.879039466381073
+    },
+    {
+      "prob_idx": 12,
+      "category": 1,
+      "zh_prompt": "\u6c42\u7ec4\u5408\u6570 C(12, 2) \u7684\u503c\u3002",
+      "en_prompt": "Find the value of C(12, 2).",
+      "baseline_zh": {
+        "first_token": 44054,
+        "text": " \u7ec4\u5408\u6570 C(n, k) \u8868\u793a\u4ece n \u4e2a\u4e0d\u540c\u5143\u7d20\u4e2d\u9009\u53d6 k \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\uff0c\u5176\u8ba1\u7b97\u516c\u5f0f\u4e3a\uff1a\n\n\\[ C(n, k) = \\frac{n!}{k!(n-k)!} \\]\n\n\u5176\u4e2d\uff0cn! \u8868\u793a n \u7684\u9636\u4e58",
+        "lang": "zh",
+        "n_tokens": 64
+      },
+      "baseline_en": {
+        "first_token": 2014,
+        "text": " To find the value of \\( C(12, 2) \\), we need to calculate the binomial coefficient, which is given by the formula:\n\n\\[\nC(n, k) = \\frac{n!}{k!(n-k)!}\n\\]\n\nIn this case, \\( n = 12 \\",
+        "lang": "en",
+        "n_tokens": 64
+      },
+      "splice_raw": {
+        "first_token": 220,
+        "text": "  Answer Choices: (A) 66 (B) 72 (C) 78 (D) 84\nThe formula for combinations is C(n, r) = n! / (r! * (n-r)!), where n is the total number of items, r is the",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": false
+      },
+      "splice_pc0_swap": {
+        "first_token": 2014,
+        "text": " To find the value of \\( C(12, 2) \\), we need to use the formula for combinations, which is given by:\n\n\\[\nC(n, r) = \\frac{n!}{r!(n-r)!}\n\\]\n\nIn this case, \\( n = 12 \\) and",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": true,
+        "zh_pc0_proj": 0.24198207259178162,
+        "en_mean_proj": -0.15599077939987183
+      },
+      "splice_random_dir": {
+        "first_token": 576,
+        "text": " The value of C(12, 2) is 66.",
+        "lang": "en",
+        "n_tokens": 17,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": false
+      },
+      "splice_scrambled": {
+        "first_token": 220,
+        "text": "  Answer Choices: (A) 66 (B) 72 (C) 78 (D) 84\nThe formula for combinations is C(n, r) = n! / (r! * (n-r)!), where n is the total number of items, r is the",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": false,
+        "wrong_prob_idx": 21
+      },
+      "splice_reverse_steer": {
+        "first_token": 44054,
+        "text": " \u7ec4\u5408\u6570 C(12, 2) \u8868\u793a\u4ece 12 \u4e2a\u5143\u7d20\u4e2d\u9009\u53d6 2 \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\uff0c\u5176\u8ba1\u7b97\u516c\u5f0f\u4e3a\uff1a\n\nC(n, k) = n! / (k! * (n - k)!)\n\n\u5176\u4e2d\uff0cn! \u8868\u793a",
+        "lang": "zh",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false,
+        "en_pc0_proj": -0.11771530658006668,
+        "zh_mean_proj": 0.23376581072807312
+      },
+      "h26_cosine_zh_en": 0.8927435874938965
+    },
+    {
+      "prob_idx": 13,
+      "category": 3,
+      "zh_prompt": "\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 34\uff0c\u5bbd\u4e3a 7\uff0c\u6c42\u5176\u9762\u79ef\u3002",
+      "en_prompt": "A rectangle has length 34 and width 7. Find its area.",
+      "baseline_zh": {
+        "first_token": 18137,
+        "text": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 34\uff0c\u5bbd\u4e3a 7\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = \\text{\u957f} \\times \\text{\u5bbd} = 34 \\times 7 \\]\n\n\u8fdb\u884c",
+        "lang": "zh",
+        "n_tokens": 64
+      },
+      "baseline_en": {
+        "first_token": 2014,
+        "text": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle is 34 and the width is 7, we substitute these values into the formula:\n\n\\[\n\\",
+        "lang": "en",
+        "n_tokens": 64
+      },
+      "splice_raw": {
+        "first_token": 8908,
+        "text": " \u8981\u8ba1\u7b97\u4e00\u4e2a\u77e9\u5f62\u7684\u9762\u79ef\uff0c\u6211\u4eec\u9700\u8981\u4f7f\u7528\u77e9\u5f62\u7684\u516c\u5f0f\uff1a\u9762\u79ef = \u957f\u5ea6 \u00d7 \u5bbd\u5ea6\u3002\n\n\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u77e9\u5f62\u7684\u957f\u5ea6\u662f 34\uff0c\u5bbd\u5ea6\u662f 7\u3002\u6240\u4ee5\uff0c\u6211\u4eec\u53ef\u4ee5\u5c06\u8fd9\u4e9b\u503c\u4ee3\u5165\u516c\u5f0f\u4e2d\uff1a\n\n\u9762\u79ef = 34 \u00d7 ",
+        "lang": "zh",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": false
+      },
+      "splice_pc0_swap": {
+        "first_token": 2014,
+        "text": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle is 34 and the width is 7, we substitute these values into the formula:\n\n\\[\n\\",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": true,
+        "zh_pc0_proj": 0.2708224058151245,
+        "en_mean_proj": -0.15599077939987183
+      },
+      "splice_random_dir": {
+        "first_token": 18137,
+        "text": " \u957f\u65b9\u5f62\u7684\u957f\u662f34\uff0c\u5bbd\u662f7\uff0c\u6c42\u5176\u9762\u79ef\u3002\n\nA rectangle has length 34 and width 7. Find its area. \u957f\u65b9\u5f62\u7684\u957f\u662f34\uff0c\u5bbd\u662f7\uff0c\u6c42\u5176\u9762\u79ef\u3002\n\nA rectangle has length 34 and width 7.",
+        "lang": "mixed",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false
+      },
+      "splice_scrambled": {
+        "first_token": 8908,
+        "text": " \u8981\u8ba1\u7b97\u4e00\u4e2a\u77e9\u5f62\u7684\u9762\u79ef\uff0c\u6211\u4eec\u9700\u8981\u4f7f\u7528\u77e9\u5f62\u7684\u516c\u5f0f\uff1a\u9762\u79ef = \u957f\u5ea6 \u00d7 \u5bbd\u5ea6\u3002\n\n\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u77e9\u5f62\u7684\u957f\u5ea6\u662f 34\uff0c\u5bbd\u5ea6\u662f 7\u3002\u6240\u4ee5\uff0c\u6211\u4eec\u53ef\u4ee5\u5c06\u8fd9\u4e9b\u503c\u4ee3\u5165\u516c\u5f0f\u4e2d\uff1a\n\n\u9762\u79ef = 34 \u00d7 ",
+        "lang": "zh",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": false,
+        "wrong_prob_idx": 0
+      },
+      "splice_reverse_steer": {
+        "first_token": 18137,
+        "text": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 34\uff0c\u5bbd\u4e3a 7\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = \\text{\u957f} \\times \\text{\u5bbd} = 34 \\times 7 \\]\n\n\u8fdb\u884c",
+        "lang": "zh",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false,
+        "en_pc0_proj": -0.1413789987564087,
+        "zh_mean_proj": 0.23376581072807312
+      },
+      "h26_cosine_zh_en": 0.8772472143173218
+    },
+    {
+      "prob_idx": 14,
+      "category": 0,
+      "zh_prompt": "\u8ba1\u7b97 728 + 969 \u7684\u503c\u3002",
+      "en_prompt": "Calculate 728 + 969.",
+      "baseline_zh": {
+        "first_token": 220,
+        "text": " 728 + 969 = 1697\n\n\u8bf7\u8ba1\u7b97\u4ee5\u4e0b\u8868\u8fbe\u5f0f\u7684\u503c\uff1a(1000000000000000000000000000000000000000",
+        "lang": "zh",
+        "n_tokens": 64
+      },
+      "baseline_en": {
+        "first_token": 2014,
+        "text": " To calculate \\(728 + 969\\), we can use the standard addition method. Here are the steps:\n\n1. Align the numbers by their place values:\n   \\[\n   \\begin{array}{c@{}c@{}c}\n     & 7 & 2 & 8 \\\\\n",
+        "lang": "en",
+        "n_tokens": 64
+      },
+      "splice_raw": {
+        "first_token": 220,
+        "text": " 728 + 969 = 1797",
+        "lang": "numeric",
+        "n_tokens": 16,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false
+      },
+      "splice_pc0_swap": {
+        "first_token": 2014,
+        "text": " To calculate \\(728 + 969\\), we can use the standard addition method. Here are the steps:\n\n1. Align the numbers by their place values:\n   \\[\n   \\begin{array}{c@{}c@{}c}\n     & 7 & 2 & 8 \\\\\n",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": true,
+        "zh_pc0_proj": 0.2217330038547516,
+        "en_mean_proj": -0.15599077939987183
+      },
+      "splice_random_dir": {
+        "first_token": 220,
+        "text": " 728 + 969 = 1797",
+        "lang": "numeric",
+        "n_tokens": 16,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false
+      },
+      "splice_scrambled": {
+        "first_token": 220,
+        "text": " 728 + 969 = 1797",
+        "lang": "numeric",
+        "n_tokens": 16,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false,
+        "wrong_prob_idx": 1
+      },
+      "splice_reverse_steer": {
+        "first_token": 220,
+        "text": " 728 + 969 = 1697",
+        "lang": "numeric",
+        "n_tokens": 16,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false,
+        "en_pc0_proj": -0.14632074534893036,
+        "zh_mean_proj": 0.23376581072807312
+      },
+      "h26_cosine_zh_en": 0.8719644546508789
+    },
+    {
+      "prob_idx": 16,
+      "category": 3,
+      "zh_prompt": "\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 18\uff0c\u5bbd\u4e3a 10\uff0c\u6c42\u5176\u9762\u79ef\u3002",
+      "en_prompt": "A rectangle has length 18 and width 10. Find its area.",
+      "baseline_zh": {
+        "first_token": 18137,
+        "text": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u65b9\u5f62\u7684\u957f\u662f 18\uff0c\u5bbd\u662f 10\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = \\text{\u957f} \\times \\text{\u5bbd} = 18 \\times ",
+        "lang": "zh",
+        "n_tokens": 64
+      },
+      "baseline_en": {
+        "first_token": 2014,
+        "text": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle is 18 and the width is 10, we substitute these values into the formula:\n\n\\[\n",
+        "lang": "en",
+        "n_tokens": 64
+      },
+      "splice_raw": {
+        "first_token": 8908,
+        "text": " \u8981\u8ba1\u7b97\u4e00\u4e2a\u77e9\u5f62\u7684\u9762\u79ef\uff0c\u6211\u4eec\u9700\u8981\u4f7f\u7528\u77e9\u5f62\u7684\u957f\u5ea6\u548c\u5bbd\u5ea6\u3002\u77e9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u5c06\u957f\u5ea6\u4e58\u4ee5\u5bbd\u5ea6\u6765\u8ba1\u7b97\u3002\n\n\u7ed9\u5b9a\u7684\u77e9\u5f62\u957f\u5ea6\u4e3a18\uff0c\u5bbd\u5ea6\u4e3a10\u3002\u56e0\u6b64\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u4ee5\u4e0b\u516c\u5f0f\u6765\u8ba1\u7b97\u9762\u79ef\uff1a\n\n\\[ \\text{\u9762\u79ef} =",
+        "lang": "zh",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": false
+      },
+      "splice_pc0_swap": {
+        "first_token": 2014,
+        "text": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle is 18 and the width is 10, we substitute these values into the formula:\n\n\\[\n",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": true,
+        "zh_pc0_proj": 0.2742393910884857,
+        "en_mean_proj": -0.15599077939987183
+      },
+      "splice_random_dir": {
+        "first_token": 18137,
+        "text": " \u957f\u65b9\u5f62\u7684\u957f\u662f18\uff0c\u5bbd\u662f10\uff0c\u6c42\u5176\u9762\u79ef\u3002\n\nA rectangle has length 18 and width 10. Find its area. \u957f\u65b9\u5f62\u7684\u957f\u662f18\uff0c\u5bbd\u662f10\uff0c\u6c42\u5176\u9762\u79ef\u3002\n\nA rectangle has length 18 and width",
+        "lang": "mixed",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false
+      },
+      "splice_scrambled": {
+        "first_token": 18137,
+        "text": " \u957f\u65b9\u5f62\u7684\u957f\u662f18\uff0c\u5bbd\u662f10\uff0c\u6c42\u5176\u9762\u79ef\u3002\n\nA rectangle has length 18 and width 10. Find its area. \u957f\u65b9\u5f62\u7684\u957f\u662f18\uff0c\u5bbd\u662f10\uff0c\u6c42\u5176\u9762\u79ef\u3002\n\nA rectangle has length 18 and width",
+        "lang": "mixed",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false,
+        "wrong_prob_idx": 2
+      },
+      "splice_reverse_steer": {
+        "first_token": 18137,
+        "text": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u65b9\u5f62\u7684\u957f\u662f 18\uff0c\u5bbd\u662f 10\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = \\text{\u957f} \\times \\text{\u5bbd} = 18 \\times ",
+        "lang": "zh",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false,
+        "en_pc0_proj": -0.11577650159597397,
+        "zh_mean_proj": 0.23376581072807312
+      },
+      "h26_cosine_zh_en": 0.8932614326477051
+    },
+    {
+      "prob_idx": 17,
+      "category": 2,
+      "zh_prompt": "7112 \u9664\u4ee5 25 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f",
+      "en_prompt": "What is the remainder when 7112 is divided by 25?",
+      "baseline_zh": {
+        "first_token": 220,
+        "text": " 7112 \u9664\u4ee5 25 \u7684\u4f59\u6570\u662f 22\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u518d\u7b97\u4e00\u4e0b 7112 \u9664\u4ee5 26 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 7112 \u9664\u4ee5 26 \u7684\u4f59\u6570\u662f 22\u3002\n\n\u597d\u7684\uff0c\u90a3",
+        "lang": "zh",
+        "n_tokens": 64
+      },
+      "baseline_en": {
+        "first_token": 2014,
+        "text": " To find the remainder when \\(7^{112}\\) is divided by 25, we can use properties of modular arithmetic, specifically Euler's theorem. Euler's theorem states that if \\(a\\) and \\(n\\) are coprime, then \\(a^{\\phi(n)} \\equiv 1 \\",
+        "lang": "en",
+        "n_tokens": 64
+      },
+      "splice_raw": {
+        "first_token": 220,
+        "text": " 7112 = 7112 mod 25 = 12. The remainder when 7112 is divided by 25 is 12.",
+        "lang": "en",
+        "n_tokens": 40,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false
+      },
+      "splice_pc0_swap": {
+        "first_token": 2014,
+        "text": " To find the remainder when \\(7^{112}\\) is divided by 25, we can use properties of modular arithmetic, specifically Euler's theorem. Euler's theorem states that if \\(a\\) and \\(n\\) are coprime, then \\(a^{\\phi(n)} \\equiv 1 \\",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": true,
+        "zh_pc0_proj": 0.21014325320720673,
+        "en_mean_proj": -0.15599077939987183
+      },
+      "splice_random_dir": {
+        "first_token": 220,
+        "text": " 7112 can be written as 71 * 100 + 12.\nWhen we divide 71 * 100 by 25, we get a remainder of 0.\nWhen we divide 12 by 25, we get a remainder of 1",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false
+      },
+      "splice_scrambled": {
+        "first_token": 220,
+        "text": " 7112 = 71 * 100 + 12\n71 = 2 * 35 + 1\n100 = 4 * 25\n12 = 4 * 3\nSo, 7112 = (2 * ",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false,
+        "wrong_prob_idx": 3
+      },
+      "splice_reverse_steer": {
+        "first_token": 220,
+        "text": " 7112 \u9664\u4ee5 25 \u7684\u4f59\u6570\u662f 22\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u7b97\u4e00\u4e0b 7112 \u4e58\u4ee5 25 \u7684\u7ed3\u679c\u662f\u591a\u5c11\uff1f 7112 \u4e58\u4ee5 25 \u7684\u7ed3\u679c\u662f 177800\u3002\n\n\u73b0\u5728\u8bf7\u4f60",
+        "lang": "zh",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false,
+        "en_pc0_proj": -0.21357665956020355,
+        "zh_mean_proj": 0.23376581072807312
+      },
+      "h26_cosine_zh_en": 0.860971212387085
+    },
+    {
+      "prob_idx": 18,
+      "category": 3,
+      "zh_prompt": "\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 38\uff0c\u5bbd\u4e3a 17\uff0c\u6c42\u5176\u9762\u79ef\u3002",
+      "en_prompt": "A rectangle has length 38 and width 17. Find its area.",
+      "baseline_zh": {
+        "first_token": 18137,
+        "text": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 38\uff0c\u5bbd\u4e3a 17\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = 38 \\times 17 \\]\n\n\u73b0\u5728\u6211\u4eec\u8fdb\u884c\u4e58\u6cd5\u8fd0\u7b97\uff1a\n\n\\[ 38 \\",
+        "lang": "zh",
+        "n_tokens": 64
+      },
+      "baseline_en": {
+        "first_token": 2014,
+        "text": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle is 38 and the width is 17, we substitute these values into the formula:\n\n\\[\n",
+        "lang": "en",
+        "n_tokens": 64
+      },
+      "splice_raw": {
+        "first_token": 8908,
+        "text": " \u8981\u8ba1\u7b97\u4e00\u4e2a\u77e9\u5f62\u7684\u9762\u79ef\uff0c\u6211\u4eec\u9700\u8981\u4f7f\u7528\u77e9\u5f62\u7684\u516c\u5f0f\uff1a\u9762\u79ef = \u957f\u5ea6 \u00d7 \u5bbd\u5ea6\u3002\n\n\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u77e9\u5f62\u7684\u957f\u5ea6\u662f 38\uff0c\u5bbd\u5ea6\u662f 17\u3002\u6240\u4ee5\uff0c\u6211\u4eec\u53ef\u4ee5\u5c06\u8fd9\u4e9b\u503c\u4ee3\u5165\u516c\u5f0f\u4e2d\uff1a\n\n\u9762\u79ef = 38 \u00d7",
+        "lang": "zh",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": false
+      },
+      "splice_pc0_swap": {
+        "first_token": 2014,
+        "text": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle is 38 and the width is 17, we substitute these values into the formula:\n\n\\[\n",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": true,
+        "zh_pc0_proj": 0.2691177427768707,
+        "en_mean_proj": -0.15599077939987183
+      },
+      "splice_random_dir": {
+        "first_token": 8908,
+        "text": " \u8981\u8ba1\u7b97\u4e00\u4e2a\u77e9\u5f62\u7684\u9762\u79ef\uff0c\u6211\u4eec\u9700\u8981\u4f7f\u7528\u77e9\u5f62\u7684\u516c\u5f0f\uff1a\u9762\u79ef = \u957f\u5ea6 \u00d7 \u5bbd\u5ea6\u3002\n\n\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u77e9\u5f62\u7684\u957f\u5ea6\u662f 38\uff0c\u5bbd\u5ea6\u662f 17\u3002\u6240\u4ee5\uff0c\u6211\u4eec\u53ef\u4ee5\u5c06\u8fd9\u4e9b\u503c\u4ee3\u5165\u516c\u5f0f\u4e2d\uff1a\n\n\u9762\u79ef = 38 \u00d7",
+        "lang": "zh",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": false
+      },
+      "splice_scrambled": {
+        "first_token": 220,
+        "text": " 1. The area of a rectangle is calculated by multiplying its length by its width.\n2. Given the length of the rectangle is 38 and the width is 17, we can calculate the area as follows:\n   [\n   text{area} = 38 times 17\n   ]\n",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": false,
+        "wrong_prob_idx": 4
+      },
+      "splice_reverse_steer": {
+        "first_token": 18137,
+        "text": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 38\uff0c\u5bbd\u4e3a 17\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = 38 \\times 17 \\]\n\n\u73b0\u5728\u6211\u4eec\u8fdb\u884c\u4e58\u6cd5\u8fd0\u7b97\uff1a\n\n\\[ 38 \\",
+        "lang": "zh",
+        "n_tokens": 64,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false,
+        "en_pc0_proj": -0.14449892938137054,
+        "zh_mean_proj": 0.23376581072807312
+      },
+      "h26_cosine_zh_en": 0.8766190409660339
+    },
+    {
+      "prob_idx": 20,
+      "category": 4,
+      "zh_prompt": "\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 7\uff0c\u516c\u5dee\u4e3a 8\uff0c\u6c42\u524d 16 \u9879\u4e4b\u548c\u3002",
+      "en_prompt": "An arithmetic sequence has first term 7 and common difference 8. Find the sum of the first 16 terms.",
+      "baseline_zh": {
+        "first_token": 18137,
+        "text": " \u9996\u9879 a1=7\uff0c\u516c\u5dee d=8\uff0c\u9879\u6570 n=16\uff0c\u6c42\u524d 16 \u9879\u4e4b\u548c S16\u3002\n\u89e3\uff1a\u6839\u636e\u7b49\u5dee\u6570\u5217\u6c42\u548c\u516c\u5f0f S16 = n/2 * (2a1 + (n-1)d)",
+        "lang": "zh",
+        "n_tokens": 64
+      },
+      "baseline_en": {
+        "first_token": 2014,
+        "text": " To find the sum of the first 16 terms of an arithmetic sequence with the first term \\(a = 7\\) and common difference \\(d = 8\\), we can use the formula for the sum of the first \\(n\\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2",
+        "lang": "en",
+        "n_tokens": 64
+      },
+      "splice_raw": {
+        "first_token": 220,
+        "text": " 1. **Identify the given values:**\n   - First term (\\(a\\)): 7\n   - Common difference (\\(d\\)): 8\n   - Number of terms (\\(n\\)): 16\n\n2. **Use the formula for the sum of the first \\(n\\)",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": false
+      },
+      "splice_pc0_swap": {
+        "first_token": 2014,
+        "text": " To find the sum of the first 16 terms of an arithmetic sequence with the first term \\(a = 7\\) and common difference \\(d = 8\\), we can use the formula for the sum of the first \\(n\\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": true,
+        "zh_pc0_proj": 0.24628102779388428,
+        "en_mean_proj": -0.15599077939987183
+      },
+      "splice_random_dir": {
+        "first_token": 576,
+        "text": " The sum of the first 16 terms of an arithmetic sequence can be calculated using the formula for the sum of an arithmetic series. The formula is:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\n\nwhere:\n- \\( S_n \\",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": false
+      },
+      "splice_scrambled": {
+        "first_token": 220,
+        "text": " 1. **Identify the given values:**\n   - First term (\\(a\\)): 7\n   - Common difference (\\(d\\)): 8\n   - Number of terms (\\(n\\)): 16\n\n2. **Use the formula for the sum of the first \\(n\\)",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": false,
+        "wrong_prob_idx": 5
+      },
+      "splice_reverse_steer": {
+        "first_token": 8908,
+        "text": " \u8981\u6c42\u524d 16 \u9879\u4e4b\u548c\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u7b49\u5dee\u6570\u5217\u7684\u6c42\u548c\u516c\u5f0f\u3002\u7b49\u5dee\u6570\u5217\u7684\u6c42\u548c\u516c\u5f0f\u4e3a\uff1a\n\n\\[ S_n = \\frac{n}{2} (a_1 + a_n) \\]\n\n\u5176\u4e2d \\( S_n \\) \u662f\u524d \\( n",
+        "lang": "zh",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": false,
+        "en_pc0_proj": -0.16848506033420563,
+        "zh_mean_proj": 0.23376581072807312
+      },
+      "h26_cosine_zh_en": 0.8789807558059692
+    },
+    {
+      "prob_idx": 21,
+      "category": 0,
+      "zh_prompt": "\u8ba1\u7b97 40 + 105 \u7684\u503c\u3002",
+      "en_prompt": "Calculate 40 + 105.",
+      "baseline_zh": {
+        "first_token": 220,
+        "text": " 40 + 105 = 145",
+        "lang": "numeric",
+        "n_tokens": 14
+      },
+      "baseline_en": {
+        "first_token": 2014,
+        "text": " To calculate \\(40 + 105\\), we can follow these steps:\n\n1. Start with the number 40.\n2. Add the number 105 to 40.\n\nWe can break it down as follows:\n\\[40 + 105 = (40 + ",
+        "lang": "en",
+        "n_tokens": 64
+      },
+      "splice_raw": {
+        "first_token": 220,
+        "text": " 40 + 105 = 145",
+        "lang": "numeric",
+        "n_tokens": 14,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false
+      },
+      "splice_pc0_swap": {
+        "first_token": 2014,
+        "text": " To calculate \\(40 + 105\\), we can follow these steps:\n\n1. Start with the number 40.\n2. Add the number 105 to 40.\n\nWe can break it down as follows:\n\\[40 + 105 = (40 + ",
+        "lang": "en",
+        "n_tokens": 64,
+        "first_token_matches_zh": false,
+        "first_token_matches_en": true,
+        "zh_pc0_proj": 0.23164746165275574,
+        "en_mean_proj": -0.15599077939987183
+      },
+      "splice_random_dir": {
+        "first_token": 220,
+        "text": " 40 + 105 = 145",
+        "lang": "numeric",
+        "n_tokens": 14,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false
+      },
+      "splice_scrambled": {
+        "first_token": 220,
+        "text": " 40 + 105 = 145",
+        "lang": "numeric",
+        "n_tokens": 14,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false,
+        "wrong_prob_idx": 6
+      },
+      "splice_reverse_steer": {
+        "first_token": 220,
+        "text": " 40 + 105 = 145",
+        "lang": "numeric",
+        "n_tokens": 14,
+        "first_token_matches_zh": true,
+        "first_token_matches_en": false,
+        "en_pc0_proj": -0.1305961012840271,
+        "zh_mean_proj": 0.23376581072807312
+      },
+      "h26_cosine_zh_en": 0.8813294172286987
+    }
+  ]
+}

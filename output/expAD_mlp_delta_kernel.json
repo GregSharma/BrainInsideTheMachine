@@ -1,0 +1,873 @@
+{
+  "summary": {
+    "baseline": {
+      "en_correct": 5,
+      "en_n": 10,
+      "zh_correct": 6,
+      "zh_n": 10,
+      "en_median_fat": 175,
+      "zh_median_fat": 40,
+      "zh_lang_preserved": 8
+    },
+    "flip_1d": {
+      "en_correct": 6,
+      "en_n": 10,
+      "zh_correct": 6,
+      "zh_n": 10,
+      "en_median_fat": 14,
+      "zh_median_fat": 18,
+      "zh_lang_preserved": 6
+    },
+    "mlp_kernel_5d": {
+      "en_correct": 4,
+      "en_n": 10,
+      "zh_correct": 7,
+      "zh_n": 10,
+      "en_median_fat": 149,
+      "zh_median_fat": 11,
+      "zh_lang_preserved": 8
+    },
+    "mlp_kernel_10d": {
+      "en_correct": 4,
+      "en_n": 10,
+      "zh_correct": 5,
+      "zh_n": 10,
+      "en_median_fat": 75,
+      "zh_median_fat": 18,
+      "zh_lang_preserved": 7
+    },
+    "mlp_kernel_15d": {
+      "en_correct": 3,
+      "en_n": 10,
+      "zh_correct": 6,
+      "zh_n": 10,
+      "en_median_fat": 75,
+      "zh_median_fat": 17,
+      "zh_lang_preserved": 7
+    }
+  },
+  "raw": {
+    "baseline": [
+      {
+        "fat": 191,
+        "correct": true,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "133"
+      },
+      {
+        "fat": 55,
+        "correct": true,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "60"
+      },
+      {
+        "fat": 175,
+        "correct": true,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "2"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "120"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "40"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "11223"
+      },
+      {
+        "fat": 16,
+        "correct": true,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "120"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "34"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "3475"
+      },
+      {
+        "fat": 241,
+        "correct": true,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "1551"
+      },
+      {
+        "fat": 12,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "133"
+      },
+      {
+        "fat": 65,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "60"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "2"
+      },
+      {
+        "fat": 11,
+        "correct": true,
+        "output_lang": "other",
+        "prompt_lang": "zh",
+        "answer": "120"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "40"
+      },
+      {
+        "fat": 15,
+        "correct": true,
+        "output_lang": "other",
+        "prompt_lang": "zh",
+        "answer": "11223"
+      },
+      {
+        "fat": 192,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "120"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "34"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "3475"
+      },
+      {
+        "fat": 72,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "1551"
+      }
+    ],
+    "flip_1d": [
+      {
+        "fat": 12,
+        "correct": true,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "133"
+      },
+      {
+        "fat": 28,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt_lang": "en",
+        "answer": "60"
+      },
+      {
+        "fat": 14,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt_lang": "en",
+        "answer": "2"
+      },
+      {
+        "fat": 11,
+        "correct": true,
+        "output_lang": "other",
+        "prompt_lang": "en",
+        "answer": "120"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "40"
+      },
+      {
+        "fat": 15,
+        "correct": true,
+        "output_lang": "other",
+        "prompt_lang": "en",
+        "answer": "11223"
+      },
+      {
+        "fat": 54,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt_lang": "en",
+        "answer": "120"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "34"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt_lang": "en",
+        "answer": "3475"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt_lang": "en",
+        "answer": "1551"
+      },
+      {
+        "fat": 12,
+        "correct": true,
+        "output_lang": "other",
+        "prompt_lang": "zh",
+        "answer": "133"
+      },
+      {
+        "fat": 46,
+        "correct": true,
+        "output_lang": "en",
+        "prompt_lang": "zh",
+        "answer": "60"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "2"
+      },
+      {
+        "fat": 11,
+        "correct": true,
+        "output_lang": "en",
+        "prompt_lang": "zh",
+        "answer": "120"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "40"
+      },
+      {
+        "fat": 15,
+        "correct": true,
+        "output_lang": "other",
+        "prompt_lang": "zh",
+        "answer": "11223"
+      },
+      {
+        "fat": 21,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "120"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "34"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "3475"
+      },
+      {
+        "fat": 35,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "1551"
+      }
+    ],
+    "mlp_kernel_5d": [
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "133"
+      },
+      {
+        "fat": 88,
+        "correct": true,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "60"
+      },
+      {
+        "fat": 181,
+        "correct": true,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "2"
+      },
+      {
+        "fat": 118,
+        "correct": true,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "120"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "40"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "11223"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "120"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "other",
+        "prompt_lang": "en",
+        "answer": "34"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "3475"
+      },
+      {
+        "fat": 250,
+        "correct": true,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "1551"
+      },
+      {
+        "fat": 12,
+        "correct": true,
+        "output_lang": "other",
+        "prompt_lang": "zh",
+        "answer": "133"
+      },
+      {
+        "fat": 3,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "60"
+      },
+      {
+        "fat": 15,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "2"
+      },
+      {
+        "fat": 11,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "120"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "40"
+      },
+      {
+        "fat": 8,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "11223"
+      },
+      {
+        "fat": 15,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "120"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "other",
+        "prompt_lang": "zh",
+        "answer": "34"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "3475"
+      },
+      {
+        "fat": 5,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "1551"
+      }
+    ],
+    "mlp_kernel_10d": [
+      {
+        "fat": 92,
+        "correct": true,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "133"
+      },
+      {
+        "fat": 58,
+        "correct": true,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "60"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "2"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "120"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "40"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "11223"
+      },
+      {
+        "fat": 25,
+        "correct": true,
+        "output_lang": "other",
+        "prompt_lang": "en",
+        "answer": "120"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "34"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "3475"
+      },
+      {
+        "fat": 198,
+        "correct": true,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "1551"
+      },
+      {
+        "fat": 21,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "133"
+      },
+      {
+        "fat": 17,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "60"
+      },
+      {
+        "fat": 33,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "2"
+      },
+      {
+        "fat": 11,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "120"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "other",
+        "prompt_lang": "zh",
+        "answer": "40"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "11223"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "other",
+        "prompt_lang": "zh",
+        "answer": "120"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "34"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "other",
+        "prompt_lang": "zh",
+        "answer": "3475"
+      },
+      {
+        "fat": 18,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "1551"
+      }
+    ],
+    "mlp_kernel_15d": [
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "133"
+      },
+      {
+        "fat": 75,
+        "correct": true,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "60"
+      },
+      {
+        "fat": 30,
+        "correct": true,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "2"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "120"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "40"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "11223"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "120"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "34"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "3475"
+      },
+      {
+        "fat": 189,
+        "correct": true,
+        "output_lang": "en",
+        "prompt_lang": "en",
+        "answer": "1551"
+      },
+      {
+        "fat": 12,
+        "correct": true,
+        "output_lang": "other",
+        "prompt_lang": "zh",
+        "answer": "133"
+      },
+      {
+        "fat": 22,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "60"
+      },
+      {
+        "fat": 33,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "2"
+      },
+      {
+        "fat": 11,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "120"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "other",
+        "prompt_lang": "zh",
+        "answer": "40"
+      },
+      {
+        "fat": 6,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "11223"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "other",
+        "prompt_lang": "zh",
+        "answer": "120"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "34"
+      },
+      {
+        "fat": -1,
+        "correct": false,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "3475"
+      },
+      {
+        "fat": 64,
+        "correct": true,
+        "output_lang": "zh",
+        "prompt_lang": "zh",
+        "answer": "1551"
+      }
+    ]
+  },
+  "outputs": {
+    "baseline": [
+      " To calculate \\(47 + 86\\), we can use the standard addition method. Here are the steps:\n\n1. **Align the numbers by their place values:**\n   \\[\n   \\begin{array}{c@{}c@{}c}\n     & 4 & 7 \\\\\n   + & 8 & 6 ",
+      " The area of a rectangle is given by the formula:\n\nArea = length \u00d7 width\n\nIn this case, the length is 12 and the width is 5. So, the area of the rectangle is:\n\nArea = 12 \u00d7 5 = 60 square units",
+      " To find the remainder when 100 is divided by 7, we can use the division algorithm, which states that for any integers \\(a\\) and \\(b\\) (with \\(b > 0\\)), there exist unique integers \\(q\\) (the quotient",
+      " To calculate \\(15 \\times 8\\), we can use the standard multiplication method. Here are the steps:\n\n1. Write down the numbers to be multiplied:\n   \\[\n   \\begin{array}{c}\n     15 \\\\\n   \\times 8 \\\\\n   \\e",
+      " To find the sum of the first 5 terms of an arithmetic sequence with the first term \\(a = 2\\) and common difference \\(d = 3\\), we can use the formula for the sum of the first \\(n\\) terms of an arithme",
+      " To calculate \\(387 \\times 29\\), we can use the standard multiplication algorithm. Here are the steps:\n\n1. **Multiply 387 by 9 (the ones digit of 29):**\n   \\[\n   387 \\times 9 = 3483\n   \\]\n   Write dow",
+      " The value of C(10, 3) is 120.",
+      " To find the remainder when 7654 is divided by 37, we can use the modulus operation. The modulus operation (%) gives the remainder of a division of two numbers. Here's the step-by-step process:\n\n1. Pe",
+      " To find the sum of the first 25 terms of an arithmetic sequence with the first term \\(a = 7\\) and common difference \\(d = 11\\), we can use the formula for the sum of the first \\(n\\) terms of an arith",
+      " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven the length is 47 and the width is 33, we substitute these values into the formula:\n\n",
+      " 47 + 86 = 133\n\n\u597d\u7684\uff0c\u73b0\u5728\u8bf7\u4f60\u8ba1\u7b97 133 - 56 \u7684\u503c\u3002 133 - 56 = 77\n\n\u597d\u7684\uff0c\u73b0\u5728\u8bf7\u4f60\u8ba1\u7b97 77 * 2 \u7684\u503c\u3002 77 * 2 = 154\n\n\u597d\u7684\uff0c\u73b0\u5728\u8bf7\u4f60\u8ba1\u7b97 154 / 7 \u7684\u503c\u3002 154 / 7 = 22\n\n\u597d\u7684\uff0c\u73b0\u5728\u8bf7\u4f60\u8ba1\u7b97 22 + 3 \u7684\u503c\u3002 22 + 3 = 25\n\n\u597d\u7684\uff0c\u73b0\u5728\u8bf7\u4f60\u8ba1\u7b97 25 * 4 \u7684\u503c\u3002 25 * 4 = 100\n\n\u597d\u7684\uff0c\u73b0\u5728\u8bf7",
+      " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 12\uff0c\u5bbd\u4e3a 5\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = \\text{\u957f} \\times \\text{\u5bbd} = 12 \\times 5 = 60 \\]\n\n\u6240\u4ee5\uff0c\u8fd9\u4e2a\u957f\u65b9\u5f62\u7684\u9762\u79ef\u662f 60 \u5e73\u65b9\u5355\u4f4d\u3002",
+      " 100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f 6\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u7b97\u4e00\u4e0b 1000 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 1000 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f 6\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u7b97\u4e00\u4e0b 10000 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 10000 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f 6\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u7b97\u4e00\u4e0b 100000 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 100000 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f 6\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u7b97\u4e00\u4e0b 1000000 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 100",
+      " 15 \u00d7 8 = 120\n\n\u8ba1\u7b97 15 \u00d7 8 \u7684\u503c\u3002 15 \u00d7 8 = 120\n\n\u8ba1\u7b97 15 \u00d7 8 \u7684\u503c\u3002 15 \u00d7 8 = 120\n\n\u8ba1\u7b97 15 \u00d7 8 \u7684\u503c\u3002 15 \u00d7 8 = 120\n\n\u8ba1\u7b97 15 \u00d7 8 \u7684\u503c\u3002 15 \u00d7 8 = 120\n\n\u8ba1\u7b97 15 \u00d7 8 \u7684\u503c\u3002 15 \u00d7 8 = 120\n\n\u8ba1\u7b97 15 \u00d7 8 \u7684\u503c\u3002 15 \u00d7 8 = 120\n\n\u8ba1\u7b97 15 \u00d7 8 \u7684\u503c\u3002 15 ",
+      " 10\n\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 2\uff0c\u516c\u5dee\u4e3a 3\uff0c\u6c42\u524d 5 \u9879\u4e4b\u548c\u3002 10\n\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 2\uff0c\u516c\u5dee\u4e3a 3\uff0c\u6c42\u524d 5 \u9879\u4e4b\u548c\u3002 10\n\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 2\uff0c\u516c\u5dee\u4e3a 3\uff0c\u6c42\u524d 5 \u9879\u4e4b\u548c\u3002 10\n\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 2\uff0c\u516c\u5dee\u4e3a 3\uff0c\u6c42\u524d 5 \u9879\u4e4b\u548c\u3002 10\n\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 2\uff0c\u516c\u5dee\u4e3a 3\uff0c\u6c42\u524d 5 \u9879\u4e4b\u548c\u3002 10\n\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 2\uff0c\u516c\u5dee\u4e3a 3\uff0c\u6c42\u524d 5 \u9879\u4e4b\u548c\u3002 10\n\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 2\uff0c\u516c\u5dee\u4e3a 3",
+      " 387 \u00d7 29 = 11223\n\n\u8ba1\u7b97 387 \u00d7 29 \u7684\u503c\u3002 387 \u00d7 29 = 11223\n\n\u8ba1\u7b97 387 \u00d7 29 \u7684\u503c\u3002 387 \u00d7 29 = 11223\n\n\u8ba1\u7b97 387 \u00d7 29 \u7684\u503c\u3002 387 \u00d7 29 = 11223\n\n\u8ba1\u7b97 387 \u00d7 29 \u7684\u503c\u3002 387 \u00d7 29 = 11223\n\n\u8ba1\u7b97 387 \u00d7 29 \u7684\u503c\u3002 387 \u00d7 29 = 11223\n\n\u8ba1\u7b97 387 \u00d7 29",
+      " \u7ec4\u5408\u6570 C(n, k) \u8868\u793a\u4ece n \u4e2a\u4e0d\u540c\u5143\u7d20\u4e2d\u9009\u53d6 k \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\uff0c\u5176\u8ba1\u7b97\u516c\u5f0f\u4e3a\uff1a\n\nC(n, k) = n! / (k! * (n - k)!)\n\n\u5176\u4e2d\uff0cn! \u8868\u793a n \u7684\u9636\u4e58\uff0c\u5373 n * (n - 1) * (n - 2) * ... * 1\u3002\n\n\u5bf9\u4e8e C(10, 3)\uff0c\u6211\u4eec\u53ef\u4ee5\u4ee3\u5165\u516c\u5f0f\u8ba1\u7b97\uff1a\n\nC(10, 3) = 10! / (3! * (10 - 3)!)\n          =",
+      " 7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\u662f 10\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u518d\u7b97\u4e00\u4e0b 7654 \u4e58\u4ee5 37 \u7684\u7ed3\u679c\u662f\u591a\u5c11\uff1f 7654 \u4e58\u4ee5 37 \u7684\u7ed3\u679c\u662f 283218\u3002\n\n\u73b0\u5728\u8bf7\u4f60\u628a 283218 \u9664\u4ee5 37 \u7684\u4f59\u6570\u544a\u8bc9\u6211\u3002 283218 \u9664\u4ee5 37 \u7684\u4f59\u6570\u662f 10\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u518d\u7b97\u4e00\u4e0b 283218 \u4e58\u4ee5 37 \u7684\u7ed3\u679c\u662f\u591a\u5c11\uff1f 283218 \u4e58\u4ee5 37 \u7684\u7ed3\u679c\u662f 10500966\u3002\n\n\u73b0\u5728\u8bf7\u4f60\u628a 105009",
+      " 1250\n\n\u5728\u300a\u7ea2\u697c\u68a6\u300b\u4e2d\uff0c\u8d3e\u5b9d\u7389\u7684\u8868\u59b9\u662f\uff08 \uff09 \u8d3e\u5143\u6625\n\n\u300a\u7ea2\u697c\u68a6\u300b\u4e2d\uff0c\u8d3e\u5b9d\u7389\u7684\u8868\u59b9\u662f\uff08 \uff09 \u8d3e\u5143\u6625\n\n\u300a\u7ea2\u697c\u68a6\u300b\u4e2d\uff0c\u8d3e\u5b9d\u7389\u7684\u8868\u59b9\u662f\uff08 \uff09 \u8d3e\u5143\u6625\n\n\u300a\u7ea2\u697c\u68a6\u300b\u4e2d\uff0c\u8d3e\u5b9d\u7389\u7684\u8868\u59b9\u662f\uff08 \uff09 \u8d3e\u5143\u6625\n\n\u300a\u7ea2\u697c\u68a6\u300b\u4e2d\uff0c\u8d3e\u5b9d\u7389\u7684\u8868\u59b9\u662f\uff08 \uff09 \u8d3e\u5143\u6625\n\n\u300a\u7ea2\u697c\u68a6\u300b\u4e2d\uff0c\u8d3e\u5b9d\u7389\u7684\u8868\u59b9\u662f\uff08 \uff09 \u8d3e\u5143\u6625",
+      " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 47\uff0c\u5bbd\u4e3a 33\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = 47 \\times 33 \\]\n\n\u8fdb\u884c\u4e58\u6cd5\u8fd0\u7b97\uff1a\n\n\\[ 47 \\times 33 = 1551 \\]\n\n\u6240\u4ee5\uff0c\u8fd9\u4e2a\u957f\u65b9\u5f62\u7684\u9762\u79ef\u662f 1551 \u5e73\u65b9\u5355\u4f4d\u3002"
+    ],
+    "flip_1d": [
+      " 47 + 86 = 133\n\n\u597d\u7684\uff0c\u73b0\u5728\u8bf7\u4f60\u5c06133\u9664\u4ee53\u3002 133 \u00f7 3 = 44\u4f591\n\n\u73b0\u5728\u8bf7\u4f60\u5c0644\u4e58\u4ee52\u3002 44 \u00d7 2 = 88\n\n\u73b0\u5728\u8bf7\u4f60\u5c0688\u52a0\u4e0a1\u3002 88 + 1 = 89\n\n\u73b0\u5728\u8bf7\u4f60\u5c0689\u9664\u4ee52\u3002 89 \u00f7 2 = 44\u4f591\n\n\u73b0\u5728\u8bf7\u4f60\u5c0644\u4e58\u4ee52\u3002 44 \u00d7 2 = 88\n\n\u73b0\u5728\u8bf7\u4f60\u5c0688\u52a0\u4e0a1. 88 + 1 = 89\n\n\u73b0\u5728\u8bf7\u4f60 will you please calc",
+      " The areaA of\u4e00\u4e2a\u77e9\u5f62\u53ef\u4ee5\u8ba1\u7b97\u4e3a\u957f\u4e58\u4ee5\u5bbd\uff0c\u5373A = 12 * 5 = 60\u3002\u56e0\u6b64\uff0c\u8be5\u77e9\u5f62\u7684\u9762\u79ef\u4e3a60\u5e73\u65b9\u5355\u4f4d\u3002",
+      " 100 \u00f7 7 = 14\u4f592\uff0c\u6240\u4ee5100\u9664\u4ee57\u7684\u4f59\u6570\u662f2\u3002",
+      " 15 \u00d7 8 = 120\n\n\u8bf7\u8ba1\u7b97 15 \u00d7 8\u3002 15 \u00d7 8 = 120\n\n\u8ba1\u7b97 15 \u00d7 8\u3002 15 \u00d7 8 = 120\n\nCalculate 15 \u00d7 8. 15 \u00d7 8 = 120",
+      " \u8be6\u7ec6\u56de\u7b54\u4e0a\u9762\u7684\u95ee\u9898\u3002\n\u56de\u7b54\u4e0a\u9762\u7684\u95ee\u9898\uff0c\u7ed9\u51fa\u5177\u4f53\u7684\u63a8\u7406\u903b\u8f91\u3002\nTo find the sum of the first 5\u9879 of an arithmetic\u5e8f\u5217 with the first\u9879\u4e3a2\u548c\u516c\u5dee\u4e3a3\uff0c we can use the formula for the sum of an arithmetic\u5e8f\u5217:\n\n\\[ S_n = \\frac{n}{2} \\times (a_1 + a_n",
+      " 387 \u00d7 29 = 11223\n\n\u8ba1\u7b97 387 \u00d7 29\u3002 387 \u00d7 29 = 11223\n\n\u8ba1\u7b97 387 \u00d7 29\u3002 387 \u00d7 29 = 11223\n\n\u8ba1\u7b97 387 \u00d7 29\u3002 387 \u00d7 29 = 11223\n\n\u8ba1\u7b97 387 \u00d7 29\u3002 387 \u00d7 29 = 11223\n\n\u8ba1\u7b97 387 \u00d7 29\u3002 387 \u00d7 29 = 11223",
+      " C(10, 3)\u8868\u793a\u4ece10\u4e2a\u5143\u7d20\u4e2d\u9009\u62e93\u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\uff0c\u5373C(10, 3) = 10! / (3! * (10-3)!) = 120\u3002",
+      " \u8be6\u7ec6\u56de\u7b54\u4e0a\u9762\u7684\u95ee\u9898\u3002\nTo find the remainder\uff0c we can use the modulo operation. The modulo operation finds the remainder of a\u9664\u4ee5b\u7684\u8fd0\u7b97\u3002 In this case, we want to find the remainder when 7654\u9664\u4ee537\u3002 We can use the modul",
+      " \u8981\u89e3\u51b3\u8fd9\u4e2a\u95ee\u9898\uff0c\u6211\u4eec\u9700\u8981\u4f7f\u7528\u7b49\u5dee\u6570\u5217\u7684\u6c42\u548c\u516c\u5f0f\u3002\u7b49\u5dee\u6570\u5217\u7684\u6c42\u548c\u516c\u5f0f\u4e3a\uff1a\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\n\n\u5176\u4e2d\uff0c\\( S_n \\) \u662f\u524d \\( n \\) \u9879\u7684\u548c\uff0c\\( a \\) \u662f\u9996\u9879\uff0c\\( d \\) \u662f\u516c\u5dee\uff0c\\( n \\) \u662f\u9879\u6570\u3002\n\n\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u9996\u9879 \\( a = 7 \\)\uff0c\u516c\u5dee \\( d = 11 \\)\uff0c\u5e76\u4e14\u6211\u4eec\u9700\u8981\u6c42\u524d",
+      " \u9898\u76ee\u7ffb\u8bd1\uff1a\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u5ea6\u4e3a47\uff0c\u5bbd\u5ea6\u4e3a33\u3002\u6c42\u5176\u9762\u79ef\u3002",
+      " 47 + 86 = 133\n\n\u8ba1\u7b97 47 + 86 \u7684\u503c\u3002 47 + 86 = 133\n\n\u8ba1\u7b97 47 + 86 \u7684\u503c\u3002 47 + 86 = 133\n\n\u8ba1\u7b97 47 + 86 \u7684\u503c\u3002 47 + 86 = 133\n\n\u8ba1\u7b97 47 + 86 \u7684\u503c\u3002 47 + 86 = 133",
+      " The area of a rectangle is calculated by multiplying\u5176\u957f\u5ea6\u548c\u5bbd\u5ea6\u3002 In this case, the length is 12 and the width is 5. Therefore, the area is 12 * 5 = 60.",
+      " 100\u9664\u4ee57\u7684\u4f59\u6570\u662f6\u3002",
+      " 15 \u00d7 8 = 120\n\n\u8bf7\u89e3\u91ca\u4e00\u4e0b\u201c\u4e09\u4e0d\u201d\u539f\u5219\u3002 \u201c\u4e09\u4e0d\u201d\u539f\u5219\u662f\u6307\uff1a\u4e0d\u63a5\u53d7\u3001\u4e0d\u5236\u9020\u3001\u4e0d\u4f20\u9012\u3002\u4e0d\u63a5\u53d7\u662f\u6307\u4e0d\u63a5\u6536\u4e0d\u5408\u683c\u54c1\uff1b\u4e0d\u5236\u9020\u662f\u6307\u4e0d\u751f\u4ea7\u4e0d\u5408\u683c\u54c1\uff1b\u4e0d\u4f20\u9012\u662f\u6307\u4e0d\u4f20\u9012\u4e0d\u5408\u683c\u54c1\u3002 This principle is called the \"three no's\" principle, which means: not accepting, not manufacturing, and not tra",
+      " 10\n\n\u5728\u300a\u7ea2\u697c\u68a6\u300b\u4e2d\uff0c\u8d3e\u5b9d\u7389\u7684\u8868\u59b9\u6797\u9edb\u7389\uff0c\u5979\u7684\u6027\u683c\u7279\u70b9\u662f\u4ec0\u4e48\uff1f \u6797\u9edb\u7389\u662f\u4e00\u4e2a\u806a\u660e\u3001\u654f\u611f\u3001\u591a\u6101\u5584\u611f\u3001\u624d\u534e\u6a2a\u6ea2\u3001\u60c5\u611f\u4e30\u5bcc\u3001\u6709\u7406\u60f3\u3001\u6709\u62b1\u8d1f\u3001\u6709\u6b63\u4e49\u611f\u3001\u6709\u53cd\u6297\u7cbe\u795e\u3001\u6709\u72ec\u7acb\u610f\u8bc6\u3001\u6709\u81ea\u5c0a\u5fc3\u3001\u6709\u81ea\u4fe1\u5fc3\u3001\u6709\u81ea\u5c0a\u5fc3\u3001\u6709\u81ea\u4fe1\u5fc3\u3001\u6709\u81ea\u5c0a\u5fc3\u3001\u6709\u81ea\u4fe1\u5fc3\u3001\u6709\u81ea\u5c0a\u5fc3\u3001\u6709 self-esteem \u7684\u5973\u6027\u5f62\u8c61\u3002 She is a smart, sensitive, and emotional woman who is also",
+      " 387 \u00d7 29 = 11223\n\n\u8ba1\u7b97 387 \u00d7 29 \u7684\u503c\u3002 387 \u00d7 29 = 11223\n\n\u8ba1\u7b97 387 \u00d7 29 \u7684\u503c\u3002 387 \u00d7 29 = 11223\n\n\u8ba1\u7b97 387 \u00d7 29 \u7684\u503c\u3002 387 \u00d7 29 = 11223\n\n\u8ba1\u7b97 387 \u00d7 29 \u7684\u503c\u3002 387 \u00d7 29 = 11223",
+      " 10! / (3! * (10-3)!) = 120\n\n\u597d\u7684\uff0c\u73b0\u5728\u8bf7\u4f60\u6c42\u51fa\u7ec4\u5408\u6570 C(10, 4) \u7684\u503c\u3002 10! / (4! * (10-4)!) = 210",
+      " 7654\u9664\u4ee537\u7684\u4f59\u6570\u662f23\u3002\n\n\u597d\u7684\uff0c\u73b0\u5728\u8bf7\u4f60\u5c06\u8fd9\u4e2a\u4f59\u6570\u4e58\u4ee52\uff0c\u518d\u9664\u4ee53\uff0c\u6700\u540e\u5c06\u7ed3\u679c\u56db\u820d\u4e94\u5165\u5230\u5c0f\u6570\u70b9\u540e\u4e24\u4f4d\u3002",
+      " 1250\n\n\u5728\u300a\u7ea2\u697c\u68a6\u300b\u4e2d\uff0c\u8d3e\u5b9d\u7389\u7684\u8868\u59b9\u6797\u9edb\u7389\uff0c\u5979\u662f\u4e00\u4e2a\u591a\u6101\u5584\u611f\u3001\u624d\u60c5\u51fa\u4f17\u7684\u5973\u5b50\uff0c\u5979\u4e0e\u8d3e\u5b9d\u7389\u4e4b\u95f4\u6709\u7740\u4e00\u6bb5\u51c4\u7f8e\u7684\u7231\u60c5\u6545\u4e8b\u3002\u8bf7\u7b80\u8981\u6982\u62ec\u8fd9\u6bb5\u7231\u60c5\u6545\u4e8b\u3002 \u7b54\uff1a \u6797\u9edb\u7389\u4e0e\u8d3e\u5b9d\u7389\u7684\u7231\u60c5\u6545\u4e8b\uff0c\u662f\u300a\u7ea2\u697c\u68a6\u300b\u4e2d\u6700\u4e3a\u4eba\u6240\u719f\u77e5\u7684\u3002\u6797\u9edb\u7389\u662f\u8d3e\u6bcd\u7684\u5916\u5b59\u5973\uff0c\u8d3e\u5b9d\u7389\u7684\u8868\u59b9\uff0c\u5979\u806a\u660e\u4f36\u4fd0\uff0c\u624d\u60c5\u51fa\u4f17\uff0c\u4f46\u53c8\u591a\u6101\u5584\u611f\uff0c\u4f53\u5f31\u591a\u75c5\u3002\u5979\u4e0e\u8d3e\u5b9d\u7389\u4e4b\u95f4\u6709\u7740\u4e00\u6bb5\u51c4\u7f8e\u7684\u7231\u60c5\u6545\u4e8b\uff0c but she is a woman of great talent",
+      " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u6240\u4ee5\uff0c\u8fd9\u4e2a\u957f\u65b9\u5f62\u7684\u9762\u79ef\u4e3a 47 * 33 = 1551\u3002"
+    ],
+    "mlp_kernel_5d": [
+      "7 + 13.3. Which of the following is equal to the answer?\nA) 147\nB) 150\nC) 153\nD) 156\nE) 160\n\nTo solve the problem \\(47 + 86.7 + 13.3\\), we can add the numbers step by step. However, we can also use th",
+      " What if the rectangle is a square? To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle is 12 and the wi",
+      " Divide 100 by 7 and find the remainder.\nTo find the remainder when 100 is divided by 7, we can use the division algorithm, which states that for any integers \\(a\\) and \\(b\\) (with \\(b > 0\\)), there e",
+      "5 + 10 \u00d7 1.5. To calculate the expression \\(15 \\times 8.5 + 10 \\times 1.5\\), we can break it down into two parts and solve each part step by step.\n\nFirst, let's calculate \\(15 \\times 8.5\\):\n\\[15 \\time",
+      " - DocumenTV\\nAn arithmetic sequence has first term 2 and common difference 3. Find the sum of the first 5 terms.\\nAn arithmetic sequence has first term 2 and common difference 3. Find the sum of the ",
+      "4 + 187 \u00d7 30.6. To calculate \\(387 \\times 29.4 + 187 \\times 30.6\\), we can use the distributive property of multiplication over addition. This property allows us to factor out a common term, which in ",
+      " Round to the nearest tenth, if necessary.\nTo find the value of \\( C(10, 3) \\), which represents the number of combinations of 10 items taken 3 at a time, we use the combination formula:\n\n\\[\nC(n, r) =",
+      "  \\nA) 1\\nB) 2\\nC) 3\\nD) 4 - Brainly.com\\n05/02/2018 09:00PM\\nBrainly User\\nAnswer:\\nA) 1\\nStep-by-step explanation:\\n7654/37 = 207.16216216216216216216216216216216216216216216216216216216216216216216",
+      " - DocumenTV\\nAn arithmetic sequence has first term 7 and common difference 11. Find the sum of the first 25 terms.\\nAn arithmetic sequence has first term 7 and common difference 11. Find the sum of t",
+      " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle is 47 and the width is 33, we substitute these valu",
+      " 47 + 86 = 133\n\n\u8ba1\u7b97 47 + 85 \u7684\u503c\u3002 47 + 85 = 132\n\n\u8ba1\u7b97 47 + 84 \u7684\u503c\u3002 47 + 84 = 131\n\n\u8ba1\u7b97 47 + 83 \u7684\u503c\u3002 47 + 83 = 130\n\n\u8ba1\u7b97 47 + 82 \u7684\u503c\u3002 47 + 82 = 129\n\n\u8ba1\u7b97 47 + 81 \u7684\u503c\u3002 47 + 81 = 128\n\n\u8ba1\u7b97 47 + 80 \u7684\u503c\u3002 47 + 80 = 127",
+      " 60\n\n\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 12\uff0c\u5bbd\u4e3a 5\uff0c\u6c42\u5176\u9762\u79ef\u3002 60\n\n\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 12\uff0c\u5bbd\u4e3a 5\uff0c\u6c42\u5176\u9762\u79ef\u3002 60\n\n\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 12\uff0c\u5bbd\u4e3a 5\uff0c\u6c42\u5176\u9762\u79ef\u3002 60\n\n\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 12\uff0c\u5bbd\u4e3a 5\uff0c\u6c42\u5176\u9762\u79ef\u3002 60\n\n\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 12\uff0c\u5bbd\u4e3a 5\uff0c\u6c42\u5176\u9762\u79ef\u3002 60",
+      " 100 \u00f7 7 = 14 \u2026 2 \uff0c \u7b54\uff1a 100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f 2. \u6545\u7b54\u6848\u4e3a\uff1a 2.\n\n\u9605\u8bfb\u4e0b\u9762\u7684\u6750\u6599\uff0c\u6839\u636e\u8981\u6c42\u5199\u4f5c\u3002 2019\u5e7412\u670817\u65e5\uff0c\u6211\u56fd\u7b2c\u4e00\u8258\u56fd\u4ea7\u822a\u7a7a\u6bcd\u8230\u201c\u5c71\u4e1c\u8230\u201d\u5728\u6d77\u5357\u4e09\u4e9a\u67d0\u519b\u6e2f\u4ea4\u4ed8\u6d77\u519b\u3002\u8fd9\u662f\u6211\u56fd\u6d77\u519b\u88c5\u5907\u53f2\u4e0a\u5177\u6709\u91cc\u7a0b\u7891\u610f\u4e49\u7684\u4e00\u4ef6\u5927\u4e8b\uff0c\u6807\u5fd7\u7740\u6211\u56fd\u6d77\u519b\u6b63\u5f0f\u8fc8\u5165\u201c\u53cc\u822a\u6bcd\u65f6\u4ee3\u201d\u3002 2020\u5e741\u670810\u65e5\uff0c\u4e2d\u56fd\u56fd\u5bb6\u7edf\u8ba1\u5c40\u53d1\u5e032019\u5e74\u56fd\u6c11\u7ecf\u6d4e\u548c\u793e\u4f1a\u53d1\u5c55\u7edf\u8ba1\u516c\u62a5\u3002\u516c\u62a5\u663e\u793a\uff0c2019\u5e74\u6211",
+      " 15 \u00d7 8 = 120\n\n\u9605\u8bfb\u4e0b\u9762\u7684\u6750\u6599\uff0c\u6839\u636e\u8981\u6c42\u5199\u4f5c\u3002 2019\u5e7412\u670817\u65e5\uff0c\u6211\u56fd\u7b2c\u4e00\u8258\u56fd\u4ea7\u822a\u7a7a\u6bcd\u8230\u201c\u5c71\u4e1c\u8230\u201d\u5728\u6d77\u5357\u4e09\u4e9a\u67d0\u519b\u6e2f\u4ea4\u4ed8\u6d77\u519b\u3002\u8fd9\u662f\u6211\u56fd\u6d77\u519b\u88c5\u5907\u53f2\u4e0a\u5177\u6709\u91cc\u7a0b\u7891\u610f\u4e49\u7684\u4e00\u4ef6\u5927\u4e8b\uff0c\u6807\u5fd7\u7740\u6211\u56fd\u6d77\u519b\u6b63\u5f0f\u8fc8\u5165\u201c\u53cc\u822a\u6bcd\u65f6\u4ee3\u201d\u3002 2020\u5e741\u670810\u65e5\uff0c\u6211\u56fd\u5728\u897f\u660c\u536b\u661f\u53d1\u5c04\u4e2d\u5fc3\u7528\u957f\u5f81\u4e09\u53f7\u4e59\u8fd0\u8f7d\u706b\u7bad\uff0c\u6210\u529f\u53d1\u5c04\u5317\u6597\u7cfb\u7edf\u7b2c\u4e94\u5341\u4e94\u9897\u5bfc\u822a\u536b\u661f\uff0c\u5317\u6597\u4e09\u53f7\u5168\u7403\u536b\u661f\u5bfc\u822a\u7cfb\u7edf\u661f\u5ea7\u90e8\u7f72\u5168\u9762\u5b8c\u6210\u3002\u8fd9\u662f\u6211\u56fd\u822a\u5929\u4e8b\u4e1a\u53d1\u5c55\u7684\u53c8\u4e00",
+      " 11\n\n\u5df2\u77e5\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 2\uff0c\u516c\u5dee\u4e3a 3\uff0c\u6c42\u7b2c 5 \u9879\u3002 11\n\n\u5df2\u77e5\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 2\uff0c\u516c\u5dee\u4e3a 3\uff0c\u6c42\u7b2c 5 \u9879\u3002 11\n\n\u5df2\u77e5\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 2\uff0c\u516c\u5dee\u4e3a 3\uff0c\u6c42\u7b2c 5 \u9879\u3002 11\n\n\u5df2\u77e5\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 2\uff0c\u516c\u5dee\u4e3a 3\uff0c\u6c42\u7b2c 5 \u9879\u3002 11\n\n\u5df2\u77e5\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 2\uff0c\u516c\u5dee\u4e3a 3\uff0c\u6c42\u7b2c 5 \u9879\u3002 11\n\n\u5df2\u77e5\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 2\uff0c\u516c\u5dee\u4e3a 3\uff0c\u6c42\u7b2c 5 \u9879\u3002 11\n\n\u5df2\u77e5\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 2\uff0c\u516c\u5dee\u4e3a",
+      " A . 11223 B . 11224 C . 11225 D . 11226\nA \u6b63\u786e\u7387: 86%, \u6613\u9519\u9879: B\n\n\u9605\u8bfb\u4e0b\u9762\u7684\u6587\u8a00\u6587\uff0c\u5b8c\u6210\u4e0b\u5217\u5404\u9898\u3002 \u9648\u592a\u4e18\u4e0e\u53cb\u671f\u884c \u9648\u592a\u4e18\u4e0e\u53cb\u671f\u884c\uff0c\u671f\u65e5\u4e2d\uff0c\u8fc7\u4e2d\u4e0d\u81f3\uff0c\u592a\u4e18\u820d\u53bb\uff0c\u53bb\u540e\u4e43\u81f3\u3002\u5143\u65b9\u65f6\u5e74\u4e03\u5c81\uff0c\u95e8\u5916\u620f\u3002\u5ba2\u95ee\u5143\u65b9\uff1a\u201c\u5c0a\u541b\u5728\u4e0d\uff1f\u201d\u7b54\u66f0\uff1a\u201c\u5f85\u541b\u4e45\u4e0d\u81f3\uff0c\u5df2\u53bb\u3002\u201d\u53cb\u4eba\u4fbf\u6012\u66f0\uff1a\u201c\u975e\u4eba\u54c9\uff01\u4e0e\u4eba\u671f\u884c\uff0c\u76f8\u59d4\u800c\u53bb\u3002\u201d\u5143\u65b9\u66f0\uff1a\u201c\u541b\u4e0e\u5bb6\u541b\u671f\u65e5\u4e2d\u3002\u65e5\u4e2d\u4e0d\u81f3\uff0c\u5219\u662f\u65e0\u4fe1\uff1b\u5bf9\u5b50\u9a82\u7236\uff0c",
+      " \u8f93\u5165\u683c\u5f0f\uff1a 10 3 \u8f93\u51fa\u683c\u5f0f\uff1a 120 \u9898\u76ee\u6765\u6e90\uff1a 2018 \u5e74\u5317\u4eac\u5927\u5b66\u8ba1\u7b97\u673a\u4e13\u4e1a\u8003\u8bd5 \u9898\u76ee\uff1a \u7ec4\u5408\u6570 C(n, m) \u7684\u5b9a\u4e49\u5982\u4e0b\uff1a C(n, m) = C(n-1, m-1) + C(n-1, m) (n > m) C(n, m) = 1 (n = m) C(n, m) = 0 (n < m) \u4f8b\u5982\uff0c C(5, 3) = C(4, 2) + C(4, 3) = 6 + 4 = 10\u3002 \u8bf7\u7f16\u5199",
+      " 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "_\u767e\u5ea6\u77e5\u9053\\n\u767e\u5ea6\u77e5\u9053 > \u65e0\u5206\u7c7b\\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 7\uff0c\u516c\u5dee\u4e3a 11\uff0c\u6c42\u524d 25 \u9879\u4e4b\u548c\u3002\\n\ue631 \u641c\u7d22\u8d44\u6599\\n\ue768 \u6211\u6765\u7b54\\n\u5206\u4eab\\n\u590d\u5236\u94fe\u63a5\\nhttp://zhidao.baidu.com/question/1838010911199100148\\n\u65b0\u6d6a\u5fae\u535a\\n\u5fae\u4fe1\u626b\u4e00\u626b\\n\u4e3e\u62a5\\n1\u4e2a\u56de\u7b54\\n#\u8bdd\u9898# \u6253\u5de5\u4eba\u7684\u201c\u60e8\u201d\u8c01\u662f\u7f6a\u9b41\u7978\u9996\uff1f\\n\u767e\u5ea6\u7f51\u53cb10100000000\\n2020-01-01 \u00b7",
+      " 1551\n\n\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 47\uff0c\u5bbd\u4e3a 33\uff0c\u6c42\u5176\u9762\u79ef\u3002 1551\n\n\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 47\uff0c\u5bbd\u4e3a 33\uff0c\u6c42\u5176\u9762\u79ef\u3002 1551\n\n\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 47\uff0c\u5bbd\u4e3a 33\uff0c\u6c42\u5176\u9762\u79ef\u3002 1551\n\n\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 47\uff0c\u5bbd\u4e3a 33\uff0c\u6c42\u5176\u9762\u79ef\u3002 1551\n\n\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u4e3a 47\uff0c\u5bbd\u4e3a 33\uff0c\u6c42\u5176\u9762\u79ef\u3002 1551"
+    ],
+    "mlp_kernel_10d": [
+      " Then divide the result by 13. What is the remainder?\nA: 2\nB: 4\nC: 6\nD: 8\nTo solve the problem, we need to follow the steps outlined in the reference solution. Let's break it down step by step:\n\n1. **",
+      " Round to the nearest tenth if necessary.\\nA rectangle has length 12 and width 5. Find its area. Round to the nearest tenth if necessary.\\nAnswers\\njessicamiller123\\nSHOW ANSWER\\nThe area of the recta",
+      " (7 is the divisor, 100 is the dividend, and 5 is the remainder)\nA. 5\nB. 100\nC. 7\nAnswer:\n\nA\n\nThe main reason for the difference in the number of people living in the two cities is ____\nA. The former ",
+      "7 + 15 \u00d7 1.3. You will get the same answer in two other ways, which are\nA. 15 \u00d7 10\nB. 15 \u00d7 10\nC. 15 \u00d7 10\nD. 15 \u00d7 10\nAnswer: A\n\nThe main reason for the change in the proportion of the elderly populatio",
+      " To find the sum of the first 5 terms of an arithmetic sequence with the first term \\(a_1 = 2\\) and common difference \\(d = 3\\), we can use the formula for the sum of the first \\(n\\) terms of an arith",
+      "4 + 287 \u00d7 25.6 + 187 \u00d7 74.6 - 187 \u00d7 29.4 - 287 \u00d7 25.6 - 387 \u00d7 74.6 = ?\nA. 0\nB. 187\nC. 287\nD. 387\nAnswer:\n\nA\n\nThe main difference between a computer's internal and external storage is ____.\nA. Differen",
+      " Round to the nearest tenth of a degree if necessary.\\nC(10, 3) = 120\\nC(10, 3) = 120\\nC(10, 3) = 120\\nC(10, 3) = 120\\nC(10, 3) = 120\\nC(10, 3) = 120\\nC(10, 3) = 120\\nC(10, 3) = 120\\nC(10, 3) = 120\\nC",
+      " (Please explain the method you use to solve this problem.) To find the remainder when 7654 is divided by 37, we can use the method of successive subtraction or the division algorithm. Here, we will u",
+      " To find the sum of the first 25 terms of an arithmetic sequence with the first term \\(a = 7\\) and common difference \\(d = 11\\), we can use the formula for the sum of the first \\(n\\) terms of an arith",
+      " What is the result? To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle is 47 and the width is 33, we s",
+      " \n\u63d0\u793a\uff1a\u8fd9\u53ef\u80fd\u9700\u8981\u591a\u6b65\u63a8\u7406\u3002\n47 + 86 = 133",
+      " \u8f93\u5165\uff1a\u957f\uff1a12\uff0c\u5bbd\uff1a5\n\u8f93\u51fa\uff1a\u9762\u79ef\uff1a60\n\n\u89e3\u91ca\uff1a\u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u56e0\u6b64\uff0c\u9762\u79ef = 12 * 5 = 60\u3002",
+      "\\n100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\n100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\n2021-04-20 15:50:00\\n100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\n100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\n100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\n100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\n100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\n100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\n100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\n100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11",
+      " 15 \u00d7 8 = 120 \uff0e\n\n\u9605\u8bfb\u4e0b\u9762\u7684\u6750\u6599\uff0c\u6839\u636e\u8981\u6c42\u5199\u4f5c\u3002 2019\u5e7412\u670817\u65e5\uff0c\u6211\u56fd\u7b2c\u4e00\u8258\u56fd\u4ea7\u822a\u7a7a\u6bcd\u8230\u201c\u5c71\u4e1c\u8230\u201d\u5728\u6d77\u5357\u4e09\u4e9a\u4ea4\u4ed8\u6d77\u519b\u3002\u8fd9\u662f\u6211\u56fd\u6d77\u519b\u88c5\u5907\u53f2\u4e0a\u53c8\u4e00\u91cc\u7a0b\u7891\u4e8b\u4ef6\u3002 2020\u5e741\u670810\u65e5\uff0c\u4e2d\u56fd\u56fd\u5bb6\u7edf\u8ba1\u5c40\u53d1\u5e032019\u5e74\u56fd\u6c11\u7ecf\u6d4e\u548c\u793e\u4f1a\u53d1\u5c55\u7edf\u8ba1\u516c\u62a5\u3002\u516c\u62a5\u663e\u793a\uff0c2019\u5e74\u6211\u56fd\u56fd\u5185\u751f\u4ea7\u603b\u503c99.0865\u4e07\u4ebf\u5143\uff0c\u6bd4\u4e0a\u5e74\u589e\u957f6.1%\u3002 2020\u5e742\u670814\u65e5\uff0c\u4e2d\u56fd\u56fd\u5bb6\u7edf\u8ba1\u5c40\u53d1\u5e032019\u5e74\u56fd\u6c11\u7ecf\u6d4e\u548c\u793e",
+      "",
+      " A. 11243 B. 11244 C. 11245 D. 11246\n11243\n\n\u5728Excel\u4e2d\uff0c\u4e0b\u5217\u9009\u9879\u4e2d\uff0c\u4e0d\u5c5e\u4e8e\u201c\u6570\u5b57\u201d\u683c\u5f0f\u7684\u662f\uff08 \uff09\u3002 A. \u6587\u672c B. \u5e38\u89c4 C. \u8d27\u5e01 D. \u5206\u6570\n\u5206\u6570\n\n\u5728Excel\u4e2d\uff0c\u4e0b\u5217\u9009\u9879\u4e2d\uff0c\u4e0d\u5c5e\u4e8e\u201c\u6570\u5b57\u201d\u683c\u5f0f\u7684\u662f\uff08 \uff09\u3002 A. \u6587\u672c B. \u5e38\u89c4 C. \u8d27\u5e01 D. \u5206\u6570\n\u5206\u6570\n\n\u5728Excel\u4e2d\uff0c\u4e0b\u5217\u9009\u9879\u4e2d\uff0c\u4e0d\u5c5e\u4e8e\u201c\u6570\u5b57\u201d\u683c\u5f0f\u7684\u662f\uff08 \uff09\u3002 A. \u6587\u672c B. \u5e38",
+      " 10 3 10 7 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 ",
+      "\\n7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\n7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\n2019-07-22 15:50:00 \u4f5c\u8005\uff1a\u533f\u540d \u623f\u4ea7\u95ee\u7b54 \u9605\u8bfb\uff08 \uff09\\n7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\n7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\n7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\n7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\n7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\n7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\n",
+      "",
+      " \u8f93\u5165\uff1a\u957f\uff1a47\uff0c\u5bbd\uff1a33\n\u8f93\u51fa\uff1a1551\n```\n\n**\u4ee3\u7801\u5b9e\u73b0**\uff1a\n\n```python\ndef calculate_area(length, width):\n    return length * width\n\n# \u793a\u4f8b\u8f93\u5165\nlength = 47\nwidth = 33\n\n# \u8c03\u7528\u51fd\u6570\u5e76\u8f93\u51fa\u7ed3\u679c\nprint(calculate_area(length, width))\n```\n\n**\u590d\u6742\u5ea6"
+    ],
+    "mlp_kernel_15d": [
+      "1 + 10.05 + 1.001 (in binary). The result is 10000111.11011. The result is 10000111.11011. The result is 10000111.11011. The result is 10000111.11011.",
+      " (You don't need to enter any calculations; just the final answer.)\\nA rectangle has length 12 and width 5. Find its area. (You don't need to enter any calculations; just the final answer.)\\nAnswers\\n",
+      " (7 is the divisor, 100 is the dividend, and 1 is the remainder)\nA. 1\nB. 2\nC. 3\nD. 4\nAnswer:\n\nC\n\nThe following is a multiple-choice question from a Chinese law exam. Please select the most appropriate",
+      "5 \u00d7 9.5 + 12 \u00d7 8.5 \u00d7 9.5 + 25 \u00d7 1.5 \u00d7 9.5 - 15 \u00d7 1.5 \u00d7 9.5. The result is ( ).\n\nA: 650\nB: 640\nC: 630\nD: 620\nTo solve the expression \\(15 \\times 8.5 \\times 9.5 + 12 \\times 8.5 \\times 9.5 + 25 \\times 1.",
+      " To find the sum of the first 5 terms of an arithmetic sequence with the first term \\(a_1 = 2\\) and common difference \\(d = 3\\), we can use the formula for the sum of the first \\(n\\) terms of an arith",
+      "4 \u00d7 50.7 + 387 \u00d7 29.4 \u00d7 18.3 + 45.7 \u00d7 29.4 \u00d7 18.3 - 387 \u00d7 50.7 \u00d7 18.3 = ?\nA. 0\nB. 387\nC. 29.4\nD. 574.1\nAnswer:\nB\n\nThe main difference between a computer's internal operation and external performance i",
+      " (C is read as \"n choose k\")\nTo find the value of \\( C(10, 3) \\), which is read as \"10 choose 3\", we use the formula for combinations:\n\n\\[\nC(n, k) = \\frac{n!}{k!(n-k)!}\n\\]\n\nHere, \\( n = 10 \\) and \\( k",
+      " (Please provide the remainder as a number between 0 and 36, inclusive.)\nTo find the remainder when 7654 is divided by 37, we can use the modulus operator. The modulus operator (%) in Python returns t",
+      " - Quora\\nAn arithmetic sequence has first term 7 and common difference 11. Find the sum of the first 25 terms.\\n1 Answer\\nBest\\nQuora User\\n, former Professor(Adjunct) at University of Maryland, Univ",
+      " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length is 47 and the width is 33, we substitute these values into the formu",
+      " 47 + 86 = 133\n\n\u8ba1\u7b97 31 + 86 \u7684\u503c\u3002 31 + 86 = 117\n\n\u8ba1\u7b97 31 + 87 \u7684\u503c\u3002 31 + 87 = 118\n\n\u8ba1\u7b97 32 + 87 \u7684\u503c\u3002 32 + 87 = 119\n\n\u8ba1\u7b97 32 + 88 \u7684\u503c\u3002 32 + 88 = 120\n\n\u8ba1\u7b97 33 + 88 \u7684\u503c\u3002 33 + 88 = 121",
+      " \n\u89e3\uff1a\u9762\u79ef = \u957f \u00d7 \u5bbd = 12 \u00d7 5 = 60\n\u56e0\u6b64\uff0c\u8be5\u957f\u65b9\u5f62\u7684\u9762\u79ef\u4e3a 60 \u5e73\u65b9\u5355\u4f4d\u3002",
+      "\\n100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\n100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\n2021\u5e7412\u670814\u65e5\u4f5c\u8005\u533f\u540d\u7f51\u53cb\\n100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\n100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\n100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\n100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\n100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\n100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\n100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\n100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\",
+      " 15 \u00d7 8 = 120 \u6545\u7b54\u6848\u4e3a\uff1a 120\n\n\u9605\u8bfb\u4e0b\u9762\u7684\u6750\u6599\uff0c\u6839\u636e\u8981\u6c42\u5199\u4f5c\u3002 2019\u5e7412\u670817\u65e5\uff0c\u6211\u56fd\u7b2c\u4e00\u8258\u56fd\u4ea7\u822a\u7a7a\u6bcd\u8230\u201c\u5c71\u4e1c\u8230\u201d\u5728\u6d77\u5357\u4e09\u4e9a\u4ea4\u4ed8\u6d77\u519b\u3002\u5f53\u5929\uff0c\u6211\u56fd\u7b2c\u4e00\u8258\u56fd\u4ea7\u822a\u6bcd\u201c\u5c71\u4e1c\u8230\u201d\u6b63\u5f0f\u670d\u5f79\u3002 2020\u5e741\u670817\u65e5\uff0c\u6211\u56fd\u7b2c\u4e00\u8258\u56fd\u4ea7\u822a\u6bcd\u201c\u5c71\u4e1c\u8230\u201d\u5728\u6d77\u5357\u4e09\u4e9a\u4ea4\u4ed8\u6d77\u519b\u3002\u5f53\u5929\uff0c\u6211\u56fd\u7b2c\u4e00\u8258\u56fd\u4ea7\u822a\u6bcd\u201c\u5c71\u4e1c\u8230\u201d\u6b63\u5f0f\u670d\u5f79\u3002 2020\u5e741\u670826\u65e5\uff0c\u6211\u56fd\u7b2c\u4e00\u8258\u56fd\u4ea7\u822a\u6bcd\u201c\u5c71\u4e1c\u8230\u201d\u5728\u6d77\u5357\u4e09\u4e9a\u4ea4\u4ed8\u6d77\u519b\u3002\u5f53\u5929\uff0c\u6211\u56fd",
+      " \u89e3\uff1a\u8bbe\u6570\u5217{an}\u7684\u524d n \u9879\u548c\u4e3a Sn\uff0c \u5219 S5\uff1d2\uff0b5\u00d73\uff1d17. 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 ",
+      " 11223\n\n\u5728\u4e0b\u5217\u5404\u53e5\u7684\u7a7a\u7f3a\u5904\u4f9d\u6b21\u586b\u5165\u6700\u6070\u5f53\u7684\u8bcd\u8bed\u3002 \u2460\u5728\u300a\u7ea2\u697c\u68a6\u300b\u4e2d\uff0c\u4f5c\u8005\u66f9\u96ea\u82b9\u5bf9\u5927\u89c2\u56ed\u7684\u63cf\u5199\uff0c\u4e0e\u300a\u897f\u6e38\u8bb0\u300b\u4e2d\u5bf9\u5929\u5bab\u3001\u5730\u5e9c\u7684\u63cf\u5199\u4e00\u6837\uff0c\u90fd\u5177\u6709 \u7684\u610f\u4e49\u3002 \u2461\u5728\u300a\u7ea2\u697c\u68a6\u300b\u4e2d\uff0c\u4f5c\u8005\u66f9\u96ea\u82b9\u5bf9\u5927\u89c2\u56ed\u7684\u63cf\u5199\uff0c\u4e0e\u300a\u897f\u6e38\u8bb0\u300b\u4e2d\u5bf9\u5929\u5bab\u3001\u5730\u5e9c\u7684\u63cf\u5199\u4e00\u6837\uff0c\u90fd\u5177\u6709 \u7684\u610f\u4e49\u3002 \u2462\u5728\u300a\u7ea2\u697c\u68a6\u300b\u4e2d\uff0c\u4f5c\u8005\u66f9\u96ea\u82b9\u5bf9\u5927\u89c2\u56ed\u7684\u63cf\u5199\uff0c\u4e0e\u300a\u897f\u6e38\u8bb0\u300b\u4e2d\u5bf9\u5929\u5bab\u3001\u5730\u5e9c\u7684\u63cf\u5199\u4e00\u6837\uff0c\u90fd\u5177\u6709 \u7684\u610f\u4e49\u3002 \u2463\u5728\u300a\u7ea2\u697c\u68a6\u300b\u4e2d\uff0c\u4f5c\u8005\u66f9\u96ea\u82b9\u5bf9\u5927\u89c2\u56ed\u7684\u63cf\u5199",
+      " 10 3 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10",
+      "\\n7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\n7654 \u00f7 37 = 207 \u2026 1\\n\u4f59\u6570\u662f 1 \u3002\\n\u66f4\u65b0\u65f6\u95f4\uff1a2022-06-27\\n7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\n7654 \u00f7 37 = 207 \u2026 1\\n\u4f59\u6570\u662f 1 \u3002\\n2022-06-27 16:50:09\\n7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\n7654 \u00f7 37 = 207 \u2026 1\\n\u4f59\u6570\u662f 1 \u3002\\n2022-06-27",
+      "_\u767e\u5ea6\u77e5\u9053\\n\u767e\u5ea6\u77e5\u9053 > \u65e0\u5206\u7c7b\\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 7\uff0c\u516c\u5dee\u4e3a 11\uff0c\u6c42\u524d 25 \u9879\u4e4b\u548c\u3002\\n\ue631 \u641c\u7d22\u8d44\u6599\\n\ue768 \u6211\u6765\u7b54\\n\u5206\u4eab\\n\u590d\u5236\u94fe\u63a5\\nhttp://zhidao.baidu.com/question/1838009100990091820\\n\u65b0\u6d6a\u5fae\u535a\\n\u5fae\u4fe1\u626b\u4e00\u626b\\n\u4e3e\u62a5\\n1\u4e2a\u56de\u7b54\\n#\u8bdd\u9898# \u5c45\u5bb6\u9632\u75ab\u81ea\u6551\u624b\u518c\\n\u767e\u5ea6\u7f51\u53cb110107101d\\n2020-03-02 \u00b7 TA\u83b7\u5f97\u8d85\u8fc7",
+      " \n\u89e3\u9898\u8fc7\u7a0b\uff1a\n1. \u957f\u65b9\u5f62\u7684\u9762\u79ef\u516c\u5f0f\u4e3a\uff1a\u9762\u79ef = \u957f \u00d7 \u5bbd\n2. \u5c06\u957f\u548c\u5bbd\u4ee3\u5165\u516c\u5f0f\u4e2d\uff0c\u5f97\u5230\uff1a\u9762\u79ef = 47 \u00d7 33\n3. \u8ba1\u7b97\u7ed3\u679c\u4e3a\uff1a\u9762\u79ef = 1551\n4. \u56e0\u6b64\uff0c\u957f\u65b9\u5f62\u7684\u9762\u79ef\u4e3a 1551 \u5e73\u65b9\u5355\u4f4d\u3002"
+    ]
+  }
+}

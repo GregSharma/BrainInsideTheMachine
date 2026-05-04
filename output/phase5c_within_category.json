@@ -1,0 +1,96 @@
+{
+  "k20": {
+    "arithmetic": {
+      "z_acc": 0.6,
+      "random_mean": 0.4160000000000001,
+      "random_std": 0.11266765285564441,
+      "percentile": 95.0,
+      "chance": 0.05,
+      "n_problems": 20
+    },
+    "combinatorics": {
+      "z_acc": 0.65,
+      "random_mean": 0.5195,
+      "random_std": 0.09324564332986286,
+      "percentile": 96.0,
+      "chance": 0.05,
+      "n_problems": 20
+    },
+    "modular": {
+      "z_acc": 0.65,
+      "random_mean": 0.14650000000000002,
+      "random_std": 0.0794528161867155,
+      "percentile": 100.0,
+      "chance": 0.05,
+      "n_problems": 20
+    },
+    "geometry": {
+      "z_acc": 0.5,
+      "random_mean": 0.317,
+      "random_std": 0.09803570778037969,
+      "percentile": 96.0,
+      "chance": 0.05,
+      "n_problems": 20
+    },
+    "sequences": {
+      "z_acc": 0.65,
+      "random_mean": 0.278,
+      "random_std": 0.09119210492142399,
+      "percentile": 100.0,
+      "chance": 0.05,
+      "n_problems": 20
+    },
+    "pooled": {
+      "z_acc": 0.61,
+      "random_mean": 0.33540000000000003,
+      "percentile": 100.0
+    }
+  },
+  "k50": {
+    "arithmetic": {
+      "z_acc": 0.95,
+      "random_mean": 0.7120000000000001,
+      "random_std": 0.08663717446916192,
+      "percentile": 100.0,
+      "chance": 0.05,
+      "n_problems": 20
+    },
+    "combinatorics": {
+      "z_acc": 0.65,
+      "random_mean": 0.6535000000000001,
+      "random_std": 0.07219937672861172,
+      "percentile": 63.0,
+      "chance": 0.05,
+      "n_problems": 20
+    },
+    "modular": {
+      "z_acc": 0.4,
+      "random_mean": 0.247,
+      "random_std": 0.09638983348880731,
+      "percentile": 96.0,
+      "chance": 0.05,
+      "n_problems": 20
+    },
+    "geometry": {
+      "z_acc": 0.8,
+      "random_mean": 0.5745000000000001,
+      "random_std": 0.11124185363432236,
+      "percentile": 100.0,
+      "chance": 0.05,
+      "n_problems": 20
+    },
+    "sequences": {
+      "z_acc": 0.85,
+      "random_mean": 0.45100000000000007,
+      "random_std": 0.09771898484941399,
+      "percentile": 100.0,
+      "chance": 0.05,
+      "n_problems": 20
+    },
+    "pooled": {
+      "z_acc": 0.73,
+      "random_mean": 0.5276000000000001,
+      "percentile": 100.0
+    }
+  }
+}

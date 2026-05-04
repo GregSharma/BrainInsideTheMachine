@@ -1,0 +1,137 @@
+{
+  "experiment": "M3b: MLP Zeroing Layer Sweep",
+  "baseline_correct": 2,
+  "sweeps": [
+    {
+      "range": "L15-L20 (6)",
+      "layers": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "n_layers": 6,
+      "correct": 1,
+      "coherent": 4
+    },
+    {
+      "range": "L9-L14 (6)",
+      "layers": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "n_layers": 6,
+      "correct": 0,
+      "coherent": 3
+    },
+    {
+      "range": "L21-L26 (6)",
+      "layers": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "n_layers": 6,
+      "correct": 1,
+      "coherent": 1
+    },
+    {
+      "range": "L14-L22 (9)",
+      "layers": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "n_layers": 9,
+      "correct": 0,
+      "coherent": 5
+    },
+    {
+      "range": "L12-L24 (13)",
+      "layers": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "n_layers": 13,
+      "correct": 0,
+      "coherent": 3
+    },
+    {
+      "range": "L10-L26 (17)",
+      "layers": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "n_layers": 17,
+      "correct": 2,
+      "coherent": 2
+    },
+    {
+      "range": "L9-L26 (18)",
+      "layers": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "n_layers": 18,
+      "correct": 1,
+      "coherent": 1
+    }
+  ]
+}

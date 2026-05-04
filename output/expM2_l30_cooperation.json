@@ -1,0 +1,68 @@
+{
+  "experiment": "M2: L30 Cooperation",
+  "problems": [
+    {
+      "prompt": "Calculate 47 + 86.",
+      "cos_decisive": -0.014699095327015375,
+      "cos_template": -0.04491440671517921,
+      "lang_attn_decisive": 0.013523097393556312,
+      "lang_attn_template": 0.014365905126819921,
+      "lang_mlp_decisive": 0.01972265534430938,
+      "lang_mlp_template": 0.019271024162762454,
+      "tow_decisive": 0.5396825396825397,
+      "tow_template": 0.65625
+    },
+    {
+      "prompt": "Calculate 123 \u00d7 45.",
+      "cos_decisive": -0.01882036271808107,
+      "cos_template": -0.04678652323127608,
+      "lang_attn_decisive": 0.012683007635264929,
+      "lang_attn_template": 0.015167674888288709,
+      "lang_mlp_decisive": 0.021320427761134617,
+      "lang_mlp_template": 0.0190584703224434,
+      "tow_decisive": 0.6507936507936508,
+      "tow_template": 0.640625
+    },
+    {
+      "prompt": "What is the remainder when 7654 is divided by 37?",
+      "cos_decisive": -0.05228846291974482,
+      "cos_template": -0.04713066338899807,
+      "lang_attn_decisive": 0.015500261910899328,
+      "lang_attn_template": 0.016828978172458334,
+      "lang_mlp_decisive": 0.02890219451009642,
+      "lang_mlp_template": 0.023476423811943672,
+      "tow_decisive": 0.6349206349206349,
+      "tow_template": 0.703125
+    },
+    {
+      "prompt": "Find the value of C(10, 3).",
+      "cos_decisive": -0.03497734945267439,
+      "cos_template": -0.12684257183637884,
+      "lang_attn_decisive": 0.010086584216060929,
+      "lang_attn_template": 0.026977986508298236,
+      "lang_mlp_decisive": 0.03007712762138277,
+      "lang_mlp_template": 0.028790362681921713,
+      "tow_decisive": 0.375,
+      "tow_template": 0.6666666666666666
+    },
+    {
+      "prompt": "An arithmetic sequence has first term 3 and common difference 7. Find the sum of the first 20 terms.",
+      "cos_decisive": -0.04387502765697834,
+      "cos_template": -0.08603439456965134,
+      "lang_attn_decisive": 0.010412729990392425,
+      "lang_attn_template": 0.015047615816639678,
+      "lang_mlp_decisive": 0.02243359493674591,
+      "lang_mlp_template": 0.025700242583857495,
+      "tow_decisive": 0.6190476190476191,
+      "tow_template": 0.796875
+    }
+  ],
+  "summary": {
+    "cos_decisive": -0.0329320596148988,
+    "cos_template": -0.0703417119482967,
+    "mlp_lang_decisive": 0.024491200034733818,
+    "mlp_lang_template": 0.02325930471258575,
+    "tow_decisive": 0.5638888888888889,
+    "tow_template": 0.6927083333333333
+  }
+}

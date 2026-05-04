@@ -1,0 +1,916 @@
+{
+  "model": "Qwen/Qwen2.5-3B",
+  "steer_layer": 32,
+  "pc0_var_explained": 0.1944866843112552,
+  "lang_means": {
+    "ar": 0.1376490040845101,
+    "en": 0.22270017443113407,
+    "es": 0.14817382352830022,
+    "ja": 0.2089008219894975,
+    "ko": 0.16581185835256562,
+    "sw": -0.2375719239467262,
+    "zh": 0.22796332824950064
+  },
+  "pairwise_d": {
+    "ar-en": -2.5992727330424525,
+    "ar-es": -0.2812894696171233,
+    "ar-ja": -1.195629572170095,
+    "ar-ko": -0.6403753460731637,
+    "ar-sw": 3.2395370443884812,
+    "ar-zh": -2.1784462197288508,
+    "en-es": 2.641419617061346,
+    "en-ja": 0.25417575004729276,
+    "en-ko": 1.5597846135453224,
+    "en-sw": 4.066423965750505,
+    "en-zh": -0.15762935079581192,
+    "es-ja": -1.0608606941282475,
+    "es-ko": -0.43297264627853493,
+    "es-sw": 3.365023875350658,
+    "es-zh": -2.0996056716904716,
+    "ja-ko": 0.697993226096292,
+    "ja-sw": 3.6104224742930366,
+    "ja-zh": -0.3179039770284229,
+    "ko-sw": 3.4494804122061447,
+    "ko-zh": -1.397349013950286,
+    "sw-zh": -4.012679969796394
+  },
+  "steer_results": {
+    "zh_to_en": {
+      "lang_distribution": {
+        "zh": 18,
+        "numeric": 2
+      },
+      "n_target_lang": 0,
+      "pct_target": 0.0,
+      "per_problem": [
+        {
+          "prob_idx": 0,
+          "detected_lang": "zh",
+          "text_snippet": " 1\n\n\u6c42\u7ec4\u5408\u6570 C(5, 2) \u7684\u503c\u3002 10\n\n\u6c42\u7ec4\u5408\u6570 C(5, 3) \u7684\u503c\u3002 10\n\n\u6c42\u7ec4\u5408\u6570 C(5, 4) \u7684\u503c\u3002 5\n\n\u6c42\u7ec4\u5408\u6570 C(5, 5) \u7684"
+        },
+        {
+          "prob_idx": 1,
+          "detected_lang": "zh",
+          "text_snippet": " 6719 \u9664\u4ee5 15 \u7684\u4f59\u6570\u662f 4\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u518d\u7b97\u4e00\u4e0b 6719 \u4e58\u4ee5 15 \u7684\u7ed3\u679c\u662f\u591a\u5c11\uff1f 6719 \u4e58\u4ee5 15 \u7684\u7ed3\u679c\u662f 100785\u3002\n\n\u73b0\u5728\u8bf7\u4f60"
+        },
+        {
+          "prob_idx": 2,
+          "detected_lang": "zh",
+          "text_snippet": " 104\n\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 20\uff0c\u516c\u5dee\u4e3a 9\uff0c\u6c42\u7b2c 8 \u9879\u3002 71\n\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 20\uff0c\u516c\u5dee\u4e3a 9\uff0c\u6c42\u7b2c 10 \u9879\u3002 89\n\n\u7b49\u5dee"
+        },
+        {
+          "prob_idx": 3,
+          "detected_lang": "zh",
+          "text_snippet": " 1\n\n\u6c42\u7ec4\u5408\u6570 C(6, 2) \u7684\u503c\u3002 15\n\n\u6c42\u7ec4\u5408\u6570 C(6, 3) \u7684\u503c\u3002 20\n\n\u6c42\u7ec4\u5408\u6570 C(6, 4) \u7684\u503c\u3002 15\n\n\u6c42\u7ec4\u5408\u6570 C(6, 5)"
+        },
+        {
+          "prob_idx": 4,
+          "detected_lang": "zh",
+          "text_snippet": " 1662 \u9664\u4ee5 6 \u7684\u4f59\u6570\u662f 0\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u518d\u7b97\u4e00\u4e0b 1662 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 1662 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f 3\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u518d\u7b97\u4e00\u4e0b "
+        },
+        {
+          "prob_idx": 5,
+          "detected_lang": "zh",
+          "text_snippet": " 126\n\n\u6c42\u7ec4\u5408\u6570 C(9, 4) \u7684\u503c\u3002 126\n\n\u6c42\u7ec4\u5408\u6570 C(9, 4) \u7684\u503c\u3002 126\n\n\u6c42\u7ec4\u5408\u6570 C(9, 4) \u7684\u503c\u3002 126\n\n\u6c42\u7ec4\u5408\u6570 C("
+        },
+        {
+          "prob_idx": 6,
+          "detected_lang": "numeric",
+          "text_snippet": " 702 + 768 = 1470"
+        },
+        {
+          "prob_idx": 7,
+          "detected_lang": "zh",
+          "text_snippet": " 17+17+7\u00d725=26\u00d717\u00f72=253\n\n\u5728\u7b49\u5dee\u6570\u5217{an}\u4e2d\uff0ca1=1\uff0ca3=5\uff0c\u5219a5=\uff08 \uff09 . A\u3001 7 B\u3001 8 C\u3001 9 D"
+        },
+        {
+          "prob_idx": 8,
+          "detected_lang": "zh",
+          "text_snippet": " 4911 \u9664\u4ee5 16 \u7684\u4f59\u6570\u662f 15\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u7b97\u4e00\u4e0b 4911 \u4e58\u4ee5 16 \u7684\u7ed3\u679c\u662f\u591a\u5c11\uff1f 4911 \u4e58\u4ee5 16 \u7684\u7ed3\u679c\u662f 78576\u3002\n\n\u73b0\u5728\u8bf7\u4f60\u628a"
+        },
+        {
+          "prob_idx": 9,
+          "detected_lang": "zh",
+          "text_snippet": " 16\u00d78+\uff0816-1\uff09\u00d72\u00d716/2=160+128=288\n\n\u5728\u7b49\u5dee\u6570\u5217{an}\u4e2d\uff0ca1=1\uff0ca3=5\uff0c\u5219a5= 9\n\n\u5728\u7b49\u5dee\u6570\u5217{"
+        },
+        {
+          "prob_idx": 10,
+          "detected_lang": "zh",
+          "text_snippet": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 41\uff0c\u5bbd\u4e3a 43\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = 41 \\times 43 \\]\n\n\u73b0\u5728\u6211\u4eec\u8fdb\u884c\u4e58\u6cd5\u8fd0\u7b97\uff1a\n\n\\[ 41 \\"
+        },
+        {
+          "prob_idx": 11,
+          "detected_lang": "zh",
+          "text_snippet": " 628 + 280 = 908\n\n\u8ba1\u7b97 628 + 28 \u7684\u503c\u3002 628 + 28 = 656\n\n\u8ba1\u7b97 628 + 2800 \u7684\u503c\u3002 628 + 280"
+        },
+        {
+          "prob_idx": 12,
+          "detected_lang": "zh",
+          "text_snippet": " \u7ec4\u5408\u6570 C(n, k) \u8868\u793a\u4ece n \u4e2a\u4e0d\u540c\u5143\u7d20\u4e2d\u9009\u53d6 k \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\uff0c\u5176\u8ba1\u7b97\u516c\u5f0f\u4e3a\uff1a\n\n\\[ C(n, k) = \\frac{n!}{k!(n-k)!} \\]\n\n\u5176\u4e2d\uff0cn! \u8868\u793a n \u7684\u9636\u4e58"
+        },
+        {
+          "prob_idx": 13,
+          "detected_lang": "zh",
+          "text_snippet": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 34\uff0c\u5bbd\u4e3a 7\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = \\text{\u957f} \\times \\text{\u5bbd} = 34 \\times 7 \\]\n\n\u8fdb\u884c"
+        },
+        {
+          "prob_idx": 14,
+          "detected_lang": "zh",
+          "text_snippet": " 728 + 969 = 1697\n\n\u8bf7\u8ba1\u7b97\u4ee5\u4e0b\u8868\u8fbe\u5f0f\u7684\u503c\uff1a(1000000000000000000000000000000000000000"
+        },
+        {
+          "prob_idx": 16,
+          "detected_lang": "zh",
+          "text_snippet": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u65b9\u5f62\u7684\u957f\u662f 18\uff0c\u5bbd\u662f 10\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = \\text{\u957f} \\times \\text{\u5bbd} = 18 \\times "
+        },
+        {
+          "prob_idx": 17,
+          "detected_lang": "zh",
+          "text_snippet": " 7112 \u9664\u4ee5 25 \u7684\u4f59\u6570\u662f 22\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u518d\u7b97\u4e00\u4e0b 7112 \u9664\u4ee5 26 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 7112 \u9664\u4ee5 26 \u7684\u4f59\u6570\u662f 22\u3002\n\n\u597d\u7684\uff0c\u90a3"
+        },
+        {
+          "prob_idx": 18,
+          "detected_lang": "zh",
+          "text_snippet": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 38\uff0c\u5bbd\u4e3a 17\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = 38 \\times 17 \\]\n\n\u73b0\u5728\u6211\u4eec\u8fdb\u884c\u4e58\u6cd5\u8fd0\u7b97\uff1a\n\n\\[ 38 \\"
+        },
+        {
+          "prob_idx": 20,
+          "detected_lang": "zh",
+          "text_snippet": " \u9996\u9879 a1=7\uff0c\u516c\u5dee d=8\uff0c\u9879\u6570 n=16\uff0c\u6c42\u524d 16 \u9879\u4e4b\u548c S16\u3002\n\u89e3\uff1a\u6839\u636e\u7b49\u5dee\u6570\u5217\u6c42\u548c\u516c\u5f0f S16 = n/2 * (2a1 + (n-1)d)"
+        },
+        {
+          "prob_idx": 21,
+          "detected_lang": "numeric",
+          "text_snippet": " 40 + 105 = 145"
+        }
+      ]
+    },
+    "zh_to_es": {
+      "lang_distribution": {
+        "zh": 18,
+        "numeric": 2
+      },
+      "n_target_lang": 0,
+      "pct_target": 0.0,
+      "per_problem": [
+        {
+          "prob_idx": 0,
+          "detected_lang": "zh",
+          "text_snippet": " \u7ec4\u5408\u6570 C(5, 1) \u8868\u793a\u4ece 5 \u4e2a\u5143\u7d20\u4e2d\u9009\u62e9 1 \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\u3002\u6839\u636e\u7ec4\u5408\u6570\u7684\u5b9a\u4e49\uff0cC(n, k) = n! / (k! * (n-k)!)\uff0c\u5176\u4e2d n! \u8868\u793a n \u7684\u9636"
+        },
+        {
+          "prob_idx": 1,
+          "detected_lang": "zh",
+          "text_snippet": " 6719 \u9664\u4ee5 15 \u7684\u4f59\u6570\u662f 4\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u518d\u7b97\u4e00\u4e0b 6719 \u4e58\u4ee5 15 \u7684\u7ed3\u679c\u662f\u591a\u5c11\uff1f 6719 \u4e58\u4ee5 15 \u7684\u7ed3\u679c\u662f 100785\u3002\n\n\u73b0\u5728\u8bf7\u4f60"
+        },
+        {
+          "prob_idx": 2,
+          "detected_lang": "zh",
+          "text_snippet": " 104\n\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 20\uff0c\u516c\u5dee\u4e3a 9\uff0c\u6c42\u7b2c 8 \u9879\u3002 71\n\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 20\uff0c\u516c\u5dee\u4e3a 9\uff0c\u6c42\u7b2c 10 \u9879\u3002 89\n\n\u7b49\u5dee"
+        },
+        {
+          "prob_idx": 3,
+          "detected_lang": "zh",
+          "text_snippet": " \u7ec4\u5408\u6570 C(6, 1) \u8868\u793a\u4ece 6 \u4e2a\u5143\u7d20\u4e2d\u9009\u62e9 1 \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\u3002\u6839\u636e\u7ec4\u5408\u6570\u7684\u5b9a\u4e49\uff0cC(n, k) = n! / (k! * (n-k)!)\uff0c\u5176\u4e2d n! \u8868\u793a n \u7684\u9636"
+        },
+        {
+          "prob_idx": 4,
+          "detected_lang": "zh",
+          "text_snippet": " 1662 \u9664\u4ee5 6 \u7684\u4f59\u6570\u662f 0\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u518d\u7b97\u4e00\u4e0b 1662 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 1662 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f 3\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u518d\u7b97\u4e00\u4e0b "
+        },
+        {
+          "prob_idx": 5,
+          "detected_lang": "zh",
+          "text_snippet": " \u7ec4\u5408\u6570 C(9, 4) \u8868\u793a\u4ece 9 \u4e2a\u5143\u7d20\u4e2d\u9009\u53d6 4 \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\uff0c\u5373\u4ece 9 \u4e2a\u5143\u7d20\u4e2d\u9009\u53d6 4 \u4e2a\u5143\u7d20\u7684\u6392\u5217\u6570\u9664\u4ee5 4 \u4e2a\u5143\u7d20\u7684\u6392\u5217\u6570\u3002\u56e0\u6b64\uff0cC(9"
+        },
+        {
+          "prob_idx": 6,
+          "detected_lang": "numeric",
+          "text_snippet": " 702 + 768 = 1470"
+        },
+        {
+          "prob_idx": 7,
+          "detected_lang": "zh",
+          "text_snippet": " 17+17+7\u00d725=26\u00d717\u00f72=253\n\n1949\u5e7410\u67081\u65e5\uff0c\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd\u6210\u7acb\uff0c\u6807\u5fd7\u7740\u4e2d\u56fd\uff08 \uff09\u9769\u547d\u5df2\u7ecf\u53d6\u5f97\u57fa\u672c\u80dc\u5229\uff0c\u4e2d\u56fd\u4eba\u6c11\u5f53\u5bb6\u4f5c\u4e3b\u7684\u65f6\u4ee3\u5df2\u7ecf\u5230\u6765\uff0c\u4e2d\u56fd\u5386\u53f2\u7531\u6b64\u5f00\u8f9f\u4e86\u4e00\u4e2a"
+        },
+        {
+          "prob_idx": 8,
+          "detected_lang": "zh",
+          "text_snippet": " 4911 \u9664\u4ee5 16 \u7684\u4f59\u6570\u662f 15\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u7b97\u4e00\u4e0b 4911 \u4e58\u4ee5 16 \u7684\u7ed3\u679c\u662f\u591a\u5c11\uff1f 4911 \u4e58\u4ee5 16 \u7684\u7ed3\u679c\u662f 78576\u3002\n\n\u73b0\u5728\u8bf7\u4f60\u628a"
+        },
+        {
+          "prob_idx": 9,
+          "detected_lang": "zh",
+          "text_snippet": " 16\u00d78+\uff0816-1\uff09\u00d72\u00d716/2=160+128=288\n\n\u5728\u7b49\u5dee\u6570\u5217{an}\u4e2d\uff0ca1=1\uff0ca3=5\uff0c\u5219a5= 9\n\n\u5728\u7b49\u5dee\u6570\u5217{"
+        },
+        {
+          "prob_idx": 10,
+          "detected_lang": "zh",
+          "text_snippet": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 41\uff0c\u5bbd\u4e3a 43\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = 41 \\times 43 \\]\n\n\u73b0\u5728\u6211\u4eec\u8fdb\u884c\u4e58\u6cd5\u8fd0\u7b97\uff1a\n\n\\[ 41 \\"
+        },
+        {
+          "prob_idx": 11,
+          "detected_lang": "zh",
+          "text_snippet": " 628 + 280 = 908\n\n\u8ba1\u7b97 628 + 28 \u7684\u503c\u3002 628 + 28 = 656\n\n\u8ba1\u7b97 628 + 2800 \u7684\u503c\u3002 628 + 280"
+        },
+        {
+          "prob_idx": 12,
+          "detected_lang": "zh",
+          "text_snippet": " \u7ec4\u5408\u6570 C(n, k) \u8868\u793a\u4ece n \u4e2a\u4e0d\u540c\u5143\u7d20\u4e2d\u9009\u53d6 k \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\uff0c\u5176\u8ba1\u7b97\u516c\u5f0f\u4e3a\uff1a\n\n\\[ C(n, k) = \\frac{n!}{k!(n-k)!} \\]\n\n\u5176\u4e2d\uff0cn! \u8868\u793a n \u7684\u9636\u4e58"
+        },
+        {
+          "prob_idx": 13,
+          "detected_lang": "zh",
+          "text_snippet": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 34\uff0c\u5bbd\u4e3a 7\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = \\text{\u957f} \\times \\text{\u5bbd} = 34 \\times 7 \\]\n\n\u8fdb\u884c"
+        },
+        {
+          "prob_idx": 14,
+          "detected_lang": "zh",
+          "text_snippet": " 728 + 969 = 1697\n\n\u8bf7\u8ba1\u7b97\u4ee5\u4e0b\u8868\u8fbe\u5f0f\u7684\u503c\uff1a(1000000000000000000000000000000000000000"
+        },
+        {
+          "prob_idx": 16,
+          "detected_lang": "zh",
+          "text_snippet": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u65b9\u5f62\u7684\u957f\u662f 18\uff0c\u5bbd\u662f 10\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = \\text{\u957f} \\times \\text{\u5bbd} = 18 \\times "
+        },
+        {
+          "prob_idx": 17,
+          "detected_lang": "zh",
+          "text_snippet": " 7112 \u9664\u4ee5 25 \u7684\u4f59\u6570\u662f 22\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u518d\u7b97\u4e00\u4e0b 7112 \u9664\u4ee5 26 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 7112 \u9664\u4ee5 26 \u7684\u4f59\u6570\u662f 22\u3002\n\n\u597d\u7684\uff0c\u90a3"
+        },
+        {
+          "prob_idx": 18,
+          "detected_lang": "zh",
+          "text_snippet": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 38\uff0c\u5bbd\u4e3a 17\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = 38 \\times 17 \\]\n\n\u73b0\u5728\u6211\u4eec\u8fdb\u884c\u4e58\u6cd5\u8fd0\u7b97\uff1a\n\n\\[ 38 \\"
+        },
+        {
+          "prob_idx": 20,
+          "detected_lang": "zh",
+          "text_snippet": " 16\u00d77+8\u00d716\u00d78/2=16\u00d77+64\u00d78=16\u00d77+512=16\u00d715=240\n\n\u5728\u7b49\u5dee\u6570\u5217{an}\u4e2d\uff0ca1=1\uff0ca3=5\uff0c\u5219"
+        },
+        {
+          "prob_idx": 21,
+          "detected_lang": "numeric",
+          "text_snippet": " 40 + 105 = 145"
+        }
+      ]
+    },
+    "zh_to_ja": {
+      "lang_distribution": {
+        "zh": 18,
+        "numeric": 2
+      },
+      "n_target_lang": 0,
+      "pct_target": 0.0,
+      "per_problem": [
+        {
+          "prob_idx": 0,
+          "detected_lang": "zh",
+          "text_snippet": " 1\n\n\u6c42\u7ec4\u5408\u6570 C(5, 2) \u7684\u503c\u3002 10\n\n\u6c42\u7ec4\u5408\u6570 C(5, 3) \u7684\u503c\u3002 10\n\n\u6c42\u7ec4\u5408\u6570 C(5, 4) \u7684\u503c\u3002 5\n\n\u6c42\u7ec4\u5408\u6570 C(5, 5) \u7684"
+        },
+        {
+          "prob_idx": 1,
+          "detected_lang": "zh",
+          "text_snippet": " 6719 \u9664\u4ee5 15 \u7684\u4f59\u6570\u662f 4\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u518d\u7b97\u4e00\u4e0b 6719 \u4e58\u4ee5 15 \u7684\u7ed3\u679c\u662f\u591a\u5c11\uff1f 6719 \u4e58\u4ee5 15 \u7684\u7ed3\u679c\u662f 100785\u3002\n\n\u73b0\u5728\u8bf7\u4f60"
+        },
+        {
+          "prob_idx": 2,
+          "detected_lang": "zh",
+          "text_snippet": " 104\n\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 20\uff0c\u516c\u5dee\u4e3a 9\uff0c\u6c42\u7b2c 8 \u9879\u3002 71\n\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 20\uff0c\u516c\u5dee\u4e3a 9\uff0c\u6c42\u7b2c 10 \u9879\u3002 89\n\n\u7b49\u5dee"
+        },
+        {
+          "prob_idx": 3,
+          "detected_lang": "zh",
+          "text_snippet": " 1\n\n\u6c42\u7ec4\u5408\u6570 C(6, 2) \u7684\u503c\u3002 15\n\n\u6c42\u7ec4\u5408\u6570 C(6, 3) \u7684\u503c\u3002 20\n\n\u6c42\u7ec4\u5408\u6570 C(6, 4) \u7684\u503c\u3002 15\n\n\u6c42\u7ec4\u5408\u6570 C(6, 5)"
+        },
+        {
+          "prob_idx": 4,
+          "detected_lang": "zh",
+          "text_snippet": " 1662 \u9664\u4ee5 6 \u7684\u4f59\u6570\u662f 0\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u518d\u7b97\u4e00\u4e0b 1662 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 1662 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f 3\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u518d\u7b97\u4e00\u4e0b "
+        },
+        {
+          "prob_idx": 5,
+          "detected_lang": "zh",
+          "text_snippet": " 126\n\n\u6c42\u7ec4\u5408\u6570 C(9, 4) \u7684\u503c\u3002 126\n\n\u6c42\u7ec4\u5408\u6570 C(9, 4) \u7684\u503c\u3002 126\n\n\u6c42\u7ec4\u5408\u6570 C(9, 4) \u7684\u503c\u3002 126\n\n\u6c42\u7ec4\u5408\u6570 C("
+        },
+        {
+          "prob_idx": 6,
+          "detected_lang": "numeric",
+          "text_snippet": " 702 + 768 = 1470"
+        },
+        {
+          "prob_idx": 7,
+          "detected_lang": "zh",
+          "text_snippet": " 17+17+7\u00d725=26\u00d717\u00f72=253\n\n1949\u5e7410\u67081\u65e5\uff0c\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd\u6210\u7acb\uff0c\u6807\u5fd7\u7740\u4e2d\u56fd\uff08 \uff09\u9769\u547d\u5df2\u7ecf\u53d6\u5f97\u57fa\u672c\u80dc\u5229\uff0c\u4e2d\u56fd\u4eba\u6c11\u5f53\u5bb6\u4f5c\u4e3b\u7684\u65f6\u4ee3\u5df2\u7ecf\u5230\u6765\uff0c\u4e2d\u56fd\u5386\u53f2\u7531\u6b64\u5f00\u8f9f\u4e86\u4e00\u4e2a"
+        },
+        {
+          "prob_idx": 8,
+          "detected_lang": "zh",
+          "text_snippet": " 4911 \u9664\u4ee5 16 \u7684\u4f59\u6570\u662f 15\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u7b97\u4e00\u4e0b 4911 \u4e58\u4ee5 16 \u7684\u7ed3\u679c\u662f\u591a\u5c11\uff1f 4911 \u4e58\u4ee5 16 \u7684\u7ed3\u679c\u662f 78576\u3002\n\n\u73b0\u5728\u8bf7\u4f60\u628a"
+        },
+        {
+          "prob_idx": 9,
+          "detected_lang": "zh",
+          "text_snippet": " 16\u00d78+\uff0816-1\uff09\u00d72\u00d716/2=160+128=288\n\n\u5728\u7b49\u5dee\u6570\u5217{an}\u4e2d\uff0ca1=1\uff0ca3=5\uff0c\u5219a5= 9\n\n\u5728\u7b49\u5dee\u6570\u5217{"
+        },
+        {
+          "prob_idx": 10,
+          "detected_lang": "zh",
+          "text_snippet": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 41\uff0c\u5bbd\u4e3a 43\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = 41 \\times 43 \\]\n\n\u8ba1\u7b97\u8fd9\u4e2a\u4e58\u79ef\uff1a\n\n\\[ 41 \\times "
+        },
+        {
+          "prob_idx": 11,
+          "detected_lang": "zh",
+          "text_snippet": " 628 + 280 = 908\n\n\u8ba1\u7b97 628 + 28 \u7684\u503c\u3002 628 + 28 = 656\n\n\u8ba1\u7b97 628 + 2800 \u7684\u503c\u3002 628 + 280"
+        },
+        {
+          "prob_idx": 12,
+          "detected_lang": "zh",
+          "text_snippet": " \u7ec4\u5408\u6570 C(n, k) \u8868\u793a\u4ece n \u4e2a\u4e0d\u540c\u5143\u7d20\u4e2d\u9009\u53d6 k \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\uff0c\u5176\u8ba1\u7b97\u516c\u5f0f\u4e3a\uff1a\n\n\\[ C(n, k) = \\frac{n!}{k!(n-k)!} \\]\n\n\u5176\u4e2d\uff0cn! \u8868\u793a n \u7684\u9636\u4e58"
+        },
+        {
+          "prob_idx": 13,
+          "detected_lang": "zh",
+          "text_snippet": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 34\uff0c\u5bbd\u4e3a 7\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = \\text{\u957f} \\times \\text{\u5bbd} = 34 \\times 7 \\]\n\n\u8fdb\u884c"
+        },
+        {
+          "prob_idx": 14,
+          "detected_lang": "zh",
+          "text_snippet": " 728 + 969 = 1697\n\n\u8bf7\u8ba1\u7b97\u4ee5\u4e0b\u8868\u8fbe\u5f0f\u7684\u503c\uff1a(1000000000000000000000000000000000000000"
+        },
+        {
+          "prob_idx": 16,
+          "detected_lang": "zh",
+          "text_snippet": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u65b9\u5f62\u7684\u957f\u662f 18\uff0c\u5bbd\u662f 10\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = \\text{\u957f} \\times \\text{\u5bbd} = 18 \\times "
+        },
+        {
+          "prob_idx": 17,
+          "detected_lang": "zh",
+          "text_snippet": " 7112 \u9664\u4ee5 25 \u7684\u4f59\u6570\u662f 22\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u518d\u7b97\u4e00\u4e0b 7112 \u9664\u4ee5 26 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 7112 \u9664\u4ee5 26 \u7684\u4f59\u6570\u662f 22\u3002\n\n\u597d\u7684\uff0c\u90a3"
+        },
+        {
+          "prob_idx": 18,
+          "detected_lang": "zh",
+          "text_snippet": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 38\uff0c\u5bbd\u4e3a 17\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = 38 \\times 17 \\]\n\n\u73b0\u5728\u6211\u4eec\u8fdb\u884c\u4e58\u6cd5\u8fd0\u7b97\uff1a\n\n\\[ 38 \\"
+        },
+        {
+          "prob_idx": 20,
+          "detected_lang": "zh",
+          "text_snippet": " 16\u00d77+8\u00d716\u00d78/2=16\u00d77+64\u00d78=16\u00d77+512=16\u00d715=240\n\n\u5728\u7b49\u5dee\u6570\u5217{an}\u4e2d\uff0ca1=1\uff0ca3=5\uff0c\u5219"
+        },
+        {
+          "prob_idx": 21,
+          "detected_lang": "numeric",
+          "text_snippet": " 40 + 105 = 145"
+        }
+      ]
+    },
+    "zh_to_ar": {
+      "lang_distribution": {
+        "zh": 17,
+        "numeric": 3
+      },
+      "n_target_lang": 0,
+      "pct_target": 0.0,
+      "per_problem": [
+        {
+          "prob_idx": 0,
+          "detected_lang": "zh",
+          "text_snippet": " \u7ec4\u5408\u6570 C(5, 1) \u8868\u793a\u4ece 5 \u4e2a\u5143\u7d20\u4e2d\u9009\u62e9 1 \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\u3002\u6839\u636e\u7ec4\u5408\u6570\u7684\u5b9a\u4e49\uff0cC(n, k) = n! / (k! * (n-k)!)\uff0c\u5176\u4e2d n! \u8868\u793a n \u7684\u9636"
+        },
+        {
+          "prob_idx": 1,
+          "detected_lang": "zh",
+          "text_snippet": " 6719 \u9664\u4ee5 15 \u7684\u4f59\u6570\u662f 4\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u518d\u7b97\u4e00\u4e0b 6719 \u4e58\u4ee5 15 \u7684\u7ed3\u679c\u662f\u591a\u5c11\uff1f 6719 \u4e58\u4ee5 15 \u7684\u7ed3\u679c\u662f 100785\u3002\n\n\u73b0\u5728\u8bf7\u4f60"
+        },
+        {
+          "prob_idx": 2,
+          "detected_lang": "zh",
+          "text_snippet": " 104\n\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 20\uff0c\u516c\u5dee\u4e3a 9\uff0c\u6c42\u7b2c 8 \u9879\u3002 71\n\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 20\uff0c\u516c\u5dee\u4e3a 9\uff0c\u6c42\u7b2c 10 \u9879\u3002 89\n\n\u7b49\u5dee"
+        },
+        {
+          "prob_idx": 3,
+          "detected_lang": "zh",
+          "text_snippet": " \u7ec4\u5408\u6570 C(6, 1) \u8868\u793a\u4ece 6 \u4e2a\u5143\u7d20\u4e2d\u9009\u62e9 1 \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\u3002\u6839\u636e\u7ec4\u5408\u6570\u7684\u5b9a\u4e49\uff0cC(n, k) = n! / (k! * (n-k)!)\uff0c\u5176\u4e2d n! \u8868\u793a n \u7684\u9636"
+        },
+        {
+          "prob_idx": 4,
+          "detected_lang": "zh",
+          "text_snippet": " 1662 \u9664\u4ee5 6 \u7684\u4f59\u6570\u662f 0\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u518d\u7b97\u4e00\u4e0b 1662 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 1662 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f 3\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u518d\u7b97\u4e00\u4e0b "
+        },
+        {
+          "prob_idx": 5,
+          "detected_lang": "zh",
+          "text_snippet": " \u7ec4\u5408\u6570 C(9, 4) \u8868\u793a\u4ece 9 \u4e2a\u5143\u7d20\u4e2d\u9009\u53d6 4 \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\uff0c\u5373\u4ece 9 \u4e2a\u5143\u7d20\u4e2d\u9009\u53d6 4 \u4e2a\u5143\u7d20\u7684\u6392\u5217\u6570\u9664\u4ee5 4 \u4e2a\u5143\u7d20\u7684\u6392\u5217\u6570\u3002\u56e0\u6b64\uff0cC(9"
+        },
+        {
+          "prob_idx": 6,
+          "detected_lang": "numeric",
+          "text_snippet": " 702 + 768 = 1470"
+        },
+        {
+          "prob_idx": 7,
+          "detected_lang": "zh",
+          "text_snippet": " 17+17+7\u00d725=26\u00d717\u00f72=253\n\n1949\u5e7410\u67081\u65e5\uff0c\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd\u6210\u7acb\uff0c\u6807\u5fd7\u7740\u4e2d\u56fd\uff08 \uff09\u9769\u547d\u5df2\u7ecf\u53d6\u5f97\u57fa\u672c\u80dc\u5229\uff0c\u4e2d\u56fd\u4eba\u6c11\u5f53\u5bb6\u4f5c\u4e3b\u7684\u65f6\u4ee3\u5df2\u7ecf\u5230\u6765\uff0c\u4e2d\u56fd\u5386\u53f2\u7531\u6b64\u5f00\u8f9f\u4e86\u4e00\u4e2a"
+        },
+        {
+          "prob_idx": 8,
+          "detected_lang": "zh",
+          "text_snippet": " 4911 \u9664\u4ee5 16 \u7684\u4f59\u6570\u662f 15\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u7b97\u4e00\u4e0b 4911 \u4e58\u4ee5 16 \u7684\u7ed3\u679c\u662f\u591a\u5c11\uff1f 4911 \u4e58\u4ee5 16 \u7684\u7ed3\u679c\u662f 78576\u3002\n\n\u73b0\u5728\u8bf7\u4f60\u628a"
+        },
+        {
+          "prob_idx": 9,
+          "detected_lang": "zh",
+          "text_snippet": " 16\u00d78+\uff0816-1\uff09\u00d72\u00d716/2=160+128=288\n\n\u5728\u7b49\u5dee\u6570\u5217{an}\u4e2d\uff0ca1=1\uff0ca3=5\uff0c\u5219a5= 9\n\n\u5728\u7b49\u5dee\u6570\u5217{"
+        },
+        {
+          "prob_idx": 10,
+          "detected_lang": "zh",
+          "text_snippet": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 41\uff0c\u5bbd\u4e3a 43\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = 41 \\times 43 \\]\n\n\u73b0\u5728\u6211\u4eec\u8fdb\u884c\u4e58\u6cd5\u8fd0\u7b97\uff1a\n\n\\[ 41 \\"
+        },
+        {
+          "prob_idx": 11,
+          "detected_lang": "numeric",
+          "text_snippet": " 628 + 280 = 908"
+        },
+        {
+          "prob_idx": 12,
+          "detected_lang": "zh",
+          "text_snippet": " \u7ec4\u5408\u6570 C(n, k) \u8868\u793a\u4ece n \u4e2a\u4e0d\u540c\u5143\u7d20\u4e2d\u9009\u53d6 k \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\uff0c\u5176\u8ba1\u7b97\u516c\u5f0f\u4e3a\uff1a\n\n\\[ C(n, k) = \\frac{n!}{k!(n-k)!} \\]\n\n\u5176\u4e2d\uff0cn! \u8868\u793a n \u7684\u9636\u4e58"
+        },
+        {
+          "prob_idx": 13,
+          "detected_lang": "zh",
+          "text_snippet": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 34\uff0c\u5bbd\u4e3a 7\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = \\text{\u957f} \\times \\text{\u5bbd} = 34 \\times 7 \\]\n\n\u8fdb\u884c"
+        },
+        {
+          "prob_idx": 14,
+          "detected_lang": "zh",
+          "text_snippet": " 728 + 969 = 1697\n\n\u8bf7\u8ba1\u7b97\u4ee5\u4e0b\u8868\u8fbe\u5f0f\u7684\u503c\uff1a(1000000000000000000000000000000000000000"
+        },
+        {
+          "prob_idx": 16,
+          "detected_lang": "zh",
+          "text_snippet": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u65b9\u5f62\u7684\u957f\u662f 18\uff0c\u5bbd\u662f 10\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = \\text{\u957f} \\times \\text{\u5bbd} = 18 \\times "
+        },
+        {
+          "prob_idx": 17,
+          "detected_lang": "zh",
+          "text_snippet": " 7112 \u9664\u4ee5 25 \u7684\u4f59\u6570\u662f 22\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u518d\u7b97\u4e00\u4e0b 7112 \u9664\u4ee5 26 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 7112 \u9664\u4ee5 26 \u7684\u4f59\u6570\u662f 22\u3002\n\n\u597d\u7684\uff0c\u90a3"
+        },
+        {
+          "prob_idx": 18,
+          "detected_lang": "zh",
+          "text_snippet": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 38\uff0c\u5bbd\u4e3a 17\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = 38 \\times 17 \\]\n\n\u73b0\u5728\u6211\u4eec\u8fdb\u884c\u4e58\u6cd5\u8fd0\u7b97\uff1a\n\n\\[ 38 \\"
+        },
+        {
+          "prob_idx": 20,
+          "detected_lang": "zh",
+          "text_snippet": " 16\u00d77+8\u00d716\u00d78/2=16\u00d77+64\u00d78=16\u00d77+512=16\u00d715=240\n\n\u5728\u7b49\u5dee\u6570\u5217{an}\u4e2d\uff0ca1=1\uff0ca3=5\uff0c\u5219"
+        },
+        {
+          "prob_idx": 21,
+          "detected_lang": "numeric",
+          "text_snippet": " 40 + 105 = 145"
+        }
+      ]
+    },
+    "zh_to_sw": {
+      "lang_distribution": {
+        "zh": 16,
+        "numeric": 4
+      },
+      "n_target_lang": 0,
+      "pct_target": 0.0,
+      "per_problem": [
+        {
+          "prob_idx": 0,
+          "detected_lang": "zh",
+          "text_snippet": " \u7ec4\u5408\u6570 C(5, 1) \u8868\u793a\u4ece 5 \u4e2a\u5143\u7d20\u4e2d\u9009\u62e9 1 \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\u3002\u6839\u636e\u7ec4\u5408\u6570\u7684\u5b9a\u4e49\uff0cC(n, k) = n! / (k! * (n-k)!)\uff0c\u5176\u4e2d n! \u8868\u793a n \u7684\u9636"
+        },
+        {
+          "prob_idx": 1,
+          "detected_lang": "zh",
+          "text_snippet": " 6719 \u9664\u4ee5 15 \u7684\u4f59\u6570\u662f 4\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u518d\u7b97\u4e00\u4e0b 6719 \u4e58\u4ee5 15 \u7684\u7ed3\u679c\u662f\u591a\u5c11\uff1f 6719 \u4e58\u4ee5 15 \u7684\u7ed3\u679c\u662f 100785\u3002\n\n\u73b0\u5728\u8bf7\u4f60"
+        },
+        {
+          "prob_idx": 2,
+          "detected_lang": "zh",
+          "text_snippet": " 104\n\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 20\uff0c\u516c\u5dee\u4e3a 9\uff0c\u6c42\u7b2c 8 \u9879\u3002 71\n\n\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 20\uff0c\u516c\u5dee\u4e3a 9\uff0c\u6c42\u7b2c 10 \u9879\u3002 89\n\n\u7b49\u5dee"
+        },
+        {
+          "prob_idx": 3,
+          "detected_lang": "zh",
+          "text_snippet": " \u7ec4\u5408\u6570 C(6, 1) \u8868\u793a\u4ece 6 \u4e2a\u5143\u7d20\u4e2d\u9009\u62e9 1 \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\u3002\u6839\u636e\u7ec4\u5408\u6570\u7684\u5b9a\u4e49\uff0cC(n, k) = n! / (k! * (n-k)!)\uff0c\u5176\u4e2d n! \u8868\u793a n \u7684\u9636"
+        },
+        {
+          "prob_idx": 4,
+          "detected_lang": "zh",
+          "text_snippet": "\\n1662 \u9664\u4ee5 6 \u7684\u4f59\u6570\u662f 0\u3002\\n1662 \u9664\u4ee5 6 \u7684\u4f59\u6570\u662f 0\u3002"
+        },
+        {
+          "prob_idx": 5,
+          "detected_lang": "zh",
+          "text_snippet": " \u7ec4\u5408\u6570 C(9, 4) \u8868\u793a\u4ece 9 \u4e2a\u5143\u7d20\u4e2d\u9009\u53d6 4 \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\uff0c\u5373\u4ece 9 \u4e2a\u5143\u7d20\u4e2d\u9009\u53d6 4 \u4e2a\u5143\u7d20\u7684\u6392\u5217\u6570\u9664\u4ee5 4 \u4e2a\u5143\u7d20\u7684\u6392\u5217\u6570\u3002\u56e0\u6b64\uff0cC(9"
+        },
+        {
+          "prob_idx": 6,
+          "detected_lang": "numeric",
+          "text_snippet": " 702 + 768 = 1470"
+        },
+        {
+          "prob_idx": 7,
+          "detected_lang": "zh",
+          "text_snippet": " 17+17+7\u00d725=26\u00d717\u00f72=253\n\n1949\u5e7410\u67081\u65e5\uff0c\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd\u6210\u7acb\uff0c\u6807\u5fd7\u7740\u4e2d\u56fd\uff08 \uff09\u9769\u547d\u5df2\u7ecf\u53d6\u5f97\u57fa\u672c\u80dc\u5229\uff0c\u4e2d\u56fd\u4eba\u6c11\u5f53\u5bb6\u4f5c\u4e3b\u7684\u65f6\u4ee3\u5df2\u7ecf\u5230\u6765\uff0c\u4e2d\u56fd\u5386\u53f2\u7531\u6b64\u5f00\u8f9f\u4e86\u4e00\u4e2a"
+        },
+        {
+          "prob_idx": 8,
+          "detected_lang": "zh",
+          "text_snippet": " 4911 \u9664\u4ee5 16 \u7684\u4f59\u6570\u662f 15\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u518d\u7b97\u4e00\u4e0b 4911 \u9664\u4ee5 16 \u7684\u5546\u662f\u591a\u5c11\uff1f 4911 \u9664\u4ee5 16 \u7684\u5546\u662f 306.9375"
+        },
+        {
+          "prob_idx": 9,
+          "detected_lang": "zh",
+          "text_snippet": " 16\u00d78+\uff0816-1\uff09\u00d72\u00d716/2=160+128=288\n\n\u5728\u7b49\u5dee\u6570\u5217{an}\u4e2d\uff0ca1=1\uff0ca3=5\uff0c\u5219a5=\uff08 \uff09 A.7 B.8"
+        },
+        {
+          "prob_idx": 10,
+          "detected_lang": "zh",
+          "text_snippet": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 41\uff0c\u5bbd\u4e3a 43\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = 41 \\times 43 \\]\n\n\u8ba1\u7b97\u8fd9\u4e2a\u4e58\u79ef\uff1a\n\n\\[ 41 \\times "
+        },
+        {
+          "prob_idx": 11,
+          "detected_lang": "numeric",
+          "text_snippet": " 628 + 280 = 908"
+        },
+        {
+          "prob_idx": 12,
+          "detected_lang": "zh",
+          "text_snippet": " \u7ec4\u5408\u6570 C(n, k) \u8868\u793a\u4ece n \u4e2a\u4e0d\u540c\u5143\u7d20\u4e2d\u9009\u53d6 k \u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\uff0c\u5176\u8ba1\u7b97\u516c\u5f0f\u4e3a\uff1a\n\n\\[ C(n, k) = \\frac{n!}{k!(n-k)!} \\]\n\n\u5176\u4e2d\uff0cn! \u8868\u793a n \u7684\u9636\u4e58"
+        },
+        {
+          "prob_idx": 13,
+          "detected_lang": "zh",
+          "text_snippet": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 34\uff0c\u5bbd\u4e3a 7\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = \\text{\u957f} \\times \\text{\u5bbd} = 34 \\times 7 \\]\n\n\u8fdb\u884c"
+        },
+        {
+          "prob_idx": 14,
+          "detected_lang": "numeric",
+          "text_snippet": " 728 + 969 = 1697"
+        },
+        {
+          "prob_idx": 16,
+          "detected_lang": "zh",
+          "text_snippet": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u65b9\u5f62\u7684\u957f\u662f 18\uff0c\u5bbd\u662f 10\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = \\text{\u957f} \\times \\text{\u5bbd} = 18 \\times "
+        },
+        {
+          "prob_idx": 17,
+          "detected_lang": "zh",
+          "text_snippet": " 7112 \u9664\u4ee5 25 \u7684\u4f59\u6570\u662f 22\u3002\n\n\u597d\u7684\uff0c\u90a3\u8bf7\u4f60\u518d\u7b97\u4e00\u4e0b 7112 \u9664\u4ee5 26 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 7112 \u9664\u4ee5 26 \u7684\u4f59\u6570\u662f 22\u3002\n\n\u597d\u7684\uff0c\u90a3"
+        },
+        {
+          "prob_idx": 18,
+          "detected_lang": "zh",
+          "text_snippet": " \u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u4e3a 38\uff0c\u5bbd\u4e3a 17\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u4e3a\uff1a\n\n\\[ \\text{\u9762\u79ef} = 38 \\times 17 \\]\n\n\u73b0\u5728\u6211\u4eec\u8fdb\u884c\u4e58\u6cd5\u8fd0\u7b97\uff1a\n\n\\[ 38 \\"
+        },
+        {
+          "prob_idx": 20,
+          "detected_lang": "zh",
+          "text_snippet": " 16\u00d77+8\u00d716\u00d78/2=1008\n\n\u5728\u8fdb\u884c\u9ad8\u5904\u4f5c\u4e1a\u65f6\uff0c\u9664\u6709\u5173\u4eba\u5458\u5916\uff0c\u4e0d\u51c6\u4ed6\u4eba\u5728\u5de5\u4f5c\u5730\u70b9\u7684\u4e0b\u9762\u901a\u884c\u6216\u9017\u7559\uff0c\u5de5\u4f5c\u5730\u70b9\u4e0b\u9762\u5e94\u6709\u4e13\u4eba\u7559\u5b88\uff0c\u9632\u6b62\u843d\u7269\u4f24\u4eba\u3002 \u6b63\u786e\n\n\u5728\u8fdb\u884c"
+        },
+        {
+          "prob_idx": 21,
+          "detected_lang": "numeric",
+          "text_snippet": " 40 + 105 = 145"
+        }
+      ]
+    },
+    "en_to_zh": {
+      "lang_distribution": {
+        "en": 20
+      },
+      "n_target_lang": 0,
+      "pct_target": 0.0,
+      "per_problem": [
+        {
+          "prob_idx": 0,
+          "detected_lang": "en",
+          "text_snippet": " To find the value of \\( C(5, 1) \\), we need to use the formula for combinations, which is given by:\n\n\\[\nC(n, k) = \\frac{n!}{k!(n-k)!}\n\\]\n\nIn this cas"
+        },
+        {
+          "prob_idx": 1,
+          "detected_lang": "en",
+          "text_snippet": " To find the remainder when 6719 is divided by 15, we can use the modulus operation. The modulus operation (%) gives the remainder of a division of tw"
+        },
+        {
+          "prob_idx": 2,
+          "detected_lang": "en",
+          "text_snippet": " To find the sum of the first 8 terms of an arithmetic sequence with the first term \\(a = 20\\) and common difference \\(d = 9\\), we can use the formula"
+        },
+        {
+          "prob_idx": 3,
+          "detected_lang": "en",
+          "text_snippet": " To find the value of \\( C(6, 1) \\), we need to use the combination formula, which is given by:\n\n\\[\nC(n, k) = \\frac{n!}{k!(n-k)!}\n\\]\n\nIn this case, \\("
+        },
+        {
+          "prob_idx": 4,
+          "detected_lang": "en",
+          "text_snippet": " To find the remainder when 1662 is divided by 6, we can use the modulo operation. The modulo operation (%) gives the remainder of a division of two n"
+        },
+        {
+          "prob_idx": 5,
+          "detected_lang": "en",
+          "text_snippet": " To find the value of \\( C(9, 4) \\), we need to calculate the binomial coefficient, which is given by the formula:\n\n\\[\nC(n, k) = \\frac{n!}{k!(n-k)!}\n\\"
+        },
+        {
+          "prob_idx": 6,
+          "detected_lang": "en",
+          "text_snippet": " To calculate \\(702 + 768\\), we can use the standard addition method. Here are the steps:\n\n1. Align the numbers by their place values:\n   \\[\n   \\begin"
+        },
+        {
+          "prob_idx": 7,
+          "detected_lang": "en",
+          "text_snippet": " To find the sum of the first 26 terms of an arithmetic sequence with the first term \\(a = 17\\) and common difference \\(d = 7\\), we can use the formul"
+        },
+        {
+          "prob_idx": 8,
+          "detected_lang": "en",
+          "text_snippet": " To find the remainder when 4911 is divided by 16, we can use the modulus operation. The modulus operation (%) gives the remainder of a division of tw"
+        },
+        {
+          "prob_idx": 9,
+          "detected_lang": "en",
+          "text_snippet": " To find the sum of the first 16 terms of an arithmetic sequence with the first term \\(a = 8\\) and common difference \\(d = 2\\), we can use the formula"
+        },
+        {
+          "prob_idx": 10,
+          "detected_lang": "en",
+          "text_snippet": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle i"
+        },
+        {
+          "prob_idx": 11,
+          "detected_lang": "en",
+          "text_snippet": " To calculate \\(628 + 280\\), we can follow these steps:\n\n1. Align the numbers by their place values:\n   \\[\n   \\begin{array}{c@{}c@{}c}\n     & 6 & 2 & "
+        },
+        {
+          "prob_idx": 12,
+          "detected_lang": "en",
+          "text_snippet": " To find the value of \\( C(12, 2) \\), we need to use the formula for combinations, which is given by:\n\n\\[\nC(n, r) = \\frac{n!}{r!(n-r)!}\n\\]\n\nIn this ca"
+        },
+        {
+          "prob_idx": 13,
+          "detected_lang": "en",
+          "text_snippet": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle i"
+        },
+        {
+          "prob_idx": 14,
+          "detected_lang": "en",
+          "text_snippet": " To calculate \\(728 + 969\\), we can use the standard addition method. Here are the steps:\n\n1. Align the numbers by their place values:\n   \\[\n   \\begin"
+        },
+        {
+          "prob_idx": 16,
+          "detected_lang": "en",
+          "text_snippet": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle i"
+        },
+        {
+          "prob_idx": 17,
+          "detected_lang": "en",
+          "text_snippet": " To find the remainder when \\(7^{112}\\) is divided by 25, we can use properties of modular arithmetic, specifically Euler's theorem. Euler's theorem s"
+        },
+        {
+          "prob_idx": 18,
+          "detected_lang": "en",
+          "text_snippet": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle i"
+        },
+        {
+          "prob_idx": 20,
+          "detected_lang": "en",
+          "text_snippet": " To find the sum of the first 16 terms of an arithmetic sequence with the first term \\(a = 7\\) and common difference \\(d = 8\\), we can use the formula"
+        },
+        {
+          "prob_idx": 21,
+          "detected_lang": "en",
+          "text_snippet": " To calculate \\(40 + 105\\), we can follow these steps:\n\n1. Start with the number 40.\n2. Add the number 105 to 40.\n\nWe can break it down as follows:\n\\["
+        }
+      ]
+    },
+    "en_to_ja": {
+      "lang_distribution": {
+        "en": 20
+      },
+      "n_target_lang": 0,
+      "pct_target": 0.0,
+      "per_problem": [
+        {
+          "prob_idx": 0,
+          "detected_lang": "en",
+          "text_snippet": " To find the value of \\( C(5, 1) \\), we need to use the formula for combinations, which is given by:\n\n\\[\nC(n, k) = \\frac{n!}{k!(n-k)!}\n\\]\n\nIn this cas"
+        },
+        {
+          "prob_idx": 1,
+          "detected_lang": "en",
+          "text_snippet": " To find the remainder when 6719 is divided by 15, we can use the modulus operation. The modulus operation (%) gives the remainder of a division of tw"
+        },
+        {
+          "prob_idx": 2,
+          "detected_lang": "en",
+          "text_snippet": " To find the sum of the first 8 terms of an arithmetic sequence with the first term \\(a = 20\\) and common difference \\(d = 9\\), we can use the formula"
+        },
+        {
+          "prob_idx": 3,
+          "detected_lang": "en",
+          "text_snippet": " To find the value of \\( C(6, 1) \\), we need to use the combination formula, which is given by:\n\n\\[\nC(n, k) = \\frac{n!}{k!(n-k)!}\n\\]\n\nIn this case, \\("
+        },
+        {
+          "prob_idx": 4,
+          "detected_lang": "en",
+          "text_snippet": " To find the remainder when 1662 is divided by 6, we can use the modulo operation. The modulo operation (%) gives the remainder of a division of two n"
+        },
+        {
+          "prob_idx": 5,
+          "detected_lang": "en",
+          "text_snippet": " To find the value of \\( C(9, 4) \\), we need to calculate the binomial coefficient, which is given by the formula:\n\n\\[\nC(n, k) = \\frac{n!}{k!(n-k)!}\n\\"
+        },
+        {
+          "prob_idx": 6,
+          "detected_lang": "en",
+          "text_snippet": " To calculate \\(702 + 768\\), we can use the standard addition method. Here are the steps:\n\n1. Align the numbers by their place values:\n   \\[\n   \\begin"
+        },
+        {
+          "prob_idx": 7,
+          "detected_lang": "en",
+          "text_snippet": " To find the sum of the first 26 terms of an arithmetic sequence with the first term \\(a = 17\\) and common difference \\(d = 7\\), we can use the formul"
+        },
+        {
+          "prob_idx": 8,
+          "detected_lang": "en",
+          "text_snippet": " To find the remainder when 4911 is divided by 16, we can use the modulus operation. The modulus operation (%) gives the remainder of a division of tw"
+        },
+        {
+          "prob_idx": 9,
+          "detected_lang": "en",
+          "text_snippet": " To find the sum of the first 16 terms of an arithmetic sequence with the first term \\(a = 8\\) and common difference \\(d = 2\\), we can use the formula"
+        },
+        {
+          "prob_idx": 10,
+          "detected_lang": "en",
+          "text_snippet": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle i"
+        },
+        {
+          "prob_idx": 11,
+          "detected_lang": "en",
+          "text_snippet": " To calculate \\(628 + 280\\), we can follow these steps:\n\n1. Align the numbers by their place values:\n   \\[\n   \\begin{array}{c@{}c@{}c}\n     & 6 & 2 & "
+        },
+        {
+          "prob_idx": 12,
+          "detected_lang": "en",
+          "text_snippet": " To find the value of \\( C(12, 2) \\), we need to use the formula for combinations, which is given by:\n\n\\[\nC(n, r) = \\frac{n!}{r!(n-r)!}\n\\]\n\nIn this ca"
+        },
+        {
+          "prob_idx": 13,
+          "detected_lang": "en",
+          "text_snippet": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle i"
+        },
+        {
+          "prob_idx": 14,
+          "detected_lang": "en",
+          "text_snippet": " To calculate \\(728 + 969\\), we can use the standard addition method. Here are the steps:\n\n1. Align the numbers by their place values:\n   \\[\n   \\begin"
+        },
+        {
+          "prob_idx": 16,
+          "detected_lang": "en",
+          "text_snippet": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle i"
+        },
+        {
+          "prob_idx": 17,
+          "detected_lang": "en",
+          "text_snippet": " To find the remainder when \\(7^{112}\\) is divided by 25, we can use properties of modular arithmetic, specifically Euler's theorem. Euler's theorem s"
+        },
+        {
+          "prob_idx": 18,
+          "detected_lang": "en",
+          "text_snippet": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle i"
+        },
+        {
+          "prob_idx": 20,
+          "detected_lang": "en",
+          "text_snippet": " To find the sum of the first 16 terms of an arithmetic sequence with the first term \\(a = 7\\) and common difference \\(d = 8\\), we can use the formula"
+        },
+        {
+          "prob_idx": 21,
+          "detected_lang": "en",
+          "text_snippet": " To calculate \\(40 + 105\\), we can follow these steps:\n\n1. Start with the number 40.\n2. Add the number 105 to 40.\n\nWe can break it down as follows:\n\\["
+        }
+      ]
+    },
+    "en_to_sw": {
+      "lang_distribution": {
+        "en": 20
+      },
+      "n_target_lang": 0,
+      "pct_target": 0.0,
+      "per_problem": [
+        {
+          "prob_idx": 0,
+          "detected_lang": "en",
+          "text_snippet": " The value of C(5, 1) is 5."
+        },
+        {
+          "prob_idx": 1,
+          "detected_lang": "en",
+          "text_snippet": " To find the remainder when 6719 is divided by 15, we can use the modulus operation. The modulus operation (%) gives the remainder of a division of tw"
+        },
+        {
+          "prob_idx": 2,
+          "detected_lang": "en",
+          "text_snippet": " To find the sum of the first 8 terms of an arithmetic sequence with the first term \\(a = 20\\) and common difference \\(d = 9\\), we can use the formula"
+        },
+        {
+          "prob_idx": 3,
+          "detected_lang": "en",
+          "text_snippet": " The value of C(6, 1) is 6."
+        },
+        {
+          "prob_idx": 4,
+          "detected_lang": "en",
+          "text_snippet": " To find the remainder when 1662 is divided by 6, we can use the modulo operation. The modulo operation (%) gives the remainder of a division of two n"
+        },
+        {
+          "prob_idx": 5,
+          "detected_lang": "en",
+          "text_snippet": " The value of C(9, 4) is 126."
+        },
+        {
+          "prob_idx": 6,
+          "detected_lang": "en",
+          "text_snippet": " To calculate \\(702 + 768\\), we can use the standard addition method. Here are the steps:\n\n1. Align the numbers by their place values:\n   \\[\n   \\begin"
+        },
+        {
+          "prob_idx": 7,
+          "detected_lang": "en",
+          "text_snippet": " To find the sum of the first 26 terms of an arithmetic sequence with the first term \\(a = 17\\) and common difference \\(d = 7\\), we can use the formul"
+        },
+        {
+          "prob_idx": 8,
+          "detected_lang": "en",
+          "text_snippet": " To find the remainder when 4911 is divided by 16, we can use the modulus operation. The modulus operation (%) gives the remainder of a division of tw"
+        },
+        {
+          "prob_idx": 9,
+          "detected_lang": "en",
+          "text_snippet": " To find the sum of the first 16 terms of an arithmetic sequence with the first term \\(a = 8\\) and common difference \\(d = 2\\), we can use the formula"
+        },
+        {
+          "prob_idx": 10,
+          "detected_lang": "en",
+          "text_snippet": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle i"
+        },
+        {
+          "prob_idx": 11,
+          "detected_lang": "en",
+          "text_snippet": " To calculate \\(628 + 280\\), we can follow these steps:\n\n1. Align the numbers by their place values:\n   \\[\n   \\begin{array}{c@{}c@{}c}\n     & 6 & 2 & "
+        },
+        {
+          "prob_idx": 12,
+          "detected_lang": "en",
+          "text_snippet": " The value of C(12, 2) is 66."
+        },
+        {
+          "prob_idx": 13,
+          "detected_lang": "en",
+          "text_snippet": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle i"
+        },
+        {
+          "prob_idx": 14,
+          "detected_lang": "en",
+          "text_snippet": " To calculate \\(728 + 969\\), we can use the standard addition method. Here are the steps:\n\n1. Align the numbers by their place values:\n   \\[\n   \\begin"
+        },
+        {
+          "prob_idx": 16,
+          "detected_lang": "en",
+          "text_snippet": " The area of a rectangle is given by the formula:\n\nArea = length \u00d7 width\n\nIn this case, the length is 18 and the width is 10. So, the area of the rect"
+        },
+        {
+          "prob_idx": 17,
+          "detected_lang": "en",
+          "text_snippet": " To find the remainder when \\(7^{112}\\) is divided by 25, we can use properties of modular arithmetic, specifically Euler's theorem. Euler's theorem s"
+        },
+        {
+          "prob_idx": 18,
+          "detected_lang": "en",
+          "text_snippet": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle i"
+        },
+        {
+          "prob_idx": 20,
+          "detected_lang": "en",
+          "text_snippet": " To find the sum of the first 16 terms of an arithmetic sequence with the first term \\(a = 7\\) and common difference \\(d = 8\\), we can use the formula"
+        },
+        {
+          "prob_idx": 21,
+          "detected_lang": "en",
+          "text_snippet": " To calculate \\(40 + 105\\), we can follow these steps:\n\n1. Start with the number 40.\n2. Add the number 105 to 40.\n\nWe can break it down as follows:\n\\["
+        }
+      ]
+    }
+  }
+}

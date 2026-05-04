@@ -1,0 +1,59 @@
+{
+  "peak_layer": 28,
+  "last_layer": 31,
+  "peak_layer_r2": 0.7538400292396545,
+  "peak_layer_nn": 0.345,
+  "last_layer_r2": 0.5052429437637329,
+  "last_layer_nn": 0.285,
+  "random_r2_mean": -0.35462245941162107,
+  "random_r2_std": 0.045301173555593974,
+  "random_nn_mean": 0.21309999999999998,
+  "r2_improvement": 0.24859708547592163,
+  "layer_metrics": {
+    "0": {
+      "nn_acc": 0.885,
+      "n_lang": 1,
+      "energy_ratio": 4042.232666015625
+    },
+    "4": {
+      "nn_acc": 0.19,
+      "n_lang": 1,
+      "energy_ratio": 4053.515869140625
+    },
+    "8": {
+      "nn_acc": 0.475,
+      "n_lang": 1,
+      "energy_ratio": 4027.54833984375
+    },
+    "12": {
+      "nn_acc": 0.5,
+      "n_lang": 1,
+      "energy_ratio": 3989.593017578125
+    },
+    "16": {
+      "nn_acc": 0.735,
+      "n_lang": 1,
+      "energy_ratio": 3906.33251953125
+    },
+    "20": {
+      "nn_acc": 0.825,
+      "n_lang": 2,
+      "energy_ratio": 1885.4580078125
+    },
+    "24": {
+      "nn_acc": 0.79,
+      "n_lang": 3,
+      "energy_ratio": 1262.9432779947917
+    },
+    "28": {
+      "nn_acc": 0.86,
+      "n_lang": 4,
+      "energy_ratio": 974.6619262695312
+    },
+    "31": {
+      "nn_acc": 0.46,
+      "n_lang": 4,
+      "energy_ratio": 929.6524047851562
+    }
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "model": "Qwen/Qwen2.5-3B-Instruct",
+    "correct": "B"
+  },
+  "baseline": {
+    "answer": "A",
+    "n_tokens": 1255,
+    "time_s": 20.7
+  },
+  "control_full_deflation": {
+    "answer": "A",
+    "n_tokens": 1033,
+    "time_s": 21.1
+  },
+  "exp1_primary": {
+    "answer": "?",
+    "n_tokens": 2048,
+    "time_s": 33.7,
+    "shallow_mag": 1.0,
+    "poke_mag": 5.0,
+    "shallow_end": 8,
+    "poke_step": 10,
+    "poke_layer": 20,
+    "text_last200": "= \\frac{4050}{675} = \\frac{4050}{675} = \\frac{4050}{675} = \\frac{4050}{675} = \\frac{4050}{675} = \\frac{4050}{675} = \\frac{4050}{675} = \\frac{4050}{675} = \\frac{4050}{675} = \\frac{4050}{675} = \\frac{40"
+  },
+  "exp1_variants": {
+    "shallow_0.5": {
+      "answer": "A",
+      "n_tokens": 1255,
+      "time_s": 20.6,
+      "text_last200": "}^{2025} \\left( \\frac{1}{x_1} + \\frac{1}{x_2} \\right)} = \\frac{4050}{2025 \\times -\\frac{4}{3}} = \\frac{4050}{-2700} = -\\frac{5}{3}\n\\]\n\nThus, the harmonic mean of all the real roots is:\n\\[\n\\boxed{A}\n\\]",
+      "shallow_mag": 0.5,
+      "poke_mag": 5.0,
+      "shallow_end": 8,
+      "poke_step": 10,
+      "poke_layer": 20
+    },
+    "shallow_2.0": {
+      "answer": "?",
+      "n_tokens": 2048,
+      "time_s": 33.7,
+      "text_last200": "{3} = -4050 \\times \\frac{4}{3} = -4050 \\times \\frac{4}{3} = -4050 \\times \\frac{4}{3} = -4050 \\times \\frac{4}{3} = -4050 \\times \\frac{4}{3} = -4050 \\times \\frac{4}{3} = -4050 \\times \\frac{4}{3} = -4050",
+      "shallow_mag": 2.0,
+      "poke_mag": 5.0,
+      "shallow_end": 8,
+      "poke_step": 10,
+      "poke_layer": 20
+    },
+    "shallow_end_5": {
+      "answer": "A",
+      "n_tokens": 1118,
+      "time_s": 18.3,
+      "text_last200": "tor. Since each quadratic factor has two roots, the total number of roots is \\(4050\\).\n\nGiven the symmetry and the nature of the polynomial, the harmonic mean of all the real roots is:\n\\[\n\\boxed{A}\n\\]",
+      "shallow_mag": 1.0,
+      "poke_mag": 5.0,
+      "shallow_end": 5,
+      "poke_step": 10,
+      "poke_layer": 20
+    },
+    "shallow_end_12": {
+      "answer": "A",
+      "n_tokens": 1032,
+      "time_s": 16.9,
+      "text_last200": "\\]\n\nFinally, the harmonic mean \\(H\\) is:\n\\[\nH = \\frac{4050}{-2700} = -\\frac{4050}{2700} = -\\frac{4050 \\div 2700}{1} = -\\frac{5}{3}\n\\]\n\nThus, the harmonic mean of all the real roots is:\n\\[\n\\boxed{A}\n\\]",
+      "shallow_mag": 1.0,
+      "poke_mag": 5.0,
+      "shallow_end": 12,
+      "poke_step": 10,
+      "poke_layer": 20
+    },
+    "poke_only": {
+      "answer": "A",
+      "n_tokens": 1255,
+      "time_s": 20.6,
+      "text_last200": "}^{2025} \\left( \\frac{1}{x_1} + \\frac{1}{x_2} \\right)} = \\frac{4050}{2025 \\times -\\frac{4}{3}} = \\frac{4050}{-2700} = -\\frac{5}{3}\n\\]\n\nThus, the harmonic mean of all the real roots is:\n\\[\n\\boxed{A}\n\\]",
+      "shallow_mag": 0.0,
+      "poke_mag": 5.0,
+      "shallow_end": -1,
+      "poke_step": 10,
+      "poke_layer": 20
+    },
+    "shallow_only": {
+      "answer": "?",
+      "n_tokens": 2048,
+      "time_s": 33.7,
+      "text_last200": "= \\frac{4050}{675} = \\frac{4050}{675} = \\frac{4050}{675} = \\frac{4050}{675} = \\frac{4050}{675} = \\frac{4050}{675} = \\frac{4050}{675} = \\frac{4050}{675} = \\frac{4050}{675} = \\frac{4050}{675} = \\frac{40",
+      "shallow_mag": 1.0,
+      "poke_mag": 0.0,
+      "shallow_end": 8,
+      "poke_step": -1,
+      "poke_layer": 20
+    },
+    "shallow_only_15": {
+      "answer": "D",
+      "n_tokens": 979,
+      "time_s": 16.0,
+      "text_last200": "frac{4050}{-5400} = -\\frac{4050}{5400} = -\\frac{45}{60} = -\\frac{3}{4}.\n\\]\n\nHowever, we need to recheck the problem constraints and the options provided. The correct answer should be:\n\n\\[\n\\boxed{D}\n\\]",
+      "shallow_mag": 1.0,
+      "poke_mag": 0.0,
+      "shallow_end": 15,
+      "poke_step": -1,
+      "poke_layer": 20
+    },
+    "shallow_only_50": {
+      "answer": "?",
+      "n_tokens": 2048,
+      "time_s": 33.7,
+      "text_last200": " -\\frac{10}{13.2} = -\\frac{10}{13.2} = -\\frac{10}{13.2} = -\\frac{10}{13.2} = -\\frac{10}{13.2} = -\\frac{10}{13.2} = -\\frac{10}{13.2} = -\\frac{10}{13.2} = -\\frac{10}{13.2} = -\\frac{10}{13.2} = -\\frac{10",
+      "shallow_mag": 1.0,
+      "poke_mag": 0.0,
+      "shallow_end": 50,
+      "poke_step": -1,
+      "poke_layer": 20
+    }
+  },
+  "exp2": {
+    "onset_5": {
+      "answer": "A",
+      "n_tokens": 1061,
+      "time_s": 17.7,
+      "onset_step": 5,
+      "text_last200": "{4050 \\div 405}{5400 \\div 405} = -\\frac{10}{13.33} = -\\frac{10}{13.33} = -\\frac{10}{13.33} = -\\frac{10}{13.33} = -\\frac{10}{13.33}\n\\]\n\nThus, the harmonic mean of all the real roots is:\n\\[\n\\boxed{A}\n\\]"
+    },
+    "onset_10": {
+      "answer": "A",
+      "n_tokens": 1098,
+      "time_s": 18.3,
+      "onset_step": 10,
+      "text_last200": "tor. Since each quadratic factor has two roots, the total number of roots is \\(4050\\).\n\nGiven the symmetry and the nature of the polynomial, the harmonic mean of all the real roots is:\n\\[\n\\boxed{A}\n\\]"
+    },
+    "onset_15": {
+      "answer": "A",
+      "n_tokens": 1098,
+      "time_s": 18.3,
+      "onset_step": 15,
+      "text_last200": "tor. Since each quadratic factor has two roots, the total number of roots is \\(4050\\).\n\nGiven the symmetry and the nature of the polynomial, the harmonic mean of all the real roots is:\n\\[\n\\boxed{A}\n\\]"
+    },
+    "onset_20": {
+      "answer": "A",
+      "n_tokens": 1098,
+      "time_s": 18.2,
+      "onset_step": 20,
+      "text_last200": "tor. Since each quadratic factor has two roots, the total number of roots is \\(4050\\).\n\nGiven the symmetry and the nature of the polynomial, the harmonic mean of all the real roots is:\n\\[\n\\boxed{A}\n\\]"
+    },
+    "onset_30": {
+      "answer": "A",
+      "n_tokens": 1098,
+      "time_s": 18.2,
+      "onset_step": 30,
+      "text_last200": "tor. Since each quadratic factor has two roots, the total number of roots is \\(4050\\).\n\nGiven the symmetry and the nature of the polynomial, the harmonic mean of all the real roots is:\n\\[\n\\boxed{A}\n\\]"
+    },
+    "onset_50": {
+      "answer": "A",
+      "n_tokens": 1098,
+      "time_s": 18.2,
+      "onset_step": 50,
+      "text_last200": "tor. Since each quadratic factor has two roots, the total number of roots is \\(4050\\).\n\nGiven the symmetry and the nature of the polynomial, the harmonic mean of all the real roots is:\n\\[\n\\boxed{A}\n\\]"
+    }
+  }
+}

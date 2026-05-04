@@ -1,0 +1,120 @@
+{
+  "total_problems": 20,
+  "correct_counts": {
+    "baseline_en": 2,
+    "baseline_zh": 9,
+    "splice_pc0_swap": 2,
+    "splice_raw": 9,
+    "splice_reverse_steer": 8,
+    "splice_random_dir": 9,
+    "splice_scrambled": 9
+  },
+  "ground_truth": [
+    {
+      "prob_idx": "C(5,1)=5",
+      "answer": 5,
+      "category": "combinatorics"
+    },
+    {
+      "prob_idx": "6719%15=14",
+      "answer": 14,
+      "category": "modular"
+    },
+    {
+      "prob_idx": "AP(a1=20,d=9,n=8)=412",
+      "answer": 412,
+      "category": "sequences"
+    },
+    {
+      "prob_idx": "C(6,1)=6",
+      "answer": 6,
+      "category": "combinatorics"
+    },
+    {
+      "prob_idx": "1662%6=0",
+      "answer": 0,
+      "category": "modular"
+    },
+    {
+      "prob_idx": "C(9,4)=126",
+      "answer": 126,
+      "category": "combinatorics"
+    },
+    {
+      "prob_idx": "702+768=1470",
+      "answer": 1470,
+      "category": "arithmetic"
+    },
+    {
+      "prob_idx": "AP(a1=17,d=7,n=26)=2717",
+      "answer": 2717,
+      "category": "sequences"
+    },
+    {
+      "prob_idx": "4911%16=15",
+      "answer": 15,
+      "category": "modular"
+    },
+    {
+      "prob_idx": "AP(a1=8,d=2,n=16)=368",
+      "answer": 368,
+      "category": "sequences"
+    },
+    {
+      "prob_idx": "41\u00d743=1763",
+      "answer": 1763,
+      "category": "geometry"
+    },
+    {
+      "prob_idx": "628+280=908",
+      "answer": 908,
+      "category": "arithmetic"
+    },
+    {
+      "prob_idx": "C(12,2)=66",
+      "answer": 66,
+      "category": "combinatorics"
+    },
+    {
+      "prob_idx": "34\u00d77=238",
+      "answer": 238,
+      "category": "geometry"
+    },
+    {
+      "prob_idx": "728+969=1697",
+      "answer": 1697,
+      "category": "arithmetic"
+    },
+    {
+      "prob_idx": "18\u00d710=180",
+      "answer": 180,
+      "category": "geometry"
+    },
+    {
+      "prob_idx": "7112%25=12",
+      "answer": 12,
+      "category": "modular"
+    },
+    {
+      "prob_idx": "38\u00d717=646",
+      "answer": 646,
+      "category": "geometry"
+    },
+    {
+      "prob_idx": "AP(a1=7,d=8,n=16)=1072",
+      "answer": 1072,
+      "category": "sequences"
+    },
+    {
+      "prob_idx": "40+105=145",
+      "answer": 145,
+      "category": "arithmetic"
+    }
+  ],
+  "pc0_vs_en": {
+    "both_correct": 2,
+    "en_correct_pc0_wrong": 0,
+    "pc0_correct_en_wrong": 0,
+    "agreement": 20
+  }
+}

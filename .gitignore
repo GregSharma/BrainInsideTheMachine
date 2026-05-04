@@ -1,0 +1,57 @@
+# Virtual environments
+.venv/
+.venv_wsl/
+__pycache__/
+*.pyc
+
+# Model weights and large binaries
+*.pt
+*.npz
+*.bin
+*.safetensors
+*.gguf
+
+# Large output files (activation dumps, caches)
+output/multilingual_all_layers*.npz
+output/*.png
+output/c2c_logs/
+output/departure_rail_*.png
+output/diffusion_*.png
+
+# Personal / application materials
+Anthropic_Fellow_App/
+Chats/
+ghost/
+kg_sources/
+*.zip
+2026-*.txt
+Screenshot*.png
+bitm_experiments.md
+bitm_hypotheses.md
+bitm_kg_dump.md
+crosstask_probe_meta.json
+crystallization_7b_results.json
+crosstask_probe_hiddens.npz
+Claude-*.md
+
+# IDE / editor
+.ipynb_checkpoints/
+*.swp
+*.swo
+*~
+
+# MCP / Claude config
+.mcp.json
+.contextignore
+.claude/
+
+# Large diagnostic dumps
+perturbation/
+vega_md/
+
+# Misc
+TODAY_SESSION_NOTES.md
+*.pdf
+
+# Private/personal files
+.private/

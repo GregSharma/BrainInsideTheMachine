@@ -1,0 +1,1653 @@
+{
+  "model": "Qwen/Qwen2.5-3B",
+  "method": "refresh_sweep",
+  "delta_values": [
+    0.1,
+    0.15,
+    0.3
+  ],
+  "onset_values": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    22,
+    25,
+    27,
+    30,
+    35,
+    40,
+    50
+  ],
+  "refresh_values": [
+    5,
+    10,
+    15,
+    25,
+    50
+  ],
+  "results": [
+    {
+      "onset": 0,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 5
+    },
+    {
+      "onset": 5,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 5
+    },
+    {
+      "onset": 10,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 5
+    },
+    {
+      "onset": 15,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 5
+    },
+    {
+      "onset": 20,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 5
+    },
+    {
+      "onset": 22,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 5
+    },
+    {
+      "onset": 25,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 5
+    },
+    {
+      "onset": 27,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 5
+    },
+    {
+      "onset": 30,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1055,
+      "delta": 0.1,
+      "refresh_every": 5
+    },
+    {
+      "onset": 35,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 879,
+      "delta": 0.1,
+      "refresh_every": 5
+    },
+    {
+      "onset": 40,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 879,
+      "delta": 0.1,
+      "refresh_every": 5
+    },
+    {
+      "onset": 50,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1133,
+      "delta": 0.1,
+      "refresh_every": 5
+    },
+    {
+      "onset": 0,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 10
+    },
+    {
+      "onset": 5,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 10
+    },
+    {
+      "onset": 10,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 10
+    },
+    {
+      "onset": 15,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 10
+    },
+    {
+      "onset": 20,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 10
+    },
+    {
+      "onset": 22,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 10
+    },
+    {
+      "onset": 25,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 10
+    },
+    {
+      "onset": 27,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 10
+    },
+    {
+      "onset": 30,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1200,
+      "delta": 0.1,
+      "refresh_every": 10
+    },
+    {
+      "onset": 35,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 879,
+      "delta": 0.1,
+      "refresh_every": 10
+    },
+    {
+      "onset": 40,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 879,
+      "delta": 0.1,
+      "refresh_every": 10
+    },
+    {
+      "onset": 50,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1133,
+      "delta": 0.1,
+      "refresh_every": 10
+    },
+    {
+      "onset": 0,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 15
+    },
+    {
+      "onset": 5,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 15
+    },
+    {
+      "onset": 10,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 15
+    },
+    {
+      "onset": 15,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 15
+    },
+    {
+      "onset": 20,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 15
+    },
+    {
+      "onset": 22,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 15
+    },
+    {
+      "onset": 25,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 15
+    },
+    {
+      "onset": 27,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 15
+    },
+    {
+      "onset": 30,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1055,
+      "delta": 0.1,
+      "refresh_every": 15
+    },
+    {
+      "onset": 35,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 879,
+      "delta": 0.1,
+      "refresh_every": 15
+    },
+    {
+      "onset": 40,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 879,
+      "delta": 0.1,
+      "refresh_every": 15
+    },
+    {
+      "onset": 50,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1133,
+      "delta": 0.1,
+      "refresh_every": 15
+    },
+    {
+      "onset": 0,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 25
+    },
+    {
+      "onset": 5,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 25
+    },
+    {
+      "onset": 10,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 25
+    },
+    {
+      "onset": 15,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 25
+    },
+    {
+      "onset": 20,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 25
+    },
+    {
+      "onset": 22,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 25
+    },
+    {
+      "onset": 25,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 25
+    },
+    {
+      "onset": 27,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 25
+    },
+    {
+      "onset": 30,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1200,
+      "delta": 0.1,
+      "refresh_every": 25
+    },
+    {
+      "onset": 35,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 879,
+      "delta": 0.1,
+      "refresh_every": 25
+    },
+    {
+      "onset": 40,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 879,
+      "delta": 0.1,
+      "refresh_every": 25
+    },
+    {
+      "onset": 50,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1133,
+      "delta": 0.1,
+      "refresh_every": 25
+    },
+    {
+      "onset": 0,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 50
+    },
+    {
+      "onset": 5,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 50
+    },
+    {
+      "onset": 10,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 50
+    },
+    {
+      "onset": 15,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 50
+    },
+    {
+      "onset": 20,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 50
+    },
+    {
+      "onset": 22,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 50
+    },
+    {
+      "onset": 25,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1053,
+      "delta": 0.1,
+      "refresh_every": 50
+    },
+    {
+      "onset": 27,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1200,
+      "delta": 0.1,
+      "refresh_every": 50
+    },
+    {
+      "onset": 30,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1200,
+      "delta": 0.1,
+      "refresh_every": 50
+    },
+    {
+      "onset": 35,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 879,
+      "delta": 0.1,
+      "refresh_every": 50
+    },
+    {
+      "onset": 40,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 879,
+      "delta": 0.1,
+      "refresh_every": 50
+    },
+    {
+      "onset": 50,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1133,
+      "delta": 0.1,
+      "refresh_every": 50
+    },
+    {
+      "onset": 0,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 966,
+      "delta": 0.15,
+      "refresh_every": 5
+    },
+    {
+      "onset": 5,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 966,
+      "delta": 0.15,
+      "refresh_every": 5
+    },
+    {
+      "onset": 10,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 966,
+      "delta": 0.15,
+      "refresh_every": 5
+    },
+    {
+      "onset": 15,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 966,
+      "delta": 0.15,
+      "refresh_every": 5
+    },
+    {
+      "onset": 20,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 966,
+      "delta": 0.15,
+      "refresh_every": 5
+    },
+    {
+      "onset": 22,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 966,
+      "delta": 0.15,
+      "refresh_every": 5
+    },
+    {
+      "onset": 25,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 966,
+      "delta": 0.15,
+      "refresh_every": 5
+    },
+    {
+      "onset": 27,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 966,
+      "delta": 0.15,
+      "refresh_every": 5
+    },
+    {
+      "onset": 30,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1057,
+      "delta": 0.15,
+      "refresh_every": 5
+    },
+    {
+      "onset": 35,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 952,
+      "delta": 0.15,
+      "refresh_every": 5
+    },
+    {
+      "onset": 40,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 952,
+      "delta": 0.15,
+      "refresh_every": 5
+    },
+    {
+      "onset": 50,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 937,
+      "delta": 0.15,
+      "refresh_every": 5
+    },
+    {
+      "onset": 0,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 966,
+      "delta": 0.15,
+      "refresh_every": 10
+    },
+    {
+      "onset": 5,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 966,
+      "delta": 0.15,
+      "refresh_every": 10
+    },
+    {
+      "onset": 10,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 966,
+      "delta": 0.15,
+      "refresh_every": 10
+    },
+    {
+      "onset": 15,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 966,
+      "delta": 0.15,
+      "refresh_every": 10
+    },
+    {
+      "onset": 20,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 966,
+      "delta": 0.15,
+      "refresh_every": 10
+    },
+    {
+      "onset": 22,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 966,
+      "delta": 0.15,
+      "refresh_every": 10
+    },
+    {
+      "onset": 25,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 966,
+      "delta": 0.15,
+      "refresh_every": 10
+    },
+    {
+      "onset": 27,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1037,
+      "delta": 0.15,
+      "refresh_every": 10
+    },
+    {
+      "onset": 30,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 1035,
+      "delta": 0.15,
+      "refresh_every": 10
+    },
+    {
+      "onset": 35,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 952,
+      "delta": 0.15,
+      "refresh_every": 10
+    },
+    {
+      "onset": 40,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 952,
+      "delta": 0.15,
+      "refresh_every": 10
+    },
+    {
+      "onset": 50,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1020,
+      "delta": 0.15,
+      "refresh_every": 10
+    },
+    {
+      "onset": 0,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 966,
+      "delta": 0.15,
+      "refresh_every": 15
+    },
+    {
+      "onset": 5,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 966,
+      "delta": 0.15,
+      "refresh_every": 15
+    },
+    {
+      "onset": 10,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 966,
+      "delta": 0.15,
+      "refresh_every": 15
+    },
+    {
+      "onset": 15,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 966,
+      "delta": 0.15,
+      "refresh_every": 15
+    },
+    {
+      "onset": 20,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 966,
+      "delta": 0.15,
+      "refresh_every": 15
+    },
+    {
+      "onset": 22,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 966,
+      "delta": 0.15,
+      "refresh_every": 15
+    },
+    {
+      "onset": 25,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 966,
+      "delta": 0.15,
+      "refresh_every": 15
+    },
+    {
+      "onset": 27,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1200,
+      "delta": 0.15,
+      "refresh_every": 15
+    },
+    {
+      "onset": 30,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1162,
+      "delta": 0.15,
+      "refresh_every": 15
+    },
+    {
+      "onset": 35,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 952,
+      "delta": 0.15,
+      "refresh_every": 15
+    },
+    {
+      "onset": 40,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 952,
+      "delta": 0.15,
+      "refresh_every": 15
+    },
+    {
+      "onset": 50,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1020,
+      "delta": 0.15,
+      "refresh_every": 15
+    },
+    {
+      "onset": 0,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 966,
+      "delta": 0.15,
+      "refresh_every": 25
+    },
+    {
+      "onset": 5,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 966,
+      "delta": 0.15,
+      "refresh_every": 25
+    },
+    {
+      "onset": 10,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 966,
+      "delta": 0.15,
+      "refresh_every": 25
+    },
+    {
+      "onset": 15,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 966,
+      "delta": 0.15,
+      "refresh_every": 25
+    },
+    {
+      "onset": 20,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 966,
+      "delta": 0.15,
+      "refresh_every": 25
+    },
+    {
+      "onset": 22,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 966,
+      "delta": 0.15,
+      "refresh_every": 25
+    },
+    {
+      "onset": 25,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 966,
+      "delta": 0.15,
+      "refresh_every": 25
+    },
+    {
+      "onset": 27,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1200,
+      "delta": 0.15,
+      "refresh_every": 25
+    },
+    {
+      "onset": 30,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1057,
+      "delta": 0.15,
+      "refresh_every": 25
+    },
+    {
+      "onset": 35,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 952,
+      "delta": 0.15,
+      "refresh_every": 25
+    },
+    {
+      "onset": 40,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 952,
+      "delta": 0.15,
+      "refresh_every": 25
+    },
+    {
+      "onset": 50,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1020,
+      "delta": 0.15,
+      "refresh_every": 25
+    },
+    {
+      "onset": 0,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1200,
+      "delta": 0.15,
+      "refresh_every": 50
+    },
+    {
+      "onset": 5,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1200,
+      "delta": 0.15,
+      "refresh_every": 50
+    },
+    {
+      "onset": 10,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1200,
+      "delta": 0.15,
+      "refresh_every": 50
+    },
+    {
+      "onset": 15,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1200,
+      "delta": 0.15,
+      "refresh_every": 50
+    },
+    {
+      "onset": 20,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1008,
+      "delta": 0.15,
+      "refresh_every": 50
+    },
+    {
+      "onset": 22,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1200,
+      "delta": 0.15,
+      "refresh_every": 50
+    },
+    {
+      "onset": 25,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1200,
+      "delta": 0.15,
+      "refresh_every": 50
+    },
+    {
+      "onset": 27,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1200,
+      "delta": 0.15,
+      "refresh_every": 50
+    },
+    {
+      "onset": 30,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1200,
+      "delta": 0.15,
+      "refresh_every": 50
+    },
+    {
+      "onset": 35,
+      "label": "WRONG(d)",
+      "answer": "d",
+      "correct": false,
+      "n_tokens": 1024,
+      "delta": 0.15,
+      "refresh_every": 50
+    },
+    {
+      "onset": 40,
+      "label": "WRONG(d)",
+      "answer": "d",
+      "correct": false,
+      "n_tokens": 1024,
+      "delta": 0.15,
+      "refresh_every": 50
+    },
+    {
+      "onset": 50,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1200,
+      "delta": 0.15,
+      "refresh_every": 50
+    },
+    {
+      "onset": 0,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 742,
+      "delta": 0.3,
+      "refresh_every": 5
+    },
+    {
+      "onset": 5,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 742,
+      "delta": 0.3,
+      "refresh_every": 5
+    },
+    {
+      "onset": 10,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 742,
+      "delta": 0.3,
+      "refresh_every": 5
+    },
+    {
+      "onset": 15,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 742,
+      "delta": 0.3,
+      "refresh_every": 5
+    },
+    {
+      "onset": 20,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 742,
+      "delta": 0.3,
+      "refresh_every": 5
+    },
+    {
+      "onset": 22,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 944,
+      "delta": 0.3,
+      "refresh_every": 5
+    },
+    {
+      "onset": 25,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1200,
+      "delta": 0.3,
+      "refresh_every": 5
+    },
+    {
+      "onset": 27,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1200,
+      "delta": 0.3,
+      "refresh_every": 5
+    },
+    {
+      "onset": 30,
+      "label": "WRONG(d)",
+      "answer": "d",
+      "correct": false,
+      "n_tokens": 960,
+      "delta": 0.3,
+      "refresh_every": 5
+    },
+    {
+      "onset": 35,
+      "label": "WRONG(d)",
+      "answer": "d",
+      "correct": false,
+      "n_tokens": 1173,
+      "delta": 0.3,
+      "refresh_every": 5
+    },
+    {
+      "onset": 40,
+      "label": "WRONG(d)",
+      "answer": "d",
+      "correct": false,
+      "n_tokens": 1173,
+      "delta": 0.3,
+      "refresh_every": 5
+    },
+    {
+      "onset": 50,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 802,
+      "delta": 0.3,
+      "refresh_every": 5
+    },
+    {
+      "onset": 0,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 742,
+      "delta": 0.3,
+      "refresh_every": 10
+    },
+    {
+      "onset": 5,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 742,
+      "delta": 0.3,
+      "refresh_every": 10
+    },
+    {
+      "onset": 10,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 742,
+      "delta": 0.3,
+      "refresh_every": 10
+    },
+    {
+      "onset": 15,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 742,
+      "delta": 0.3,
+      "refresh_every": 10
+    },
+    {
+      "onset": 20,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 742,
+      "delta": 0.3,
+      "refresh_every": 10
+    },
+    {
+      "onset": 22,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 742,
+      "delta": 0.3,
+      "refresh_every": 10
+    },
+    {
+      "onset": 25,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1200,
+      "delta": 0.3,
+      "refresh_every": 10
+    },
+    {
+      "onset": 27,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1200,
+      "delta": 0.3,
+      "refresh_every": 10
+    },
+    {
+      "onset": 30,
+      "label": "WRONG(d)",
+      "answer": "d",
+      "correct": false,
+      "n_tokens": 1000,
+      "delta": 0.3,
+      "refresh_every": 10
+    },
+    {
+      "onset": 35,
+      "label": "WRONG(d)",
+      "answer": "d",
+      "correct": false,
+      "n_tokens": 1173,
+      "delta": 0.3,
+      "refresh_every": 10
+    },
+    {
+      "onset": 40,
+      "label": "WRONG(d)",
+      "answer": "d",
+      "correct": false,
+      "n_tokens": 1173,
+      "delta": 0.3,
+      "refresh_every": 10
+    },
+    {
+      "onset": 50,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 802,
+      "delta": 0.3,
+      "refresh_every": 10
+    },
+    {
+      "onset": 0,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 742,
+      "delta": 0.3,
+      "refresh_every": 15
+    },
+    {
+      "onset": 5,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 742,
+      "delta": 0.3,
+      "refresh_every": 15
+    },
+    {
+      "onset": 10,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 742,
+      "delta": 0.3,
+      "refresh_every": 15
+    },
+    {
+      "onset": 15,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 742,
+      "delta": 0.3,
+      "refresh_every": 15
+    },
+    {
+      "onset": 20,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 742,
+      "delta": 0.3,
+      "refresh_every": 15
+    },
+    {
+      "onset": 22,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 742,
+      "delta": 0.3,
+      "refresh_every": 15
+    },
+    {
+      "onset": 25,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1200,
+      "delta": 0.3,
+      "refresh_every": 15
+    },
+    {
+      "onset": 27,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1200,
+      "delta": 0.3,
+      "refresh_every": 15
+    },
+    {
+      "onset": 30,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 862,
+      "delta": 0.3,
+      "refresh_every": 15
+    },
+    {
+      "onset": 35,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1200,
+      "delta": 0.3,
+      "refresh_every": 15
+    },
+    {
+      "onset": 40,
+      "label": "WRONG(d)",
+      "answer": "d",
+      "correct": false,
+      "n_tokens": 1173,
+      "delta": 0.3,
+      "refresh_every": 15
+    },
+    {
+      "onset": 50,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 802,
+      "delta": 0.3,
+      "refresh_every": 15
+    },
+    {
+      "onset": 0,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 879,
+      "delta": 0.3,
+      "refresh_every": 25
+    },
+    {
+      "onset": 5,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 879,
+      "delta": 0.3,
+      "refresh_every": 25
+    },
+    {
+      "onset": 10,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 929,
+      "delta": 0.3,
+      "refresh_every": 25
+    },
+    {
+      "onset": 15,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 929,
+      "delta": 0.3,
+      "refresh_every": 25
+    },
+    {
+      "onset": 20,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 929,
+      "delta": 0.3,
+      "refresh_every": 25
+    },
+    {
+      "onset": 22,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 929,
+      "delta": 0.3,
+      "refresh_every": 25
+    },
+    {
+      "onset": 25,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 929,
+      "delta": 0.3,
+      "refresh_every": 25
+    },
+    {
+      "onset": 27,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 929,
+      "delta": 0.3,
+      "refresh_every": 25
+    },
+    {
+      "onset": 30,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1025,
+      "delta": 0.3,
+      "refresh_every": 25
+    },
+    {
+      "onset": 35,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1200,
+      "delta": 0.3,
+      "refresh_every": 25
+    },
+    {
+      "onset": 40,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1200,
+      "delta": 0.3,
+      "refresh_every": 25
+    },
+    {
+      "onset": 50,
+      "label": "WRONG(C)",
+      "answer": "C",
+      "correct": false,
+      "n_tokens": 985,
+      "delta": 0.3,
+      "refresh_every": 25
+    },
+    {
+      "onset": 0,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 879,
+      "delta": 0.3,
+      "refresh_every": 50
+    },
+    {
+      "onset": 5,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 880,
+      "delta": 0.3,
+      "refresh_every": 50
+    },
+    {
+      "onset": 10,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 880,
+      "delta": 0.3,
+      "refresh_every": 50
+    },
+    {
+      "onset": 15,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 929,
+      "delta": 0.3,
+      "refresh_every": 50
+    },
+    {
+      "onset": 20,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1200,
+      "delta": 0.3,
+      "refresh_every": 50
+    },
+    {
+      "onset": 22,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1200,
+      "delta": 0.3,
+      "refresh_every": 50
+    },
+    {
+      "onset": 25,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 929,
+      "delta": 0.3,
+      "refresh_every": 50
+    },
+    {
+      "onset": 27,
+      "label": "CORRECT",
+      "answer": "B",
+      "correct": true,
+      "n_tokens": 929,
+      "delta": 0.3,
+      "refresh_every": 50
+    },
+    {
+      "onset": 30,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1056,
+      "delta": 0.3,
+      "refresh_every": 50
+    },
+    {
+      "onset": 35,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1200,
+      "delta": 0.3,
+      "refresh_every": 50
+    },
+    {
+      "onset": 40,
+      "label": "WRONG(?)",
+      "answer": "?",
+      "correct": false,
+      "n_tokens": 1200,
+      "delta": 0.3,
+      "refresh_every": 50
+    },
+    {
+      "onset": 50,
+      "label": "WRONG(C)",
+      "answer": "C",
+      "correct": false,
+      "n_tokens": 985,
+      "delta": 0.3,
+      "refresh_every": 50
+    }
+  ],
+  "elapsed_s": 525.4
+}

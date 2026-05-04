@@ -1,0 +1,64 @@
+{
+  "k20": {
+    "cka": {
+      "real_Z": 0.40082627534866333,
+      "full_space": 0.5314076542854309,
+      "random_mean": 0.49916934967041016,
+      "random_std": 0.08717398345470428,
+      "percentile": 14.000000000000002
+    },
+    "probe_transfer": {
+      "zh_to_en_Z": 0.35,
+      "en_to_zh_Z": 0.6,
+      "zh_loo_Z": 0.0,
+      "random_zh_to_en_mean": 0.4165,
+      "random_zh_to_en_std": 0.10026340309405023,
+      "random_en_to_zh_mean": 0.41600000000000004,
+      "random_en_to_zh_std": 0.10195096860746349,
+      "percentile_zh_en": 18.0,
+      "percentile_en_zh": 94.0,
+      "chance": 0.05
+    },
+    "energy": {
+      "zh_mean": 0.006282205227762461,
+      "en_mean": 0.005395182408392429,
+      "expected_random": 0.009765625,
+      "concentration_ratio": 0.6432977914810181,
+      "random_mean": 0.009594378061592579,
+      "random_std": 0.002849118784070015,
+      "percentile": 10.0,
+      "zh_en_correlation": 0.37773860537593335
+    }
+  },
+  "k50": {
+    "cka": {
+      "real_Z": 0.5730164051055908,
+      "full_space": 0.5314076542854309,
+      "random_mean": 0.5062862634658813,
+      "random_std": 0.06631674617528915,
+      "percentile": 82.0
+    },
+    "probe_transfer": {
+      "zh_to_en_Z": 0.8,
+      "en_to_zh_Z": 0.75,
+      "zh_loo_Z": 0.0,
+      "random_zh_to_en_mean": 0.634,
+      "random_zh_to_en_std": 0.09971960689854328,
+      "random_en_to_zh_mean": 0.6655,
+      "random_en_to_zh_std": 0.0976460444667371,
+      "percentile_zh_en": 95.0,
+      "percentile_en_zh": 71.0,
+      "chance": 0.05
+    },
+    "energy": {
+      "zh_mean": 0.021365564316511154,
+      "en_mean": 0.019726043567061424,
+      "expected_random": 0.0244140625,
+      "concentration_ratio": 0.8751335144042969,
+      "random_mean": 0.024403540417551994,
+      "random_std": 0.003937350120395422,
+      "percentile": 23.0,
+      "zh_en_correlation": 0.7175189945260931
+    }
+  }
+}

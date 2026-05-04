@@ -1,0 +1,908 @@
+{
+  "experiment": "INJ2F_kv_replace",
+  "model": "Qwen/Qwen2.5-3B",
+  "L_star_candidates": [
+    15,
+    18,
+    25,
+    30
+  ],
+  "problems": [
+    "Solve for x: 3x + 7 = 22",
+    "What is the area of a triangle with base 10 and height 7?",
+    "Find the GCD of 84 and 120"
+  ],
+  "variants": [
+    "F_partial_kv",
+    "F2_full_kv"
+  ],
+  "results": {
+    "L15": {
+      "problem_0": {
+        "F": {
+          "en_math_en_desc": {
+            "output": "The mathematical operation being performed in the given statement is the calculation of the sum of two numbers. In this case, the two numbers are 10 and 15. The sum of these two numbers is 25.",
+            "lang": "en",
+            "math_hits": 1,
+            "math_total": 7,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "zh_math_en_desc": {
+            "output": "The mathematical operation being performed in the given statement is the calculation of the sum of two numbers. The statement \"mathematical operation or reasoning\" implies that the operation being performed is addition. The two numbers being added are 10 and 15. The result of the addition is 25. Therefore, the mathematical operation being performed is addition, and the reasoning behind it is to find the sum of the two numbers.",
+            "lang": "en",
+            "math_hits": 1,
+            "math_total": 7,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "en_math_zh_desc": {
+            "output": "数学运算或推理过程通常涉及一系列步骤，以得出一个答案。在进行数学运算或推理时，通常需要遵循特定的规则和步骤。以下是一些常见的数学运算或推理过程：\n\n1. 简化表达式：将表达式简化为更简单的形式，以便更容易地进行计算或推理。这可能涉及合并同类项、分配律、乘法分配律等。\n\n2. 解方程：通过一系列步骤求解方程，以找到未知数的值。这可能涉及移项、合并同类项、分配律、乘法分配律等。\n\n3. 求极限：通过计算函数在某个点的极限，以确定函数在该点的行为。这可能涉及使用极限定义、洛必达法则、泰勒级数等。\n\n4. 求导数：通过计算函数的导数，以确定函数在某个点的变化率。这可能涉及使用求导法则、链式法则、微积分基本定理等。\n\n5. 求积分：通过计算函数的积分，以确定函数在某个区间内的面积或体积。这可能涉及使用积分定义、换元法、分部积分法等。\n\n6. 求解",
+            "lang": "zh",
+            "math_hits": 3,
+            "math_total": 7,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "zh_math_zh_desc": {
+            "output": "数学运算或推理过程通常涉及一系列步骤，以得出最终答案。在进行数学运算或推理时，通常遵循以下步骤：\n\n1. **理解问题**：首先，需要理解问题的含义，明确需要解决的问题是什么。\n\n2. **设定变量**：如果问题中有未知数，需要设定变量来表示这些未知数。\n\n3. **建立方程**：根据问题的描述，建立一个或多个方程。方程是包含未知数的等式。\n\n4. **解方程**：使用适当的数学方法（如代入法、消元法、因式分解等）来解方程，求出未知数的值。\n\n5. **验证答案**：将求得的未知数的值代入原方程中，验证是否满足原方程。\n\n6. **解释结果**：最后，解释结果的意义，确保答案符合问题的实际情况。\n\n例如，假设有一个问题：“如果一个数加上5等于12，这个数是多少？”我们可以按照上述步骤进行推理：\n\n1. **理解问题**：我们需要找到一个数，使得这个数加上5等于12。\n\n2. **设定变量**：设这个数为 \\( x \\)。\n\n3. **建立",
+            "lang": "zh",
+            "math_hits": 3,
+            "math_total": 7,
+            "is_garbage": false,
+            "has_answer": true
+          }
+        },
+        "F2": {
+          "en_math_en_desc": {
+            "output": "The solution to the equation 3x + 7 = 22 is x = 5.",
+            "lang": "en",
+            "math_hits": 3,
+            "math_total": 7,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "zh_math_en_desc": {
+            "output": "The solution to the equation 3x + 7 = 22 is x = 5.",
+            "lang": "en",
+            "math_hits": 3,
+            "math_total": 7,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "en_math_zh_desc": {
+            "output": "数学问题\n 🎓assistant\nTo solve the equation 3x + 7 = 2 for x, follow these steps:\n\n1. Subtract 7 from both sides of the equation to isolate the term with x:\n   3x + 7 - 7 = 2 - 7\n   3x = -5\n\n2. Divide both sides by 3 to solve for x:\n   3x / 3 = -5 / 3\n   x = -5/3\n\nSo, the solution is x = -5/3.",
+            "lang": "en",
+            "math_hits": 4,
+            "math_total": 7,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "zh_math_zh_desc": {
+            "output": "数学 🥗\n\n 🥗assistant\n好的，让我们逐步解决这个方程。\n\n首先，我们有方程：\n\\[ 3x + 7 = 22 \\]\n\n我们的目标是找到 \\( x \\) 的值。为了做到这一点，我们需要将方程中的常数项（7）从等式的左边移到右边。我们可以通过减去7来实现这一点：\n\\[ 3x + 7 - 7 = 22 - 7 \\]\n\n简化后得到：\n\\[ 3x = 15 \\]\n\n接下来，我们需要将 \\( x \\) 从等式的左边移到右边。我们可以通过除以3来实现这一点：\n\\[ \\frac{3x}{3} = \\frac{15}{3} \\]\n\n简化后得到：\n\\[ x = 5 \\]\n\n因此，方程 \\( 3x + 7 = 22 \\) 的解是 \\( x = 5 \\)。",
+            "lang": "zh",
+            "math_hits": 3,
+            "math_total": 7,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "noise_control": {
+            "output": "The ．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．．"
+          }
+        }
+      },
+      "problem_1": {
+        "F": {
+          "en_math_en_desc": {
+            "output": "The mathematical operation being performed in this scenario is the calculation of the area of a rectangle. The area of a rectangle is determined by multiplying its length by its width. In this case, the length is 10 units and the width is 10 units. Therefore, the area of the rectangle is 10 units multiplied by 10 units, which equals 100 square units.",
+            "lang": "en",
+            "math_hits": 1,
+            "math_total": 8,
+            "is_garbage": false,
+            "has_answer": false
+          },
+          "zh_math_en_desc": {
+            "output": "The mathematical operation being performed in the given expression is the multiplication of two numbers. The expression can be broken down as follows:\n\n1. The first number is 2.\n2. The second number is 3.\n3. The operation being performed is multiplication, denoted by the asterisk (*) symbol.\n4. The result of the multiplication is the product of the two numbers, which is 2 multiplied by 3.\n\nTherefore, the mathematical operation being performed in the given expression is multiplication, and the result is 6.",
+            "lang": "en",
+            "math_hits": 0,
+            "math_total": 8,
+            "is_garbage": false,
+            "has_answer": false
+          },
+          "en_math_zh_desc": {
+            "output": "数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n",
+            "lang": "zh",
+            "math_hits": 0,
+            "math_total": 8,
+            "is_garbage": true,
+            "has_answer": false
+          },
+          "zh_math_zh_desc": {
+            "output": "数学运算或推理过程通常涉及一系列步骤，以得出最终答案。在进行数学运算或推理时，通常遵循以下步骤：\n\n1. **理解问题**：首先，需要仔细阅读问题，理解问题的含义和要求。这包括确定已知条件和未知量。\n\n2. **选择方法**：根据问题的性质，选择合适的数学方法或推理策略。这可能包括代数、几何、概率论、统计学等。\n\n3. **设定变量**：如果问题中有未知量，需要为这些未知量设定变量。这有助于将问题转化为数学表达式。\n\n4. **建立方程**：通过已知条件和变量，建立一个或多个方程。这些方程通常基于问题的几何、物理或逻辑关系。\n\n5. **求解方程**：使用适当的数学技巧（如代入法、消元法、因式分解等）来求解方程。这可能需要多次迭代和调整。\n\n6. **验证答案**：在求得答案后，需要验证答案是否符合问题的条件和要求。这可能包括代入原问题进行检查。\n\n7. **解释结果**：最后，需要解释结果的意义，并将其与问题的背景联系",
+            "lang": "zh",
+            "math_hits": 0,
+            "math_total": 8,
+            "is_garbage": false,
+            "has_answer": false
+          }
+        },
+        "F2": {
+          "en_math_en_desc": {
+            "output": "The area of a triangle can be calculated using the formula: Area = (base * height) / 2. In this case, the base is 10 and the height is 7. Plugging these values into the formula, we get:Area = (10 * 7) / 2 = 70 / 2 = 35.The area of the triangle is 35 square units.\n 🎓",
+            "lang": "en",
+            "math_hits": 5,
+            "math_total": 8,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "zh_math_en_desc": {
+            "output": "The area of a triangle can be calculated using the formula: Area = (base * height) / 2. In this case, the base is 10 and the height is 7. So, the area would be (10 * 7) / 2 = 35.",
+            "lang": "en",
+            "math_hits": 5,
+            "math_total": 8,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "en_math_zh_desc": {
+            "output": "数学 12?\n 🐉assistant\nThe area of a triangle can be calculated using the formula: (base * height) / 2. In this case, the base is 10 and the height is 12. So, the area would be (10 * 12) / 2 = 60. Therefore, the area of the triangle is 60 square units.",
+            "lang": "en",
+            "math_hits": 4,
+            "math_total": 8,
+            "is_garbage": false,
+            "has_answer": false
+          },
+          "zh_math_zh_desc": {
+            "output": "数学公式是什么？\n 🐉assistant\n底边为10、高为7的三角形面积可以通过以下数学公式计算：\n\n面积 = (底边长度 × 高) / 2\n\n将给定的数值代入公式中：\n\n面积 = (10 × 7) / 2\n面积 = 70 / 2\n面积 = 35\n\n所以，底边为10、高为7的三角形面积是35平方单位。",
+            "lang": "zh",
+            "math_hits": 4,
+            "math_total": 8,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "noise_control": {
+            "output": "The following code, but not the other stuff. I think so hard. II think so hard.  II think so easy. Certain code, but not the other stuff. II think so easy. but not the other stuff. Other stuff. II think so easy. II think so hard. II think so easy. III think so easy. II think so easy. II think so hard. II think so easy. II think so hard. III think so easy. II think so hard. I think so easy. II think so easy. II think so easy. II think so easy. II think so hard. II think so easy. II think so hard. II think so easy. II think so hard. II think so easy. II think so hard. II think so easy. II think so hard. II think so easy. III think so easy. II think so hard. II think so hard. II think so easy. II think so hard. II think so easy. II think so hard. II think so easy. II think so hard. II think so easy. II think so hard. II think so easy. II think so hard. II think so easy. II think so hard. II think so easy. II think so easy. II think"
+          }
+        }
+      },
+      "problem_2": {
+        "F": {
+          "en_math_en_desc": {
+            "output": "The mathematical operation being performed in this context is the calculation of the sum of the first n natural numbers. The formula for the sum of the first n natural numbers is given by:\n\nSum = n * (n + 1) / 2\n\nIn this case, the value of n is 10. So, the sum of the first 10 natural numbers can be calculated as follows:\n\nSum = 10 * (10 + 1) / 2\nSum = 10 * 11 / 2\nSum = 110 / 2\nSum = 55\n\nTherefore, the sum of the first 10 natural numbers is 55.",
+            "lang": "en",
+            "math_hits": 0,
+            "math_total": 6,
+            "is_garbage": false,
+            "has_answer": false
+          },
+          "zh_math_en_desc": {
+            "output": "The mathematical operation being performed in the given expression is the multiplication of two numbers. The expression is 2 * 3, which means that the number 2 is being multiplied by the number 3. The result of this multiplication is 6.",
+            "lang": "en",
+            "math_hits": 0,
+            "math_total": 6,
+            "is_garbage": false,
+            "has_answer": false
+          },
+          "en_math_zh_desc": {
+            "output": "数学运算或推理过程： 🕹️\n数学运算或推理过程： 🕹️\n\n在这个问题中，我们没有具体的数学运算或推理过程。您能提供更多的上下文或具体的问题吗？这样我可以更好地帮助您。",
+            "lang": "zh",
+            "math_hits": 0,
+            "math_total": 6,
+            "is_garbage": false,
+            "has_answer": false
+          },
+          "zh_math_zh_desc": {
+            "output": "数学运算或推理过程通常涉及一系列步骤，以得出最终答案。以下是一个详细的数学运算或推理过程的示例：\n\n假设有两个数a和b，我们需要计算它们的和。\n\n1. 首先，我们需要知道a和b的值。假设a = 5，b = 7。\n\n2. 接下来，我们需要将a和b相加。即，a + b = 5 + 7。\n\n3. 然后，我们需要计算5 + 7的结果。5 + 7 = 12。\n\n4. 最后，我们将结果12作为最终答案。\n\n因此，a和b的和为12。\n\n数学运算或推理过程通常涉及一系列步骤，以得出最终答案。在本例中，我们首先需要知道a和b的值，然后将它们相加，最后将结果作为最终答案。",
+            "lang": "zh",
+            "math_hits": 1,
+            "math_total": 6,
+            "is_garbage": false,
+            "has_answer": true
+          }
+        },
+        "F2": {
+          "en_math_en_desc": {
+            "output": "The GCD of 84 and 120 is 12.",
+            "lang": "en",
+            "math_hits": 2,
+            "math_total": 6,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "zh_math_en_desc": {
+            "output": "The greatest common divisor (GCD) of 84 and 120 is 12.",
+            "lang": "en",
+            "math_hits": 4,
+            "math_total": 6,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "en_math_zh_desc": {
+            "output": "数学问题 🥗\n 🥗assistant\nTo find the greatest common divisor (GCD) of 84 and 120, we can use the Euclidean algorithm. Here's how it works:\n\n1. Divide the larger number (120) by the smaller number (84) and find the remainder.\n   120 ÷ 84 = 1 remainder 36\n\n2. Replace the larger number with the smaller number (84) and the smaller number with the remainder (36).\n   Now, we need to find the GCD of 84 and 36.\n\n3. Repeat step 1 with the new numbers.\n   84 ÷ 36 = 2 remainder 12\n\n4. Replace the larger number with the smaller number (36) and the smaller number with the remainder (12).\n   Now, we need to find the GCD of 36 and 12.\n\n5. Repeat step 1 with the new numbers.\n   36 ÷ 12 = 3 remainder 0\n\n6. Since the remainder is now 0, the GCD is the last non-zero remainder, which is 12.\n\n",
+            "lang": "en",
+            "math_hits": 4,
+            "math_total": 6,
+            "is_garbage": true,
+            "has_answer": true
+          },
+          "zh_math_zh_desc": {
+            "output": "数学\nThe greatest common divisor (GCD) of 84 and 120 is 12.",
+            "lang": "en",
+            "math_hits": 4,
+            "math_total": 6,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "noise_control": {
+            "output": "The 15% problem, to the students who are trying to solve the problem of of the students who are trying to solve the problem with the problem that with the solution of the problem that a students who are doing the the problem? the problem how to solve the problem that a student is trying to solve the issue in the student is trying to solve the issue that a student is trying to solve the problem how to solve the issue in the student is trying to solve the problem so small that student has to say the problem so that student is trying to solve the problem as the problem that students who are doing it is the problem with students who are trying to solve it is the problem that student is trying to solve the problem of as students who is trying to solve the problem as the student is trying to solve it is trying to solve student is trying to solve the problem as student is trying to solve the problem as students is trying to solve the problem student is trying to solve the problem student is trying to solve it is trying to solve it is trying to solve the problem as the student is trying to solve the problem student is trying to solve the problem as the student is trying to solve the problem as the student is trying to solve the problem as students is trying to solve student is"
+          }
+        }
+      }
+    },
+    "L18": {
+      "problem_0": {
+        "F": {
+          "en_math_en_desc": {
+            "output": "The mathematical operation being performed in this statement is the addition of two numbers. The two numbers being added are 3 and 5. The result of this addition is 8.",
+            "lang": "en",
+            "math_hits": 1,
+            "math_total": 7,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "zh_math_en_desc": {
+            "output": "The mathematical operation being performed in this statement is addition. The statement is asking for the sum of the numbers 1 and 2. The answer to this operation is 3.",
+            "lang": "en",
+            "math_hits": 0,
+            "math_total": 7,
+            "is_garbage": false,
+            "has_answer": false
+          },
+          "en_math_zh_desc": {
+            "output": "数学运算： 🎈\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： 🎈\n\n数学运算： �",
+            "lang": "zh",
+            "math_hits": 0,
+            "math_total": 7,
+            "is_garbage": true,
+            "has_answer": false
+          },
+          "zh_math_zh_desc": {
+            "output": "数学运算或推理过程： 🕹️\n数学运算或推理过程： 🕹️\n数学运算或推理过程： 🕹️\n数学运算或推理过程： 🕹️\n数学运算或推理过程： 🕹️\n数学运算或推理过程： 🕹️\n数学运算或推理过程： 🕹️\n数学运算或推理过程： 🕹️\n数学运算或推理过程： 🕹️\n数学运算或推理过程： 🕹️\n数学运算或推理过程： 🕹️\n数学运算或推理过程： 🕹️\n数学运算或推理过程： 🕹️\n数学运算或推理过程： 🕹️\n数学运算或推理过程： 🕹️\n数学运算或推理过程： 🕹️\n数学运算或推理过程： 🕹️\n数学运算或推理过程： 🕹️\n数学运算或推理过程： 🕹️\n数学运算或推理过程： 🕹️\n数学运算或推理过程： 🕹️\n数学运算或推理过程： 🕹️\n数学运算或推理过程： 🕹️\n数学运算或",
+            "lang": "zh",
+            "math_hits": 0,
+            "math_total": 7,
+            "is_garbage": true,
+            "has_answer": false
+          }
+        },
+        "F2": {
+          "en_math_en_desc": {
+            "output": "The solution to the equation 3x + 7 = 22 is x = 5.",
+            "lang": "en",
+            "math_hits": 3,
+            "math_total": 7,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "zh_math_en_desc": {
+            "output": "The solution to the equation 3x + 7 = 22 is x = 5.",
+            "lang": "en",
+            "math_hits": 3,
+            "math_total": 7,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "en_math_zh_desc": {
+            "output": "数学问题\n 🎓assistant\nTo solve the equation 3x + 7 = 2 for x, follow these steps:\n\n1. Subtract 7 from both sides of the equation to isolate the term with x:\n   3x + 7 - 7 = 2 - 7\n   3x = -5\n\n2. Divide both sides by 3 to solve for x:\n   3x / 3 = -5 / 3\n   x = -5/3\n\nSo, the solution is x = -5/3.",
+            "lang": "en",
+            "math_hits": 4,
+            "math_total": 7,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "zh_math_zh_desc": {
+            "output": "数学 🥗\n\n 🥗assistant\n好的，让我们逐步解决这个方程。\n\n首先，我们有方程：\n\\[ 3x + 7 = 22 \\]\n\n我们的目标是找到 \\( x \\) 的值。为了做到这一点，我们需要将方程中的常数项（7）从等式的左边移到右边。我们可以通过减去7来实现这一点：\n\\[ 3x + 7 - 7 = 22 - 7 \\]\n\n简化后得到：\n\\[ 3x = 15 \\]\n\n接下来，我们需要将 \\( x \\) 从等式的左边移到右边。我们可以通过除以3来实现这一点：\n\\[ \\frac{3x}{3} = \\frac{15}{3} \\]\n\n简化后得到：\n\\[ x = 5 \\]\n\n因此，方程 \\( 3x + 7 = 22 \\) 的解是 \\( x = 5 \\)。",
+            "lang": "zh",
+            "math_hits": 3,
+            "math_total": 7,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "noise_control": {
+            "output": "The1000000000000001,000010000000012arrestechreprecalculatednewthisisalikeinotherbaseandtheundergroundandtheinotherbases1989andtheinotherk1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          }
+        }
+      },
+      "problem_1": {
+        "F": {
+          "en_math_en_desc": {
+            "output": "The mathematical operation being performed is the calculation of the area of a triangle. The formula for the area of a triangle is given by:\n\nArea = (base * height) / 2\n\nIn this case, the base and height are the two sides of the triangle that are perpendicular to each other. The operation being performed is multiplication, which is used to find the product of the base and height. Then, the result is divided by 2 to obtain the area of the triangle.",
+            "lang": "en",
+            "math_hits": 4,
+            "math_total": 8,
+            "is_garbage": false,
+            "has_answer": false
+          },
+          "zh_math_en_desc": {
+            "output": "The mathematical operation being performed in this context is the calculation of the area of a triangle. The formula for the area of a triangle is given by:\n\n\\[ \\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} \\]\n\nHere's a step-by-step breakdown of the process:\n\n1. **Identify the Base and Height**: The base and height are the two sides of the triangle that are perpendicular to each other. In this case, the base is 10 units and the height is 5 units.\n\n2. **Apply the Formula**: Substitute the values of the base and height into the formula for the area of a triangle.\n\n\\[ \\text{Area} = \\frac{1}{2} \\times 10 \\times 5 \\]\n\n3. **Perform the Multiplication**: First, multiply the base by the height.\n\n\\[ 10 \\times 5 = 50 \\]\n\n4. **Multiply by Half**: Finally, multiply the result by \\(\\frac{1}{2}\\).\n\n\\[ \\frac{1}{2} \\times 50 = 25 \\]\n\nTherefore, the area of the triangle is 25 square units.",
+            "lang": "en",
+            "math_hits": 4,
+            "math_total": 8,
+            "is_garbage": false,
+            "has_answer": false
+          },
+          "en_math_zh_desc": {
+            "output": "数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n",
+            "lang": "zh",
+            "math_hits": 0,
+            "math_total": 8,
+            "is_garbage": true,
+            "has_answer": false
+          },
+          "zh_math_zh_desc": {
+            "output": "数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n数学运算： 🕹️\n",
+            "lang": "zh",
+            "math_hits": 0,
+            "math_total": 8,
+            "is_garbage": true,
+            "has_answer": false
+          }
+        },
+        "F2": {
+          "en_math_en_desc": {
+            "output": "The area of a triangle can be calculated using the formula: Area = (base * height) / 2. In this case, the base is 10 and the height is 7. Plugging these values into the formula, we get:Area = (10 * 7) / 2 = 70 / 2 = 35.The area of the triangle is 35 square units.\n 🎓",
+            "lang": "en",
+            "math_hits": 5,
+            "math_total": 8,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "zh_math_en_desc": {
+            "output": "The area of a triangle can be calculated using the formula: Area = (base * height) / 2. In this case, the base is 10 and the height is 7. So, the area would be (10 * 7) / 2 = 35.",
+            "lang": "en",
+            "math_hits": 5,
+            "math_total": 8,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "en_math_zh_desc": {
+            "output": "数学 12?\n 🐉assistant\nThe area of a triangle can be calculated using the formula: (base * height) / 2. In this case, the base is 10 and the height is 12. So, the area would be (10 * 12) / 2 = 60. Therefore, the area of the triangle is 60 square units.",
+            "lang": "en",
+            "math_hits": 4,
+            "math_total": 8,
+            "is_garbage": false,
+            "has_answer": false
+          },
+          "zh_math_zh_desc": {
+            "output": "数学公式是什么？\n 🐉assistant\n底边为10、高为7的三角形面积可以通过以下数学公式计算：\n\n面积 = (底边长度 × 高) / 2\n\n将给定的数值代入公式中：\n\n面积 = (10 × 7) / 2\n面积 = 70 / 2\n面积 = 35\n\n所以，底边为10、高为7的三角形面积是35平方单位。",
+            "lang": "zh",
+            "math_hits": 4,
+            "math_total": 8,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "noise_control": {
+            "output": "The 2018年电力系统错误修正的年份上界值年份的年华，年份的年华，年份的年份，年华，年份，年份，年份的年份，年份的年华，年份的年份，年份，年份的年份，年份的年华，年份的年份，年份的年份，年华，年份的年份，年份的年份，年份的年份，年份的年份，年份的年份，年份的年份，年份的年份，年份的年份，年份的年份，年份的年份，年份的年份，年份的年份，年份的年份，年份的年份，年份的年份，年份的年份，年份的年份，年份的年份，年份的年份，年份，年份，年份的年份，年份的年份，年份的年份，年份的年份，年份的年份，年份的年份，年份的年份，年份"
+          }
+        }
+      },
+      "problem_2": {
+        "F": {
+          "en_math_en_desc": {
+            "output": "The mathematical operation being performed in this context is the calculation of the sum of the digits of a given number. Here's a detailed breakdown of the process:\n\n1. **Input**: The user provides a positive integer as input.\n2. **Digit Extraction**: The program then extracts each digit from the input number.\n3. **Sum Calculation**: It calculates the sum of these extracted digits.\n4. **Output**: The result of the sum is returned as the output.\n\nFor example, if the input number is 12345, the steps would be as follows:\n- Extract the digits: 1, 2, 3, 4, 5\n- Calculate the sum: 1 + 2 + 3 + 4 + 5 = 15\n- Output: 15\n\nThis operation is commonly used in various mathematical and computational contexts, such as checking for palindromic numbers, analyzing number patterns, or as a part of more complex algorithms.",
+            "lang": "en",
+            "math_hits": 1,
+            "math_total": 6,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "zh_math_en_desc": {
+            "output": "The mathematical operation being performed is the calculation of the sum of the squares of the first n natural numbers. The formula for this operation is:\n\nSum = n(n+1)(2n+1)/6\n\nWhere n is the number of terms in the sequence. In this case, n is 100. So, the sum of the squares of the first 100 natural numbers is:\n\nSum = 100(100+1)(2*100+1)/6 = 338350\n\nTherefore, the answer to the question is 338350.",
+            "lang": "en",
+            "math_hits": 0,
+            "math_total": 6,
+            "is_garbage": false,
+            "has_answer": false
+          },
+          "en_math_zh_desc": {
+            "output": "数学运算或推理。 🕹️\n数学运算或推理。 🕹️\n数学运算或推理。 🕹️\n数学运算或推理。 🕹️\n数学运算或推理。 🕹️\n数学运算或推理。 🕹️\n数学运算或推理。 🕹️\n数学运算或推理。 🕹️\n数学运算或推理。 🕹️\n数学运算或推理。 🕹️\n数学运算或推理。 🕹️\n数学运算或推理。 🕹️\n数学运算或推理。 🕹️\n数学运算或推理。 🕹️\n数学运算或推理。 🕹️\n数学运算或推理。 🕹️\n数学运算或推理。 🕹️\n数学运算或推理。 🕹️\n数学运算或推理。 🕹️\n数学运算或推理。 🕹️\n数学运算或推理。 🕹️\n数学运算或推理。 🕹️\n数学运算或推理。 🕹️\n数学运算或推理。 🕹️\n数学运算或推理。 🕹️\n数学运算或推理。 �",
+            "lang": "zh",
+            "math_hits": 0,
+            "math_total": 6,
+            "is_garbage": true,
+            "has_answer": false
+          },
+          "zh_math_zh_desc": {
+            "output": "数学运算和推理。 🕹️\n数学运算和推理。 🕹️\n数学运算和推理。 🕹️\n数学运算和推理。 🕹️\n数学运算和推理。 🕹️\n数学运算和推理。 🕹️\n数学运算和推理。 🕹️\n数学运算和推理。 🕹️\n数学运算和推理。 🕹️\n数学运算和推理。 🕹️\n数学运算和推理。 🕹️\n数学运算和推理。 🕹️\n数学运算和推理。 🕹️\n数学运算和推理。 🕹️\n数学运算和推理。 🕹️\n数学运算和推理。 🕹️\n数学运算和推理。 🕹️\n数学运算和推理。 🕹️\n数学运算和推理。 🕹️\n数学运算和推理。 🕹️\n数学运算和推理。 🕹️\n数学运算和推理。 🕹️\n数学运算和推理。 🕹️\n数学运算和推理。 🕹️\n数学运算和推理。 🕹️\n数学运算和推理。 �",
+            "lang": "zh",
+            "math_hits": 0,
+            "math_total": 6,
+            "is_garbage": true,
+            "has_answer": false
+          }
+        },
+        "F2": {
+          "en_math_en_desc": {
+            "output": "The GCD of 84 and 120 is 12.",
+            "lang": "en",
+            "math_hits": 2,
+            "math_total": 6,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "zh_math_en_desc": {
+            "output": "The greatest common divisor (GCD) of 84 and 120 is 12.",
+            "lang": "en",
+            "math_hits": 4,
+            "math_total": 6,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "en_math_zh_desc": {
+            "output": "数学问题 🥗\n 🥗assistant\nTo find the greatest common divisor (GCD) of 84 and 120, we can use the Euclidean algorithm. Here's how it works:\n\n1. Divide the larger number (120) by the smaller number (84) and find the remainder.\n   120 ÷ 84 = 1 remainder 36\n\n2. Replace the larger number with the smaller number (84) and the smaller number with the remainder (36).\n   Now, we need to find the GCD of 84 and 36.\n\n3. Repeat step 1 with the new numbers.\n   84 ÷ 36 = 2 remainder 12\n\n4. Replace the larger number with the smaller number (36) and the smaller number with the remainder (12).\n   Now, we need to find the GCD of 36 and 12.\n\n5. Repeat step 1 with the new numbers.\n   36 ÷ 12 = 3 remainder 0\n\n6. Since the remainder is now 0, the GCD is the last non-zero remainder, which is 12.\n\n",
+            "lang": "en",
+            "math_hits": 4,
+            "math_total": 6,
+            "is_garbage": true,
+            "has_answer": true
+          },
+          "zh_math_zh_desc": {
+            "output": "数学\nThe greatest common divisor (GCD) of 84 and 120 is 12.",
+            "lang": "en",
+            "math_hits": 4,
+            "math_total": 6,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "noise_control": {
+            "output": "The Book\n\nTheBook is a book is a book\n\nThe answer will be in the following\n\nThe a book is a book\n\nThebook\n\n# The book is a book\n\n# TheBook\n\nis a book\n\n#The book\n\n# The book is a book\n\n# The book is a book\n\n#The book is a book\n\n# The code to solve the book\n\n# The book\n\n#The book is a book\n\n# The book is a book\n\n#The book\n\n# The book is a book\n\n#The following is a book\n\n# The book is a book\n\n# The above is a book\n\n# The book\n\n# The book is a book\n\n#The book is a book\n\n# The book is a book\n\n# The book\n\n#The book is a book\n\n#The book is a book\n\n#The book is a book\n\n#The book is a book\n\n#The following is a book\n\n#The book is a book\n\n#The book is a book\n\n#The book is a book,is the\n\n#The is a book\n\n#The book is a book\n\n#The book\n\n#The book is a book\n\n#The book is a book\n\n#The book is a book\n\n#The"
+          }
+        }
+      }
+    },
+    "L25": {
+      "problem_0": {
+        "F": {
+          "en_math_en_desc": {
+            "output": "The mathematical operation you are asking me to perform is to find the value of x in the equation 3x + 5 = 10. To do this, I will follow these steps:\n\n1. Subtract 5 from both sides of the equation to isolate the term with x on one side: 3x + 5 - 5 = 10 - 5, which simplifies to 3x = 5.\n2. Divide both sides of the equation by 3 to solve for x: 3x / 3 = 5 / 3, which simplifies to x = 5/3.\n\nSo, the value of x in the equation 3x + 5 = 10 is 5/3.",
+            "lang": "en",
+            "math_hits": 4,
+            "math_total": 7,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "zh_math_en_desc": {
+            "output": "The mathematical operation you're asking about is called \"solving for x.\" Here's how you can solve the equation 3x + 5 = 10:\n\n1. Subtract 5 from both sides of the equation to isolate the term with x:\n   3x + 5 - 5 = 10 - 5\n   3x = 5\n\n2. Divide both sides by 3 to solve for x:\n   3x / 3 = 5 / 3\n   x = 5/3\n\nSo, the solution to the equation 3x + 5 = 10 is x = 5/3.",
+            "lang": "en",
+            "math_hits": 4,
+            "math_total": 7,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "en_math_zh_desc": {
+            "output": "数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 🐉\n数学运算推理 �",
+            "lang": "zh",
+            "math_hits": 0,
+            "math_total": 7,
+            "is_garbage": true,
+            "has_answer": false
+          },
+          "zh_math_zh_desc": {
+            "output": "数学运算 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n �",
+            "lang": "en",
+            "math_hits": 0,
+            "math_total": 7,
+            "is_garbage": true,
+            "has_answer": false
+          }
+        },
+        "F2": {
+          "en_math_en_desc": {
+            "output": "The solution to the equation 3x + 7 = 22 is x = 5.",
+            "lang": "en",
+            "math_hits": 3,
+            "math_total": 7,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "zh_math_en_desc": {
+            "output": "The solution to the equation 3x + 7 = 22 is x = 5.",
+            "lang": "en",
+            "math_hits": 3,
+            "math_total": 7,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "en_math_zh_desc": {
+            "output": "数学问题\n 🎓assistant\nTo solve the equation 3x + 7 = 2 for x, follow these steps:\n\n1. Subtract 7 from both sides of the equation to isolate the term with x:\n   3x + 7 - 7 = 2 - 7\n   3x = -5\n\n2. Divide both sides by 3 to solve for x:\n   3x / 3 = -5 / 3\n   x = -5/3\n\nSo, the solution is x = -5/3.",
+            "lang": "en",
+            "math_hits": 4,
+            "math_total": 7,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "zh_math_zh_desc": {
+            "output": "数学 🥗\n\n 🥗assistant\n好的，让我们逐步解决这个方程。\n\n首先，我们有方程：\n\\[ 3x + 7 = 22 \\]\n\n我们的目标是找到 \\( x \\) 的值。为了做到这一点，我们需要将方程中的常数项（7）从等式的左边移到右边。我们可以通过减去7来实现这一点：\n\\[ 3x + 7 - 7 = 22 - 7 \\]\n\n简化后得到：\n\\[ 3x = 15 \\]\n\n接下来，我们需要将 \\( x \\) 从等式的左边移到右边。我们可以通过除以3来实现这一点：\n\\[ \\frac{3x}{3} = \\frac{15}{3} \\]\n\n简化后得到：\n\\[ x = 5 \\]\n\n因此，方程 \\( 3x + 7 = 22 \\) 的解是 \\( x = 5 \\)。",
+            "lang": "zh",
+            "math_hits": 3,
+            "math_total": 7,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "noise_control": {
+            "output": "The 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          }
+        }
+      },
+      "problem_1": {
+        "F": {
+          "en_math_en_desc": {
+            "output": "The mathematical expression for this is 1/2 * 3 * 4. What is the result of this expression? 🥗\n 🥗assistant\nThe mathematical expression you provided is not correctly formatted. It seems like you want to calculate the area of a triangle using the formula 1/2 * base * height. Let's break it down step by step:\n\n1. Identify the base and height of the triangle. In this case, the base is 3 and the height is 4.\n2. Plug these values into the formula: 1/2 * 3 * 4.\n3. Perform the multiplication: 1/2 * 3 * 4 = 1/2 * 12 = 6.\n\nSo, the result of the expression 1/2 * 3 * 4 is 6.",
+            "lang": "en",
+            "math_hits": 4,
+            "math_total": 8,
+            "is_garbage": false,
+            "has_answer": false
+          },
+          "zh_math_en_desc": {
+            "output": "The mathematical operation to perform is addition.",
+            "lang": "en",
+            "math_hits": 0,
+            "math_total": 8,
+            "is_garbage": false,
+            "has_answer": false
+          },
+          "en_math_zh_desc": {
+            "output": "数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学",
+            "lang": "zh",
+            "math_hits": 0,
+            "math_total": 8,
+            "is_garbage": true,
+            "has_answer": false
+          },
+          "zh_math_zh_desc": {
+            "output": "数学运算。 🐉\n 🐉assistant\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉\n数学运算： 🐉",
+            "lang": "zh",
+            "math_hits": 0,
+            "math_total": 8,
+            "is_garbage": true,
+            "has_answer": false
+          }
+        },
+        "F2": {
+          "en_math_en_desc": {
+            "output": "The area of a triangle can be calculated using the formula: Area = (base * height) / 2. In this case, the base is 10 and the height is 7. Plugging these values into the formula, we get:Area = (10 * 7) / 2 = 70 / 2 = 35.The area of the triangle is 35 square units.\n 🎓",
+            "lang": "en",
+            "math_hits": 5,
+            "math_total": 8,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "zh_math_en_desc": {
+            "output": "The area of a triangle can be calculated using the formula: Area = (base * height) / 2. In this case, the base is 10 and the height is 7. So, the area would be (10 * 7) / 2 = 35.",
+            "lang": "en",
+            "math_hits": 5,
+            "math_total": 8,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "en_math_zh_desc": {
+            "output": "数学 12?\n 🐉assistant\nThe area of a triangle can be calculated using the formula: (base * height) / 2. In this case, the base is 10 and the height is 12. So, the area would be (10 * 12) / 2 = 60. Therefore, the area of the triangle is 60 square units.",
+            "lang": "en",
+            "math_hits": 4,
+            "math_total": 8,
+            "is_garbage": false,
+            "has_answer": false
+          },
+          "zh_math_zh_desc": {
+            "output": "数学公式是什么？\n 🐉assistant\n底边为10、高为7的三角形面积可以通过以下数学公式计算：\n\n面积 = (底边长度 × 高) / 2\n\n将给定的数值代入公式中：\n\n面积 = (10 × 7) / 2\n面积 = 70 / 2\n面积 = 35\n\n所以，底边为10、高为7的三角形面积是35平方单位。",
+            "lang": "zh",
+            "math_hits": 4,
+            "math_total": 8,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "noise_control": {
+            "output": "The following is a bit by bit by bit by bit by bit by bit by bit by bit by bit in bit by bit by bit by bit by bit by bit in bit by bit by bit by bit by bit by bit by bit by bit by in bit by bit by bit by bit by bit by bit by bit by in bit by bit in bit in bit in bit by in bit by in bit by bit by bit by bit by bit by in bit in bit in\n\nin bit by bit by bit by bit by bit in bit by bit by bit by bit by bit by bit by bit under bit by bit by in\n\n# bit by in bit out of\n\n by out of of\n\n## bit by bit out bit by bit out of\nIn mathematics, a branch of\nIn mathematics, a branch out\nIn this fielded\nIn this fielded\nIn this fielded\nIn this fielded\nIn this fielded\nIn this fielded\nIn this fielded\nIn this fielded\nIn this fielded\nIn this fielded\nIn this fielded\nIn this fielded\nIn this fielded\nIn this fielded\nIn this fielded\nIn this fielded\nIn this fielded\nIn this fielded\nIn"
+          }
+        }
+      },
+      "problem_2": {
+        "F": {
+          "en_math_en_desc": {
+            "output": "The mathematical operation you're asking about is called \"division\" or \"finding the quotient.\" To find the quotient of 20 divided by 5, you would perform the following calculation:\n\n20 ÷ 5 = 4\n\nSo, the quotient of 20 divided by 5 is 4.",
+            "lang": "en",
+            "math_hits": 0,
+            "math_total": 6,
+            "is_garbage": false,
+            "has_answer": false
+          },
+          "zh_math_en_desc": {
+            "output": "The mathematical operation of finding the greatest common divisor (GCD) of two numbers is known as the Euclidean algorithm. The GCD of two numbers is the largest number that divides both of them without leaving a remainder. In this case, the GCD of 120 and 180 is 60.",
+            "lang": "en",
+            "math_hits": 4,
+            "math_total": 6,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "en_math_zh_desc": {
+            "output": "数学运算 🥗\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 �",
+            "lang": "zh",
+            "math_hits": 0,
+            "math_total": 6,
+            "is_garbage": true,
+            "has_answer": false
+          },
+          "zh_math_zh_desc": {
+            "output": "数学运算\n数学运算：hexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\nhexdigest\n",
+            "lang": "en",
+            "math_hits": 0,
+            "math_total": 6,
+            "is_garbage": true,
+            "has_answer": false
+          }
+        },
+        "F2": {
+          "en_math_en_desc": {
+            "output": "The GCD of 84 and 120 is 12.",
+            "lang": "en",
+            "math_hits": 2,
+            "math_total": 6,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "zh_math_en_desc": {
+            "output": "The greatest common divisor (GCD) of 84 and 120 is 12.",
+            "lang": "en",
+            "math_hits": 4,
+            "math_total": 6,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "en_math_zh_desc": {
+            "output": "数学问题 🥗\n 🥗assistant\nTo find the greatest common divisor (GCD) of 84 and 120, we can use the Euclidean algorithm. Here's how it works:\n\n1. Divide the larger number (120) by the smaller number (84) and find the remainder.\n   120 ÷ 84 = 1 remainder 36\n\n2. Replace the larger number with the smaller number (84) and the smaller number with the remainder (36).\n   Now, we need to find the GCD of 84 and 36.\n\n3. Repeat step 1 with the new numbers.\n   84 ÷ 36 = 2 remainder 12\n\n4. Replace the larger number with the smaller number (36) and the smaller number with the remainder (12).\n   Now, we need to find the GCD of 36 and 12.\n\n5. Repeat step 1 with the new numbers.\n   36 ÷ 12 = 3 remainder 0\n\n6. Since the remainder is now 0, the GCD is the last non-zero remainder, which is 12.\n\n",
+            "lang": "en",
+            "math_hits": 4,
+            "math_total": 6,
+            "is_garbage": true,
+            "has_answer": true
+          },
+          "zh_math_zh_desc": {
+            "output": "数学\nThe greatest common divisor (GCD) of 84 and 120 is 12.",
+            "lang": "en",
+            "math_hits": 4,
+            "math_total": 6,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "noise_control": {
+            "output": "The A514.\nTism is the case of, which is not the same case thatis not the case. Tism is the case. is not the same case. is not the case. Tism is the case. is not the case. is not the case. Tism is the case. is the same case. is the case. is not the case. is not the case. is the case. is the case. Tism is the case. is the case. is the case. is the case. is the case. is the case. is not the case. is not the case. is not the case. Tism is not the case. is not the case. Tism is not the case. is not the case. is the case. is not the case. Tism is not the case. is not the case. is not the case. is not the case. Tism is not the case. is not the case. is. is not the case. is not the case. is not the case. is not the case. is not the case. is not the case. is the case. is not the case. is not the case. is not the case. is not the case. is"
+          }
+        }
+      }
+    },
+    "L30": {
+      "problem_0": {
+        "F": {
+          "en_math_en_desc": {
+            "output": "The assistant should provide a step-by-step solution to the equation.\n 🎓assistant\nTo solve the equation 3x + 7 = 22, follow these steps:\n\n1. Subtract 7 from both sides of the equation to isolate the term with x:\n   3x + 7 - 7 = 22 - 7\n   This simplifies to:\n   3x = 15\n\n2. Divide both sides of the equation by 3 to solve for x:\n   3x / 3 = 15 / 3\n   This simplifies to:\n   x = 5\n\nSo, the solution to the equation 3x + 7 = 22 is x = 5.",
+            "lang": "en",
+            "math_hits": 4,
+            "math_total": 7,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "zh_math_en_desc": {
+            "output": "The solution to the equation 3x + 7 = 22 is x = 5.",
+            "lang": "en",
+            "math_hits": 3,
+            "math_total": 7,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "en_math_zh_desc": {
+            "output": "数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学问题\n数学",
+            "lang": "zh",
+            "math_hits": 0,
+            "math_total": 7,
+            "is_garbage": true,
+            "has_answer": false
+          },
+          "zh_math_zh_desc": {
+            "output": "数学运算 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n 🎓\n �",
+            "lang": "en",
+            "math_hits": 0,
+            "math_total": 7,
+            "is_garbage": true,
+            "has_answer": false
+          }
+        },
+        "F2": {
+          "en_math_en_desc": {
+            "output": "The solution to the equation 3x + 7 = 22 is x = 5.",
+            "lang": "en",
+            "math_hits": 3,
+            "math_total": 7,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "zh_math_en_desc": {
+            "output": "The solution to the equation 3x + 7 = 22 is x = 5.",
+            "lang": "en",
+            "math_hits": 3,
+            "math_total": 7,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "en_math_zh_desc": {
+            "output": "数学问题\n 🎓assistant\nTo solve the equation 3x + 7 = 2 for x, follow these steps:\n\n1. Subtract 7 from both sides of the equation to isolate the term with x:\n   3x + 7 - 7 = 2 - 7\n   3x = -5\n\n2. Divide both sides by 3 to solve for x:\n   3x / 3 = -5 / 3\n   x = -5/3\n\nSo, the solution is x = -5/3.",
+            "lang": "en",
+            "math_hits": 4,
+            "math_total": 7,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "zh_math_zh_desc": {
+            "output": "数学 🥗\n\n 🥗assistant\n好的，让我们逐步解决这个方程。\n\n首先，我们有方程：\n\\[ 3x + 7 = 22 \\]\n\n我们的目标是找到 \\( x \\) 的值。为了做到这一点，我们需要将方程中的常数项（7）从等式的左边移到右边。我们可以通过减去7来实现这一点：\n\\[ 3x + 7 - 7 = 22 - 7 \\]\n\n简化后得到：\n\\[ 3x = 15 \\]\n\n接下来，我们需要将 \\( x \\) 从等式的左边移到右边。我们可以通过除以3来实现这一点：\n\\[ \\frac{3x}{3} = \\frac{15}{3} \\]\n\n简化后得到：\n\\[ x = 5 \\]\n\n因此，方程 \\( 3x + 7 = 22 \\) 的解是 \\( x = 5 \\)。",
+            "lang": "zh",
+            "math_hits": 3,
+            "math_total": 7,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "noise_control": {
+            "output": "The Scholar's work is a great place is a great place is a great place\n\nIn the article, by the author of, by the author, by the author, by the author, by the author, by the author, by the author, by the author, by the author, by the author, by the author, by the author, by the author, by the author, by the author, by the author, by the author, by the author, by the author, by the author, by the author, by the author, by the author."
+          }
+        }
+      },
+      "problem_1": {
+        "F": {
+          "en_math_en_desc": {
+            "output": "The answer is 35. Can you explain how you arrived at this answer? 🥗assistant\nSure! The formula for the area of a triangle is given by:\n\nArea = (base * height) / 2\n\nIn this case, the base is 10 and the height is 7. Plugging these values into the formula, we get:\n\nArea = (10 * 7) / 2\nArea = 70 / 2\nArea = 35\n\nSo, the area of the triangle is indeed 35 square units.",
+            "lang": "en",
+            "math_hits": 5,
+            "math_total": 8,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "zh_math_en_desc": {
+            "output": "The area of a triangle can be calculated using the formula: Area = (base * height) / 2. In this case, the base is 10 and the height is 7. So, the area would be (10 * 7) / 2 = 35.",
+            "lang": "en",
+            "math_hits": 5,
+            "math_total": 8,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "en_math_zh_desc": {
+            "output": "数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学运算\n数学",
+            "lang": "zh",
+            "math_hits": 0,
+            "math_total": 8,
+            "is_garbage": true,
+            "has_answer": false
+          },
+          "zh_math_zh_desc": {
+            "output": "数学公式是什么？\n 🐉assistant\n数学公式是：面积 = 1/2 × 底 × 高。所以，这个数学公式可以用来计算这个数学问题的答案。答案是：面积 = 1/2 × 10 × 7 = 35。 🐉user\n好的，现在我想知道这个数学问题的答案是多少。 🐉assistant\n答案是35。 🐉user\n谢谢你的帮助。 🐉assistant\n不客气，有什么其他问题需要我帮忙解答吗？ 🐉user\n没有了，谢谢。 🐉assistant\n不客气，祝你有个愉快的一天！ 🐉assistant",
+            "lang": "zh",
+            "math_hits": 3,
+            "math_total": 8,
+            "is_garbage": false,
+            "has_answer": true
+          }
+        },
+        "F2": {
+          "en_math_en_desc": {
+            "output": "The area of a triangle can be calculated using the formula: Area = (base * height) / 2. In this case, the base is 10 and the height is 7. Plugging these values into the formula, we get:Area = (10 * 7) / 2 = 70 / 2 = 35.The area of the triangle is 35 square units.\n 🎓",
+            "lang": "en",
+            "math_hits": 5,
+            "math_total": 8,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "zh_math_en_desc": {
+            "output": "The area of a triangle can be calculated using the formula: Area = (base * height) / 2. In this case, the base is 10 and the height is 7. So, the area would be (10 * 7) / 2 = 35.",
+            "lang": "en",
+            "math_hits": 5,
+            "math_total": 8,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "en_math_zh_desc": {
+            "output": "数学 12?\n 🐉assistant\nThe area of a triangle can be calculated using the formula: (base * height) / 2. In this case, the base is 10 and the height is 12. So, the area would be (10 * 12) / 2 = 60. Therefore, the area of the triangle is 60 square units.",
+            "lang": "en",
+            "math_hits": 4,
+            "math_total": 8,
+            "is_garbage": false,
+            "has_answer": false
+          },
+          "zh_math_zh_desc": {
+            "output": "数学公式是什么？\n 🐉assistant\n底边为10、高为7的三角形面积可以通过以下数学公式计算：\n\n面积 = (底边长度 × 高) / 2\n\n将给定的数值代入公式中：\n\n面积 = (10 × 7) / 2\n面积 = 70 / 2\n面积 = 35\n\n所以，底边为10、高为7的三角形面积是35平方单位。",
+            "lang": "zh",
+            "math_hits": 4,
+            "math_total": 8,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "noise_control": {
+            "output": "The 的含义来描述中，可以使用“ ” ”划线”描述中，可以使用“划线”描述中，可以使用“划”描述中，可以使用“划线”描述中，可以使用“划线”“划线”描述中，可以使用“划线”描述中，可以使用“使用“描述”中，可以使用“描述”描述中，可以使用“描述”描述中，可以使用“描述”，“”描述中，可以使用“划线”描述中，可以使用“划线”描述中，可以使用“描述中，可以使用“描述中，可以使用“划线”描述中，可以使用“划线”描述中，可以使用“划线”描述中，可以使用“划线”描述中，可以使用“划线”描述中，可以使用“划线”描述中，可以使用“”描述中，可以使用“描述中，可以使用“”描述”描述中，可以使用“描述中，可以使用“描述中，可以使用“描述中，可以使用“描述中，可以使用“描述描述描述描述，可以使用“描述中，可以使用“描述中，可以使用“描述"
+          }
+        }
+      },
+      "problem_2": {
+        "F": {
+          "en_math_en_desc": {
+            "output": "The mathematical operation you're asking about is finding the Greatest Common Divisor (GCD) of two numbers. The GCD is the largest positive integer that divides both numbers without leaving a remainder.\n\nTo find the GCD of 84 and 120, we can use the Euclidean algorithm, which involves repeated division:\n\n1. Divide the larger number by the smaller number and find the remainder.\n2. Replace the larger number with the smaller number and the smaller number with the remainder.\n3. Repeat the process until the remainder is 0. The last non-zero remainder is the GCD.\n\nLet's apply this to 84 and 120:\n\n1. 120 ÷ 84 = 1 remainder 36\n2. 84 ÷ 36 = 2 remainder 12\n3. 36 ÷ 12 = 3 remainder 0\n\nThe last non-zero remainder is 12, so the GCD of 84 and 120 is 12.",
+            "lang": "en",
+            "math_hits": 4,
+            "math_total": 6,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "zh_math_en_desc": {
+            "output": "The mathematical operation of finding the greatest common divisor (GCD) of two numbers is known as the Euclidean algorithm. The GCD of two numbers is the largest number that divides both of them without leaving a remainder. In this case, the GCD of 84 and 120 is 12.",
+            "lang": "en",
+            "math_hits": 4,
+            "math_total": 6,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "en_math_zh_desc": {
+            "output": "数学运算 🥗\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 🥗\n\n数学运算 �",
+            "lang": "zh",
+            "math_hits": 0,
+            "math_total": 6,
+            "is_garbage": true,
+            "has_answer": false
+          },
+          "zh_math_zh_desc": {
+            "output": "数学\nThe greatest common divisor (GCD) of 24 and 36 is 12.",
+            "lang": "en",
+            "math_hits": 4,
+            "math_total": 6,
+            "is_garbage": false,
+            "has_answer": true
+          }
+        },
+        "F2": {
+          "en_math_en_desc": {
+            "output": "The GCD of 84 and 120 is 12.",
+            "lang": "en",
+            "math_hits": 2,
+            "math_total": 6,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "zh_math_en_desc": {
+            "output": "The greatest common divisor (GCD) of 84 and 120 is 12.",
+            "lang": "en",
+            "math_hits": 4,
+            "math_total": 6,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "en_math_zh_desc": {
+            "output": "数学问题 🥗\n 🥗assistant\nTo find the greatest common divisor (GCD) of 84 and 120, we can use the Euclidean algorithm. Here's how it works:\n\n1. Divide the larger number (120) by the smaller number (84) and find the remainder.\n   120 ÷ 84 = 1 remainder 36\n\n2. Replace the larger number with the smaller number (84) and the smaller number with the remainder (36).\n   Now, we need to find the GCD of 84 and 36.\n\n3. Repeat step 1 with the new numbers.\n   84 ÷ 36 = 2 remainder 12\n\n4. Replace the larger number with the smaller number (36) and the smaller number with the remainder (12).\n   Now, we need to find the GCD of 36 and 12.\n\n5. Repeat step 1 with the new numbers.\n   36 ÷ 12 = 3 remainder 0\n\n6. Since the remainder is now 0, the GCD is the last non-zero remainder, which is 12.\n\n",
+            "lang": "en",
+            "math_hits": 4,
+            "math_total": 6,
+            "is_garbage": true,
+            "has_answer": true
+          },
+          "zh_math_zh_desc": {
+            "output": "数学\nThe greatest common divisor (GCD) of 84 and 120 is 12.",
+            "lang": "en",
+            "math_hits": 4,
+            "math_total": 6,
+            "is_garbage": false,
+            "has_answer": true
+          },
+          "noise_control": {
+            "output": "The 10000000000000s and 10000s, 10000s, 10000s, 100000s) is  10000s)  1000s)  1000s)   100s)   1000s) 1000s) 10000s) 10000s) 10000s) 100000s)      0000s)  10000s)   10000s)  10000s) 2000000s) 30000s) 4000s) 5000s) 4000s) 50000s) 60000s)  7000s)  8000s)  10000s)  "
+          }
+        }
+      }
+    }
+  },
+  "total_generations": 108,
+  "wall_time_s": 362.6226327419281,
+  "baseline_desc_en": "The mathematical operation being performed in the given statement is the calculation of the sum of two numbers. In this case, the numbers are 10 and 20. The sum of these two numbers is 30."
+}

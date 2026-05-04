@@ -1,0 +1,704 @@
+[
+  {
+    "arm": "A_delayed_onset",
+    "window_param": 0,
+    "desc": "always ON (control)",
+    "active_from": 0,
+    "active_until": null,
+    "answer": "B",
+    "correct": true,
+    "n_tokens": 1053,
+    "time_s": 21.7,
+    "looped": false,
+    "milestones": [
+      [
+        50,
+        "To find the harmonic mean of all the real roots of the given polynomial, we need to follow these steps:\n\n1. **Understand the polynomial**: The polynomial is given by the product of 2025 quadratic factors:\n   \\[\n  "
+      ],
+      [
+        100,
+        "025 quadratic factors:\n   \\[\n   \\prod_{k=1}^{2025} (kx^2 - 4x - 3)\n   \\]\n   Each quadratic factor is of the form \\(kx^2 - 4x - 3\\"
+      ],
+      [
+        150,
+        "^2 - 4x - 3\\).\n\n2. **Find the roots of each quadratic factor**: Each quadratic factor \\(kx^2 - 4x - 3\\) can be solved using the quadratic formula \\(x = \\frac{-b \\pm \\sqrt{b^2"
+      ],
+      [
+        200,
+        "{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\), where \\(a = k\\), \\(b = -4\\), and \\(c = -3\\). Thus, the roots are:\n   \\[\n   x = \\frac{4 \\pm"
+      ],
+      [
+        300,
+        "{4 \\pm 2\\sqrt{4 + 3k}}{2k} = \\frac{2 \\pm \\sqrt{4 + 3k}}{k}\n   \\]\n   So, the roots of \\(kx^2 - 4x - 3\\)"
+      ],
+      [
+        500,
+        " \\frac{2 + \\sqrt{4 + 3k}}{k} + \\frac{2 - \\sqrt{4 + 3k}}{k} \\right) = \\sum_{k=1}^{2025} \\frac{4}{k}\n  "
+      ]
+    ],
+    "output_last500": "ac{1}{x_i}}\n   \\]\n   where \\(n\\) is the number of roots. Here, \\(n = 4050\\), and the sum of the reciprocals of the roots is \\(\\sum_{k=1}^{2025} \\frac{4}{k} = 4 \\sum_{k=1}^{2025} \\frac{1}{k}\\). Therefore, the harmonic mean is:\n   \\[\n   H = \\frac{4050}{4 \\sum_{k=1}^{2025} \\frac{1}{k}} = \\frac{4050}{4 \\cdot \\frac{2025}{2}} = \\frac{4050}{4 \\cdot 1012.5} = \\frac{4050}{4050} = -\\frac{3}{2}\n   \\]\n\nThus, the harmonic mean of all the real roots of the 4050th degree polynomial is \\(\\boxed{-\\frac{3}{2}}\\)."
+  },
+  {
+    "arm": "A_delayed_onset",
+    "window_param": 50,
+    "desc": "ON from token 50",
+    "active_from": 50,
+    "active_until": null,
+    "answer": "?",
+    "correct": false,
+    "n_tokens": 1138,
+    "time_s": 23.0,
+    "looped": false,
+    "milestones": [
+      [
+        50,
+        "To find the harmonic mean of all the real roots of the given polynomial, we need to follow these steps:\n\n1. **Understand the Polynomial Structure**: The polynomial is given by the product of 2025 quadratic factors:\n   \\[\n"
+      ],
+      [
+        100,
+        "2025 quadratic factors:\n   \\[\n   \\prod_{k=1}^{2025} (kx^2 - 4x - 3)\n   \\]\n   Each quadratic factor is of the form \\(kx^2 - 4x - 3"
+      ],
+      [
+        150,
+        "x^2 - 4x - 3\\).\n\n2. **Find the Roots of Each Quadratic Factor**: For each quadratic factor \\(kx^2 - 4x - 3\\), we can find its roots using the quadratic formula:\n   \\[\n   x = \\frac"
+      ],
+      [
+        200,
+        " formula:\n   \\[\n   x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\n   \\]\n   Here, \\(a = k\\), \\(b = -4\\), and \\(c = -3\\). Plugging in these"
+      ],
+      [
+        300,
+        "sqrt{4(4 + 3k)}}{2k} = \\frac{4 \\pm 2\\sqrt{4 + 3k}}{2k} = \\frac{2 \\pm \\sqrt{4 + 3k}}{k}\n   \\]\n   So"
+      ],
+      [
+        500,
+        " Since there are 2025 such quadratic factors, the total sum of all the roots is:\n   \\[\n   \\sum_{k=1}^{2025} \\left( \\frac{4}{k} \\right) = 4 \\sum_{k=1"
+      ]
+    ],
+    "output_last500": "{2025} \\frac{1}{k} = H_{2025}\n   \\]\n   The harmonic mean of all the real roots is:\n   \\[\n   H = \\frac{1}{H_{2025}}\n   \\]\n   Since \\(H_{2025}\\) is approximately \\(\\ln(2025) + \\gamma\\), the harmonic mean is:\n   \\[\n   H = \\frac{1}{\\ln(2025) + \\gamma}\n   \\]\n   However, for exact calculation, we use the harmonic series sum:\n   \\[\n   H = \\frac{1}{H_{2025}}\n   \\]\n   The exact value of the harmonic mean is:\n   \\[\n   H = \\frac{1}{\\ln(2025) + \\gamma}\n   \\]\n   The correct answer is:\n   \\boxed{-\\frac{5}{6}}"
+  },
+  {
+    "arm": "A_delayed_onset",
+    "window_param": 100,
+    "desc": "ON from token 100",
+    "active_from": 100,
+    "active_until": null,
+    "answer": "?",
+    "correct": false,
+    "n_tokens": 1138,
+    "time_s": 22.8,
+    "looped": false,
+    "milestones": [
+      [
+        50,
+        "To find the harmonic mean of all the real roots of the given polynomial, we need to follow these steps:\n\n1. **Understand the Polynomial Structure**: The polynomial is given by the product of 2025 quadratic factors:\n   \\[\n"
+      ],
+      [
+        100,
+        "2025 quadratic factors:\n   \\[\n   \\prod_{k=1}^{2025} (kx^2 - 4x - 3)\n   \\]\n   Each quadratic factor is of the form \\(kx^2 - 4x - 3"
+      ],
+      [
+        150,
+        "x^2 - 4x - 3\\).\n\n2. **Find the Roots of Each Quadratic Factor**: For each quadratic factor \\(kx^2 - 4x - 3\\), we can find its roots using the quadratic formula:\n   \\[\n   x = \\frac"
+      ],
+      [
+        200,
+        " formula:\n   \\[\n   x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\n   \\]\n   Here, \\(a = k\\), \\(b = -4\\), and \\(c = -3\\). Plugging in these"
+      ],
+      [
+        300,
+        "sqrt{4(4 + 3k)}}{2k} = \\frac{4 \\pm 2\\sqrt{4 + 3k}}{2k} = \\frac{2 \\pm \\sqrt{4 + 3k}}{k}\n   \\]\n   So"
+      ],
+      [
+        500,
+        " Since there are 2025 such quadratic factors, the total sum of all the roots is:\n   \\[\n   \\sum_{k=1}^{2025} \\left( \\frac{4}{k} \\right) = 4 \\sum_{k=1"
+      ]
+    ],
+    "output_last500": "{2025} \\frac{1}{k} = H_{2025}\n   \\]\n   The harmonic mean of all the real roots is:\n   \\[\n   H = \\frac{1}{H_{2025}}\n   \\]\n   Since \\(H_{2025}\\) is approximately \\(\\ln(2025) + \\gamma\\), the harmonic mean is:\n   \\[\n   H = \\frac{1}{\\ln(2025) + \\gamma}\n   \\]\n   However, for exact calculation, we use the harmonic series sum:\n   \\[\n   H = \\frac{1}{H_{2025}}\n   \\]\n   The exact value of the harmonic mean is:\n   \\[\n   H = \\frac{1}{\\ln(2025) + \\gamma}\n   \\]\n   The correct answer is:\n   \\boxed{-\\frac{5}{6}}"
+  },
+  {
+    "arm": "A_delayed_onset",
+    "window_param": 150,
+    "desc": "ON from token 150",
+    "active_from": 150,
+    "active_until": null,
+    "answer": "?",
+    "correct": false,
+    "n_tokens": 1138,
+    "time_s": 22.6,
+    "looped": false,
+    "milestones": [
+      [
+        50,
+        "To find the harmonic mean of all the real roots of the given polynomial, we need to follow these steps:\n\n1. **Understand the Polynomial Structure**: The polynomial is given by the product of 2025 quadratic factors:\n   \\[\n"
+      ],
+      [
+        100,
+        "2025 quadratic factors:\n   \\[\n   \\prod_{k=1}^{2025} (kx^2 - 4x - 3)\n   \\]\n   Each quadratic factor is of the form \\(kx^2 - 4x - 3"
+      ],
+      [
+        150,
+        "x^2 - 4x - 3\\).\n\n2. **Find the Roots of Each Quadratic Factor**: For each quadratic factor \\(kx^2 - 4x - 3\\), we can find its roots using the quadratic formula:\n   \\[\n   x = \\frac"
+      ],
+      [
+        200,
+        " formula:\n   \\[\n   x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\n   \\]\n   Here, \\(a = k\\), \\(b = -4\\), and \\(c = -3\\). Plugging in these"
+      ],
+      [
+        300,
+        "sqrt{4(4 + 3k)}}{2k} = \\frac{4 \\pm 2\\sqrt{4 + 3k}}{2k} = \\frac{2 \\pm \\sqrt{4 + 3k}}{k}\n   \\]\n   So"
+      ],
+      [
+        500,
+        " Since there are 2025 such quadratic factors, the total sum of all the roots is:\n   \\[\n   \\sum_{k=1}^{2025} \\left( \\frac{4}{k} \\right) = 4 \\sum_{k=1"
+      ]
+    ],
+    "output_last500": "{2025} \\frac{1}{k} = H_{2025}\n   \\]\n   The harmonic mean of all the real roots is:\n   \\[\n   H = \\frac{1}{H_{2025}}\n   \\]\n   Since \\(H_{2025}\\) is approximately \\(\\ln(2025) + \\gamma\\), the harmonic mean is:\n   \\[\n   H = \\frac{1}{\\ln(2025) + \\gamma}\n   \\]\n   However, for exact calculation, we use the harmonic series sum:\n   \\[\n   H = \\frac{1}{H_{2025}}\n   \\]\n   The exact value of the harmonic mean is:\n   \\[\n   H = \\frac{1}{\\ln(2025) + \\gamma}\n   \\]\n   The correct answer is:\n   \\boxed{-\\frac{5}{6}}"
+  },
+  {
+    "arm": "A_delayed_onset",
+    "window_param": 200,
+    "desc": "ON from token 200",
+    "active_from": 200,
+    "active_until": null,
+    "answer": "?",
+    "correct": false,
+    "n_tokens": 1138,
+    "time_s": 22.4,
+    "looped": false,
+    "milestones": [
+      [
+        50,
+        "To find the harmonic mean of all the real roots of the given polynomial, we need to follow these steps:\n\n1. **Understand the Polynomial Structure**: The polynomial is given by the product of 2025 quadratic factors:\n   \\[\n"
+      ],
+      [
+        100,
+        "2025 quadratic factors:\n   \\[\n   \\prod_{k=1}^{2025} (kx^2 - 4x - 3)\n   \\]\n   Each quadratic factor is of the form \\(kx^2 - 4x - 3"
+      ],
+      [
+        150,
+        "x^2 - 4x - 3\\).\n\n2. **Find the Roots of Each Quadratic Factor**: For each quadratic factor \\(kx^2 - 4x - 3\\), we can find its roots using the quadratic formula:\n   \\[\n   x = \\frac"
+      ],
+      [
+        200,
+        " formula:\n   \\[\n   x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\n   \\]\n   Here, \\(a = k\\), \\(b = -4\\), and \\(c = -3\\). Plugging in these"
+      ],
+      [
+        300,
+        "sqrt{4(4 + 3k)}}{2k} = \\frac{4 \\pm 2\\sqrt{4 + 3k}}{2k} = \\frac{2 \\pm \\sqrt{4 + 3k}}{k}\n   \\]\n   So"
+      ],
+      [
+        500,
+        " Since there are 2025 such quadratic factors, the total sum of all the roots is:\n   \\[\n   \\sum_{k=1}^{2025} \\left( \\frac{4}{k} \\right) = 4 \\sum_{k=1"
+      ]
+    ],
+    "output_last500": "{2025} \\frac{1}{k} = H_{2025}\n   \\]\n   The harmonic mean of all the real roots is:\n   \\[\n   H = \\frac{1}{H_{2025}}\n   \\]\n   Since \\(H_{2025}\\) is approximately \\(\\ln(2025) + \\gamma\\), the harmonic mean is:\n   \\[\n   H = \\frac{1}{\\ln(2025) + \\gamma}\n   \\]\n   However, for exact calculation, we use the harmonic series sum:\n   \\[\n   H = \\frac{1}{H_{2025}}\n   \\]\n   The exact value of the harmonic mean is:\n   \\[\n   H = \\frac{1}{\\ln(2025) + \\gamma}\n   \\]\n   The correct answer is:\n   \\boxed{-\\frac{5}{6}}"
+  },
+  {
+    "arm": "A_delayed_onset",
+    "window_param": 300,
+    "desc": "ON from token 300",
+    "active_from": 300,
+    "active_until": null,
+    "answer": "?",
+    "correct": false,
+    "n_tokens": 2048,
+    "time_s": 40.0,
+    "looped": true,
+    "milestones": [
+      [
+        50,
+        "To find the harmonic mean of all the real roots of the given polynomial, we need to follow these steps:\n\n1. **Understand the Polynomial Structure**: The polynomial is given by the product of 2025 quadratic factors:\n   \\[\n"
+      ],
+      [
+        100,
+        "2025 quadratic factors:\n   \\[\n   \\prod_{k=1}^{2025} (kx^2 - 4x - 3)\n   \\]\n   Each quadratic factor is of the form \\(kx^2 - 4x - 3"
+      ],
+      [
+        150,
+        "x^2 - 4x - 3\\).\n\n2. **Find the Roots of Each Quadratic Factor**: For each quadratic factor \\(kx^2 - 4x - 3\\), we can find its roots using the quadratic formula:\n   \\[\n   x = \\frac"
+      ],
+      [
+        200,
+        " formula:\n   \\[\n   x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\n   \\]\n   Here, \\(a = k\\), \\(b = -4\\), and \\(c = -3\\). Plugging in these"
+      ],
+      [
+        300,
+        "sqrt{4(4 + 3k)}}{2k} = \\frac{4 \\pm 2\\sqrt{4 + 3k}}{2k} = \\frac{2 \\pm \\sqrt{4 + 3k}}{k}\n   \\]\n   So"
+      ],
+      [
+        500,
+        "   \\sum_{k=1}^{2025} \\left( \\frac{2 + \\sqrt{4 + 3k}}{k} + \\frac{2 - \\sqrt{4 + 3k}}{k} \\right) = \\sum_{k"
+      ]
+    ],
+    "output_last500": "0}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{3240"
+  },
+  {
+    "arm": "A_delayed_onset",
+    "window_param": 500,
+    "desc": "ON from token 500",
+    "active_from": 500,
+    "active_until": null,
+    "answer": "?",
+    "correct": false,
+    "n_tokens": 2048,
+    "time_s": 39.1,
+    "looped": true,
+    "milestones": [
+      [
+        50,
+        "To find the harmonic mean of all the real roots of the given polynomial, we need to follow these steps:\n\n1. **Understand the Polynomial Structure**: The polynomial is given by the product of 2025 quadratic factors:\n   \\[\n"
+      ],
+      [
+        100,
+        "2025 quadratic factors:\n   \\[\n   \\prod_{k=1}^{2025} (kx^2 - 4x - 3)\n   \\]\n   Each quadratic factor is of the form \\(kx^2 - 4x - 3"
+      ],
+      [
+        150,
+        "x^2 - 4x - 3\\).\n\n2. **Find the Roots of Each Quadratic Factor**: For each quadratic factor \\(kx^2 - 4x - 3\\), we can find its roots using the quadratic formula:\n   \\[\n   x = \\frac"
+      ],
+      [
+        200,
+        " formula:\n   \\[\n   x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\n   \\]\n   Here, \\(a = k\\), \\(b = -4\\), and \\(c = -3\\). Plugging in these"
+      ],
+      [
+        300,
+        "sqrt{4(4 + 3k)}}{2k} = \\frac{4 \\pm 2\\sqrt{4 + 3k}}{2k} = \\frac{2 \\pm \\sqrt{4 + 3k}}{k}\n   \\]\n   So"
+      ],
+      [
+        500,
+        "   \\sum_{k=1}^{2025} \\left( \\frac{2 + \\sqrt{4 + 3k}}{k} + \\frac{2 - \\sqrt{4 + 3k}}{k} \\right) = \\sum_{k"
+      ]
+    ],
+    "output_last500": " 2025!}{(-3)^{2025} \\cdot 2025} = \\frac{4 \\cdot 2025!}{(-3)^{2025} \\cdot 2025} = \\frac{4 \\cdot 2025!}{(-3)^{2025} \\cdot 2025} = \\frac{4 \\cdot 2025!}{(-3)^{2025} \\cdot 2025} = \\frac{4 \\cdot 2025!}{(-3)^{2025} \\cdot 2025} = \\frac{4 \\cdot 2025!}{(-3)^{2025} \\cdot 2025} = \\frac{4 \\cdot 2025!}{(-3)^{2025} \\cdot 2025} = \\frac{4 \\cdot 2025!}{(-3)^{2025} \\cdot 2025} = \\frac{4 \\cdot 2025!}{(-3)^{2025} \\cdot 2025} = \\frac{4 \\cdot 2025!}{(-3)^{2025} \\cdot 2025} = \\frac{4 \\cdot 2025!}{(-3)^{2025} \\cdot 2025"
+  },
+  {
+    "arm": "A_delayed_onset",
+    "window_param": 750,
+    "desc": "ON from token 750",
+    "active_from": 750,
+    "active_until": null,
+    "answer": "?",
+    "correct": false,
+    "n_tokens": 2048,
+    "time_s": 38.0,
+    "looped": true,
+    "milestones": [
+      [
+        50,
+        "To find the harmonic mean of all the real roots of the given polynomial, we need to follow these steps:\n\n1. **Understand the Polynomial Structure**: The polynomial is given by the product of 2025 quadratic factors:\n   \\[\n"
+      ],
+      [
+        100,
+        "2025 quadratic factors:\n   \\[\n   \\prod_{k=1}^{2025} (kx^2 - 4x - 3)\n   \\]\n   Each quadratic factor is of the form \\(kx^2 - 4x - 3"
+      ],
+      [
+        150,
+        "x^2 - 4x - 3\\).\n\n2. **Find the Roots of Each Quadratic Factor**: For each quadratic factor \\(kx^2 - 4x - 3\\), we can find its roots using the quadratic formula:\n   \\[\n   x = \\frac"
+      ],
+      [
+        200,
+        " formula:\n   \\[\n   x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\n   \\]\n   Here, \\(a = k\\), \\(b = -4\\), and \\(c = -3\\). Plugging in these"
+      ],
+      [
+        300,
+        "sqrt{4(4 + 3k)}}{2k} = \\frac{4 \\pm 2\\sqrt{4 + 3k}}{2k} = \\frac{2 \\pm \\sqrt{4 + 3k}}{k}\n   \\]\n   So"
+      ],
+      [
+        500,
+        "   \\sum_{k=1}^{2025} \\left( \\frac{2 + \\sqrt{4 + 3k}}{k} + \\frac{2 - \\sqrt{4 + 3k}}{k} \\right) = \\sum_{k"
+      ]
+    ],
+    "output_last500": "0}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{3240"
+  },
+  {
+    "arm": "A_delayed_onset",
+    "window_param": 1000,
+    "desc": "ON from token 1000",
+    "active_from": 1000,
+    "active_until": null,
+    "answer": "?",
+    "correct": false,
+    "n_tokens": 1316,
+    "time_s": 22.7,
+    "looped": false,
+    "milestones": [
+      [
+        50,
+        "To find the harmonic mean of all the real roots of the given polynomial, we need to follow these steps:\n\n1. **Understand the Polynomial Structure**: The polynomial is given by the product of 2025 quadratic factors:\n   \\[\n"
+      ],
+      [
+        100,
+        "2025 quadratic factors:\n   \\[\n   \\prod_{k=1}^{2025} (kx^2 - 4x - 3)\n   \\]\n   Each quadratic factor is of the form \\(kx^2 - 4x - 3"
+      ],
+      [
+        150,
+        "x^2 - 4x - 3\\).\n\n2. **Find the Roots of Each Quadratic Factor**: For each quadratic factor \\(kx^2 - 4x - 3\\), we can find its roots using the quadratic formula:\n   \\[\n   x = \\frac"
+      ],
+      [
+        200,
+        " formula:\n   \\[\n   x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\n   \\]\n   Here, \\(a = k\\), \\(b = -4\\), and \\(c = -3\\). Plugging in these"
+      ],
+      [
+        300,
+        "sqrt{4(4 + 3k)}}{2k} = \\frac{4 \\pm 2\\sqrt{4 + 3k}}{2k} = \\frac{2 \\pm \\sqrt{4 + 3k}}{k}\n   \\]\n   So"
+      ],
+      [
+        500,
+        "   \\sum_{k=1}^{2025} \\left( \\frac{2 + \\sqrt{4 + 3k}}{k} + \\frac{2 - \\sqrt{4 + 3k}}{k} \\right) = \\sum_{k"
+      ]
+    ],
+    "output_last500": "ed to find the harmonic mean of the real roots, which are the roots of the polynomial. The harmonic mean of the real roots is the reciprocal of the arithmetic mean of the reciprocals of the real roots. Since the polynomial is symmetric and the roots are real, the harmonic mean of the real roots is the same as the harmonic mean of the roots of the polynomial, which is \\(-\\frac{6}{5}\\).\n\nTherefore, the harmonic mean of all the real roots of the 4050th degree polynomial is \\(\\boxed{-\\frac{6}{5}}\\)."
+  },
+  {
+    "arm": "B_early_cutoff",
+    "window_param": 50,
+    "desc": "ON for tokens 0..50, then OFF",
+    "active_from": 0,
+    "active_until": 50,
+    "answer": "B",
+    "correct": true,
+    "n_tokens": 1052,
+    "time_s": 17.5,
+    "looped": false,
+    "milestones": [
+      [
+        50,
+        "To find the harmonic mean of all the real roots of the given polynomial, we need to follow these steps:\n\n1. **Understand the polynomial**: The polynomial is given by the product of 2025 quadratic factors:\n   \\[\n  "
+      ],
+      [
+        100,
+        "025 quadratic factors:\n   \\[\n   \\prod_{k=1}^{2025} (kx^2 - 4x - 3)\n   \\]\n   Each factor is of the form \\(kx^2 - 4x - 3\\).\n\n"
+      ],
+      [
+        150,
+        "2 - 4x - 3\\).\n\n2. **Find the roots of each quadratic factor**: Each quadratic factor \\(kx^2 - 4x - 3\\) can be solved using the quadratic formula \\(x = \\frac{-b \\pm \\sqrt{b^2 -"
+      ],
+      [
+        200,
+        "b \\pm \\sqrt{b^2 - 4ac}}{2a}\\), where \\(a = k\\), \\(b = -4\\), and \\(c = -3\\). Thus, the roots are:\n   \\[\n   x = \\frac{4 \\pm \\"
+      ],
+      [
+        300,
+        "4 \\pm 2\\sqrt{4 + 3k}}{2k} = \\frac{2 \\pm \\sqrt{4 + 3k}}{k}\n   \\]\n   So, the roots of \\(kx^2 - 4x - 3\\) are"
+      ],
+      [
+        500,
+        "frac{2 + \\sqrt{4 + 3k}}{k} + \\frac{2 - \\sqrt{4 + 3k}}{k} \\right) = \\sum_{k=1}^{2025} \\frac{4}{k}\n   \\"
+      ]
+    ],
+    "output_last500": "ac{1}{x_i}}\n   \\]\n   where \\(n\\) is the number of roots. Here, \\(n = 4050\\), and the sum of the reciprocals of the roots is \\(\\sum_{k=1}^{2025} \\frac{4}{k} = 4 \\sum_{k=1}^{2025} \\frac{1}{k}\\). Therefore, the harmonic mean is:\n   \\[\n   H = \\frac{4050}{4 \\sum_{k=1}^{2025} \\frac{1}{k}} = \\frac{4050}{4 \\cdot \\frac{2025}{2}} = \\frac{4050}{4 \\cdot 1012.5} = \\frac{4050}{4050} = -\\frac{3}{2}\n   \\]\n\nThus, the harmonic mean of all the real roots of the 4050th degree polynomial is \\(\\boxed{-\\frac{3}{2}}\\)."
+  },
+  {
+    "arm": "B_early_cutoff",
+    "window_param": 100,
+    "desc": "ON for tokens 0..100, then OFF",
+    "active_from": 0,
+    "active_until": 100,
+    "answer": "?",
+    "correct": false,
+    "n_tokens": 2048,
+    "time_s": 34.1,
+    "looped": true,
+    "milestones": [
+      [
+        50,
+        "To find the harmonic mean of all the real roots of the given polynomial, we need to follow these steps:\n\n1. **Understand the polynomial**: The polynomial is given by the product of 2025 quadratic factors:\n   \\[\n  "
+      ],
+      [
+        100,
+        "025 quadratic factors:\n   \\[\n   \\prod_{k=1}^{2025} (kx^2 - 4x - 3)\n   \\]\n   Each quadratic factor is of the form \\(kx^2 - 4x - 3\\"
+      ],
+      [
+        150,
+        "^2 - 4x - 3\\).\n\n2. **Find the roots of each quadratic factor**: For each quadratic factor \\(kx^2 - 4x - 3\\), we can find its roots using the quadratic formula:\n   \\[\n   x = \\frac{-b"
+      ],
+      [
+        200,
+        "   \\[\n   x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\n   \\]\n   Here, \\(a = k\\), \\(b = -4\\), and \\(c = -3\\). Plugging in these values,"
+      ],
+      [
+        300,
+        "4(4 + 3k)}}{2k} = \\frac{4 \\pm 2\\sqrt{4 + 3k}}{2k} = \\frac{2 \\pm \\sqrt{4 + 3k}}{k}\n   \\]\n   So, the"
+      ],
+      [
+        500,
+        "sum_{k=1}^{2025} \\left( \\frac{2 + \\sqrt{4 + 3k}}{k} + \\frac{2 - \\sqrt{4 + 3k}}{k} \\right) = \\sum_{k=1"
+      ]
+    ],
+    "output_last500": "1026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{41026200} = \\frac{32400}{4"
+  },
+  {
+    "arm": "B_early_cutoff",
+    "window_param": 150,
+    "desc": "ON for tokens 0..150, then OFF",
+    "active_from": 0,
+    "active_until": 150,
+    "answer": "B",
+    "correct": true,
+    "n_tokens": 1053,
+    "time_s": 17.9,
+    "looped": false,
+    "milestones": [
+      [
+        50,
+        "To find the harmonic mean of all the real roots of the given polynomial, we need to follow these steps:\n\n1. **Understand the polynomial**: The polynomial is given by the product of 2025 quadratic factors:\n   \\[\n  "
+      ],
+      [
+        100,
+        "025 quadratic factors:\n   \\[\n   \\prod_{k=1}^{2025} (kx^2 - 4x - 3)\n   \\]\n   Each quadratic factor is of the form \\(kx^2 - 4x - 3\\"
+      ],
+      [
+        150,
+        "^2 - 4x - 3\\).\n\n2. **Find the roots of each quadratic factor**: Each quadratic factor \\(kx^2 - 4x - 3\\) can be solved using the quadratic formula \\(x = \\frac{-b \\pm \\sqrt{b^2"
+      ],
+      [
+        200,
+        "{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\), where \\(a = k\\), \\(b = -4\\), and \\(c = -3\\). Thus, the roots are:\n   \\[\n   x = \\frac{4 \\pm"
+      ],
+      [
+        300,
+        "{4 \\pm 2\\sqrt{4 + 3k}}{2k} = \\frac{2 \\pm \\sqrt{4 + 3k}}{k}\n   \\]\n   So, the roots of \\(kx^2 - 4x - 3\\)"
+      ],
+      [
+        500,
+        " \\frac{2 + \\sqrt{4 + 3k}}{k} + \\frac{2 - \\sqrt{4 + 3k}}{k} \\right) = \\sum_{k=1}^{2025} \\frac{4}{k}\n  "
+      ]
+    ],
+    "output_last500": "ac{1}{x_i}}\n   \\]\n   where \\(n\\) is the number of roots. Here, \\(n = 4050\\), and the sum of the reciprocals of the roots is \\(\\sum_{k=1}^{2025} \\frac{4}{k} = 4 \\sum_{k=1}^{2025} \\frac{1}{k}\\). Therefore, the harmonic mean is:\n   \\[\n   H = \\frac{4050}{4 \\sum_{k=1}^{2025} \\frac{1}{k}} = \\frac{4050}{4 \\cdot \\frac{2025}{2}} = \\frac{4050}{4 \\cdot 1012.5} = \\frac{4050}{4050} = -\\frac{3}{2}\n   \\]\n\nThus, the harmonic mean of all the real roots of the 4050th degree polynomial is \\(\\boxed{-\\frac{3}{2}}\\)."
+  },
+  {
+    "arm": "B_early_cutoff",
+    "window_param": 200,
+    "desc": "ON for tokens 0..200, then OFF",
+    "active_from": 0,
+    "active_until": 200,
+    "answer": "B",
+    "correct": true,
+    "n_tokens": 1053,
+    "time_s": 18.1,
+    "looped": false,
+    "milestones": [
+      [
+        50,
+        "To find the harmonic mean of all the real roots of the given polynomial, we need to follow these steps:\n\n1. **Understand the polynomial**: The polynomial is given by the product of 2025 quadratic factors:\n   \\[\n  "
+      ],
+      [
+        100,
+        "025 quadratic factors:\n   \\[\n   \\prod_{k=1}^{2025} (kx^2 - 4x - 3)\n   \\]\n   Each quadratic factor is of the form \\(kx^2 - 4x - 3\\"
+      ],
+      [
+        150,
+        "^2 - 4x - 3\\).\n\n2. **Find the roots of each quadratic factor**: Each quadratic factor \\(kx^2 - 4x - 3\\) can be solved using the quadratic formula \\(x = \\frac{-b \\pm \\sqrt{b^2"
+      ],
+      [
+        200,
+        "{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\), where \\(a = k\\), \\(b = -4\\), and \\(c = -3\\). Thus, the roots are:\n   \\[\n   x = \\frac{4 \\pm"
+      ],
+      [
+        300,
+        "{4 \\pm 2\\sqrt{4 + 3k}}{2k} = \\frac{2 \\pm \\sqrt{4 + 3k}}{k}\n   \\]\n   So, the roots of \\(kx^2 - 4x - 3\\)"
+      ],
+      [
+        500,
+        " \\frac{2 + \\sqrt{4 + 3k}}{k} + \\frac{2 - \\sqrt{4 + 3k}}{k} \\right) = \\sum_{k=1}^{2025} \\frac{4}{k}\n  "
+      ]
+    ],
+    "output_last500": "ac{1}{x_i}}\n   \\]\n   where \\(n\\) is the number of roots. Here, \\(n = 4050\\), and the sum of the reciprocals of the roots is \\(\\sum_{k=1}^{2025} \\frac{4}{k} = 4 \\sum_{k=1}^{2025} \\frac{1}{k}\\). Therefore, the harmonic mean is:\n   \\[\n   H = \\frac{4050}{4 \\sum_{k=1}^{2025} \\frac{1}{k}} = \\frac{4050}{4 \\cdot \\frac{2025}{2}} = \\frac{4050}{4 \\cdot 1012.5} = \\frac{4050}{4050} = -\\frac{3}{2}\n   \\]\n\nThus, the harmonic mean of all the real roots of the 4050th degree polynomial is \\(\\boxed{-\\frac{3}{2}}\\)."
+  },
+  {
+    "arm": "B_early_cutoff",
+    "window_param": 300,
+    "desc": "ON for tokens 0..300, then OFF",
+    "active_from": 0,
+    "active_until": 300,
+    "answer": "B",
+    "correct": true,
+    "n_tokens": 1053,
+    "time_s": 18.5,
+    "looped": false,
+    "milestones": [
+      [
+        50,
+        "To find the harmonic mean of all the real roots of the given polynomial, we need to follow these steps:\n\n1. **Understand the polynomial**: The polynomial is given by the product of 2025 quadratic factors:\n   \\[\n  "
+      ],
+      [
+        100,
+        "025 quadratic factors:\n   \\[\n   \\prod_{k=1}^{2025} (kx^2 - 4x - 3)\n   \\]\n   Each quadratic factor is of the form \\(kx^2 - 4x - 3\\"
+      ],
+      [
+        150,
+        "^2 - 4x - 3\\).\n\n2. **Find the roots of each quadratic factor**: Each quadratic factor \\(kx^2 - 4x - 3\\) can be solved using the quadratic formula \\(x = \\frac{-b \\pm \\sqrt{b^2"
+      ],
+      [
+        200,
+        "{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\), where \\(a = k\\), \\(b = -4\\), and \\(c = -3\\). Thus, the roots are:\n   \\[\n   x = \\frac{4 \\pm"
+      ],
+      [
+        300,
+        "{4 \\pm 2\\sqrt{4 + 3k}}{2k} = \\frac{2 \\pm \\sqrt{4 + 3k}}{k}\n   \\]\n   So, the roots of \\(kx^2 - 4x - 3\\)"
+      ],
+      [
+        500,
+        " \\frac{2 + \\sqrt{4 + 3k}}{k} + \\frac{2 - \\sqrt{4 + 3k}}{k} \\right) = \\sum_{k=1}^{2025} \\frac{4}{k}\n  "
+      ]
+    ],
+    "output_last500": "ac{1}{x_i}}\n   \\]\n   where \\(n\\) is the number of roots. Here, \\(n = 4050\\), and the sum of the reciprocals of the roots is \\(\\sum_{k=1}^{2025} \\frac{4}{k} = 4 \\sum_{k=1}^{2025} \\frac{1}{k}\\). Therefore, the harmonic mean is:\n   \\[\n   H = \\frac{4050}{4 \\sum_{k=1}^{2025} \\frac{1}{k}} = \\frac{4050}{4 \\cdot \\frac{2025}{2}} = \\frac{4050}{4 \\cdot 1012.5} = \\frac{4050}{4050} = -\\frac{3}{2}\n   \\]\n\nThus, the harmonic mean of all the real roots of the 4050th degree polynomial is \\(\\boxed{-\\frac{3}{2}}\\)."
+  },
+  {
+    "arm": "B_early_cutoff",
+    "window_param": 500,
+    "desc": "ON for tokens 0..500, then OFF",
+    "active_from": 0,
+    "active_until": 500,
+    "answer": "B",
+    "correct": true,
+    "n_tokens": 1053,
+    "time_s": 19.4,
+    "looped": false,
+    "milestones": [
+      [
+        50,
+        "To find the harmonic mean of all the real roots of the given polynomial, we need to follow these steps:\n\n1. **Understand the polynomial**: The polynomial is given by the product of 2025 quadratic factors:\n   \\[\n  "
+      ],
+      [
+        100,
+        "025 quadratic factors:\n   \\[\n   \\prod_{k=1}^{2025} (kx^2 - 4x - 3)\n   \\]\n   Each quadratic factor is of the form \\(kx^2 - 4x - 3\\"
+      ],
+      [
+        150,
+        "^2 - 4x - 3\\).\n\n2. **Find the roots of each quadratic factor**: Each quadratic factor \\(kx^2 - 4x - 3\\) can be solved using the quadratic formula \\(x = \\frac{-b \\pm \\sqrt{b^2"
+      ],
+      [
+        200,
+        "{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\), where \\(a = k\\), \\(b = -4\\), and \\(c = -3\\). Thus, the roots are:\n   \\[\n   x = \\frac{4 \\pm"
+      ],
+      [
+        300,
+        "{4 \\pm 2\\sqrt{4 + 3k}}{2k} = \\frac{2 \\pm \\sqrt{4 + 3k}}{k}\n   \\]\n   So, the roots of \\(kx^2 - 4x - 3\\)"
+      ],
+      [
+        500,
+        " \\frac{2 + \\sqrt{4 + 3k}}{k} + \\frac{2 - \\sqrt{4 + 3k}}{k} \\right) = \\sum_{k=1}^{2025} \\frac{4}{k}\n  "
+      ]
+    ],
+    "output_last500": "ac{1}{x_i}}\n   \\]\n   where \\(n\\) is the number of roots. Here, \\(n = 4050\\), and the sum of the reciprocals of the roots is \\(\\sum_{k=1}^{2025} \\frac{4}{k} = 4 \\sum_{k=1}^{2025} \\frac{1}{k}\\). Therefore, the harmonic mean is:\n   \\[\n   H = \\frac{4050}{4 \\sum_{k=1}^{2025} \\frac{1}{k}} = \\frac{4050}{4 \\cdot \\frac{2025}{2}} = \\frac{4050}{4 \\cdot 1012.5} = \\frac{4050}{4050} = -\\frac{3}{2}\n   \\]\n\nThus, the harmonic mean of all the real roots of the 4050th degree polynomial is \\(\\boxed{-\\frac{3}{2}}\\)."
+  },
+  {
+    "arm": "B_early_cutoff",
+    "window_param": 750,
+    "desc": "ON for tokens 0..750, then OFF",
+    "active_from": 0,
+    "active_until": 750,
+    "answer": "B",
+    "correct": true,
+    "n_tokens": 1053,
+    "time_s": 20.6,
+    "looped": false,
+    "milestones": [
+      [
+        50,
+        "To find the harmonic mean of all the real roots of the given polynomial, we need to follow these steps:\n\n1. **Understand the polynomial**: The polynomial is given by the product of 2025 quadratic factors:\n   \\[\n  "
+      ],
+      [
+        100,
+        "025 quadratic factors:\n   \\[\n   \\prod_{k=1}^{2025} (kx^2 - 4x - 3)\n   \\]\n   Each quadratic factor is of the form \\(kx^2 - 4x - 3\\"
+      ],
+      [
+        150,
+        "^2 - 4x - 3\\).\n\n2. **Find the roots of each quadratic factor**: Each quadratic factor \\(kx^2 - 4x - 3\\) can be solved using the quadratic formula \\(x = \\frac{-b \\pm \\sqrt{b^2"
+      ],
+      [
+        200,
+        "{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\), where \\(a = k\\), \\(b = -4\\), and \\(c = -3\\). Thus, the roots are:\n   \\[\n   x = \\frac{4 \\pm"
+      ],
+      [
+        300,
+        "{4 \\pm 2\\sqrt{4 + 3k}}{2k} = \\frac{2 \\pm \\sqrt{4 + 3k}}{k}\n   \\]\n   So, the roots of \\(kx^2 - 4x - 3\\)"
+      ],
+      [
+        500,
+        " \\frac{2 + \\sqrt{4 + 3k}}{k} + \\frac{2 - \\sqrt{4 + 3k}}{k} \\right) = \\sum_{k=1}^{2025} \\frac{4}{k}\n  "
+      ]
+    ],
+    "output_last500": "ac{1}{x_i}}\n   \\]\n   where \\(n\\) is the number of roots. Here, \\(n = 4050\\), and the sum of the reciprocals of the roots is \\(\\sum_{k=1}^{2025} \\frac{4}{k} = 4 \\sum_{k=1}^{2025} \\frac{1}{k}\\). Therefore, the harmonic mean is:\n   \\[\n   H = \\frac{4050}{4 \\sum_{k=1}^{2025} \\frac{1}{k}} = \\frac{4050}{4 \\cdot \\frac{2025}{2}} = \\frac{4050}{4 \\cdot 1012.5} = \\frac{4050}{4050} = -\\frac{3}{2}\n   \\]\n\nThus, the harmonic mean of all the real roots of the 4050th degree polynomial is \\(\\boxed{-\\frac{3}{2}}\\)."
+  },
+  {
+    "arm": "B_early_cutoff",
+    "window_param": 1000,
+    "desc": "ON for tokens 0..1000, then OFF",
+    "active_from": 0,
+    "active_until": 1000,
+    "answer": "B",
+    "correct": true,
+    "n_tokens": 1053,
+    "time_s": 21.3,
+    "looped": false,
+    "milestones": [
+      [
+        50,
+        "To find the harmonic mean of all the real roots of the given polynomial, we need to follow these steps:\n\n1. **Understand the polynomial**: The polynomial is given by the product of 2025 quadratic factors:\n   \\[\n  "
+      ],
+      [
+        100,
+        "025 quadratic factors:\n   \\[\n   \\prod_{k=1}^{2025} (kx^2 - 4x - 3)\n   \\]\n   Each quadratic factor is of the form \\(kx^2 - 4x - 3\\"
+      ],
+      [
+        150,
+        "^2 - 4x - 3\\).\n\n2. **Find the roots of each quadratic factor**: Each quadratic factor \\(kx^2 - 4x - 3\\) can be solved using the quadratic formula \\(x = \\frac{-b \\pm \\sqrt{b^2"
+      ],
+      [
+        200,
+        "{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\), where \\(a = k\\), \\(b = -4\\), and \\(c = -3\\). Thus, the roots are:\n   \\[\n   x = \\frac{4 \\pm"
+      ],
+      [
+        300,
+        "{4 \\pm 2\\sqrt{4 + 3k}}{2k} = \\frac{2 \\pm \\sqrt{4 + 3k}}{k}\n   \\]\n   So, the roots of \\(kx^2 - 4x - 3\\)"
+      ],
+      [
+        500,
+        " \\frac{2 + \\sqrt{4 + 3k}}{k} + \\frac{2 - \\sqrt{4 + 3k}}{k} \\right) = \\sum_{k=1}^{2025} \\frac{4}{k}\n  "
+      ]
+    ],
+    "output_last500": "ac{1}{x_i}}\n   \\]\n   where \\(n\\) is the number of roots. Here, \\(n = 4050\\), and the sum of the reciprocals of the roots is \\(\\sum_{k=1}^{2025} \\frac{4}{k} = 4 \\sum_{k=1}^{2025} \\frac{1}{k}\\). Therefore, the harmonic mean is:\n   \\[\n   H = \\frac{4050}{4 \\sum_{k=1}^{2025} \\frac{1}{k}} = \\frac{4050}{4 \\cdot \\frac{2025}{2}} = \\frac{4050}{4 \\cdot 1012.5} = \\frac{4050}{4050} = -\\frac{3}{2}\n   \\]\n\nThus, the harmonic mean of all the real roots of the 4050th degree polynomial is \\(\\boxed{-\\frac{3}{2}}\\)."
+  },
+  {
+    "arm": "baseline",
+    "window_param": null,
+    "desc": "no deflation",
+    "active_from": null,
+    "active_until": null,
+    "answer": "?",
+    "correct": false,
+    "n_tokens": 2048,
+    "time_s": 33.7,
+    "looped": true,
+    "milestones": [
+      [
+        50,
+        "To find the harmonic mean of all the real roots of the given polynomial, we need to follow these steps:\n\n1. **Understand the Polynomial Structure**: The polynomial is given by the product of 2025 quadratic factors:\n   \\[\n"
+      ],
+      [
+        100,
+        "2025 quadratic factors:\n   \\[\n   \\prod_{k=1}^{2025} (kx^2 - 4x - 3)\n   \\]\n   Each quadratic factor is of the form \\(kx^2 - 4x - 3"
+      ],
+      [
+        150,
+        "x^2 - 4x - 3\\).\n\n2. **Find the Roots of Each Quadratic Factor**: For each quadratic factor \\(kx^2 - 4x - 3\\), we can find its roots using the quadratic formula:\n   \\[\n   x = \\frac"
+      ],
+      [
+        200,
+        " formula:\n   \\[\n   x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\n   \\]\n   Here, \\(a = k\\), \\(b = -4\\), and \\(c = -3\\). Plugging in these"
+      ],
+      [
+        300,
+        "sqrt{4(4 + 3k)}}{2k} = \\frac{4 \\pm 2\\sqrt{4 + 3k}}{2k} = \\frac{2 \\pm \\sqrt{4 + 3k}}{k}\n   \\]\n   So"
+      ],
+      [
+        500,
+        "   \\sum_{k=1}^{2025} \\left( \\frac{2 + \\sqrt{4 + 3k}}{k} + \\frac{2 - \\sqrt{4 + 3k}}{k} \\right) = \\sum_{k"
+      ]
+    ],
+    "output_last500": "102650} = \\frac{16200}{4102650} = \\frac{16200}{4102650} = \\frac{16200}{4102650} = \\frac{16200}{4102650} = \\frac{16200}{4102650} = \\frac{16200}{4102650} = \\frac{16200}{4102650} = \\frac{16200}{4102650} = \\frac{16200}{4102650} = \\frac{16200}{4102650} = \\frac{16200}{4102650} = \\frac{16200}{4102650} = \\frac{16200}{4102650} = \\frac{16200}{4102650} = \\frac{16200}{4102650} = \\frac{16200}{4102650} = \\frac{16200}{4102650} = \\frac{16200}{4102650} = \\frac{16200}{4102650} = \\frac{16200}{4102650} = \\frac{1620"
+  }
+]

@@ -1,0 +1,1078 @@
+{
+  "variant_a_all_layers": [
+    {
+      "problem_idx": 0,
+      "category": "algebra",
+      "math_lang": "en",
+      "desc_lang": "en",
+      "n_tokens": 300,
+      "output": "MathToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToTo",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_match_idx": 0,
+      "best_match_cat": "algebra",
+      "best_frac": 0.0,
+      "correct": false,
+      "window_scores": {
+        "25": {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        "50": {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        "75": {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        "100": {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        "150": {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        "200": {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        "250": {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      }
+    },
+    {
+      "problem_idx": 0,
+      "category": "algebra",
+      "math_lang": "zh",
+      "desc_lang": "zh",
+      "n_tokens": 300,
+      "output": "数学ToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToTo",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_match_idx": 0,
+      "best_match_cat": "algebra",
+      "best_frac": 0.0,
+      "correct": false,
+      "window_scores": {
+        "25": {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        "50": {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        "75": {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        "100": {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        "150": {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        "200": {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        "250": {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      }
+    },
+    {
+      "problem_idx": 1,
+      "category": "geometry",
+      "math_lang": "en",
+      "desc_lang": "en",
+      "n_tokens": 300,
+      "output": "MathTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTh",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_match_idx": 0,
+      "best_match_cat": "algebra",
+      "best_frac": 0.0,
+      "correct": false,
+      "window_scores": {
+        "25": {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        "50": {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        "75": {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        "100": {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        "150": {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        "200": {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        "250": {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      }
+    },
+    {
+      "problem_idx": 1,
+      "category": "geometry",
+      "math_lang": "zh",
+      "desc_lang": "zh",
+      "n_tokens": 300,
+      "output": "数学三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角三角",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 1,
+          "total": 14,
+          "frac": 0.071,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_match_idx": 1,
+      "best_match_cat": "geometry",
+      "best_frac": 0.071,
+      "correct": false,
+      "window_scores": {
+        "25": {
+          "hits": 1,
+          "total": 14,
+          "frac": 0.071,
+          "has_answer": false
+        },
+        "50": {
+          "hits": 1,
+          "total": 14,
+          "frac": 0.071,
+          "has_answer": false
+        },
+        "75": {
+          "hits": 1,
+          "total": 14,
+          "frac": 0.071,
+          "has_answer": false
+        },
+        "100": {
+          "hits": 1,
+          "total": 14,
+          "frac": 0.071,
+          "has_answer": false
+        },
+        "150": {
+          "hits": 1,
+          "total": 14,
+          "frac": 0.071,
+          "has_answer": false
+        },
+        "200": {
+          "hits": 1,
+          "total": 14,
+          "frac": 0.071,
+          "has_answer": false
+        },
+        "250": {
+          "hits": 1,
+          "total": 14,
+          "frac": 0.071,
+          "has_answer": false
+        }
+      }
+    },
+    {
+      "problem_idx": 2,
+      "category": "number_theory",
+      "math_lang": "en",
+      "desc_lang": "en",
+      "n_tokens": 300,
+      "output": "MathToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToTo",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_match_idx": 0,
+      "best_match_cat": "algebra",
+      "best_frac": 0.0,
+      "correct": false,
+      "window_scores": {
+        "25": {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        "50": {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        "75": {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        "100": {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        "150": {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        "200": {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        "250": {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      }
+    },
+    {
+      "problem_idx": 2,
+      "category": "number_theory",
+      "math_lang": "zh",
+      "desc_lang": "zh",
+      "n_tokens": 300,
+      "output": "数学要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要要",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_match_idx": 0,
+      "best_match_cat": "algebra",
+      "best_frac": 0.0,
+      "correct": false,
+      "window_scores": {
+        "25": {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        "50": {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        "75": {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        "100": {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        "150": {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        "200": {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        "250": {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      }
+    }
+  ],
+  "variant_b_upper_free": [
+    {
+      "L_star": 10,
+      "problem_idx": 0,
+      "category": "algebra",
+      "n_tokens": 300,
+      "output": "MathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMath mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematicalYouYou mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathe",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_match_idx": 0,
+      "best_frac": 0.0,
+      "correct": false
+    },
+    {
+      "L_star": 10,
+      "problem_idx": 1,
+      "category": "geometry",
+      "n_tokens": 300,
+      "output": "MathMathMathMathMathMathMathMathMathMathMath mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\nYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYo",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_match_idx": 0,
+      "best_frac": 0.0,
+      "correct": false
+    },
+    {
+      "L_star": 10,
+      "problem_idx": 2,
+      "category": "number_theory",
+      "n_tokens": 300,
+      "output": "MathMathMathMathMathMathMathMathMath mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematicalYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYo",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_match_idx": 0,
+      "best_frac": 0.0,
+      "correct": false
+    },
+    {
+      "L_star": 15,
+      "problem_idx": 0,
+      "category": "algebra",
+      "n_tokens": 300,
+      "output": "MathMathMathMathMathMathMathMathMathMathMathMathMathMath mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematicalYouYouYouYouYou````````````````````````````````````````````======\n======\n======\n======\n======\n======\n======\n======\n======\n======\n======\n======\n======\n======\n======\n======\n======\n======\n======\n======\n======\n======\n======\n======\n======\n======\n======\n======\n======\n======\nII======\n======\n======\n======\nI======\n======\n======\n======\n======\n======\nIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_match_idx": 0,
+      "best_frac": 0.0,
+      "correct": false
+    },
+    {
+      "L_star": 15,
+      "problem_idx": 1,
+      "category": "geometry",
+      "n_tokens": 300,
+      "output": "MathMathMathMathMathMathMathMathMathMathMathMathMathMathMath mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical======\n======\n======\n======\n======\n======\n======\n======\n``````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````YouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouYouY",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_match_idx": 0,
+      "best_frac": 0.0,
+      "correct": false
+    },
+    {
+      "L_star": 15,
+      "problem_idx": 2,
+      "category": "number_theory",
+      "n_tokens": 300,
+      "output": "MathMathMathMathMathMathMathMathMathMathMath mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematicalYouYouYou````````````````````````````````````````````````````````````````````````````````````````````````````````````````````========\n========\n========\n``````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_match_idx": 0,
+      "best_frac": 0.0,
+      "correct": false
+    },
+    {
+      "L_star": 18,
+      "problem_idx": 0,
+      "category": "algebra",
+      "n_tokens": 300,
+      "output": "MathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMath mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematicalMathMathMathMathYouYouYouYouYouYouYou``````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_match_idx": 0,
+      "best_frac": 0.0,
+      "correct": false
+    },
+    {
+      "L_star": 18,
+      "problem_idx": 1,
+      "category": "geometry",
+      "n_tokens": 300,
+      "output": "MathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMath mathematical mathematical mathematical mathematical mathematical mathematical mathematical mathematicalGreatGreatGreatGreatYouYouYouYouYouYouYouYouYouYouYouYouYouYouToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToTo``````\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_match_idx": 0,
+      "best_frac": 0.0,
+      "correct": false
+    },
+    {
+      "L_star": 18,
+      "problem_idx": 2,
+      "category": "number_theory",
+      "n_tokens": 300,
+      "output": "MathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMath mathematical mathematical mathematicalMathMathMathMathMathMathMathToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToTo``````````````````````````````````````````````````````````````````````````````\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"\n\"",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_match_idx": 0,
+      "best_frac": 0.0,
+      "correct": false
+    },
+    {
+      "L_star": 22,
+      "problem_idx": 0,
+      "category": "algebra",
+      "n_tokens": 300,
+      "output": "MathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToTo",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_match_idx": 0,
+      "best_frac": 0.0,
+      "correct": false
+    },
+    {
+      "L_star": 22,
+      "problem_idx": 1,
+      "category": "geometry",
+      "n_tokens": 300,
+      "output": "MathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToTo",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_match_idx": 0,
+      "best_frac": 0.0,
+      "correct": false
+    },
+    {
+      "L_star": 22,
+      "problem_idx": 2,
+      "category": "number_theory",
+      "n_tokens": 300,
+      "output": "MathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathMathToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToTo",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_match_idx": 0,
+      "best_frac": 0.0,
+      "correct": false
+    },
+    {
+      "L_star": 27,
+      "problem_idx": 0,
+      "category": "algebra",
+      "n_tokens": 300,
+      "output": "MathMathMathMathMathMathMathMathToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToTo",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_match_idx": 0,
+      "best_frac": 0.0,
+      "correct": false
+    },
+    {
+      "L_star": 27,
+      "problem_idx": 1,
+      "category": "geometry",
+      "n_tokens": 300,
+      "output": "MathMathMathMathMathMathMathMathMathToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToTo",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_match_idx": 0,
+      "best_frac": 0.0,
+      "correct": false
+    },
+    {
+      "L_star": 27,
+      "problem_idx": 2,
+      "category": "number_theory",
+      "n_tokens": 300,
+      "output": "MathMathMathMathMathToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToTo",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_match_idx": 0,
+      "best_frac": 0.0,
+      "correct": false
+    }
+  ],
+  "variant_c_noise": [
+    {
+      "problem_idx": 0,
+      "injected": "noise",
+      "n_tokens": 300,
+      "output": "Mathladenladenladenladenladenladenladenladenladenladenpolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypolypo",
+      "is_garbage": false
+    },
+    {
+      "problem_idx": 1,
+      "injected": "noise",
+      "n_tokens": 300,
+      "output": "Matholioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioliolioli",
+      "is_garbage": true
+    },
+    {
+      "problem_idx": 2,
+      "injected": "noise",
+      "n_tokens": 300,
+      "output": "Mathoiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroiroir",
+      "is_garbage": true
+    }
+  ],
+  "variant_d_cross_problem": [
+    {
+      "injected_idx": 0,
+      "injected_category": "algebra",
+      "n_tokens": 300,
+      "output": "MathToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToTo",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_match_idx": 0,
+      "best_match_cat": "algebra",
+      "describes_injected": false
+    },
+    {
+      "injected_idx": 1,
+      "injected_category": "geometry",
+      "n_tokens": 300,
+      "output": "MathTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTh",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_match_idx": 0,
+      "best_match_cat": "algebra",
+      "describes_injected": false
+    },
+    {
+      "injected_idx": 2,
+      "injected_category": "number_theory",
+      "n_tokens": 300,
+      "output": "MathToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToTo",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_match_idx": 0,
+      "best_match_cat": "algebra",
+      "describes_injected": false
+    }
+  ],
+  "summary": {
+    "elapsed_seconds": 142.8,
+    "variant_a_correct": 0,
+    "variant_a_total": 6,
+    "variant_a_garbage": 6,
+    "variant_b_by_lstar": {
+      "10": {
+        "correct": 0,
+        "garbage": 2
+      },
+      "15": {
+        "correct": 0,
+        "garbage": 2
+      },
+      "18": {
+        "correct": 0,
+        "garbage": 3
+      },
+      "22": {
+        "correct": 0,
+        "garbage": 3
+      },
+      "27": {
+        "correct": 0,
+        "garbage": 3
+      }
+    },
+    "variant_c_garbage": 2,
+    "variant_d_hits": 0
+  }
+}

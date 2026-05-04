@@ -1,0 +1,1602 @@
+[
+  {
+    "en": "If a computer is connected to the internet, it can access websites. The computer is connected to the internet.",
+    "domain": "formal_logic",
+    "structure": "modus_ponens",
+    "answer": "The computer can access websites.",
+    "zh": "如果一台计算机连接到互联网，它就可以访问网站。这台计算机已连接到互联网。",
+    "es": "Si una computadora está conectada a internet, puede acceder a sitios web. La computadora está conectada a internet."
+  },
+  {
+    "en": "If a bird is a penguin, then it cannot fly. The bird can fly.",
+    "domain": "formal_logic",
+    "structure": "modus_tollens",
+    "answer": "The bird is not a penguin.",
+    "zh": "如果一只鸟是企鹅，那么它就不能飞。这只鸟能飞。",
+    "es": "Si un pájaro es un pingüino, entonces no puede volar. El pájaro puede volar."
+  },
+  {
+    "en": "If it is raining, then the streets are wet. The streets are not wet.",
+    "domain": "formal_logic",
+    "structure": "contrapositive",
+    "answer": "It is not raining.",
+    "zh": "如果在下雨，那么街道是湿的。街道不是湿的。",
+    "es": "Si está lloviendo, entonces las calles están mojadas. Las calles no están mojadas."
+  },
+  {
+    "en": "Either the sculpture is made of bronze or it is made of marble. The sculpture is not made of bronze.",
+    "domain": "formal_logic",
+    "structure": "disjunctive",
+    "answer": "The sculpture is made of marble.",
+    "zh": "雕塑要么是青铜制的，要么是大理石制的。雕塑不是青铜制的。",
+    "es": "O la escultura está hecha de bronce o está hecha de mármol. La escultura no está hecha de bronce."
+  },
+  {
+    "en": "If the alarm is set, then the building is secure. If the building is secure, then the valuables are safe. The alarm is set.",
+    "domain": "formal_logic",
+    "structure": "hypothetical_chain",
+    "answer": "The valuables are safe.",
+    "zh": "如果警报已设定，那么大楼是安全的。如果大楼是安全的，那么贵重物品是安全的。警报已设定。",
+    "es": "Si la alarma está activada, entonces el edificio está seguro. Si el edificio está seguro, entonces los objetos de valor están a salvo. La alarma está activada."
+  },
+  {
+    "en": "Assume all prime numbers are odd. 2 is a prime number. 2 is not odd.",
+    "domain": "formal_logic",
+    "structure": "reductio",
+    "answer": "The assumption that all prime numbers are odd leads to a contradiction.",
+    "zh": "假设所有质数都是奇数。2是一个质数。2不是奇数。",
+    "es": "Supón que todos los números primos son impares. 2 es un número primo. 2 no es impar."
+  },
+  {
+    "en": "For every student, if they submit their homework, they pass the class. Emily did not pass the class.",
+    "domain": "formal_logic",
+    "structure": "universal",
+    "answer": "Emily did not submit her homework.",
+    "zh": "对于每个学生，如果他们提交作业，他们就能通过课程。Emily没有通过课程。",
+    "es": "Para cada estudiante, si entrega su tarea, aprueba la clase. Emily no aprobó la clase."
+  },
+  {
+    "en": "There exists a city where everyone speaks two languages. Paris is a city. Everyone in Paris speaks two languages.",
+    "domain": "formal_logic",
+    "structure": "existential",
+    "answer": "invalid",
+    "zh": "存在一个城市，那里每个人都会两种语言。巴黎是一个城市。巴黎的每个人都会两种语言。",
+    "es": "Existe una ciudad donde todos hablan dos idiomas. París es una ciudad. Todos en París hablan dos idiomas."
+  },
+  {
+    "en": "If a planet has water, then it may support life. Mars does not support life.",
+    "domain": "formal_logic",
+    "structure": "modus_tollens",
+    "answer": "invalid",
+    "zh": "如果一颗行星有水，那么它可能支持生命。火星不支持生命。",
+    "es": "Si un planeta tiene agua, entonces puede albergar vida. Marte no alberga vida."
+  },
+  {
+    "en": "If Jamal attends the meeting, then Maria will attend. Maria attends the meeting.",
+    "domain": "formal_logic",
+    "structure": "modus_ponens",
+    "answer": "invalid",
+    "zh": "如果Jamal参加会议，那么Maria会参加。Maria参加了会议。",
+    "es": "Si Jamal asiste a la reunión, entonces María asistirá. María asiste a la reunión."
+  },
+  {
+    "en": "If the painting is authentic, then it is valuable. If it is valuable, then it is insured. The painting is authentic.",
+    "domain": "formal_logic",
+    "structure": "hypothetical_chain",
+    "answer": "The painting is insured.",
+    "zh": "如果这幅画是真迹，那么它有价值。如果它有价值，那么它有保险。这幅画是真迹。",
+    "es": "Si la pintura es auténtica, entonces es valiosa. Si es valiosa, entonces está asegurada. La pintura es auténtica."
+  },
+  {
+    "en": "Either the play is a tragedy or a comedy. The play is a tragedy.",
+    "domain": "formal_logic",
+    "structure": "disjunctive",
+    "answer": "The play is not a comedy.",
+    "zh": "这部戏剧要么是悲剧，要么是喜剧。这部戏剧是悲剧。",
+    "es": "O la obra es una tragedia o una comedia. La obra es una tragedia."
+  },
+  {
+    "en": "If a number is divisible by 4, then it is even. 15 is not even.",
+    "domain": "formal_logic",
+    "structure": "contrapositive",
+    "answer": "invalid",
+    "zh": "如果一个数能被4整除，那么它是偶数。15不是偶数。",
+    "es": "Si un número es divisible por 4, entonces es par. 15 no es par."
+  },
+  {
+    "en": "If a solution contains acid, then it turns blue litmus red. The solution does not turn blue litmus red.",
+    "domain": "formal_logic",
+    "structure": "modus_tollens",
+    "answer": "The solution does not contain acid.",
+    "zh": "如果一种溶液含有酸，那么它会使蓝色石蕊变红。这种溶液没有使蓝色石蕊变红。",
+    "es": "Si una solución contiene ácido, entonces vuelve el papel tornasol azul a rojo. La solución no vuelve el papel tornasol azul a rojo."
+  },
+  {
+    "en": "If the cake has chocolate, then it contains sugar. The cake does not contain sugar.",
+    "domain": "formal_logic",
+    "structure": "contrapositive",
+    "answer": "The cake does not have chocolate.",
+    "zh": "如果蛋糕有巧克力，那么它含有糖。蛋糕不含糖。",
+    "es": "Si el pastel tiene chocolate, entonces contiene azúcar. El pastel no contiene azúcar."
+  },
+  {
+    "en": "All novels by Austen are set in England. \"Emma\" is a novel by Austen.",
+    "domain": "formal_logic",
+    "structure": "universal",
+    "answer": "\"Emma\" is set in England.",
+    "zh": "奥斯汀的所有小说都以英国为背景。《爱玛》是奥斯汀的小说。",
+    "es": "Todas las novelas de Austen están ambientadas en Inglaterra. \"Emma\" es una novela de Austen."
+  },
+  {
+    "en": "Either the code compiles or there is a syntax error. There is a syntax error.",
+    "domain": "formal_logic",
+    "structure": "disjunctive",
+    "answer": "The code does not compile.",
+    "zh": "代码要么能编译，要么有语法错误。有语法错误。",
+    "es": "O el código compila o hay un error de sintaxis. Hay un error de sintaxis."
+  },
+  {
+    "en": "If a light is on, then the switch is up. The light is not on.",
+    "domain": "formal_logic",
+    "structure": "modus_tollens",
+    "answer": "invalid",
+    "zh": "如果灯是亮的，那么开关是开的。灯没有亮。",
+    "es": "Si una luz está encendida, entonces el interruptor está arriba. La luz no está encendida."
+  },
+  {
+    "en": "If the animal is a mammal, then it is warm-blooded. If the animal is warm-blooded, then it can regulate its temperature. The animal is a mammal.",
+    "domain": "formal_logic",
+    "structure": "hypothetical_chain",
+    "answer": "The animal can regulate its temperature.",
+    "zh": "如果动物是哺乳动物，那么它是温血动物。如果动物是温血动物，那么它能调节体温。这个动物是哺乳动物。",
+    "es": "Si el animal es un mamífero, entonces es de sangre caliente. Si el animal es de sangre caliente, entonces puede regular su temperatura. El animal es un mamífero."
+  },
+  {
+    "en": "If a person is eligible to vote, then they are over 18. Not all people over 18 are eligible to vote.",
+    "domain": "formal_logic",
+    "structure": "contrapositive",
+    "answer": "invalid",
+    "zh": "如果一个人有资格投票，那么他已满18岁。不是所有18岁以上的人都有资格投票。",
+    "es": "Si una persona es elegible para votar, entonces tiene más de 18 años. No todas las personas mayores de 18 años son elegibles para votar."
+  },
+  {
+    "en": "If the alarm is ringing, then there is a fire or a drill. The alarm is ringing. There is no fire.",
+    "domain": "formal_logic",
+    "structure": "disjunctive",
+    "answer": "There is a drill.",
+    "zh": "如果警报响了，那么就是发生了火灾或演习。警报响了。没有发生火灾。",
+    "es": "Si la alarma está sonando, entonces hay un incendio o un simulacro. La alarma está sonando. No hay incendio."
+  },
+  {
+    "en": "No cats are reptiles. Felix is a cat.",
+    "domain": "formal_logic",
+    "structure": "universal",
+    "answer": "Felix is not a reptile.",
+    "zh": "没有猫是爬行动物。Felix 是一只猫。",
+    "es": "Ningún gato es un reptil. Félix es un gato."
+  },
+  {
+    "en": "If the answer is correct, then the score will improve. The score did not improve.",
+    "domain": "formal_logic",
+    "structure": "modus_tollens",
+    "answer": "The answer is not correct.",
+    "zh": "如果答案正确，那么分数会提高。分数没有提高。",
+    "es": "Si la respuesta es correcta, entonces la puntuación mejorará. La puntuación no mejoró."
+  },
+  {
+    "en": "If a number is not prime, then it is composite. 17 is prime.",
+    "domain": "formal_logic",
+    "structure": "contrapositive",
+    "answer": "17 is not composite.",
+    "zh": "如果一个数不是质数，那么它是合数。17 是质数。",
+    "es": "Si un número no es primo, entonces es compuesto. 17 es primo."
+  },
+  {
+    "en": "If the train leaves on time, then we will arrive by noon. If we arrive by noon, then the meeting will start on schedule. The train does not leave on time.",
+    "domain": "formal_logic",
+    "structure": "hypothetical_chain",
+    "answer": "invalid",
+    "zh": "如果火车准时发车，我们将在中午前到达。如果我们中午前到达，会议将按计划开始。火车没有准时发车。",
+    "es": "Si el tren sale a tiempo, entonces llegaremos antes del mediodía. Si llegamos antes del mediodía, entonces la reunión comenzará a la hora prevista. El tren no sale a tiempo."
+  },
+  {
+    "en": "If the computer is running, then the monitor is on. The computer is running. What can we conclude?",
+    "domain": "formal_logic",
+    "structure": "modus_ponens",
+    "answer": "The monitor is on.",
+    "zh": "如果电脑正在运行，那么显示器是开着的。电脑正在运行。我们可以得出什么结论？",
+    "es": "Si la computadora está encendida, entonces el monitor está encendido. La computadora está encendida. ¿Qué podemos concluir?"
+  },
+  {
+    "en": "If it is raining, the picnic is cancelled. The picnic is not cancelled. What can we conclude?",
+    "domain": "formal_logic",
+    "structure": "modus_tollens",
+    "answer": "It is not raining.",
+    "zh": "如果在下雨，野餐就会取消。野餐没有取消。我们可以得出什么结论？",
+    "es": "Si está lloviendo, el picnic se cancela. El picnic no se canceló. ¿Qué podemos concluir?"
+  },
+  {
+    "en": "If a student is in the chess club, then they attend meetings. If someone attends meetings, then they know the rules. Alice is in the chess club. What can we conclude?",
+    "domain": "formal_logic",
+    "structure": "hypothetical_chain",
+    "answer": "Alice knows the rules.",
+    "zh": "如果学生是国际象棋俱乐部成员，那么他们会参加会议。如果有人参加会议，那么他们知道规则。Alice 是国际象棋俱乐部成员。我们可以得出什么结论？",
+    "es": "Si un estudiante está en el club de ajedrez, entonces asiste a las reuniones. Si alguien asiste a las reuniones, entonces conoce las reglas. Alicia está en el club de ajedrez. ¿Qué podemos concluir?"
+  },
+  {
+    "en": "Either the key is in the drawer or it is in the bag. The key is not in the drawer. What can we conclude?",
+    "domain": "formal_logic",
+    "structure": "disjunctive",
+    "answer": "The key is in the bag.",
+    "zh": "钥匙要么在抽屉里，要么在包里。钥匙不在抽屉里。我们可以得出什么结论？",
+    "es": "O la llave está en el cajón o está en la bolsa. La llave no está en el cajón. ¿Qué podemos concluir?"
+  },
+  {
+    "en": "If a plant is watered, it grows. This plant did not grow. What can we conclude?",
+    "domain": "formal_logic",
+    "structure": "modus_tollens",
+    "answer": "The plant was not watered.",
+    "zh": "如果植物被浇水，它就会生长。这株植物没有生长。我们可以得出什么结论？",
+    "es": "Si una planta es regada, crece. Esta planta no creció. ¿Qué podemos concluir?"
+  },
+  {
+    "en": "If the alarm rings, then there is a fire or a drill. If there is not a fire and there is not a drill, the alarm does not ring. What inference is justified?",
+    "domain": "formal_logic",
+    "structure": "contrapositive",
+    "answer": "Valid",
+    "zh": "如果警报响起，那么就是发生了火灾或演习。如果没有火灾且没有演习，警报不会响起。什么推理是合理的？",
+    "es": "Si suena la alarma, entonces hay un incendio o un simulacro. Si no hay incendio y no hay simulacro, la alarma no suena. ¿Qué inferencia está justificada?"
+  },
+  {
+    "en": "If a book is fiction, then it is not in the reference section. This book is in the reference section. What can we conclude?",
+    "domain": "formal_logic",
+    "structure": "modus_tollens",
+    "answer": "The book is not fiction.",
+    "zh": "如果一本书是小说，那么它不会在参考书区。这本书在参考书区。我们可以得出什么结论？",
+    "es": "Si un libro es de ficción, entonces no está en la sección de referencia. Este libro está en la sección de referencia. ¿Qué podemos concluir?"
+  },
+  {
+    "en": "No reptiles have fur. All snakes are reptiles. What can we conclude?",
+    "domain": "formal_logic",
+    "structure": "universal",
+    "answer": "No snakes have fur.",
+    "zh": "没有爬行动物有毛发。所有蛇都是爬行动物。我们可以得出什么结论？",
+    "es": "Ningún reptil tiene pelo. Todas las serpientes son reptiles. ¿Qué podemos concluir?"
+  },
+  {
+    "en": "If the gate is locked, then the dog cannot escape. The dog escaped. What can we conclude?",
+    "domain": "formal_logic",
+    "structure": "modus_tollens",
+    "answer": "The gate was not locked.",
+    "zh": "如果大门上锁，狗就无法逃脱。狗逃脱了。我们可以得出什么结论？",
+    "es": "Si la puerta está cerrada con llave, entonces el perro no puede escapar. El perro escapó. ¿Qué podemos concluir?"
+  },
+  {
+    "en": "Some birds can swim. All penguins are birds. Is it valid to conclude all penguins can swim?",
+    "domain": "formal_logic",
+    "structure": "existential",
+    "answer": "Invalid",
+    "zh": "有些鸟会游泳。所有企鹅都是鸟。能否得出所有企鹅都会游泳的结论？",
+    "es": "Algunas aves pueden nadar. Todos los pingüinos son aves. ¿Es válido concluir que todos los pingüinos pueden nadar?"
+  },
+  {
+    "en": "If it is summer, then ice cream sales increase. It is not summer. Can we conclude ice cream sales do not increase?",
+    "domain": "formal_logic",
+    "structure": "modus_ponens",
+    "answer": "Invalid",
+    "zh": "如果是夏天，冰淇淋销量会上升。现在不是夏天。我们能否得出冰淇淋销量不会上升的结论？",
+    "es": "Si es verano, entonces aumentan las ventas de helado. No es verano. ¿Podemos concluir que no aumentan las ventas de helado?"
+  },
+  {
+    "en": "If a file is encrypted, then it cannot be read. This file can be read. What can we conclude?",
+    "domain": "formal_logic",
+    "structure": "modus_tollens",
+    "answer": "The file is not encrypted.",
+    "zh": "如果一个文件被加密，那么它无法被读取。这个文件可以被读取。我们可以得出什么结论？",
+    "es": "Si un archivo está encriptado, entonces no se puede leer. Este archivo se puede leer. ¿Qué podemos concluir?"
+  },
+  {
+    "en": "If a city is in Europe, then it is not in Asia. Istanbul is in Asia. What can we conclude?",
+    "domain": "formal_logic",
+    "structure": "contrapositive",
+    "answer": "Istanbul is not in Europe.",
+    "zh": "如果一个城市在欧洲，那么它不在亚洲。伊斯坦布尔在亚洲。我们可以得出什么结论？",
+    "es": "Si una ciudad está en Europa, entonces no está en Asia. Estambul está en Asia. ¿Qué podemos concluir?"
+  },
+  {
+    "en": "Either the train is late or the weather is clear. The weather is not clear. What can we conclude?",
+    "domain": "formal_logic",
+    "structure": "disjunctive",
+    "answer": "The train is late.",
+    "zh": "火车要么晚点，要么天气晴朗。天气不晴朗。我们可以得出什么结论？",
+    "es": "O el tren llega tarde o el clima está despejado. El clima no está despejado. ¿Qué podemos concluir?"
+  },
+  {
+    "en": "All mammals have lungs. Dolphins are mammals. What can we conclude?",
+    "domain": "formal_logic",
+    "structure": "universal",
+    "answer": "Dolphins have lungs.",
+    "zh": "所有哺乳动物都有肺。海豚是哺乳动物。我们可以得出什么结论？",
+    "es": "Todos los mamíferos tienen pulmones. Los delfines son mamíferos. ¿Qué podemos concluir?"
+  },
+  {
+    "en": "If the code compiles, then there are no syntax errors. The code does not compile. What can we conclude?",
+    "domain": "formal_logic",
+    "structure": "modus_ponens",
+    "answer": "Invalid",
+    "zh": "如果代码可以编译，那么就没有语法错误。代码无法编译。我们可以得出什么结论？",
+    "es": "Si el código compila, entonces no hay errores de sintaxis. El código no compila. ¿Qué podemos concluir?"
+  },
+  {
+    "en": "If the light is green, then cars go. If cars go, then there is traffic. The light is green. What can we conclude?",
+    "domain": "formal_logic",
+    "structure": "hypothetical_chain",
+    "answer": "There is traffic.",
+    "zh": "如果灯是绿的，汽车就会行驶。如果汽车行驶，就会有交通。灯是绿的。我们可以得出什么结论？",
+    "es": "Si la luz está verde, entonces los autos avanzan. Si los autos avanzan, entonces hay tráfico. La luz está verde. ¿Qué podemos concluir?"
+  },
+  {
+    "en": "If the museum is open, then tickets are sold. No tickets are sold. What can we conclude?",
+    "domain": "formal_logic",
+    "structure": "modus_tollens",
+    "answer": "The museum is not open.",
+    "zh": "如果博物馆开放，就会出售门票。没有出售门票。我们可以得出什么结论？",
+    "es": "Si el museo está abierto, entonces se venden boletos. No se venden boletos. ¿Qué podemos concluir?"
+  },
+  {
+    "en": "If an object floats, then its density is less than water. This object's density is not less than water. What can we conclude?",
+    "domain": "formal_logic",
+    "structure": "contrapositive",
+    "answer": "The object does not float.",
+    "zh": "如果一个物体会漂浮，那么它的密度小于水。这个物体的密度不小于水。我们可以得出什么结论？",
+    "es": "Si un objeto flota, entonces su densidad es menor que la del agua. La densidad de este objeto no es menor que la del agua. ¿Qué podemos concluir?"
+  },
+  {
+    "en": "If a patient has a fever, then they are sick. If they are sick, then they must rest. The patient has a fever. What can we conclude?",
+    "domain": "formal_logic",
+    "structure": "hypothetical_chain",
+    "answer": "The patient must rest.",
+    "zh": "如果病人发烧，那么他生病了。如果他生病了，那么他必须休息。病人发烧了。我们可以得出什么结论？",
+    "es": "Si un paciente tiene fiebre, entonces está enfermo. Si está enfermo, entonces debe descansar. El paciente tiene fiebre. ¿Qué podemos concluir?"
+  },
+  {
+    "en": "Either the cake has chocolate or vanilla flavor. The cake does not have chocolate flavor. What can we conclude?",
+    "domain": "formal_logic",
+    "structure": "disjunctive",
+    "answer": "The cake has vanilla flavor.",
+    "zh": "蛋糕要么是巧克力味，要么是香草味。蛋糕不是巧克力味。我们可以得出什么结论？",
+    "es": "El pastel tiene sabor a chocolate o a vainilla. El pastel no tiene sabor a chocolate. ¿Qué podemos concluir?"
+  },
+  {
+    "en": "If it is not snowing, the school is open. The school is not open. What can we conclude?",
+    "domain": "formal_logic",
+    "structure": "contrapositive",
+    "answer": "It is snowing.",
+    "zh": "如果没有下雪，学校就开门。学校没有开门。我们可以得出什么结论？",
+    "es": "Si no está nevando, la escuela está abierta. La escuela no está abierta. ¿Qué podemos concluir?"
+  },
+  {
+    "en": "If a number is even, then it is divisible by 2. 18 is divisible by 2. Can we conclude 18 is even?",
+    "domain": "formal_logic",
+    "structure": "modus_ponens",
+    "answer": "Invalid",
+    "zh": "如果一个数是偶数，那么它能被2整除。18能被2整除。我们能得出18是偶数吗？",
+    "es": "Si un número es par, entonces es divisible por 2. 18 es divisible por 2. ¿Podemos concluir que 18 es par?"
+  },
+  {
+    "en": "For all x, if x is a cat, then x has whiskers. Felix is a cat. What can we conclude?",
+    "domain": "formal_logic",
+    "structure": "universal",
+    "answer": "Felix has whiskers.",
+    "zh": "对于所有x，如果x是猫，那么x有胡须。Felix是一只猫。我们可以得出什么结论？",
+    "es": "Para todo x, si x es un gato, entonces x tiene bigotes. Félix es un gato. ¿Qué podemos concluir?"
+  },
+  {
+    "en": "Suppose assuming the earth is flat leads to a contradiction. What can we conclude about the earth's shape?",
+    "domain": "formal_logic",
+    "structure": "reductio",
+    "answer": "The earth is not flat.",
+    "zh": "假设地球是平的会导致矛盾。我们可以得出关于地球形状的什么结论？",
+    "es": "Supón que asumir que la Tierra es plana lleva a una contradicción. ¿Qué podemos concluir sobre la forma de la Tierra?"
+  },
+  {
+    "en": "Meeting A starts at 9:00 AM and lasts 1 hour. Meeting B starts at 10:00 AM and lasts 45 minutes. Do Meeting A and Meeting B overlap?",
+    "domain": "temporal",
+    "structure": "overlap_detect",
+    "answer": "no",
+    "zh": "会议A在上午9:00开始，持续1小时。会议B在上午10:00开始，持续45分钟。会议A和会议B有重叠吗？",
+    "es": "La Reunión A comienza a las 9:00 AM y dura 1 hora. La Reunión B comienza a las 10:00 AM y dura 45 minutos. ¿Se superponen la Reunión A y la Reunión B?"
+  },
+  {
+    "en": "Task X began at 2:15 PM and finished at 4:00 PM. How long did Task X take?",
+    "domain": "temporal",
+    "structure": "duration_subtract",
+    "answer": "1 hour 45 minutes",
+    "zh": "任务X在下午2:15开始，在下午4:00结束。任务X用了多长时间？",
+    "es": "La Tarea X comenzó a las 2:15 PM y terminó a las 4:00 PM. ¿Cuánto tiempo tomó la Tarea X?"
+  },
+  {
+    "en": "Event P is scheduled before Event Q, which is scheduled before Event R. Which event is second?",
+    "domain": "temporal",
+    "structure": "ordering_3",
+    "answer": "Event Q",
+    "zh": "事件P安排在事件Q之前，事件Q安排在事件R之前。哪个事件是第二个？",
+    "es": "El Evento P está programado antes que el Evento Q, que está programado antes que el Evento R. ¿Qué evento es el segundo?"
+  },
+  {
+    "en": "Webinar starts at 8:00 AM EST and lasts 2 hours. What time does it end in PST?",
+    "domain": "temporal",
+    "structure": "timezone",
+    "answer": "7:00 AM PST",
+    "zh": "网络研讨会在上午8:00（EST）开始，持续2小时。它在PST时间几点结束？",
+    "es": "El seminario web comienza a las 8:00 AM EST y dura 2 horas. ¿A qué hora termina en PST?"
+  },
+  {
+    "en": "Interview 1 is scheduled at 11:30 AM and lasts 30 minutes. Interview 2 starts 15 minutes after Interview 1 ends. At what time does Interview 2 begin?",
+    "domain": "temporal",
+    "structure": "relative_chain",
+    "answer": "12:15 PM",
+    "zh": "面试1安排在上午11:30，持续30分钟。面试2在面试1结束后15分钟开始。面试2几点开始？",
+    "es": "La Entrevista 1 está programada a las 11:30 AM y dura 30 minutos. La Entrevista 2 comienza 15 minutos después de que termina la Entrevista 1. ¿A qué hora comienza la Entrevista 2?"
+  },
+  {
+    "en": "Seminar A starts at 1:00 PM and ends at 2:30 PM. Seminar B starts at 2:00 PM and ends at 3:00 PM. Do these seminars overlap?",
+    "domain": "temporal",
+    "structure": "overlap_detect",
+    "answer": "yes",
+    "zh": "研讨会A在下午1:00开始，下午2:30结束。研讨会B在下午2:00开始，下午3:00结束。这两个研讨会有重叠吗？",
+    "es": "El Seminario A comienza a la 1:00 PM y termina a las 2:30 PM. El Seminario B comienza a las 2:00 PM y termina a las 3:00 PM. ¿Estos seminarios se superponen?"
+  },
+  {
+    "en": "Task A starts at 9:45 AM and takes 50 minutes. At what time does Task A end?",
+    "domain": "temporal",
+    "structure": "duration_add",
+    "answer": "10:35 AM",
+    "zh": "任务A在上午9:45开始，持续50分钟。任务A几点结束？",
+    "es": "La Tarea A comienza a las 9:45 AM y dura 50 minutos. ¿A qué hora termina la Tarea A?"
+  },
+  {
+    "en": "Session 1 starts at 10:00 AM. Session 2 starts 20 minutes after Session 1. Session 3 starts 15 minutes before Session 2. When does Session 3 start?",
+    "domain": "temporal",
+    "structure": "relative_chain",
+    "answer": "10:05 AM",
+    "zh": "第一场会议在上午10:00开始。第二场会议在第一场会议后20分钟开始。第三场会议在第二场会议前15分钟开始。第三场会议几点开始？",
+    "es": "La Sesión 1 comienza a las 10:00 AM. La Sesión 2 comienza 20 minutos después de la Sesión 1. La Sesión 3 comienza 15 minutos antes de la Sesión 2. ¿Cuándo comienza la Sesión 3?"
+  },
+  {
+    "en": "Assignment is due at 5:00 PM. If you start at 2:30 PM and need 2 hours and 45 minutes to complete it, will you finish before the deadline?",
+    "domain": "temporal",
+    "structure": "deadline",
+    "answer": "yes",
+    "zh": "作业截止时间为下午5:00。如果你在下午2:30开始，需要2小时45分钟完成，你能在截止时间前完成吗？",
+    "es": "La tarea se entrega a las 5:00 PM. Si comienzas a las 2:30 PM y necesitas 2 horas y 45 minutos para completarla, ¿terminarás antes de la fecha límite?"
+  },
+  {
+    "en": "Lecture A finishes at 11:00 AM, and Lecture B starts at 11:10 AM. What is the gap in minutes between the two lectures?",
+    "domain": "temporal",
+    "structure": "gap_compute",
+    "answer": "10 minutes",
+    "zh": "讲座A在上午11:00结束，讲座B在上午11:10开始。这两场讲座之间间隔多少分钟？",
+    "es": "La Clase A termina a las 11:00 AM y la Clase B comienza a las 11:10 AM. ¿Cuál es el intervalo en minutos entre las dos clases?"
+  },
+  {
+    "en": "Flight departs at 3:00 PM GMT and arrives at 7:00 PM CET. What's the flight duration?",
+    "domain": "temporal",
+    "structure": "timezone",
+    "answer": "3 hours",
+    "zh": "航班于格林威治时间下午3:00起飞，欧洲中部时间晚上7:00到达。飞行时长是多少？",
+    "es": "El vuelo sale a las 3:00 PM GMT y llega a las 7:00 PM CET. ¿Cuál es la duración del vuelo?"
+  },
+  {
+    "en": "Workshop X starts at 8:30 AM and lasts for 1 hour 20 minutes. Workshop Y starts at 9:40 AM. Does Workshop X overlap with Workshop Y?",
+    "domain": "temporal",
+    "structure": "overlap_detect",
+    "answer": "yes",
+    "zh": "X研讨会于上午8:30开始，持续1小时20分钟。Y研讨会于上午9:40开始。X研讨会与Y研讨会有重叠吗？",
+    "es": "El taller X comienza a las 8:30 AM y dura 1 hora 20 minutos. El taller Y comienza a las 9:40 AM. ¿El taller X se superpone con el taller Y?"
+  },
+  {
+    "en": "Event M occurs before Event N. Event P occurs after Event N. List the events in order.",
+    "domain": "temporal",
+    "structure": "ordering_3",
+    "answer": "M, N, P",
+    "zh": "事件M发生在事件N之前。事件P发生在事件N之后。请按顺序列出这些事件。",
+    "es": "El Evento M ocurre antes que el Evento N. El Evento P ocurre después del Evento N. Enumera los eventos en orden."
+  },
+  {
+    "en": "Meeting A starts at 1:00 PM and lasts 30 minutes. Meeting B starts at 1:25 PM and lasts 45 minutes. Do the meetings overlap?",
+    "domain": "temporal",
+    "structure": "overlap_detect",
+    "answer": "yes",
+    "zh": "会议A于下午1:00开始，持续30分钟。会议B于下午1:25开始，持续45分钟。这两个会议有重叠吗？",
+    "es": "La reunión A comienza a la 1:00 PM y dura 30 minutos. La reunión B comienza a la 1:25 PM y dura 45 minutos. ¿Las reuniones se superponen?"
+  },
+  {
+    "en": "Task A started at 4:15 PM and Task B started at 4:45 PM. Task A lasted 50 minutes; Task B lasted 30 minutes. Which task finished first?",
+    "domain": "temporal",
+    "structure": "earliest_latest",
+    "answer": "Task B",
+    "zh": "任务A于下午4:15开始，任务B于下午4:45开始。任务A持续50分钟，任务B持续30分钟。哪个任务先完成？",
+    "es": "La Tarea A comenzó a las 4:15 PM y la Tarea B comenzó a las 4:45 PM. La Tarea A duró 50 minutos; la Tarea B duró 30 minutos. ¿Qué tarea terminó primero?"
+  },
+  {
+    "en": "Webinar begins at 7:00 PM EDT (UTC-4) and lasts 2 hours. What time does it end in PDT (UTC-7)?",
+    "domain": "temporal",
+    "structure": "timezone",
+    "answer": "5:00 PM PDT",
+    "zh": "网络研讨会于东部夏令时间晚上7:00（UTC-4）开始，持续2小时。它在太平洋夏令时间（UTC-7）几点结束？",
+    "es": "El seminario web comienza a las 7:00 PM EDT (UTC-4) y dura 2 horas. ¿A qué hora termina en PDT (UTC-7)?"
+  },
+  {
+    "en": "Event A is at 9:00 AM, Event B is 45 minutes after Event A, and Event C is 30 minutes before Event B. When does Event C occur?",
+    "domain": "temporal",
+    "structure": "relative_chain",
+    "answer": "9:15 AM",
+    "zh": "事件A在上午9:00，事件B在事件A后45分钟，事件C在事件B前30分钟。事件C在几点发生？",
+    "es": "El Evento A es a las 9:00 AM, el Evento B es 45 minutos después del Evento A, y el Evento C es 30 minutos antes del Evento B. ¿Cuándo ocurre el Evento C?"
+  },
+  {
+    "en": "Deadline is at 3:30 PM. You begin at 1:00 PM and need 2 hours 45 minutes. Will you finish before the deadline?",
+    "domain": "temporal",
+    "structure": "deadline",
+    "answer": "no",
+    "zh": "截止时间为下午3:30。你在下午1:00开始，需要2小时45分钟。你能在截止时间前完成吗？",
+    "es": "La fecha límite es a las 3:30 PM. Comienzas a la 1:00 PM y necesitas 2 horas 45 minutos. ¿Terminarás antes de la fecha límite?"
+  },
+  {
+    "en": "Workshop 1 starts at 10:00 AM and lasts 1 hour. Workshop 2 starts at 11:15 AM. How much free time is there between the end of Workshop 1 and the start of Workshop 2?",
+    "domain": "temporal",
+    "structure": "gap_compute",
+    "answer": "15 minutes",
+    "zh": "研讨会1于上午10:00开始，持续1小时。研讨会2于上午11:15开始。研讨会1结束到研讨会2开始之间有多少空闲时间？",
+    "es": "El Taller 1 comienza a las 10:00 AM y dura 1 hora. El Taller 2 comienza a las 11:15 AM. ¿Cuánto tiempo libre hay entre el final del Taller 1 y el inicio del Taller 2?"
+  },
+  {
+    "en": "Session A starts at 8:00 AM, Session B starts at 8:30 AM, and Session C starts at 7:45 AM. List the sessions in order of start time.",
+    "domain": "temporal",
+    "structure": "ordering_3",
+    "answer": "Session C, Session A, Session B",
+    "zh": "会议A于上午8:00开始，会议B于上午8:30开始，会议C于上午7:45开始。请按开始时间顺序列出这些会议。",
+    "es": "La Sesión A comienza a las 8:00 AM, la Sesión B comienza a las 8:30 AM y la Sesión C comienza a las 7:45 AM. Enumera las sesiones en orden de hora de inicio."
+  },
+  {
+    "en": "Call X starts at 2:00 PM and ends at 2:40 PM. Call Y starts at 2:35 PM and ends at 3:10 PM. Do the calls overlap?",
+    "domain": "temporal",
+    "structure": "overlap_detect",
+    "answer": "yes",
+    "zh": "电话X于下午2:00开始，下午2:40结束。电话Y于下午2:35开始，下午3:10结束。这两个电话有重叠吗？",
+    "es": "La llamada X comienza a las 2:00 PM y termina a las 2:40 PM. La llamada Y comienza a las 2:35 PM y termina a las 3:10 PM. ¿Las llamadas se superponen?"
+  },
+  {
+    "en": "Meeting 1 is at 9:00 AM, Meeting 2 is at 10:30 AM, Meeting 3 is at 8:45 AM, and Meeting 4 is at 9:15 AM. What is the order of the meetings by start time?",
+    "domain": "temporal",
+    "structure": "ordering_4",
+    "answer": "Meeting 3, Meeting 1, Meeting 4, Meeting 2",
+    "zh": "会议1在上午9:00，会议2在上午10:30，会议3在上午8:45，会议4在上午9:15。请按开始时间顺序排列这些会议。",
+    "es": "La Reunión 1 es a las 9:00 AM, la Reunión 2 es a las 10:30 AM, la Reunión 3 es a las 8:45 AM y la Reunión 4 es a las 9:15 AM. ¿Cuál es el orden de las reuniones por hora de inicio?"
+  },
+  {
+    "en": "If Task A ends at 5:00 PM and took 2 hours 20 minutes, at what time did Task A start?",
+    "domain": "temporal",
+    "structure": "duration_subtract",
+    "answer": "2:40 PM",
+    "zh": "如果任务A在下午5:00结束，耗时2小时20分钟，任务A是几点开始的？",
+    "es": "Si la Tarea A termina a las 5:00 PM y duró 2 horas 20 minutos, ¿a qué hora comenzó la Tarea A?"
+  },
+  {
+    "en": "A conference call is scheduled at 11:00 AM UTC. What time is the call in IST (UTC+5:30)?",
+    "domain": "temporal",
+    "structure": "timezone",
+    "answer": "4:30 PM IST",
+    "zh": "电话会议安排在世界协调时间上午11:00。印度标准时间（UTC+5:30）是几点？",
+    "es": "Una llamada de conferencia está programada a las 11:00 AM UTC. ¿A qué hora es la llamada en IST (UTC+5:30)?"
+  },
+  {
+    "en": "Task A starts at 3:00 PM and ends at 3:45 PM. Task B starts at 4:00 PM. Is there any overlap between Task A and Task B?",
+    "domain": "temporal",
+    "structure": "overlap_detect",
+    "answer": "no",
+    "zh": "任务A于下午3:00开始，下午3:45结束。任务B于下午4:00开始。任务A和任务B有重叠吗？",
+    "es": "La Tarea A comienza a las 3:00 PM y termina a las 3:45 PM. La Tarea B comienza a las 4:00 PM. ¿Hay alguna superposición entre la Tarea A y la Tarea B?"
+  },
+  {
+    "en": "Meeting A starts at 9:00 AM and lasts 1 hour. Meeting B starts at 9:45 AM and lasts 45 minutes. Do the meetings overlap?",
+    "domain": "temporal",
+    "structure": "overlap_detect",
+    "answer": "yes",
+    "zh": "会议A于上午9:00开始，持续1小时。会议B于上午9:45开始，持续45分钟。这两个会议有重叠吗？",
+    "es": "La reunión A comienza a las 9:00 AM y dura 1 hora. La reunión B comienza a las 9:45 AM y dura 45 minutos. ¿Las reuniones se superponen?"
+  },
+  {
+    "en": "Event X begins at 2:15 PM and lasts 2 hours and 30 minutes. What time does Event X end?",
+    "domain": "temporal",
+    "structure": "duration_add",
+    "answer": "4:45 PM",
+    "zh": "事件X于下午2:15开始，持续2小时30分钟。事件X几点结束？",
+    "es": "El Evento X comienza a las 2:15 PM y dura 2 horas y 30 minutos. ¿A qué hora termina el Evento X?"
+  },
+  {
+    "en": "Task A must finish before Task B starts. Task B is scheduled for 11:00 AM. Task A takes 1 hour. What is the latest Task A can start?",
+    "domain": "temporal",
+    "structure": "deadline",
+    "answer": "10:00 AM",
+    "zh": "任务A必须在任务B开始前完成。任务B定于上午11:00。任务A需要1小时。任务A最晚几点可以开始？",
+    "es": "La Tarea A debe terminar antes de que comience la Tarea B. La Tarea B está programada para las 11:00 AM. La Tarea A dura 1 hora. ¿Cuál es la última hora en que puede comenzar la Tarea A?"
+  },
+  {
+    "en": "Workshop C starts at 1:00 PM Eastern Time and lasts 2 hours. If a participant is in Pacific Time, what local time does the workshop end for them?",
+    "domain": "temporal",
+    "structure": "timezone",
+    "answer": "3:00 PM Pacific Time",
+    "zh": "C研讨会于东部时间下午1:00开始，持续2小时。如果一名参与者在太平洋时间，研讨会当地时间几点结束？",
+    "es": "El Taller C comienza a la 1:00 PM Hora del Este y dura 2 horas. Si un participante está en Hora del Pacífico, ¿a qué hora local termina el taller para él?"
+  },
+  {
+    "en": "Session 1 starts at 8:00 AM. Session 2 begins 30 minutes after Session 1 ends. If Session 1 lasts 45 minutes, when does Session 2 start?",
+    "domain": "temporal",
+    "structure": "relative_chain",
+    "answer": "9:15 AM",
+    "zh": "第一场会议于上午8:00开始。第二场会议在第一场会议结束后30分钟开始。如果第一场会议持续45分钟，第二场会议几点开始？",
+    "es": "La Sesión 1 comienza a las 8:00 AM. La Sesión 2 comienza 30 minutos después de que termine la Sesión 1. Si la Sesión 1 dura 45 minutos, ¿cuándo comienza la Sesión 2?"
+  },
+  {
+    "en": "Team meeting is from 10:00 AM to 11:30 AM. Project review is from 11:00 AM to 12:00 PM. Do these two events overlap?",
+    "domain": "temporal",
+    "structure": "overlap_detect",
+    "answer": "yes",
+    "zh": "团队会议从上午10:00到上午11:30。项目评审从上午11:00到中午12:00。这两个事件有重叠吗？",
+    "es": "La reunión de equipo es de 10:00 AM a 11:30 AM. La revisión del proyecto es de 11:00 AM a 12:00 PM. ¿Se superponen estos dos eventos?"
+  },
+  {
+    "en": "Presentation A starts at 3:20 PM and ends at 4:05 PM. How long does Presentation A last?",
+    "domain": "temporal",
+    "structure": "duration_subtract",
+    "answer": "45 minutes",
+    "zh": "演讲A于下午3:20开始，下午4:05结束。演讲A持续多长时间？",
+    "es": "La Presentación A comienza a las 3:20 PM y termina a las 4:05 PM. ¿Cuánto dura la Presentación A?"
+  },
+  {
+    "en": "Call X begins at 12:00 PM and lasts 1 hour. Call Y can only start after Call X ends, with a mandatory 15-minute gap. What is the earliest Call Y can start?",
+    "domain": "temporal",
+    "structure": "gap_compute",
+    "answer": "1:15 PM",
+    "zh": "电话X于中午12:00开始，持续1小时。电话Y只能在电话X结束后开始，且必须间隔15分钟。电话Y最早可以在什么时候开始？",
+    "es": "La Llamada X comienza a las 12:00 PM y dura 1 hora. La Llamada Y solo puede empezar después de que termine la Llamada X, con una pausa obligatoria de 15 minutos. ¿A qué hora puede comenzar la Llamada Y como más temprano?"
+  },
+  {
+    "en": "Webinar 1 starts at 2:00 PM and lasts 75 minutes. Webinar 2 starts at 3:00 PM. Does Webinar 2 overlap with Webinar 1?",
+    "domain": "temporal",
+    "structure": "overlap_detect",
+    "answer": "yes",
+    "zh": "网络研讨会1于下午2:00开始，持续75分钟。网络研讨会2于下午3:00开始。网络研讨会2与网络研讨会1有重叠吗？",
+    "es": "El Webinar 1 comienza a las 2:00 PM y dura 75 minutos. El Webinar 2 comienza a las 3:00 PM. ¿El Webinar 2 se superpone con el Webinar 1?"
+  },
+  {
+    "en": "Event M is before Event N, and Event N is before Event O. Which event happens last?",
+    "domain": "temporal",
+    "structure": "ordering_3",
+    "answer": "Event O",
+    "zh": "事件M在事件N之前，事件N在事件O之前。哪个事件最后发生？",
+    "es": "El Evento M es antes que el Evento N, y el Evento N es antes que el Evento O. ¿Qué evento ocurre al final?"
+  },
+  {
+    "en": "A flight leaves New York at 4:00 PM Eastern Time and lands in Chicago after 2 hours. What local time does the flight arrive in Chicago (Central Time)?",
+    "domain": "temporal",
+    "structure": "timezone",
+    "answer": "5:00 PM Central Time",
+    "zh": "一架航班于美国东部时间下午4:00从纽约起飞，2小时后降落在芝加哥。该航班在芝加哥（中部时间）当地时间几点到达？",
+    "es": "Un vuelo sale de Nueva York a las 4:00 PM hora del Este y aterriza en Chicago después de 2 horas. ¿A qué hora local llega el vuelo a Chicago (hora Central)?"
+  },
+  {
+    "en": "Interview A is at 9:00 AM. Interview B is scheduled for 30 minutes after Interview A ends. If Interview A lasts 1 hour, at what time is Interview B?",
+    "domain": "temporal",
+    "structure": "relative_chain",
+    "answer": "10:30 AM",
+    "zh": "面试A在上午9:00。面试B安排在面试A结束后30分钟。如果面试A持续1小时，面试B在几点？",
+    "es": "La Entrevista A es a las 9:00 AM. La Entrevista B está programada para 30 minutos después de que termine la Entrevista A. Si la Entrevista A dura 1 hora, ¿a qué hora es la Entrevista B?"
+  },
+  {
+    "en": "Seminar X starts at 8:45 AM, and Seminar Y starts at 9:15 AM. If both last 1 hour, do their times overlap?",
+    "domain": "temporal",
+    "structure": "overlap_detect",
+    "answer": "yes",
+    "zh": "研讨会X于上午8:45开始，研讨会Y于上午9:15开始。如果两者都持续1小时，它们的时间有重叠吗？",
+    "es": "El Seminario X comienza a las 8:45 AM y el Seminario Y comienza a las 9:15 AM. Si ambos duran 1 hora, ¿se superponen sus horarios?"
+  },
+  {
+    "en": "Workshop P ends at 4:00 PM and lasted 2 hours and 15 minutes. What time did it start?",
+    "domain": "temporal",
+    "structure": "duration_subtract",
+    "answer": "1:45 PM",
+    "zh": "工作坊P于下午4:00结束，持续了2小时15分钟。它是几点开始的？",
+    "es": "El Taller P termina a las 4:00 PM y duró 2 horas y 15 minutos. ¿A qué hora comenzó?"
+  },
+  {
+    "en": "Task 1 starts at 7:30 AM and lasts 40 minutes. Task 2 starts at 8:15 AM. Is there a gap between the two tasks, and if so, how long?",
+    "domain": "temporal",
+    "structure": "gap_compute",
+    "answer": "5 minutes",
+    "zh": "任务1于上午7:30开始，持续40分钟。任务2于上午8:15开始。这两个任务之间有间隔吗？如果有，间隔多长？",
+    "es": "La Tarea 1 comienza a las 7:30 AM y dura 40 minutos. La Tarea 2 comienza a las 8:15 AM. ¿Hay un intervalo entre las dos tareas y, si es así, de cuánto es?"
+  },
+  {
+    "en": "Meeting A is before Meeting B, Meeting C is after Meeting B, and Meeting D is before Meeting C. What is the correct order of these meetings?",
+    "domain": "temporal",
+    "structure": "ordering_4",
+    "answer": "Meeting A, Meeting B, Meeting D, Meeting C",
+    "zh": "会议A在会议B之前，会议C在会议B之后，会议D在会议C之前。这些会议的正确顺序是什么？",
+    "es": "La Reunión A es antes que la Reunión B, la Reunión C es después de la Reunión B y la Reunión D es antes de la Reunión C. ¿Cuál es el orden correcto de estas reuniones?"
+  },
+  {
+    "en": "A train departs at 11:10 AM, travels for 2 hours and 35 minutes, and arrives at its destination. What time does it arrive?",
+    "domain": "temporal",
+    "structure": "duration_add",
+    "answer": "1:45 PM",
+    "zh": "一列火车于上午11:10出发，行驶2小时35分钟后到达目的地。它几点到达？",
+    "es": "Un tren sale a las 11:10 AM, viaja durante 2 horas y 35 minutos, y llega a su destino. ¿A qué hora llega?"
+  },
+  {
+    "en": "An assignment is due at 5:00 PM. If you start working on it at 2:30 PM and need 2 hours and 45 minutes, will you finish on time?",
+    "domain": "temporal",
+    "structure": "deadline",
+    "answer": "no",
+    "zh": "一项作业在下午5:00截止。如果你在下午2:30开始做，需要2小时45分钟，你能按时完成吗？",
+    "es": "Una tarea debe entregarse a las 5:00 PM. Si empiezas a trabajar en ella a las 2:30 PM y necesitas 2 horas y 45 minutos, ¿terminarás a tiempo?"
+  },
+  {
+    "en": "Lunch break starts at 12:00 PM and lasts 1 hour. The next meeting starts 15 minutes after lunch ends. At what time does the meeting start?",
+    "domain": "temporal",
+    "structure": "relative_chain",
+    "answer": "1:15 PM",
+    "zh": "午休从中午12:00开始，持续1小时。下一个会议在午休结束后15分钟开始。会议几点开始？",
+    "es": "El almuerzo comienza a las 12:00 PM y dura 1 hora. La siguiente reunión comienza 15 minutos después de que termine el almuerzo. ¿A qué hora comienza la reunión?"
+  },
+  {
+    "en": "Conference A is from 10:00 AM to 11:30 AM. Conference B is from 11:30 AM to 1:00 PM. Do these conferences overlap?",
+    "domain": "temporal",
+    "structure": "overlap_detect",
+    "answer": "no",
+    "zh": "会议A从上午10:00到上午11:30。会议B从上午11:30到下午1:00。这两个会议有重叠吗？",
+    "es": "La Conferencia A es de 10:00 AM a 11:30 AM. La Conferencia B es de 11:30 AM a 1:00 PM. ¿Se superponen estas conferencias?"
+  },
+  {
+    "en": "Workshop starts at 3:00 PM and ends at 5:15 PM. How many minutes does the workshop last?",
+    "domain": "temporal",
+    "structure": "duration_subtract",
+    "answer": "135 minutes",
+    "zh": "工作坊于下午3:00开始，下午5:15结束。工作坊持续了多少分钟？",
+    "es": "El taller comienza a las 3:00 PM y termina a las 5:15 PM. ¿Cuántos minutos dura el taller?"
+  },
+  {
+    "en": "You have a meeting scheduled for 4:00 PM London time. If you're in New York (5 hours behind London), what time should you join?",
+    "domain": "temporal",
+    "structure": "timezone",
+    "answer": "11:00 AM",
+    "zh": "你有一个会议安排在伦敦时间下午4:00。如果你在纽约（比伦敦晚5小时），你应该在几点参加？",
+    "es": "Tienes una reunión programada para las 4:00 PM hora de Londres. Si estás en Nueva York (5 horas detrás de Londres), ¿a qué hora debes unirte?"
+  },
+  {
+    "en": "Task X starts at 8:30 AM and finishes at 12:10 PM. Task Y starts at 11:00 AM and ends at 1:00 PM. Which task ends later?",
+    "domain": "temporal",
+    "structure": "earliest_latest",
+    "answer": "Task Y",
+    "zh": "任务X于上午8:30开始，上午12:10结束。任务Y于上午11:00开始，下午1:00结束。哪个任务结束得更晚？",
+    "es": "La Tarea X comienza a las 8:30 AM y termina a las 12:10 PM. La Tarea Y comienza a las 11:00 AM y termina a la 1:00 PM. ¿Qué tarea termina más tarde?"
+  },
+  {
+    "en": "Meeting A starts at 10:00 AM and lasts 50 minutes. Meeting B starts 10 minutes before Meeting A ends. Does Meeting B overlap with Meeting A?",
+    "domain": "temporal",
+    "structure": "overlap_detect",
+    "answer": "yes",
+    "zh": "会议A于上午10:00开始，持续50分钟。会议B在会议A结束前10分钟开始。会议B与会议A有重叠吗？",
+    "es": "La Reunión A comienza a las 10:00 AM y dura 50 minutos. La Reunión B comienza 10 minutos antes de que termine la Reunión A. ¿La Reunión B se superpone con la Reunión A?"
+  },
+  {
+    "en": "Lecture 1 starts at 9:00 AM and ends at 10:15 AM. Lecture 2 starts at 10:30 AM. What is the gap between the two lectures?",
+    "domain": "temporal",
+    "structure": "gap_compute",
+    "answer": "15 minutes",
+    "zh": "讲座1于上午9:00开始，上午10:15结束。讲座2于上午10:30开始。这两场讲座之间的间隔是多少？",
+    "es": "La Clase 1 comienza a las 9:00 AM y termina a las 10:15 AM. La Clase 2 comienza a las 10:30 AM. ¿Cuál es el intervalo entre las dos clases?"
+  },
+  {
+    "en": "On a picnic blanket, there is a basket to the right of a bottle. An apple is on top of the basket, and a sandwich is between the bottle and a cup. What is between the bottle and the cup?",
+    "domain": "scene_description",
+    "structure": "between",
+    "answer": "sandwich",
+    "zh": "在野餐垫上，篮子在瓶子的右边。一个苹果在篮子上面，一个三明治在瓶子和杯子之间。什么在瓶子和杯子之间？",
+    "es": "Sobre una manta de picnic, hay una cesta a la derecha de una botella. Una manzana está encima de la cesta y un sándwich está entre la botella y una taza. ¿Qué está entre la botella y la taza?"
+  },
+  {
+    "en": "In a living room, a remote is on top of a book, which is on the coffee table. Next to the book (on the left) is a mug, and to the right of the book is a small plant. What is directly on top of the coffee table?",
+    "domain": "scene_description",
+    "structure": "vertical",
+    "answer": "book",
+    "zh": "在客厅里，遥控器在一本书上，这本书在咖啡桌上。书的左边是一个马克杯，书的右边是一个小植物。什么物体正好在咖啡桌上？",
+    "es": "En una sala de estar, un control remoto está encima de un libro, que está sobre la mesa de centro. Al lado del libro (a la izquierda) hay una taza, y a la derecha del libro hay una pequeña planta. ¿Qué está directamente encima de la mesa de centro?"
+  },
+  {
+    "en": "In a garden, a red ball is to the left of a yellow watering can. A blue shovel is behind the watering can, and a potted plant is in front of the yellow watering can. What is to the left of the watering can?",
+    "domain": "scene_description",
+    "structure": "horizontal",
+    "answer": "red ball",
+    "zh": "在花园里，一个红色的球在黄色浇水壶的左边。一个蓝色铲子在浇水壶后面，一盆植物在黄色浇水壶前面。什么在浇水壶的左边？",
+    "es": "En un jardín, una pelota roja está a la izquierda de una regadera amarilla. Una pala azul está detrás de la regadera y una planta en maceta está delante de la regadera amarilla. ¿Qué está a la izquierda de la regadera?"
+  },
+  {
+    "en": "Three books are stacked on a shelf, with a vase on top of the highest book. A clock is to the right of the stack. Which object is highest?",
+    "domain": "scene_description",
+    "structure": "relative_height",
+    "answer": "vase",
+    "zh": "三个书本叠放在书架上，最高的书本上有一个花瓶。一个时钟在书堆的右边。哪个物体最高？",
+    "es": "Tres libros están apilados en un estante, con un jarrón encima del libro más alto. Un reloj está a la derecha de la pila. ¿Qué objeto está más alto?"
+  },
+  {
+    "en": "At a playground, a blue swing is between a red slide and a yellow seesaw. A green bench is behind the swing. What is between the slide and the seesaw?",
+    "domain": "scene_description",
+    "structure": "between",
+    "answer": "blue swing",
+    "zh": "在操场上，一个蓝色秋千在红色滑梯和黄色跷跷板之间。一个绿色长椅在秋千后面。什么在滑梯和跷跷板之间？",
+    "es": "En un parque infantil, un columpio azul está entre un tobogán rojo y un balancín amarillo. Un banco verde está detrás del columpio. ¿Qué está entre el tobogán y el balancín?"
+  },
+  {
+    "en": "Four chairs are arranged in a square around a round table. A vase is in the center of the table. How many objects are on the table?",
+    "domain": "scene_description",
+    "structure": "counting",
+    "answer": "1",
+    "zh": "四把椅子围着一个圆桌呈方形摆放。一个花瓶在桌子的中央。桌子上有多少个物体？",
+    "es": "Cuatro sillas están dispuestas en un cuadrado alrededor de una mesa redonda. Un jarrón está en el centro de la mesa. ¿Cuántos objetos hay sobre la mesa?"
+  },
+  {
+    "en": "In a kitchen, a bowl is inside a sink. To the right of the sink is a toaster, and to the left is a cutting board. What object is inside another object?",
+    "domain": "scene_description",
+    "structure": "containment",
+    "answer": "bowl",
+    "zh": "在厨房里，一个碗在水槽里。水槽的右边是一个烤面包机，左边是一个切菜板。哪个物体在另一个物体里面？",
+    "es": "En una cocina, un tazón está dentro de un fregadero. A la derecha del fregadero hay una tostadora y a la izquierda una tabla de cortar. ¿Qué objeto está dentro de otro objeto?"
+  },
+  {
+    "en": "On a snowy field, a large snowman has a hat on its head, a carrot nose, and a scarf wrapped around its neck. Which object is highest?",
+    "domain": "scene_description",
+    "structure": "relative_height",
+    "answer": "hat",
+    "zh": "在雪地上，一个大雪人头上戴着帽子，鼻子是胡萝卜，脖子上围着围巾。哪个物体最高？",
+    "es": "En un campo nevado, un gran muñeco de nieve tiene un sombrero en la cabeza, una nariz de zanahoria y una bufanda alrededor del cuello. ¿Qué objeto está más alto?"
+  },
+  {
+    "en": "A classroom desk has a pencil box to the left, a notebook in the middle, and a ruler to the right. An eraser is on top of the notebook. What is to the right of the notebook?",
+    "domain": "scene_description",
+    "structure": "horizontal",
+    "answer": "ruler",
+    "zh": "教室的课桌左边有一个铅笔盒，中间有一本笔记本，右边有一把尺子。一个橡皮在笔记本上面。什么在笔记本的右边？",
+    "es": "Un escritorio de aula tiene una caja de lápices a la izquierda, un cuaderno en el medio y una regla a la derecha. Una goma está encima del cuaderno. ¿Qué está a la derecha del cuaderno?"
+  },
+  {
+    "en": "Five colored blocks are stacked: red at the bottom, then yellow, green, blue, and white at the top. Which block is second from the top?",
+    "domain": "scene_description",
+    "structure": "vertical",
+    "answer": "blue",
+    "zh": "五个彩色积木叠放：红色在最底下，然后是黄色、绿色、蓝色，白色在最上面。哪一个积木是从上面数第二个？",
+    "es": "Cinco bloques de colores están apilados: rojo en la parte inferior, luego amarillo, verde, azul y blanco en la parte superior. ¿Qué bloque está en segundo lugar desde arriba?"
+  },
+  {
+    "en": "On a kitchen counter, a cutting board is between a loaf of bread and a bowl of fruit. A knife is on top of the cutting board. What is between the loaf of bread and the bowl of fruit?",
+    "domain": "scene_description",
+    "structure": "between",
+    "answer": "cutting board",
+    "zh": "在厨房台面上，切菜板在一条面包和一碗水果之间。一把刀在切菜板上面。什么在面包和水果碗之间？",
+    "es": "En una encimera de cocina, una tabla de cortar está entre una barra de pan y un tazón de fruta. Un cuchillo está encima de la tabla de cortar. ¿Qué está entre la barra de pan y el tazón de fruta?"
+  },
+  {
+    "en": "In a park, a bench is next to a tree. A trash can is to the right of the bench, and a bike is to the left. What is to the right of the bench?",
+    "domain": "scene_description",
+    "structure": "horizontal",
+    "answer": "trash can",
+    "zh": "在公园里，一条长椅在一棵树旁边。垃圾桶在长椅的右边，自行车在左边。什么在长椅的右边？",
+    "es": "En un parque, un banco está junto a un árbol. Un basurero está a la derecha del banco y una bicicleta a la izquierda. ¿Qué está a la derecha del banco?"
+  },
+  {
+    "en": "On a classroom whiteboard, four magnets are placed in a 2x2 grid: red (top left), blue (top right), green (bottom left), and yellow (bottom right). Which magnet is at the bottom right?",
+    "domain": "scene_description",
+    "structure": "grid",
+    "answer": "yellow",
+    "zh": "在教室白板上，四个磁铁呈2x2排列：红色（左上），蓝色（右上），绿色（左下），黄色（右下）。哪个磁铁在右下角？",
+    "es": "En una pizarra de aula, cuatro imanes están colocados en una cuadrícula de 2x2: rojo (arriba a la izquierda), azul (arriba a la derecha), verde (abajo a la izquierda) y amarillo (abajo a la derecha). ¿Qué imán está en la parte inferior derecha?"
+  },
+  {
+    "en": "A jewelry box contains a ring, a bracelet, and a necklace. The box sits on a dresser, with a lamp to its left. How many objects are inside the jewelry box?",
+    "domain": "scene_description",
+    "structure": "containment",
+    "answer": "3",
+    "zh": "一个首饰盒里有一个戒指、一个手链和一条项链。盒子放在梳妆台上，左边有一盏台灯。首饰盒里有多少个物体？",
+    "es": "Una caja de joyas contiene un anillo, una pulsera y un collar. La caja está sobre una cómoda, con una lámpara a su izquierda. ¿Cuántos objetos hay dentro de la caja de joyas?"
+  },
+  {
+    "en": "On a circular dining table, plates are arranged at four positions: north, east, south, and west. A vase is at the center. Which plate is directly opposite the east plate?",
+    "domain": "scene_description",
+    "structure": "circular",
+    "answer": "west plate",
+    "zh": "在圆形餐桌上，盘子摆放在四个位置：北、东、南和西。一个花瓶在中央。哪个盘子正对着东边的盘子？",
+    "es": "En una mesa de comedor circular, los platos están dispuestos en cuatro posiciones: norte, este, sur y oeste. Un jarrón está en el centro. ¿Qué plato está directamente opuesto al plato del este?"
+  },
+  {
+    "en": "On a shelf, a stack of three novels is to the right of a photo frame. A candle is on top of the novels, and a small figurine is behind the candle. What is behind the candle?",
+    "domain": "scene_description",
+    "structure": "mixed_3d",
+    "answer": "small figurine",
+    "zh": "在书架上，三本小说叠在一起，位于相框的右边。一根蜡烛在小说上面，一个小雕像在蜡烛后面。什么在蜡烛后面？",
+    "es": "En un estante, una pila de tres novelas está a la derecha de un portarretratos. Una vela está encima de las novelas y una pequeña figura está detrás de la vela. ¿Qué está detrás de la vela?"
+  },
+  {
+    "en": "In a garage, a toolbox is inside a cabinet. A broom leans against the left side of the cabinet, and a ladder stands to the right. What object is inside the cabinet?",
+    "domain": "scene_description",
+    "structure": "containment",
+    "answer": "toolbox",
+    "zh": "在车库里，一个工具箱在柜子里。一把扫帚靠在柜子的左侧，一把梯子在右边。哪个物体在柜子里？",
+    "es": "En un garaje, una caja de herramientas está dentro de un gabinete. Una escoba está apoyada en el lado izquierdo del gabinete y una escalera está a la derecha. ¿Qué objeto está dentro del gabinete?"
+  },
+  {
+    "en": "Six chairs are arranged in a circle around a fire pit. A log is between the north and northeast chairs. What is between the north and northeast chairs?",
+    "domain": "scene_description",
+    "structure": "circular",
+    "answer": "log",
+    "zh": "六把椅子围着一个火堆呈圆形摆放。一根木头在北边和东北边的椅子之间。什么在北边和东北边的椅子之间？",
+    "es": "Seis sillas están dispuestas en círculo alrededor de una fogata. Un tronco está entre las sillas del norte y noreste. ¿Qué está entre las sillas del norte y noreste?"
+  },
+  {
+    "en": "On a work desk, a monitor is in the center, a mouse is to the right, and a keyboard is in front of the monitor. A notebook is to the left of the keyboard. What is to the left of the keyboard?",
+    "domain": "scene_description",
+    "structure": "horizontal",
+    "answer": "notebook",
+    "zh": "在工作桌上，显示器在中间，鼠标在右边，键盘在显示器前面。笔记本在键盘左边。什么在键盘左边？",
+    "es": "En un escritorio de trabajo, un monitor está en el centro, un ratón a la derecha y un teclado delante del monitor. Un cuaderno está a la izquierda del teclado. ¿Qué está a la izquierda del teclado?"
+  },
+  {
+    "en": "A treehouse contains a pillow, a blanket, and a flashlight. The blanket is under the pillow, and the flashlight is next to the pillow. Which object is under another object?",
+    "domain": "scene_description",
+    "structure": "layered",
+    "answer": "blanket",
+    "zh": "树屋里有一个枕头、一条毯子和一个手电筒。毯子在枕头下面，手电筒在枕头旁边。哪个物体在另一个物体下面？",
+    "es": "Una casa del árbol contiene una almohada, una manta y una linterna. La manta está debajo de la almohada y la linterna está junto a la almohada. ¿Qué objeto está debajo de otro objeto?"
+  },
+  {
+    "en": "On a chessboard, a white queen is at D4, a black rook is at F4, and a white pawn is at E5. What is between the white queen and the black rook horizontally?",
+    "domain": "scene_description",
+    "structure": "grid",
+    "answer": "none",
+    "zh": "在国际象棋棋盘上，一枚白皇后在D4，一枚黑车在F4，一枚白兵在E5。白皇后和黑车之间在水平方向上有什么？",
+    "es": "En un tablero de ajedrez, una reina blanca está en D4, una torre negra está en F4, y un peón blanco está en E5. ¿Qué hay entre la reina blanca y la torre negra horizontalmente?"
+  },
+  {
+    "en": "On a window sill, a cat is to the left of a potted plant, which is to the left of a photo frame. What is to the right of the potted plant?",
+    "domain": "scene_description",
+    "structure": "horizontal",
+    "answer": "photo frame",
+    "zh": "在窗台上，一只猫在一个盆栽的左边，盆栽在相框的左边。什么在盆栽的右边？",
+    "es": "En el alféizar de una ventana, un gato está a la izquierda de una planta en maceta, que está a la izquierda de un portarretratos. ¿Qué está a la derecha de la planta en maceta?"
+  },
+  {
+    "en": "In a closet, a red shirt hangs above a blue dress. A green hat sits on the shelf above the shirt. Which object is highest?",
+    "domain": "scene_description",
+    "structure": "relative_height",
+    "answer": "green hat",
+    "zh": "在衣橱里，一件红衬衫挂在蓝裙子上方。一个绿帽子放在衬衫上方的架子上。哪个物品最高？",
+    "es": "En un armario, una camisa roja cuelga encima de un vestido azul. Un sombrero verde está en el estante sobre la camisa. ¿Qué objeto está más alto?"
+  },
+  {
+    "en": "On a roundabout in a playground, four children sit at equal distances: Tom (north), Amy (east), Max (south), and Lily (west). Who is to the left of Amy?",
+    "domain": "scene_description",
+    "structure": "circular",
+    "answer": "Tom",
+    "zh": "在游乐场的转盘上，四个孩子等距离坐着：汤姆（北），艾米（东），马克斯（南），莉莉（西）。谁在艾米的左边？",
+    "es": "En un carrusel del parque, cuatro niños se sientan a igual distancia: Tom (norte), Amy (este), Max (sur) y Lily (oeste). ¿Quién está a la izquierda de Amy?"
+  },
+  {
+    "en": "On a mantelpiece, a clock is in the middle, flanked by two candlesticks, with a photo frame to the left of the left candlestick and a small plant to the right of the right candlestick. How many objects are on the mantelpiece?",
+    "domain": "scene_description",
+    "structure": "counting",
+    "answer": "5",
+    "zh": "在壁炉台上，一个钟表在中间，两边各有一个烛台，相框在左边烛台的左边，小植物在右边烛台的右边。壁炉台上有多少个物品？",
+    "es": "En la repisa de la chimenea, un reloj está en el medio, flanqueado por dos candelabros, con un portarretratos a la izquierda del candelabro izquierdo y una pequeña planta a la derecha del candelabro derecho. ¿Cuántos objetos hay en la repisa?"
+  },
+  {
+    "en": "On a round table, a vase is in the center. A book is to the left of the vase, a cup is to the right, and an apple is between the vase and the cup. What is to the left of the vase?",
+    "domain": "scene_description",
+    "structure": "horizontal",
+    "answer": "book",
+    "zh": "在圆桌上，一个花瓶在中央。一本书在花瓶的左边，一个杯子在右边，一个苹果在花瓶和杯子之间。什么在花瓶的左边？",
+    "es": "En una mesa redonda, un jarrón está en el centro. Un libro está a la izquierda del jarrón, una taza está a la derecha, y una manzana está entre el jarrón y la taza. ¿Qué está a la izquierda del jarrón?"
+  },
+  {
+    "en": "A stack of three boxes is in the garage. The red box is on the floor, the blue box is on top of the red box, and the yellow box is on top of the blue box. Which box is highest?",
+    "domain": "scene_description",
+    "structure": "vertical",
+    "answer": "yellow box",
+    "zh": "在车库里有三只箱子叠在一起。红箱子在地上，蓝箱子在红箱子上面，黄箱子在蓝箱子上面。哪只箱子最高？",
+    "es": "Una pila de tres cajas está en el garaje. La caja roja está en el suelo, la caja azul está encima de la caja roja, y la caja amarilla está encima de la caja azul. ¿Qué caja está más arriba?"
+  },
+  {
+    "en": "On the picnic blanket, a sandwich is placed between a soda can and a bag of chips. A banana is to the left of the chips. What is between the soda can and the bag of chips?",
+    "domain": "scene_description",
+    "structure": "between",
+    "answer": "sandwich",
+    "zh": "在野餐垫上，一个三明治夹在一罐汽水和一包薯片之间。一根香蕉在薯片的左边。什么在汽水和薯片之间？",
+    "es": "En la manta de picnic, un sándwich está entre una lata de refresco y una bolsa de papas fritas. Un plátano está a la izquierda de las papas fritas. ¿Qué está entre la lata de refresco y la bolsa de papas fritas?"
+  },
+  {
+    "en": "In the kitchen, a bowl is on the table. Inside the bowl are three oranges and a pear. How many objects are inside the bowl?",
+    "domain": "scene_description",
+    "structure": "containment",
+    "answer": "4",
+    "zh": "在厨房里，一个碗在桌子上。碗里有三个橙子和一个梨。碗里有多少个物品？",
+    "es": "En la cocina, un bol está sobre la mesa. Dentro del bol hay tres naranjas y una pera. ¿Cuántos objetos hay dentro del bol?"
+  },
+  {
+    "en": "In the living room, a lamp is to the left of a sofa, a coffee table is in front of the sofa, and a rug is under the coffee table. What is in front of the sofa?",
+    "domain": "scene_description",
+    "structure": "horizontal",
+    "answer": "coffee table",
+    "zh": "在客厅里，一盏灯在沙发的左边，茶几在沙发前面，地毯在茶几下面。什么在沙发前面？",
+    "es": "En la sala, una lámpara está a la izquierda de un sofá, una mesa de centro está frente al sofá, y una alfombra está debajo de la mesa de centro. ¿Qué está frente al sofá?"
+  },
+  {
+    "en": "On the classroom whiteboard, magnets are arranged in a 2x2 grid: a red magnet (top left), a blue magnet (top right), a green magnet (bottom left), and a yellow magnet (bottom right). Which magnet is in the bottom right position?",
+    "domain": "scene_description",
+    "structure": "grid",
+    "answer": "yellow magnet",
+    "zh": "在教室白板上，磁铁按2x2排列：红色磁铁（左上），蓝色磁铁（右上），绿色磁铁（左下），黄色磁铁（右下）。哪个磁铁在右下角？",
+    "es": "En la pizarra del aula, los imanes están dispuestos en una cuadrícula de 2x2: un imán rojo (arriba a la izquierda), un imán azul (arriba a la derecha), un imán verde (abajo a la izquierda) y un imán amarillo (abajo a la derecha). ¿Qué imán está en la posición inferior derecha?"
+  },
+  {
+    "en": "A park bench has a hat to its left, a backpack to its right, and a lunchbox on the seat. What is to the right of the bench?",
+    "domain": "scene_description",
+    "structure": "horizontal",
+    "answer": "backpack",
+    "zh": "公园长椅左边有一顶帽子，右边有一个背包，座位上有一个午餐盒。什么在长椅的右边？",
+    "es": "Un banco del parque tiene un sombrero a su izquierda, una mochila a su derecha y una lonchera en el asiento. ¿Qué está a la derecha del banco?"
+  },
+  {
+    "en": "In a toy box, a teddy bear is under a toy truck, which is under a puzzle box, and a doll is on top of everything. Which object is at the bottom?",
+    "domain": "scene_description",
+    "structure": "vertical",
+    "answer": "teddy bear",
+    "zh": "在玩具箱里，一只泰迪熊在玩具卡车下面，玩具卡车在拼图盒下面，洋娃娃在最上面。哪个物品在最底下？",
+    "es": "En una caja de juguetes, un oso de peluche está debajo de un camión de juguete, que está debajo de una caja de rompecabezas, y una muñeca está encima de todo. ¿Qué objeto está en el fondo?"
+  },
+  {
+    "en": "On the kitchen counter, a plate is between a fork and a spoon. A cup is to the right of the spoon. What is between the fork and the spoon?",
+    "domain": "scene_description",
+    "structure": "between",
+    "answer": "plate",
+    "zh": "在厨房台面上，一个盘子在叉子和勺子之间。一个杯子在勺子的右边。什么在叉子和勺子之间？",
+    "es": "En la encimera de la cocina, un plato está entre un tenedor y una cuchara. Una taza está a la derecha de la cuchara. ¿Qué está entre el tenedor y la cuchara?"
+  },
+  {
+    "en": "On the playground, a slide is to the left of a swing, which is to the left of a seesaw. What is to the left of the seesaw?",
+    "domain": "scene_description",
+    "structure": "horizontal",
+    "answer": "swing",
+    "zh": "在操场上，滑梯在秋千的左边，秋千在跷跷板的左边。什么在跷跷板的左边？",
+    "es": "En el parque infantil, un tobogán está a la izquierda de un columpio, que está a la izquierda de un sube y baja. ¿Qué está a la izquierda del sube y baja?"
+  },
+  {
+    "en": "At a dinner table, a bowl is stacked on a plate, and a napkin is under the plate. A fork is to the left of the plate. How many objects are stacked vertically?",
+    "domain": "scene_description",
+    "structure": "vertical",
+    "answer": "2",
+    "zh": "在餐桌上，一个碗叠在盘子上，餐巾在盘子下面。一个叉子在盘子的左边。有多少个物品是垂直叠放的？",
+    "es": "En una mesa de comedor, un bol está apilado sobre un plato, y una servilleta está debajo del plato. Un tenedor está a la izquierda del plato. ¿Cuántos objetos están apilados verticalmente?"
+  },
+  {
+    "en": "In a garden bed, flowers are planted in a row: tulip, daisy, rose, and lily from left to right. What is to the right of the daisy?",
+    "domain": "scene_description",
+    "structure": "horizontal",
+    "answer": "rose",
+    "zh": "在花坛里，花按顺序种成一排：从左到右是郁金香、雏菊、玫瑰和百合。什么在雏菊的右边？",
+    "es": "En un cantero de jardín, las flores están plantadas en fila: tulipán, margarita, rosa y lirio de izquierda a derecha. ¿Qué está a la derecha de la margarita?"
+  },
+  {
+    "en": "On the bookshelf, a globe is on the top shelf, a clock is on the middle shelf, and a photo frame is on the bottom shelf. Which object is positioned highest?",
+    "domain": "scene_description",
+    "structure": "relative_height",
+    "answer": "globe",
+    "zh": "在书架上，地球仪在最上层，钟表在中间层，相框在最下层。哪个物品位置最高？",
+    "es": "En la estantería, un globo terráqueo está en la repisa superior, un reloj está en la repisa del medio y un portarretratos está en la repisa inferior. ¿Qué objeto está más alto?"
+  },
+  {
+    "en": "In a refrigerator, milk is on the top shelf, eggs are on the middle shelf, juice is on the bottom shelf, and cheese is inside the vegetable drawer at the bottom. Which object is inside another?",
+    "domain": "scene_description",
+    "structure": "containment",
+    "answer": "cheese",
+    "zh": "在冰箱里，牛奶在最上层，鸡蛋在中间层，果汁在最下层，奶酪在最底部的蔬菜抽屉里。哪个物品在另一个物品里面？",
+    "es": "En un refrigerador, la leche está en la repisa superior, los huevos están en la repisa del medio, el jugo está en la repisa inferior y el queso está dentro del cajón de verduras en la parte inferior. ¿Qué objeto está dentro de otro?"
+  },
+  {
+    "en": "In the sandpit, a red shovel is to the left of a blue bucket, a green rake is between them, and a yellow ball is on top of the blue bucket. What is between the red shovel and the blue bucket?",
+    "domain": "scene_description",
+    "structure": "between",
+    "answer": "green rake",
+    "zh": "在沙坑里，红铲子在蓝桶左边，绿耙子在它们之间，黄球在蓝桶上面。什么在红铲子和蓝桶之间？",
+    "es": "En el arenero, una pala roja está a la izquierda de un balde azul, un rastrillo verde está entre ellos y una pelota amarilla está encima del balde azul. ¿Qué está entre la pala roja y el balde azul?"
+  },
+  {
+    "en": "On the office desk, a laptop is in the middle, a notebook is to its left, a pen is to the left of the notebook, and a coffee mug is to the right of the laptop. What is to the right of the laptop?",
+    "domain": "scene_description",
+    "structure": "horizontal",
+    "answer": "coffee mug",
+    "zh": "在办公桌上，笔记本电脑在中间，笔记本在它的左边，钢笔在笔记本的左边，咖啡杯在笔记本电脑的右边。笔记本电脑的右边是什么？",
+    "es": "En el escritorio de la oficina, una laptop está en el medio, un cuaderno está a su izquierda, un bolígrafo está a la izquierda del cuaderno y una taza de café está a la derecha de la laptop. ¿Qué está a la derecha de la laptop?"
+  },
+  {
+    "en": "In the closet, a jacket is hanging on the left, a scarf is hanging in the middle, and a hat is on the shelf above the scarf. Which object is above the scarf?",
+    "domain": "scene_description",
+    "structure": "relative_height",
+    "answer": "hat",
+    "zh": "在衣橱里，夹克挂在左边，围巾挂在中间，帽子在围巾上方的架子上。哪个物品在围巾上方？",
+    "es": "En el armario, una chaqueta está colgada a la izquierda, una bufanda está colgada en el medio y un sombrero está en el estante sobre la bufanda. ¿Qué objeto está sobre la bufanda?"
+  },
+  {
+    "en": "On the dining table, a plate is in the center, with a fork to the left, a knife to the right, and a glass above the plate. How many objects are on the table?",
+    "domain": "scene_description",
+    "structure": "counting",
+    "answer": "4",
+    "zh": "在餐桌上，盘子在中间，左边有叉子，右边有刀子，盘子上方有玻璃杯。桌子上有多少个物品？",
+    "es": "En la mesa del comedor, un plato está en el centro, con un tenedor a la izquierda, un cuchillo a la derecha y un vaso encima del plato. ¿Cuántos objetos hay en la mesa?"
+  },
+  {
+    "en": "In the art studio, an easel is in the center of the room, a stool is in front of the easel, a paintbrush is on top of the stool, and a paint palette is on the floor beside the stool. Which object is highest?",
+    "domain": "scene_description",
+    "structure": "layered",
+    "answer": "paintbrush",
+    "zh": "在美术工作室，画架在房间中央，凳子在画架前面，画笔在凳子上面，调色板在凳子旁边的地板上。哪个物品最高？",
+    "es": "En el estudio de arte, un caballete está en el centro de la habitación, un taburete está delante del caballete, un pincel está encima del taburete y una paleta de pintura está en el suelo al lado del taburete. ¿Qué objeto está más alto?"
+  },
+  {
+    "en": "On a circular rug, four cushions are placed at equal distances: red (north), blue (east), yellow (south), and green (west). What is to the left of the blue cushion?",
+    "domain": "scene_description",
+    "structure": "circular",
+    "answer": "red cushion",
+    "zh": "在圆形地毯上，四个靠垫等距放置：红色（北），蓝色（东），黄色（南），绿色（西）。蓝色靠垫的左边是什么？",
+    "es": "Sobre una alfombra circular, cuatro cojines están colocados a igual distancia: rojo (norte), azul (este), amarillo (sur) y verde (oeste). ¿Qué está a la izquierda del cojín azul?"
+  },
+  {
+    "en": "In the fish tank, a castle decoration is in the back left corner, a treasure chest is in the back right, a plant is in the front left, and a rock is in the front right. Which object is in the front right position?",
+    "domain": "scene_description",
+    "structure": "grid",
+    "answer": "rock",
+    "zh": "在鱼缸里，城堡装饰在左后角，宝箱在右后角，水草在左前方，石头在右前方。哪个物品在右前方的位置？",
+    "es": "En la pecera, una decoración de castillo está en la esquina trasera izquierda, un cofre del tesoro está en la trasera derecha, una planta está en la delantera izquierda y una roca está en la delantera derecha. ¿Qué objeto está en la posición delantera derecha?"
+  },
+  {
+    "en": "On the music stand, a sheet music book is open, with a pencil on top of it, and a bookmark inside the book. Which object is inside another?",
+    "domain": "scene_description",
+    "structure": "containment",
+    "answer": "bookmark",
+    "zh": "在乐谱架上，乐谱书是打开的，铅笔放在书上，书签夹在书里。哪个物品在另一个物品里面？",
+    "es": "En el atril, un libro de partituras está abierto, con un lápiz encima y un marcador dentro del libro. ¿Qué objeto está dentro de otro?"
+  },
+  {
+    "en": "In the playground sandbox, a blue pail is at the center, a red shovel is to the north, a green mold to the east, a yellow dump truck to the south, and a purple rake to the west. What is between the green mold and the purple rake?",
+    "domain": "scene_description",
+    "structure": "circular",
+    "answer": "blue pail",
+    "zh": "在游乐场的沙池中，蓝色水桶在中心，红色铲子在北边，绿色模具在东边，黄色翻斗车在南边，紫色耙子在西边。绿色模具和紫色耙子之间是什么？",
+    "es": "En el arenero del parque, un balde azul está en el centro, una pala roja al norte, un molde verde al este, un camión volquete amarillo al sur y un rastrillo morado al oeste. ¿Qué está entre el molde verde y el rastrillo morado?"
+  },
+  {
+    "en": "On the patio, a grill is to the left of a picnic table, a cooler is behind the grill, and an umbrella is in front of the table. What is behind the grill?",
+    "domain": "scene_description",
+    "structure": "mixed_3d",
+    "answer": "cooler",
+    "zh": "在露台上，烧烤架在野餐桌的左边，冷藏箱在烧烤架后面，遮阳伞在桌子前面。烧烤架后面是什么？",
+    "es": "En el patio, una parrilla está a la izquierda de una mesa de picnic, una hielera está detrás de la parrilla y una sombrilla está delante de la mesa. ¿Qué está detrás de la parrilla?"
+  },
+  {
+    "en": "In the refrigerator, the top shelf holds a jar of pickles, the second shelf holds a carton of milk and a bowl of fruit, and the bottom shelf has a tray of eggs. How many objects are on the second shelf?",
+    "domain": "scene_description",
+    "structure": "counting",
+    "answer": "2",
+    "zh": "在冰箱里，最上层放着一罐泡菜，第二层放着一盒牛奶和一碗水果，最下层有一盘鸡蛋。第二层有多少个物品？",
+    "es": "En el refrigerador, el estante superior tiene un frasco de pepinillos, el segundo estante tiene un cartón de leche y un tazón de fruta, y el estante inferior tiene una bandeja de huevos. ¿Cuántos objetos hay en el segundo estante?"
+  },
+  {
+    "en": "I'm thinking of a number. If you double it and subtract 5, you get 13. What is my number?",
+    "domain": "riddles",
+    "structure": "number_riddle",
+    "answer": "9",
+    "zh": "我正在想一个数字。如果你把它翻倍再减去5，你会得到13。我的数字是多少？",
+    "es": "Estoy pensando en un número. Si lo duplicas y le restas 5, obtienes 13. ¿Cuál es mi número?"
+  },
+  {
+    "en": "Unscramble the following set of letters to find a word that is both a time of day and a greeting: NROINGM.",
+    "domain": "riddles",
+    "structure": "word_riddle",
+    "answer": "MORNING",
+    "zh": "将以下字母重新排列，找出一个既是一天中的时间又是问候语的单词：NROINGM。",
+    "es": "Reordena las siguientes letras para encontrar una palabra que es tanto una hora del día como un saludo: NROINGM."
+  },
+  {
+    "en": "What comes next in the sequence: 2, 6, 12, 20, 30, ...?",
+    "domain": "riddles",
+    "structure": "sequence",
+    "answer": "42",
+    "zh": "下一个数字是什么：2, 6, 12, 20, 30, ...？",
+    "es": "¿Qué sigue en la secuencia: 2, 6, 12, 20, 30, ...?"
+  },
+  {
+    "en": "Alice always tells the truth. Bob always lies. Alice says, 'Bob would say that the sky is blue.' What color is the sky?",
+    "domain": "riddles",
+    "structure": "liar_truth",
+    "answer": "Blue",
+    "zh": "爱丽丝总是说实话。鲍勃总是说谎。爱丽丝说：“鲍勃会说天空是蓝色的。”天空是什么颜色？",
+    "es": "Alicia siempre dice la verdad. Bob siempre miente. Alicia dice: 'Bob diría que el cielo es azul.' ¿De qué color es el cielo?"
+  },
+  {
+    "en": "Three years ago, Sarah was three times as old as her son. In three years, she will be twice as old as he is. How old is Sarah now?",
+    "domain": "riddles",
+    "structure": "age",
+    "answer": "36",
+    "zh": "三年前，莎拉的年龄是她儿子的三倍。三年后，她将是他年龄的两倍。莎拉现在几岁？",
+    "es": "Hace tres años, Sarah tenía el triple de edad que su hijo. En tres años, tendrá el doble de la edad de él. ¿Cuántos años tiene Sarah ahora?"
+  },
+  {
+    "en": "You have 9 coins; one is heavier, the rest are identical. Using a balance twice, how can you find the heavier coin?",
+    "domain": "riddles",
+    "structure": "balance",
+    "answer": "Divide into 3 groups of 3, weigh two groups, then weigh within the heavier group.",
+    "zh": "你有9枚硬币；其中一枚较重，其余完全相同。用天平称两次，如何找到较重的硬币？",
+    "es": "Tienes 9 monedas; una es más pesada, las demás son idénticas. Usando una balanza dos veces, ¿cómo puedes encontrar la moneda más pesada?"
+  },
+  {
+    "en": "A wolf, a goat, and a cabbage must be ferried across a river. The boat holds only you and one item. The wolf cannot be left with the goat; the goat cannot be left with the cabbage. What is the minimum number of crossings needed?",
+    "domain": "riddles",
+    "structure": "river_crossing",
+    "answer": "7",
+    "zh": "一只狼、一只山羊和一颗卷心菜需要渡河。船只能载你和一个物品。狼不能和山羊单独留下，山羊不能和卷心菜单独留下。最少需要几次过河？",
+    "es": "Un lobo, una cabra y una col deben cruzar un río. El bote solo te lleva a ti y a un objeto. El lobo no puede quedarse con la cabra; la cabra no puede quedarse con la col. ¿Cuál es el número mínimo de cruces necesarios?"
+  },
+  {
+    "en": "I am a five-letter word and am feared by many. Remove my first letter, I am a form of energy. Remove my first two letters, I am needed to live. What am I?",
+    "domain": "riddles",
+    "structure": "word_riddle",
+    "answer": "Ghost",
+    "zh": "我是一个五个字母的单词，许多人害怕我。去掉第一个字母，我是一种能量。去掉前两个字母，我是生存所需。你猜我是什么？",
+    "es": "Soy una palabra de cinco letras y muchos me temen. Si quitas mi primera letra, soy una forma de energía. Si quitas mis dos primeras letras, soy necesaria para vivir. ¿Qué soy?"
+  },
+  {
+    "en": "Which three-digit number has digits that add up to 12, is divisible by 6, and both its first and last digits are even?",
+    "domain": "riddles",
+    "structure": "digit_logic",
+    "answer": "462",
+    "zh": "哪个三位数的各位数字之和为12，能被6整除，且首位和末位都是偶数？",
+    "es": "¿Qué número de tres cifras tiene dígitos que suman 12, es divisible por 6, y tanto su primer como su último dígito son pares?"
+  },
+  {
+    "en": "Fill in the blank: JFMAMJJAS_ D (first letter of what?).",
+    "domain": "riddles",
+    "structure": "sequence",
+    "answer": "O",
+    "zh": "填空：JFMAMJJAS_ D（首字母是什么？）。",
+    "es": "Completa el espacio: JFMAMJJAS_ D (¿primera letra de qué?)."
+  },
+  {
+    "en": "There are three boxes: one contains only apples, one only oranges, one both. Each is incorrectly labelled. You may pick one fruit from one box. Which box do you pick from first to correctly relabel all?",
+    "domain": "riddles",
+    "structure": "constraint_sat",
+    "answer": "Box labelled 'apples and oranges'",
+    "zh": "有三个盒子：一个只装苹果，一个只装橙子，一个两者都有。每个盒子的标签都贴错了。你可以从一个盒子里拿出一个水果。你应该先从哪个盒子取水果，才能正确地给所有盒子重新贴标签？",
+    "es": "Hay tres cajas: una contiene solo manzanas, otra solo naranjas y otra ambas. Cada una está etiquetada incorrectamente. Puedes sacar una fruta de una caja. ¿De cuál caja eliges primero para poder etiquetarlas correctamente?"
+  },
+  {
+    "en": "A number, when reversed, increases by 27. The number is two digits and both digits are odd. What is the number?",
+    "domain": "riddles",
+    "structure": "number_riddle",
+    "answer": "37",
+    "zh": "有一个两位数，倒过来后增加了27。这个数的两个数字都是奇数。这个数是多少？",
+    "es": "Un número, al invertirse, aumenta en 27. El número es de dos dígitos y ambos dígitos son impares. ¿Cuál es el número?"
+  },
+  {
+    "en": "Tom is now twice as old as Jerry was when Tom was as old as Jerry is now. If Jerry is 10, and Tom is 24, how old was Tom when Jerry was as old as Tom is now?",
+    "domain": "riddles",
+    "structure": "age",
+    "answer": "14",
+    "zh": "汤姆现在的年龄是杰瑞曾经年龄的两倍（当时汤姆的年龄等于现在杰瑞的年龄）。如果杰瑞现在10岁，汤姆24岁，那么当杰瑞的年龄等于汤姆现在的年龄时，汤姆几岁？",
+    "es": "Tom ahora tiene el doble de edad que tenía Jerry cuando Tom tenía la edad que Jerry tiene ahora. Si Jerry tiene 10 años y Tom 24, ¿qué edad tenía Tom cuando Jerry tenía la edad que Tom tiene ahora?"
+  },
+  {
+    "en": "A room has three switches outside. Only one switch controls a light bulb inside. You may flip switches as you wish, but may enter the room only once. How can you identify the correct switch?",
+    "domain": "riddles",
+    "structure": "constraint_sat",
+    "answer": "Turn one on, wait, turn off, turn a second on; check bulb's heat and light.",
+    "zh": "一个房间外有三个开关，只有一个能控制房间内的灯泡。你可以随意拨动开关，但只能进房间一次。你该如何确定哪个开关控制灯泡？",
+    "es": "Una habitación tiene tres interruptores afuera. Solo uno controla una bombilla adentro. Puedes accionar los interruptores como quieras, pero solo puedes entrar a la habitación una vez. ¿Cómo identificas el interruptor correcto?"
+  },
+  {
+    "en": "Which word starts and ends with an E but only has one letter?",
+    "domain": "riddles",
+    "structure": "word_riddle",
+    "answer": "Envelope",
+    "zh": "哪个单词以E开头和结尾，但只有一个字母？",
+    "es": "¿Qué palabra empieza y termina con E pero solo tiene una letra?"
+  },
+  {
+    "en": "A knight and a knave stand at a fork. One path leads to gold, the other to danger. You can ask one yes/no question to one. What do you ask to find the safe path?",
+    "domain": "riddles",
+    "structure": "knights_knaves",
+    "answer": "\"If I asked the other which is safe, would he say left?\" Go opposite his answer.",
+    "zh": "一个骑士和一个骗子站在岔路口。一条路通向黄金，另一条通向危险。你只能向其中一个人问一个是/否问题。你该问什么来找到安全的路？",
+    "es": "Un caballero y un embustero están en una bifurcación. Un camino lleva al oro, el otro al peligro. Puedes hacer una pregunta de sí/no a uno de ellos. ¿Qué preguntas para encontrar el camino seguro?"
+  },
+  {
+    "en": "What comes next: 1, 11, 21, 1211, 111221, ...?",
+    "domain": "riddles",
+    "structure": "sequence",
+    "answer": "312211",
+    "zh": "下一个数是什么：1, 11, 21, 1211, 111221, ...？",
+    "es": "¿Qué sigue: 1, 11, 21, 1211, 111221, ...?"
+  },
+  {
+    "en": "You meet two people: one always lies, one always tells the truth. One says, 'We are both liars.' Who is speaking?",
+    "domain": "riddles",
+    "structure": "liar_truth",
+    "answer": "The liar",
+    "zh": "你遇到两个人：一个总说谎，一个总说实话。其中一个说：“我们都是骗子。”是谁在说话？",
+    "es": "Te encuentras con dos personas: una siempre miente, la otra siempre dice la verdad. Una dice: 'Ambos somos mentirosos.' ¿Quién está hablando?"
+  },
+  {
+    "en": "If TWO is written as 36, and FOUR as 64, how is EIGHT written?",
+    "domain": "riddles",
+    "structure": "number_riddle",
+    "answer": "64",
+    "zh": "如果TWO写作36，FOUR写作64，那么EIGHT写作多少？",
+    "es": "Si DOS se escribe como 36, y CUATRO como 64, ¿cómo se escribe OCHO?"
+  },
+  {
+    "en": "A father says: 'In six years, I will be twice as old as you.' The son is 14. How old is the father?",
+    "domain": "riddles",
+    "structure": "age",
+    "answer": "22",
+    "zh": "父亲说：“六年后，我的年龄将是你的两倍。”儿子现在14岁。父亲现在几岁？",
+    "es": "Un padre dice: 'En seis años, tendré el doble de tu edad.' El hijo tiene 14 años. ¿Cuántos años tiene el padre?"
+  },
+  {
+    "en": "I am a three-digit number. The sum of my digits is 9. My first digit is twice my last. My second digit is the difference between the first and last. What number am I?",
+    "domain": "riddles",
+    "structure": "digit_logic",
+    "answer": "432",
+    "zh": "我是一个三位数。我的各位数字之和是9。我的第一位是最后一位的两倍。我的第二位是第一位和最后一位的差。请问我是什么数？",
+    "es": "Soy un número de tres dígitos. La suma de mis dígitos es 9. Mi primer dígito es el doble del último. Mi segundo dígito es la diferencia entre el primero y el último. ¿Qué número soy?"
+  },
+  {
+    "en": "A sees that B is wearing a red hat. B knows his own hat is either red or blue. Neither can see their own hat. If A says, 'I know the color of my own hat,' what color is B's hat?",
+    "domain": "riddles",
+    "structure": "logic",
+    "answer": "Blue",
+    "zh": "A看到B戴着红帽子。B知道自己的帽子要么是红色，要么是蓝色，但都看不到自己的帽子。如果A说：“我知道我自己的帽子颜色。”那么B的帽子是什么颜色？",
+    "es": "A ve que B lleva un sombrero rojo. B sabe que su propio sombrero es rojo o azul. Ninguno puede ver su propio sombrero. Si A dice, 'Sé el color de mi propio sombrero', ¿de qué color es el sombrero de B?"
+  },
+  {
+    "en": "You have 8 balls; one is lighter than the rest. Using a balance twice, how do you find the lighter ball?",
+    "domain": "riddles",
+    "structure": "balance",
+    "answer": "Divide into 3-3-2, weigh 3 vs 3, then weigh within the lighter group or between the two.",
+    "zh": "你有8个球，其中一个比其他的轻。用天平称两次，如何找出最轻的球？",
+    "es": "Tienes 8 bolas; una es más ligera que las demás. Usando una balanza dos veces, ¿cómo encuentras la bola más ligera?"
+  },
+  {
+    "en": "A man has to cross a river with a fox, a chicken, and grain. The boat holds only one item at a time. Fox can't be left with chicken, chicken can't be left with grain. How many crossings are needed?",
+    "domain": "riddles",
+    "structure": "river_crossing",
+    "answer": "7",
+    "zh": "一个人要带狐狸、鸡和粮食过河。船一次只能带一样。狐狸不能和鸡单独留下，鸡不能和粮食单独留下。最少需要多少次过河？",
+    "es": "Un hombre debe cruzar un río con un zorro, una gallina y grano. El bote solo lleva un objeto a la vez. El zorro no puede quedarse con la gallina, la gallina no puede quedarse con el grano. ¿Cuántos cruces se necesitan?"
+  },
+  {
+    "en": "A seven-letter word contains the letters S, E, and V exactly once each and can be read the same backwards and forwards. What is it?",
+    "domain": "riddles",
+    "structure": "word_riddle",
+    "answer": "REVIVER",
+    "zh": "一个七字母单词只包含一次S、E和V，正着和反着读都一样。这个单词是什么？",
+    "es": "Una palabra de siete letras contiene las letras S, E y V exactamente una vez cada una y se lee igual al derecho y al revés. ¿Cuál es?"
+  },
+  {
+    "en": "I am thinking of a two-digit number. Its digits add up to 9. If you reverse the digits, the new number is 27 more than the original. What is the number?",
+    "domain": "riddles",
+    "structure": "number_riddle",
+    "answer": "36",
+    "zh": "我想了一个两位数，两个数字之和是9。如果把数字颠倒，新数比原数大27。这个数是多少？",
+    "es": "Estoy pensando en un número de dos dígitos. Sus dígitos suman 9. Si inviertes los dígitos, el nuevo número es 27 más que el original. ¿Cuál es el número?"
+  },
+  {
+    "en": "What five-letter word becomes shorter when you add two letters to it?",
+    "domain": "riddles",
+    "structure": "word_riddle",
+    "answer": "short",
+    "zh": "哪个五字母单词加两个字母后会变得更短？",
+    "es": "¿Qué palabra de cinco letras se vuelve más corta cuando le agregas dos letras?"
+  },
+  {
+    "en": "What is the next number in the sequence: 2, 6, 12, 20, 30, ___?",
+    "domain": "riddles",
+    "structure": "sequence",
+    "answer": "42",
+    "zh": "下一个数是什么：2, 6, 12, 20, 30, ___？",
+    "es": "¿Cuál es el siguiente número en la secuencia: 2, 6, 12, 20, 30, ___?"
+  },
+  {
+    "en": "Alice and Bob are standing on an island. Alice says, 'We are both liars.' Bob says, 'Only one of us is a liar.' Assuming each is either a truth-teller or liar, who is the liar?",
+    "domain": "riddles",
+    "structure": "liar_truth",
+    "answer": "Alice",
+    "zh": "爱丽丝和鲍勃站在岛上。爱丽丝说：“我们都是骗子。”鲍勃说：“我们中只有一个是骗子。”假设每个人要么总说真话，要么总说谎，谁是骗子？",
+    "es": "Alicia y Bob están de pie en una isla. Alicia dice: 'Ambos somos mentirosos.' Bob dice: 'Solo uno de nosotros es mentiroso.' Suponiendo que cada uno es veraz o mentiroso, ¿quién es el mentiroso?"
+  },
+  {
+    "en": "A mother is 21 years older than her child. In 6 years, the mother will be five times as old as the child. How old is the child now?",
+    "domain": "riddles",
+    "structure": "age",
+    "answer": "3",
+    "zh": "一位母亲比她的孩子大21岁。6年后，母亲的年龄将是孩子的5倍。孩子现在几岁？",
+    "es": "Una madre tiene 21 años más que su hijo. En 6 años, la madre tendrá cinco veces la edad del hijo. ¿Cuántos años tiene el hijo ahora?"
+  },
+  {
+    "en": "You have 8 coins, all identical except one is heavier. Using a balance scale only twice, how can you find the heavier coin?",
+    "domain": "riddles",
+    "structure": "balance",
+    "answer": "Divide into 3-3-2, weigh 3 vs 3, then weigh 1 vs 1.",
+    "zh": "你有8枚硬币，除了其中一枚较重外，其余都相同。只用天平称两次，如何找出较重的那枚硬币？",
+    "es": "Tienes 8 monedas, todas idénticas excepto una que es más pesada. Usando una balanza solo dos veces, ¿cómo puedes encontrar la moneda más pesada?"
+  },
+  {
+    "en": "A farmer needs to get a fox, a chicken, and grain across a river. His boat can carry only one item at a time. The fox can't be left alone with the chicken, and the chicken can't be left alone with the grain. What is the sequence of crossings?",
+    "domain": "riddles",
+    "structure": "river_crossing",
+    "answer": "Take chicken, return; take fox, bring chicken back; take grain, return; take chicken.",
+    "zh": "一位农夫需要把一只狐狸、一只鸡和一袋谷物运过河。他的船每次只能载一样东西。狐狸不能单独和鸡在一起，鸡不能单独和谷物在一起。过河的顺序是什么？",
+    "es": "Un granjero necesita cruzar un río con un zorro, una gallina y grano. Su bote solo puede llevar un objeto a la vez. El zorro no puede quedarse solo con la gallina, y la gallina no puede quedarse sola con el grano. ¿Cuál es la secuencia de cruces?"
+  },
+  {
+    "en": "Three knights and three knaves are sitting in a row. Knights always tell the truth, knaves always lie. The first says, 'We are all knaves.' The second says, 'Exactly two of us are knights.' How many knights are there?",
+    "domain": "riddles",
+    "structure": "knights_knaves",
+    "answer": "2",
+    "zh": "有三位骑士和三位骗子坐成一排。骑士总是说实话，骗子总是说谎。第一个说：“我们都是骗子。”第二个说：“我们中正好有两个人是骑士。”有多少个骑士？",
+    "es": "Tres caballeros y tres bribones están sentados en una fila. Los caballeros siempre dicen la verdad, los bribones siempre mienten. El primero dice: 'Todos somos bribones.' El segundo dice: 'Exactamente dos de nosotros somos caballeros.' ¿Cuántos caballeros hay?"
+  },
+  {
+    "en": "A three-digit number has digits that add to 9. The first digit is twice the last digit. The middle digit is the sum of the first and last. What is the number?",
+    "domain": "riddles",
+    "structure": "digit_logic",
+    "answer": "243",
+    "zh": "一个三位数的各位数字之和为9。第一位数字是最后一位的两倍，中间一位数字是第一位和最后一位的和。这个数是多少？",
+    "es": "Un número de tres cifras tiene dígitos que suman 9. El primer dígito es el doble del último dígito. El dígito del medio es la suma del primero y el último. ¿Cuál es el número?"
+  },
+  {
+    "en": "Fill in the blank: I am a word of letters three, add two and fewer there will be. What am I?",
+    "domain": "riddles",
+    "structure": "word_riddle",
+    "answer": "few",
+    "zh": "填空：我是一个由三个字母组成的单词，加上两个字母反而变少。我是什么？",
+    "es": "Completa el espacio en blanco: Soy una palabra de tres letras, agrega dos y habrá menos. ¿Qué soy?"
+  },
+  {
+    "en": "The sum of three consecutive odd numbers is 51. What is the largest of the three numbers?",
+    "domain": "riddles",
+    "structure": "number_riddle",
+    "answer": "19",
+    "zh": "三个连续的奇数之和为51。三个数中最大的一个是多少？",
+    "es": "La suma de tres números impares consecutivos es 51. ¿Cuál es el mayor de los tres números?"
+  },
+  {
+    "en": "Which letter comes next in the sequence: D, E, G, J, N, ___?",
+    "domain": "riddles",
+    "structure": "sequence",
+    "answer": "S",
+    "zh": "下一个字母是什么：D, E, G, J, N, ___?",
+    "es": "¿Qué letra sigue en la secuencia: D, E, G, J, N, ___?"
+  },
+  {
+    "en": "Two doors: one leads to freedom, one to danger. Two guards: one always lies, one always tells the truth. What single question do you ask to pick the door to freedom?",
+    "domain": "riddles",
+    "structure": "liar_truth",
+    "answer": "If I asked the other guard which door leads to freedom, which would they indicate?",
+    "zh": "有两扇门：一扇通向自由，一扇通向危险。有两个守卫：一个总是说谎，一个总是说实话。你只能问一个问题，如何选择通向自由的门？",
+    "es": "Dos puertas: una lleva a la libertad, otra al peligro. Dos guardianes: uno siempre miente, otro siempre dice la verdad. ¿Qué única pregunta debes hacer para elegir la puerta hacia la libertad?"
+  },
+  {
+    "en": "A father is 4 times as old as his son. In 20 years, he will be twice as old as his son. How old is the son now?",
+    "domain": "riddles",
+    "structure": "age",
+    "answer": "10",
+    "zh": "父亲的年龄是儿子的4倍。20年后，父亲的年龄将是儿子的2倍。儿子现在几岁？",
+    "es": "Un padre tiene 4 veces la edad de su hijo. En 20 años, tendrá el doble de la edad de su hijo. ¿Cuántos años tiene el hijo ahora?"
+  },
+  {
+    "en": "You have 12 coins, one is fake and lighter. Using a balance scale only three times, how can you find the fake coin?",
+    "domain": "riddles",
+    "structure": "balance",
+    "answer": "Divide into 4-4-4, weigh two groups, repeat with lighter group.",
+    "zh": "你有12枚硬币，其中一枚是假的且较轻。只用天平称三次，如何找出那枚假币？",
+    "es": "Tienes 12 monedas, una es falsa y más liviana. Usando una balanza solo tres veces, ¿cómo puedes encontrar la moneda falsa?"
+  },
+  {
+    "en": "You must get a wolf, a goat, and a cabbage across a river. The boat holds you and one item. The wolf can't be left with the goat; the goat can't be left with the cabbage. What is the correct sequence?",
+    "domain": "riddles",
+    "structure": "river_crossing",
+    "answer": "Take goat, return; take wolf, bring goat back; take cabbage, return; take goat.",
+    "zh": "你必须把一只狼、一只山羊和一颗卷心菜运过河。船只能载你和一件物品。狼不能和山羊单独在一起，山羊不能和卷心菜单独在一起。正确的过河顺序是什么？",
+    "es": "Debes cruzar un río con un lobo, una cabra y una col. El bote te lleva a ti y a un objeto. El lobo no puede quedarse con la cabra; la cabra no puede quedarse con la col. ¿Cuál es la secuencia correcta?"
+  },
+  {
+    "en": "Of three people—Alex, Bert, and Chris—one always tells the truth, one always lies, and one alternates. Alex says, 'Bert is the liar.' Bert says, 'Chris is the liar.' Who is the truth-teller?",
+    "domain": "riddles",
+    "structure": "knights_knaves",
+    "answer": "Chris",
+    "zh": "有三个人——Alex、Bert和Chris——一个总说实话，一个总说谎，一个真假交替。Alex说：“Bert是骗子。”Bert说：“Chris是骗子。”谁是诚实者？",
+    "es": "De tres personas—Alex, Bert y Chris—una siempre dice la verdad, una siempre miente y una alterna. Alex dice: 'Bert es el mentiroso.' Bert dice: 'Chris es el mentiroso.' ¿Quién dice la verdad?"
+  },
+  {
+    "en": "A five-digit number uses the digits 1-5 once each. The digit in the ten-thousands place is equal to the sum of the digits in the thousands and hundreds place. What is the number?",
+    "domain": "riddles",
+    "structure": "digit_logic",
+    "answer": "31245",
+    "zh": "一个五位数，使用1-5这五个数字各一次。万位上的数字等于千位和百位上的数字之和。这个数是多少？",
+    "es": "Un número de cinco cifras usa los dígitos del 1 al 5 una vez cada uno. El dígito en el lugar de las decenas de mil es igual a la suma de los dígitos en los lugares de los miles y las centenas. ¿Cuál es el número?"
+  },
+  {
+    "en": "I am a seven-letter word. Remove one letter, and I become heavier. What am I?",
+    "domain": "riddles",
+    "structure": "word_riddle",
+    "answer": "weighty",
+    "zh": "我是一个七个字母的单词，去掉一个字母后，我变得更重。我是什么？",
+    "es": "Soy una palabra de siete letras. Si quitas una letra, me vuelvo más pesado. ¿Qué soy?"
+  },
+  {
+    "en": "Five people sit in a row. Alice is not at either end. Bob is to the left of Carol. Dave is between Alice and Bob. Who is in the middle?",
+    "domain": "riddles",
+    "structure": "constraint_sat",
+    "answer": "Dave",
+    "zh": "五个人坐成一排。Alice不在两端，Bob在Carol的左边，Dave在Alice和Bob之间。谁坐在中间？",
+    "es": "Cinco personas se sientan en una fila. Alice no está en ninguno de los extremos. Bob está a la izquierda de Carol. Dave está entre Alice y Bob. ¿Quién está en el medio?"
+  },
+  {
+    "en": "If 2 cats catch 2 mice in 2 minutes, how many cats are needed to catch 12 mice in 6 minutes?",
+    "domain": "riddles",
+    "structure": "number_riddle",
+    "answer": "2",
+    "zh": "如果2只猫在2分钟内抓到2只老鼠，要在6分钟内抓到12只老鼠需要几只猫？",
+    "es": "Si 2 gatos atrapan 2 ratones en 2 minutos, ¿cuántos gatos se necesitan para atrapar 12 ratones en 6 minutos?"
+  },
+  {
+    "en": "Find the next number: 1, 4, 9, 16, 25, ___",
+    "domain": "riddles",
+    "structure": "sequence",
+    "answer": "36",
+    "zh": "找下一个数字：1, 4, 9, 16, 25, ___",
+    "es": "Encuentra el siguiente número: 1, 4, 9, 16, 25, ___"
+  },
+  {
+    "en": "Two brothers: one always lies on Monday, Wednesday, and Friday, and tells the truth other days. The other does the opposite. Today one says, 'I lie on Mondays.' What day is it?",
+    "domain": "riddles",
+    "structure": "liar_truth",
+    "answer": "Thursday",
+    "zh": "有一对兄弟：一个在星期一、三、五总说谎，其他日子说实话。另一个正好相反。今天其中一个说：“我在星期一说谎。”今天星期几？",
+    "es": "Dos hermanos: uno siempre miente los lunes, miércoles y viernes, y dice la verdad los otros días. El otro hace lo opuesto. Hoy uno dice: 'Miento los lunes.' ¿Qué día es?"
+  },
+  {
+    "en": "A father and son together are 55 years old. The father is 3 times as old as the son was when the father was as old as the son is now. How old is the son?",
+    "domain": "riddles",
+    "structure": "age",
+    "answer": "15",
+    "zh": "父亲和儿子的年龄加起来是55岁。父亲现在的年龄是当年儿子和父亲同龄时儿子年龄的3倍。儿子现在几岁？",
+    "es": "Un padre y un hijo juntos tienen 55 años. El padre tiene 3 veces la edad que tenía el hijo cuando el padre tenía la edad que el hijo tiene ahora. ¿Cuántos años tiene el hijo?"
+  },
+  {
+    "en": "You have 9 balls, one is heavier, the rest are equal. Using a balance scale only twice, how do you find the heavier ball?",
+    "domain": "riddles",
+    "structure": "balance",
+    "answer": "Weigh 3 vs 3, then 1 vs 1 within heavier group.",
+    "zh": "你有9个球，其中一个较重，其余相等。只用天平称两次，如何找出较重的球？",
+    "es": "Tienes 9 bolas, una es más pesada, las demás son iguales. Usando una balanza solo dos veces, ¿cómo encuentras la bola más pesada?"
+  }
+]

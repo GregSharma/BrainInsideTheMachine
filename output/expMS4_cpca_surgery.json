@@ -1,0 +1,2028 @@
+{
+  "experiment": "MS4_cpca_surgery",
+  "model": "Qwen/Qwen2.5-3B",
+  "max_new_tokens": 1024,
+  "n_problems": 20,
+  "languages": [
+    "en",
+    "zh",
+    "ar",
+    "es",
+    "ja",
+    "ko",
+    "sw"
+  ],
+  "surgery_layers": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+  ],
+  "k_conv": 1,
+  "cpca_diagnostics": {
+    "0": {
+      "lambda1": 9347044.253767723,
+      "lambda1_lambda2": 3.962157368304898,
+      "lang_var": 9.572698856411515,
+      "math_var": 2.4141813840614438e-08
+    },
+    "1": {
+      "lambda1": 11086431.353376146,
+      "lambda1_lambda2": 3.5923913569818247,
+      "lang_var": 11.194076591508304,
+      "math_var": 9.709638300035376e-09
+    },
+    "2": {
+      "lambda1": 13852340.101883966,
+      "lambda1_lambda2": 2.987716209365211,
+      "lang_var": 13.961673801914488,
+      "math_var": 7.892796391178347e-09
+    },
+    "3": {
+      "lambda1": 17297087.563893367,
+      "lambda1_lambda2": 2.0307273525358536,
+      "lang_var": 17.427262163369868,
+      "math_var": 7.525810312120588e-09
+    },
+    "4": {
+      "lambda1": 21488939.36226532,
+      "lambda1_lambda2": 1.6922079890977255,
+      "lang_var": 21.617222531019955,
+      "math_var": 5.969730144175865e-09
+    },
+    "5": {
+      "lambda1": 25943498.40668244,
+      "lambda1_lambda2": 1.8409589835856819,
+      "lang_var": 26.038784794666075,
+      "math_var": 3.6728426439228016e-09
+    },
+    "6": {
+      "lambda1": 33649986.4967609,
+      "lambda1_lambda2": 1.6140943553608762,
+      "lang_var": 33.7396318645726,
+      "math_var": 2.6640537126705202e-09
+    },
+    "7": {
+      "lambda1": 60042524.16875663,
+      "lambda1_lambda2": 1.7637471714223527,
+      "lang_var": 60.164873132013,
+      "math_var": 2.0377052066425462e-09
+    },
+    "8": {
+      "lambda1": 75207310.89040335,
+      "lambda1_lambda2": 1.7447033622407064,
+      "lang_var": 75.24476096572054,
+      "math_var": 4.979578346430472e-10
+    },
+    "9": {
+      "lambda1": 79778699.05405389,
+      "lambda1_lambda2": 1.796867009248937,
+      "lang_var": 79.80595161082518,
+      "math_var": 3.4160189522007606e-10
+    },
+    "10": {
+      "lambda1": 79392355.35652666,
+      "lambda1_lambda2": 1.7053533667632288,
+      "lang_var": 79.43724815260887,
+      "math_var": 5.654549074510306e-10
+    },
+    "11": {
+      "lambda1": 107163631.32587755,
+      "lambda1_lambda2": 1.6788618991111552,
+      "lang_var": 107.19322892496962,
+      "math_var": 2.7619060875726296e-10
+    },
+    "12": {
+      "lambda1": 100263132.53987177,
+      "lambda1_lambda2": 1.6654827048964542,
+      "lang_var": 100.29326358624803,
+      "math_var": 3.0051954539327677e-10
+    },
+    "13": {
+      "lambda1": 100387612.00925215,
+      "lambda1_lambda2": 1.7401511018192566,
+      "lang_var": 100.43027621432626,
+      "math_var": 4.249948691659191e-10
+    },
+    "14": {
+      "lambda1": 91681394.50458604,
+      "lambda1_lambda2": 1.7753312705484812,
+      "lang_var": 91.73616944064311,
+      "math_var": 5.974486977916425e-10
+    },
+    "15": {
+      "lambda1": 90306740.73906894,
+      "lambda1_lambda2": 1.724454719959817,
+      "lang_var": 90.36388768447762,
+      "math_var": 6.328097964103146e-10
+    },
+    "16": {
+      "lambda1": 96328210.37791832,
+      "lambda1_lambda2": 1.8457133650237505,
+      "lang_var": 96.35194527842889,
+      "math_var": 2.4639605724586697e-10
+    },
+    "17": {
+      "lambda1": 94124636.38611333,
+      "lambda1_lambda2": 1.8216793787536807,
+      "lang_var": 94.14505374861305,
+      "math_var": 2.1691816641945295e-10
+    },
+    "18": {
+      "lambda1": 100838887.86905487,
+      "lambda1_lambda2": 1.945962977468032,
+      "lang_var": 100.85526579261045,
+      "math_var": 1.6241661828382947e-10
+    },
+    "19": {
+      "lambda1": 101719057.79907008,
+      "lambda1_lambda2": 1.9106361153765052,
+      "lang_var": 101.73700241837888,
+      "math_var": 1.764136288838333e-10
+    },
+    "20": {
+      "lambda1": 101230107.61472924,
+      "lambda1_lambda2": 1.9577723369171727,
+      "lang_var": 101.2437341341833,
+      "math_var": 1.3460918863222273e-10
+    },
+    "21": {
+      "lambda1": 104172183.50484714,
+      "lambda1_lambda2": 1.9685097654788555,
+      "lang_var": 104.18501128854746,
+      "math_var": 1.231402615890842e-10
+    },
+    "22": {
+      "lambda1": 107071679.42070124,
+      "lambda1_lambda2": 2.0566362195029115,
+      "lang_var": 107.08377570144884,
+      "math_var": 1.1297378356013442e-10
+    },
+    "23": {
+      "lambda1": 112092828.43262547,
+      "lambda1_lambda2": 2.1621173103347804,
+      "lang_var": 112.1076831582329,
+      "math_var": 1.3252163396594797e-10
+    },
+    "24": {
+      "lambda1": 122224087.88505676,
+      "lambda1_lambda2": 2.135622628787874,
+      "lang_var": 122.23629060539999,
+      "math_var": 9.983923603733003e-11
+    },
+    "25": {
+      "lambda1": 122811731.78893892,
+      "lambda1_lambda2": 2.031217056341679,
+      "lang_var": 122.82406864296941,
+      "math_var": 1.0045327201190986e-10
+    },
+    "26": {
+      "lambda1": 142263103.31016976,
+      "lambda1_lambda2": 2.0935400839735956,
+      "lang_var": 142.27616836015244,
+      "math_var": 9.183710157356648e-11
+    },
+    "27": {
+      "lambda1": 244160293.40342432,
+      "lambda1_lambda2": 2.0080454701012393,
+      "lang_var": 244.18868794741607,
+      "math_var": 1.162944758836258e-10
+    },
+    "28": {
+      "lambda1": 326562609.9618749,
+      "lambda1_lambda2": 1.9585974608413672,
+      "lang_var": 326.59306920612397,
+      "math_var": 9.327219699489145e-11
+    },
+    "29": {
+      "lambda1": 422482848.5223815,
+      "lambda1_lambda2": 2.019355329053155,
+      "lang_var": 422.5123945144272,
+      "math_var": 6.993386087571592e-11
+    },
+    "30": {
+      "lambda1": 620817158.432492,
+      "lambda1_lambda2": 1.5381054600075106,
+      "lang_var": 620.8679319194614,
+      "math_var": 8.178520177739755e-11
+    },
+    "31": {
+      "lambda1": 1026168235.9797629,
+      "lambda1_lambda2": 1.6393175476307718,
+      "lang_var": 1026.2222177632123,
+      "math_var": 5.26048050003379e-11
+    },
+    "32": {
+      "lambda1": 1755177051.4248326,
+      "lambda1_lambda2": 1.7162808766798443,
+      "lang_var": 1755.2309129257662,
+      "math_var": 3.06860527289022e-11
+    },
+    "33": {
+      "lambda1": 2343648360.98241,
+      "lambda1_lambda2": 1.4336415655008925,
+      "lang_var": 2343.7246515850866,
+      "math_var": 3.255077282626968e-11
+    },
+    "34": {
+      "lambda1": 3030286456.2276797,
+      "lambda1_lambda2": 1.4336963229751263,
+      "lang_var": 3030.377938028663,
+      "math_var": 3.018717721813613e-11
+    },
+    "35": {
+      "lambda1": 3611573959.5559216,
+      "lambda1_lambda2": 1.153632367618999,
+      "lang_var": 3611.6799694856113,
+      "math_var": 2.9356395045094574e-11
+    }
+  },
+  "baseline": {
+    "en": {
+      "correct": 19,
+      "total": 20,
+      "details": [
+        {
+          "problem": 0,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 90
+        },
+        {
+          "problem": 1,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 124
+        },
+        {
+          "problem": 2,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 104
+        },
+        {
+          "problem": 3,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 194
+        },
+        {
+          "problem": 4,
+          "category": "arithmetic",
+          "correct": false,
+          "n_tokens": 170
+        },
+        {
+          "problem": 5,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 258
+        },
+        {
+          "problem": 6,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 149
+        },
+        {
+          "problem": 7,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 583
+        },
+        {
+          "problem": 8,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 166
+        },
+        {
+          "problem": 9,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 226
+        },
+        {
+          "problem": 10,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 90
+        },
+        {
+          "problem": 11,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 85
+        },
+        {
+          "problem": 12,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 288
+        },
+        {
+          "problem": 13,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 225
+        },
+        {
+          "problem": 14,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 127
+        },
+        {
+          "problem": 15,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 152
+        },
+        {
+          "problem": 16,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 173
+        },
+        {
+          "problem": 17,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 183
+        },
+        {
+          "problem": 18,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 170
+        },
+        {
+          "problem": 19,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 185
+        }
+      ]
+    },
+    "zh": {
+      "correct": 18,
+      "total": 20,
+      "details": [
+        {
+          "problem": 0,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 1,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 96
+        },
+        {
+          "problem": 2,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 3,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 109
+        },
+        {
+          "problem": 4,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 5,
+          "category": "arithmetic",
+          "correct": false,
+          "n_tokens": 326
+        },
+        {
+          "problem": 6,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 7,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 15
+        },
+        {
+          "problem": 8,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 144
+        },
+        {
+          "problem": 9,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 10,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 106
+        },
+        {
+          "problem": 11,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 12,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 247
+        },
+        {
+          "problem": 13,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 39
+        },
+        {
+          "problem": 14,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 42
+        },
+        {
+          "problem": 15,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 547
+        },
+        {
+          "problem": 16,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 17,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 306
+        },
+        {
+          "problem": 18,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 216
+        },
+        {
+          "problem": 19,
+          "category": "combinatorics",
+          "correct": false,
+          "n_tokens": 581
+        }
+      ]
+    },
+    "ar": {
+      "correct": 14,
+      "total": 20,
+      "details": [
+        {
+          "problem": 0,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 62
+        },
+        {
+          "problem": 1,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 2,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 3,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 4,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 18
+        },
+        {
+          "problem": 5,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 41
+        },
+        {
+          "problem": 6,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 58
+        },
+        {
+          "problem": 7,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 8,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 82
+        },
+        {
+          "problem": 9,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 10,
+          "category": "geometry",
+          "correct": false,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 11,
+          "category": "geometry",
+          "correct": false,
+          "n_tokens": 130
+        },
+        {
+          "problem": 12,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 129
+        },
+        {
+          "problem": 13,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 14,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 15,
+          "category": "number_theory",
+          "correct": false,
+          "n_tokens": 122
+        },
+        {
+          "problem": 16,
+          "category": "combinatorics",
+          "correct": false,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 17,
+          "category": "combinatorics",
+          "correct": false,
+          "n_tokens": 52
+        },
+        {
+          "problem": 18,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 137
+        },
+        {
+          "problem": 19,
+          "category": "combinatorics",
+          "correct": false,
+          "n_tokens": 1024
+        }
+      ]
+    },
+    "es": {
+      "correct": 20,
+      "total": 20,
+      "details": [
+        {
+          "problem": 0,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 41
+        },
+        {
+          "problem": 1,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 187
+        },
+        {
+          "problem": 2,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 18
+        },
+        {
+          "problem": 3,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 211
+        },
+        {
+          "problem": 4,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 15
+        },
+        {
+          "problem": 5,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 15
+        },
+        {
+          "problem": 6,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 98
+        },
+        {
+          "problem": 7,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 15
+        },
+        {
+          "problem": 8,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 204
+        },
+        {
+          "problem": 9,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 196
+        },
+        {
+          "problem": 10,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 89
+        },
+        {
+          "problem": 11,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 52
+        },
+        {
+          "problem": 12,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 228
+        },
+        {
+          "problem": 13,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 62
+        },
+        {
+          "problem": 14,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 931
+        },
+        {
+          "problem": 15,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 159
+        },
+        {
+          "problem": 16,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 202
+        },
+        {
+          "problem": 17,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 92
+        },
+        {
+          "problem": 18,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 243
+        },
+        {
+          "problem": 19,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 356
+        }
+      ]
+    },
+    "ja": {
+      "correct": 13,
+      "total": 20,
+      "details": [
+        {
+          "problem": 0,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 1,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 2,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 3,
+          "category": "algebra",
+          "correct": false,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 4,
+          "category": "arithmetic",
+          "correct": false,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 5,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 98
+        },
+        {
+          "problem": 6,
+          "category": "arithmetic",
+          "correct": false,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 7,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 15
+        },
+        {
+          "problem": 8,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 117
+        },
+        {
+          "problem": 9,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 228
+        },
+        {
+          "problem": 10,
+          "category": "geometry",
+          "correct": false,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 11,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 78
+        },
+        {
+          "problem": 12,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 13,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 53
+        },
+        {
+          "problem": 14,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 108
+        },
+        {
+          "problem": 15,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 16,
+          "category": "combinatorics",
+          "correct": false,
+          "n_tokens": 187
+        },
+        {
+          "problem": 17,
+          "category": "combinatorics",
+          "correct": false,
+          "n_tokens": 90
+        },
+        {
+          "problem": 18,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 19,
+          "category": "combinatorics",
+          "correct": false,
+          "n_tokens": 1024
+        }
+      ]
+    },
+    "ko": {
+      "correct": 16,
+      "total": 20,
+      "details": [
+        {
+          "problem": 0,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 75
+        },
+        {
+          "problem": 1,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 2,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 234
+        },
+        {
+          "problem": 3,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 4,
+          "category": "arithmetic",
+          "correct": false,
+          "n_tokens": 171
+        },
+        {
+          "problem": 5,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 6,
+          "category": "arithmetic",
+          "correct": false,
+          "n_tokens": 87
+        },
+        {
+          "problem": 7,
+          "category": "arithmetic",
+          "correct": false,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 8,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 9,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 424
+        },
+        {
+          "problem": 10,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 174
+        },
+        {
+          "problem": 11,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 269
+        },
+        {
+          "problem": 12,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 13,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 14,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 321
+        },
+        {
+          "problem": 15,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 16,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 392
+        },
+        {
+          "problem": 17,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 18,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 137
+        },
+        {
+          "problem": 19,
+          "category": "combinatorics",
+          "correct": false,
+          "n_tokens": 112
+        }
+      ]
+    },
+    "sw": {
+      "correct": 10,
+      "total": 20,
+      "details": [
+        {
+          "problem": 0,
+          "category": "algebra",
+          "correct": false,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 1,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 2,
+          "category": "algebra",
+          "correct": false,
+          "n_tokens": 76
+        },
+        {
+          "problem": 3,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 67
+        },
+        {
+          "problem": 4,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 24
+        },
+        {
+          "problem": 5,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 10
+        },
+        {
+          "problem": 6,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 18
+        },
+        {
+          "problem": 7,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 21
+        },
+        {
+          "problem": 8,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 9,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 33
+        },
+        {
+          "problem": 10,
+          "category": "geometry",
+          "correct": false,
+          "n_tokens": 25
+        },
+        {
+          "problem": 11,
+          "category": "geometry",
+          "correct": false,
+          "n_tokens": 19
+        },
+        {
+          "problem": 12,
+          "category": "number_theory",
+          "correct": false,
+          "n_tokens": 30
+        },
+        {
+          "problem": 13,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 14,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 15,
+          "category": "number_theory",
+          "correct": false,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 16,
+          "category": "combinatorics",
+          "correct": false,
+          "n_tokens": 25
+        },
+        {
+          "problem": 17,
+          "category": "combinatorics",
+          "correct": false,
+          "n_tokens": 27
+        },
+        {
+          "problem": 18,
+          "category": "combinatorics",
+          "correct": false,
+          "n_tokens": 17
+        },
+        {
+          "problem": 19,
+          "category": "combinatorics",
+          "correct": false,
+          "n_tokens": 1024
+        }
+      ]
+    }
+  },
+  "surgery": {
+    "en": {
+      "correct": 20,
+      "total": 20,
+      "details": [
+        {
+          "problem": 0,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 90
+        },
+        {
+          "problem": 1,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 119
+        },
+        {
+          "problem": 2,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 104
+        },
+        {
+          "problem": 3,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 185
+        },
+        {
+          "problem": 4,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 186
+        },
+        {
+          "problem": 5,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 106
+        },
+        {
+          "problem": 6,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 135
+        },
+        {
+          "problem": 7,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 283
+        },
+        {
+          "problem": 8,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 167
+        },
+        {
+          "problem": 9,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 226
+        },
+        {
+          "problem": 10,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 94
+        },
+        {
+          "problem": 11,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 85
+        },
+        {
+          "problem": 12,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 274
+        },
+        {
+          "problem": 13,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 249
+        },
+        {
+          "problem": 14,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 228
+        },
+        {
+          "problem": 15,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 224
+        },
+        {
+          "problem": 16,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 230
+        },
+        {
+          "problem": 17,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 210
+        },
+        {
+          "problem": 18,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 201
+        },
+        {
+          "problem": 19,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 185
+        }
+      ]
+    },
+    "zh": {
+      "correct": 20,
+      "total": 20,
+      "details": [
+        {
+          "problem": 0,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 1,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 68
+        },
+        {
+          "problem": 2,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 271
+        },
+        {
+          "problem": 3,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 109
+        },
+        {
+          "problem": 4,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 5,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 6,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 7,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 15
+        },
+        {
+          "problem": 8,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 118
+        },
+        {
+          "problem": 9,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 144
+        },
+        {
+          "problem": 10,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 11,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 12,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 239
+        },
+        {
+          "problem": 13,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 38
+        },
+        {
+          "problem": 14,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 15,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 539
+        },
+        {
+          "problem": 16,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 17,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 18,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 151
+        },
+        {
+          "problem": 19,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 277
+        }
+      ]
+    },
+    "ar": {
+      "correct": 15,
+      "total": 20,
+      "details": [
+        {
+          "problem": 0,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 1,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 2,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 3,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 4,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 18
+        },
+        {
+          "problem": 5,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 6,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 12
+        },
+        {
+          "problem": 7,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 15
+        },
+        {
+          "problem": 8,
+          "category": "geometry",
+          "correct": false,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 9,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 220
+        },
+        {
+          "problem": 10,
+          "category": "geometry",
+          "correct": false,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 11,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 12,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 23
+        },
+        {
+          "problem": 13,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 14,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 212
+        },
+        {
+          "problem": 15,
+          "category": "number_theory",
+          "correct": false,
+          "n_tokens": 57
+        },
+        {
+          "problem": 16,
+          "category": "combinatorics",
+          "correct": false,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 17,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 27
+        },
+        {
+          "problem": 18,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 123
+        },
+        {
+          "problem": 19,
+          "category": "combinatorics",
+          "correct": false,
+          "n_tokens": 1024
+        }
+      ]
+    },
+    "es": {
+      "correct": 18,
+      "total": 20,
+      "details": [
+        {
+          "problem": 0,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 41
+        },
+        {
+          "problem": 1,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 103
+        },
+        {
+          "problem": 2,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 18
+        },
+        {
+          "problem": 3,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 196
+        },
+        {
+          "problem": 4,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 15
+        },
+        {
+          "problem": 5,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 15
+        },
+        {
+          "problem": 6,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 12
+        },
+        {
+          "problem": 7,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 15
+        },
+        {
+          "problem": 8,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 131
+        },
+        {
+          "problem": 9,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 185
+        },
+        {
+          "problem": 10,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 76
+        },
+        {
+          "problem": 11,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 113
+        },
+        {
+          "problem": 12,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 112
+        },
+        {
+          "problem": 13,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 103
+        },
+        {
+          "problem": 14,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 259
+        },
+        {
+          "problem": 15,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 159
+        },
+        {
+          "problem": 16,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 285
+        },
+        {
+          "problem": 17,
+          "category": "combinatorics",
+          "correct": false,
+          "n_tokens": 68
+        },
+        {
+          "problem": 18,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 172
+        },
+        {
+          "problem": 19,
+          "category": "combinatorics",
+          "correct": false,
+          "n_tokens": 553
+        }
+      ]
+    },
+    "ja": {
+      "correct": 14,
+      "total": 20,
+      "details": [
+        {
+          "problem": 0,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 1,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 2,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 3,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 4,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 15
+        },
+        {
+          "problem": 5,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 15
+        },
+        {
+          "problem": 6,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 12
+        },
+        {
+          "problem": 7,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 15
+        },
+        {
+          "problem": 8,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 111
+        },
+        {
+          "problem": 9,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 199
+        },
+        {
+          "problem": 10,
+          "category": "geometry",
+          "correct": false,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 11,
+          "category": "geometry",
+          "correct": false,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 12,
+          "category": "number_theory",
+          "correct": false,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 13,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 14,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 121
+        },
+        {
+          "problem": 15,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 176
+        },
+        {
+          "problem": 16,
+          "category": "combinatorics",
+          "correct": false,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 17,
+          "category": "combinatorics",
+          "correct": false,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 18,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 115
+        },
+        {
+          "problem": 19,
+          "category": "combinatorics",
+          "correct": false,
+          "n_tokens": 1024
+        }
+      ]
+    },
+    "ko": {
+      "correct": 16,
+      "total": 20,
+      "details": [
+        {
+          "problem": 0,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 1,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 2,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 170
+        },
+        {
+          "problem": 3,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 4,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 15
+        },
+        {
+          "problem": 5,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 6,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 7,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 197
+        },
+        {
+          "problem": 8,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 9,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 229
+        },
+        {
+          "problem": 10,
+          "category": "geometry",
+          "correct": false,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 11,
+          "category": "geometry",
+          "correct": false,
+          "n_tokens": 306
+        },
+        {
+          "problem": 12,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 13,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 52
+        },
+        {
+          "problem": 14,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 161
+        },
+        {
+          "problem": 15,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 16,
+          "category": "combinatorics",
+          "correct": false,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 17,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 18,
+          "category": "combinatorics",
+          "correct": true,
+          "n_tokens": 137
+        },
+        {
+          "problem": 19,
+          "category": "combinatorics",
+          "correct": false,
+          "n_tokens": 1013
+        }
+      ]
+    },
+    "sw": {
+      "correct": 8,
+      "total": 20,
+      "details": [
+        {
+          "problem": 0,
+          "category": "algebra",
+          "correct": false,
+          "n_tokens": 16
+        },
+        {
+          "problem": 1,
+          "category": "algebra",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 2,
+          "category": "algebra",
+          "correct": false,
+          "n_tokens": 76
+        },
+        {
+          "problem": 3,
+          "category": "algebra",
+          "correct": false,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 4,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 5,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 10
+        },
+        {
+          "problem": 6,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 18
+        },
+        {
+          "problem": 7,
+          "category": "arithmetic",
+          "correct": true,
+          "n_tokens": 21
+        },
+        {
+          "problem": 8,
+          "category": "geometry",
+          "correct": false,
+          "n_tokens": 89
+        },
+        {
+          "problem": 9,
+          "category": "geometry",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 10,
+          "category": "geometry",
+          "correct": false,
+          "n_tokens": 25
+        },
+        {
+          "problem": 11,
+          "category": "geometry",
+          "correct": false,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 12,
+          "category": "number_theory",
+          "correct": false,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 13,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 14,
+          "category": "number_theory",
+          "correct": true,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 15,
+          "category": "number_theory",
+          "correct": false,
+          "n_tokens": 1024
+        },
+        {
+          "problem": 16,
+          "category": "combinatorics",
+          "correct": false,
+          "n_tokens": 25
+        },
+        {
+          "problem": 17,
+          "category": "combinatorics",
+          "correct": false,
+          "n_tokens": 28
+        },
+        {
+          "problem": 18,
+          "category": "combinatorics",
+          "correct": false,
+          "n_tokens": 17
+        },
+        {
+          "problem": 19,
+          "category": "combinatorics",
+          "correct": false,
+          "n_tokens": 1024
+        }
+      ]
+    }
+  },
+  "wall_time_s": 2911.584362268448
+}

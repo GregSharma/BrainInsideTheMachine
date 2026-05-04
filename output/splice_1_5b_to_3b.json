@@ -1,0 +1,62 @@
+{
+  "method": "procrustes_on_normalized_contrastive_Z",
+  "best_small_layer": "L16",
+  "ref_layer": "L32",
+  "k": 20,
+  "n_lang_removed": 5,
+  "r2_procrustes_zh_test": -6719872.0,
+  "r2_procrustes_en_test": -16855932.0,
+  "r2_ridge_zh_test": 0.7521449327468872,
+  "r2_ridge_en_test": -4.65056848526001,
+  "nn_procrustes_splice": 0.53,
+  "nn_ridge_splice": 0.595,
+  "nn_3b_baseline": 0.66,
+  "nn_random_mean": 0.00515,
+  "nn_random_std": 0.004972675336275233,
+  "scale": 2612.87890625,
+  "det_R": 0.9999995231628418,
+  "layer_sweep": {
+    "L4": {
+      "r2_zh": -6399588.5,
+      "r2_en": -35052684.0,
+      "nn_splice": 0.53,
+      "nn_within": 0.865
+    },
+    "L8": {
+      "r2_zh": -6605801.5,
+      "r2_en": -15195915.0,
+      "nn_splice": 0.55,
+      "nn_within": 0.92
+    },
+    "L12": {
+      "r2_zh": -6591920.5,
+      "r2_en": -17483724.0,
+      "nn_splice": 0.535,
+      "nn_within": 0.88
+    },
+    "L16": {
+      "r2_zh": -6720036.0,
+      "r2_en": -16855836.0,
+      "nn_splice": 0.53,
+      "nn_within": 0.895
+    },
+    "L20": {
+      "r2_zh": -6814902.5,
+      "r2_en": -24662554.0,
+      "nn_splice": 0.595,
+      "nn_within": 0.81
+    },
+    "L24": {
+      "r2_zh": -6136343.0,
+      "r2_en": -9263618.0,
+      "nn_splice": 0.445,
+      "nn_within": 0.64
+    },
+    "L27": {
+      "r2_zh": -5429284.5,
+      "r2_en": -62620224.0,
+      "nn_splice": 0.305,
+      "nn_within": 0.305
+    }
+  }
+}

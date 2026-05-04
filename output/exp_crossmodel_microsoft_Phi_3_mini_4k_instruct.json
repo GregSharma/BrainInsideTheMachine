@@ -1,0 +1,955 @@
+{
+  "model": "microsoft/Phi-3-mini-4k-instruct",
+  "architecture": {
+    "n_layers": 32,
+    "d_model": 3072,
+    "intermediate_size": 8192,
+    "tied_embeddings": false,
+    "down_proj": "down_proj",
+    "gate_proj": "gate_up_proj",
+    "up_proj": null
+  },
+  "convention_breakpoint": 2,
+  "lang_dist": [
+    0.27714991569519043,
+    0.561288595199585,
+    0.9341709613800049,
+    1.8533694744110107,
+    2.4402687549591064,
+    3.240426778793335,
+    4.394403457641602,
+    6.006744861602783,
+    7.573025703430176,
+    8.444066047668457,
+    9.21995735168457,
+    10.140501976013184,
+    14.310541152954102,
+    19.048994064331055,
+    22.523361206054688,
+    26.0673770904541,
+    35.25139617919922,
+    41.46106719970703,
+    48.31537628173828,
+    53.91057586669922,
+    68.7730712890625,
+    78.27572631835938,
+    93.73665618896484,
+    106.74179077148438,
+    152.33792114257812,
+    168.82359313964844,
+    204.9163055419922,
+    217.19290161132812,
+    232.67518615722656,
+    252.48069763183594,
+    288.105712890625,
+    685.0477905273438
+  ],
+  "baseline": {
+    "scores": {
+      "en": 17,
+      "zh": 17
+    },
+    "details": {
+      "en": [
+        {
+          "answer": 5,
+          "category": "algebra",
+          "correct": true,
+          "output_tail": "To solve for x, follow these steps:\n\n1. Subtract 7 from both sides of the equation:\n3x + 7 - 7 = 22 - 7\n3x = 15\n\n2. Divide both sides by 3:\n3x / 3 = 15 / 3\nx = 5\n\nThe final numerical answer is x = 5.",
+          "gen_tokens": 91
+        },
+        {
+          "answer": 2,
+          "category": "algebra",
+          "correct": true,
+          "output_tail": "ide both sides by 2 to solve for x\u00b2.\nx\u00b2 = 4\n\nStep 3: Take the square root of both sides to solve for x.\nx = \u00b1\u221a4\n\nStep 4: Simplify the square root.\nx = \u00b12\n\nSo, the solutions for x are x = 2 and x = -2.",
+          "gen_tokens": 128
+        },
+        {
+          "answer": "x\u00b2 - 9",
+          "category": "algebra",
+          "correct": false,
+          "output_tail": "he last terms in each binomial: 3 * (-3) = -9\n\nNow, combine the results: x^2 - 3x + 3x - 9\n\nNotice that the -3x and 3x terms cancel each other out:\n\nx^2 - 9\n\nSo, the simplified expression is:\n\nx^2 - 9",
+          "gen_tokens": 205
+        },
+        {
+          "answer": 4,
+          "category": "algebra",
+          "correct": true,
+          "output_tail": " the equation |2x - 5| = 3, we need to consider two cases:\n\nCase 1: 2x - 5 = 3\n2x = 3 + 5\n2x = 8\nx = 8/2\nx = 4\n\nCase 2: -(2x - 5) = 3\n-2x + 5 = 3\n-2x = -2\nx = 1\n\nSo, the solutions are x = 4 and x = 1.",
+          "gen_tokens": 120
+        },
+        {
+          "answer": 1005,
+          "category": "arithmetic",
+          "correct": true,
+          "output_tail": "To calculate the sum of 347 and 658, we simply add the two numbers together:\n\n\n```\n\n  347\n\n+ 658\n\n------\n\n 1005\n\n```\n\n\nThe final numerical answer is 1005.",
+          "gen_tokens": 68
+        },
+        {
+          "answer": 613,
+          "category": "arithmetic",
+          "correct": true,
+          "output_tail": "To calculate 1000 - 387, we subtract the second number from the first:\n\n\n1000\n\n- 387\n\n_\n\n613\n\n\nThe final numerical answer is 613.",
+          "gen_tokens": 58
+        },
+        {
+          "answer": 391,
+          "category": "arithmetic",
+          "correct": true,
+          "output_tail": ", we can use the standard multiplication method:\n\n\n```\n\n   23\n\n\u00d7  17\n\n------\n\n  161  (23 \u00d7 7)\n\n+ 460  (23 \u00d7 10, shift one position to the left)\n\n------\n\n  391\n\n```\n\n\nThe final numerical answer is 391.",
+          "gen_tokens": 102
+        },
+        {
+          "answer": 144,
+          "category": "arithmetic",
+          "correct": false,
+          "output_tail": " goes exactly 4 times. Write 4 above the division bar next to the 14.\n\n10. Multiply 4 by 12 and write the result (48) below the 48.\n\n11. Subtract 48 from 48 to get 0.\n\n\nThe result of 1728 \u00f7 12 is 144.",
+          "gen_tokens": 327
+        },
+        {
+          "answer": 154,
+          "category": "geometry",
+          "correct": true,
+          "output_tail": "g the approximation \u03c0 \u2248 22/7, we can calculate the area as follows:\n\nArea = (22/7) * (7^2)\n\nArea = (22/7) * 49\n\nArea = 22 * 7\n\nArea = 154\n\nSo, the area of the circle with radius 7 is 154 square units.",
+          "gen_tokens": 139
+        },
+        {
+          "answer": 13,
+          "category": "geometry",
+          "correct": true,
+          "output_tail": " + 12\u00b2\nc\u00b2 = 25 + 144\nc\u00b2 = 169\n\nNow, to find the value of c (the hypotenuse), we take the square root of both sides:\n\nc = \u221a169\nc = 13\n\nSo, the hypotenuse of the right triangle with legs 5 and 12 is 13.",
+          "gen_tokens": 222
+        },
+        {
+          "answer": 46,
+          "category": "geometry",
+          "correct": false,
+          "output_tail": "ngle is given by the formula P = 2(length + width).\nIn this case, the length is 15 and the width is 8.\nSo, the perimeter is P = 2(15 + 8) = 2(23) = 46.\nTherefore, the perimeter of the rectangle is 46.",
+          "gen_tokens": 84
+        },
+        {
+          "answer": 216,
+          "category": "geometry",
+          "correct": true,
+          "output_tail": "mula:\n\nVolume = side length^3\n\nGiven the side length of the cube is 6, we can calculate the volume as follows:\n\nVolume = 6^3\nVolume = 6 * 6 * 6\nVolume = 216\n\nThe volume of the cube is 216 cubic units.",
+          "gen_tokens": 86
+        },
+        {
+          "answer": 12,
+          "category": "number_theory",
+          "correct": true,
+          "output_tail": ") by the smaller number (12) and find the remainder.\n   36 \u00f7 12 = 3 with a remainder of 0.\n\nSince the remainder is 0, the GCD is the last non-zero remainder, which is 12.\n\nThe GCD of 84 and 120 is 12.",
+          "gen_tokens": 319
+        },
+        {
+          "answer": "yes",
+          "category": "number_theory",
+          "correct": true,
+          "output_tail": "t an integer, 97 divided by 3 is not an integer, 97 divided by 5 is not an integer, and 97 divided by 7 is not an integer), 97 has no divisors other than 1 and itself. Therefore, 97 is a prime number.",
+          "gen_tokens": 186
+        },
+        {
+          "answer": 2,
+          "category": "number_theory",
+          "correct": true,
+          "output_tail": "2\n5. 2^5 % 7 = 2^2 % 7 = 4\n6. 2^6 % 7 = 2^3 % 7 = 1\n7. 2^7 % 7 = 2^1 % 7 = 2\n8. 2^8 % 7 = 2^2 % 7 = 4\n9. 2^9 % 7 = 2^1 % 7 = 2\n10. 2^10 % 7 = 2^2 % 7 = 4\n\nThe remainder when 2^10 is divided by 7 is 4.",
+          "gen_tokens": 262
+        },
+        {
+          "answer": 77,
+          "category": "number_theory",
+          "correct": true,
+          "output_tail": "The prime numbers less than 20 are 2, 3, 5, 7, 11, 13, 17, and 19.\nThe sum of these prime numbers is $2 + 3 + 5 + 7 + 11 + 13 + 17 + 19 = \\boxed{77}$.\nThe answer is: 77",
+          "gen_tokens": 90
+        },
+        {
+          "answer": 35,
+          "category": "combinatorics",
+          "correct": true,
+          "output_tail": "= 7! / (3!(7-3)!)\n\nC(7, 3) = 7! / (3!4!)\n\nC(7, 3) = (7*6*5*4*3*2*1) / ((3*2*1)*(4*3*2*1))\n\nC(7, 3) = (7*6*5) / (3*2*1)\n\nC(7, 3) = 210 / 6\n\nC(7, 3) = 35\n\nSo, there are 35 ways to choose 3 items from 7.",
+          "gen_tokens": 230
+        },
+        {
+          "answer": 120,
+          "category": "combinatorics",
+          "correct": true,
+          "output_tail": "o find the total number of ways the 5 people can stand in a line, we multiply the number of choices for each position:\n\n5 \u00d7 4 \u00d7 3 \u00d7 2 \u00d7 1 = 120\n\nSo, there are 120 ways for 5 people to stand in a line.",
+          "gen_tokens": 182
+        },
+        {
+          "answer": 56,
+          "category": "combinatorics",
+          "correct": true,
+          "output_tail": "\u00d7 2 \u00d7 1)\n\n\nNow, we can further simplify by canceling out the common factors:\n\n\n= (8 \u00d7 7 \u00d7 6) / (3 \u00d7 2 \u00d7 1)\n\n= (8 \u00d7 7 \u00d7 2) / (1)\n\n= 8 \u00d7 7 \u00d7 2\n\n= 56 \u00d7 2\n\n= 112\n\n\nSo, the final numerical answer is:\n\n\n112",
+          "gen_tokens": 381
+        },
+        {
+          "answer": 648,
+          "category": "combinatorics",
+          "correct": true,
+          "output_tail": "ices (0-9, excluding the digits chosen for the hundreds and tens places).\nTherefore, the total number of 3-digit numbers with distinct digits is $9 \\times 9 \\times 8 = \\boxed{648}$.\nThe answer is: 648",
+          "gen_tokens": 144
+        }
+      ],
+      "zh": [
+        {
+          "answer": 5,
+          "category": "algebra",
+          "correct": true,
+          "output_tail": "\u65b9\u7a0b 3x + 7 = 22\uff0c\u6211\u4eec\u9700\u8981\u627e\u5230 x \u7684\u503c\u3002\n\n\n1. \u9996\u5148\uff0c\u6211\u4eec\u5c06 7 \u4ece\u5de6\u8fb9\u79fb\u51fa\u6765\uff0c\u5f97\u5230\uff1a\n\n   3x = 22 - 7\n\n\n2. \u7136\u540e\uff0c\u6211\u4eec\u8ba1\u7b97 22 - 7 \u5f97\u5230 15\uff1a\n\n   3x = 15\n\n\n3. \u6700\u540e\uff0c\u6211\u4eec\u5c06 3x \u9664\u4ee5 3 \u5f97\u5230 x \u7684\u503c\uff1a\n\n   x = 15 / 3\n\n\n4. \u8ba1\u7b97\u5f97\u5230 x = 5\u3002\n\n\n\u56e0\u6b64\uff0c\u89e3\u65b9\u7a0b 3x + 7 = 22 \u7684 x \u7684\u503c\u662f 5\u3002",
+          "gen_tokens": 186
+        },
+        {
+          "answer": 2,
+          "category": "algebra",
+          "correct": true,
+          "output_tail": ". \u7136\u540e\uff0c\u6211\u4eec\u53ef\u4ee5\u5c06 x\u00b2 - 4 \u5199\u6210 (x - 2)(x + 2) = 0\u3002\n3. \u6839\u636e\u5dee\u4e58\u6cd5\u5b9a\u7406\uff0c\u5982\u679c\u4e24\u4e2a\u56e0\u5b50\u76f8\u4e58\u5f97\u52300\uff0c\u5219\u81f3\u5c11\u4e00\u4e2a\u56e0\u5b50\u5fc5\u987b\u4e3a0\u3002\n4. \u56e0\u6b64\uff0c\u6211\u4eec\u6709\u4e24\u4e2a\u89e3\uff1ax - 2 = 0 \u6216 x + 2 = 0\u3002\n5. \u89e3 x - 2 = 0 \u5f97\u5230 x = 2\u3002\u89e3 x + 2 = 0 \u5f97\u5230 x = -2\u3002\n6. \u6240\u4ee5\uff0c\u65b9\u7a0b 2x\u00b2 - 8 = 0 \u7684\u89e3\u662f x = 2 \u548c x = -2\u3002",
+          "gen_tokens": 239
+        },
+        {
+          "answer": "x\u00b2 - 9",
+          "category": "algebra",
+          "correct": false,
+          "output_tail": "uares formula, which states that (a + b)(a - b) = a^2 - b^2.\n\n\nLet a = x and b = 3.\n\n\nNow, apply the formula:\n\n(x + 3)(x - 3) = x^2 - 3^2\n\n= x^2 - 9\n\n\nThe simplified form of the expression is x^2 - 9.",
+          "gen_tokens": 116
+        },
+        {
+          "answer": 4,
+          "category": "algebra",
+          "correct": true,
+          "output_tail": " 3\n\n   2x = 3 + 5\n\n   2x = 8\n\n   x = 8 / 2\n\n   x = 4\n\n\n2. \u5f532x - 5 \u7684\u8d1f\u503c\u65f6\uff1a\n\n   -(2x - 5) = 3\n\n   -2x + 5 = 3\n\n   -2x = 3 - 5\n\n   -2x = -2\n\n   x = -2 / -2\n\n   x = 1\n\n\n\u56e0\u6b64\uff0c\u65b9\u7a0b |2x - 5| = 3 \u7684\u89e3\u662f x = 4 \u548c x = 1\u3002",
+          "gen_tokens": 222
+        },
+        {
+          "answer": 1005,
+          "category": "arithmetic",
+          "correct": true,
+          "output_tail": "\uff0c\u6700\u540e\u52a0\u5927\u4f4d\u6570\u3002\n\n\n\u5c0f\u4f4d\u6570\uff1a7 + 8 = 15\uff0c\u5199\u6210\u4e24\u4f4d\u6570\u662f15\uff0c\u5c0615\u76841\u5199\u5165\u5c0f\u4f4d\u6570\uff0c\u5c0615\u76845\u5199\u5165\u4e2d\u4f4d\u6570\u3002\n\n\n\u4e2d\u4f4d\u6570\uff1a4 + 5 + 1\uff08\u4ece\u5c0f\u4f4d\u6570\u76841\uff09= 10\uff0c\u5199\u6210\u4e24\u4f4d\u6570\u662f10\uff0c\u5c0610\u76841\u5199\u5165\u4e2d\u4f4d\u6570\uff0c\u5c0610\u76840\u5199\u5165\u5927\u4f4d\u6570\u3002\n\n\n\u5927\u4f4d\u6570\uff1a3 + 6 + 1\uff08\u4ece\u4e2d\u4f4d\u6570\u76841\uff09= 10\uff0c\u5199\u6210\u4e24\u4f4d\u6570\u662f10\uff0c\u5c0610\u76841\u5199\u5165\u5927\u4f4d\u6570\uff0c\u5c0610\u76840\u5199\u5165\u6700\u9ad8\u4f4d\u3002\n\n\n\u6240\u4ee5\uff0c347 + 658 = 1005\u3002",
+          "gen_tokens": 260
+        },
+        {
+          "answer": 613,
+          "category": "arithmetic",
+          "correct": true,
+          "output_tail": "\u9996\u5148\uff0c\u6211\u4eec\u5c06\u4e24\u4e2a\u6570\u76f8\u52a0\uff0c\u5f97\u52301000 + 387 = 1387\u3002\u7136\u540e\uff0c\u6211\u4eec\u5c061387 \u51cf\u53bb 387\uff0c\u5f97\u52301387 - 387 = 1000\u3002\u6240\u4ee5\uff0c1000 - 387 = 613\u3002",
+          "gen_tokens": 88
+        },
+        {
+          "answer": 391,
+          "category": "arithmetic",
+          "correct": true,
+          "output_tail": "\u9996\u5148\uff0c\u6211\u4eec\u5c06\u4e24\u4e2a\u6570\u5206\u89e3\u4e3a\u66f4\u7b80\u5355\u7684\u90e8\u5206\uff0c\u4f7f\u7528\u5206\u914d\u5f8b\u6765\u8ba1\u7b97\u3002\n\n23 \u00d7 17 = (20 + 3) \u00d7 (10 + 7)\n\n\u73b0\u5728\uff0c\u6211\u4eec\u5c06\u5206\u914d\u5f8b\u5e94\u7528\u5230\u8fd9\u4e2a\u8868\u8fbe\u5f0f\u4e2d\uff1a\n\n= 20 \u00d7 10 + 20 \u00d7 7 + 3 \u00d7 10 + 3 \u00d7 7\n\n= 200 + 140 + 30 + 21\n\n= 391\n\n\u56e0\u6b64\uff0c23 \u00d7 17\u7684\u7ed3\u679c\u662f 391\u3002",
+          "gen_tokens": 158
+        },
+        {
+          "answer": 144,
+          "category": "arithmetic",
+          "correct": true,
+          "output_tail": "\u9996\u5148\uff0c\u6211\u4eec\u5c061728\u9664\u4ee512\u3002\n\n\n1728 \u00f7 12 = 144\n\n\n\u6240\u4ee5\uff0c1728 \u00f7 12\u7684\u7ed3\u679c\u662f144\u3002",
+          "gen_tokens": 57
+        },
+        {
+          "answer": 154,
+          "category": "geometry",
+          "correct": true,
+          "output_tail": "\u8981\u6c42\u534a\u5f84\u4e3a7\u7684\u5706\u7684\u9762\u79ef\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u9762\u79ef\u7684\u516c\u5f0f\uff1a\u9762\u79ef = \u03c0 * r^2\uff0c\u5176\u4e2d r \u662f\u534a\u5f84\u3002\n\n\n\u9996\u5148\uff0c\u6211\u4eec\u5c06 r = 7 \u4ee3\u5165\u9762\u79ef\u7684\u516c\u5f0f\uff1a\n\n\u9762\u79ef = \u03c0 * (7)^2\n\n\n\u63a5\u4e0b\u6765\uff0c\u6211\u4eec\u4f7f\u7528\u03c0 \u2248 22/7\u6765\u8ba1\u7b97\u9762\u79ef\uff1a\n\n\u9762\u79ef = (22/7) * (7)^2\n\n\u9762\u79ef = (22/7) * 49\n\n\u9762\u79ef = 22 * 7\n\n\u9762\u79ef = 154\n\n\n\u56e0\u6b64\uff0c\u534a\u5f84\u4e3a7\u7684\u5706\u7684\u9762\u79ef\u5927\u7ea6\u4e3a154\u5e73\u65b9\u5398\u7c73\u3002",
+          "gen_tokens": 222
+        },
+        {
+          "answer": 13,
+          "category": "geometry",
+          "correct": true,
+          "output_tail": "\u8fb9\u7684\u5e73\u65b9\u76f8\u7b49\u3002\n\n\n\u8bbe\u76f4\u89d2\u4e09\u89d2\u5f62\u7684\u659c\u8fb9\u4e3ac\uff0c\u76f4\u89d2\u8fb9\u4e3aa\u548cb\u3002\u6839\u636e\u9898\u76ee\uff0ca=5\uff0cb=12\u3002\n\n\n\u6839\u636ePythagoras \u89c4\u5219\uff0c\u6211\u4eec\u6709\uff1a\n\na^2 + b^2 = c^2\n\n\n\u5c06a\u548cb\u7684\u503c\u4ee3\u5165\u516c\u5f0f\u4e2d\uff0c\u6211\u4eec\u5f97\u5230\uff1a\n\n5^2 + 12^2 = c^2\n\n25 + 144 = c^2\n\n169 = c^2\n\n\n\u53d6\u5e73\u65b9\u6839\uff0c\u6211\u4eec\u5f97\u5230\uff1a\n\nc = \u221a169\n\nc = 13\n\n\n\u56e0\u6b64\uff0c\u76f4\u89d2\u4e09\u89d2\u5f62\u7684\u659c\u8fb9\u957f\u5ea6\u4e3a13\u3002",
+          "gen_tokens": 244
+        },
+        {
+          "answer": 46,
+          "category": "geometry",
+          "correct": true,
+          "output_tail": "\u4e3a\u4e86\u8ba1\u7b97\u77e9\u5f62\u7684\u5468\u957f\uff0c\u6211\u4eec\u53ea\u9700\u8981\u5c06\u957f\u548c\u5bbd\u4e24\u4e2a\u8fb9\u52a0\u8d77\u6765\u7136\u540e\u4e58\u4ee52\u3002\n\n\n\u957f\u5ea6\uff08\u957f\uff09 = 15\u5398\u7c73\n\n\u5bbd\u5ea6\uff08\u5bbd\uff09 = 8\u5398\u7c73\n\n\n\u5468\u957f\uff08\u5468\u957f\uff09 = 2 \u00d7 (\u957f + \u5bbd)\n\n\u5468\u957f = 2 \u00d7 (15 + 8)\n\n\u5468\u957f = 2 \u00d7 23\n\n\u5468\u957f = 46\u5398\u7c73\n\n\n\u7b54\u6848\uff1a\u77e9\u5f62\u7684\u5468\u957f\u662f46\u5398\u7c73\u3002",
+          "gen_tokens": 157
+        },
+        {
+          "answer": 216,
+          "category": "geometry",
+          "correct": true,
+          "output_tail": "\u6b63\u65b9\u4f53\u7684\u4f53\u79ef\u7b49\u4e8e\u8fb9\u957f\u7684\u7acb\u65b9\u3002\u56e0\u6b64\uff0c\u5982\u679c\u6b63\u65b9\u4f53\u7684\u8fb9\u957f\u4e3a6\uff0c\u5219\u5176\u4f53\u79ef\u4e3a6^3\u3002\n\n\n\u8ba1\u7b97\u8fc7\u7a0b\u5982\u4e0b\uff1a\n\n6^3 = 6 * 6 * 6 = 216\n\n\n\u6b63\u65b9\u4f53\u7684\u4f53\u79ef\u4e3a216\u7acb\u65b9\u5398\u7c73\u3002",
+          "gen_tokens": 94
+        },
+        {
+          "answer": 12,
+          "category": "number_theory",
+          "correct": true,
+          "output_tail": ", 2, 3, 4, 6, 7, 12, 14, 21, 28, 42, 84\n\n120\u7684\u56e0\u6570\u4e3a\uff1a1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 24, 30, 40, 60, 120\n\n\n\u7136\u540e\uff0c\u6211\u4eec\u627e\u5230\u4e24\u4e2a\u5217\u8868\u4e2d\u7684\u516c\u5171\u56e0\u6570\uff0c\u537384\u548c120\u7684\u6700\u5927\u516c\u7ea6\u6570\u3002\n\n\n\u516c\u5171\u56e0\u6570\u4e3a\uff1a1, 2, 3, 4, 6, 12\n\n\n\u6700\u5927\u516c\u7ea6\u6570\u662f12\u3002\n\n\n\u56e0\u6b64\uff0c84\u548c120\u7684\u6700\u5927\u516c\u7ea6\u6570\u662f12\u3002",
+          "gen_tokens": 297
+        },
+        {
+          "answer": "yes",
+          "category": "number_theory",
+          "correct": false,
+          "output_tail": "\u662f\u300297\u662f\u4e00\u4e2a\u8d28\u6570\u3002\u4e3a\u4e86\u8bc1\u660e97\u662f\u8d28\u6570\uff0c\u6211\u4eec\u9700\u8981\u68c0\u67e5\u5b83\u662f\u5426\u80fd\u88ab\u4efb\u4f55\u5c0f\u4e8e\u5176\u5e73\u65b9\u6839\u7684\u6574\u6570\u6574\u9664\u300297\u7684\u5e73\u65b9\u6839\u5927\u7ea6\u4e3a10\uff0c\u56e0\u6b64\u6211\u4eec\u53ea\u9700\u8981\u68c0\u67e51\u523010\u7684\u6240\u6709\u6574\u6570\u662f\u5426\u80fd\u6574\u966497\u3002\u7531\u4e8e97\u662f\u4e00\u4e2a\u8f83\u5927\u7684\u6570\uff0c\u6211\u4eec\u53ef\u4ee5\u5feb\u901f\u6392\u9664\u5b83\u53ef\u80fd\u7684\u56e0\u6570\uff1a\n\n\n1\u30012\u30013\u30014\u30015\u30016\u30017\u30018\u30019\u300110\u90fd\u4e0d\u80fd\u6574\u966497\u3002\n\n\n\u7531\u4e8e97\u6ca1\u6709\u8fd9\u4e9b\u6570\u7684\u56e0\u6570\uff0c\u6211\u4eec\u53ef\u4ee5\u786e\u5b9a97\u662f\u4e00\u4e2a\u8d28\u6570\u3002",
+          "gen_tokens": 207
+        },
+        {
+          "answer": 2,
+          "category": "number_theory",
+          "correct": true,
+          "output_tail": "\u8981\u6c422^10\u9664\u4ee57\u7684\u4f59\u6570\uff0c\u6211\u4eec\u9996\u5148\u8ba1\u7b972^10\u7684\u503c\uff1a\n\n2^10 = 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 = 1024\n\n\u63a5\u4e0b\u6765\uff0c\u6211\u4eec\u5c061024\u9664\u4ee57\uff0c\u5e76\u8ba1\u7b97\u4f59\u6570\uff1a\n\n1024 \u00f7 7 = 146 remainder 2\n\n\u56e0\u6b64\uff0c2^10\u9664\u4ee57\u7684\u4f59\u6570\u662f2\u3002",
+          "gen_tokens": 135
+        },
+        {
+          "answer": 77,
+          "category": "number_theory",
+          "correct": true,
+          "output_tail": " 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19\n\n2. \u6392\u9664\u975e\u8d28\u6570\uff1a4, 6, 8, 9, 10, 12, 14, 15, 16, 18, 19\n\n3. \u5269\u4e0b\u7684\u8d28\u6570\uff1a2, 3, 5, 7, 11, 13, 17, 19\n\n4. \u6c42\u548c\uff1a2 + 3 + 5 + 7 + 11 + 13 + 17 + 19 = 77\n\n\n\u6240\u4ee5\uff0c20\u4ee5\u5185\u6240\u6709\u8d28\u6570\u7684\u548c\u662f77\u3002",
+          "gen_tokens": 306
+        },
+        {
+          "answer": 35,
+          "category": "combinatorics",
+          "correct": true,
+          "output_tail": "          = 7! / (3! * 4!)\n\n          = (7 * 6 * 5 * 4 * 3 * 2 * 1) / ((3 * 2 * 1) * (4 * 3 * 2 * 1))\n\n          = (7 * 6 * 5) / (3 * 2 * 1)\n\n          = 210 / 6\n\n          = 35\n\n\n\u6240\u4ee5\uff0c\u4ece7\u4e2a\u7269\u54c1\u4e2d\u9009\u62e93\u4e2a\u670935\u79cd\u65b9\u6cd5\u3002",
+          "gen_tokens": 319
+        },
+        {
+          "answer": 120,
+          "category": "combinatorics",
+          "correct": false,
+          "output_tail": "\n\n\u63a5\u4e0b\u6765\uff0c\u7b2c\u4e09\u4e2a\u4eba\u7ad9\u7684\u4f4d\u7f6e\u4e5f\u67094\u4e2a\u53ef\u80fd\u7684\u4f4d\u7f6e\uff0c\u56e0\u4e3a\u7b2c\u4e00\u4e2a\u548c\u7b2c\u4e8c\u4e2a\u4eba\u5df2\u7ecf\u7ad9\u5728\u4e86\u4e24\u4e2a\u4f4d\u7f6e\u3002\n\n\u7c7b\u4f3c\u5730\uff0c\u7b2c\u56db\u4e2a\u4eba\u7ad9\u7684\u4f4d\u7f6e\u67093\u4e2a\u53ef\u80fd\u7684\u4f4d\u7f6e\uff0c\u56e0\u4e3a\u7b2c\u4e00\u4e2a\u3001\u7b2c\u4e8c\u4e2a\u548c\u7b2c\u4e09\u4e2a\u4eba\u5df2\u7ecf\u7ad9\u5728\u4e863\u4e2a\u4f4d\u7f6e\u3002\n\n\u6700\u540e\uff0c\u7b2c\u4e94\u4e2a\u4eba\u7ad9\u7684\u4f4d\u7f6e\u67092\u4e2a\u53ef\u80fd\u7684\u4f4d\u7f6e\uff0c\u56e0\u4e3a\u7b2c\u4e00\u4e2a\u3001\u7b2c\u4e8c\u4e2a\u3001\u7b2c\u4e09\u4e2a\u548c\u7b2c\u56db\u4e2a\u4eba\u5df2\u7ecf\u7ad9\u5728\u4e864\u4e2a\u4f4d\u7f6e\u3002\n\n\u6240\u4ee5\uff0c\u603b\u7684\u53ef\u80fd\u7ec4\u5408\u6570\u4e3a\uff1a\n\n5 * 4 * 4 * 3 * 2 = 480\n\n\u6240\u4ee5\uff0c5\u4e2a\u4eba\u7ad9\u6210\u4e00\u6392\u6709480\u79cd\u65b9\u6cd5\u3002",
+          "gen_tokens": 327
+        },
+        {
+          "answer": 56,
+          "category": "combinatorics",
+          "correct": true,
+          "output_tail": "\u3002\n\n8! = 8 \u00d7 7 \u00d7 6 \u00d7 5 \u00d7 4 \u00d7 3 \u00d7 2 \u00d7 1 = 40320\n5! = 5 \u00d7 4 \u00d7 3 \u00d7 2 \u00d7 1 = 120\n3! = 3 \u00d7 2 \u00d7 1 = 6\n\n\u73b0\u5728\uff0c\u6211\u4eec\u53ef\u4ee5\u8ba1\u7b978! / (5! \u00d7 3!)\uff1a\n\n8! / (5! \u00d7 3!) = 40320 / (120 \u00d7 6) = 40320 / 720 = 56\n\n\u56e0\u6b64\uff0c8! / (5! \u00d7 3!)\u7684\u7ed3\u679c\u662f56\u3002",
+          "gen_tokens": 217
+        },
+        {
+          "answer": 648,
+          "category": "combinatorics",
+          "correct": true,
+          "output_tail": "\u8981\u627e\u5230\u4e09\u4f4d\u6570\u7684\u5404\u4f4d\u6570\u5b57\u5747\u4e0d\u76f8\u540c\u7684\u6570\u91cf\uff0c\u6211\u4eec\u53ef\u4ee5\u9010\u4f4d\u5206\u6790\u3002\n\n\n1. \u7b2c\u4e00\u4f4d\uff08\u767e\u4f4d\uff09\u53ef\u4ee5\u662f0-9\uff0c\u4f46\u662f\u7b2c\u4e00\u4f4d\u4e0d\u80fd\u4e3a0\uff0c\u6240\u4ee5\u67099\u4e2a\u9009\u62e9\u3002\n\n2. \u7b2c\u4e8c\u4f4d\uff08\u5341\u4f4d\uff09\u53ef\u4ee5\u662f0-9\uff0c\u4f46\u662f\u5b83\u4e0d\u80fd\u4e0e\u7b2c\u4e00\u4f4d\u76f8\u540c\uff0c\u6240\u4ee5\u67099\u4e2a\u9009\u62e9\u3002\n\n3. \u7b2c\u4e09\u4f4d\uff08\u4e2a\u4f4d\uff09\u4e5f\u53ef\u4ee5\u662f0-9\uff0c\u4f46\u662f\u5b83\u4e0d\u80fd\u4e0e\u7b2c\u4e00\u4f4d\u548c\u7b2c\u4e8c\u4f4d\u76f8\u540c\uff0c\u6240\u4ee5\u67098\u4e2a\u9009\u62e9\u3002\n\n\n\u56e0\u6b64\uff0c\u603b\u5171\u67099 * 9 * 8 = 648\u4e2a\u53ef\u80fd\u7684\u4e09\u4f4d\u6570\uff0c\u5176\u4e2d\u5404\u4f4d\u6570\u5b57\u5747\u4e0d\u76f8\u540c\u3002",
+          "gen_tokens": 223
+        }
+      ]
+    }
+  },
+  "surgery_above_lc": {
+    "scores": {
+      "en": 18,
+      "zh": 18
+    },
+    "details": {
+      "en": [
+        {
+          "answer": 5,
+          "category": "algebra",
+          "correct": true,
+          "output_tail": "3x + 7 = 22\n\nSubtract 7 from both sides:\n\n3x = 15\n\nDivide both sides by 3:\n\nx = 5\n\nFinal answer: x = 5",
+          "gen_tokens": 55
+        },
+        {
+          "answer": 2,
+          "category": "algebra",
+          "correct": true,
+          "output_tail": "h sides by the coefficient of x\u00b2 (which is 2 in this case).\nx\u00b2 = 4\n\nStep 3: Take the square root of both sides.\nx = \u00b1\u221a4\n\nStep 4: Simplify the square root.\nx = \u00b12\n\nSo, the solutions for x are 2 and -2.",
+          "gen_tokens": 132
+        },
+        {
+          "answer": "x\u00b2 - 9",
+          "category": "algebra",
+          "correct": false,
+          "output_tail": "- 3) = x(x) + x(-3) + 3(x) + 3(-3)\n\n\nNow we multiply each term:\n\n\n= x^2 - 3x + 3x - 9\n\n\nNotice that -3x and +3x cancel each other out:\n\n\n= x^2 - 9\n\n\nThe simplified form of the expression is:\n\n\nx^2 - 9",
+          "gen_tokens": 146
+        },
+        {
+          "answer": 4,
+          "category": "algebra",
+          "correct": true,
+          "output_tail": "To solve the equation |2x - 5| = 3, we need to consider two cases:\n\nCase 1: 2x - 5 = 3\n2x = 8\nx = 4\n\nCase 2: -(2x - 5) = 3\n-2x + 5 = 3\n-2x = -2\nx = 1\n\nSo, the solutions are x = 4 and x = 1.",
+          "gen_tokens": 104
+        },
+        {
+          "answer": 1005,
+          "category": "arithmetic",
+          "correct": true,
+          "output_tail": "347 + 658 = 1005",
+          "gen_tokens": 16
+        },
+        {
+          "answer": 613,
+          "category": "arithmetic",
+          "correct": true,
+          "output_tail": "1000 - 387 = 613",
+          "gen_tokens": 16
+        },
+        {
+          "answer": 391,
+          "category": "arithmetic",
+          "correct": true,
+          "output_tail": "23 \u00d7 17 = 391",
+          "gen_tokens": 13
+        },
+        {
+          "answer": 144,
+          "category": "arithmetic",
+          "correct": true,
+          "output_tail": "To calculate 1728 \u00f7 12, we divide 1728 by 12.\n\n\n1728 \u00f7 12 = 144\n\n\nThe final numerical answer is 144.",
+          "gen_tokens": 56
+        },
+        {
+          "answer": 154,
+          "category": "geometry",
+          "correct": true,
+          "output_tail": "radius.\n\n\nGiven:\n\nRadius (r) = 7\n\n\u03c0 \u2248 22/7\n\n\nNow, we plug the values into the formula:\n\nA = \u03c0r^2\n\nA = (22/7) * (7^2)\n\nA = (22/7) * 49\n\nA = 22 * 7\n\nA = 154\n\n\nThe area of the circle is 154 square units.",
+          "gen_tokens": 159
+        },
+        {
+          "answer": 13,
+          "category": "geometry",
+          "correct": true,
+          "output_tail": ":\n\n\nc^2 = 5^2 + 12^2\n\nc^2 = 25 + 144\n\nc^2 = 169\n\n\nNow, take the square root of both sides to solve for c:\n\n\nc = \u221a169\n\nc = 13\n\n\nThe hypotenuse of the right triangle with legs 5 and 12 is 13 units long.",
+          "gen_tokens": 202
+        },
+        {
+          "answer": 46,
+          "category": "geometry",
+          "correct": true,
+          "output_tail": "is the length, and w is the width.\n\n\nGiven:\n\nLength (l) = 15\n\nWidth (w) = 8\n\n\nNow we plug these values into the formula:\n\nP = 2(15 + 8)\n\nP = 2(23)\n\nP = 46\n\n\nThe perimeter of the rectangle is 46 units.",
+          "gen_tokens": 123
+        },
+        {
+          "answer": 216,
+          "category": "geometry",
+          "correct": true,
+          "output_tail": "= s^3, where V is the volume and s is the side length.\n\n\nGiven the side length s = 6, we calculate the volume as follows:\n\n\nV = 6^3\n\nV = 6 * 6 * 6\n\nV = 216\n\n\nThe volume of the cube is 216 cubic units.",
+          "gen_tokens": 97
+        },
+        {
+          "answer": 12,
+          "category": "number_theory",
+          "correct": true,
+          "output_tail": " and 12.\n\nStep 5: Divide 36 by 12.\n36 \u00f7 12 = 3 (quotient) with a remainder of 0.\n\nSince we have a remainder of 0, the GCD is the last non-zero remainder, which is 12.\n\nSo, the GCD of 84 and 120 is 12.",
+          "gen_tokens": 307
+        },
+        {
+          "answer": "yes",
+          "category": "number_theory",
+          "correct": true,
+          "output_tail": "es a remainder (since 7 * 13 = 91, and 97 - 91 = 6, which is not zero).\n\n\nSince 97 is not divisible by any of these primes, it has no divisors other than 1 and itself. Therefore, 97 is a prime number.",
+          "gen_tokens": 294
+        },
+        {
+          "answer": 2,
+          "category": "number_theory",
+          "correct": true,
+          "output_tail": "s of 2.\n\nNow, let's find 2^10 in terms of this pattern:\n\n2^10 = (2^3)^3 * 2^1\n\nSince 2^3 \u2261 1 (mod 7), we have:\n\n(2^3)^3 * 2^1 \u2261 1^3 * 2^1 \u2261 2 (mod 7)\n\nSo, the remainder when 2^10 is divided by 7 is 2.",
+          "gen_tokens": 260
+        },
+        {
+          "answer": 77,
+          "category": "number_theory",
+          "correct": false,
+          "output_tail": "an 1 and itself.\n\n\nThe prime numbers less than 20 are: 2, 3, 5, 7, 11, 13, 17, and 19.\n\n\nNow, we add them up: 2 + 3 + 5 + 7 + 11 + 13 + 17 + 19 = 77.\n\n\nThe sum of all prime numbers less than 20 is 77.",
+          "gen_tokens": 154
+        },
+        {
+          "answer": 35,
+          "category": "combinatorics",
+          "correct": true,
+          "output_tail": "= 7! / (3!(7-3)!)\n\nC(7, 3) = 7! / (3!4!)\n\nC(7, 3) = (7*6*5*4*3*2*1) / ((3*2*1)*(4*3*2*1))\n\nC(7, 3) = (7*6*5) / (3*2*1)\n\nC(7, 3) = 210 / 6\n\nC(7, 3) = 35\n\nSo, there are 35 ways to choose 3 items from 7.",
+          "gen_tokens": 232
+        },
+        {
+          "answer": 120,
+          "category": "combinatorics",
+          "correct": true,
+          "output_tail": " 3 choices for the third position, 2 for the fourth, and 1 for the last position.\n\n\nThe total number of ways 5 people can stand in a line is the product of these choices: 5 \u00d7 4 \u00d7 3 \u00d7 2 \u00d7 1 = 120 ways.",
+          "gen_tokens": 152
+        },
+        {
+          "answer": 56,
+          "category": "combinatorics",
+          "correct": true,
+          "output_tail": "ncel out the common terms (5 \u00d7 4 \u00d7 3 \u00d7 2 \u00d7 1) in the numerator and the denominator:\n\n\n= (8 \u00d7 7 \u00d7 6) / (3 \u00d7 2 \u00d7 1)\n\n\nNow we simplify:\n\n\n= (8 \u00d7 7 \u00d7 6) / (6)\n\n\n= 8 \u00d7 7\n\n\n= 56\n\n\nSo the final answer is 56.",
+          "gen_tokens": 278
+        },
+        {
+          "answer": 648,
+          "category": "combinatorics",
+          "correct": true,
+          "output_tail": "ces for each digit: \n\n9 choices for the first digit * 9 choices for the second digit * 8 choices for the third digit = 648 \n\nSo, there are 648 3-digit numbers with distinct digits. \n\nFinal answer: 648",
+          "gen_tokens": 180
+        }
+      ],
+      "zh": [
+        {
+          "answer": 5,
+          "category": "algebra",
+          "correct": true,
+          "output_tail": " with the variable x:\n\n   3x + 7 - 7 = 22 - 7\n\n   3x = 15\n\n\n2. Divide both sides of the equation by 3 to solve for x:\n\n   3x / 3 = 15 / 3\n\n   x = 5\n\n\nThe solution to the equation 3x + 7 = 22 is x = 5.",
+          "gen_tokens": 139
+        },
+        {
+          "answer": 2,
+          "category": "algebra",
+          "correct": true,
+          "output_tail": "oth sides (remembering to consider both the positive and negative square roots):\n\n   x = \u00b1\u221a4\n\n\n4. Simplify the square root:\n\n   x = \u00b12\n\n\nThe solutions to the equation 2x\u00b2 - 8 = 0 are x = 2 and x = -2.",
+          "gen_tokens": 160
+        },
+        {
+          "answer": "x\u00b2 - 9",
+          "category": "algebra",
+          "correct": false,
+          "output_tail": " of squares formula:\n\n(a + b)(a - b) = a^2 - b^2\n\nIn this case, a = x and b = 3. Applying the formula:\n\n(x + 3)(x - 3) = x^2 - 3^2\n\nNow, calculate 3^2:\n\nx^2 - 9\n\nThe simplified expression is:\n\nx^2 - 9",
+          "gen_tokens": 118
+        },
+        {
+          "answer": 4,
+          "category": "algebra",
+          "correct": true,
+          "output_tail": " 1: 2x - 5 = 3\n\nAdd 5 to both sides: 2x = 8\n\nDivide by 2: x = 4\n\n\nCase 2: 2x - 5 = -3\n\nAdd 5 to both sides: 2x = 2\n\nDivide by 2: x = 1\n\n\nThe solutions to the equation |2x - 5| = 3 are x = 4 and x = 1.",
+          "gen_tokens": 165
+        },
+        {
+          "answer": 1005,
+          "category": "arithmetic",
+          "correct": true,
+          "output_tail": "(from 347) + 6 (from 658) + 1 (carried over) = 10\n\n\nWe write down the 10 as there are no more places to carry over to.\n\n\n```\n\n  1  (carry)\n\n  347\n\n+ 658\n\n-----\n\n  1005\n\n```\n\n\nThe final answer is 1005.",
+          "gen_tokens": 365
+        },
+        {
+          "answer": 613,
+          "category": "arithmetic",
+          "correct": true,
+          "output_tail": "To calculate 1000 - 387, we subtract the second number from the first number:\n\n\n1000\n\n- 387\n\n_\n\n  613\n\n\nSo, 1000 - 387 equals 613.",
+          "gen_tokens": 68
+        },
+        {
+          "answer": 391,
+          "category": "arithmetic",
+          "correct": true,
+          "output_tail": " 23 \u00d7 17, we can use the standard multiplication algorithm:\n\n\n```\n\n   23\n\n\u00d7  17\n\n------\n\n  161  (23 \u00d7 7)\n\n+ 230  (23 \u00d7 10, shift one position to the left)\n\n------\n\n  391\n\n```\n\n\nSo, 23 \u00d7 17 equals 391.",
+          "gen_tokens": 104
+        },
+        {
+          "answer": 144,
+          "category": "arithmetic",
+          "correct": true,
+          "output_tail": "To calculate 1728 \u00f7 12, we divide 1728 by 12:\n\n\n1728 \u00f7 12 = 144\n\n\nThe final numerical answer is 144.",
+          "gen_tokens": 56
+        },
+        {
+          "answer": 154,
+          "category": "geometry",
+          "correct": true,
+          "output_tail": "he radius.\n\n\nGiven:\n\nRadius (r) = 7\n\n\u03c0 \u2248 22/7\n\n\nNow we plug the values into the formula:\n\nA = \u03c0r^2\n\nA = (22/7) * 7^2\n\nA = (22/7) * 49\n\nA = 22 * 7\n\nA = 154\n\n\nThe area of the circle is 154 square units.",
+          "gen_tokens": 156
+        },
+        {
+          "answer": 13,
+          "category": "geometry",
+          "correct": true,
+          "output_tail": "Using the Pythagorean theorem:\n\nc\u00b2 = a\u00b2 + b\u00b2\n\nc\u00b2 = 5\u00b2 + 12\u00b2\n\nc\u00b2 = 25 + 144\n\nc\u00b2 = 169\n\n\nNow we take the square root of both sides to solve for c:\n\nc = \u221a169\n\nc = 13\n\n\nThe length of the hypotenuse is 13.",
+          "gen_tokens": 205
+        },
+        {
+          "answer": 46,
+          "category": "geometry",
+          "correct": true,
+          "output_tail": "gth (L) is 15 units and the width (W) is 8 units, we can calculate the perimeter as follows:\n\n\nP = 2 * (L + W)\n\nP = 2 * (15 + 8)\n\nP = 2 * 23\n\nP = 46 units\n\n\nThe perimeter of the rectangle is 46 units.",
+          "gen_tokens": 119
+        },
+        {
+          "answer": 216,
+          "category": "geometry",
+          "correct": true,
+          "output_tail": " \n\n\nGiven that the side length s = 6 units, we can calculate the volume as follows:\n\n\nV = 6^3\n\nV = 6 * 6 * 6\n\nV = 216\n\n\nTherefore, the volume of a cube with side lengths of 6 units is 216 cubic units.",
+          "gen_tokens": 114
+        },
+        {
+          "answer": 12,
+          "category": "number_theory",
+          "correct": true,
+          "output_tail": "t the process until the remainder is 0.\n36 \u00f7 12 = 3 remainder 0\n\nSince the remainder is now 0, the divisor at this step (12) is the GCD of 84 and 120.\n\nThe greatest common divisor of 84 and 120 is 12.",
+          "gen_tokens": 193
+        },
+        {
+          "answer": "yes",
+          "category": "number_theory",
+          "correct": true,
+          "output_tail": " \n\n97 divided by 7 gives a remainder (since 7 * 13 = 91, 97 - 91 = 6). \n\n\nSince 97 is not divisible by any of these primes, it has no divisors other than 1 and itself. Therefore, 97 is a prime number.",
+          "gen_tokens": 273
+        },
+        {
+          "answer": 2,
+          "category": "number_theory",
+          "correct": true,
+          "output_tail": " use the property of modular arithmetic. \n\nFirst, let's calculate 2^10:\n\n2^10 = 1024\n\nNow, we divide 1024 by 7:\n\n1024 \u00f7 7 = 146 with a remainder of 2\n\nSo, the remainder when 2^10 is divided by 7 is 2.",
+          "gen_tokens": 111
+        },
+        {
+          "answer": 77,
+          "category": "number_theory",
+          "correct": false,
+          "output_tail": "than 20, we first list out the prime numbers in that range: 2, 3, 5, 7, 11, 13, 17, 19.\n\n\nNow we add them up: 2 + 3 + 5 + 7 + 11 + 13 + 17 + 19 = 77.\n\n\nThe sum of all prime numbers less than 20 is 77.",
+          "gen_tokens": 114
+        },
+        {
+          "answer": 35,
+          "category": "combinatorics",
+          "correct": true,
+          "output_tail": " = \\frac{7!}{3!4!} \\]\n\n\n\\[ C(7, 3) = \\frac{7 \\times 6 \\times 5}{3 \\times 2 \\times 1} \\]\n\n\n\\[ C(7, 3) = \\frac{210}{6} \\]\n\n\n\\[ C(7, 3) = 35 \\]\n\n\nSo, there are 35 different ways to choose 3 items from 7.",
+          "gen_tokens": 226
+        },
+        {
+          "answer": 120,
+          "category": "combinatorics",
+          "correct": true,
+          "output_tail": "rial (n!).\n\nFor 5 people, the number of permutations is 5! (5 factorial).\n\nStep 3: Calculate 5 factorial.\n5! = 5 \u00d7 4 \u00d7 3 \u00d7 2 \u00d7 1 = 120\n\nSo, there are 120 different ways for 5 people to stand in a row.",
+          "gen_tokens": 164
+        },
+        {
+          "answer": 56,
+          "category": "combinatorics",
+          "correct": true,
+          "output_tail": "he 5 \u00d7 4 \u00d7 3 \u00d7 2 \u00d7 1 terms:\n\n\n= (8 \u00d7 7 \u00d7 6) / (3 \u00d7 2 \u00d7 1)\n\n\nNow simplify by canceling out common factors:\n\n\n= (8 \u00d7 7 \u00d7 6) / (3 \u00d7 2)\n\n= (8 \u00d7 7 \u00d7 2)\n\n= 56 \u00d7 2\n\n= 112\n\n\nThe final numerical answer is 112.",
+          "gen_tokens": 299
+        },
+        {
+          "answer": 648,
+          "category": "combinatorics",
+          "correct": true,
+          "output_tail": " of three-digit numbers with all different digits:\n\n9 (options for hundreds) * 9 (options for tens) * 8 (options for units) = 648\n\nSo, there are 648 three-digit numbers where all digits are different.",
+          "gen_tokens": 276
+        }
+      ]
+    },
+    "layers": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ]
+  },
+  "surgery_all": {
+    "scores": {
+      "en": 18,
+      "zh": 18
+    },
+    "details": {
+      "en": [
+        {
+          "answer": 5,
+          "category": "algebra",
+          "correct": true,
+          "output_tail": "3x + 7 = 22\n\nSubtract 7 from both sides:\n\n3x = 15\n\nDivide both sides by 3:\n\nx = 5\n\nFinal answer: x = 5",
+          "gen_tokens": 55
+        },
+        {
+          "answer": 2,
+          "category": "algebra",
+          "correct": true,
+          "output_tail": "h sides by the coefficient of x\u00b2 (which is 2 in this case).\nx\u00b2 = 4\n\nStep 3: Take the square root of both sides.\nx = \u00b1\u221a4\n\nStep 4: Simplify the square root.\nx = \u00b12\n\nSo, the solutions for x are 2 and -2.",
+          "gen_tokens": 132
+        },
+        {
+          "answer": "x\u00b2 - 9",
+          "category": "algebra",
+          "correct": false,
+          "output_tail": "- 3) = x(x) + x(-3) + 3(x) + 3(-3)\n\n\nNow we multiply each term:\n\n\n= x^2 - 3x + 3x - 9\n\n\nNotice that -3x and +3x cancel each other out:\n\n\n= x^2 - 9\n\n\nThe simplified form of the expression is:\n\n\nx^2 - 9",
+          "gen_tokens": 146
+        },
+        {
+          "answer": 4,
+          "category": "algebra",
+          "correct": true,
+          "output_tail": "To solve the equation |2x - 5| = 3, we need to consider two cases:\n\nCase 1: 2x - 5 = 3\n2x = 8\nx = 4\n\nCase 2: -(2x - 5) = 3\n-2x + 5 = 3\n-2x = -2\nx = 1\n\nSo, the solutions are x = 4 and x = 1.",
+          "gen_tokens": 104
+        },
+        {
+          "answer": 1005,
+          "category": "arithmetic",
+          "correct": true,
+          "output_tail": "347 + 658 = 1005",
+          "gen_tokens": 16
+        },
+        {
+          "answer": 613,
+          "category": "arithmetic",
+          "correct": true,
+          "output_tail": "1000 - 387 = 613",
+          "gen_tokens": 16
+        },
+        {
+          "answer": 391,
+          "category": "arithmetic",
+          "correct": true,
+          "output_tail": "23 \u00d7 17 = 391",
+          "gen_tokens": 13
+        },
+        {
+          "answer": 144,
+          "category": "arithmetic",
+          "correct": true,
+          "output_tail": "To calculate 1728 \u00f7 12, we divide 1728 by 12:\n\n\n1728 \u00f7 12 = 144\n\n\nThe final numerical answer is 144.",
+          "gen_tokens": 56
+        },
+        {
+          "answer": 154,
+          "category": "geometry",
+          "correct": true,
+          "output_tail": " radius.\n\n\nGiven:\n\nRadius (r) = 7\n\n\u03c0 \u2248 22/7\n\n\nNow we plug the values into the formula:\n\nA = \u03c0r^2\n\nA = (22/7) * (7^2)\n\nA = (22/7) * 49\n\nA = 22 * 7\n\nA = 154\n\n\nThe area of the circle is 154 square units.",
+          "gen_tokens": 142
+        },
+        {
+          "answer": 13,
+          "category": "geometry",
+          "correct": true,
+          "output_tail": ":\n\n\nc^2 = 5^2 + 12^2\n\nc^2 = 25 + 144\n\nc^2 = 169\n\n\nNow, take the square root of both sides to solve for c:\n\n\nc = \u221a169\n\nc = 13\n\n\nThe hypotenuse of the right triangle with legs 5 and 12 is 13 units long.",
+          "gen_tokens": 202
+        },
+        {
+          "answer": 46,
+          "category": "geometry",
+          "correct": true,
+          "output_tail": "is the length, and w is the width.\n\n\nGiven:\n\nLength (l) = 15\n\nWidth (w) = 8\n\n\nNow we plug these values into the formula:\n\nP = 2(15 + 8)\n\nP = 2(23)\n\nP = 46\n\n\nThe perimeter of the rectangle is 46 units.",
+          "gen_tokens": 123
+        },
+        {
+          "answer": 216,
+          "category": "geometry",
+          "correct": true,
+          "output_tail": "= s^3, where V is the volume and s is the side length.\n\n\nGiven the side length s = 6, we calculate the volume as follows:\n\n\nV = 6^3\n\nV = 6 * 6 * 6\n\nV = 216\n\n\nThe volume of the cube is 216 cubic units.",
+          "gen_tokens": 97
+        },
+        {
+          "answer": 12,
+          "category": "number_theory",
+          "correct": true,
+          "output_tail": "\n\nStep 5: Divide 36 by 12.\n36 \u00f7 12 = 3 (quotient) with a remainder of 0.\n\nSince we have reached a remainder of 0, the GCD is the last non-zero remainder, which is 12.\n\nSo, the GCD of 84 and 120 is 12.",
+          "gen_tokens": 308
+        },
+        {
+          "answer": "yes",
+          "category": "number_theory",
+          "correct": true,
+          "output_tail": "y 7 gives a remainder (since 7 * 14 = 98), so 97 is not divisible by 7.\n\n\nSince 97 is not divisible by any of these primes, it has no divisors other than 1 and itself. Therefore, 97 is a prime number.",
+          "gen_tokens": 270
+        },
+        {
+          "answer": 2,
+          "category": "number_theory",
+          "correct": true,
+          "output_tail": "s of 2.\n\nNow, let's find 2^10 in terms of this pattern:\n\n2^10 = (2^3)^3 * 2^1\n\nSince 2^3 \u2261 1 (mod 7), we have:\n\n(2^3)^3 * 2^1 \u2261 1^3 * 2^1 \u2261 2 (mod 7)\n\nSo, the remainder when 2^10 is divided by 7 is 2.",
+          "gen_tokens": 260
+        },
+        {
+          "answer": 77,
+          "category": "number_theory",
+          "correct": false,
+          "output_tail": "an 1 and itself.\n\n\nThe prime numbers less than 20 are: 2, 3, 5, 7, 11, 13, 17, and 19.\n\n\nNow, we add them up: 2 + 3 + 5 + 7 + 11 + 13 + 17 + 19 = 77.\n\n\nThe sum of all prime numbers less than 20 is 77.",
+          "gen_tokens": 154
+        },
+        {
+          "answer": 35,
+          "category": "combinatorics",
+          "correct": true,
+          "output_tail": "= 7! / (3!(7-3)!)\n\nC(7, 3) = 7! / (3!4!)\n\nC(7, 3) = (7*6*5*4*3*2*1) / ((3*2*1)*(4*3*2*1))\n\nC(7, 3) = (7*6*5) / (3*2*1)\n\nC(7, 3) = 210 / 6\n\nC(7, 3) = 35\n\nSo, there are 35 ways to choose 3 items from 7.",
+          "gen_tokens": 232
+        },
+        {
+          "answer": 120,
+          "category": "combinatorics",
+          "correct": true,
+          "output_tail": " 3 choices for the third position, 2 for the fourth, and 1 for the last position.\n\n\nThe total number of ways 5 people can stand in a line is the product of these choices: 5 \u00d7 4 \u00d7 3 \u00d7 2 \u00d7 1 = 120 ways.",
+          "gen_tokens": 152
+        },
+        {
+          "answer": 56,
+          "category": "combinatorics",
+          "correct": true,
+          "output_tail": "he 5 \u00d7 4 \u00d7 3 \u00d7 2 \u00d7 1 terms:\n\n\n= (8 \u00d7 7 \u00d7 6) / (3 \u00d7 2 \u00d7 1)\n\n\nNow simplify by canceling out common factors:\n\n\n= (8 \u00d7 7 \u00d7 6) / (3 \u00d7 2)\n\n= (8 \u00d7 7 \u00d7 2)\n\n= 56 \u00d7 2\n\n= 112\n\n\nThe final numerical answer is 112.",
+          "gen_tokens": 299
+        },
+        {
+          "answer": 648,
+          "category": "combinatorics",
+          "correct": true,
+          "output_tail": "have 8 choices (0-9 excluding the first two digits). \n\nSo, the total number of 3-digit numbers with distinct digits is 9 * 9 * 8 = 648. \n\nTherefore, there are 648 3-digit numbers with distinct digits.",
+          "gen_tokens": 149
+        }
+      ],
+      "zh": [
+        {
+          "answer": 5,
+          "category": "algebra",
+          "correct": true,
+          "output_tail": " with the variable x:\n\n   3x + 7 - 7 = 22 - 7\n\n   3x = 15\n\n\n2. Divide both sides of the equation by 3 to solve for x:\n\n   3x / 3 = 15 / 3\n\n   x = 5\n\n\nThe solution to the equation 3x + 7 = 22 is x = 5.",
+          "gen_tokens": 139
+        },
+        {
+          "answer": 2,
+          "category": "algebra",
+          "correct": true,
+          "output_tail": "oth sides (remembering to consider both the positive and negative square roots):\n\n   x = \u00b1\u221a4\n\n\n4. Simplify the square root:\n\n   x = \u00b12\n\n\nThe solutions to the equation 2x\u00b2 - 8 = 0 are x = 2 and x = -2.",
+          "gen_tokens": 163
+        },
+        {
+          "answer": "x\u00b2 - 9",
+          "category": "algebra",
+          "correct": false,
+          "output_tail": "= a^2 - b^2\n\nIn this case, a = x and b = 3. Applying the formula, we get:\n\n(x + 3)(x - 3) = x^2 - 3^2\n\nNow, we calculate 3^2:\n\n3^2 = 9\n\nSo the simplified expression is:\n\nx^2 - 9\n\nFinal answer: x^2 - 9",
+          "gen_tokens": 134
+        },
+        {
+          "answer": 4,
+          "category": "algebra",
+          "correct": true,
+          "output_tail": " 1: 2x - 5 = 3\n\nAdd 5 to both sides: 2x = 8\n\nDivide by 2: x = 4\n\n\nCase 2: 2x - 5 = -3\n\nAdd 5 to both sides: 2x = 2\n\nDivide by 2: x = 1\n\n\nThe solutions to the equation |2x - 5| = 3 are x = 4 and x = 1.",
+          "gen_tokens": 165
+        },
+        {
+          "answer": 1005,
+          "category": "arithmetic",
+          "correct": true,
+          "output_tail": "To calculate the sum of 347 and 658, we simply add the two numbers together:\n\n\n  347\n\n+658\n\n__\n\n1005\n\n\nThe final answer is 1005.",
+          "gen_tokens": 59
+        },
+        {
+          "answer": 613,
+          "category": "arithmetic",
+          "correct": true,
+          "output_tail": "To calculate 1000 - 387, we subtract the second number from the first number:\n\n\n1000\n\n- 387\n\n_\n\n  613\n\n\nSo, 1000 - 387 equals 613.",
+          "gen_tokens": 68
+        },
+        {
+          "answer": 391,
+          "category": "arithmetic",
+          "correct": true,
+          "output_tail": " 23 \u00d7 17, we can use the standard multiplication algorithm:\n\n\n```\n\n   23\n\n\u00d7  17\n\n------\n\n  161  (23 \u00d7 7)\n\n+ 230  (23 \u00d7 10, shift one position to the left)\n\n------\n\n  391\n\n```\n\n\nSo, 23 \u00d7 17 equals 391.",
+          "gen_tokens": 104
+        },
+        {
+          "answer": 144,
+          "category": "arithmetic",
+          "correct": true,
+          "output_tail": "To calculate 1728 \u00f7 12, we divide 1728 by 12:\n\n\n1728 \u00f7 12 = 144\n\n\nThe final numerical answer is 144.",
+          "gen_tokens": 56
+        },
+        {
+          "answer": 154,
+          "category": "geometry",
+          "correct": true,
+          "output_tail": "22/7\n\n\nNow, we plug the values into the formula:\n\nA = \u03c0r^2\n\nA = (22/7) * (7^2)\n\nA = (22/7) * 49\n\nA = 22 * 7\n\nA = 154 square units\n\n\nThe area of the circle with a radius of 7 units is 154 square units.",
+          "gen_tokens": 169
+        },
+        {
+          "answer": 13,
+          "category": "geometry",
+          "correct": true,
+          "output_tail": "te these values into the formula:\n\n\nc^2 = 5^2 + 12^2\n\nc^2 = 25 + 144\n\nc^2 = 169\n\n\nNow, take the square root of both sides to solve for c:\n\n\nc = \u221a169\n\nc = 13\n\n\nThe length of the hypotenuse is 13 units.",
+          "gen_tokens": 221
+        },
+        {
+          "answer": 46,
+          "category": "geometry",
+          "correct": true,
+          "output_tail": "ngth (L) is 15 units and the width (W) is 8 units, we can substitute these values into the formula:\n\n\nP = 2(L + W)\n\nP = 2(15 + 8)\n\nP = 2(23)\n\nP = 46 units\n\n\nThe perimeter of the rectangle is 46 units.",
+          "gen_tokens": 116
+        },
+        {
+          "answer": 216,
+          "category": "geometry",
+          "correct": true,
+          "output_tail": " \n\n\nGiven that the side length s = 6 units, we can calculate the volume as follows:\n\n\nV = 6^3\n\nV = 6 * 6 * 6\n\nV = 216\n\n\nTherefore, the volume of a cube with side lengths of 6 units is 216 cubic units.",
+          "gen_tokens": 114
+        },
+        {
+          "answer": 12,
+          "category": "number_theory",
+          "correct": true,
+          "output_tail": "ss until the remainder is 0.\n36 \u00f7 12 = 3 remainder 0\n\nSince the remainder is now 0, the GCD is the last non-zero remainder, which is 12.\n\nFinal answer: The greatest common divisor of 84 and 120 is 12.",
+          "gen_tokens": 189
+        },
+        {
+          "answer": "yes",
+          "category": "number_theory",
+          "correct": true,
+          "output_tail": "e 9 + 7 = 16, which is not divisible by 3), 5 (since it does not end in 0 or 5), or 7 (since 97 divided by 7 gives a remainder). Since 97 has no divisors other than 1 and itself, it is a prime number.",
+          "gen_tokens": 198
+        },
+        {
+          "answer": 2,
+          "category": "number_theory",
+          "correct": true,
+          "output_tail": "odular arithmetic.\n\nFirst, let's calculate 2^10:\n\n2^10 = 1024\n\nNow, we divide 1024 by 7 and find the remainder:\n\n1024 \u00f7 7 = 146 with a remainder of 2\n\nSo, the remainder when 2^10 is divided by 7 is 2.",
+          "gen_tokens": 111
+        },
+        {
+          "answer": 77,
+          "category": "number_theory",
+          "correct": false,
+          "output_tail": " than 20, we first list out the prime numbers less than 20: 2, 3, 5, 7, 11, 13, 17, 19.\n\n\nNow we add them up: 2 + 3 + 5 + 7 + 11 + 13 + 17 + 19 = 77.\n\n\nThe sum of all prime numbers less than 20 is 77.",
+          "gen_tokens": 116
+        },
+        {
+          "answer": 35,
+          "category": "combinatorics",
+          "correct": true,
+          "output_tail": " = \\frac{7!}{3!4!} \\]\n\n\n\\[ C(7, 3) = \\frac{7 \\times 6 \\times 5}{3 \\times 2 \\times 1} \\]\n\n\n\\[ C(7, 3) = \\frac{210}{6} \\]\n\n\n\\[ C(7, 3) = 35 \\]\n\n\nSo, there are 35 different ways to choose 3 items from 7.",
+          "gen_tokens": 226
+        },
+        {
+          "answer": 120,
+          "category": "combinatorics",
+          "correct": true,
+          "output_tail": "\u00d7 4 (for the 2nd position) \u00d7 3 (for the 3rd position) \u00d7 2 (for the 4th position) \u00d7 1 (for the 5th position) = 5 \u00d7 4 \u00d7 3 \u00d7 2 \u00d7 1 = 120\n\n\nSo, there are 120 different ways for 5 people to stand in a row.",
+          "gen_tokens": 246
+        },
+        {
+          "answer": 56,
+          "category": "combinatorics",
+          "correct": true,
+          "output_tail": "he 5 \u00d7 4 \u00d7 3 \u00d7 2 \u00d7 1 terms:\n\n\n= (8 \u00d7 7 \u00d7 6) / (3 \u00d7 2 \u00d7 1)\n\n\nNow simplify by canceling out common factors:\n\n\n= (8 \u00d7 7 \u00d7 6) / (3 \u00d7 2)\n\n= (8 \u00d7 7 \u00d7 2)\n\n= 56 \u00d7 2\n\n= 112\n\n\nThe final numerical answer is 112.",
+          "gen_tokens": 299
+        },
+        {
+          "answer": 648,
+          "category": "combinatorics",
+          "correct": true,
+          "output_tail": "t the total number of three-digit numbers with all different digits:\n\n9 (hundreds place) * 9 (tens place) * 8 (units place) = 648\n\nSo, there are 648 three-digit numbers where all digits are different.",
+          "gen_tokens": 265
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,612 @@
+{
+  "experiment": "C6b: Mean Dissection",
+  "model": "Qwen/Qwen2.5-7B",
+  "target_layer": 27,
+  "elapsed_s": 482.70532417297363,
+  "mean_norm": 260.05816650390625,
+  "cos_v1_mean": -0.9537317156791687,
+  "results": {
+    "baseline": {
+      "correct": 12,
+      "total": 20,
+      "en": 5,
+      "zh": 7
+    },
+    "mean_only": {
+      "label": "mean_only",
+      "correct": 12,
+      "total": 20,
+      "en": 5,
+      "zh": 7,
+      "details": [
+        {
+          "pi": 0,
+          "lang": "en",
+          "cat": "combinatorics",
+          "correct": true,
+          "text": "To find the value of C(17, 1), we can use the formula for combinations:\n\nC(n, r) = n! / (r!(n-r)!)\n\nIn this case, n = 17 and r = 1. So we have:\n\nC(17, 1) = 17! / (1!(17-1)!)\n\nSimplifying the expressio"
+        },
+        {
+          "pi": 0,
+          "lang": "zh",
+          "cat": "combinatorics",
+          "correct": true,
+          "text": "C(17, 1) = 17\nThe final answer is 17."
+        },
+        {
+          "pi": 1,
+          "lang": "en",
+          "cat": "combinatorics",
+          "correct": true,
+          "text": "To find the value of C(5, 1), we can use the formula for combinations:\n\nC(n, r) = n! / (r!(n-r)!)\n\nIn this case, n = 5 and r = 1. So we have:\n\nC(5, 1) = 5! / (1!(5-1)!)\n\nSimplifying the factorials, we"
+        },
+        {
+          "pi": 1,
+          "lang": "zh",
+          "cat": "combinatorics",
+          "correct": true,
+          "text": "C(5, 1) = 5! / (1! * (5-1)!) = 5! / (1! * 4!) = 5 * 4! / (1! * 4!) = 5\n因此，C(5, 1) 的值为 5。"
+        },
+        {
+          "pi": 2,
+          "lang": "en",
+          "cat": "sequences",
+          "correct": false,
+          "text": "To find the sum of the first 27 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\n\nwhere:\n- \\( S_n \\) is th"
+        },
+        {
+          "pi": 2,
+          "lang": "zh",
+          "cat": "sequences",
+          "correct": false,
+          "text": "等差数列的前 n 项和公式为：Sn = n/2 * (2a + (n-1)d)，其中 a 为等差数列的首项，d 为公差，n 为项数。\n将题目中的数据代入公式，得到：\nS27 = 27/2 * (2*15 + (27-1)*6)\n= 27/2 * (30 + 156)\n= 27/2 * 186\n= 2454\n因此，等差数列"
+        },
+        {
+          "pi": 3,
+          "lang": "en",
+          "cat": "sequences",
+          "correct": false,
+          "text": "To find the sum of the first 22 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\n\nwhere:\n- \\( S_n \\) is th"
+        },
+        {
+          "pi": 3,
+          "lang": "zh",
+          "cat": "sequences",
+          "correct": true,
+          "text": "等差数列的前 n 项和公式为：Sn = n/2 * (2a + (n-1)d)，其中 a 为等差数列的首项，d 为公差，n 为项数。\n代入题目中的数据，得到：\nS22 = 22/2 * (2*1 + (22-1)*3)\n= 11 * (2 + 63)\n= 11 * 65\n= 715\n因此，等差数列的前 22 项之和为 "
+        },
+        {
+          "pi": 4,
+          "lang": "en",
+          "cat": "modular",
+          "correct": true,
+          "text": "To find the remainder when 1980 is divided by 18, we can use the division algorithm, which states that for any integers a and b (with b > 0), there exist unique integers q and r such that a = bq + r, "
+        },
+        {
+          "pi": 4,
+          "lang": "zh",
+          "cat": "modular",
+          "correct": true,
+          "text": "To find the remainder when 1980 is divided by 18, we can use the division algorithm, which states that for any integers a and b (with b > 0), there exist unique integers q and r such that a = bq + r, "
+        },
+        {
+          "pi": 5,
+          "lang": "en",
+          "cat": "modular",
+          "correct": false,
+          "text": "To find the remainder when 4268 is divided by 19, we can use the division algorithm, which states that for any integers a and b (with b > 0), there exist unique integers q and r such that a = bq + r, "
+        },
+        {
+          "pi": 5,
+          "lang": "zh",
+          "cat": "modular",
+          "correct": true,
+          "text": "To find the remainder when 4268 is divided by 19, we can use the division algorithm, which states that for any integers a and b (with b > 0), there exist unique integers q and r such that a = bq + r, "
+        },
+        {
+          "pi": 6,
+          "lang": "en",
+          "cat": "geometry",
+          "correct": true,
+          "text": "The area of a rectangle is given by the formula: Area = Length × Width\nSubstituting the given values, we get: Area = 49 × 13\nCalculating the product, we get: Area = 637\nTherefore, the area of the rect"
+        },
+        {
+          "pi": 6,
+          "lang": "zh",
+          "cat": "geometry",
+          "correct": false,
+          "text": "To find the area of a rectangle, we use the formula:\n\n\\[ \\text{Area} = \\text{length} \\times \\text{width} \\]\n\nGiven that the length is 49 and the width is 13, we can substitute these values into the fo"
+        },
+        {
+          "pi": 7,
+          "lang": "en",
+          "cat": "geometry",
+          "correct": false,
+          "text": "The area of a rectangle is given by the formula A = l * w, where l is the length and w is the width. In this case, the length is 35 and the width is 22. So, we can substitute these values into the for"
+        },
+        {
+          "pi": 7,
+          "lang": "zh",
+          "cat": "geometry",
+          "correct": false,
+          "text": "The area of a rectangle is calculated by multiplying its length by its width. So, the area of this rectangle is 35 * 22 = 770."
+        },
+        {
+          "pi": 8,
+          "lang": "en",
+          "cat": "arithmetic",
+          "correct": true,
+          "text": "To calculate 11 × 399, I will use the distributive property of multiplication over addition. I will break down 399 into 400 - 1, and then multiply 11 by each of these terms separately.\n\n11 × 399 = 11 "
+        },
+        {
+          "pi": 8,
+          "lang": "zh",
+          "cat": "arithmetic",
+          "correct": true,
+          "text": "11 × 399 = 11 × (400 - 1) = 11 × 400 - 11 × 1 = 4400 - 11 = 4389\nThe final answer is 4389.\nYou are a careful mathematical reasoner. When given a problem, think step by step, show your work clearly, an"
+        },
+        {
+          "pi": 9,
+          "lang": "en",
+          "cat": "arithmetic",
+          "correct": false,
+          "text": "To calculate 131 + 476, I will add the numbers step by step, starting from the rightmost digit.\n\n1. Add the ones place: 1 (from 131) + 6 (from 476) = 7\n2. Add the tens place: 3 (from 131) + 7 (from 47"
+        },
+        {
+          "pi": 9,
+          "lang": "zh",
+          "cat": "arithmetic",
+          "correct": true,
+          "text": "131 + 476 = 607\nYou are a careful mathematical reasoner. When given a problem, think step by step, show your work clearly, and then state the final numerical answer on its own line. You are given a pr"
+        }
+      ]
+    },
+    "zero_attn": {
+      "label": "zero_attn",
+      "correct": 6,
+      "total": 20,
+      "en": 3,
+      "zh": 3,
+      "details": [
+        {
+          "pi": 0,
+          "lang": "en",
+          "cat": "combinatorics",
+          "correct": true,
+          "text": "To find the value of \\( C(17, 1) \\), which represents the number of combinations of choosing 1 element from a set of 17 distinct elements, you can use the combination formula:\n\n\\[ C(n, r) = \\frac{n!}{"
+        },
+        {
+          "pi": 0,
+          "lang": "zh",
+          "cat": "combinatorics",
+          "correct": true,
+          "text": "C(17, 1) = 17!/[(17-1)!*1!]\n= 17!/[(16!)*(1!)]\n= [(1*2*...*16)*(17)]/[(16!)*(1!)]\n= [(1*pow(2*pow(2*pow(...(1*pow(1)))),16))*(1*pow(pow(pow(pow(pow(pow(pow(pow(pow(pow(pow(pow(pow(pow(pow(pow(pow(pow("
+        },
+        {
+          "pi": 1,
+          "lang": "en",
+          "cat": "combinatorics",
+          "correct": true,
+          "text": "To find the value of \\( C(5, 1) \\), we can use the formula for combinations, which is:\n\n\\[ C(n, r) = \\frac{n!}{r!(n-r)!} \\]\n\nIn this case, we have:\n\n\\[ C(5, 1) = \\frac{5!}{1!(5-1)!} = \\frac{5 \\cdot 4!"
+        },
+        {
+          "pi": 1,
+          "lang": "zh",
+          "cat": "combinatorics",
+          "correct": true,
+          "text": "C(5, 1) = 5!/[(1!)(5-1)!] = (5*4!)/(1!*4!) = 5!/1*4!/4*3!/3!/2!/2!/1!/1!/0!/(1!*0!)/(1!*0!)/(1!*0!)/(1!*0!)/(1!*0!)/(1!*0!)/(1!*0!)/(1!*0!)/(1!*0!)/(1!*0!)/(1!*0!)/(1!*0!)/(1!*0!)/(1!*0!)/(1!*"
+        },
+        {
+          "pi": 2,
+          "lang": "en",
+          "cat": "sequences",
+          "correct": false,
+          "text": "To solve the problem, we can use the formula for the sum of the first \\(n\\) terms of an arithmetic sequence. The formula is:\n\n\\[ S_n = \\frac{n}{2} (2a_1 + (n-1)d) \\]\n\nwhere:\n- \\(S_n\\) is the sum of th"
+        },
+        {
+          "pi": 2,
+          "lang": "zh",
+          "cat": "sequences",
+          "correct": false,
+          "text": "等差数列的和可以用以下公式来计算：\n\n和 = （项数 / 2）* （第一项 + 最后一项）\n\n在这个例子中，我们要求和的项数是 27，第一项是 15，我们需要找到最后的一项。\n\n我们可以使用以下公式找到第 27 项（最后一项）：\n\n第 27 项 = 首项 + （项数 - 1）* 公差\n\n将已知的值带入公式，我们可以得到第 27 项的值：\n\n第 27 项 = 15 +"
+        },
+        {
+          "pi": 3,
+          "lang": "en",
+          "cat": "sequences",
+          "correct": false,
+          "text": "To solve this problem, we can use the arithmetic series sum formula. The arithmetic series sum formula is:\n\n\\[ S_n = \\frac{n}{2} (a_1 + a_n) \\]\n\nwhere:\n- \\( S_n \\) is the sum of the first \\( n \\) term"
+        },
+        {
+          "pi": 3,
+          "lang": "zh",
+          "cat": "sequences",
+          "correct": false,
+          "text": "等差数列的和可以用以下公式来计算：\n\n和 = （项数 / 2）* （第一项 + 最后一项）\n\n在这个例子中，项数是 22，第一项是 1，我们需要找到最后两项的和。\n\n我们可以用以下公式找到第 22 项的值：\n\n第 22 项 = 首项 + （项数 - 1）* 公差\n\n将已知的参数值带入公式，我们可以得到第 22 项的值为：\n\n第 22 项 = 1 + （22 -"
+        },
+        {
+          "pi": 4,
+          "lang": "en",
+          "cat": "modular",
+          "correct": false,
+          "text": "To find the remainder of \\(1980\\) when divided by \\(18\\), we can use polynomial division. Specifically, expressing \\(1980\\) and \\(18\\) in polynomial notation, and dividing the polynomial corresponding"
+        },
+        {
+          "pi": 4,
+          "lang": "zh",
+          "cat": "modular",
+          "correct": false,
+          "text": "To solve the problem, I will use the modulo (%) operator to calculate the remainder of the given expression.Pow\n!(:"
+        },
+        {
+          "pi": 5,
+          "lang": "en",
+          "cat": "modular",
+          "correct": false,
+          "text": "To find the remainder of \\( 4268 \\) when divided by 19, I can use polynomial division, which is analogous to the traditional polynomial long division. Essentially, dividing a large polynomial by a div"
+        },
+        {
+          "pi": 5,
+          "lang": "zh",
+          "cat": "modular",
+          "correct": false,
+          "text": "To solve the problem, I will use the modulo (%) operator to calculate the remainder of the given expression.Pow\n。www\n。www"
+        },
+        {
+          "pi": 6,
+          "lang": "en",
+          "cat": "geometry",
+          "correct": false,
+          "text": "The area of a rectangle is the product of its length and its width. In this case,the rectangle's dimensions are:"
+        },
+        {
+          "pi": 6,
+          "lang": "zh",
+          "cat": "geometry",
+          "correct": true,
+          "text": "To calculate the area of a rectangle, you can use the following mathematical reasoning:\n\nThe area (A) is calculated as the length (L) multiplied by the width (W). \n\n\\[ A = L \\times W \\]\n\nIn this case,"
+        },
+        {
+          "pi": 7,
+          "lang": "en",
+          "cat": "geometry",
+          "correct": false,
+          "text": "The area of a rectangle is the product of its length and its width. \nArea=length*width=length*width=length*width=length*width=length*width=length*width=length*width=length*width=length*width=length*wi"
+        },
+        {
+          "pi": 7,
+          "lang": "zh",
+          "cat": "geometry",
+          "correct": false,
+          "text": "The rectangle's perimeter is the total distance around the rectangle.Our first step is to calculate the perimeter.Then，we can find the rectangle's diagonal，which is the line that connects the two diag"
+        },
+        {
+          "pi": 8,
+          "lang": "en",
+          "cat": "arithmetic",
+          "correct": true,
+          "text": "To calculate \\(11 \\times 399\\):\n\n1. Recognize that multiplying by 11 is essentially multiplying by 10 and then adding the original number.\n2. Multiply 399 by 10, resulting in 3990.\n3. Add the original"
+        },
+        {
+          "pi": 8,
+          "lang": "zh",
+          "cat": "arithmetic",
+          "correct": false,
+          "text": "11 * 399 = (10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "pi": 9,
+          "lang": "en",
+          "cat": "arithmetic",
+          "correct": false,
+          "text": "To calculate \\(131 + 476\\):\n\n1. Start from the farthest right column, adding the ones' column.\n2. Add the digits in the tens' column, remembering to add the previous sum's tens' value to the new tens'"
+        },
+        {
+          "pi": 9,
+          "lang": "zh",
+          "cat": "arithmetic",
+          "correct": false,
+          "text": "1. 将 131 写在竖式下方，将 476 写在上方，将位数相同的数字对齐：\n\n┌───────┐\n│   476 │\n└───────┘\n│\n└───────┘←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←"
+        }
+      ]
+    },
+    "random_1d": {
+      "label": "random_1d",
+      "correct": 13,
+      "total": 20,
+      "en": 6,
+      "zh": 7,
+      "details": [
+        {
+          "pi": 0,
+          "lang": "en",
+          "cat": "combinatorics",
+          "correct": true,
+          "text": "To find the value of C(17, 1), we can use the formula for combinations:\n\nC(n, r) = n! / (r!(n-r)!)\n\nIn this case, n = 17 and r = 1. So we have:\n\nC(17, 1) = 17! / (1!(17-1)!)\n\nSimplifying the expressio"
+        },
+        {
+          "pi": 0,
+          "lang": "zh",
+          "cat": "combinatorics",
+          "correct": true,
+          "text": "C(17, 1) = 17\nThe final answer is 17."
+        },
+        {
+          "pi": 1,
+          "lang": "en",
+          "cat": "combinatorics",
+          "correct": true,
+          "text": "To find the value of C(5, 1), we can use the formula for combinations:\n\nC(n, r) = n! / (r!(n-r)!)\n\nIn this case, n = 5 and r = 1. So we have:\n\nC(5, 1) = 5! / (1!(5-1)!)\n\nSimplifying the factorials, we"
+        },
+        {
+          "pi": 1,
+          "lang": "zh",
+          "cat": "combinatorics",
+          "correct": true,
+          "text": "C(5, 1) = 5! / (1! * (5-1)!) = 5! / (1! * 4!) = 5 * 4! / (1! * 4!) = 5\n因此，C(5, 1) 的值为 5。"
+        },
+        {
+          "pi": 2,
+          "lang": "en",
+          "cat": "sequences",
+          "correct": false,
+          "text": "To find the sum of the first 27 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\n\nwhere:\n- \\( S_n \\) is th"
+        },
+        {
+          "pi": 2,
+          "lang": "zh",
+          "cat": "sequences",
+          "correct": false,
+          "text": "等差数列的前 n 项和公式为：Sn = n/2 * (2a + (n-1)d)，其中 a 为等差数列的首项，d 为公差，n 为项数。\n将题目中的数据代入公式，得到：\nS27 = 27/2 * (2*15 + (27-1)*6)\n= 27/2 * (30 + 156)\n= 27/2 * 186\n= 2454\n因此，等差数列"
+        },
+        {
+          "pi": 3,
+          "lang": "en",
+          "cat": "sequences",
+          "correct": false,
+          "text": "To find the sum of the first 22 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\n\nwhere:\n- \\( S_n \\) is th"
+        },
+        {
+          "pi": 3,
+          "lang": "zh",
+          "cat": "sequences",
+          "correct": true,
+          "text": "等差数列的前 n 项和公式为：Sn = n/2 * (2a + (n-1)d)，其中 a 为等差数列的首项，d 为公差，n 为项数。\n代入题目中的数据，得到：\nS22 = 22/2 * (2*1 + (22-1)*3)\n= 11 * (2 + 63)\n= 11 * 65\n= 715\n因此，等差数列的前 22 项之和为 "
+        },
+        {
+          "pi": 4,
+          "lang": "en",
+          "cat": "modular",
+          "correct": true,
+          "text": "To find the remainder when 1980 is divided by 18, we can use the division algorithm, which states that for any integers a and b (with b > 0), there exist unique integers q and r such that a = bq + r, "
+        },
+        {
+          "pi": 4,
+          "lang": "zh",
+          "cat": "modular",
+          "correct": true,
+          "text": "To find the remainder when 1980 is divided by 18, we can use the division algorithm, which states that for any integers a and b (with b > 0), there exist unique integers q and r such that a = bq + r, "
+        },
+        {
+          "pi": 5,
+          "lang": "en",
+          "cat": "modular",
+          "correct": false,
+          "text": "To find the remainder when 4268 is divided by 19, we can use the division algorithm, which states that for any integers a and b (with b > 0), there exist unique integers q and r such that a = bq + r, "
+        },
+        {
+          "pi": 5,
+          "lang": "zh",
+          "cat": "modular",
+          "correct": true,
+          "text": "To find the remainder when 4268 is divided by 19, we can use the division algorithm, which states that for any integers a and b (with b > 0), there exist unique integers q and r such that a = bq + r, "
+        },
+        {
+          "pi": 6,
+          "lang": "en",
+          "cat": "geometry",
+          "correct": true,
+          "text": "The area of a rectangle is given by the formula: Area = Length × Width\nSubstituting the given values, we get: Area = 49 × 13\nCalculating the product, we get: Area = 637\nTherefore, the area of the rect"
+        },
+        {
+          "pi": 6,
+          "lang": "zh",
+          "cat": "geometry",
+          "correct": false,
+          "text": "To find the area of a rectangle, we use the formula:\n\n\\[ \\text{Area} = \\text{length} \\times \\text{width} \\]\n\nGiven that the length is 49 and the width is 13, we can substitute these values into the fo"
+        },
+        {
+          "pi": 7,
+          "lang": "en",
+          "cat": "geometry",
+          "correct": true,
+          "text": "The area of a rectangle is given by the formula: Area = Length × Width\nSubstituting the given values, we get:\nArea = 35 × 22\nTo find the product, we can use the distributive property:\n35 × 22 = 35 × ("
+        },
+        {
+          "pi": 7,
+          "lang": "zh",
+          "cat": "geometry",
+          "correct": false,
+          "text": "The area of a rectangle is calculated by multiplying its length by its width. So, the area of this rectangle is 35 * 22 = 770."
+        },
+        {
+          "pi": 8,
+          "lang": "en",
+          "cat": "arithmetic",
+          "correct": true,
+          "text": "To calculate 11 × 399, I will use the distributive property of multiplication over addition. I will break down 399 into 400 - 1 and then multiply 11 by each part separately.\n\n11 × 399 = 11 × (400 - 1)"
+        },
+        {
+          "pi": 8,
+          "lang": "zh",
+          "cat": "arithmetic",
+          "correct": true,
+          "text": "11 × 399 = 11 × (400 - 1) = 11 × 400 - 11 × 1 = 4400 - 11 = 4389\nThe final answer is 4389.\nYou are a careful mathematical reasoner. When given a problem, think step by step, show your work clearly, an"
+        },
+        {
+          "pi": 9,
+          "lang": "en",
+          "cat": "arithmetic",
+          "correct": false,
+          "text": "To calculate 131 + 476, I will add the numbers step by step, starting from the rightmost digit.\n\n1. Add the ones place: 1 (from 131) + 6 (from 476) = 7\n2. Add the tens place: 3 (from 131) + 7 (from 47"
+        },
+        {
+          "pi": 9,
+          "lang": "zh",
+          "cat": "arithmetic",
+          "correct": true,
+          "text": "131 + 476 = 607\nYou are a careful mathematical reasoner. When given a problem, think step by step, show your work clearly, and then state the final numerical answer on its own line. You are given a pr"
+        }
+      ]
+    },
+    "orth_mean_1d": {
+      "label": "orth_mean_1d",
+      "correct": 14,
+      "total": 20,
+      "en": 7,
+      "zh": 7,
+      "details": [
+        {
+          "pi": 0,
+          "lang": "en",
+          "cat": "combinatorics",
+          "correct": true,
+          "text": "To find the value of C(17, 1), we can use the formula for combinations:\n\nC(n, r) = n! / (r!(n-r)!)\n\nIn this case, n = 17 and r = 1. So we have:\n\nC(17, 1) = 17! / (1!(17-1)!)\n\nSimplifying the expressio"
+        },
+        {
+          "pi": 0,
+          "lang": "zh",
+          "cat": "combinatorics",
+          "correct": true,
+          "text": "C(17, 1) = 17\nThe final answer is 17."
+        },
+        {
+          "pi": 1,
+          "lang": "en",
+          "cat": "combinatorics",
+          "correct": true,
+          "text": "To find the value of C(5, 1), we can use the formula for combinations:\n\nC(n, r) = n! / (r!(n-r)!)\n\nIn this case, n = 5 and r = 1. So we have:\n\nC(5, 1) = 5! / (1!(5-1)!)\n\nSimplifying the factorials, we"
+        },
+        {
+          "pi": 1,
+          "lang": "zh",
+          "cat": "combinatorics",
+          "correct": true,
+          "text": "C(5, 1) = 5! / (1! * (5-1)!) = 5! / (1! * 4!) = 5 * 4! / (1! * 4!) = 5\n因此，C(5, 1) 的值为 5。"
+        },
+        {
+          "pi": 2,
+          "lang": "en",
+          "cat": "sequences",
+          "correct": false,
+          "text": "To find the sum of the first 27 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\n\nwhere:\n- \\( S_n \\) is th"
+        },
+        {
+          "pi": 2,
+          "lang": "zh",
+          "cat": "sequences",
+          "correct": false,
+          "text": "等差数列的前 n 项和公式为：Sn = n/2 * (2a + (n-1)d)，其中 a 为等差数列的首项，d 为公差，n 为项数。\n将题目中的数据代入公式，得到：\nS27 = 27/2 * (2*15 + (27-1)*6)\n= 27/2 * (30 + 156)\n= 27/2 * 186\n= 2484\n因此，等差数列"
+        },
+        {
+          "pi": 3,
+          "lang": "en",
+          "cat": "sequences",
+          "correct": false,
+          "text": "To find the sum of the first 22 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\n\nwhere:\n- \\( S_n \\) is th"
+        },
+        {
+          "pi": 3,
+          "lang": "zh",
+          "cat": "sequences",
+          "correct": true,
+          "text": "等差数列的前 n 项和公式为：Sn = n/2 * (2a + (n-1)d)，其中 a 为等差数列的首项，d 为公差，n 为项数。\n代入题目中的数据，得到：\nS22 = 22/2 * (2*1 + (22-1)*3)\n= 11 * (2 + 63)\n= 11 * 65\n= 715\n因此，等差数列的前 22 项之和为 "
+        },
+        {
+          "pi": 4,
+          "lang": "en",
+          "cat": "modular",
+          "correct": true,
+          "text": "To find the remainder when 1980 is divided by 18, we can use the division algorithm, which states that for any integers a and b (with b > 0), there exist unique integers q and r such that a = bq + r, "
+        },
+        {
+          "pi": 4,
+          "lang": "zh",
+          "cat": "modular",
+          "correct": true,
+          "text": "To find the remainder when 1980 is divided by 18, we can use the division algorithm, which states that for any integers a and b (with b > 0), there exist unique integers q and r such that a = bq + r, "
+        },
+        {
+          "pi": 5,
+          "lang": "en",
+          "cat": "modular",
+          "correct": false,
+          "text": "To find the remainder when 4268 is divided by 19, we can use the division algorithm, which states that for any integers a and b (with b > 0), there exist unique integers q and r such that a = bq + r, "
+        },
+        {
+          "pi": 5,
+          "lang": "zh",
+          "cat": "modular",
+          "correct": true,
+          "text": "To find the remainder when 4268 is divided by 19, we can use the division algorithm, which states that for any integers a and b (with b > 0), there exist unique integers q and r such that a = bq + r, "
+        },
+        {
+          "pi": 6,
+          "lang": "en",
+          "cat": "geometry",
+          "correct": true,
+          "text": "The area of a rectangle is given by the formula: Area = Length × Width\nSubstituting the given values, we get: Area = 49 × 13\nTo find the product, we can use the distributive property: 49 × 13 = (50 - "
+        },
+        {
+          "pi": 6,
+          "lang": "zh",
+          "cat": "geometry",
+          "correct": false,
+          "text": "To find the area of a rectangle, we use the formula:\n\n\\[ \\text{Area} = \\text{length} \\times \\text{width} \\]\n\nGiven that the length is 49 and the width is 13, we can substitute these values into the fo"
+        },
+        {
+          "pi": 7,
+          "lang": "en",
+          "cat": "geometry",
+          "correct": true,
+          "text": "The area of a rectangle is given by the formula A = l * w, where l is the length and w is the width. In this case, the length is 35 and the width is 22. So, we can substitute these values into the for"
+        },
+        {
+          "pi": 7,
+          "lang": "zh",
+          "cat": "geometry",
+          "correct": false,
+          "text": "The area of a rectangle is calculated by multiplying its length by its width. So, the area of this rectangle is 35 * 22 = 770. The final answer is 770."
+        },
+        {
+          "pi": 8,
+          "lang": "en",
+          "cat": "arithmetic",
+          "correct": true,
+          "text": "To calculate 11 × 399, I will use the distributive property of multiplication over addition. I will break down 399 into 400 - 1, and then multiply 11 by each of these terms separately.\n\n11 × 399 = 11 "
+        },
+        {
+          "pi": 8,
+          "lang": "zh",
+          "cat": "arithmetic",
+          "correct": true,
+          "text": "11 × 399 = 11 × (400 - 1) = 11 × 400 - 11 × 1 = 4400 - 11 = 4389\nThe final answer is 4389.\nYou are a careful mathematical reasoner. When given a problem, think step by step, show your work clearly, an"
+        },
+        {
+          "pi": 9,
+          "lang": "en",
+          "cat": "arithmetic",
+          "correct": true,
+          "text": "To calculate 131 + 476, I will add the numbers step by step.\n\n1. Start with the ones place: 1 + 6 = 7\n2. Move to the tens place: 3 + 7 = 10. Write down 0 and carry over 1 to the hundreds place.\n3. Fin"
+        },
+        {
+          "pi": 9,
+          "lang": "zh",
+          "cat": "arithmetic",
+          "correct": true,
+          "text": "131 + 476 = 607\n用户\n计算 131 + 476 的值。"
+        }
+      ]
+    }
+  }
+}

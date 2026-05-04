@@ -1,0 +1,706 @@
+{
+  "model": "Qwen/Qwen2.5-3B",
+  "experiment": "G2b_alltoken_reverse_steer",
+  "hypothesis": "The 35% en\u2192zh rate from Exp 3 was suppressed by KV cache contamination from non-steered tokens retaining English PC0. Swapping ALL tokens should increase %zh toward 100% if this is the bottleneck.",
+  "sweep_layers": [
+    26,
+    30
+  ],
+  "n_problems": 20,
+  "n_pca": 200,
+  "max_tokens": 64,
+  "conditions": [
+    "alltoken_reverse",
+    "lasttoken_reverse"
+  ],
+  "layer_results": {
+    "26": {
+      "pc0_var_explained": 0.35761207342147827,
+      "cohens_d": 11.529287338256836,
+      "zh_mean_proj": 0.2339438796043396,
+      "en_mean_proj": -0.1562502533197403,
+      "per_problem": [
+        {
+          "prob_idx": 0,
+          "en_prompt": "Find the value of C(5, 1).",
+          "alltoken_reverse": {
+            "lang": "zh",
+            "text_snippet": " C(5, 1\uff09=5\\nA\u3001\u6b63\u786e\\nB\u3001\u9519\u8bef\\n\u7b54\u6848\uff1aA\\n\u5206\u6790\u89e3\u91ca\uff1aC(5, 1\uff09=5\uff0cC(5, 1\uff09\u8868\u793a\u4ece5\u4e2a\u5143\u7d20\u4e2d\u53d61\u4e2a\u5143\u7d20\u7684\u7ec4\u5408\u6570\uff0c\u53735\u4e2a\u5143\u7d20\u4e2d\u53d61\u4e2a",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 79
+          },
+          "lasttoken_reverse": {
+            "lang": "en",
+            "text_snippet": " C(5, 1) is the number of ways to choose 1 item from a set of 5 items. This can be calculated using the formula:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n is the total number of items, k is the number of it",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 88
+          }
+        },
+        {
+          "prob_idx": 1,
+          "en_prompt": "What is the remainder when 6719 is divided by 15?",
+          "alltoken_reverse": {
+            "lang": "zh",
+            "text_snippet": " 6719\u9664\u4ee515\u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\nA\u30011\\nB\u30012\\nC\u30013\\nD\u30014\\nE\u30015\\n\u7b54\u6848\uff1aA\\n\u89e3\u6790\uff1a6719\u9664\u4ee515\u7684\u4f59\u6570\u4e3a1\uff0c\u6545\u9009A\u3002",
+            "zh_baseline_match_chars": 5,
+            "zh_baseline_total_chars": 70
+          },
+          "lasttoken_reverse": {
+            "lang": "en",
+            "text_snippet": " 6719 divided by 15 is 447 with a remainder of 4.",
+            "zh_baseline_match_chars": 6,
+            "zh_baseline_total_chars": 49
+          }
+        },
+        {
+          "prob_idx": 2,
+          "en_prompt": "An arithmetic sequence has first term 20 and common difference 9. Find the sum o",
+          "alltoken_reverse": {
+            "lang": "zh",
+            "text_snippet": " 1. **\u5b9a\u4e49\u53d8\u91cf**\uff1a\n   - \u8ba1\u6570\u5668\u53d8\u91cf `n` \u521d\u59cb\u5316\u4e3a 1\uff0c\u7528\u4e8e\u8ba1\u6570\u5e8f\u5217\u4e2d\u7684\u9879\u6570\u3002\n   - \u521d\u59cb\u9879 `current_number` \u521d\u59cb\u5316\u4e3a 20\uff0c\u5373\u5e8f\u5217\u7684\u8d77\u59cb\u503c\u3002\n   - \u603b\u548c `total_sum` \u521d\u59cb\u5316\u4e3a",
+            "zh_baseline_match_chars": 2,
+            "zh_baseline_total_chars": 66
+          },
+          "lasttoken_reverse": {
+            "lang": "zh",
+            "text_snippet": " \u8981\u6c42\uff1a 1. \u8bf7\u7528\u82f1\u8bed\u56de\u7b54\u95ee\u9898\u3002 2. \u8bf7\u7528\u4e2d\u6587\u56de\u7b54\u95ee\u9898\u3002 3. \u8bf7\u7528\u4e2d\u6587\u56de\u7b54\u95ee\u9898\u3002 4. \u8bf7\u7528\u4e2d\u6587\u56de\u7b54\u95ee\u9898\u3002 5. \u8bf7\u7528\u4e2d\u6587\u56de\u7b54\u95ee\u9898\u3002 6. \u8bf7\u7528\u4e2d\u6587\u56de\u7b54\u95ee\u9898",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 66
+          }
+        },
+        {
+          "prob_idx": 3,
+          "en_prompt": "Find the value of C(6, 1).",
+          "alltoken_reverse": {
+            "lang": "mixed",
+            "text_snippet": " C(6, 1\uff09=6\\nC(6, 1\uff09=6\\nC(6, 1\uff09=6\\nC(6, 1\uff09=6\\nC(6, 1\uff09=6\\n\u7b54\u6848\uff1aC\\n\u89e3\u6790\uff1aC(6, 1\uff09=",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 73
+          },
+          "lasttoken_reverse": {
+            "lang": "en",
+            "text_snippet": " C(6, 1) is the number of ways to choose 1 item from a set of 6 items. This can be calculated using the formula:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n is the total number of items, k is the number of it",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 88
+          }
+        },
+        {
+          "prob_idx": 4,
+          "en_prompt": "What is the remainder when 1662 is divided by 6?",
+          "alltoken_reverse": {
+            "lang": "en",
+            "text_snippet": " 1662 \u00f7 6 = 277 with a remainder of 0\u3002",
+            "zh_baseline_match_chars": 6,
+            "zh_baseline_total_chars": 38
+          },
+          "lasttoken_reverse": {
+            "lang": "en",
+            "text_snippet": " 1662 divided by 6 is 277 with a remainder of 0.",
+            "zh_baseline_match_chars": 6,
+            "zh_baseline_total_chars": 48
+          }
+        },
+        {
+          "prob_idx": 5,
+          "en_prompt": "Find the value of C(9, 4).",
+          "alltoken_reverse": {
+            "lang": "en",
+            "text_snippet": " C(9, 4) = 9! / (4! * (9 - 4)!) = 9! / (4! * 5!) = (9 * 8 * 7 * 6) / (4 * 3 * 2 * 1) = 1",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 79
+          },
+          "lasttoken_reverse": {
+            "lang": "en",
+            "text_snippet": " C(9, 4) is the number of ways to choose 4 items from a set of 9 items without regard to order. This can be calculated using the formula:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n! is the factorial of n, an",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 79
+          }
+        },
+        {
+          "prob_idx": 6,
+          "en_prompt": "Calculate 702 + 768.",
+          "alltoken_reverse": {
+            "lang": "en",
+            "text_snippet": " 702 + 768 = 1470\\nAsked 12/10/2012 11:00:00 AM\\nConfirmed by andrewpallarca [12/10/2014 11:20",
+            "zh_baseline_match_chars": 17,
+            "zh_baseline_total_chars": 17
+          },
+          "lasttoken_reverse": {
+            "lang": "numeric",
+            "text_snippet": " 702 + 768 = 1470",
+            "zh_baseline_match_chars": 17,
+            "zh_baseline_total_chars": 17
+          }
+        },
+        {
+          "prob_idx": 7,
+          "en_prompt": "An arithmetic sequence has first term 17 and common difference 7. Find the sum o",
+          "alltoken_reverse": {
+            "lang": "numeric",
+            "text_snippet": " 17 + 24 + 31 + 38 + 45 + 52 + 59 + 66 + 73 + 80 + 87 + 94 + 101 + 108 + 115 + ",
+            "zh_baseline_match_chars": 3,
+            "zh_baseline_total_chars": 79
+          },
+          "lasttoken_reverse": {
+            "lang": "zh",
+            "text_snippet": " \u8981\u6c42\uff1a 1. \u8bf7\u7528\u4e2d\u6587\u4f5c\u7b54\u3002 2. \u8bf7\u5728\u7b54\u9898\u6846\u4e2d\u4f5c\u7b54\uff0c\u4e0d\u8981\u5728\u8349\u7a3f\u7eb8\u4e0a\u4f5c\u7b54\u3002 3. \u8bf7\u5728\u7b54\u9898\u6846\u4e2d\u4f5c\u7b54\uff0c\u4e0d\u8981\u5728\u8349\u7a3f\u7eb8\u4e0a\u4f5c\u7b54\u3002 4. \u8bf7\u5728\u7b54\u9898\u6846\u4e2d",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 71
+          }
+        },
+        {
+          "prob_idx": 8,
+          "en_prompt": "What is the remainder when 4911 is divided by 16?",
+          "alltoken_reverse": {
+            "lang": "zh",
+            "text_snippet": " 4911\u9664\u4ee516\u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\\nA\u30011\\nB\u30013\\nC\u30015\\nD\u30017\\n\u7b54\u6848\uff1aB\\n\u89e3\u6790\uff1a4911\u00f716=306\u2026\u20269\uff0c9\u00f716=0\u2026\u20269\uff0c\u6240\u4ee549",
+            "zh_baseline_match_chars": 5,
+            "zh_baseline_total_chars": 76
+          },
+          "lasttoken_reverse": {
+            "lang": "en",
+            "text_snippet": " 4911 divided by 16 is 306 with a remainder of 5.",
+            "zh_baseline_match_chars": 6,
+            "zh_baseline_total_chars": 49
+          }
+        },
+        {
+          "prob_idx": 9,
+          "en_prompt": "An arithmetic sequence has first term 8 and common difference 2. Find the sum of",
+          "alltoken_reverse": {
+            "lang": "zh",
+            "text_snippet": " 16\u9879\u7684\u7b49\u5dee\u6570\u5217\u7684\u524d16\u9879\u7684\u548c\u662f\u591a\u5c11\uff1f\\nA\u3001128\\nB\u3001160\\nC\u3001192\\nD\u3001224\\nE\u3001256\\n\u7b54\u6848\uff1aB\\n\u89e3\u6790\uff1a\\n16\u9879\u7684\u7b49\u5dee",
+            "zh_baseline_match_chars": 3,
+            "zh_baseline_total_chars": 71
+          },
+          "lasttoken_reverse": {
+            "lang": "en",
+            "text_snippet": " 1. **Identify the given values:**\n   - First term (\\(a\\)): 8\n   - Common difference (\\(d\\)): 2\n   - Number of terms (\\(n\\)): 16\n\n2. **Use the formula for the sum of the first \\(n\\)",
+            "zh_baseline_match_chars": 2,
+            "zh_baseline_total_chars": 71
+          }
+        },
+        {
+          "prob_idx": 10,
+          "en_prompt": "A rectangle has length 41 and width 43. Find its area.",
+          "alltoken_reverse": {
+            "lang": "en",
+            "text_snippet": " \u7528\u82f1\u8bed\u56de\u7b54\nThe area of a rectangle is calculated by multiplying its length by its width. In this case\uff0cthe length is 41 and the width is 43. Therefore\uff0cthe area of the rectangle is 41 * 43 = 1763 square uni",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 99
+          },
+          "lasttoken_reverse": {
+            "lang": "en",
+            "text_snippet": " 1. The area of a rectangle is calculated by multiplying its length by its width.\n2. Given the length of the rectangle is 41 and the width is 43, the area can be calculated as:\n   [\n   text{Area} = 41",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 99
+          }
+        },
+        {
+          "prob_idx": 11,
+          "en_prompt": "Calculate 628 + 280.",
+          "alltoken_reverse": {
+            "lang": "en",
+            "text_snippet": " 628 + 280 = 908\\nAsked 12/18/2012 11:09:01 AM\\nUpdated 12/18/2012 11:12:01 AM\\nConfirmed by and",
+            "zh_baseline_match_chars": 16,
+            "zh_baseline_total_chars": 16
+          },
+          "lasttoken_reverse": {
+            "lang": "numeric",
+            "text_snippet": " 628 + 280 = 908",
+            "zh_baseline_match_chars": 16,
+            "zh_baseline_total_chars": 16
+          }
+        },
+        {
+          "prob_idx": 12,
+          "en_prompt": "Find the value of C(12, 2).",
+          "alltoken_reverse": {
+            "lang": "en",
+            "text_snippet": " C(12, 2\uff09=12*11/2=66\\nC(12, 2\uff09=12*11/2=66\\nC(12, 2\uff09=12*11/2=66\\nC(12",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 68
+          },
+          "lasttoken_reverse": {
+            "lang": "en",
+            "text_snippet": " C(12, 2) is the number of ways to choose 2 items from a set of 12 items without regard to order. This can be calculated using the formula:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n is the total number of i",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 86
+          }
+        },
+        {
+          "prob_idx": 13,
+          "en_prompt": "A rectangle has length 34 and width 7. Find its area.",
+          "alltoken_reverse": {
+            "lang": "en",
+            "text_snippet": " \u7528\u82f1\u8bed\u56de\u7b54\nThe area of a rectangle is calculated by multiplying its length by its width. In this case\uff0cthe length is 34 and the width is 7. Therefore\uff0cthe area of the rectangle is 34 * 7 = 238 square units\u3002",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 106
+          },
+          "lasttoken_reverse": {
+            "lang": "en",
+            "text_snippet": " A rectangle's area is calculated by multiplying its length by its width. Given that the length of the rectangle is 34 and the width is 7, the area can be calculated as follows:\n\n\\[\n\\text{Area} = \\tex",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 106
+          }
+        },
+        {
+          "prob_idx": 14,
+          "en_prompt": "Calculate 728 + 969.",
+          "alltoken_reverse": {
+            "lang": "en",
+            "text_snippet": " 728 + 969 = 1707\\nAsked 12/10/2012 11:00:00 AM\\nConfirmed by andrewpallarca [12/10/2014 11:10",
+            "zh_baseline_match_chars": 14,
+            "zh_baseline_total_chars": 68
+          },
+          "lasttoken_reverse": {
+            "lang": "numeric",
+            "text_snippet": " 728 + 969 = 1797",
+            "zh_baseline_match_chars": 14,
+            "zh_baseline_total_chars": 17
+          }
+        },
+        {
+          "prob_idx": 16,
+          "en_prompt": "A rectangle has length 18 and width 10. Find its area.",
+          "alltoken_reverse": {
+            "lang": "zh",
+            "text_snippet": " 1. \u8ba1\u7b97\u77e9\u5f62\u7684\u9762\u79ef\u516c\u5f0f\u4e3a\uff1a\u9762\u79ef = \u957f\u5ea6 \u00d7 \u5bbd\u5ea6\u3002\n2. \u5c06\u7ed9\u5b9a\u7684\u957f\u5ea6\u548c\u5bbd\u5ea6\u4ee3\u5165\u516c\u5f0f\u4e2d\uff1a\u9762\u79ef = 18 \u00d7 10\u3002\n3. \u8ba1\u7b97\u7ed3\u679c\uff1a\u9762\u79ef = 180\u3002\n4",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 80
+          },
+          "lasttoken_reverse": {
+            "lang": "en",
+            "text_snippet": " A rectangle's area is calculated by multiplying its length by its width. Given that the length of the rectangle is 18 and the width is 10, the area can be calculated as follows:\n\n\\[\n\\text{Area} = \\te",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 103
+          }
+        },
+        {
+          "prob_idx": 17,
+          "en_prompt": "What is the remainder when 7112 is divided by 25?",
+          "alltoken_reverse": {
+            "lang": "en",
+            "text_snippet": " 7112 = 25 * 284 + 12\\nThe remainder is 12.\\nQ\uff1a 7112 \u00f7 25 = 284 R 12\\n7112 \u00f7 25 = 284 R",
+            "zh_baseline_match_chars": 6,
+            "zh_baseline_total_chars": 80
+          },
+          "lasttoken_reverse": {
+            "lang": "en",
+            "text_snippet": " 7112 can be written as 71 * 100 + 12.\nWhen we divide 71 * 100 by 25, we get a remainder of 0.\nWhen we divide 12 by 25, we get a remainder of 1",
+            "zh_baseline_match_chars": 6,
+            "zh_baseline_total_chars": 80
+          }
+        },
+        {
+          "prob_idx": 18,
+          "en_prompt": "A rectangle has length 38 and width 17. Find its area.",
+          "alltoken_reverse": {
+            "lang": "en",
+            "text_snippet": " \u7528\u82f1\u8bed\u56de\u7b54\nThe area of a rectangle is calculated by multiplying its length by its width. In this case\uff0cthe length is 38 and the width is 17. Therefore\uff0cthe area of the rectangle is 38 x 17 = 646 square unit",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 99
+          },
+          "lasttoken_reverse": {
+            "lang": "en",
+            "text_snippet": " A rectangle's area is calculated by multiplying its length by its width. Given that the length of the rectangle is 38 and the width is 17, the area can be calculated as follows:\n\n\\[\n\\text{Area} = \\te",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 99
+          }
+        },
+        {
+          "prob_idx": 20,
+          "en_prompt": "An arithmetic sequence has first term 7 and common difference 8. Find the sum of",
+          "alltoken_reverse": {
+            "lang": "zh",
+            "text_snippet": " 16\u9879\u7684\u7b49\u5dee\u6570\u5217\u7684\u524d16\u9879\u7684\u548c\u662f\u591a\u5c11\uff1f\\nA\u3001128\\nB\u3001136\\nC\u3001144\\nD\u3001152\\nE\u3001160\\n\u7b54\u6848\uff1aC\\n\u89e3\u6790\uff1a\\n\u7b49\u5dee\u6570\u5217\u7684\u524d",
+            "zh_baseline_match_chars": 3,
+            "zh_baseline_total_chars": 67
+          },
+          "lasttoken_reverse": {
+            "lang": "zh",
+            "text_snippet": " \u8981\u6c42\uff1a 1. \u8bf7\u7528\u82f1\u8bed\u56de\u7b54\u95ee\u9898\u3002 2. \u8bf7\u7528\u4e2d\u6587\u56de\u7b54\u95ee\u9898\u3002 3. \u8bf7\u7528\u4e2d\u6587\u56de\u7b54\u95ee\u9898\u3002 4. \u8bf7\u7528\u4e2d\u6587\u56de\u7b54\u95ee\u9898\u3002 5. \u8bf7\u7528\u4e2d\u6587\u56de\u7b54\u95ee\u9898\u3002 6. \u8bf7\u7528\u4e2d\u6587\u56de\u7b54\u95ee\u9898",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 67
+          }
+        },
+        {
+          "prob_idx": 21,
+          "en_prompt": "Calculate 40 + 105.",
+          "alltoken_reverse": {
+            "lang": "en",
+            "text_snippet": " 40 + 105 = 145\\nAsked 12/16/2012 11:00:00 AM\\nUpdated 12/16/2012 11:02:00 AM\\nConfirmed by andrew",
+            "zh_baseline_match_chars": 15,
+            "zh_baseline_total_chars": 15
+          },
+          "lasttoken_reverse": {
+            "lang": "numeric",
+            "text_snippet": " 40 + 105 = 145",
+            "zh_baseline_match_chars": 15,
+            "zh_baseline_total_chars": 15
+          }
+        }
+      ],
+      "alltoken_reverse_summary": {
+        "pct_zh": 0.35,
+        "pct_en": 0.55,
+        "pct_mixed": 0.05,
+        "pct_numeric": 0.05,
+        "n_zh": 7,
+        "n_en": 11
+      },
+      "lasttoken_reverse_summary": {
+        "pct_zh": 0.15,
+        "pct_en": 0.65,
+        "pct_mixed": 0.0,
+        "pct_numeric": 0.2,
+        "n_zh": 3,
+        "n_en": 13
+      }
+    },
+    "30": {
+      "pc0_var_explained": 0.4712957739830017,
+      "cohens_d": -9.527000427246094,
+      "zh_mean_proj": -0.3133046627044678,
+      "en_mean_proj": 0.20134848356246948,
+      "per_problem": [
+        {
+          "prob_idx": 0,
+          "en_prompt": "Find the value of C(5, 1).",
+          "alltoken_reverse": {
+            "lang": "en",
+            "text_snippet": " C(5, 1) is the number of ways to choose 1 item from a set of 5 items. This can be calculated using the formula:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n is the total number of items, k is the number of it",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 88
+          },
+          "lasttoken_reverse": {
+            "lang": "en",
+            "text_snippet": " C(5, 1) is the number of ways to choose 1 item from a set of 5 items. This can be calculated using the formula:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n is the total number of items, k is the number of it",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 88
+          }
+        },
+        {
+          "prob_idx": 1,
+          "en_prompt": "What is the remainder when 6719 is divided by 15?",
+          "alltoken_reverse": {
+            "lang": "zh",
+            "text_snippet": " \u8981\u8ba1\u7b976719\u9664\u4ee515\u7684\u4f59\u6570\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u6a21\u8fd0\u7b97\u3002\u5177\u4f53\u6b65\u9aa4\u5982\u4e0b\uff1a\n\n1. \u8ba1\u7b976719\u9664\u4ee515\u7684\u5546\u548c\u4f59\u6570\u3002\n2. \u4f7f\u7528\u6a21\u8fd0\u7b97\u516c\u5f0f\uff1a\u4f59\u6570 = \u88ab\u9664\u6570 - (\u5546 \u00d7 ",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 80
+          },
+          "lasttoken_reverse": {
+            "lang": "zh",
+            "text_snippet": " \u8981\u8ba1\u7b976719\u9664\u4ee515\u7684\u4f59\u6570\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u6a21\u8fd0\u7b97\u3002\u5177\u4f53\u6b65\u9aa4\u5982\u4e0b\uff1a\n\n1. \u8ba1\u7b976719\u9664\u4ee515\u7684\u5546\u548c\u4f59\u6570\u3002\n2. \u4f7f\u7528\u6a21\u8fd0\u7b97\u516c\u5f0f\uff1a\u4f59\u6570 = \u88ab\u9664\u6570 - (\u5546 \u00d7 ",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 80
+          }
+        },
+        {
+          "prob_idx": 2,
+          "en_prompt": "An arithmetic sequence has first term 20 and common difference 9. Find the sum o",
+          "alltoken_reverse": {
+            "lang": "zh",
+            "text_snippet": " \u8981\u6c42\uff1a 1. \u8bf7\u7528\u82f1\u8bed\u56de\u7b54\u95ee\u9898\u3002 2. \u8bf7\u7528\u4e2d\u6587\u56de\u7b54\u95ee\u9898\u3002 3. \u8bf7\u7528\u4e2d\u6587\u56de\u7b54\u95ee\u9898\u3002 4. \u8bf7\u7528\u4e2d\u6587\u56de\u7b54\u95ee\u9898\u3002 5. \u8bf7\u7528\u4e2d\u6587\u56de\u7b54\u95ee\u9898\u3002 6. \u8bf7\u7528\u4e2d\u6587\u56de\u7b54\u95ee\u9898",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 66
+          },
+          "lasttoken_reverse": {
+            "lang": "zh",
+            "text_snippet": " \u8981\u6c42\uff1a 1. \u8bf7\u7528\u82f1\u8bed\u56de\u7b54\u95ee\u9898\u3002 2. \u8bf7\u7528\u4e2d\u6587\u56de\u7b54\u95ee\u9898\u3002 3. \u8bf7\u7528\u4e2d\u6587\u56de\u7b54\u95ee\u9898\u3002 4. \u8bf7\u7528\u4e2d\u6587\u56de\u7b54\u95ee\u9898\u3002 5. \u8bf7\u7528\u4e2d\u6587\u56de\u7b54\u95ee\u9898\u3002 6. \u8bf7\u7528\u4e2d\u6587\u56de\u7b54\u95ee\u9898",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 66
+          }
+        },
+        {
+          "prob_idx": 3,
+          "en_prompt": "Find the value of C(6, 1).",
+          "alltoken_reverse": {
+            "lang": "en",
+            "text_snippet": " C(6, 1) is the number of ways to choose 1 item from a set of 6 items. This can be calculated using the formula:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n is the total number of items, k is the number of it",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 88
+          },
+          "lasttoken_reverse": {
+            "lang": "en",
+            "text_snippet": " C(6, 1) is the number of ways to choose 1 item from a set of 6 items. This can be calculated using the formula:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n is the total number of items, k is the number of it",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 88
+          }
+        },
+        {
+          "prob_idx": 4,
+          "en_prompt": "What is the remainder when 1662 is divided by 6?",
+          "alltoken_reverse": {
+            "lang": "en",
+            "text_snippet": " 1. We start with the given number (1662).\n2. To find the remainder of (1662) when divided by (6), we use the modulo operation.\n3. The modulo operation calculates the remainder of a division of two nu",
+            "zh_baseline_match_chars": 2,
+            "zh_baseline_total_chars": 79
+          },
+          "lasttoken_reverse": {
+            "lang": "en",
+            "text_snippet": " 1. We start with the given number (1662).\n2. To find the remainder of (1662) when divided by (6), we use the modulo operation.\n3. The modulo operation calculates the remainder of a division of two nu",
+            "zh_baseline_match_chars": 2,
+            "zh_baseline_total_chars": 79
+          }
+        },
+        {
+          "prob_idx": 5,
+          "en_prompt": "Find the value of C(9, 4).",
+          "alltoken_reverse": {
+            "lang": "en",
+            "text_snippet": " C(9, 4) is the number of ways to choose 4 items from a set of 9 items without regard to order. This can be calculated using the formula:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n! is the factorial of n, an",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 79
+          },
+          "lasttoken_reverse": {
+            "lang": "en",
+            "text_snippet": " C(9, 4) is the number of ways to choose 4 items from a set of 9 items without regard to order. This can be calculated using the formula:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n! is the factorial of n, an",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 79
+          }
+        },
+        {
+          "prob_idx": 6,
+          "en_prompt": "Calculate 702 + 768.",
+          "alltoken_reverse": {
+            "lang": "numeric",
+            "text_snippet": " 702 + 768 = 1470",
+            "zh_baseline_match_chars": 17,
+            "zh_baseline_total_chars": 17
+          },
+          "lasttoken_reverse": {
+            "lang": "numeric",
+            "text_snippet": " 702 + 768 = 1470",
+            "zh_baseline_match_chars": 17,
+            "zh_baseline_total_chars": 17
+          }
+        },
+        {
+          "prob_idx": 7,
+          "en_prompt": "An arithmetic sequence has first term 17 and common difference 7. Find the sum o",
+          "alltoken_reverse": {
+            "lang": "zh",
+            "text_snippet": " \u8981\u6c42\uff1a 1. \u8bf7\u7528\u4e2d\u6587\u4f5c\u7b54\u3002 2. \u8bf7\u5728\u7b54\u9898\u6846\u4e2d\u4f5c\u7b54\uff0c\u4e0d\u8981\u5728\u7b54\u9898\u6846\u5916\u4f5c\u7b54\u3002 3. \u8bf7\u5728\u7b54\u9898\u6846\u4e2d\u4f5c\u7b54\uff0c\u4e0d\u8981\u5728\u7b54\u9898\u6846\u5916\u4f5c\u7b54\u3002 4. \u8bf7\u5728\u7b54\u9898\u6846\u4e2d",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 71
+          },
+          "lasttoken_reverse": {
+            "lang": "zh",
+            "text_snippet": " \u8981\u6c42\uff1a 1. \u8bf7\u7528\u4e2d\u6587\u4f5c\u7b54\u3002 2. \u8bf7\u5728\u7b54\u9898\u6846\u4e2d\u4f5c\u7b54\uff0c\u4e0d\u8981\u5728\u8349\u7a3f\u7eb8\u4e0a\u4f5c\u7b54\u3002 3. \u8bf7\u5728\u7b54\u9898\u6846\u4e2d\u4f5c\u7b54\uff0c\u4e0d\u8981\u5728\u8349\u7a3f\u7eb8\u4e0a\u4f5c\u7b54\u3002 4. \u8bf7\u5728\u7b54\u9898\u6846\u4e2d",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 71
+          }
+        },
+        {
+          "prob_idx": 8,
+          "en_prompt": "What is the remainder when 4911 is divided by 16?",
+          "alltoken_reverse": {
+            "lang": "en",
+            "text_snippet": " $4911 = 281 \\cdot 16 + 15$.\nSo the remainder when 4911 is divided by 16 is $\\boxed{15}$.\nThe answer is: 15",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 80
+          },
+          "lasttoken_reverse": {
+            "lang": "en",
+            "text_snippet": " $4911 = 4900 + 11 = 250 \\cdot 16 + 11$.\nSo, the remainder when 4911 is divided by 16 is $\\boxed{11}$.\nThe answer is: 11",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 80
+          }
+        },
+        {
+          "prob_idx": 9,
+          "en_prompt": "An arithmetic sequence has first term 8 and common difference 2. Find the sum of",
+          "alltoken_reverse": {
+            "lang": "zh",
+            "text_snippet": " \u8981\u6c42\uff1a 1. \u8bf7\u7528\u4e2d\u6587\u4f5c\u7b54\u3002 2. \u8bf7\u5728\u7b54\u9898\u6846\u4e2d\u4f5c\u7b54\uff0c\u4e0d\u8981\u5728\u8349\u7a3f\u7eb8\u4e0a\u4f5c\u7b54\u3002 3. \u8bf7\u5728\u7b54\u9898\u6846\u4e2d\u4f5c\u7b54\uff0c\u4e0d\u8981\u5728\u8349\u7a3f\u7eb8\u4e0a\u4f5c\u7b54\u3002 4. \u8bf7\u5728\u7b54\u9898\u6846\u4e2d",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 71
+          },
+          "lasttoken_reverse": {
+            "lang": "en",
+            "text_snippet": " 1. **Identify the given values:**\n   - First term (\\(a\\)): 8\n   - Common difference (\\(d\\)): 2\n   - Number of terms (\\(n\\)): 16\n\n2. **Use the formula for the sum of the first \\(n\\)",
+            "zh_baseline_match_chars": 2,
+            "zh_baseline_total_chars": 71
+          }
+        },
+        {
+          "prob_idx": 10,
+          "en_prompt": "A rectangle has length 41 and width 43. Find its area.",
+          "alltoken_reverse": {
+            "lang": "en",
+            "text_snippet": " 1. The area of a rectangle is calculated by multiplying its length by its width.\n2. Given the length of the rectangle is 41 and the width is 43, the area can be calculated as:\n   [\n   text{Area} = 41",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 99
+          },
+          "lasttoken_reverse": {
+            "lang": "en",
+            "text_snippet": " 1. The area of a rectangle is calculated by multiplying its length by its width.\n2. Given the length of the rectangle is 41 and the width is 43, the area can be calculated as:\n   [\n   text{Area} = 41",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 99
+          }
+        },
+        {
+          "prob_idx": 11,
+          "en_prompt": "Calculate 628 + 280.",
+          "alltoken_reverse": {
+            "lang": "numeric",
+            "text_snippet": " 628 + 280 = 908",
+            "zh_baseline_match_chars": 16,
+            "zh_baseline_total_chars": 16
+          },
+          "lasttoken_reverse": {
+            "lang": "numeric",
+            "text_snippet": " 628 + 280 = 908",
+            "zh_baseline_match_chars": 16,
+            "zh_baseline_total_chars": 16
+          }
+        },
+        {
+          "prob_idx": 12,
+          "en_prompt": "Find the value of C(12, 2).",
+          "alltoken_reverse": {
+            "lang": "en",
+            "text_snippet": " C(12, 2) is the number of ways to choose 2 items from a set of 12 items without regard to order. This can be calculated using the formula:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n is the total number of i",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 86
+          },
+          "lasttoken_reverse": {
+            "lang": "en",
+            "text_snippet": " C(12, 2) is the number of ways to choose 2 items from a set of 12 items without regard to order. This can be calculated using the formula:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n is the total number of i",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 86
+          }
+        },
+        {
+          "prob_idx": 13,
+          "en_prompt": "A rectangle has length 34 and width 7. Find its area.",
+          "alltoken_reverse": {
+            "lang": "en",
+            "text_snippet": " 1. The area of a rectangle is calculated by multiplying its length by its width.\n2. Given the length of the rectangle is 34 and the width is 7, the area can be calculated as:\n   [\n   text{Area} = 34 ",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 106
+          },
+          "lasttoken_reverse": {
+            "lang": "en",
+            "text_snippet": "  Answer Choices: (A) 238 (B) 240 (C) 242 (D) 244\nThe area of a rectangle is calculated by multiplying its length by its width. In this case, the length is 34 and the width is 7",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 106
+          }
+        },
+        {
+          "prob_idx": 14,
+          "en_prompt": "Calculate 728 + 969.",
+          "alltoken_reverse": {
+            "lang": "numeric",
+            "text_snippet": " 728 + 969 = 1797",
+            "zh_baseline_match_chars": 14,
+            "zh_baseline_total_chars": 17
+          },
+          "lasttoken_reverse": {
+            "lang": "numeric",
+            "text_snippet": " 728 + 969 = 1797",
+            "zh_baseline_match_chars": 14,
+            "zh_baseline_total_chars": 17
+          }
+        },
+        {
+          "prob_idx": 16,
+          "en_prompt": "A rectangle has length 18 and width 10. Find its area.",
+          "alltoken_reverse": {
+            "lang": "zh",
+            "text_snippet": " \u8981\u8ba1\u7b97\u4e00\u4e2a\u77e9\u5f62\u7684\u9762\u79ef\uff0c\u6211\u4eec\u9700\u8981\u4f7f\u7528\u77e9\u5f62\u7684\u516c\u5f0f\uff1a\u9762\u79ef = \u957f\u5ea6 \u00d7 \u5bbd\u5ea6\u3002\n\n\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u77e9\u5f62\u7684\u957f\u5ea6\u662f18\uff0c\u5bbd\u5ea6\u662f10\u3002\u6240\u4ee5\uff0c\u6211\u4eec\u53ef\u4ee5\u5c06\u8fd9\u4e9b\u503c\u4ee3\u5165\u516c\u5f0f\u4e2d\uff1a\n\n\u9762\u79ef = 18 \u00d7 1",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 91
+          },
+          "lasttoken_reverse": {
+            "lang": "zh",
+            "text_snippet": " \u8981\u8ba1\u7b97\u4e00\u4e2a\u77e9\u5f62\u7684\u9762\u79ef\uff0c\u6211\u4eec\u9700\u8981\u4f7f\u7528\u77e9\u5f62\u7684\u957f\u5ea6\u548c\u5bbd\u5ea6\u3002\u77e9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u5c06\u957f\u5ea6\u4e58\u4ee5\u5bbd\u5ea6\u6765\u8ba1\u7b97\u3002\n\n\u7ed9\u5b9a\u7684\u77e9\u5f62\u957f\u5ea6\u4e3a18\uff0c\u5bbd\u5ea6\u4e3a10\u3002\u56e0\u6b64\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u4ee5\u4e0b\u516c\u5f0f\u6765\u8ba1\u7b97\u9762\u79ef\uff1a\n\n\\[ \\text{\u9762\u79ef} =",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 101
+          }
+        },
+        {
+          "prob_idx": 17,
+          "en_prompt": "What is the remainder when 7112 is divided by 25?",
+          "alltoken_reverse": {
+            "lang": "zh",
+            "text_snippet": " \u8981\u8ba1\u7b977112\u9664\u4ee525\u7684\u4f59\u6570\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u6a21\u8fd0\u7b97\u3002\u5177\u4f53\u6b65\u9aa4\u5982\u4e0b\uff1a\n\n1. \u8ba1\u7b977112\u9664\u4ee525\u7684\u5546\u548c\u4f59\u6570\u3002\n2. \u4f7f\u7528\u6a21\u8fd0\u7b97\u516c\u5f0f\uff1a\\(7112 \\mod 25 = r\\)",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 80
+          },
+          "lasttoken_reverse": {
+            "lang": "en",
+            "text_snippet": " 1. **Calculate the remainder of (7112) divided by (25):**\n   [\n   17 = 7112 % 25\n   ]\n   This gives us the remainder when (7112) is divided by (25).\n\n2. **Sub",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 80
+          }
+        },
+        {
+          "prob_idx": 18,
+          "en_prompt": "A rectangle has length 38 and width 17. Find its area.",
+          "alltoken_reverse": {
+            "lang": "en",
+            "text_snippet": " 1. The area of a rectangle is calculated by multiplying its length by its width.\n2. Given the length of the rectangle is 38 and the width is 17, the area can be calculated as:\n   [\n   text{area} = 38",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 99
+          },
+          "lasttoken_reverse": {
+            "lang": "en",
+            "text_snippet": " 1. The area of a rectangle is calculated by multiplying its length by its width.\n2. Given the length of the rectangle is 38 and the width is 17, the area can be found by performing the multiplication",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 99
+          }
+        },
+        {
+          "prob_idx": 20,
+          "en_prompt": "An arithmetic sequence has first term 7 and common difference 8. Find the sum of",
+          "alltoken_reverse": {
+            "lang": "zh",
+            "text_snippet": " \u8981\u6c42\uff1a 1. \u8bf7\u7528\u82f1\u8bed\u56de\u7b54\u95ee\u9898\u3002 2. \u8bf7\u7528\u4e2d\u6587\u56de\u7b54\u95ee\u9898\u3002 3. \u8bf7\u7528\u4e2d\u6587\u56de\u7b54\u95ee\u9898\u3002 4. \u8bf7\u7528\u82f1\u8bed\u56de\u7b54\u95ee\u9898\u3002 5. \u8bf7\u7528\u82f1\u8bed\u56de\u7b54\u95ee\u9898\u3002 6. \u8bf7\u7528\u82f1\u8bed\u56de\u7b54\u95ee\u9898",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 67
+          },
+          "lasttoken_reverse": {
+            "lang": "zh",
+            "text_snippet": " \u8981\u6c42\uff1a 1. \u8bf7\u7528\u82f1\u8bed\u56de\u7b54\u95ee\u9898\u3002 2. \u8bf7\u7528\u4e2d\u6587\u56de\u7b54\u95ee\u9898\u3002 3. \u8bf7\u7528\u4e2d\u6587\u56de\u7b54\u95ee\u9898\u3002 4. \u8bf7\u7528\u82f1\u8bed\u56de\u7b54\u95ee\u9898\u3002 5. \u8bf7\u7528\u82f1\u8bed\u56de\u7b54\u95ee\u9898\u3002 6. \u8bf7\u7528\u82f1\u8bed\u56de\u7b54\u95ee\u9898",
+            "zh_baseline_match_chars": 1,
+            "zh_baseline_total_chars": 67
+          }
+        },
+        {
+          "prob_idx": 21,
+          "en_prompt": "Calculate 40 + 105.",
+          "alltoken_reverse": {
+            "lang": "numeric",
+            "text_snippet": " 40 + 105 = 145",
+            "zh_baseline_match_chars": 15,
+            "zh_baseline_total_chars": 15
+          },
+          "lasttoken_reverse": {
+            "lang": "numeric",
+            "text_snippet": " 40 + 105 = 145",
+            "zh_baseline_match_chars": 15,
+            "zh_baseline_total_chars": 15
+          }
+        }
+      ],
+      "alltoken_reverse_summary": {
+        "pct_zh": 0.35,
+        "pct_en": 0.45,
+        "pct_mixed": 0.0,
+        "pct_numeric": 0.2,
+        "n_zh": 7,
+        "n_en": 9
+      },
+      "lasttoken_reverse_summary": {
+        "pct_zh": 0.25,
+        "pct_en": 0.55,
+        "pct_mixed": 0.0,
+        "pct_numeric": 0.2,
+        "n_zh": 5,
+        "n_en": 11
+      }
+    }
+  }
+}

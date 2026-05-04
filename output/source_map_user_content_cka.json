@@ -1,0 +1,184 @@
+{
+  "analysis": "user_content_slice_cka_and_pairwise",
+  "sample_meta": [
+    {
+      "problem": 0,
+      "lang": "en",
+      "P_total": 58,
+      "P_user": 12,
+      "user_text": "Find the value of C(18, 3)."
+    },
+    {
+      "problem": 0,
+      "lang": "zh",
+      "P_total": 60,
+      "P_user": 14,
+      "user_text": "\u6c42\u7ec4\u5408\u6570 C(18, 3) \u7684\u503c\u3002"
+    },
+    {
+      "problem": 1,
+      "lang": "en",
+      "P_total": 57,
+      "P_user": 11,
+      "user_text": "Find the value of C(5, 3)."
+    },
+    {
+      "problem": 1,
+      "lang": "zh",
+      "P_total": 59,
+      "P_user": 13,
+      "user_text": "\u6c42\u7ec4\u5408\u6570 C(5, 3) \u7684\u503c\u3002"
+    },
+    {
+      "problem": 2,
+      "lang": "en",
+      "P_total": 58,
+      "P_user": 12,
+      "user_text": "Find the value of C(17, 1)."
+    },
+    {
+      "problem": 2,
+      "lang": "zh",
+      "P_total": 60,
+      "P_user": 14,
+      "user_text": "\u6c42\u7ec4\u5408\u6570 C(17, 1) \u7684\u503c\u3002"
+    },
+    {
+      "problem": 3,
+      "lang": "en",
+      "P_total": 57,
+      "P_user": 11,
+      "user_text": "Find the value of C(5, 1)."
+    },
+    {
+      "problem": 3,
+      "lang": "zh",
+      "P_total": 59,
+      "P_user": 13,
+      "user_text": "\u6c42\u7ec4\u5408\u6570 C(5, 1) \u7684\u503c\u3002"
+    },
+    {
+      "problem": 4,
+      "lang": "en",
+      "P_total": 71,
+      "P_user": 25,
+      "user_text": "An arithmetic sequence has first term 8 and common difference 4. Find the sum of the first 20 terms."
+    },
+    {
+      "problem": 4,
+      "lang": "zh",
+      "P_total": 72,
+      "P_user": 26,
+      "user_text": "\u7b49\u5dee\u6570\u5217\u9996\u9879\u4e3a 8\uff0c\u516c\u5dee\u4e3a 4\uff0c\u6c42\u524d 20 \u9879\u4e4b\u548c\u3002"
+    }
+  ],
+  "layer_results": {
+    "20": {
+      "cka_xLang_same_problem": 0.7914678308318756,
+      "cka_sameLang_diff_problem": 0.35908004877765415,
+      "cka_xLang_diff_problem": 0.4369455162753757,
+      "cka_raw_substrate": 0.8429497307817749,
+      "cos_xLang_same_mean": 0.891248726680875,
+      "cos_xLang_same_std": 0.07348224019014511,
+      "cos_sameLang_diff_mean": 0.8906252119382744,
+      "cos_sameLang_diff_std": 0.05901190015583167,
+      "cos_xLang_diff_mean": 0.87272364055777,
+      "cos_xLang_diff_std": 0.05738530467658072,
+      "paired_delta_mean": 0.0006235147426007004,
+      "paired_delta_n_positive": 16,
+      "paired_delta_n_total": 20
+    },
+    "24": {
+      "cka_xLang_same_problem": 0.6799612100933751,
+      "cka_sameLang_diff_problem": 0.352728664948801,
+      "cka_xLang_diff_problem": 0.4740941479940452,
+      "cka_raw_substrate": 0.9169105153141404,
+      "cos_xLang_same_mean": 0.8993743750262922,
+      "cos_xLang_same_std": 0.0609571385008168,
+      "cos_sameLang_diff_mean": 0.8953864092554258,
+      "cos_sameLang_diff_std": 0.05518419933737522,
+      "cos_xLang_diff_mean": 0.8836533557329207,
+      "cos_xLang_diff_std": 0.04433665682440222,
+      "paired_delta_mean": 0.0039879657708665524,
+      "paired_delta_n_positive": 14,
+      "paired_delta_n_total": 20
+    },
+    "27": {
+      "cka_xLang_same_problem": 0.5165643074281357,
+      "cka_sameLang_diff_problem": 0.3959964271563577,
+      "cka_xLang_diff_problem": 0.5149231793305306,
+      "cka_raw_substrate": 0.9497585640198407,
+      "cos_xLang_same_mean": 0.8785131781029356,
+      "cos_xLang_same_std": 0.09089651067072826,
+      "cos_sameLang_diff_mean": 0.8738195853541542,
+      "cos_sameLang_diff_std": 0.07567285129363657,
+      "cos_xLang_diff_mean": 0.8560365971811729,
+      "cos_xLang_diff_std": 0.06126639266168012,
+      "paired_delta_mean": 0.004693592748781661,
+      "paired_delta_n_positive": 13,
+      "paired_delta_n_total": 20
+    },
+    "30": {
+      "cka_xLang_same_problem": 0.46194874983256246,
+      "cka_sameLang_diff_problem": 0.357994727338674,
+      "cka_xLang_diff_problem": 0.47634267156647303,
+      "cka_raw_substrate": 0.9187272590405038,
+      "cos_xLang_same_mean": 0.8723159362798023,
+      "cos_xLang_same_std": 0.08400930869169125,
+      "cos_sameLang_diff_mean": 0.8611660626599438,
+      "cos_sameLang_diff_std": 0.08025075629369408,
+      "cos_xLang_diff_mean": 0.8472676878573125,
+      "cos_xLang_diff_std": 0.06410008777741365,
+      "paired_delta_mean": 0.011149873619858313,
+      "paired_delta_n_positive": 13,
+      "paired_delta_n_total": 20
+    },
+    "32": {
+      "cka_xLang_same_problem": 0.509059359044457,
+      "cka_sameLang_diff_problem": 0.2861183823982113,
+      "cka_xLang_diff_problem": 0.3554016727599655,
+      "cka_raw_substrate": 0.9405068167369164,
+      "cos_xLang_same_mean": 0.8830682615513255,
+      "cos_xLang_same_std": 0.05768712908734003,
+      "cos_sameLang_diff_mean": 0.8721087429280113,
+      "cos_sameLang_diff_std": 0.06959538578588682,
+      "cos_xLang_diff_mean": 0.8606210821216617,
+      "cos_xLang_diff_std": 0.05302631598865039,
+      "paired_delta_mean": 0.010959518623314202,
+      "paired_delta_n_positive": 11,
+      "paired_delta_n_total": 20
+    },
+    "35": {
+      "cka_xLang_same_problem": 0.6180918036767464,
+      "cka_sameLang_diff_problem": 0.38691314985926367,
+      "cka_xLang_diff_problem": 0.4029333444711873,
+      "cka_raw_substrate": 0.8911216077589813,
+      "cos_xLang_same_mean": 0.8428370906108679,
+      "cos_xLang_same_std": 0.07773717004449114,
+      "cos_sameLang_diff_mean": 0.8548361013393346,
+      "cos_sameLang_diff_std": 0.08759072723706782,
+      "cos_xLang_diff_mean": 0.8377219609038726,
+      "cos_xLang_diff_std": 0.06532591470204727,
+      "paired_delta_mean": -0.01199901072846658,
+      "paired_delta_n_positive": 10,
+      "paired_delta_n_total": 20
+    }
+  },
+  "config": {
+    "source": "/home/greg/Desktop/Projects/BrainInsideTheMachine/output/exp_causal_source_map_3b.json",
+    "n_complete_problems": 20,
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "layers": [
+      20,
+      24,
+      27,
+      30,
+      32,
+      35
+    ],
+    "n_grid": 20
+  }
+}

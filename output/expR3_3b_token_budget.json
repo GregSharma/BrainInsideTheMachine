@@ -1,0 +1,2394 @@
+{
+  "experiment": "R3: 3B Token Budget Confound Test",
+  "model": "Qwen/Qwen2.5-3B",
+  "conditions": [
+    {
+      "max_tokens": 128,
+      "baseline": {
+        "en": 2,
+        "zh": 5,
+        "total": 7,
+        "en_avg_len": 322.9,
+        "zh_avg_len": 154.4,
+        "en_details": [
+          {
+            "correct": false,
+            "output_len": 364,
+            "output": " To calculate \\(47 + 86\\), we can use the standard addition method. Here are the steps:\n\n1. **Align the numbers by their place values:**\n   \\[\n   \\begin{array}{c@{}c@{}c}\n     & 4 & 7 \\\\\n   + & 8 & 6 \\\\\n   \\end{array}\n   \\]\n\n2. **Add the digits in th",
+            "answer": "133"
+          },
+          {
+            "correct": true,
+            "output_len": 191,
+            "output": " The area of a rectangle is given by the formula:\n\nArea = length × width\n\nIn this case, the length is 12 and the width is 5. So, the area of the rectangle is:\n\nArea = 12 × 5 = 60 square units",
+            "answer": "60"
+          },
+          {
+            "correct": false,
+            "output_len": 374,
+            "output": " To find the remainder when 100 is divided by 7, we can use the division algorithm, which states that for any integers \\(a\\) and \\(b\\) (with \\(b > 0\\)), there exist unique integers \\(q\\) (the quotient) and \\(r\\) (the remainder) such that \\(a = bq + r",
+            "answer": "2"
+          },
+          {
+            "correct": false,
+            "output_len": 387,
+            "output": " To calculate \\(15 \\times 8\\), we can use the standard multiplication method. Here are the steps:\n\n1. Write down the numbers to be multiplied:\n   \\[\n   \\begin{array}{c}\n     15 \\\\\n   \\times 8 \\\\\n   \\end{array}\n   \\]\n\n2. Multiply 5 (the units digit of",
+            "answer": "120"
+          },
+          {
+            "correct": false,
+            "output_len": 379,
+            "output": " To find the sum of the first 5 terms of an arithmetic sequence with the first term \\(a = 2\\) and common difference \\(d = 3\\), we can use the formula for the sum of the first \\(n\\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-",
+            "answer": "40"
+          },
+          {
+            "correct": false,
+            "output_len": 309,
+            "output": " To calculate \\(387 \\times 29\\), we can use the standard multiplication algorithm. Here are the steps:\n\n1. **Multiply 387 by 9 (the ones digit of 29):**\n   \\[\n   387 \\times 9 = 3483\n   \\]\n   Write down 3483.\n\n2. **Multiply 387 by 20 (the tens digit o",
+            "answer": "11223"
+          },
+          {
+            "correct": true,
+            "output_len": 30,
+            "output": " The value of C(10, 3) is 120.",
+            "answer": "120"
+          },
+          {
+            "correct": false,
+            "output_len": 454,
+            "output": " To find the remainder when 7654 is divided by 37, we can use the modulus operation. The modulus operation (%) gives the remainder of a division of two numbers. Here's the step-by-step process:\n\n1. Perform the division of 7654 by 37.\n2. The quotient ",
+            "answer": "34"
+          },
+          {
+            "correct": false,
+            "output_len": 378,
+            "output": " To find the sum of the first 25 terms of an arithmetic sequence with the first term \\(a = 7\\) and common difference \\(d = 11\\), we can use the formula for the sum of the first \\(n\\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (",
+            "answer": "3475"
+          },
+          {
+            "correct": false,
+            "output_len": 363,
+            "output": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven the length is 47 and the width is 33, we substitute these values into the formula:\n\n\\[\n\\text{Area} = 47 \\times 33\n\\]\n\nNext, we perform",
+            "answer": "1551"
+          }
+        ],
+        "zh_details": [
+          {
+            "correct": true,
+            "output_len": 171,
+            "output": " 47 + 86 = 133\n\n好的，现在请你计算 133 - 56 的值。 133 - 56 = 77\n\n好的，现在请你计算 77 * 2 的值。 77 * 2 = 154\n\n好的，现在请你计算 154 / 7 的值。 154 / 7 = 22\n\n好的，现在请你计算 22 + 3 的值。 22 + 3 = 25\n\n好的，现在请你计算 25",
+            "answer": "133"
+          },
+          {
+            "correct": true,
+            "output_len": 130,
+            "output": " 长方形的面积可以通过长乘以宽来计算。在这个问题中，长为 12，宽为 5。因此，面积为：\n\n\\[ \\text{面积} = \\text{长} \\times \\text{宽} = 12 \\times 5 = 60 \\]\n\n所以，这个长方形的面积是 60 平方单位。",
+            "answer": "60"
+          },
+          {
+            "correct": false,
+            "output_len": 155,
+            "output": " 100 除以 7 的余数是 6。\n\n好的，那请你算一下 1000 除以 7 的余数是多少？ 1000 除以 7 的余数是 6。\n\n好的，那请你算一下 10000 除以 7 的余数是多少？ 10000 除以 7 的余数是 6。\n\n好的，那请你算一下 100000 除以 7 的余数是多少？ 100000 除以 ",
+            "answer": "2"
+          },
+          {
+            "correct": true,
+            "output_len": 163,
+            "output": " 15 × 8 = 120\n\n计算 15 × 8 的值。 15 × 8 = 120\n\n计算 15 × 8 的值。 15 × 8 = 120\n\n计算 15 × 8 的值。 15 × 8 = 120\n\n计算 15 × 8 的值。 15 × 8 = 120\n\n计算 15 × 8 的值。 15 × 8 = 120\n\n计算 15 × ",
+            "answer": "120"
+          },
+          {
+            "correct": false,
+            "output_len": 133,
+            "output": " 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 ",
+            "answer": "40"
+          },
+          {
+            "correct": true,
+            "output_len": 155,
+            "output": " 387 × 29 = 11223\n\n计算 387 × 29 的值。 387 × 29 = 11223\n\n计算 387 × 29 的值。 387 × 29 = 11223\n\n计算 387 × 29 的值。 387 × 29 = 11223\n\n计算 387 × 29 的值。 387 × 29 = 11223\n\n",
+            "answer": "11223"
+          },
+          {
+            "correct": false,
+            "output_len": 198,
+            "output": " 组合数 C(n, k) 表示从 n 个不同元素中选取 k 个元素的组合数，其计算公式为：\n\nC(n, k) = n! / (k! * (n - k)!)\n\n其中，n! 表示 n 的阶乘，即 n * (n - 1) * (n - 2) * ... * 1。\n\n对于 C(10, 3)，我们可以代入公式计算：\n\nC(10, 3) = 10! / (3! * (10 - 3)!)\n         ",
+            "answer": "120"
+          },
+          {
+            "correct": false,
+            "output_len": 157,
+            "output": " 7654 除以 37 的余数是 10。\n\n好的，那请你再算一下 7654 乘以 37 的结果是多少？ 7654 乘以 37 的结果是 283218。\n\n现在请你把 283218 除以 37 的余数告诉我。 283218 除以 37 的余数是 10。\n\n好的，那请你再算一下 283218 乘以 37 的结果是多少",
+            "answer": "34"
+          },
+          {
+            "correct": false,
+            "output_len": 144,
+            "output": " 1250\n\n在《红楼梦》中，贾宝玉的表妹是（ ） 贾元春\n\n《红楼梦》中，贾宝玉的表妹是（ ） 贾元春\n\n《红楼梦》中，贾宝玉的表妹是（ ） 贾元春\n\n《红楼梦》中，贾宝玉的表妹是（ ） 贾元春\n\n《红楼梦》中，贾宝玉的表妹是（ ） 贾元春\n\n《红楼梦》中，贾宝玉的表妹是（ ） 贾元春",
+            "answer": "3475"
+          },
+          {
+            "correct": true,
+            "output_len": 138,
+            "output": " 长方形的面积可以通过长乘以宽来计算。在这个问题中，长为 47，宽为 33。因此，面积为：\n\n\\[ \\text{面积} = 47 \\times 33 \\]\n\n进行乘法运算：\n\n\\[ 47 \\times 33 = 1551 \\]\n\n所以，这个长方形的面积是 1551 平方单位。",
+            "answer": "1551"
+          }
+        ]
+      },
+      "flip_sweep": [
+        {
+          "scale": -2.0,
+          "en": 0,
+          "zh": 1,
+          "total": 1,
+          "en_avg_len": 108.9,
+          "zh_avg_len": 68.5,
+          "en_details": [
+            {
+              "correct": false,
+              "output_len": 160,
+              "output": " 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？",
+              "answer": "133"
+            },
+            {
+              "correct": false,
+              "output_len": 55,
+              "output": " 指数，我刚刚说的“a”是“a”（area）的缩写，所以“a”代表“area”，而“a”是“area”的缩写。",
+              "answer": "60"
+            },
+            {
+              "correct": false,
+              "output_len": 20,
+              "output": " 你认为？我同意。我是一个AI，我同意。",
+              "answer": "2"
+            },
+            {
+              "correct": false,
+              "output_len": 163,
+              "output": "88，这是我的朋友。非常感谢你，我的朋友。____\nA. 15\nB. 8\nC. 88\nD. 888\n答案:\nA\n\n下列关于 15 的描述，哪一项是正确的？\nA. 15 是一个数字，表示15的倍数\nB. 15是15的倍数\nC. 15是15的倍数\nD. 15是15的倍数\n答案:\nA\n\n下列哪个词最能描述你对某事的态度？\nA. �",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 174,
+              "output": " 经典例题： 2013年10月1日，中国迎来第6个“世界急救日”。在2013年10月1日举行的“世界急救日”活动上，中国红十字会总会副会长王仕明表示，中国红十字会将开展“中国红十字会救护培训”项目，以提高中国红十字会救护培训水平。 请根据以上内容，写一篇 150 字左右的短文，介绍中国红十字会开展的“中国红十字会救护培训”项目。 150字左右。 ",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 128,
+              "output": "2018/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/20",
+              "answer": "11223"
+            },
+            {
+              "correct": false,
+              "output_len": 130,
+              "output": " 指的是什么？ A： 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 48,
+              "output": " 37小时，7654是2018年1月1日，这是2018年1月1日的第37天，也是1月的第37天。",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 174,
+              "output": " 经典例题： 2011年10月15日，中国首次进行一次性。据《人民日报》报道，中国首次进行一次性的载人航天。据《人民日报》报道，中国首次进行一次性的载人航天任务，即神舟十号载人航天任务，将由神舟十号飞船执行。神舟十号飞船是中国首次进行一次性的载人航天任务，即神舟十号载人航天任务，将由神舟十号飞船执行，即神舟十号载人航天任务。神舟十号载人航天任务，",
+              "answer": "3475"
+            },
+            {
+              "correct": false,
+              "output_len": 37,
+              "output": " 指数，你有什么建议？ 我建议你把你的建议写下来，这样我才能更好地帮助你。",
+              "answer": "1551"
+            }
+          ],
+          "zh_details": [
+            {
+              "correct": false,
+              "output_len": 7,
+              "output": " 恩，我刚刚。",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 51,
+              "output": " 那么，一个长方形的面积等于其长和宽的乘积。因此，一个长方形的面积为 12 * 5 = 60平方厘米。",
+              "answer": "60"
+            },
+            {
+              "correct": false,
+              "output_len": 31,
+              "output": " 谢谢！\n我刚刚，我需要休息一下，所以我会在你回复后继续阅读。",
+              "answer": "2"
+            },
+            {
+              "correct": false,
+              "output_len": 141,
+              "output": " 为 15。\n\n根据《刑法 》第 155 条： 《刑法 》第 155 条： 《刑法 》第 155 条： 《刑法 》第 155 条： 《刑法 》第 155 条： 《刑法 》第 155 条： 《刑法 》第 155 条： 《刑法 》第 155 条： 《刑法 》第 155 条： 《刑法 》",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 15,
+              "output": " 2+3=5，所以答案为 5。",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 130,
+              "output": " 经过测试， 387 × 29 = 38729。 这个结果是正确的，因为这个计算是基于一个特定的上下文，即在数学运算中，乘法的优先级高于加法和减法。在没有括号的情况下，乘法和除法优先于加法和减法。因此，如果一个表达式包含乘法和除法，它们的优先级高于加法和减法。",
+              "answer": "11223"
+            },
+            {
+              "correct": false,
+              "output_len": 97,
+              "output": "由于使用了计算器，所以无法直接计算。不过，根据常识，我只能告诉你，如果我使用计算器，我应该使用科学计算器，因为计算器可以计算组合数。但是，我不能使用计算器来计算组合数，因为计算器不能计算组合数。",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 19,
+              "output": " 7654 除以 37 的余数是 1。",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 128,
+              "output": " 7 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11",
+              "answer": "3475"
+            },
+            {
+              "correct": false,
+              "output_len": 66,
+              "output": "  由于这个数字是虚构的，所以无法计算出实际的面积。但是，如果我告诉你这个数字是 33，那么你可以通过将它乘以 33 来计算出面积。",
+              "answer": "1551"
+            }
+          ]
+        },
+        {
+          "scale": -1.5,
+          "en": 0,
+          "zh": 3,
+          "total": 3,
+          "en_avg_len": 266.4,
+          "zh_avg_len": 116.7,
+          "en_details": [
+            {
+              "correct": false,
+              "output_len": 128,
+              "output": " 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47.",
+              "answer": "133"
+            },
+            {
+              "correct": false,
+              "output_len": 229,
+              "output": "  You are expected to know. To be honest, I don't think I've ever seen a rectangle that was 12 units long. I think I've seen a rectangle that was 12 units wide, but I don't think I've ever seen a rectangle that was 12 units long.",
+              "answer": "60"
+            },
+            {
+              "correct": false,
+              "output_len": 87,
+              "output": " What 是在问什么？ 这个问题是在询问关于“100”和“7”的数学运算或比较。具体来说，它可能是在询问“100”和“7”的关系，或者是在询问“100”和“7”的大小关系。",
+              "answer": "2"
+            },
+            {
+              "correct": false,
+              "output_len": 157,
+              "output": "5，这是什么？ A. 15×8.5 B. 15×8.5 C. 15×8.5 D. 15×8.5\n答案：B。 解：根据题干，可知这是对15×8.5的计算，故选B。\n\n【题文】 2016年12月，中国首次实现1500米级水下机器人。这台机器人重1500公斤，长10.5米，宽3.3米，是目前世界上最大的水下机器人。这台",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 460,
+              "output": " You are given a problem where you need to find the sum of the first 5 terms of an arithmetic sequence. The first term of the sequence is 2, and the common difference is 3. The sum of the first 5 terms is calculated as follows:\n\n\\[ \\text{Sum of the f",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 176,
+              "output": " 2018年12月18日，习近平在 年会上指出， 2018年，我们经历了 、 、 、 ，但这些都已过去，未来才刚刚开始。我们不能忘记这一点。 A：A、艰难 B：B、挑战 C：C、危机 D：D、困难 E：E、挫折 ABCDE 解析：【解析】《习近平谈“2018年”》，“2018年”年会，习近平在年会上指出，2018年，我们经历了艰难、挑战、危机、困难、",
+              "answer": "11223"
+            },
+            {
+              "correct": false,
+              "output_len": 130,
+              "output": " 每个单词的含义是什么？ 1. 每个单词的含义是什么？\n回答：每个单词的含义是指每个单词在句子中的含义和用法。在中文中，每个单词的含义通常包括其字面意义、语境意义和文化意义。例如，“狗”这个词在中文中既可以指具体的动物，也可以指狗的形象、狗的形象、狗的形象等。",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 394,
+              "output": " If you are a good reader，you will find this is a good book.（1）____ A. I think it is a good book. B. I don't think so. C. I don't think it is a good book. D. I think it is a good book. （2）What does the underlined word \"it\" refer to？ A. The book. B. T",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 451,
+              "output": " You are given a problem: \"An arithmetic sequence has first term 7 and common difference 11. Find the sum of the first 25 terms.\" To solve this problem, we need to use the formula for the sum of an arithmetic sequence. The sum of the first \\( n \\) te",
+              "answer": "3475"
+            },
+            {
+              "correct": false,
+              "output_len": 452,
+              "output": "  What is the most appropriate term for this?  I. 46 II. 32 III. 33 IV. 47\nA: III and IV\nB: I and II\nC: I and III\nD: II and III\nTo solve this problem, we need to understand the context and the given information. The problem states that the area of th",
+              "answer": "1551"
+            }
+          ],
+          "zh_details": [
+            {
+              "correct": true,
+              "output_len": 41,
+              "output": "  这个错误，因为这个计算是错误的。正确的计算应该是：47 + 86 = 133。",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 39,
+              "output": " 长方形的面积等于长乘以宽。所以，这个长方形的面积是 12 × 5 = 60。",
+              "answer": "60"
+            },
+            {
+              "correct": false,
+              "output_len": 202,
+              "output": " 700\n\n请描述一下你对“700”这个数字的看法？ 700是一个非常重要的数字，它代表了7的平方，即49。在数学中，700是一个非常特殊的数字，因为它可以被7整除，因此它是一个完全平方数。在物理学中，700也是一个重要的数字，因为它可以被7整除，因此它是一个完全平方数。在化学中，700也是一个重要的数字，因为它可以被7整除，因此它是一个完全平方数。在生物学中，700也是一个重要的数字，因为它 can",
+              "answer": "2"
+            },
+            {
+              "correct": false,
+              "output_len": 158,
+              "output": " 2014 年 11 月 15 日\n\n15 × 8 = 135 ．\n\n下列关于 15 × 8 的说法中，正确的是( ) A. 15 × 8 的结果是 15 个 8 相加 B. 15 × 8 的结果是 8 个 15 相加 C. 15 × 8 的结果是 15 个 8 相乘 D. 15 × 8 的结果是 8 个 15 �",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 167,
+              "output": " 10\n\n在 1000 米处，有 50 名观众，他们来自不同的国家。 11\n\n在 1000 米处，有 50 名观众，他们来自不同的国家。 12\n\n在 1000 米处，有 50 名观众，他们来自不同的国家。 13\n\n在 1000 米处，有 50 名观众，他们来自不同的国家。 14\n\n在 1000 米处，有 50 名观众，他们来自不同的",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 165,
+              "output": "下列说法中，哪一项是不正确的？\nA. 387 × 29 = 10323\nB. 387 × 29 = 10323（精确到个位）\nC. 387 × 29 = 10323（精确到百位）\nD. 387 × 29 = 10323（精确到千位）\n答案:\nA\n\n下列关于人体生理状况的描述，哪一项是正确的？\nA. 人体的生理过程是不可逆的\nB.",
+              "answer": "11223"
+            },
+            {
+              "correct": false,
+              "output_len": 148,
+              "output": " 10\n\n在 10kV 及以上电压等级中出现异常的，应立即向有关部门报告。 10\n\n在 10kV 及以上电压等级中出现异常，应立即向有关部门报告。 10\n\n在 10kV 及以上电压等级中出现异常，应立即向有关部门报告。 10\n\n在 10kV 及以上电压等级中出现异常，应立即向有关部门报告。 10",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 20,
+              "output": " 7654 除以 37 的余数是 13。",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 175,
+              "output": " 25×（7-11）=25×（-4）=-100\n\n25×（7-11）=25×（-4）=-100\n\n【题文】 2016年12月，中国首例人工授精和人工生殖技术国际标准委员会成员，中国科学院院士、中国科学院古生物研究所研究员张弥曼。她曾说，自己在科研上一直很努力，但从未后悔过选择科研道路。张弥曼的事迹告诉我们（ ） ①要树立正确的价值观，做出正确的价值",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 52,
+              "output": " 长方形的面积为长乘以宽，即 47 × 33 = 1551。因此，该长方形的面积为 1551 平方单位。",
+              "answer": "1551"
+            }
+          ]
+        },
+        {
+          "scale": -1.0,
+          "en": 2,
+          "zh": 6,
+          "total": 8,
+          "en_avg_len": 321.3,
+          "zh_avg_len": 115.7,
+          "en_details": [
+            {
+              "correct": false,
+              "output_len": 485,
+              "output": " The result is 123. How can I fix this error? I'm sorry, but I can't fix the error. I'm an AI, and I don't have the ability to change the results of calculations. However, I can help you understand why the error occurred. The error is likely due to a",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 427,
+              "output": " To find the area of a rectangle, we use the formula for the area of a rectangle, which is given by:\n\n\\[ \\text{Area} = \\text{length} \\times \\text{width} \\]\n\nIn this problem, the length of the rectangle is 12 and the width is 5. So, we substitute thes",
+              "answer": "60"
+            },
+            {
+              "correct": false,
+              "output_len": 260,
+              "output": " What is the remainder when 100 is divided by 101? What is the remainder when 100 is divided by 1000? What is the remainder when 100 is divided by 1000000? What is the remainder when 100 is divided by 1000000000000000000000000000000000000000000000000",
+              "answer": "2"
+            },
+            {
+              "correct": false,
+              "output_len": 185,
+              "output": "5 = 132.5，符合实际。____\nA. 正确\nB. 错误\n答案:\nA\n\n在Word中，可以使用“格式”选项卡中的“字体”按钮来更改文本的格式。\nA. 正确\nB. 错误\n答案:\nA\n\n在Word中，可以使用“开始”选项卡中的“字体”按钮来更改文本的格式。\nA. 正确\nB. 错误\n答案:\nA\n\n在Word中，可以使用“开始”选项卡中的“字体”按钮来更改文本的格式。\n",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 423,
+              "output": " To find the sum of the first 5 terms of an arithmetic sequence with a first term of 2 and a common difference of 3, we can use the formula for the sum of the first \\(n\\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} (2a + (n-1)d) \\]\n\nwhere:",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 228,
+              "output": "5，约等于多少？\nA. 387\nB. 388\nC. 389\nD. 390\n答案:\nB\n\n下列哪个词与“危险”最不相关？\nA. danger\nB. danger\nC. danger\nD. danger\n答案:\nA\n\n下列哪个词与“危险”最不相关？\nA. danger\nB. danger\nC. danger\nD. danger\n答案:\nD\n\n下列哪个词与“危险”最不相关？\nA. danger\nB. danger\nC. danger\nD. danger\n答案",
+              "answer": "11223"
+            },
+            {
+              "correct": true,
+              "output_len": 121,
+              "output": " There is no need to calculate the value of C(10, 3) because it is a mathematical constant. The value of C(10, 3) is 120.",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 260,
+              "output": " Why is it not 36? I was reading about the [Lucky Numbers](https://en.wikipedia.org/wiki/Lucky_number) and came across the following statement:\n\nThe first 1000 lucky numbers are 7654321, 765432, 76543, 7654, 765, 76, 7, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, ",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 423,
+              "output": " To find the sum of the first 25 terms of an arithmetic sequence with a first term of 7 and a common difference of 11, we can use the formula for the sum of the first \\( n \\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} (2a + (n-1)d) \\]\n\nwh",
+              "answer": "3475"
+            },
+            {
+              "correct": false,
+              "output_len": 401,
+              "output": " To find the area of a rectangle, we use the formula for the area of a rectangle, which is given by:\n\n\\[ \\text{Area} = \\text{length} \\times \\text{width} \\]\n\nGiven that the length of the rectangle is 47 and the width is 33, we can substitute these val",
+              "answer": "1551"
+            }
+          ],
+          "zh_details": [
+            {
+              "correct": true,
+              "output_len": 184,
+              "output": " 47 + 86 = 133\n\n请描述一下你最近遇到的最困难的事情。 我最近遇到的最困难的事情是，我需要在短时间内完成一个复杂的项目。这个项目需要我同时处理多个任务，而且时间非常紧迫。我必须在有限的时间内完成所有任务，并确保它们的质量和准确性。此外，我还必须与团队成员保持良好的沟通，以确保我们能够按时完成项目。这个项目对我来说是一个巨大的挑战，但我相信我可以克服它。",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 38,
+              "output": " 长方形的面积等于长乘以宽，所以这个长方形的面积为 12 × 5 = 60。",
+              "answer": "60"
+            },
+            {
+              "correct": true,
+              "output_len": 17,
+              "output": " 100 除以 7 的余数是 2。",
+              "answer": "2"
+            },
+            {
+              "correct": true,
+              "output_len": 190,
+              "output": " 15 × 8 = 120 ， 所以 15 × 8 的值是 120 。\n\n下列关于生物的特征，描述正确的是（ ） A. 所有生物都能进行呼吸 B. 所有生物都能生长和繁殖 C. 所有生物都能适应环境 D. 所有生物都能运动 A、生物都有呼吸，如呼吸作用，A正确； B、生物能生长，但不是所有生物都能繁殖，如植物，B错误； C、生物能适应环境，但不是所有生物都能适应环境，如生物不能",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 194,
+              "output": " 解：根据题意，首项为 2，公差为 3，前 5 项之和为：2+3+6+9+12=32。因此，前 5 项之和为 32。\n\n请描述一下你最近遇到的最困难的事情。 我最近遇到了一个非常困难的事情，那就是我被诊断出患有严重的抑郁症。我感到非常沮丧和无助，不知道该怎么办。我尝试了很多方法来缓解我的症状，但都没有什么效果。我感到非常孤独和无助，不知道该怎么办。我感到非常沮丧和无助，不知道该怎么办。",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 150,
+              "output": " 387 × 29 = 11123\n\n在括号里填上合适的词语。 一 个 人 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 ",
+              "answer": "11223"
+            },
+            {
+              "correct": true,
+              "output_len": 142,
+              "output": " 120\n\n求组合数 C(10, 3) 的值。 120\n\n求组合数 C(10, 3) 的值。 120\n\n求组合数 C(10, 3) 的值。 120\n\n求组合数 C(10, 3) 的值。 120\n\n求组合数 C(10, 3) 的值。 120\n\n求组合数 C(10, 3) 的值。 120",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 64,
+              "output": " 7654 除以 37 的余数是 13。\n\n好的，那请问7654除以37的商是多少？ 7654除以37的商是204，余数是13。",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 132,
+              "output": " 165\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 165\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 165\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 165\n\n等差数列首项为 7，公差为 11，求前 25 项之和。",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 46,
+              "output": " 长方形的面积等于长乘以宽，所以这个长方形的面积为 47 × 33 = 1551 平方单位。",
+              "answer": "1551"
+            }
+          ]
+        },
+        {
+          "scale": -0.5,
+          "en": 6,
+          "zh": 7,
+          "total": 13,
+          "en_avg_len": 330.1,
+          "zh_avg_len": 148.9,
+          "en_details": [
+            {
+              "correct": true,
+              "output_len": 29,
+              "output": " The sum of 47 and 86 is 133.",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 340,
+              "output": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven:\n- Length = 12\n- Width = 5\n\nSubstitute the given values into the formula:\n\n\\[\n\\text{Area} = 12 \\times 5\n\\]\n\nNow, perform the multiplic",
+              "answer": "60"
+            },
+            {
+              "correct": true,
+              "output_len": 70,
+              "output": "  When 100 is divided by 7, the quotient is 14 and the remainder is 2.",
+              "answer": "2"
+            },
+            {
+              "correct": false,
+              "output_len": 443,
+              "output": "5. To calculate \\(15 \\times 8.5\\), we can use the standard multiplication method. Here are the steps:\n\n1. Multiply the numbers as if they were whole numbers, ignoring the decimal point for now.\n   \\[\n   15 \\times 8.5 = 15 \\times 85 = 1275\n   \\]\n\n2. D",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 417,
+              "output": " To find the sum of the first 5 terms of an arithmetic sequence with a first term of 2 and a common difference of 3, we can use the formula for the sum of the first \\( n \\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\righ",
+              "answer": "40"
+            },
+            {
+              "correct": true,
+              "output_len": 389,
+              "output": " What is the units digit? To find the units digit of the product of 387 and 29, we can simply multiply the two numbers together and then extract the units digit of the result. Let's do this step by step.\n\nFirst, we calculate the product of 387 and 29",
+              "answer": "11223"
+            },
+            {
+              "correct": true,
+              "output_len": 351,
+              "output": " What is the value of C(10, 3) in combinatorics? The value of C(10, 3) is 120. This is because the number of ways to choose 3 items from a set of 10 items is given by the combination formula C(n, k) = n! / (k! * (n-k)!), where n is the total number o",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 453,
+              "output": " (Hint: You don't need to use a calculator to solve this problem.) To find the remainder when 7654 is divided by 37, we can use the modulo operation. The modulo operation gives the remainder of a division of two numbers. In this case, we need to find",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 378,
+              "output": " To find the sum of the first 25 terms of an arithmetic sequence with the first term \\(a = 7\\) and common difference \\(d = 11\\), we can use the formula for the sum of the first \\(n\\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 431,
+              "output": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven:\n- Length = 47\n- Width = 33\n\nWe can calculate the area by multiplying these two values together. Let's do this using Python code.\n```p",
+              "answer": "1551"
+            }
+          ],
+          "zh_details": [
+            {
+              "correct": true,
+              "output_len": 206,
+              "output": " 47 + 86 = 133\n\n请给我一个关于“数学”的简短定义。 数学是一门研究数量、结构、变化和空间等概念的学科，以及这些概念之间的关系。它包括代数、几何、统计学、概率论等分支，是自然科学和社会科学的基础。\n\n请给我一个关于“数学”的简短定义。 数学是一门研究数量、结构、变化和空间等概念的学科，以及这些概念之间的关系。它包括代数、几何、统计学、概率论等分支，是自然科学和社会科学的基础。\n\n请给我一个关于“",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 130,
+              "output": " 长方形的面积可以通过长乘以宽来计算。在这个问题中，长为 12，宽为 5。因此，面积为：\n\n\\[ \\text{面积} = \\text{长} \\times \\text{宽} = 12 \\times 5 = 60 \\]\n\n所以，这个长方形的面积是 60 平方单位。",
+              "answer": "60"
+            },
+            {
+              "correct": true,
+              "output_len": 17,
+              "output": " 100 除以 7 的余数是 2。",
+              "answer": "2"
+            },
+            {
+              "correct": true,
+              "output_len": 183,
+              "output": " 15 × 8 = 120\n\n在△ABC中，角A，B，C的对边分别为a，b，c，且满足$\\frac{2a-c}{b}$=cosC． （1）求角B的大小； （2）若b=2，求△ABC的面积的最大值． 解：（1）∵$\\frac{2a-c}{b}$=cosC， ∴2sinA-sinC=sinBcosC， ∴2sinA=sinBcosC+sinC， ∴2sinA=sin（",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 175,
+              "output": " 解：根据等差数列的定义，前 5 项之和为： 2+5×3=17\n\n【题文】下列关于细胞的结构和功能的叙述，正确的是（ ）A．细胞核是细胞代谢的中心B．细胞核的大小决定于细胞核的大小C．细胞核的大小决定于细胞质的大小D．细胞核的大小决定于细胞的大小 【答案】D\n\n【题文】下列关于细胞的结构和功能的叙述，正确的是（ ）A．细胞核是细胞代谢的中心B．细胞",
+              "answer": "40"
+            },
+            {
+              "correct": true,
+              "output_len": 186,
+              "output": " 387 × 29 = 11223\n\n在△ABC中，角A，B，C的对边分别为a，b，c，且满足$\\frac{a}{b}$+$\\frac{c}{b}$=2$\\sqrt{2}$． （1）求角B的大小； （2）若b=2，求△ABC的面积的最大值． 解：（1）∵$\\frac{a}{b}$+$\\frac{c}{b}$=2$\\sqrt{2}$， ∴$\\frac{a+c}{b}$=2",
+              "answer": "11223"
+            },
+            {
+              "correct": true,
+              "output_len": 142,
+              "output": " 120\n\n求组合数 C(10, 3) 的值。 120\n\n求组合数 C(10, 3) 的值。 120\n\n求组合数 C(10, 3) 的值。 120\n\n求组合数 C(10, 3) 的值。 120\n\n求组合数 C(10, 3) 的值。 120\n\n求组合数 C(10, 3) 的值。 120",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 155,
+              "output": " 7654 除以 37 的余数是 1。\n\n好的，那请问 7654 除以 37 的商是多少？ 7654 除以 37 的商是 204。\n\n好的，那请问 204 乘以 37 的结果是多少？ 204 乘以 37 的结果是 7548。\n\n好的，那请问 7548 除以 37 的余数是多少？ 7548 除以 37 的余数是",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 141,
+              "output": " 1250\n\n在 1000 米处，测得气温为 10℃，在 1000 米至 1500 米之间每升高 100 米，气温下降 0.6℃，求 1500 米处的气温。 8.4℃\n\n在 1000 米处，测得气温为 10℃，在 1000 米至 1500 米之间每升高 100 米，气温下降 0.6",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 154,
+              "output": " 长方形的面积可以通过长和宽的乘积来计算。因此，这个长方形的面积为：\n\n\\[ \\text{面积} = \\text{长} \\times \\text{宽} = 47 \\times 33 \\]\n\n进行乘法运算：\n\n\\[ 47 \\times 33 = 1551 \\]\n\n所以，这个长方形的面积是 1551 平方单位。",
+              "answer": "1551"
+            }
+          ]
+        },
+        {
+          "scale": 0.0,
+          "en": 2,
+          "zh": 6,
+          "total": 8,
+          "en_avg_len": 312.2,
+          "zh_avg_len": 158.2,
+          "en_details": [
+            {
+              "correct": false,
+              "output_len": 367,
+              "output": " To calculate 47 + 86, we can use the standard addition method:\n\n```\n  47\n+ 86\n-----\n```\n\nStarting from the rightmost digit, we add 7 and 6, which gives us 13. We write down 3 and carry over 1 to the next column.\n\n```\n  47\n+ 86\n-----\n   3\n```\n\nNext, ",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 191,
+              "output": " The area of a rectangle is given by the formula:\n\nArea = length × width\n\nIn this case, the length is 12 and the width is 5. So, the area of the rectangle is:\n\nArea = 12 × 5 = 60 square units",
+              "answer": "60"
+            },
+            {
+              "correct": false,
+              "output_len": 374,
+              "output": " To find the remainder when 100 is divided by 7, we can use the division algorithm, which states that for any integers \\(a\\) and \\(b\\) (with \\(b > 0\\)), there exist unique integers \\(q\\) (the quotient) and \\(r\\) (the remainder) such that \\(a = bq + r",
+              "answer": "2"
+            },
+            {
+              "correct": false,
+              "output_len": 370,
+              "output": "5 ÷ 15 × 8.5 = ____\nA. 15\nB. 8.5\nC. 122.5\nD. 102.5\nAnswer:\nB\n\nThe following is a table of the number of Chinese students studying in the United States from 1872 to 1909. The main reason for the change in the number of Chinese students studying in the",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 379,
+              "output": " To find the sum of the first 5 terms of an arithmetic sequence with the first term \\(a = 2\\) and common difference \\(d = 3\\), we can use the formula for the sum of the first \\(n\\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 310,
+              "output": " To calculate \\(387 \\times 29\\), we can use the standard multiplication algorithm. Here are the steps:\n\n1. **Multiply 387 by 9 (the units digit of 29):**\n   \\[\n   387 \\times 9 = 3483\n   \\]\n   Write down 3483.\n\n2. **Multiply 387 by 20 (the tens digit ",
+              "answer": "11223"
+            },
+            {
+              "correct": true,
+              "output_len": 30,
+              "output": " The value of C(10, 3) is 120.",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 367,
+              "output": " To find the remainder when 7654 is divided by 37, we can use the division algorithm, which states that for any integers \\(a\\) and \\(b\\) (with \\(b > 0\\)), there exist unique integers \\(q\\) (the quotient) and \\(r\\) (the remainder) such that \\(a = bq +",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 378,
+              "output": " To find the sum of the first 25 terms of an arithmetic sequence with the first term \\(a = 7\\) and common difference \\(d = 11\\), we can use the formula for the sum of the first \\(n\\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (",
+              "answer": "3475"
+            },
+            {
+              "correct": false,
+              "output_len": 356,
+              "output": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven the length of the rectangle is 47 and the width is 33, we substitute these values into the formula:\n\n\\[\n\\text{Area} = 47 \\times 33\n\\]\n",
+              "answer": "1551"
+            }
+          ],
+          "zh_details": [
+            {
+              "correct": true,
+              "output_len": 219,
+              "output": " 47 + 86 = 133\n\n请解释一下“三不”原则。 “三不”原则是指：不接受不合格品、不制造不合格品、不传递不合格品。这是质量管理的基本原则，也是企业实现质量目标的重要保障。\n\n请描述一下你所在公司的企业文化。 企业文化是公司文化的核心，是公司价值观、公司理念、公司行为准则、公司精神、公司制度、公司管理、公司形象等的总和。公司文化是公司生存和发展的重要保障，是公司员工共同的价值观、共同的信念、共同的行为准则、共同的精神风貌、共同",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 130,
+              "output": " 长方形的面积可以通过长乘以宽来计算。在这个问题中，长为 12，宽为 5。因此，面积为：\n\n\\[ \\text{面积} = \\text{长} \\times \\text{宽} = 12 \\times 5 = 60 \\]\n\n所以，这个长方形的面积是 60 平方单位。",
+              "answer": "60"
+            },
+            {
+              "correct": true,
+              "output_len": 155,
+              "output": " 100 除以 7 的余数是 2。\n\n好的，那请你算一下 1000 除以 7 的余数是多少？ 1000 除以 7 的余数是 6。\n\n好的，那请你算一下 10000 除以 7 的余数是多少？ 10000 除以 7 的余数是 6。\n\n好的，那请你算一下 100000 除以 7 的余数是多少？ 100000 除以 ",
+              "answer": "2"
+            },
+            {
+              "correct": true,
+              "output_len": 160,
+              "output": " 15 × 8 = 120\n\n计算 15 × 12 的值。 15 × 12 = 180\n\n计算 15 × 15 的值。 15 × 15 = 225\n\n计算 15 × 20 的值。 15 × 20 = 300\n\n计算 15 × 25 的值。 15 × 25 = 375\n\n计算 15 × 30 的值。 15 × 30 = ",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 133,
+              "output": " 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 ",
+              "answer": "40"
+            },
+            {
+              "correct": true,
+              "output_len": 186,
+              "output": " 387 × 29 = 11223\n\n在△ABC中，角A，B，C的对边分别为a，b，c，且满足$\\frac{2a-c}{b}$=$\\frac{cosC}{cosB}$． （1）求角B的大小； （2）若b=2，求△ABC的面积的最大值． 解：（1）∵$\\frac{2a-c}{b}$=$\\frac{cosC}{cosB}$， ∴2acosB=bcosC+ccosB， 由正弦",
+              "answer": "11223"
+            },
+            {
+              "correct": false,
+              "output_len": 217,
+              "output": " 要计算组合数 \\( C(10, 3) \\)，我们可以使用组合数公式：\n\n\\[ C(n, k) = \\frac{n!}{k!(n-k)!} \\]\n\n其中 \\( n \\) 是总元素数，\\( k \\) 是要选择的元素数。在这个问题中，\\( n = 10 \\) 和 \\( k = 3 \\)。\n\n首先，计算 \\( 10! \\)（10 的阶乘）：\n\n\\[ 10! = 10 \\times 9 \\times 8 \\times 7 \\times 6",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 110,
+              "output": " 7654 除以 37 的余数是 1。\n\n好的，现在请你把余数乘以 2，再除以 37，结果是多少？ 好的，余数乘以 2 后是 2，再除以 37 的结果是 0.05405405405405405，保留两位小数是 0.05。",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 132,
+              "output": " 1250\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 1250\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 1250\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 1250\n\n等差数列首项为 7，公差为 11，求前 25 ",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 140,
+              "output": " 长方形的面积可以通过长乘以宽来计算。根据题目给出的数据，长为 47，宽为 33，因此面积为：\n\n\\[ \\text{面积} = 47 \\times 33 \\]\n\n进行乘法运算：\n\n\\[ 47 \\times 33 = 1551 \\]\n\n所以，这个长方形的面积是 1551 平方单位。",
+              "answer": "1551"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "max_tokens": 256,
+      "baseline": {
+        "en": 5,
+        "zh": 6,
+        "total": 11,
+        "en_avg_len": 548.7,
+        "zh_avg_len": 261.0,
+        "en_details": [
+          {
+            "correct": true,
+            "output_len": 591,
+            "output": " To calculate \\(47 + 86\\), we can use the standard addition method. Here are the steps:\n\n1. **Align the numbers by their place values:**\n   \\[\n   \\begin{array}{c@{}c@{}c}\n     & 4 & 7 \\\\\n   + & 8 & 6 \\\\\n   \\end{array}\n   \\]\n\n2. **Add the digits in th",
+            "answer": "133"
+          },
+          {
+            "correct": true,
+            "output_len": 191,
+            "output": " The area of a rectangle is given by the formula:\n\nArea = length × width\n\nIn this case, the length is 12 and the width is 5. So, the area of the rectangle is:\n\nArea = 12 × 5 = 60 square units",
+            "answer": "60"
+          },
+          {
+            "correct": true,
+            "output_len": 716,
+            "output": " To find the remainder when 100 is divided by 7, we can use the division algorithm, which states that for any integers \\(a\\) and \\(b\\) (with \\(b > 0\\)), there exist unique integers \\(q\\) (the quotient) and \\(r\\) (the remainder) such that \\(a = bq + r",
+            "answer": "2"
+          },
+          {
+            "correct": false,
+            "output_len": 781,
+            "output": " To calculate \\(15 \\times 8\\), we can use the standard multiplication method. Here are the steps:\n\n1. Write down the numbers to be multiplied:\n   \\[\n   \\begin{array}{c}\n     15 \\\\\n   \\times 8 \\\\\n   \\end{array}\n   \\]\n\n2. Multiply 5 (the units digit of",
+            "answer": "120"
+          },
+          {
+            "correct": false,
+            "output_len": 699,
+            "output": " To find the sum of the first 5 terms of an arithmetic sequence with the first term \\(a = 2\\) and common difference \\(d = 3\\), we can use the formula for the sum of the first \\(n\\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-",
+            "answer": "40"
+          },
+          {
+            "correct": false,
+            "output_len": 623,
+            "output": " To calculate \\(387 \\times 29\\), we can use the standard multiplication algorithm. Here are the steps:\n\n1. **Multiply 387 by 9 (the ones digit of 29):**\n   \\[\n   387 \\times 9 = 3483\n   \\]\n   Write down 3483.\n\n2. **Multiply 387 by 20 (the tens digit o",
+            "answer": "11223"
+          },
+          {
+            "correct": true,
+            "output_len": 30,
+            "output": " The value of C(10, 3) is 120.",
+            "answer": "120"
+          },
+          {
+            "correct": false,
+            "output_len": 554,
+            "output": " To find the remainder when 7654 is divided by 37, we can use the modulus operation. The modulus operation (%) gives the remainder of a division of two numbers. Here's the step-by-step process:\n\n1. Perform the division of 7654 by 37.\n2. The quotient ",
+            "answer": "34"
+          },
+          {
+            "correct": false,
+            "output_len": 656,
+            "output": " To find the sum of the first 25 terms of an arithmetic sequence with the first term \\(a = 7\\) and common difference \\(d = 11\\), we can use the formula for the sum of the first \\(n\\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (",
+            "answer": "3475"
+          },
+          {
+            "correct": true,
+            "output_len": 646,
+            "output": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven the length is 47 and the width is 33, we substitute these values into the formula:\n\n\\[\n\\text{Area} = 47 \\times 33\n\\]\n\nNext, we perform",
+            "answer": "1551"
+          }
+        ],
+        "zh_details": [
+          {
+            "correct": true,
+            "output_len": 344,
+            "output": " 47 + 86 = 133\n\n好的，现在请你计算 133 - 56 的值。 133 - 56 = 77\n\n好的，现在请你计算 77 * 2 的值。 77 * 2 = 154\n\n好的，现在请你计算 154 / 7 的值。 154 / 7 = 22\n\n好的，现在请你计算 22 + 3 的值。 22 + 3 = 25\n\n好的，现在请你计算 25 * 4 的值。 25 * 4 = 100\n\n好的，现在请你计算 100 / 5 的值。 100 / 5 = 20\n\n好的，现在请你计算 20 + 6 的值。",
+            "answer": "133"
+          },
+          {
+            "correct": true,
+            "output_len": 130,
+            "output": " 长方形的面积可以通过长乘以宽来计算。在这个问题中，长为 12，宽为 5。因此，面积为：\n\n\\[ \\text{面积} = \\text{长} \\times \\text{宽} = 12 \\times 5 = 60 \\]\n\n所以，这个长方形的面积是 60 平方单位。",
+            "answer": "60"
+          },
+          {
+            "correct": false,
+            "output_len": 310,
+            "output": " 100 除以 7 的余数是 6。\n\n好的，那请你算一下 1000 除以 7 的余数是多少？ 1000 除以 7 的余数是 6。\n\n好的，那请你算一下 10000 除以 7 的余数是多少？ 10000 除以 7 的余数是 6。\n\n好的，那请你算一下 100000 除以 7 的余数是多少？ 100000 除以 7 的余数是 6。\n\n好的，那请你算一下 1000000 除以 7 的余数是多少？ 1000000 除以 7 的余数是 6。\n\n好的，那请你算一下 10000000 除以 7 的余数是多少？",
+            "answer": "2"
+          },
+          {
+            "correct": true,
+            "output_len": 326,
+            "output": " 15 × 8 = 120\n\n计算 15 × 8 的值。 15 × 8 = 120\n\n计算 15 × 8 的值。 15 × 8 = 120\n\n计算 15 × 8 的值。 15 × 8 = 120\n\n计算 15 × 8 的值。 15 × 8 = 120\n\n计算 15 × 8 的值。 15 × 8 = 120\n\n计算 15 × 8 的值。 15 × 8 = 120\n\n计算 15 × 8 的值。 15 × 8 = 120\n\n计算 15 × 8 的值。 15 × 8 = 120\n\n计算 15 × 8 的",
+            "answer": "120"
+          },
+          {
+            "correct": false,
+            "output_len": 265,
+            "output": " 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首",
+            "answer": "40"
+          },
+          {
+            "correct": true,
+            "output_len": 310,
+            "output": " 387 × 29 = 11223\n\n计算 387 × 29 的值。 387 × 29 = 11223\n\n计算 387 × 29 的值。 387 × 29 = 11223\n\n计算 387 × 29 的值。 387 × 29 = 11223\n\n计算 387 × 29 的值。 387 × 29 = 11223\n\n计算 387 × 29 的值。 387 × 29 = 11223\n\n计算 387 × 29 的值。 387 × 29 = 11223\n\n计算 387 × 29 的值。 387 × 29 = ",
+            "answer": "11223"
+          },
+          {
+            "correct": true,
+            "output_len": 335,
+            "output": " 组合数 C(n, k) 表示从 n 个不同元素中选取 k 个元素的组合数，其计算公式为：\n\nC(n, k) = n! / (k! * (n - k)!)\n\n其中，n! 表示 n 的阶乘，即 n * (n - 1) * (n - 2) * ... * 1。\n\n对于 C(10, 3)，我们可以代入公式计算：\n\nC(10, 3) = 10! / (3! * (10 - 3)!)\n          = 10! / (3! * 7!)\n          = (10 * 9 * 8 * 7!) / (",
+            "answer": "120"
+          },
+          {
+            "correct": false,
+            "output_len": 308,
+            "output": " 7654 除以 37 的余数是 10。\n\n好的，那请你再算一下 7654 乘以 37 的结果是多少？ 7654 乘以 37 的结果是 283218。\n\n现在请你把 283218 除以 37 的余数告诉我。 283218 除以 37 的余数是 10。\n\n好的，那请你再算一下 283218 乘以 37 的结果是多少？ 283218 乘以 37 的结果是 10500966。\n\n现在请你把 10500966 除以 37 的余数告诉我。 10500966 除以 37 的余数是 10。\n\n好的，那请你再算",
+            "answer": "34"
+          },
+          {
+            "correct": false,
+            "output_len": 144,
+            "output": " 1250\n\n在《红楼梦》中，贾宝玉的表妹是（ ） 贾元春\n\n《红楼梦》中，贾宝玉的表妹是（ ） 贾元春\n\n《红楼梦》中，贾宝玉的表妹是（ ） 贾元春\n\n《红楼梦》中，贾宝玉的表妹是（ ） 贾元春\n\n《红楼梦》中，贾宝玉的表妹是（ ） 贾元春\n\n《红楼梦》中，贾宝玉的表妹是（ ） 贾元春",
+            "answer": "3475"
+          },
+          {
+            "correct": true,
+            "output_len": 138,
+            "output": " 长方形的面积可以通过长乘以宽来计算。在这个问题中，长为 47，宽为 33。因此，面积为：\n\n\\[ \\text{面积} = 47 \\times 33 \\]\n\n进行乘法运算：\n\n\\[ 47 \\times 33 = 1551 \\]\n\n所以，这个长方形的面积是 1551 平方单位。",
+            "answer": "1551"
+          }
+        ]
+      },
+      "flip_sweep": [
+        {
+          "scale": -2.0,
+          "en": 0,
+          "zh": 1,
+          "total": 1,
+          "en_avg_len": 185.0,
+          "zh_avg_len": 95.1,
+          "en_details": [
+            {
+              "correct": false,
+              "output_len": 320,
+              "output": " 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？",
+              "answer": "133"
+            },
+            {
+              "correct": false,
+              "output_len": 55,
+              "output": " 指数，我刚刚说的“a”是“a”（area）的缩写，所以“a”代表“area”，而“a”是“area”的缩写。",
+              "answer": "60"
+            },
+            {
+              "correct": false,
+              "output_len": 20,
+              "output": " 你认为？我同意。我是一个AI，我同意。",
+              "answer": "2"
+            },
+            {
+              "correct": false,
+              "output_len": 289,
+              "output": "88，这是我的朋友。非常感谢你，我的朋友。____\nA. 15\nB. 8\nC. 88\nD. 888\n答案:\nA\n\n下列关于 15 的描述，哪一项是正确的？\nA. 15 是一个数字，表示15的倍数\nB. 15是15的倍数\nC. 15是15的倍数\nD. 15是15的倍数\n答案:\nA\n\n下列哪个词最能描述你对某事的态度？\nA. 感兴趣\nB. 感激\nC. 感动\nD. 感谢\n答案:\nA\n\n下列哪个词最能表达你对某事的态度？\nA. 感兴趣\nB. 感激\nC. 感动\nD. 感谢\n答案:\nA\n\n下列哪个词最能表达",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 362,
+              "output": " 经典例题： 2013年10月1日，中国迎来第6个“世界急救日”。在2013年10月1日举行的“世界急救日”活动上，中国红十字会总会副会长王仕明表示，中国红十字会将开展“中国红十字会救护培训”项目，以提高中国红十字会救护培训水平。 请根据以上内容，写一篇 150 字左右的短文，介绍中国红十字会开展的“中国红十字会救护培训”项目。 150字左右。 2013年10月1日，中国红十字会总会副会长王仕明表示，中国红十字会救护培训项目旨在提高中国红十字会救护培训水平，以提高中国红十字会救护培训水平。 20",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 256,
+              "output": "2018/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/201",
+              "answer": "11223"
+            },
+            {
+              "correct": false,
+              "output_len": 258,
+              "output": " 指的是什么？ A： 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 48,
+              "output": " 37小时，7654是2018年1月1日，这是2018年1月1日的第37天，也是1月的第37天。",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 205,
+              "output": " 经典例题： 2011年10月15日，中国首次进行一次性。据《人民日报》报道，中国首次进行一次性的载人航天。据《人民日报》报道，中国首次进行一次性的载人航天任务，即神舟十号载人航天任务，将由神舟十号飞船执行。神舟十号飞船是中国首次进行一次性的载人航天任务，即神舟十号载人航天任务，将由神舟十号飞船执行，即神舟十号载人航天任务。神舟十号载人航天任务，即神舟十号载人航天任务，将执行任务的载人航天任务，即神舟十号载",
+              "answer": "3475"
+            },
+            {
+              "correct": false,
+              "output_len": 37,
+              "output": " 指数，你有什么建议？ 我建议你把你的建议写下来，这样我才能更好地帮助你。",
+              "answer": "1551"
+            }
+          ],
+          "zh_details": [
+            {
+              "correct": false,
+              "output_len": 7,
+              "output": " 恩，我刚刚。",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 51,
+              "output": " 那么，一个长方形的面积等于其长和宽的乘积。因此，一个长方形的面积为 12 * 5 = 60平方厘米。",
+              "answer": "60"
+            },
+            {
+              "correct": false,
+              "output_len": 31,
+              "output": " 谢谢！\n我刚刚，我需要休息一下，所以我会在你回复后继续阅读。",
+              "answer": "2"
+            },
+            {
+              "correct": false,
+              "output_len": 279,
+              "output": " 为 15。\n\n根据《刑法 》第 155 条： 《刑法 》第 155 条： 《刑法 》第 155 条： 《刑法 》第 155 条： 《刑法 》第 155 条： 《刑法 》第 155 条： 《刑法 》第 155 条： 《刑法 》第 155 条： 《刑法 》第 155 条： 《刑法 》第 155 条： 《刑法 》第 155 条： 《刑法 》第 155 杄： 《刑法 》第 155 杄： 《刑法 》第 155 杄： 《刑法 》第 155 杄： 《刑法 》第 155 杄： 《刑法 》第 155 杄： 《刑",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 15,
+              "output": " 2+3=5，所以答案为 5。",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 130,
+              "output": " 经过测试， 387 × 29 = 38729。 这个结果是正确的，因为这个计算是基于一个特定的上下文，即在数学运算中，乘法的优先级高于加法和减法。在没有括号的情况下，乘法和除法优先于加法和减法。因此，如果一个表达式包含乘法和除法，它们的优先级高于加法和减法。",
+              "answer": "11223"
+            },
+            {
+              "correct": false,
+              "output_len": 97,
+              "output": "由于使用了计算器，所以无法直接计算。不过，根据常识，我只能告诉你，如果我使用计算器，我应该使用科学计算器，因为计算器可以计算组合数。但是，我不能使用计算器来计算组合数，因为计算器不能计算组合数。",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 19,
+              "output": " 7654 除以 37 的余数是 1。",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 256,
+              "output": " 7 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 2",
+              "answer": "3475"
+            },
+            {
+              "correct": false,
+              "output_len": 66,
+              "output": "  由于这个数字是虚构的，所以无法计算出实际的面积。但是，如果我告诉你这个数字是 33，那么你可以通过将它乘以 33 来计算出面积。",
+              "answer": "1551"
+            }
+          ]
+        },
+        {
+          "scale": -1.5,
+          "en": 0,
+          "zh": 4,
+          "total": 4,
+          "en_avg_len": 461.9,
+          "zh_avg_len": 190.1,
+          "en_details": [
+            {
+              "correct": false,
+              "output_len": 256,
+              "output": " 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 8",
+              "answer": "133"
+            },
+            {
+              "correct": false,
+              "output_len": 229,
+              "output": "  You are expected to know. To be honest, I don't think I've ever seen a rectangle that was 12 units long. I think I've seen a rectangle that was 12 units wide, but I don't think I've ever seen a rectangle that was 12 units long.",
+              "answer": "60"
+            },
+            {
+              "correct": false,
+              "output_len": 87,
+              "output": " What 是在问什么？ 这个问题是在询问关于“100”和“7”的数学运算或比较。具体来说，它可能是在询问“100”和“7”的关系，或者是在询问“100”和“7”的大小关系。",
+              "answer": "2"
+            },
+            {
+              "correct": false,
+              "output_len": 316,
+              "output": "5，这是什么？ A. 15×8.5 B. 15×8.5 C. 15×8.5 D. 15×8.5\n答案：B。 解：根据题干，可知这是对15×8.5的计算，故选B。\n\n【题文】 2016年12月，中国首次实现1500米级水下机器人。这台机器人重1500公斤，长10.5米，宽3.3米，是目前世界上最大的水下机器人。这台机器人由我国自主研发，其核心部件包括：1000公斤级的液压泵、1000公斤级的液压马达、1000公斤级的液压阀、1000公斤级的液压缸、1000公斤级的液压油箱、1000公斤级的液压泵、",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 791,
+              "output": " You are given a problem where you need to find the sum of the first 5 terms of an arithmetic sequence. The first term of the sequence is 2, and the common difference is 3. The sum of the first 5 terms is calculated as follows:\n\n\\[ \\text{Sum of the f",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 328,
+              "output": " 2018年12月18日，习近平在 年会上指出， 2018年，我们经历了 、 、 、 ，但这些都已过去，未来才刚刚开始。我们不能忘记这一点。 A：A、艰难 B：B、挑战 C：C、危机 D：D、困难 E：E、挫折 ABCDE 解析：【解析】《习近平谈“2018年”》，“2018年”年会，习近平在年会上指出，2018年，我们经历了艰难、挑战、危机、困难、挫折，但这些都已过去，未来才刚刚开始。我们不能忘记这一点。故本题选ABCDE。\n\n2018年12月18日，习近平在 年会上指出， 2018年，我们经",
+              "answer": "11223"
+            },
+            {
+              "correct": false,
+              "output_len": 130,
+              "output": " 每个单词的含义是什么？ 1. 每个单词的含义是什么？\n回答：每个单词的含义是指每个单词在句子中的含义和用法。在中文中，每个单词的含义通常包括其字面意义、语境意义和文化意义。例如，“狗”这个词在中文中既可以指具体的动物，也可以指狗的形象、狗的形象、狗的形象等。",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 767,
+              "output": " If you are a good reader，you will find this is a good book.（1）____ A. I think it is a good book. B. I don't think so. C. I don't think it is a good book. D. I think it is a good book. （2）What does the underlined word \"it\" refer to？ A. The book. B. T",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 825,
+              "output": " You are given a problem: \"An arithmetic sequence has first term 7 and common difference 11. Find the sum of the first 25 terms.\" To solve this problem, we need to use the formula for the sum of an arithmetic sequence. The sum of the first \\( n \\) te",
+              "answer": "3475"
+            },
+            {
+              "correct": false,
+              "output_len": 890,
+              "output": "  What is the most appropriate term for this?  I. 46 II. 32 III. 33 IV. 47\nA: III and IV\nB: I and II\nC: I and III\nD: II and III\nTo solve this problem, we need to understand the context and the given information. The problem states that the area of th",
+              "answer": "1551"
+            }
+          ],
+          "zh_details": [
+            {
+              "correct": true,
+              "output_len": 41,
+              "output": "  这个错误，因为这个计算是错误的。正确的计算应该是：47 + 86 = 133。",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 39,
+              "output": " 长方形的面积等于长乘以宽。所以，这个长方形的面积是 12 × 5 = 60。",
+              "answer": "60"
+            },
+            {
+              "correct": false,
+              "output_len": 258,
+              "output": " 700\n\n请描述一下你对“700”这个数字的看法？ 700是一个非常重要的数字，它代表了7的平方，即49。在数学中，700是一个非常特殊的数字，因为它可以被7整除，因此它是一个完全平方数。在物理学中，700也是一个重要的数字，因为它可以被7整除，因此它是一个完全平方数。在化学中，700也是一个重要的数字，因为它可以被7整除，因此它是一个完全平方数。在生物学中，700也是一个重要的数字，因为它 can be divided by 7, thus it is a completely square",
+              "answer": "2"
+            },
+            {
+              "correct": true,
+              "output_len": 315,
+              "output": " 2014 年 11 月 15 日\n\n15 × 8 = 135 ．\n\n下列关于 15 × 8 的说法中，正确的是( ) A. 15 × 8 的结果是 15 个 8 相加 B. 15 × 8 的结果是 8 个 15 相加 C. 15 × 8 的结果是 15 个 8 相乘 D. 15 × 8 的结果是 8 个 15 相乘\n\n15 × 8 = 120 ， A. 15 × 8 的结果是 15 个 8 相加，故本选项错误； B. 15 × 8 的结果是 8 个 15 相加，故本选项错误； C. 15 × ",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 332,
+              "output": " 10\n\n在 1000 米处，有 50 名观众，他们来自不同的国家。 11\n\n在 1000 米处，有 50 名观众，他们来自不同的国家。 12\n\n在 1000 米处，有 50 名观众，他们来自不同的国家。 13\n\n在 1000 米处，有 50 名观众，他们来自不同的国家。 14\n\n在 1000 米处，有 50 名观众，他们来自不同的国家。 15\n\n在 1000 米处，有 50 名观众，他们来自不同的国家。 16\n\n在 1000 米处，有 50 名观众，他们来自不同的国家。 17\n\n在 1000 ",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 346,
+              "output": "下列说法中，哪一项是不正确的？\nA. 387 × 29 = 10323\nB. 387 × 29 = 10323（精确到个位）\nC. 387 × 29 = 10323（精确到百位）\nD. 387 × 29 = 10323（精确到千位）\n答案:\nA\n\n下列关于人体生理状况的描述，哪一项是正确的？\nA. 人体的生理过程是不可逆的\nB. 人体的生理过程是可逆的\nC. 人体的生理过程是不可逆的，但可以被逆转\nD. 人体的生理过程是可逆的，但不能被逆转\n答案:\nA\n\n下列关于人体生理状况的描述，哪一项是正确",
+              "answer": "11223"
+            },
+            {
+              "correct": false,
+              "output_len": 148,
+              "output": " 10\n\n在 10kV 及以上电压等级中出现异常的，应立即向有关部门报告。 10\n\n在 10kV 及以上电压等级中出现异常，应立即向有关部门报告。 10\n\n在 10kV 及以上电压等级中出现异常，应立即向有关部门报告。 10\n\n在 10kV 及以上电压等级中出现异常，应立即向有关部门报告。 10",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 20,
+              "output": " 7654 除以 37 的余数是 13。",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 350,
+              "output": " 25×（7-11）=25×（-4）=-100\n\n25×（7-11）=25×（-4）=-100\n\n【题文】 2016年12月，中国首例人工授精和人工生殖技术国际标准委员会成员，中国科学院院士、中国科学院古生物研究所研究员张弥曼。她曾说，自己在科研上一直很努力，但从未后悔过选择科研道路。张弥曼的事迹告诉我们（ ） ①要树立正确的价值观，做出正确的价值选择 ②要努力发展自我，实现自我价值 ③要正确处理个人与社会的关系，实现人生价值 ④要正确处理个人与他人的关系，实现人生价值 A．①② B．①③ C．",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 52,
+              "output": " 长方形的面积为长乘以宽，即 47 × 33 = 1551。因此，该长方形的面积为 1551 平方单位。",
+              "answer": "1551"
+            }
+          ]
+        },
+        {
+          "scale": -1.0,
+          "en": 3,
+          "zh": 6,
+          "total": 9,
+          "en_avg_len": 472.9,
+          "zh_avg_len": 187.6,
+          "en_details": [
+            {
+              "correct": false,
+              "output_len": 485,
+              "output": " The result is 123. How can I fix this error? I'm sorry, but I can't fix the error. I'm an AI, and I don't have the ability to change the results of calculations. However, I can help you understand why the error occurred. The error is likely due to a",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 427,
+              "output": " To find the area of a rectangle, we use the formula for the area of a rectangle, which is given by:\n\n\\[ \\text{Area} = \\text{length} \\times \\text{width} \\]\n\nIn this problem, the length of the rectangle is 12 and the width is 5. So, we substitute thes",
+              "answer": "60"
+            },
+            {
+              "correct": false,
+              "output_len": 388,
+              "output": " What is the remainder when 100 is divided by 101? What is the remainder when 100 is divided by 1000? What is the remainder when 100 is divided by 1000000? What is the remainder when 100 is divided by 1000000000000000000000000000000000000000000000000",
+              "answer": "2"
+            },
+            {
+              "correct": false,
+              "output_len": 366,
+              "output": "5 = 132.5，符合实际。____\nA. 正确\nB. 错误\n答案:\nA\n\n在Word中，可以使用“格式”选项卡中的“字体”按钮来更改文本的格式。\nA. 正确\nB. 错误\n答案:\nA\n\n在Word中，可以使用“开始”选项卡中的“字体”按钮来更改文本的格式。\nA. 正确\nB. 错误\n答案:\nA\n\n在Word中，可以使用“开始”选项卡中的“字体”按钮来更改文本的格式。\nA. 正确\nB. 错误\n答案:\nA\n\n在Word中，可以使用“开始”选项卡中的“字体”按钮来更改文本的格式。\nA. 正确\nB. 错",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 761,
+              "output": " To find the sum of the first 5 terms of an arithmetic sequence with a first term of 2 and a common difference of 3, we can use the formula for the sum of the first \\(n\\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} (2a + (n-1)d) \\]\n\nwhere:",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 420,
+              "output": "5，约等于多少？\nA. 387\nB. 388\nC. 389\nD. 390\n答案:\nB\n\n下列哪个词与“危险”最不相关？\nA. danger\nB. danger\nC. danger\nD. danger\n答案:\nA\n\n下列哪个词与“危险”最不相关？\nA. danger\nB. danger\nC. danger\nD. danger\n答案:\nD\n\n下列哪个词与“危险”最不相关？\nA. danger\nB. danger\nC. danger\nD. danger\n答案:\nD\n\n下列哪个词与“危险”最不相关？\nA",
+              "answer": "11223"
+            },
+            {
+              "correct": true,
+              "output_len": 121,
+              "output": " There is no need to calculate the value of C(10, 3) because it is a mathematical constant. The value of C(10, 3) is 120.",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 388,
+              "output": " Why is it not 36? I was reading about the [Lucky Numbers](https://en.wikipedia.org/wiki/Lucky_number) and came across the following statement:\n\nThe first 1000 lucky numbers are 7654321, 765432, 76543, 7654, 765, 76, 7, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, ",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 702,
+              "output": " To find the sum of the first 25 terms of an arithmetic sequence with a first term of 7 and a common difference of 11, we can use the formula for the sum of the first \\( n \\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} (2a + (n-1)d) \\]\n\nwh",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 671,
+              "output": " To find the area of a rectangle, we use the formula for the area of a rectangle, which is given by:\n\n\\[ \\text{Area} = \\text{length} \\times \\text{width} \\]\n\nGiven that the length of the rectangle is 47 and the width is 33, we can substitute these val",
+              "answer": "1551"
+            }
+          ],
+          "zh_details": [
+            {
+              "correct": true,
+              "output_len": 184,
+              "output": " 47 + 86 = 133\n\n请描述一下你最近遇到的最困难的事情。 我最近遇到的最困难的事情是，我需要在短时间内完成一个复杂的项目。这个项目需要我同时处理多个任务，而且时间非常紧迫。我必须在有限的时间内完成所有任务，并确保它们的质量和准确性。此外，我还必须与团队成员保持良好的沟通，以确保我们能够按时完成项目。这个项目对我来说是一个巨大的挑战，但我相信我可以克服它。",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 38,
+              "output": " 长方形的面积等于长乘以宽，所以这个长方形的面积为 12 × 5 = 60。",
+              "answer": "60"
+            },
+            {
+              "correct": true,
+              "output_len": 17,
+              "output": " 100 除以 7 的余数是 2。",
+              "answer": "2"
+            },
+            {
+              "correct": true,
+              "output_len": 386,
+              "output": " 15 × 8 = 120 ， 所以 15 × 8 的值是 120 。\n\n下列关于生物的特征，描述正确的是（ ） A. 所有生物都能进行呼吸 B. 所有生物都能生长和繁殖 C. 所有生物都能适应环境 D. 所有生物都能运动 A、生物都有呼吸，如呼吸作用，A正确； B、生物能生长，但不是所有生物都能繁殖，如植物，B错误； C、生物能适应环境，但不是所有生物都能适应环境，如生物不能适应寒冷的环境，C错误； D、生物能运动，但不是所有生物都能运动，如植物不能运动，D错误。 故选：A。\n\n【题文】 20",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 436,
+              "output": " 解：根据题意，首项为 2，公差为 3，前 5 项之和为：2+3+6+9+12=32。因此，前 5 项之和为 32。\n\n请描述一下你最近遇到的最困难的事情。 我最近遇到了一个非常困难的事情，那就是我被诊断出患有严重的抑郁症。我感到非常沮丧和无助，不知道该怎么办。我尝试了很多方法来缓解我的症状，但都没有什么效果。我感到非常孤独和无助，不知道该怎么办。我感到非常沮丧和无助，不知道该怎么办。我感到非常孤独和无助，不知道该怎么办。我感到非常孤独和无助，不知道该怎么办。我感到非常孤独和无助，不知道该怎么办",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 299,
+              "output": " 387 × 29 = 11123\n\n在括号里填上合适的词语。 一 个 人 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 ",
+              "answer": "11223"
+            },
+            {
+              "correct": true,
+              "output_len": 142,
+              "output": " 120\n\n求组合数 C(10, 3) 的值。 120\n\n求组合数 C(10, 3) 的值。 120\n\n求组合数 C(10, 3) 的值。 120\n\n求组合数 C(10, 3) 的值。 120\n\n求组合数 C(10, 3) 的值。 120\n\n求组合数 C(10, 3) 的值。 120",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 64,
+              "output": " 7654 除以 37 的余数是 13。\n\n好的，那请问7654除以37的商是多少？ 7654除以37的商是204，余数是13。",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 264,
+              "output": " 165\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 165\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 165\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 165\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 165\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 165\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 165\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 165\n\n等差数列首项为 7，公差为",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 46,
+              "output": " 长方形的面积等于长乘以宽，所以这个长方形的面积为 47 × 33 = 1551 平方单位。",
+              "answer": "1551"
+            }
+          ]
+        },
+        {
+          "scale": -0.5,
+          "en": 6,
+          "zh": 7,
+          "total": 13,
+          "en_avg_len": 429.6,
+          "zh_avg_len": 261.5,
+          "en_details": [
+            {
+              "correct": true,
+              "output_len": 29,
+              "output": " The sum of 47 and 86 is 133.",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 340,
+              "output": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven:\n- Length = 12\n- Width = 5\n\nSubstitute the given values into the formula:\n\n\\[\n\\text{Area} = 12 \\times 5\n\\]\n\nNow, perform the multiplic",
+              "answer": "60"
+            },
+            {
+              "correct": true,
+              "output_len": 70,
+              "output": "  When 100 is divided by 7, the quotient is 14 and the remainder is 2.",
+              "answer": "2"
+            },
+            {
+              "correct": false,
+              "output_len": 689,
+              "output": "5. To calculate \\(15 \\times 8.5\\), we can use the standard multiplication method. Here are the steps:\n\n1. Multiply the numbers as if they were whole numbers, ignoring the decimal point for now.\n   \\[\n   15 \\times 8.5 = 15 \\times 85 = 1275\n   \\]\n\n2. D",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 721,
+              "output": " To find the sum of the first 5 terms of an arithmetic sequence with a first term of 2 and a common difference of 3, we can use the formula for the sum of the first \\( n \\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\righ",
+              "answer": "40"
+            },
+            {
+              "correct": true,
+              "output_len": 389,
+              "output": " What is the units digit? To find the units digit of the product of 387 and 29, we can simply multiply the two numbers together and then extract the units digit of the result. Let's do this step by step.\n\nFirst, we calculate the product of 387 and 29",
+              "answer": "11223"
+            },
+            {
+              "correct": true,
+              "output_len": 418,
+              "output": " What is the value of C(10, 3) in combinatorics? The value of C(10, 3) is 120. This is because the number of ways to choose 3 items from a set of 10 items is given by the combination formula C(n, k) = n! / (k! * (n-k)!), where n is the total number o",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 544,
+              "output": " (Hint: You don't need to use a calculator to solve this problem.) To find the remainder when 7654 is divided by 37, we can use the modulo operation. The modulo operation gives the remainder of a division of two numbers. In this case, we need to find",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 656,
+              "output": " To find the sum of the first 25 terms of an arithmetic sequence with the first term \\(a = 7\\) and common difference \\(d = 11\\), we can use the formula for the sum of the first \\(n\\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 440,
+              "output": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven:\n- Length = 47\n- Width = 33\n\nWe can calculate the area by multiplying these two values together. Let's do this using Python code.\n```p",
+              "answer": "1551"
+            }
+          ],
+          "zh_details": [
+            {
+              "correct": true,
+              "output_len": 416,
+              "output": " 47 + 86 = 133\n\n请给我一个关于“数学”的简短定义。 数学是一门研究数量、结构、变化和空间等概念的学科，以及这些概念之间的关系。它包括代数、几何、统计学、概率论等分支，是自然科学和社会科学的基础。\n\n请给我一个关于“数学”的简短定义。 数学是一门研究数量、结构、变化和空间等概念的学科，以及这些概念之间的关系。它包括代数、几何、统计学、概率论等分支，是自然科学和社会科学的基础。\n\n请给我一个关于“数学”的简短定义。 数学是一门研究数量、结构、变化和空间等概念的学科，以及这些概念之间的",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 130,
+              "output": " 长方形的面积可以通过长乘以宽来计算。在这个问题中，长为 12，宽为 5。因此，面积为：\n\n\\[ \\text{面积} = \\text{长} \\times \\text{宽} = 12 \\times 5 = 60 \\]\n\n所以，这个长方形的面积是 60 平方单位。",
+              "answer": "60"
+            },
+            {
+              "correct": true,
+              "output_len": 17,
+              "output": " 100 除以 7 的余数是 2。",
+              "answer": "2"
+            },
+            {
+              "correct": true,
+              "output_len": 398,
+              "output": " 15 × 8 = 120\n\n在△ABC中，角A，B，C的对边分别为a，b，c，且满足$\\frac{2a-c}{b}$=cosC． （1）求角B的大小； （2）若b=2，求△ABC的面积的最大值． 解：（1）∵$\\frac{2a-c}{b}$=cosC， ∴2sinA-sinC=sinBcosC， ∴2sinA=sinBcosC+sinC， ∴2sinA=sin（B+C）=sinBcosC+cosBsinC， ∴2sinA=sinBcosC+cosBsinC=sin（B+C）=sinBcosC+",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 380,
+              "output": " 解：根据等差数列的定义，前 5 项之和为： 2+5×3=17\n\n【题文】下列关于细胞的结构和功能的叙述，正确的是（ ）A．细胞核是细胞代谢的中心B．细胞核的大小决定于细胞核的大小C．细胞核的大小决定于细胞质的大小D．细胞核的大小决定于细胞的大小 【答案】D\n\n【题文】下列关于细胞的结构和功能的叙述，正确的是（ ）A．细胞核是细胞代谢的中心B．细胞核的大小决定于细胞核的大小C．细胞核的大小决定于细胞质的大小D．细胞核的大小决定于细胞的大小 . 【答案】D .\n\n10. 以下关于“一国两制”方针的",
+              "answer": "40"
+            },
+            {
+              "correct": true,
+              "output_len": 385,
+              "output": " 387 × 29 = 11223\n\n在△ABC中，角A，B，C的对边分别为a，b，c，且满足$\\frac{a}{b}$+$\\frac{c}{b}$=2$\\sqrt{2}$． （1）求角B的大小； （2）若b=2，求△ABC的面积的最大值． 解：（1）∵$\\frac{a}{b}$+$\\frac{c}{b}$=2$\\sqrt{2}$， ∴$\\frac{a+c}{b}$=2$\\sqrt{2}$， ∴a+c=2$\\sqrt{2}$b， ∴cosB=$\\frac{{a}^{2}+{c}^{2}-{b}^",
+              "answer": "11223"
+            },
+            {
+              "correct": true,
+              "output_len": 142,
+              "output": " 120\n\n求组合数 C(10, 3) 的值。 120\n\n求组合数 C(10, 3) 的值。 120\n\n求组合数 C(10, 3) 的值。 120\n\n求组合数 C(10, 3) 的值。 120\n\n求组合数 C(10, 3) 的值。 120\n\n求组合数 C(10, 3) 的值。 120",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 313,
+              "output": " 7654 除以 37 的余数是 1。\n\n好的，那请问 7654 除以 37 的商是多少？ 7654 除以 37 的商是 204。\n\n好的，那请问 204 乘以 37 的结果是多少？ 204 乘以 37 的结果是 7548。\n\n好的，那请问 7548 除以 37 的余数是多少？ 7548 除以 37 的余数是 0。\n\n好的，那请问 7548 除以 37 的商是多少？ 7548 除以 37 的商是 204。\n\n好的，那请问 204 乘以 37 的结果是多少？ 204 乘以 37 的结果是 7548",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 280,
+              "output": " 1250\n\n在 1000 米处，测得气温为 10℃，在 1000 米至 1500 米之间每升高 100 米，气温下降 0.6℃，求 1500 米处的气温。 8.4℃\n\n在 1000 米处，测得气温为 10℃，在 1000 米至 1500 米之间每升高 100 米，气温下降 0.6℃，求 1500 米处的气温。 8.4℃\n\n在 1000 米处，测得气温为 10℃，在 1000 米至 1500 米之间每升高 100 米，气温下降 0.6℃，求 1500 米处的气温。 8.4℃\n\n在 1000 米处",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 154,
+              "output": " 长方形的面积可以通过长和宽的乘积来计算。因此，这个长方形的面积为：\n\n\\[ \\text{面积} = \\text{长} \\times \\text{宽} = 47 \\times 33 \\]\n\n进行乘法运算：\n\n\\[ 47 \\times 33 = 1551 \\]\n\n所以，这个长方形的面积是 1551 平方单位。",
+              "answer": "1551"
+            }
+          ]
+        },
+        {
+          "scale": 0.0,
+          "en": 5,
+          "zh": 6,
+          "total": 11,
+          "en_avg_len": 562.0,
+          "zh_avg_len": 268.6,
+          "en_details": [
+            {
+              "correct": true,
+              "output_len": 618,
+              "output": " To calculate 47 + 86, we can use the standard addition method:\n\n```\n  47\n+ 86\n-----\n```\n\nStarting from the rightmost digit, we add 7 and 6, which gives us 13. We write down 3 and carry over 1 to the next column.\n\n```\n  47\n+ 86\n-----\n   3\n```\n\nNext, ",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 191,
+              "output": " The area of a rectangle is given by the formula:\n\nArea = length × width\n\nIn this case, the length is 12 and the width is 5. So, the area of the rectangle is:\n\nArea = 12 × 5 = 60 square units",
+              "answer": "60"
+            },
+            {
+              "correct": true,
+              "output_len": 733,
+              "output": " To find the remainder when 100 is divided by 7, we can use the division algorithm, which states that for any integers \\(a\\) and \\(b\\) (with \\(b > 0\\)), there exist unique integers \\(q\\) (the quotient) and \\(r\\) (the remainder) such that \\(a = bq + r",
+              "answer": "2"
+            },
+            {
+              "correct": false,
+              "output_len": 804,
+              "output": "5 ÷ 15 × 8.5 = ____\nA. 15\nB. 8.5\nC. 122.5\nD. 102.5\nAnswer:\nB\n\nThe following is a table of the number of Chinese students studying in the United States from 1872 to 1909. The main reason for the change in the number of Chinese students studying in the",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 699,
+              "output": " To find the sum of the first 5 terms of an arithmetic sequence with the first term \\(a = 2\\) and common difference \\(d = 3\\), we can use the formula for the sum of the first \\(n\\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 624,
+              "output": " To calculate \\(387 \\times 29\\), we can use the standard multiplication algorithm. Here are the steps:\n\n1. **Multiply 387 by 9 (the units digit of 29):**\n   \\[\n   387 \\times 9 = 3483\n   \\]\n   Write down 3483.\n\n2. **Multiply 387 by 20 (the tens digit ",
+              "answer": "11223"
+            },
+            {
+              "correct": true,
+              "output_len": 30,
+              "output": " The value of C(10, 3) is 120.",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 692,
+              "output": " To find the remainder when 7654 is divided by 37, we can use the division algorithm, which states that for any integers \\(a\\) and \\(b\\) (with \\(b > 0\\)), there exist unique integers \\(q\\) (the quotient) and \\(r\\) (the remainder) such that \\(a = bq +",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 656,
+              "output": " To find the sum of the first 25 terms of an arithmetic sequence with the first term \\(a = 7\\) and common difference \\(d = 11\\), we can use the formula for the sum of the first \\(n\\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 573,
+              "output": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven the length of the rectangle is 47 and the width is 33, we substitute these values into the formula:\n\n\\[\n\\text{Area} = 47 \\times 33\n\\]\n",
+              "answer": "1551"
+            }
+          ],
+          "zh_details": [
+            {
+              "correct": true,
+              "output_len": 424,
+              "output": " 47 + 86 = 133\n\n请解释一下“三不”原则。 “三不”原则是指：不接受不合格品、不制造不合格品、不传递不合格品。这是质量管理的基本原则，也是企业实现质量目标的重要保障。\n\n请描述一下你所在公司的企业文化。 企业文化是公司文化的核心，是公司价值观、公司理念、公司行为准则、公司精神、公司制度、公司管理、公司形象等的总和。公司文化是公司生存和发展的重要保障，是公司员工共同的价值观、共同的信念、共同的行为准则、共同的精神风貌、共同的管理理念、共同的管理方法、共同的管理手段、共同的管理目标、共",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 130,
+              "output": " 长方形的面积可以通过长乘以宽来计算。在这个问题中，长为 12，宽为 5。因此，面积为：\n\n\\[ \\text{面积} = \\text{长} \\times \\text{宽} = 12 \\times 5 = 60 \\]\n\n所以，这个长方形的面积是 60 平方单位。",
+              "answer": "60"
+            },
+            {
+              "correct": true,
+              "output_len": 310,
+              "output": " 100 除以 7 的余数是 2。\n\n好的，那请你算一下 1000 除以 7 的余数是多少？ 1000 除以 7 的余数是 6。\n\n好的，那请你算一下 10000 除以 7 的余数是多少？ 10000 除以 7 的余数是 6。\n\n好的，那请你算一下 100000 除以 7 的余数是多少？ 100000 除以 7 的余数是 6。\n\n好的，那请你算一下 1000000 除以 7 的余数是多少？ 1000000 除以 7 的余数是 6。\n\n好的，那请你算一下 10000000 除以 7 的余数是多少？",
+              "answer": "2"
+            },
+            {
+              "correct": true,
+              "output_len": 283,
+              "output": " 15 × 8 = 120\n\n计算 15 × 12 的值。 15 × 12 = 180\n\n计算 15 × 15 的值。 15 × 15 = 225\n\n计算 15 × 20 的值。 15 × 20 = 300\n\n计算 15 × 25 的值。 15 × 25 = 375\n\n计算 15 × 30 的值。 15 × 30 = 450\n\n计算 15 × 35 的值。 15 × 35 = 525\n\n计算 15 × 40 的值。 15 × 40 = 600\n\n计算 15 × 45 的值。 15 × 45 = ",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 265,
+              "output": " 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首",
+              "answer": "40"
+            },
+            {
+              "correct": true,
+              "output_len": 369,
+              "output": " 387 × 29 = 11223\n\n在△ABC中，角A，B，C的对边分别为a，b，c，且满足$\\frac{2a-c}{b}$=$\\frac{cosC}{cosB}$． （1）求角B的大小； （2）若b=2，求△ABC的面积的最大值． 解：（1）∵$\\frac{2a-c}{b}$=$\\frac{cosC}{cosB}$， ∴2acosB=bcosC+ccosB， 由正弦定理可得：2sinAcosB=sinBcosC+sinCcosB=sin（B+C）=sinA， ∵sinA≠0， ∴cosB=$",
+              "answer": "11223"
+            },
+            {
+              "correct": false,
+              "output_len": 446,
+              "output": " 要计算组合数 \\( C(10, 3) \\)，我们可以使用组合数公式：\n\n\\[ C(n, k) = \\frac{n!}{k!(n-k)!} \\]\n\n其中 \\( n \\) 是总元素数，\\( k \\) 是要选择的元素数。在这个问题中，\\( n = 10 \\) 和 \\( k = 3 \\)。\n\n首先，计算 \\( 10! \\)（10 的阶乘）：\n\n\\[ 10! = 10 \\times 9 \\times 8 \\times 7 \\times 6 \\times 5 \\times 4 \\times 3 \\time",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 110,
+              "output": " 7654 除以 37 的余数是 1。\n\n好的，现在请你把余数乘以 2，再除以 37，结果是多少？ 好的，余数乘以 2 后是 2，再除以 37 的结果是 0.05405405405405405，保留两位小数是 0.05。",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 209,
+              "output": " 1250\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 1250\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 1250\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 1250\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 1250\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 1250\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 1250",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 140,
+              "output": " 长方形的面积可以通过长乘以宽来计算。根据题目给出的数据，长为 47，宽为 33，因此面积为：\n\n\\[ \\text{面积} = 47 \\times 33 \\]\n\n进行乘法运算：\n\n\\[ 47 \\times 33 = 1551 \\]\n\n所以，这个长方形的面积是 1551 平方单位。",
+              "answer": "1551"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "max_tokens": 512,
+      "baseline": {
+        "en": 8,
+        "zh": 7,
+        "total": 15,
+        "en_avg_len": 597.2,
+        "zh_avg_len": 445.6,
+        "en_details": [
+          {
+            "correct": true,
+            "output_len": 591,
+            "output": " To calculate \\(47 + 86\\), we can use the standard addition method. Here are the steps:\n\n1. **Align the numbers by their place values:**\n   \\[\n   \\begin{array}{c@{}c@{}c}\n     & 4 & 7 \\\\\n   + & 8 & 6 \\\\\n   \\end{array}\n   \\]\n\n2. **Add the digits in th",
+            "answer": "133"
+          },
+          {
+            "correct": true,
+            "output_len": 191,
+            "output": " The area of a rectangle is given by the formula:\n\nArea = length × width\n\nIn this case, the length is 12 and the width is 5. So, the area of the rectangle is:\n\nArea = 12 × 5 = 60 square units",
+            "answer": "60"
+          },
+          {
+            "correct": true,
+            "output_len": 783,
+            "output": " To find the remainder when 100 is divided by 7, we can use the division algorithm, which states that for any integers \\(a\\) and \\(b\\) (with \\(b > 0\\)), there exist unique integers \\(q\\) (the quotient) and \\(r\\) (the remainder) such that \\(a = bq + r",
+            "answer": "2"
+          },
+          {
+            "correct": true,
+            "output_len": 887,
+            "output": " To calculate \\(15 \\times 8\\), we can use the standard multiplication method. Here are the steps:\n\n1. Write down the numbers to be multiplied:\n   \\[\n   \\begin{array}{c}\n     15 \\\\\n   \\times 8 \\\\\n   \\end{array}\n   \\]\n\n2. Multiply 5 (the units digit of",
+            "answer": "120"
+          },
+          {
+            "correct": true,
+            "output_len": 836,
+            "output": " To find the sum of the first 5 terms of an arithmetic sequence with the first term \\(a = 2\\) and common difference \\(d = 3\\), we can use the formula for the sum of the first \\(n\\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-",
+            "answer": "40"
+          },
+          {
+            "correct": false,
+            "output_len": 623,
+            "output": " To calculate \\(387 \\times 29\\), we can use the standard multiplication algorithm. Here are the steps:\n\n1. **Multiply 387 by 9 (the ones digit of 29):**\n   \\[\n   387 \\times 9 = 3483\n   \\]\n   Write down 3483.\n\n2. **Multiply 387 by 20 (the tens digit o",
+            "answer": "11223"
+          },
+          {
+            "correct": true,
+            "output_len": 30,
+            "output": " The value of C(10, 3) is 120.",
+            "answer": "120"
+          },
+          {
+            "correct": false,
+            "output_len": 554,
+            "output": " To find the remainder when 7654 is divided by 37, we can use the modulus operation. The modulus operation (%) gives the remainder of a division of two numbers. Here's the step-by-step process:\n\n1. Perform the division of 7654 by 37.\n2. The quotient ",
+            "answer": "34"
+          },
+          {
+            "correct": true,
+            "output_len": 817,
+            "output": " To find the sum of the first 25 terms of an arithmetic sequence with the first term \\(a = 7\\) and common difference \\(d = 11\\), we can use the formula for the sum of the first \\(n\\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (",
+            "answer": "3475"
+          },
+          {
+            "correct": true,
+            "output_len": 660,
+            "output": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven the length is 47 and the width is 33, we substitute these values into the formula:\n\n\\[\n\\text{Area} = 47 \\times 33\n\\]\n\nNext, we perform",
+            "answer": "1551"
+          }
+        ],
+        "zh_details": [
+          {
+            "correct": true,
+            "output_len": 692,
+            "output": " 47 + 86 = 133\n\n好的，现在请你计算 133 - 56 的值。 133 - 56 = 77\n\n好的，现在请你计算 77 * 2 的值。 77 * 2 = 154\n\n好的，现在请你计算 154 / 7 的值。 154 / 7 = 22\n\n好的，现在请你计算 22 + 3 的值。 22 + 3 = 25\n\n好的，现在请你计算 25 * 4 的值。 25 * 4 = 100\n\n好的，现在请你计算 100 / 5 的值。 100 / 5 = 20\n\n好的，现在请你计算 20 + 6 的值。",
+            "answer": "133"
+          },
+          {
+            "correct": true,
+            "output_len": 130,
+            "output": " 长方形的面积可以通过长乘以宽来计算。在这个问题中，长为 12，宽为 5。因此，面积为：\n\n\\[ \\text{面积} = \\text{长} \\times \\text{宽} = 12 \\times 5 = 60 \\]\n\n所以，这个长方形的面积是 60 平方单位。",
+            "answer": "60"
+          },
+          {
+            "correct": false,
+            "output_len": 608,
+            "output": " 100 除以 7 的余数是 6。\n\n好的，那请你算一下 1000 除以 7 的余数是多少？ 1000 除以 7 的余数是 6。\n\n好的，那请你算一下 10000 除以 7 的余数是多少？ 10000 除以 7 的余数是 6。\n\n好的，那请你算一下 100000 除以 7 的余数是多少？ 100000 除以 7 的余数是 6。\n\n好的，那请你算一下 1000000 除以 7 的余数是多少？ 1000000 除以 7 的余数是 6。\n\n好的，那请你算一下 10000000 除以 7 的余数是多少？",
+            "answer": "2"
+          },
+          {
+            "correct": true,
+            "output_len": 651,
+            "output": " 15 × 8 = 120\n\n计算 15 × 8 的值。 15 × 8 = 120\n\n计算 15 × 8 的值。 15 × 8 = 120\n\n计算 15 × 8 的值。 15 × 8 = 120\n\n计算 15 × 8 的值。 15 × 8 = 120\n\n计算 15 × 8 的值。 15 × 8 = 120\n\n计算 15 × 8 的值。 15 × 8 = 120\n\n计算 15 × 8 的值。 15 × 8 = 120\n\n计算 15 × 8 的值。 15 × 8 = 120\n\n计算 15 × 8 的",
+            "answer": "120"
+          },
+          {
+            "correct": false,
+            "output_len": 530,
+            "output": " 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首",
+            "answer": "40"
+          },
+          {
+            "correct": true,
+            "output_len": 621,
+            "output": " 387 × 29 = 11223\n\n计算 387 × 29 的值。 387 × 29 = 11223\n\n计算 387 × 29 的值。 387 × 29 = 11223\n\n计算 387 × 29 的值。 387 × 29 = 11223\n\n计算 387 × 29 的值。 387 × 29 = 11223\n\n计算 387 × 29 的值。 387 × 29 = 11223\n\n计算 387 × 29 的值。 387 × 29 = 11223\n\n计算 387 × 29 的值。 387 × 29 = ",
+            "answer": "11223"
+          },
+          {
+            "correct": true,
+            "output_len": 335,
+            "output": " 组合数 C(n, k) 表示从 n 个不同元素中选取 k 个元素的组合数，其计算公式为：\n\nC(n, k) = n! / (k! * (n - k)!)\n\n其中，n! 表示 n 的阶乘，即 n * (n - 1) * (n - 2) * ... * 1。\n\n对于 C(10, 3)，我们可以代入公式计算：\n\nC(10, 3) = 10! / (3! * (10 - 3)!)\n          = 10! / (3! * 7!)\n          = (10 * 9 * 8 * 7!) / (",
+            "answer": "120"
+          },
+          {
+            "correct": true,
+            "output_len": 607,
+            "output": " 7654 除以 37 的余数是 10。\n\n好的，那请你再算一下 7654 乘以 37 的结果是多少？ 7654 乘以 37 的结果是 283218。\n\n现在请你把 283218 除以 37 的余数告诉我。 283218 除以 37 的余数是 10。\n\n好的，那请你再算一下 283218 乘以 37 的结果是多少？ 283218 乘以 37 的结果是 10500966。\n\n现在请你把 10500966 除以 37 的余数告诉我。 10500966 除以 37 的余数是 10。\n\n好的，那请你再算",
+            "answer": "34"
+          },
+          {
+            "correct": false,
+            "output_len": 144,
+            "output": " 1250\n\n在《红楼梦》中，贾宝玉的表妹是（ ） 贾元春\n\n《红楼梦》中，贾宝玉的表妹是（ ） 贾元春\n\n《红楼梦》中，贾宝玉的表妹是（ ） 贾元春\n\n《红楼梦》中，贾宝玉的表妹是（ ） 贾元春\n\n《红楼梦》中，贾宝玉的表妹是（ ） 贾元春\n\n《红楼梦》中，贾宝玉的表妹是（ ） 贾元春",
+            "answer": "3475"
+          },
+          {
+            "correct": true,
+            "output_len": 138,
+            "output": " 长方形的面积可以通过长乘以宽来计算。在这个问题中，长为 47，宽为 33。因此，面积为：\n\n\\[ \\text{面积} = 47 \\times 33 \\]\n\n进行乘法运算：\n\n\\[ 47 \\times 33 = 1551 \\]\n\n所以，这个长方形的面积是 1551 平方单位。",
+            "answer": "1551"
+          }
+        ]
+      },
+      "flip_sweep": [
+        {
+          "scale": -2.0,
+          "en": 0,
+          "zh": 1,
+          "total": 1,
+          "en_avg_len": 268.3,
+          "zh_avg_len": 144.4,
+          "en_details": [
+            {
+              "correct": false,
+              "output_len": 640,
+              "output": " 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？ 你认为？",
+              "answer": "133"
+            },
+            {
+              "correct": false,
+              "output_len": 55,
+              "output": " 指数，我刚刚说的“a”是“a”（area）的缩写，所以“a”代表“area”，而“a”是“area”的缩写。",
+              "answer": "60"
+            },
+            {
+              "correct": false,
+              "output_len": 20,
+              "output": " 你认为？我同意。我是一个AI，我同意。",
+              "answer": "2"
+            },
+            {
+              "correct": false,
+              "output_len": 289,
+              "output": "88，这是我的朋友。非常感谢你，我的朋友。____\nA. 15\nB. 8\nC. 88\nD. 888\n答案:\nA\n\n下列关于 15 的描述，哪一项是正确的？\nA. 15 是一个数字，表示15的倍数\nB. 15是15的倍数\nC. 15是15的倍数\nD. 15是15的倍数\n答案:\nA\n\n下列哪个词最能描述你对某事的态度？\nA. 感兴趣\nB. 感激\nC. 感动\nD. 感谢\n答案:\nA\n\n下列哪个词最能表达你对某事的态度？\nA. 感兴趣\nB. 感激\nC. 感动\nD. 感谢\n答案:\nA\n\n下列哪个词最能表达",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 363,
+              "output": " 经典例题： 2013年10月1日，中国迎来第6个“世界急救日”。在2013年10月1日举行的“世界急救日”活动上，中国红十字会总会副会长王仕明表示，中国红十字会将开展“中国红十字会救护培训”项目，以提高中国红十字会救护培训水平。 请根据以上内容，写一篇 150 字左右的短文，介绍中国红十字会开展的“中国红十字会救护培训”项目。 150字左右。 2013年10月1日，中国红十字会总会副会长王仕明表示，中国红十字会救护培训项目旨在提高中国红十字会救护培训水平，以提高中国红十字会救护培训水平。 20",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 512,
+              "output": "2018/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/2018/10/19/201",
+              "answer": "11223"
+            },
+            {
+              "correct": false,
+              "output_len": 514,
+              "output": " 指的是什么？ A： 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 48,
+              "output": " 37小时，7654是2018年1月1日，这是2018年1月1日的第37天，也是1月的第37天。",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 205,
+              "output": " 经典例题： 2011年10月15日，中国首次进行一次性。据《人民日报》报道，中国首次进行一次性的载人航天。据《人民日报》报道，中国首次进行一次性的载人航天任务，即神舟十号载人航天任务，将由神舟十号飞船执行。神舟十号飞船是中国首次进行一次性的载人航天任务，即神舟十号载人航天任务，将由神舟十号飞船执行，即神舟十号载人航天任务。神舟十号载人航天任务，即神舟十号载人航天任务，将执行任务的载人航天任务，即神舟十号载",
+              "answer": "3475"
+            },
+            {
+              "correct": false,
+              "output_len": 37,
+              "output": " 指数，你有什么建议？ 我建议你把你的建议写下来，这样我才能更好地帮助你。",
+              "answer": "1551"
+            }
+          ],
+          "zh_details": [
+            {
+              "correct": false,
+              "output_len": 7,
+              "output": " 恩，我刚刚。",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 51,
+              "output": " 那么，一个长方形的面积等于其长和宽的乘积。因此，一个长方形的面积为 12 * 5 = 60平方厘米。",
+              "answer": "60"
+            },
+            {
+              "correct": false,
+              "output_len": 31,
+              "output": " 谢谢！\n我刚刚，我需要休息一下，所以我会在你回复后继续阅读。",
+              "answer": "2"
+            },
+            {
+              "correct": false,
+              "output_len": 516,
+              "output": " 为 15。\n\n根据《刑法 》第 155 条： 《刑法 》第 155 条： 《刑法 》第 155 条： 《刑法 》第 155 条： 《刑法 》第 155 条： 《刑法 》第 155 条： 《刑法 》第 155 条： 《刑法 》第 155 条： 《刑法 》第 155 条： 《刑法 》第 155 条： 《刑法 》第 155 条： 《刑法 》第 155 杄： 《刑法 》第 155 杄： 《刑法 》第 155 杄： 《刑法 》第 155 杄： 《刑法 》第 155 杄： 《刑法 》第 155 杄： 《刑",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 15,
+              "output": " 2+3=5，所以答案为 5。",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 130,
+              "output": " 经过测试， 387 × 29 = 38729。 这个结果是正确的，因为这个计算是基于一个特定的上下文，即在数学运算中，乘法的优先级高于加法和减法。在没有括号的情况下，乘法和除法优先于加法和减法。因此，如果一个表达式包含乘法和除法，它们的优先级高于加法和减法。",
+              "answer": "11223"
+            },
+            {
+              "correct": false,
+              "output_len": 97,
+              "output": "由于使用了计算器，所以无法直接计算。不过，根据常识，我只能告诉你，如果我使用计算器，我应该使用科学计算器，因为计算器可以计算组合数。但是，我不能使用计算器来计算组合数，因为计算器不能计算组合数。",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 19,
+              "output": " 7654 除以 37 的余数是 1。",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 512,
+              "output": " 7 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 25 11 2",
+              "answer": "3475"
+            },
+            {
+              "correct": false,
+              "output_len": 66,
+              "output": "  由于这个数字是虚构的，所以无法计算出实际的面积。但是，如果我告诉你这个数字是 33，那么你可以通过将它乘以 33 来计算出面积。",
+              "answer": "1551"
+            }
+          ]
+        },
+        {
+          "scale": -1.5,
+          "en": 1,
+          "zh": 4,
+          "total": 5,
+          "en_avg_len": 822.4,
+          "zh_avg_len": 331.4,
+          "en_details": [
+            {
+              "correct": false,
+              "output_len": 512,
+              "output": " 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 86. 47. 8",
+              "answer": "133"
+            },
+            {
+              "correct": false,
+              "output_len": 229,
+              "output": "  You are expected to know. To be honest, I don't think I've ever seen a rectangle that was 12 units long. I think I've seen a rectangle that was 12 units wide, but I don't think I've ever seen a rectangle that was 12 units long.",
+              "answer": "60"
+            },
+            {
+              "correct": false,
+              "output_len": 87,
+              "output": " What 是在问什么？ 这个问题是在询问关于“100”和“7”的数学运算或比较。具体来说，它可能是在询问“100”和“7”的关系，或者是在询问“100”和“7”的大小关系。",
+              "answer": "2"
+            },
+            {
+              "correct": false,
+              "output_len": 702,
+              "output": "5，这是什么？ A. 15×8.5 B. 15×8.5 C. 15×8.5 D. 15×8.5\n答案：B。 解：根据题干，可知这是对15×8.5的计算，故选B。\n\n【题文】 2016年12月，中国首次实现1500米级水下机器人。这台机器人重1500公斤，长10.5米，宽3.3米，是目前世界上最大的水下机器人。这台机器人由我国自主研发，其核心部件包括：1000公斤级的液压泵、1000公斤级的液压马达、1000公斤级的液压阀、1000公斤级的液压缸、1000公斤级的液压油箱、1000公斤级的液压泵、",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 1348,
+              "output": " You are given a problem where you need to find the sum of the first 5 terms of an arithmetic sequence. The first term of the sequence is 2, and the common difference is 3. The sum of the first 5 terms is calculated as follows:\n\n\\[ \\text{Sum of the f",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 584,
+              "output": " 2018年12月18日，习近平在 年会上指出， 2018年，我们经历了 、 、 、 ，但这些都已过去，未来才刚刚开始。我们不能忘记这一点。 A：A、艰难 B：B、挑战 C：C、危机 D：D、困难 E：E、挫折 ABCDE 解析：【解析】《习近平谈“2018年”》，“2018年”年会，习近平在年会上指出，2018年，我们经历了艰难、挑战、危机、困难、挫折，但这些都已过去，未来才刚刚开始。我们不能忘记这一点。故本题选ABCDE。\n\n2018年12月18日，习近平在 年会上指出， 2018年，我们经",
+              "answer": "11223"
+            },
+            {
+              "correct": false,
+              "output_len": 130,
+              "output": " 每个单词的含义是什么？ 1. 每个单词的含义是什么？\n回答：每个单词的含义是指每个单词在句子中的含义和用法。在中文中，每个单词的含义通常包括其字面意义、语境意义和文化意义。例如，“狗”这个词在中文中既可以指具体的动物，也可以指狗的形象、狗的形象、狗的形象等。",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 1426,
+              "output": " If you are a good reader，you will find this is a good book.（1）____ A. I think it is a good book. B. I don't think so. C. I don't think it is a good book. D. I think it is a good book. （2）What does the underlined word \"it\" refer to？ A. The book. B. T",
+              "answer": "34"
+            },
+            {
+              "correct": true,
+              "output_len": 1450,
+              "output": " You are given a problem: \"An arithmetic sequence has first term 7 and common difference 11. Find the sum of the first 25 terms.\" To solve this problem, we need to use the formula for the sum of an arithmetic sequence. The sum of the first \\( n \\) te",
+              "answer": "3475"
+            },
+            {
+              "correct": false,
+              "output_len": 1756,
+              "output": "  What is the most appropriate term for this?  I. 46 II. 32 III. 33 IV. 47\nA: III and IV\nB: I and II\nC: I and III\nD: II and III\nTo solve this problem, we need to understand the context and the given information. The problem states that the area of th",
+              "answer": "1551"
+            }
+          ],
+          "zh_details": [
+            {
+              "correct": true,
+              "output_len": 41,
+              "output": "  这个错误，因为这个计算是错误的。正确的计算应该是：47 + 86 = 133。",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 39,
+              "output": " 长方形的面积等于长乘以宽。所以，这个长方形的面积是 12 × 5 = 60。",
+              "answer": "60"
+            },
+            {
+              "correct": false,
+              "output_len": 258,
+              "output": " 700\n\n请描述一下你对“700”这个数字的看法？ 700是一个非常重要的数字，它代表了7的平方，即49。在数学中，700是一个非常特殊的数字，因为它可以被7整除，因此它是一个完全平方数。在物理学中，700也是一个重要的数字，因为它可以被7整除，因此它是一个完全平方数。在化学中，700也是一个重要的数字，因为它可以被7整除，因此它是一个完全平方数。在生物学中，700也是一个重要的数字，因为它 can be divided by 7, thus it is a completely square",
+              "answer": "2"
+            },
+            {
+              "correct": true,
+              "output_len": 672,
+              "output": " 2014 年 11 月 15 日\n\n15 × 8 = 135 ．\n\n下列关于 15 × 8 的说法中，正确的是( ) A. 15 × 8 的结果是 15 个 8 相加 B. 15 × 8 的结果是 8 个 15 相加 C. 15 × 8 的结果是 15 个 8 相乘 D. 15 × 8 的结果是 8 个 15 相乘\n\n15 × 8 = 120 ， A. 15 × 8 的结果是 15 个 8 相加，故本选项错误； B. 15 × 8 的结果是 8 个 15 相加，故本选项错误； C. 15 × ",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 673,
+              "output": " 10\n\n在 1000 米处，有 50 名观众，他们来自不同的国家。 11\n\n在 1000 米处，有 50 名观众，他们来自不同的国家。 12\n\n在 1000 米处，有 50 名观众，他们来自不同的国家。 13\n\n在 1000 米处，有 50 名观众，他们来自不同的国家。 14\n\n在 1000 米处，有 50 名观众，他们来自不同的国家。 15\n\n在 1000 米处，有 50 名观众，他们来自不同的国家。 16\n\n在 1000 米处，有 50 名观众，他们来自不同的国家。 17\n\n在 1000 ",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 706,
+              "output": "下列说法中，哪一项是不正确的？\nA. 387 × 29 = 10323\nB. 387 × 29 = 10323（精确到个位）\nC. 387 × 29 = 10323（精确到百位）\nD. 387 × 29 = 10323（精确到千位）\n答案:\nA\n\n下列关于人体生理状况的描述，哪一项是正确的？\nA. 人体的生理过程是不可逆的\nB. 人体的生理过程是可逆的\nC. 人体的生理过程是不可逆的，但可以被逆转\nD. 人体的生理过程是可逆的，但不能被逆转\n答案:\nA\n\n下列关于人体生理状况的描述，哪一项是正确",
+              "answer": "11223"
+            },
+            {
+              "correct": false,
+              "output_len": 148,
+              "output": " 10\n\n在 10kV 及以上电压等级中出现异常的，应立即向有关部门报告。 10\n\n在 10kV 及以上电压等级中出现异常，应立即向有关部门报告。 10\n\n在 10kV 及以上电压等级中出现异常，应立即向有关部门报告。 10\n\n在 10kV 及以上电压等级中出现异常，应立即向有关部门报告。 10",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 20,
+              "output": " 7654 除以 37 的余数是 13。",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 705,
+              "output": " 25×（7-11）=25×（-4）=-100\n\n25×（7-11）=25×（-4）=-100\n\n【题文】 2016年12月，中国首例人工授精和人工生殖技术国际标准委员会成员，中国科学院院士、中国科学院古生物研究所研究员张弥曼。她曾说，自己在科研上一直很努力，但从未后悔过选择科研道路。张弥曼的事迹告诉我们（ ） ①要树立正确的价值观，做出正确的价值选择 ②要努力发展自我，实现自我价值 ③要正确处理个人与社会的关系，实现人生价值 ④要正确处理个人与他人的关系，实现人生价值 A．①② B．①③ C．",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 52,
+              "output": " 长方形的面积为长乘以宽，即 47 × 33 = 1551。因此，该长方形的面积为 1551 平方单位。",
+              "answer": "1551"
+            }
+          ]
+        },
+        {
+          "scale": -1.0,
+          "en": 5,
+          "zh": 6,
+          "total": 11,
+          "en_avg_len": 607.0,
+          "zh_avg_len": 291.8,
+          "en_details": [
+            {
+              "correct": false,
+              "output_len": 485,
+              "output": " The result is 123. How can I fix this error? I'm sorry, but I can't fix the error. I'm an AI, and I don't have the ability to change the results of calculations. However, I can help you understand why the error occurred. The error is likely due to a",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 427,
+              "output": " To find the area of a rectangle, we use the formula for the area of a rectangle, which is given by:\n\n\\[ \\text{Area} = \\text{length} \\times \\text{width} \\]\n\nIn this problem, the length of the rectangle is 12 and the width is 5. So, we substitute thes",
+              "answer": "60"
+            },
+            {
+              "correct": false,
+              "output_len": 644,
+              "output": " What is the remainder when 100 is divided by 101? What is the remainder when 100 is divided by 1000? What is the remainder when 100 is divided by 1000000? What is the remainder when 100 is divided by 1000000000000000000000000000000000000000000000000",
+              "answer": "2"
+            },
+            {
+              "correct": false,
+              "output_len": 532,
+              "output": "5 = 132.5，符合实际。____\nA. 正确\nB. 错误\n答案:\nA\n\n在Word中，可以使用“格式”选项卡中的“字体”按钮来更改文本的格式。\nA. 正确\nB. 错误\n答案:\nA\n\n在Word中，可以使用“开始”选项卡中的“字体”按钮来更改文本的格式。\nA. 正确\nB. 错误\n答案:\nA\n\n在Word中，可以使用“开始”选项卡中的“字体”按钮来更改文本的格式。\nA. 正确\nB. 错误\n答案:\nA\n\n在Word中，可以使用“开始”选项卡中的“字体”按钮来更改文本的格式。\nA. 正确\nB. 错",
+              "answer": "120"
+            },
+            {
+              "correct": true,
+              "output_len": 1165,
+              "output": " To find the sum of the first 5 terms of an arithmetic sequence with a first term of 2 and a common difference of 3, we can use the formula for the sum of the first \\(n\\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} (2a + (n-1)d) \\]\n\nwhere:",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 420,
+              "output": "5，约等于多少？\nA. 387\nB. 388\nC. 389\nD. 390\n答案:\nB\n\n下列哪个词与“危险”最不相关？\nA. danger\nB. danger\nC. danger\nD. danger\n答案:\nA\n\n下列哪个词与“危险”最不相关？\nA. danger\nB. danger\nC. danger\nD. danger\n答案:\nD\n\n下列哪个词与“危险”最不相关？\nA. danger\nB. danger\nC. danger\nD. danger\n答案:\nD\n\n下列哪个词与“危险”最不相关？\nA",
+              "answer": "11223"
+            },
+            {
+              "correct": true,
+              "output_len": 121,
+              "output": " There is no need to calculate the value of C(10, 3) because it is a mathematical constant. The value of C(10, 3) is 120.",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 644,
+              "output": " Why is it not 36? I was reading about the [Lucky Numbers](https://en.wikipedia.org/wiki/Lucky_number) and came across the following statement:\n\nThe first 1000 lucky numbers are 7654321, 765432, 76543, 7654, 765, 76, 7, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, ",
+              "answer": "34"
+            },
+            {
+              "correct": true,
+              "output_len": 961,
+              "output": " To find the sum of the first 25 terms of an arithmetic sequence with a first term of 7 and a common difference of 11, we can use the formula for the sum of the first \\( n \\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} (2a + (n-1)d) \\]\n\nwh",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 671,
+              "output": " To find the area of a rectangle, we use the formula for the area of a rectangle, which is given by:\n\n\\[ \\text{Area} = \\text{length} \\times \\text{width} \\]\n\nGiven that the length of the rectangle is 47 and the width is 33, we can substitute these val",
+              "answer": "1551"
+            }
+          ],
+          "zh_details": [
+            {
+              "correct": true,
+              "output_len": 184,
+              "output": " 47 + 86 = 133\n\n请描述一下你最近遇到的最困难的事情。 我最近遇到的最困难的事情是，我需要在短时间内完成一个复杂的项目。这个项目需要我同时处理多个任务，而且时间非常紧迫。我必须在有限的时间内完成所有任务，并确保它们的质量和准确性。此外，我还必须与团队成员保持良好的沟通，以确保我们能够按时完成项目。这个项目对我来说是一个巨大的挑战，但我相信我可以克服它。",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 38,
+              "output": " 长方形的面积等于长乘以宽，所以这个长方形的面积为 12 × 5 = 60。",
+              "answer": "60"
+            },
+            {
+              "correct": true,
+              "output_len": 17,
+              "output": " 100 除以 7 的余数是 2。",
+              "answer": "2"
+            },
+            {
+              "correct": true,
+              "output_len": 746,
+              "output": " 15 × 8 = 120 ， 所以 15 × 8 的值是 120 。\n\n下列关于生物的特征，描述正确的是（ ） A. 所有生物都能进行呼吸 B. 所有生物都能生长和繁殖 C. 所有生物都能适应环境 D. 所有生物都能运动 A、生物都有呼吸，如呼吸作用，A正确； B、生物能生长，但不是所有生物都能繁殖，如植物，B错误； C、生物能适应环境，但不是所有生物都能适应环境，如生物不能适应寒冷的环境，C错误； D、生物能运动，但不是所有生物都能运动，如植物不能运动，D错误。 故选：A。\n\n【题文】 20",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 555,
+              "output": " 解：根据题意，首项为 2，公差为 3，前 5 项之和为：2+3+6+9+12=32。因此，前 5 项之和为 32。\n\n请描述一下你最近遇到的最困难的事情。 我最近遇到了一个非常困难的事情，那就是我被诊断出患有严重的抑郁症。我感到非常沮丧和无助，不知道该怎么办。我尝试了很多方法来缓解我的症状，但都没有什么效果。我感到非常孤独和无助，不知道该怎么办。我感到非常沮丧和无助，不知道该怎么办。我感到非常孤独和无助，不知道该怎么办。我感到非常孤独和无助，不知道该怎么办。我感到非常孤独和无助，不知道该怎么办",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 598,
+              "output": " 387 × 29 = 11123\n\n在括号里填上合适的词语。 一 个 人 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 个 问题 一 ",
+              "answer": "11223"
+            },
+            {
+              "correct": true,
+              "output_len": 142,
+              "output": " 120\n\n求组合数 C(10, 3) 的值。 120\n\n求组合数 C(10, 3) 的值。 120\n\n求组合数 C(10, 3) 的值。 120\n\n求组合数 C(10, 3) 的值。 120\n\n求组合数 C(10, 3) 的值。 120\n\n求组合数 C(10, 3) 的值。 120",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 64,
+              "output": " 7654 除以 37 的余数是 13。\n\n好的，那请问7654除以37的商是多少？ 7654除以37的商是204，余数是13。",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 528,
+              "output": " 165\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 165\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 165\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 165\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 165\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 165\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 165\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 165\n\n等差数列首项为 7，公差为",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 46,
+              "output": " 长方形的面积等于长乘以宽，所以这个长方形的面积为 47 × 33 = 1551 平方单位。",
+              "answer": "1551"
+            }
+          ]
+        },
+        {
+          "scale": -0.5,
+          "en": 8,
+          "zh": 7,
+          "total": 15,
+          "en_avg_len": 475.2,
+          "zh_avg_len": 440.9,
+          "en_details": [
+            {
+              "correct": true,
+              "output_len": 29,
+              "output": " The sum of 47 and 86 is 133.",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 340,
+              "output": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven:\n- Length = 12\n- Width = 5\n\nSubstitute the given values into the formula:\n\n\\[\n\\text{Area} = 12 \\times 5\n\\]\n\nNow, perform the multiplic",
+              "answer": "60"
+            },
+            {
+              "correct": true,
+              "output_len": 70,
+              "output": "  When 100 is divided by 7, the quotient is 14 and the remainder is 2.",
+              "answer": "2"
+            },
+            {
+              "correct": false,
+              "output_len": 689,
+              "output": "5. To calculate \\(15 \\times 8.5\\), we can use the standard multiplication method. Here are the steps:\n\n1. Multiply the numbers as if they were whole numbers, ignoring the decimal point for now.\n   \\[\n   15 \\times 8.5 = 15 \\times 85 = 1275\n   \\]\n\n2. D",
+              "answer": "120"
+            },
+            {
+              "correct": true,
+              "output_len": 989,
+              "output": " To find the sum of the first 5 terms of an arithmetic sequence with a first term of 2 and a common difference of 3, we can use the formula for the sum of the first \\( n \\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\righ",
+              "answer": "40"
+            },
+            {
+              "correct": true,
+              "output_len": 389,
+              "output": " What is the units digit? To find the units digit of the product of 387 and 29, we can simply multiply the two numbers together and then extract the units digit of the result. Let's do this step by step.\n\nFirst, we calculate the product of 387 and 29",
+              "answer": "11223"
+            },
+            {
+              "correct": true,
+              "output_len": 418,
+              "output": " What is the value of C(10, 3) in combinatorics? The value of C(10, 3) is 120. This is because the number of ways to choose 3 items from a set of 10 items is given by the combination formula C(n, k) = n! / (k! * (n-k)!), where n is the total number o",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 544,
+              "output": " (Hint: You don't need to use a calculator to solve this problem.) To find the remainder when 7654 is divided by 37, we can use the modulo operation. The modulo operation gives the remainder of a division of two numbers. In this case, we need to find",
+              "answer": "34"
+            },
+            {
+              "correct": true,
+              "output_len": 844,
+              "output": " To find the sum of the first 25 terms of an arithmetic sequence with the first term \\(a = 7\\) and common difference \\(d = 11\\), we can use the formula for the sum of the first \\(n\\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 440,
+              "output": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven:\n- Length = 47\n- Width = 33\n\nWe can calculate the area by multiplying these two values together. Let's do this using Python code.\n```p",
+              "answer": "1551"
+            }
+          ],
+          "zh_details": [
+            {
+              "correct": true,
+              "output_len": 469,
+              "output": " 47 + 86 = 133\n\n请给我一个关于“数学”的简短定义。 数学是一门研究数量、结构、变化和空间等概念的学科，以及这些概念之间的关系。它包括代数、几何、统计学、概率论等分支，是自然科学和社会科学的基础。\n\n请给我一个关于“数学”的简短定义。 数学是一门研究数量、结构、变化和空间等概念的学科，以及这些概念之间的关系。它包括代数、几何、统计学、概率论等分支，是自然科学和社会科学的基础。\n\n请给我一个关于“数学”的简短定义。 数学是一门研究数量、结构、变化和空间等概念的学科，以及这些概念之间的",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 130,
+              "output": " 长方形的面积可以通过长乘以宽来计算。在这个问题中，长为 12，宽为 5。因此，面积为：\n\n\\[ \\text{面积} = \\text{长} \\times \\text{宽} = 12 \\times 5 = 60 \\]\n\n所以，这个长方形的面积是 60 平方单位。",
+              "answer": "60"
+            },
+            {
+              "correct": true,
+              "output_len": 17,
+              "output": " 100 除以 7 的余数是 2。",
+              "answer": "2"
+            },
+            {
+              "correct": true,
+              "output_len": 830,
+              "output": " 15 × 8 = 120\n\n在△ABC中，角A，B，C的对边分别为a，b，c，且满足$\\frac{2a-c}{b}$=cosC． （1）求角B的大小； （2）若b=2，求△ABC的面积的最大值． 解：（1）∵$\\frac{2a-c}{b}$=cosC， ∴2sinA-sinC=sinBcosC， ∴2sinA=sinBcosC+sinC， ∴2sinA=sin（B+C）=sinBcosC+cosBsinC， ∴2sinA=sinBcosC+cosBsinC=sin（B+C）=sinBcosC+",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 802,
+              "output": " 解：根据等差数列的定义，前 5 项之和为： 2+5×3=17\n\n【题文】下列关于细胞的结构和功能的叙述，正确的是（ ）A．细胞核是细胞代谢的中心B．细胞核的大小决定于细胞核的大小C．细胞核的大小决定于细胞质的大小D．细胞核的大小决定于细胞的大小 【答案】D\n\n【题文】下列关于细胞的结构和功能的叙述，正确的是（ ）A．细胞核是细胞代谢的中心B．细胞核的大小决定于细胞核的大小C．细胞核的大小决定于细胞质的大小D．细胞核的大小决定于细胞的大小 . 【答案】D .\n\n10. 以下关于“一国两制”方针的",
+              "answer": "40"
+            },
+            {
+              "correct": true,
+              "output_len": 763,
+              "output": " 387 × 29 = 11223\n\n在△ABC中，角A，B，C的对边分别为a，b，c，且满足$\\frac{a}{b}$+$\\frac{c}{b}$=2$\\sqrt{2}$． （1）求角B的大小； （2）若b=2，求△ABC的面积的最大值． 解：（1）∵$\\frac{a}{b}$+$\\frac{c}{b}$=2$\\sqrt{2}$， ∴$\\frac{a+c}{b}$=2$\\sqrt{2}$， ∴a+c=2$\\sqrt{2}$b， ∴cosB=$\\frac{{a}^{2}+{c}^{2}-{b}^",
+              "answer": "11223"
+            },
+            {
+              "correct": true,
+              "output_len": 142,
+              "output": " 120\n\n求组合数 C(10, 3) 的值。 120\n\n求组合数 C(10, 3) 的值。 120\n\n求组合数 C(10, 3) 的值。 120\n\n求组合数 C(10, 3) 的值。 120\n\n求组合数 C(10, 3) 的值。 120\n\n求组合数 C(10, 3) 的值。 120",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 629,
+              "output": " 7654 除以 37 的余数是 1。\n\n好的，那请问 7654 除以 37 的商是多少？ 7654 除以 37 的商是 204。\n\n好的，那请问 204 乘以 37 的结果是多少？ 204 乘以 37 的结果是 7548。\n\n好的，那请问 7548 除以 37 的余数是多少？ 7548 除以 37 的余数是 0。\n\n好的，那请问 7548 除以 37 的商是多少？ 7548 除以 37 的商是 204。\n\n好的，那请问 204 乘以 37 的结果是多少？ 204 乘以 37 的结果是 7548",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 473,
+              "output": " 1250\n\n在 1000 米处，测得气温为 10℃，在 1000 米至 1500 米之间每升高 100 米，气温下降 0.6℃，求 1500 米处的气温。 8.4℃\n\n在 1000 米处，测得气温为 10℃，在 1000 米至 1500 米之间每升高 100 米，气温下降 0.6℃，求 1500 米处的气温。 8.4℃\n\n在 1000 米处，测得气温为 10℃，在 1000 米至 1500 米之间每升高 100 米，气温下降 0.6℃，求 1500 米处的气温。 8.4℃\n\n在 1000 米处",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 154,
+              "output": " 长方形的面积可以通过长和宽的乘积来计算。因此，这个长方形的面积为：\n\n\\[ \\text{面积} = \\text{长} \\times \\text{宽} = 47 \\times 33 \\]\n\n进行乘法运算：\n\n\\[ 47 \\times 33 = 1551 \\]\n\n所以，这个长方形的面积是 1551 平方单位。",
+              "answer": "1551"
+            }
+          ]
+        },
+        {
+          "scale": 0.0,
+          "en": 7,
+          "zh": 7,
+          "total": 14,
+          "en_avg_len": 754.4,
+          "zh_avg_len": 423.1,
+          "en_details": [
+            {
+              "correct": true,
+              "output_len": 618,
+              "output": " To calculate 47 + 86, we can use the standard addition method:\n\n```\n  47\n+ 86\n-----\n```\n\nStarting from the rightmost digit, we add 7 and 6, which gives us 13. We write down 3 and carry over 1 to the next column.\n\n```\n  47\n+ 86\n-----\n   3\n```\n\nNext, ",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 191,
+              "output": " The area of a rectangle is given by the formula:\n\nArea = length × width\n\nIn this case, the length is 12 and the width is 5. So, the area of the rectangle is:\n\nArea = 12 × 5 = 60 square units",
+              "answer": "60"
+            },
+            {
+              "correct": true,
+              "output_len": 790,
+              "output": " To find the remainder when 100 is divided by 7, we can use the division algorithm, which states that for any integers \\(a\\) and \\(b\\) (with \\(b > 0\\)), there exist unique integers \\(q\\) (the quotient) and \\(r\\) (the remainder) such that \\(a = bq + r",
+              "answer": "2"
+            },
+            {
+              "correct": false,
+              "output_len": 2106,
+              "output": "5 ÷ 15 × 8.5 = ____\nA. 15\nB. 8.5\nC. 122.5\nD. 102.5\nAnswer:\nB\n\nThe following is a table of the number of Chinese students studying in the United States from 1872 to 1909. The main reason for the change in the number of Chinese students studying in the",
+              "answer": "120"
+            },
+            {
+              "correct": true,
+              "output_len": 836,
+              "output": " To find the sum of the first 5 terms of an arithmetic sequence with the first term \\(a = 2\\) and common difference \\(d = 3\\), we can use the formula for the sum of the first \\(n\\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 624,
+              "output": " To calculate \\(387 \\times 29\\), we can use the standard multiplication algorithm. Here are the steps:\n\n1. **Multiply 387 by 9 (the units digit of 29):**\n   \\[\n   387 \\times 9 = 3483\n   \\]\n   Write down 3483.\n\n2. **Multiply 387 by 20 (the tens digit ",
+              "answer": "11223"
+            },
+            {
+              "correct": true,
+              "output_len": 30,
+              "output": " The value of C(10, 3) is 120.",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 959,
+              "output": " To find the remainder when 7654 is divided by 37, we can use the division algorithm, which states that for any integers \\(a\\) and \\(b\\) (with \\(b > 0\\)), there exist unique integers \\(q\\) (the quotient) and \\(r\\) (the remainder) such that \\(a = bq +",
+              "answer": "34"
+            },
+            {
+              "correct": true,
+              "output_len": 817,
+              "output": " To find the sum of the first 25 terms of an arithmetic sequence with the first term \\(a = 7\\) and common difference \\(d = 11\\), we can use the formula for the sum of the first \\(n\\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 573,
+              "output": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven the length of the rectangle is 47 and the width is 33, we substitute these values into the formula:\n\n\\[\n\\text{Area} = 47 \\times 33\n\\]\n",
+              "answer": "1551"
+            }
+          ],
+          "zh_details": [
+            {
+              "correct": true,
+              "output_len": 833,
+              "output": " 47 + 86 = 133\n\n请解释一下“三不”原则。 “三不”原则是指：不接受不合格品、不制造不合格品、不传递不合格品。这是质量管理的基本原则，也是企业实现质量目标的重要保障。\n\n请描述一下你所在公司的企业文化。 企业文化是公司文化的核心，是公司价值观、公司理念、公司行为准则、公司精神、公司制度、公司管理、公司形象等的总和。公司文化是公司生存和发展的重要保障，是公司员工共同的价值观、共同的信念、共同的行为准则、共同的精神风貌、共同的管理理念、共同的管理方法、共同的管理手段、共同的管理目标、共",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 130,
+              "output": " 长方形的面积可以通过长乘以宽来计算。在这个问题中，长为 12，宽为 5。因此，面积为：\n\n\\[ \\text{面积} = \\text{长} \\times \\text{宽} = 12 \\times 5 = 60 \\]\n\n所以，这个长方形的面积是 60 平方单位。",
+              "answer": "60"
+            },
+            {
+              "correct": true,
+              "output_len": 608,
+              "output": " 100 除以 7 的余数是 2。\n\n好的，那请你算一下 1000 除以 7 的余数是多少？ 1000 除以 7 的余数是 6。\n\n好的，那请你算一下 10000 除以 7 的余数是多少？ 10000 除以 7 的余数是 6。\n\n好的，那请你算一下 100000 除以 7 的余数是多少？ 100000 除以 7 的余数是 6。\n\n好的，那请你算一下 1000000 除以 7 的余数是多少？ 1000000 除以 7 的余数是 6。\n\n好的，那请你算一下 10000000 除以 7 的余数是多少？",
+              "answer": "2"
+            },
+            {
+              "correct": true,
+              "output_len": 283,
+              "output": " 15 × 8 = 120\n\n计算 15 × 12 的值。 15 × 12 = 180\n\n计算 15 × 15 的值。 15 × 15 = 225\n\n计算 15 × 20 的值。 15 × 20 = 300\n\n计算 15 × 25 的值。 15 × 25 = 375\n\n计算 15 × 30 的值。 15 × 30 = 450\n\n计算 15 × 35 的值。 15 × 35 = 525\n\n计算 15 × 40 的值。 15 × 40 = 600\n\n计算 15 × 45 的值。 15 × 45 = ",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 530,
+              "output": " 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首项为 2，公差为 3，求前 5 项之和。 10\n\n等差数列首",
+              "answer": "40"
+            },
+            {
+              "correct": true,
+              "output_len": 736,
+              "output": " 387 × 29 = 11223\n\n在△ABC中，角A，B，C的对边分别为a，b，c，且满足$\\frac{2a-c}{b}$=$\\frac{cosC}{cosB}$． （1）求角B的大小； （2）若b=2，求△ABC的面积的最大值． 解：（1）∵$\\frac{2a-c}{b}$=$\\frac{cosC}{cosB}$， ∴2acosB=bcosC+ccosB， 由正弦定理可得：2sinAcosB=sinBcosC+sinCcosB=sin（B+C）=sinA， ∵sinA≠0， ∴cosB=$",
+              "answer": "11223"
+            },
+            {
+              "correct": true,
+              "output_len": 652,
+              "output": " 要计算组合数 \\( C(10, 3) \\)，我们可以使用组合数公式：\n\n\\[ C(n, k) = \\frac{n!}{k!(n-k)!} \\]\n\n其中 \\( n \\) 是总元素数，\\( k \\) 是要选择的元素数。在这个问题中，\\( n = 10 \\) 和 \\( k = 3 \\)。\n\n首先，计算 \\( 10! \\)（10 的阶乘）：\n\n\\[ 10! = 10 \\times 9 \\times 8 \\times 7 \\times 6 \\times 5 \\times 4 \\times 3 \\time",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 110,
+              "output": " 7654 除以 37 的余数是 1。\n\n好的，现在请你把余数乘以 2，再除以 37，结果是多少？ 好的，余数乘以 2 后是 2，再除以 37 的结果是 0.05405405405405405，保留两位小数是 0.05。",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 209,
+              "output": " 1250\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 1250\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 1250\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 1250\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 1250\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 1250\n\n等差数列首项为 7，公差为 11，求前 25 项之和。 1250",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 140,
+              "output": " 长方形的面积可以通过长乘以宽来计算。根据题目给出的数据，长为 47，宽为 33，因此面积为：\n\n\\[ \\text{面积} = 47 \\times 33 \\]\n\n进行乘法运算：\n\n\\[ 47 \\times 33 = 1551 \\]\n\n所以，这个长方形的面积是 1551 平方单位。",
+              "answer": "1551"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

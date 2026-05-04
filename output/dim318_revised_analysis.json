@@ -1,0 +1,33 @@
+{
+  "dim318_is_backbone_scale": {
+    "finding": "Dim 318 is 70% of the mean direction. The mean direction explains 90% of total variance. The '55% variance explained' is really a NORM ARTIFACT.",
+    "gen_time_spikes": "At gen-time, the backbone fires as 14x norm spikes at problem constraint tokens (2nd list item, first key digit, procedure markers). These spikes are NOT content signals \u2014 they're a fixed-direction activation burst.",
+    "spike_coherence": "All 112 spikes point in cos=0.998 identical direction"
+  },
+  "z_survives_backbone_removal": {
+    "backbone_orthogonal_z_cosine": 0.979,
+    "random_baseline": 0.828,
+    "gap": 0.151,
+    "z_score_vs_random": 2.8,
+    "matched_vs_scrambled_z_score": 5.1,
+    "finding": "Z is REAL but the signal is weaker than previously claimed."
+  },
+  "the_real_signal_is_in_residual": {
+    "matched_residual_cosine": -0.037,
+    "scrambled_residual_cosine": -0.269,
+    "gap": 0.232,
+    "z_score": 6.7,
+    "finding": "In the 10% residual variance (after backbone removal), matched zh-en pairs ARE more aligned than scrambled pairs (z-score 6.7). The cross-lingual signal exists but it's in the RESIDUAL, not the dominant directions."
+  },
+  "revised_effect_size": {
+    "old_claim": "Z-cosine 0.90, gap 0.41 over random",
+    "corrected_claim": "Z-cosine 0.98 (backbone-orthogonal basis), gap 0.15 over random. Matched-vs-scrambled gap 0.002 in Z (z-score 5.1). Residual cosine matched-vs-scrambled gap 0.23 (z-score 6.7).",
+    "interpretation": "Z is real but the effect size was inflated by backbone contamination. The actual signal is: in the backbone-orthogonal residual, same-problem zh/en are modestly more aligned than different-problem pairs. This is statistically significant but the practical effect size is small."
+  },
+  "what_this_means_for_the_paper": {
+    "universal_finding_still_holds": true,
+    "but": "The 0.90 Z-cosine headline was contaminated by backbone. The real cross-lingual alignment signal is in the residual, and it's significant (z=6.7 for matched vs scrambled) but the absolute cosine gap is 0.23, not 0.41.",
+    "dim318_story_changes_completely": "From 'structure detector that fires across all reasoning' to 'leading axis of a norm spike that marks problem constraint tokens'.",
+    "positive_spin": "We discovered two distinct phenomena: (1) a universal backbone direction (shared across models, tasks, languages) that carries scale/norm information and fires at constraint tokens, and (2) a genuine cross-lingual reasoning subspace in the residual orthogonal to the backbone."
+  }
+}

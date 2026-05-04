@@ -1,0 +1,1598 @@
+{
+  "baseline": {
+    "en": {
+      "correct": 3,
+      "total": 20,
+      "mean_fat": 16.333333333333332,
+      "lang_pres": {
+        "zh": 0,
+        "en": 20,
+        "unk": 0
+      },
+      "samples": [
+        {
+          "ans": 7,
+          "ok": true,
+          "fat": 3,
+          "gen": " The value of C(7, 6) is 7."
+        },
+        {
+          "ans": 12,
+          "ok": true,
+          "fat": 6,
+          "gen": " To find the value of \\( C(12, 1) \\), we need to use the formula for combinations, which is given by:\n\n\\[\nC(n, r) = \\fra"
+        },
+        {
+          "ans": 220,
+          "ok": false,
+          "fat": -1,
+          "gen": " The value of C(12, 3) is 220."
+        },
+        {
+          "ans": 35,
+          "ok": false,
+          "fat": -1,
+          "gen": " To find the value of \\( C(7, 3) \\), we need to calculate the number of combinations of 7 items taken 3 at a time. The f"
+        },
+        {
+          "ans": 2025,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Quora\\nAn arithmetic sequence: first term 9, common difference 6. Sum of first 25 terms?\\nAd by The Penny Hoarder\\nSh"
+        },
+        {
+          "ans": 1134,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Quora\\nAn arithmetic sequence: first term 12, common difference 6. Sum of first 18 terms?\\nAd by The Penny Hoarder\\nS"
+        },
+        {
+          "ans": 165,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Brainly.com\\nprofile\\nprofile\\njessicamartinez123\\n04/10/2018\\nMathematics\\nHigh School\\nverified\\nverified\\nanswered"
+        },
+        {
+          "ans": 3564,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Quora\\nAn arithmetic sequence: first term 15, common difference 9. Sum of first 27 terms?\\nAd by The Penny Hoarder\\nS"
+        },
+        {
+          "ans": 14,
+          "ok": false,
+          "fat": -1,
+          "gen": " To find the remainder when 1285 is divided by 31, we can use the division algorithm, which states that for any integers"
+        },
+        {
+          "ans": 11,
+          "ok": false,
+          "fat": -1,
+          "gen": " To find the remainder when 4395 is divided by 32, we can use the modulus operation. The modulus operation (%) gives the"
+        },
+        {
+          "ans": 4,
+          "ok": false,
+          "fat": -1,
+          "gen": " To find the remainder when 85 is divided by 27, we can use the division algorithm, which states that for any integers \\"
+        },
+        {
+          "ans": 10,
+          "ok": false,
+          "fat": -1,
+          "gen": " To find the remainder when 6708 is divided by 34, we can use the modulo operation. The modulo operation gives the remai"
+        },
+        {
+          "ans": 60,
+          "ok": true,
+          "fat": 40,
+          "gen": " The area of a rectangle is given by the formula:\n\nArea = length × width\n\nIn this case, the length is 12 and the width i"
+        },
+        {
+          "ans": 306,
+          "ok": false,
+          "fat": -1,
+          "gen": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that"
+        },
+        {
+          "ans": 1560,
+          "ok": false,
+          "fat": -1,
+          "gen": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that"
+        },
+        {
+          "ans": 392,
+          "ok": false,
+          "fat": -1,
+          "gen": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that"
+        },
+        {
+          "ans": 783090,
+          "ok": false,
+          "fat": -1,
+          "gen": " To calculate \\(990 \\times 791\\), we can use the standard multiplication algorithm. Here are the steps:\n\n1. Write down t"
+        },
+        {
+          "ans": 390,
+          "ok": false,
+          "fat": -1,
+          "gen": " To calculate \\(238 + 152\\), we can break it down into simpler steps by adding the numbers column by column, starting fr"
+        },
+        {
+          "ans": 1312,
+          "ok": false,
+          "fat": -1,
+          "gen": " To calculate \\(556 + 756\\), we can follow these steps:\n\n1. Add the units place digits: \\(6 + 6 = 12\\). Write down 2 and"
+        },
+        {
+          "ans": 1470,
+          "ok": false,
+          "fat": -1,
+          "gen": " To calculate \\(702 + 768\\), we can use the standard addition method. Here are the steps:\n\n1. Add the units place: \\(2 +"
+        }
+      ]
+    },
+    "zh": {
+      "correct": 9,
+      "total": 20,
+      "mean_fat": 11.88888888888889,
+      "lang_pres": {
+        "zh": 16,
+        "en": 1,
+        "unk": 3
+      },
+      "samples": [
+        {
+          "ans": 7,
+          "ok": true,
+          "fat": 15,
+          "gen": " 组合数 C(n, k) 表示从 n 个不同元素中取出 k 个元素的组合数，其计算公式为：\n\n\\[ C(n, k) = \\frac{n!}{k!(n-k)!} \\]\n\n对于 C(7, 6)，我们有：\n\n\\[ C(7, 6) = \\frac{"
+        },
+        {
+          "ans": 12,
+          "ok": true,
+          "fat": 28,
+          "gen": " 组合数 C(n, k) 表示从 n 个不同元素中选取 k 个元素的组合数，其计算公式为：\n\n\\[ C(n, k) = \\frac{n!}{k!(n-k)!} \\]\n\n其中，n! 表示 n 的阶乘，即 n × (n-1) × (n-2) ×"
+        },
+        {
+          "ans": 220,
+          "ok": false,
+          "fat": -1,
+          "gen": " 组合数 C(n, k) 表示从 n 个不同元素中选取 k 个元素的组合数，其计算公式为：\n\nC(n, k) = n! / (k! * (n - k)!)\n\n其中，n! 表示 n 的阶乘，即 n * (n - 1) * (n - 2) * "
+        },
+        {
+          "ans": 35,
+          "ok": false,
+          "fat": -1,
+          "gen": " 组合数 C(7, 3) 表示从 7 个元素中选取 3 个元素的组合数，其计算公式为：\n\nC(n, k) = n! / (k! * (n - k)!)\n\n其中，n! 表示 n 的阶乘，即 n * (n - 1) * (n - 2) * .."
+        },
+        {
+          "ans": 2025,
+          "ok": false,
+          "fat": -1,
+          "gen": " 1250\n\n在《红楼梦》中，贾宝玉的表妹是（ ） 贾元春\n\n《红楼梦》中，贾宝玉的表妹是（ ） 贾元春\n\n《红楼梦》中，贾宝玉的表妹是（ ） 贾元春\n\n《红楼梦》中，贾宝玉的表妹是（ ） 贾元春\n\n《红楼梦》中，贾宝玉的表妹是（ ） 贾元"
+        },
+        {
+          "ans": 1134,
+          "ok": false,
+          "fat": -1,
+          "gen": " 首项 a1=12，公差 d=6，项数 n=18，求前 18 项之和 Sn。\n\n解：Sn=n/2(a1+an) =18/2(12+12+18×6) =9(12+12+108) =9×132 =1188\n\n已知等差数列{an}的前 n 项和为"
+        },
+        {
+          "ans": 165,
+          "ok": false,
+          "fat": -1,
+          "gen": " 首项为 5，公差为 9 的等差数列的前 6 项之和可以使用等差数列求和公式来计算。等差数列的求和公式为：\n\n\\[ S_n = \\frac{n}{2} (2a + (n-1)d) \\]\n\n其中 \\( S_n \\) 是前 \\( n \\) 项的"
+        },
+        {
+          "ans": 3564,
+          "ok": false,
+          "fat": -1,
+          "gen": " 15+9=24，24×27÷2=378\n\n在等差数列{an}中，a1=1，a3=5，则a5=（ ） . A、 7 B、 8 C、 9 D、 10 C .\n\n10. 1949 年 10 月 1 日，毛泽东在天安门城楼上宣布中华人民共和国成立"
+        },
+        {
+          "ans": 14,
+          "ok": false,
+          "fat": -1,
+          "gen": " 1285 除以 31 的余数是 23。\n\n好的，那请你算一下 1285 乘以 31 的结果是多少？ 1285 乘以 31 的结果是 39835。\n\n现在请你把 39835 除以 31 的余数告诉我。 39835 除以 31 的余数是 23"
+        },
+        {
+          "ans": 11,
+          "ok": false,
+          "fat": -1,
+          "gen": " 4395 除以 32 的余数是 19。\n\n好的，现在请你将 4395 乘以 32，然后将结果除以 32，看看结果是多少。 4395 乘以 32 的结果是 139840，然后将 139840 除以 32，结果是 4370。\n\n好的，现在请你"
+        },
+        {
+          "ans": 4,
+          "ok": false,
+          "fat": -1,
+          "gen": " 85 除以 27 的余数是 11。\n\n好的，现在请你将 11 乘以 27，再将结果除以 85，得到的余数是多少？ 11 乘以 27 等于 297，297 除以 85 等于 3 余 42，所以余数是 42。\n\n好的，现在请你将 42 乘以 "
+        },
+        {
+          "ans": 10,
+          "ok": false,
+          "fat": -1,
+          "gen": " 6708 除以 34 的余数是 20。\n\n好的，那请你再算一下 6708 除以 34 的商是多少？ 6708 除以 34 的商是 197。\n\n现在请你把 6708 乘以 34 的结果告诉我。 6708 乘以 34 的结果是 227992。"
+        },
+        {
+          "ans": 60,
+          "ok": true,
+          "fat": 14,
+          "gen": " 长方形的面积可以通过长乘以宽来计算。在这个问题中，长为 12，宽为 5。因此，面积为：\n\n\\[ \\text{面积} = \\text{长} \\times \\text{宽} = 12 \\times 5 = 60 \\]\n\n所以，这个长方形的面积"
+        },
+        {
+          "ans": 306,
+          "ok": true,
+          "fat": 14,
+          "gen": " 长方形的面积可以通过长乘以宽来计算。在这个问题中，长为 17，宽为 18。因此，面积为：\n\n\\[ \\text{面积} = 17 \\times 18 \\]\n\n计算结果为：\n\n\\[ \\text{面积} = 306 \\]\n\n所以，这个长方形的面"
+        },
+        {
+          "ans": 1560,
+          "ok": true,
+          "fat": 10,
+          "gen": " 长方形的面积可以通过长乘以宽来计算。在这个问题中，长为 39，宽为 40。因此，面积为：\n\n\\[ \\text{面积} = 39 \\times 40 = 1560 \\]\n\n所以，这个长方形的面积是 1560 平方单位。"
+        },
+        {
+          "ans": 392,
+          "ok": true,
+          "fat": 14,
+          "gen": " 长方形的面积可以通过长乘以宽来计算。在这个问题中，长为 8，宽为 49。因此，面积为：\n\n\\[ \\text{面积} = 8 \\times 49 \\]\n\n计算结果为：\n\n\\[ \\text{面积} = 392 \\]\n\n所以，这个长方形的面积是"
+        },
+        {
+          "ans": 783090,
+          "ok": false,
+          "fat": -1,
+          "gen": " 990 × 791 = 782190\n\n计算 990 × 791 的值。 990 × 791 = 782190\n\n计算 990 × 791 的值。 990 × 791 = 782190\n\n计算 990 × 791 的值。 990 × 79"
+        },
+        {
+          "ans": 390,
+          "ok": true,
+          "fat": 4,
+          "gen": " 238 + 152 = 390"
+        },
+        {
+          "ans": 1312,
+          "ok": true,
+          "fat": 4,
+          "gen": " 556 + 756 = 1312"
+        },
+        {
+          "ans": 1470,
+          "ok": true,
+          "fat": 4,
+          "gen": " 702 + 768 = 1470"
+        }
+      ]
+    }
+  },
+  "project_1d": {
+    "en": {
+      "correct": 5,
+      "total": 20,
+      "mean_fat": 13.2,
+      "lang_pres": {
+        "zh": 0,
+        "en": 20,
+        "unk": 0
+      },
+      "samples": [
+        {
+          "ans": 7,
+          "ok": true,
+          "fat": 0,
+          "gen": " C(7, 6) is the number of ways to choose 6 items from a set of 7 items without regard to order. This is also known as a "
+        },
+        {
+          "ans": 12,
+          "ok": true,
+          "fat": 6,
+          "gen": " To find the value of \\( C(12, 1) \\), we need to understand what the combination formula \\( C(n, k) \\) represents. The c"
+        },
+        {
+          "ans": 220,
+          "ok": false,
+          "fat": -1,
+          "gen": " C(12, 3) is the number of ways to choose 3 items from a set of 12 items without regard to order. This can be calculated"
+        },
+        {
+          "ans": 35,
+          "ok": false,
+          "fat": -1,
+          "gen": " To find the value of \\( C(7, 3) \\), we need to calculate the binomial coefficient, which is given by the formula:\n\n\\[\nC"
+        },
+        {
+          "ans": 2025,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Brainly.com\\nprofile\\nprofile\\nmikayla1234567890\\n05/10/2020\\nMathematics\\nHigh School\\nverified\\nverified\\nanswered "
+        },
+        {
+          "ans": 1134,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Brainly.com\\nprofile\\nprofile\\njessicamiller123\\n05/11/2020\\nMathematics\\nHigh School\\nverified\\nverified\\nanswered •"
+        },
+        {
+          "ans": 165,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Brainly.com\\nprofile\\nprofile\\njessicamiller123\\n05/02/2020\\nMathematics\\nMiddle School\\nanswer\\nanswer\\nanswered\\nAn"
+        },
+        {
+          "ans": 3564,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Brainly.com\\nprofile\\nprofile\\njessicamiller123\\n05/11/2020\\nMathematics\\nHigh School\\nverified\\nverified\\nanswered •"
+        },
+        {
+          "ans": 14,
+          "ok": false,
+          "fat": -1,
+          "gen": " To find the remainder when 1285 is divided by 31, we can use the division algorithm, which states that for any integers"
+        },
+        {
+          "ans": 11,
+          "ok": false,
+          "fat": -1,
+          "gen": " To find the remainder when 4395 is divided by 32, we can use the modulo operation. The modulo operation (%) gives the r"
+        },
+        {
+          "ans": 4,
+          "ok": false,
+          "fat": -1,
+          "gen": " To find the remainder when 85 is divided by 27, we can use the division algorithm, which states that for any integers \\"
+        },
+        {
+          "ans": 10,
+          "ok": false,
+          "fat": -1,
+          "gen": " To find the remainder when 6708 is divided by 34, we can use the modulo operation. The modulo operation (%) gives the r"
+        },
+        {
+          "ans": 60,
+          "ok": true,
+          "fat": 52,
+          "gen": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven the "
+        },
+        {
+          "ans": 306,
+          "ok": false,
+          "fat": -1,
+          "gen": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that"
+        },
+        {
+          "ans": 1560,
+          "ok": false,
+          "fat": -1,
+          "gen": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that"
+        },
+        {
+          "ans": 392,
+          "ok": false,
+          "fat": -1,
+          "gen": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven the "
+        },
+        {
+          "ans": 783090,
+          "ok": false,
+          "fat": -1,
+          "gen": " To calculate \\(990 \\times 791\\), we can use the standard multiplication algorithm. Here are the steps:\n\n1. Write down t"
+        },
+        {
+          "ans": 390,
+          "ok": true,
+          "fat": 4,
+          "gen": " 238 + 152 = 390\n\nCalculate 238 + 152. 238 + 152 = 390\n\nCalculate 238 + 152. 238 + 152 = 390\n\nCalculate 238 + 152. 238 +"
+        },
+        {
+          "ans": 1312,
+          "ok": false,
+          "fat": -1,
+          "gen": " To calculate \\(556 + 756\\), we can follow these steps:\n\n1. **Align the numbers by their place values:**\n   \\[\n   \\begin"
+        },
+        {
+          "ans": 1470,
+          "ok": true,
+          "fat": 4,
+          "gen": " 702 + 768 = 1470\n\nCalculate 702 + 768. 702 + 768 = 1470\n\nCalculate 702 + 768. 702 + 768 = 1470\n\nCalculate 702 + 768. 70"
+        }
+      ]
+    },
+    "zh": {
+      "correct": 13,
+      "total": 20,
+      "mean_fat": 7.0,
+      "lang_pres": {
+        "zh": 20,
+        "en": 0,
+        "unk": 0
+      },
+      "samples": [
+        {
+          "ans": 7,
+          "ok": true,
+          "fat": 0,
+          "gen": " 7! / (6! * (7-6)!) = 7! / (6! * 1!) = 7 / 1 = 7\n\n求组合数 C(7, 6) 的值。 7! / (6! * (7-6)!) = 7! / (6! * 1!) = 7 / 1 = 7\n\n求组合数"
+        },
+        {
+          "ans": 12,
+          "ok": true,
+          "fat": 0,
+          "gen": " 12! / (1! * (12 - 1)!) = 12! / (1! * 11!) = 12 * 11! / (11!) = 12\n\n求组合数 C(12, 1) 的值。 12! / (1! * (12 - 1)!) = 12! / (1!"
+        },
+        {
+          "ans": 220,
+          "ok": true,
+          "fat": 6,
+          "gen": " 12! / (3! * (12-3)!) = 220\n\n求组合数 C(10, 5) 的值。 10! / (5! * (10-5)!) = 252\n\n求组合数 C(15, 4) 的值。 15! / (4! * (15-4)!) = 1365"
+        },
+        {
+          "ans": 35,
+          "ok": true,
+          "fat": 5,
+          "gen": " 10\n\n求组合数 C(7, 3) 的值。 35\n\n求组合数 C(7, 3) 的值。 35\n\n求组合数 C(7, 3) 的值。 35\n\n求组合数 C(7, 3) 的值。 35\n\n求组合数 C(7, 3) 的值。 35"
+        },
+        {
+          "ans": 2025,
+          "ok": false,
+          "fat": -1,
+          "gen": " 1250\n\n在《红楼梦》中，贾宝玉的丫鬟有（ ） A：晴雯 B：袭人 C：紫鹃 D：平儿 E：芳官 ABCD\n\n《红楼梦》中，贾宝玉的丫鬟有（ ） A：晴雯 B：袭人 C：紫鹃 D：平儿 E：芳官 ABCD\n\n《红楼梦》中，贾宝玉的丫鬟有"
+        },
+        {
+          "ans": 1134,
+          "ok": true,
+          "fat": 0,
+          "gen": " 18×12+18×17×6÷2=18×（12+17×3）=18×63=1134\n\n1949年10月1日，中华人民共和国成立，标志着中国新民主主义革命的胜利。 错误：______ 改正：______。 1949年10月1日，中华人民共和国成"
+        },
+        {
+          "ans": 165,
+          "ok": false,
+          "fat": -1,
+          "gen": " 105\n\n等差数列首项为 5，公差为 9，求第 10 项。 95\n\n等差数列首项为 5，公差为 9，求第 10 项。 95\n\n等差数列首项为 5，公差为 9，求第 10 项。 95\n\n等差数列首项为 5，公差为 9，求第 10 项。 95"
+        },
+        {
+          "ans": 3564,
+          "ok": false,
+          "fat": -1,
+          "gen": " 15+27×9=270\n\n等差数列首项为 15，公差为 9，求前 27 项之和。 15+27×9=270\n\n等差数列首项为 15，公差为 9，求前 27 项之和。 15+27×9=270\n\n等差数列首项为 15，公差为 9，求前 27 项"
+        },
+        {
+          "ans": 14,
+          "ok": false,
+          "fat": -1,
+          "gen": " 1285 除以 31 的余数是 23。\n\n好的，那请你算一下 1285 乘以 31 的结果是多少？ 1285 乘以 31 的结果是 39835。\n\n好的，那请你算一下 39835 除以 31 的余数是多少？ 39835 除以 31 的余数"
+        },
+        {
+          "ans": 11,
+          "ok": false,
+          "fat": -1,
+          "gen": " 4395 除以 32 的余数是 19。\n\n好的，那请你算一下 4395 乘以 32 的结果是多少？ 4395 乘以 32 的结果是 139840。\n\n现在请你把 139840 除以 32 的余数告诉我。 139840 除以 32 的余数是"
+        },
+        {
+          "ans": 4,
+          "ok": false,
+          "fat": -1,
+          "gen": " 85 除以 27 的余数是 11 。\n\n请解释一下“三不”原则是什么？ “三不”原则是指：不接受不合格品、不制造不合格品、不流出不合格品。这是质量管理中的一项基本原则，旨在确保产品质量和生产过程的稳定性。\n\n请提供一份关于“中国农业银行”"
+        },
+        {
+          "ans": 10,
+          "ok": false,
+          "fat": -1,
+          "gen": " 6708 除以 34 的余数是 20。\n\n好的，那请你算一下 6708 乘以 34 的结果是多少？ 6708 乘以 34 的结果是 227992。\n\n现在请你把 227992 除以 34 的余数告诉我。 227992 除以 34 的余数是"
+        },
+        {
+          "ans": 60,
+          "ok": true,
+          "fat": 14,
+          "gen": " 长方形的面积可以通过长乘以宽来计算。在这个问题中，长为 12，宽为 5。因此，面积为：\n\n\\[ \\text{面积} = \\text{长} \\times \\text{宽} = 12 \\times 5 = 60 \\]\n\n所以，这个长方形的面积"
+        },
+        {
+          "ans": 306,
+          "ok": true,
+          "fat": 10,
+          "gen": " 长方形的面积可以通过长乘以宽来计算。在这个问题中，长为 17，宽为 18。因此，面积为：\n\n\\[ \\text{面积} = 17 \\times 18 = 306 \\]\n\n所以，这个长方形的面积是 306 平方单位。"
+        },
+        {
+          "ans": 1560,
+          "ok": true,
+          "fat": 10,
+          "gen": " 长方形的面积可以通过长乘以宽来计算。在这个问题中，长为 39，宽为 40。因此，面积为：\n\n\\[ \\text{面积} = 39 \\times 40 = 1560 \\]\n\n所以，这个长方形的面积是 1560 平方单位。"
+        },
+        {
+          "ans": 392,
+          "ok": true,
+          "fat": 10,
+          "gen": " 长方形的面积可以通过长乘以宽来计算。在这个问题中，长为 8，宽为 49。因此，面积为：\n\n\\[ \\text{面积} = 8 \\times 49 = 392 \\]\n\n所以，这个长方形的面积是 392 平方单位。"
+        },
+        {
+          "ans": 783090,
+          "ok": true,
+          "fat": 24,
+          "gen": " 990 × 791 = 791 × ( 1000 − 10 ) = 791 × 1000 − 791 × 10 = 791000 − 7910 = 783090\n\n阅读下面的文字，完成下列各题。 ①“中国式过马路”是网友对部分国人集体闯红"
+        },
+        {
+          "ans": 390,
+          "ok": true,
+          "fat": 4,
+          "gen": " 238 + 152 = 390\n\n计算 238 + 152 的值。 238 + 152 = 390\n\n计算 238 + 152 的值。 238 + 152 = 390\n\n计算 238 + 152 的值。 238 + 152 = 390\n\n"
+        },
+        {
+          "ans": 1312,
+          "ok": true,
+          "fat": 4,
+          "gen": " 556 + 756 = 1312\n\n计算 556 + 756 的值。 556 + 756 = 1312\n\n计算 556 + 756 的值。 556 + 756 = 1312\n\n计算 556 + 756 的值。 556 + 756 = 13"
+        },
+        {
+          "ans": 1470,
+          "ok": true,
+          "fat": 4,
+          "gen": " 702 + 768 = 1470\n\n计算 702 + 768 的值。 702 + 768 = 1470\n\n计算 702 + 768 的值。 702 + 768 = 1470\n\n计算 702 + 768 的值。 702 + 768 = 14"
+        }
+      ]
+    }
+  },
+  "project_3d": {
+    "en": {
+      "correct": 5,
+      "total": 20,
+      "mean_fat": 5.4,
+      "lang_pres": {
+        "zh": 0,
+        "en": 18,
+        "unk": 2
+      },
+      "samples": [
+        {
+          "ans": 7,
+          "ok": true,
+          "fat": 0,
+          "gen": " C(7, 6) is the number of ways to choose 6 items from a set of 7 items, without regard to order. This is also known as a"
+        },
+        {
+          "ans": 12,
+          "ok": true,
+          "fat": 0,
+          "gen": " C(12, 1) is the number of ways to choose 1 item from a set of 12 items. This is calculated as:\n\nC(12, 1) = 12! / (1! * "
+        },
+        {
+          "ans": 220,
+          "ok": true,
+          "fat": 27,
+          "gen": " C(12, 3) = 12! / (3! * (12-3)!) = 12! / (3! * 9!) = (12 * 11 * 10) / (3 * 2 * 1) = 220"
+        },
+        {
+          "ans": 35,
+          "ok": false,
+          "fat": -1,
+          "gen": " 7P3 = 7!/(7-3)! = 7!/4! = 7*6*5 = 210. 7P3 = 7C3 = 7!/(7-3)!*3! = 7!/4!*3! = 7*6*5/3*2*1 = 35. 7P3 = 7C3 = 7!/(7-3)!*3!"
+        },
+        {
+          "ans": 2025,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Brainly.in\\nprofile\\nprofile\\nsahil1234567890\\n08.07.2020\\nMath\\nSecondary School\\nanswer\\nanswer\\nanswered\\nAn arith"
+        },
+        {
+          "ans": 1134,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Brainly.in\\nprofile\\nprofile\\nsahil1234567890\\n02.07.2020\\nMath\\nSecondary School\\nanswer\\nanswer\\nanswered\\nAn arith"
+        },
+        {
+          "ans": 165,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Brainly.com\\nprofile\\nprofile\\nmikayla1234567890\\n03/01/2020\\nMathematics\\nMiddle School\\nverified\\nverified\\nanswere"
+        },
+        {
+          "ans": 3564,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Brainly.in\\nprofile\\nprofile\\nsahil1234567890\\n04.07.2020\\nMath\\nSecondary School\\nanswer\\nanswer\\nanswered\\nAn arith"
+        },
+        {
+          "ans": 14,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Answers\\nMath and Arithmetic\\nWhat is the remainder when 1285 is divided by 31?\\nWiki User\\n∙ 2011-02-14 19:49:40\\nSt"
+        },
+        {
+          "ans": 11,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Answers\\nMath and Arithmetic\\nWhat is the remainder when 4395 is divided by 32?\\nWiki User\\n∙ 2011-01-10 19:20:49\\nSt"
+        },
+        {
+          "ans": 4,
+          "ok": false,
+          "fat": -1,
+          "gen": " 85 divided by 27 is 3 with a remainder of 14."
+        },
+        {
+          "ans": 10,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Answers\\nMath and Arithmetic\\nWhat is the remainder when 6708 is divided by 34?\\nWiki User\\n∙ 2011-03-08 19:00:00\\nSt"
+        },
+        {
+          "ans": 60,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Brainly.com\\nprofile\\nprofile\\nmikayla1234567890\\n03/01/2020\\nMathematics\\nMiddle School\\nverified\\nverified\\nanswere"
+        },
+        {
+          "ans": 306,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Brainly.com\\nprofile\\nprofile\\nmikayla1234567890\\n03/03/2020\\nMathematics\\nMiddle School\\nverified\\nverified\\nanswere"
+        },
+        {
+          "ans": 1560,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Brainly.com\\nprofile\\nprofile\\nmikayla1234567890\\n03/09/2020\\nMathematics\\nMiddle School\\nverified\\nverified\\nanswere"
+        },
+        {
+          "ans": 392,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Brainly.com\\nprofile\\nprofile\\nmikayla1234567890\\n03/10/2020\\nMathematics\\nMiddle School\\nverified\\nverified\\nanswere"
+        },
+        {
+          "ans": 783090,
+          "ok": false,
+          "fat": -1,
+          "gen": " 990 × 791 = 783,090."
+        },
+        {
+          "ans": 390,
+          "ok": true,
+          "fat": 0,
+          "gen": " 390\nQuestion\nRating\n\nQuestions asked by the same visitor\nCalculate 238 + 152. 390 390 390 390\nWeegy: 390 (More)\nQuestio"
+        },
+        {
+          "ans": 1312,
+          "ok": true,
+          "fat": 0,
+          "gen": " 1312\nCalculate 556 + 756. 1312\n1312\n1312\n1312\n1312\n1312\n1312\n1312\n1312\n1312\n1312\n1312\n1312\n1312\n1312\n1312\n1312\n1312\n131"
+        },
+        {
+          "ans": 1470,
+          "ok": false,
+          "fat": -1,
+          "gen": " 1570."
+        }
+      ]
+    },
+    "zh": {
+      "correct": 11,
+      "total": 20,
+      "mean_fat": 5.363636363636363,
+      "lang_pres": {
+        "zh": 17,
+        "en": 0,
+        "unk": 3
+      },
+      "samples": [
+        {
+          "ans": 7,
+          "ok": true,
+          "fat": 0,
+          "gen": " 7\n\n求组合数 C(7, 6) 的值。 7\n\n求组合数 C(7, 6) 的值。 7\n\n求组合数 C(7, 6) 的值。 7\n\n求组合数 C(7, 6) 的值。 7\n\n求组合数 C(7, 6) 的值。 7"
+        },
+        {
+          "ans": 12,
+          "ok": true,
+          "fat": 0,
+          "gen": " 12\n\n在进行电气设备的绝缘试验时，应尽量将电气设备的接线端子与接地线分开。____\nA. 正确\nB. 错误\n答案:\nA\n\n在进行电气设备的绝缘试验时，应尽量将电气设备的接线端子与接地线分开。____\nA. 正确\nB. 错误\n答案:\nA\n"
+        },
+        {
+          "ans": 220,
+          "ok": true,
+          "fat": 11,
+          "gen": " 12! / (3! * (12-3)!)\n\n12! / (3! * 9!) = 220\n\n求组合数 C(12, 3) 的值。 12! / (3! * (12-3)!) = 220\n\n求组合数 C(12, 3) 的值。 12! / (3! "
+        },
+        {
+          "ans": 35,
+          "ok": false,
+          "fat": -1,
+          "gen": " 7! / (3! * (7-3)!)\n\n100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "ans": 2025,
+          "ok": false,
+          "fat": -1,
+          "gen": "_百度知道\\n等差数列首项为 9，公差为 6，求前 25 项之和。\\n 我来答\\n分享\\n复制链接\\nhttp://zhidao.baidu.com/question/1885811110989911068\\n新浪微博\\n微信扫一扫\\n举"
+        },
+        {
+          "ans": 1134,
+          "ok": false,
+          "fat": -1,
+          "gen": "_百度知道\\n等差数列首项为 12，公差为 6，求前 18 项之和。\\n 我来答\\n分享\\n复制链接\\nhttp://zhidao.baidu.com/question/189510100\\n新浪微博\\n微信扫一扫\\n举报\\n可选中1个或"
+        },
+        {
+          "ans": 165,
+          "ok": false,
+          "fat": -1,
+          "gen": " - 知乎\\n等差数列首项为 5，公差为 9，求前 6 项之和。\\n​ 写回答\\n等差数列\\n等差数列首项为 5，公差为 9，求前 6 项之和。\\n关注者\\n1\\n被浏览\\n1,001\\n关注问题\\n​ 写回答\\n​ 邀请回答\\n​ 好问题"
+        },
+        {
+          "ans": 3564,
+          "ok": false,
+          "fat": -1,
+          "gen": "_百度知道\\n等差数列首项为 15，公差为 9，求前 27 项之和。\\n 我来答\\n分享\\n复制链接\\nhttp://zhidao.baidu.com/question/189980100\\n新浪微博\\n微信扫一扫\\n举报\\n可选中1个或"
+        },
+        {
+          "ans": 14,
+          "ok": false,
+          "fat": -1,
+          "gen": "\\n1285 除以 31 的余数是多少？\\n2019-08-16 10:52:00 评论\\n1285 除以 31 的余数是多少？\\n1285 除以 31 的余数是多少？\\n1285 除以 31 的余数是多少？\\n1285 除以 31 的余数"
+        },
+        {
+          "ans": 11,
+          "ok": false,
+          "fat": -1,
+          "gen": "\\n4395 除以 32 的余数是多少？\\n2021-03-21\\n4395 除以 32 的余数是多少？\\n4395 除以 32 的余数是多少？\\n4395 除以 32 的余数是多少？\\n4395 除以 32 的余数是多少？\\n4395 除"
+        },
+        {
+          "ans": 4,
+          "ok": false,
+          "fat": -1,
+          "gen": "\\n85 除以 27 的余数是多少？\\n2019-07-10 11:00:00\\n85 除以 27 的余数是多少？\\n85 除以 27 的余数是多少？\\n85 除以 27 的余数是多少？\\n85 除以 27 的余数是多少？\\n85 除以 2"
+        },
+        {
+          "ans": 10,
+          "ok": false,
+          "fat": -1,
+          "gen": "\\n6708 除以 34 的余数是多少？\\n2021-03-25\\n6708 除以 34 的余数是多少？\\n6708 除以 34 的余数是多少？\\n6708 除以 34 的余数是多少？\\n6708 除以 34 的余数是多少？\\n6708 除"
+        },
+        {
+          "ans": 60,
+          "ok": true,
+          "fat": 4,
+          "gen": " 12 x 5 = 60\n\n好的，现在请你计算一下这个长方形的周长。 2 x (12 + 5) = 34\n\n很好，现在请你计算一下这个长方形的对角线长度。 对角线长度 = √(12^2 + 5^2) = 13\n\n非常好，现在请你计算一下这个"
+        },
+        {
+          "ans": 306,
+          "ok": true,
+          "fat": 4,
+          "gen": " 17 x 18 = 306\n\n好的，现在请你计算一下这个长方形的周长。 2 x (17 + 18) = 70\n\n很好，现在请你将这个长方形的面积和周长都乘以2。 面积为 306 x 2 = 612，周长为 70 x 2 = 140\n\n好的"
+        },
+        {
+          "ans": 1560,
+          "ok": true,
+          "fat": 4,
+          "gen": " 39 x 40 = 1560\n\n好的，现在请你计算一下这个长方形的周长。 2 x (39 + 40) = 158\n\n很好，现在请你将这个长方形的面积和周长都乘以2。 面积：1560 x 2 = 3120\n周长：158 x 2 = 316\n"
+        },
+        {
+          "ans": 392,
+          "ok": true,
+          "fat": 4,
+          "gen": " 8 x 49 = 392\n\n好的，现在请你计算一下这个长方形的周长。 2 x (8 + 49) = 116\n\n很好，现在请你将这个长方形的面积和周长都乘以2。 面积为 392 x 2 = 784，周长为 116 x 2 = 232\n\n好的"
+        },
+        {
+          "ans": 783090,
+          "ok": true,
+          "fat": 24,
+          "gen": " 990 × 791 = 791 × ( 1000 − 10 ) = 791 × 1000 − 791 × 10 = 791000 − 7910 = 783090\n\n阅读下面的文言文，完成下列各题。 陈太丘与友期行 陈太丘与友期行，期日中，"
+        },
+        {
+          "ans": 390,
+          "ok": true,
+          "fat": 0,
+          "gen": " 390\n\n计算 238 + 152 的值。 390\n\n计算 238 + 152 的值。 390\n\n计算 238 + 152 的值。 390\n\n计算 238 + 152 的值。 390"
+        },
+        {
+          "ans": 1312,
+          "ok": true,
+          "fat": 4,
+          "gen": " 556 + 756 = 1312"
+        },
+        {
+          "ans": 1470,
+          "ok": true,
+          "fat": 4,
+          "gen": " 702 + 768 = 1470"
+        }
+      ]
+    }
+  },
+  "project_5d": {
+    "en": {
+      "correct": 5,
+      "total": 20,
+      "mean_fat": 2.4,
+      "lang_pres": {
+        "zh": 0,
+        "en": 18,
+        "unk": 2
+      },
+      "samples": [
+        {
+          "ans": 7,
+          "ok": true,
+          "fat": 0,
+          "gen": " C(7, 6) is the number of ways to choose 6 items from a set of 7 items, which is equal to 7."
+        },
+        {
+          "ans": 12,
+          "ok": true,
+          "fat": 0,
+          "gen": " C(12, 1) is the number of ways to choose 1 item from a set of 12 items. This is calculated as:\n\nC(12, 1) = 12! / (1! * "
+        },
+        {
+          "ans": 220,
+          "ok": true,
+          "fat": 12,
+          "gen": " 12C3=12!/3!(12-3)! = 12!/3!9! = 12*11*10*9!/3!9! = 12*11*10/3! = 12*11*10/3*2*1 = 12*11*10/6 = 220"
+        },
+        {
+          "ans": 35,
+          "ok": false,
+          "fat": -1,
+          "gen": " C(7, 3) is the number of combinations of 7 items taken 3 at a time, which is calculated as:\n\nC(7, 3) = 7! / (3! * (7-3)"
+        },
+        {
+          "ans": 2025,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Brainly.in\\nprofile\\nprofile\\nsahil1234567890\\n02.07.2020\\nMath\\nSecondary School\\nanswer\\nanswer\\nanswered\\nAn arith"
+        },
+        {
+          "ans": 1134,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Brainly.in\\nprofile\\nprofile\\nsahil1234567890\\n02.07.2020\\nMath\\nSecondary School\\nanswer\\nanswer\\nanswered\\nAn arith"
+        },
+        {
+          "ans": 165,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Brainly.com\\nprofile\\nprofile\\nmichelle1234567890\\n03/10/2020\\nMathematics\\nMiddle School\\nverified\\nverified\\nanswer"
+        },
+        {
+          "ans": 3564,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Brainly.com\\nprofile\\nprofile\\nmichelle1234567890\\n05/10/2020\\nMathematics\\nHigh School\\nverified\\nverified\\nanswered"
+        },
+        {
+          "ans": 14,
+          "ok": false,
+          "fat": -1,
+          "gen": " 1285 divided by 31 is 41 with a remainder of 4."
+        },
+        {
+          "ans": 11,
+          "ok": false,
+          "fat": -1,
+          "gen": " 1. **Understanding the Problem**: We are given a number 4395 and a divisor 32. We need to find the remainder when 4395 "
+        },
+        {
+          "ans": 4,
+          "ok": false,
+          "fat": -1,
+          "gen": " 85 divided by 27 is 3 with a remainder of 14."
+        },
+        {
+          "ans": 10,
+          "ok": false,
+          "fat": -1,
+          "gen": " 6708/34=197.29411764705882\nThe remainder is 0.0000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "ans": 60,
+          "ok": true,
+          "fat": 0,
+          "gen": " 12*5=60\nThe answer is 60."
+        },
+        {
+          "ans": 306,
+          "ok": false,
+          "fat": -1,
+          "gen": " 1. **Calculate the Perimeter**:\n    - The perimeter ( P ) of a rectangle is given by the formula:\n    [\n    P = 2 times"
+        },
+        {
+          "ans": 1560,
+          "ok": false,
+          "fat": -1,
+          "gen": " A rectangle has length 39 and width 40. Find its area.\nI know that the area of a rectangle is length times width. So I "
+        },
+        {
+          "ans": 392,
+          "ok": false,
+          "fat": -1,
+          "gen": " A rectangle has length 8 and width 49. Find its area.\nI know that the area of a rectangle is length times width. So I d"
+        },
+        {
+          "ans": 783090,
+          "ok": false,
+          "fat": -1,
+          "gen": " 990 × 791 = 783,190\n\nCalculate 990 × 792. 990 × 792 = 784,180\n\nCalculate 990 × 793. 990 × 793 = 785,170\n\nCalculate 990 "
+        },
+        {
+          "ans": 390,
+          "ok": false,
+          "fat": -1,
+          "gen": "345 + 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "ans": 1312,
+          "ok": true,
+          "fat": 0,
+          "gen": " 1312\nCalculate 556 + 756. 1312\n1. 1312\n2. 1313\n3. 1314\n4. 1315\n5. 1316\n6. 1317\n7. 1318\n8. 1319\n9. 1320\n10. 1321\n11. 132"
+        },
+        {
+          "ans": 1470,
+          "ok": false,
+          "fat": -1,
+          "gen": " 1470."
+        }
+      ]
+    },
+    "zh": {
+      "correct": 10,
+      "total": 20,
+      "mean_fat": 5.6,
+      "lang_pres": {
+        "zh": 17,
+        "en": 0,
+        "unk": 3
+      },
+      "samples": [
+        {
+          "ans": 7,
+          "ok": false,
+          "fat": -1,
+          "gen": " 1\n\n在《中国南方电网有限责任公司电力安全工作规程》中，作业人员应接受相应的安全生产教育和岗位技能培训，经考试合格上岗。 对\n\n在《中国南方电网有限责任公司电力安全工作规程》中，作业人员应接受相应的安全生产教育和岗位技能培训，经考试合格上"
+        },
+        {
+          "ans": 12,
+          "ok": true,
+          "fat": 0,
+          "gen": " 12\n\n在《中国南方电网有限责任公司电力安全工作规程》中，作业人员应接受相应的安全生产教育和岗位技能培训，经考试合格上岗。____\nA. 正确\nB. 错误\n答案: A\n\n在《中国南方电网有限责任公司电力安全工作规程》中，作业人员应接受相应"
+        },
+        {
+          "ans": 220,
+          "ok": true,
+          "fat": 6,
+          "gen": " 12! / (3! * (12-3)!) = 220\n\n求组合数 C(10, 5) 的值。 10! / (5! * (10-5)!) = 252\n\n求组合数 C(15, 7) 的值。 15! / (7! * (15-7)!) = 6435"
+        },
+        {
+          "ans": 35,
+          "ok": false,
+          "fat": -1,
+          "gen": " 105\n\n在《红楼梦》中，贾宝玉和林黛玉的表妹是（ ）。 薛宝钗\n\n在《红楼梦》中，贾宝玉和林黛玉的表哥是（ ）。 贾琏\n\n在《红楼梦》中，贾宝玉和林黛玉的表嫂是（ ）。 贾母\n\n在《红楼梦》中，贾宝玉和林黛玉的表弟是（ ）。 贾环"
+        },
+        {
+          "ans": 2025,
+          "ok": false,
+          "fat": -1,
+          "gen": " 1000\n\n在 1000 个产品中，有 10 个次品，从中任取 10 个，问： (1) 有多少种取法? (2) 有多少种取法，其中恰有 2 个次品? (3) 有多少种取法，其中至少有 2 个次品? (4) 有多少种取法，其中至多有 2 个"
+        },
+        {
+          "ans": 1134,
+          "ok": false,
+          "fat": -1,
+          "gen": " 18×12+18×17×6/2=18×12+153×6=18×12+918=1260\n\n1949年10月1日，中华人民共和国成立，标志着中国新民主主义革命阶段基本结束，中国进入社会主义革命阶段。() 错误\n\n1949年10月1日，中华人民"
+        },
+        {
+          "ans": 165,
+          "ok": false,
+          "fat": -1,
+          "gen": " 100\n\n在 10000 个产品中，有 100 个次品，从中任取 10 个，求其中次品数 X 的分布律，分布函数，期望，方差。 0.9999\n\n在 10000 个产品中，有 100 个次品，从中任取 10 个，求其中次品数 X 的分布律，"
+        },
+        {
+          "ans": 3564,
+          "ok": false,
+          "fat": -1,
+          "gen": " 15+27×9=270\n\n1949年10月1日，中华人民共和国成立，标志着中国新民主主义革命阶段基本结束，中国进入社会主义革命阶段。 错误： 中国进入社会主义革命阶段 改正： 中国进入社会主义建设时期\n\n1949年10月1日，中华人民共和"
+        },
+        {
+          "ans": 14,
+          "ok": false,
+          "fat": -1,
+          "gen": " 4\n\n1285 除以 31 的余数是多少？ 4\n\n1285 除以 31 的余数是多少？ 4\n\n1285 除以 31 的余数是多少？ 4\n\n1285 除以 31 的余数是多少？ 4\n\n1285 除以 31 的余数是多少？ 4\n\n1285 除"
+        },
+        {
+          "ans": 11,
+          "ok": true,
+          "fat": 4,
+          "gen": " 4395 除以 32 的余数是 11。"
+        },
+        {
+          "ans": 4,
+          "ok": false,
+          "fat": -1,
+          "gen": " 2\n\n1949 年 10 月 1 日，中华人民共和国中央人民政府成立，中华人民共和国中央人民政府主席是（ ） A. 毛泽东 B. 周恩来 C. 朱德 D. 刘少奇 1949 年 10 月 1 日，中华人民共和国中央人民政府成立，中华人民共"
+        },
+        {
+          "ans": 10,
+          "ok": false,
+          "fat": -1,
+          "gen": " 6708 除以 34 的余数是 12。"
+        },
+        {
+          "ans": 60,
+          "ok": true,
+          "fat": 4,
+          "gen": " 12 x 5 = 60\n\n好的，现在我想知道这个长方形的周长是多少。 长方形的周长是 2 x (长 + 宽)，所以这个长方形的周长是 2 x (12 + 5) = 34。\n\n明白了，现在我想知道这个长方形的对角线长度是多少。 长方形的对角"
+        },
+        {
+          "ans": 306,
+          "ok": true,
+          "fat": 4,
+          "gen": " 17 x 18 = 306\n\n好的，现在我想知道这个长方形的周长是多少。 306 ÷ 2 = 153\n\n好的，现在我想知道这个长方形的对角线长度是多少。 对角线长度 = √(17² + 18²) = 24.72\n\n好的，现在我想知道这个长"
+        },
+        {
+          "ans": 1560,
+          "ok": true,
+          "fat": 4,
+          "gen": " 39 x 40 = 1560\n\n好的，现在我想知道这个长方形的周长是多少。 1560 ÷ 2 = 780\n\n好的，现在我想知道这个长方形的对角线长度是多少。 对角线长度 = √(39² + 40²) = 53\n\n好的，现在我想知道这个长方"
+        },
+        {
+          "ans": 392,
+          "ok": true,
+          "fat": 22,
+          "gen": " 一个长方形的面积可以通过其长度和宽度的乘积来计算。在这个问题中，长方形的长度是8，宽度是49。因此，我们可以使用以下公式来计算面积：\n\n\\[ \\text{面积} = \\text{长度} \\times \\text{宽度} \\]\n\n将给定的数"
+        },
+        {
+          "ans": 783090,
+          "ok": false,
+          "fat": -1,
+          "gen": " 990 × 791 = 791000 + 990 × 91 = 791000 + 89190 = 880190\n\n阅读下面的文言文，完成下列各题。 陈尧佐，字希亮，其先出上蔡。父元昊，仕至太常少卿。尧佐进士甲科，历通判瀛州、永兴军，知原州"
+        },
+        {
+          "ans": 390,
+          "ok": true,
+          "fat": 4,
+          "gen": " 238 + 152 = 390"
+        },
+        {
+          "ans": 1312,
+          "ok": true,
+          "fat": 4,
+          "gen": " 556 + 756 = 1312"
+        },
+        {
+          "ans": 1470,
+          "ok": true,
+          "fat": 4,
+          "gen": " 702 + 768 = 1470"
+        }
+      ]
+    }
+  },
+  "project_10d": {
+    "en": {
+      "correct": 8,
+      "total": 20,
+      "mean_fat": 4.75,
+      "lang_pres": {
+        "zh": 1,
+        "en": 17,
+        "unk": 2
+      },
+      "samples": [
+        {
+          "ans": 7,
+          "ok": true,
+          "fat": 0,
+          "gen": " C(7, 6) is the same as C(7, 1), which is the number of ways to choose 1 item from 7 items. This is simply 7, because th"
+        },
+        {
+          "ans": 12,
+          "ok": true,
+          "fat": 0,
+          "gen": " C(12, 1) is the number of ways to choose 1 item from 12 items, which is simply 12."
+        },
+        {
+          "ans": 220,
+          "ok": true,
+          "fat": 10,
+          "gen": " 12C3=12!/3!(12-3)! = 12!/3!9! = 12*11*10*9!/3!*9! = 12*11*10/3*2*1 = 12*11*10/6 = 220\\nQ: What is 12 over 3 in simplest"
+        },
+        {
+          "ans": 35,
+          "ok": true,
+          "fat": 3,
+          "gen": " 1. 210 2. 35 3. 10 4. 28\nA:\n2\nExplanation:\nC(7, 3) = 7! / (3! * (7-3)!) = 7! / (3! * 4!) = (7 * 6 * 5) / (3 * 2 * 1) = "
+        },
+        {
+          "ans": 2025,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Brainly.com\\nprofile\\nprofile\\nmariam1234567890\\n03/18/2020\\nMathematics\\nMiddle School\\nverified\\nverified\\nanswered"
+        },
+        {
+          "ans": 1134,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Brainly.com\\nprofile\\nprofile\\nmariam1234567890\\n05/10/2020\\nMathematics\\nHigh School\\nverified\\nverified\\nanswered •"
+        },
+        {
+          "ans": 165,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Brainly.com\\nprofile\\nprofile\\nmariam1234567890\\n05/11/2020\\nMathematics\\nHigh School\\nverified\\nverified\\nanswered •"
+        },
+        {
+          "ans": 3564,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Brainly.com\\nprofile\\nprofile\\nmariam1234567890\\n03/01/2020\\nMathematics\\nMiddle School\\nverified\\nverified\\nanswered"
+        },
+        {
+          "ans": 14,
+          "ok": false,
+          "fat": -1,
+          "gen": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n"
+        },
+        {
+          "ans": 11,
+          "ok": false,
+          "fat": -1,
+          "gen": " 1. **Understanding the Problem**:\n   - We need to find the remainder when 4395 is divided by 32.\n   - This can be mathe"
+        },
+        {
+          "ans": 4,
+          "ok": false,
+          "fat": -1,
+          "gen": " 27 is the largest number that divides 85 without a remainder. 85 divided by 27 is 3 with a remainder of 14."
+        },
+        {
+          "ans": 10,
+          "ok": true,
+          "fat": 14,
+          "gen": " 1. **Question**: What is the remainder when 6708 is divided by 34?\n1. **Answer**: 10\n\n**Explanation**:\n- 6708 divided b"
+        },
+        {
+          "ans": 60,
+          "ok": true,
+          "fat": 5,
+          "gen": " 1. 12 x 5 = 60\n2. The area of the rectangle is 60 square units."
+        },
+        {
+          "ans": 306,
+          "ok": true,
+          "fat": 5,
+          "gen": " 1. 17 x 18 = 306\n2. 306 square feet\n3. 306 square feet"
+        },
+        {
+          "ans": 1560,
+          "ok": true,
+          "fat": 1,
+          "gen": " 1. 1560\n2. 1530\n3. 1590\n4. 1580\n\nA. 1\nB. 2\nC. 3\nD. 4\n\nTo find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Ar"
+        },
+        {
+          "ans": 392,
+          "ok": false,
+          "fat": -1,
+          "gen": " 1. 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "ans": 783090,
+          "ok": false,
+          "fat": -1,
+          "gen": "1 ÷ 100.01 + 10.001 ÷ 1.0001 = ____.\nA. 990\nB. 1000\nC. 1001\nD. 1010\n答案:\nC\n\n下列关于“三会一课”制度的表述，不正确的是____。\nA. 党支部委员会会议一般每月召开1"
+        },
+        {
+          "ans": 390,
+          "ok": false,
+          "fat": -1,
+          "gen": "34 + 12.213456789 = 412.553456789\nWhat is the sum of the numbers in the first column?\nA. 238\nB. 152.34\nC. 12.213456789\nD"
+        },
+        {
+          "ans": 1312,
+          "ok": false,
+          "fat": -1,
+          "gen": "5 + 156.5 + 156 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15"
+        },
+        {
+          "ans": 1470,
+          "ok": false,
+          "fat": -1,
+          "gen": "7 + 100.005 = 1861.805. What is the average of 1861.805 and 1861.805?\nTo find the average of 1861.805 and 1861.805, we s"
+        }
+      ]
+    },
+    "zh": {
+      "correct": 9,
+      "total": 20,
+      "mean_fat": 2.7777777777777777,
+      "lang_pres": {
+        "zh": 17,
+        "en": 1,
+        "unk": 2
+      },
+      "samples": [
+        {
+          "ans": 7,
+          "ok": false,
+          "fat": -1,
+          "gen": " 1\n\n1927年10月，毛泽东同志在《中国社会各阶级的分析》中指出，中国革命的敌人是帝国主义和封建主义，中国有三类主要的矛盾：一是无产阶级和资产阶级的矛盾，一是农民和地主阶级的矛盾，一是民族和帝国主义的矛盾。其中，（）是主要的。 民族和帝"
+        },
+        {
+          "ans": 12,
+          "ok": true,
+          "fat": 0,
+          "gen": " 12\n\n1935年1月，中国共产党在遵义召开了政治局常委會議，開始了對黨內“左”傾教條主義主張的全面批判。 1935年1月，中国共产党在遵义召开了政治局常委会议，开始对党内“左”倾教条主义主张的全面批判。\n\n1935年1月，中国共产党在遵"
+        },
+        {
+          "ans": 220,
+          "ok": false,
+          "fat": -1,
+          "gen": " 12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n"
+        },
+        {
+          "ans": 35,
+          "ok": false,
+          "fat": -1,
+          "gen": " 100\n\n以下是中国关于工程考试的主观题，请写出正确答案。\n在《中国共产党纪律处分条例》中，对党的领导干部问责的定义是什么？ 党的各级党组织和党的领导干部在党的建设和社会治理中，不履行或者不正确履行全面从严治党主体责任、监督责任，下列情形"
+        },
+        {
+          "ans": 2025,
+          "ok": false,
+          "fat": -1,
+          "gen": "_百度知道\\n百度知道 > 无分类\\n等差数列首项为 9，公差为 6，求前 25 项之和。\\n 我来答\\n分享\\n复制链接\\nhttp://zhidao.baidu.com/question/1831019110400100100\\n新浪"
+        },
+        {
+          "ans": 1134,
+          "ok": false,
+          "fat": -1,
+          "gen": "_百度知道\\n百度知道 > 无分类\\n等差数列首项为 12，公差为 6，求前 18 项之和。\\n 我来答\\n分享\\n复制链接\\nhttp://zhidao.baidu.com/question/1832009110490001060\\n新"
+        },
+        {
+          "ans": 165,
+          "ok": false,
+          "fat": -1,
+          "gen": "_百度知道\\n百度知道 > 无分类\\n等差数列首项为 5，公差为 9，求前 6 项之和。\\n 我来答\\n分享\\n复制链接\\nhttp://zhidao.baidu.com/question/1895101111089011868\\n新浪微"
+        },
+        {
+          "ans": 3564,
+          "ok": false,
+          "fat": -1,
+          "gen": "_百度知道\\n百度知道 > 无分类\\n等差数列首项为 15，公差为 9，求前 27 项之和。\\n 我来答\\n分享\\n复制链接\\nhttp://zhidao.baidu.com/question/1895000008310910828\\n新"
+        },
+        {
+          "ans": 14,
+          "ok": true,
+          "fat": 6,
+          "gen": " 1285 ÷ 31 = 41 … 14 ． 答：余数是 14 ． 故答案为： 14 ．\n\n阅读下面的文言文，完成下列各题。 陈尧咨，字子直，真定人。少豪纵，不自振。 以父任 起家 ，累迁左拾遗、右庶子。 仁宗 嗣位，迁左司谏。 时仁宗以 "
+        },
+        {
+          "ans": 11,
+          "ok": false,
+          "fat": -1,
+          "gen": " 13\n\n4395 除以 32 的余数是多少？ 13\n\n4395 除以 32 的余数是多少？ 13\n\n4395 除以 32 的余数是多少？ 13\n\n4395 除以 32 的余数是多少？ 13\n\n4395 除以 32 的余数是多少？ 13\n\n"
+        },
+        {
+          "ans": 4,
+          "ok": false,
+          "fat": -1,
+          "gen": " 285 除以 27 的余数是 18 ．\n\n已知函数 f(x)=\\frac{1}{2}x^{2}+ax-2 a^{2}lnx,a>0 ,且 a \\in r.(1) 当 a=1 时,求 f(x) 的单调区间和极值点;(2)若 f(x) 在区间"
+        },
+        {
+          "ans": 10,
+          "ok": false,
+          "fat": -1,
+          "gen": " 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "ans": 60,
+          "ok": true,
+          "fat": 0,
+          "gen": " 12×5=60\nこの長方形の面積は60です。"
+        },
+        {
+          "ans": 306,
+          "ok": true,
+          "fat": 0,
+          "gen": " 17×18=306\nThe answer is 306."
+        },
+        {
+          "ans": 1560,
+          "ok": true,
+          "fat": 0,
+          "gen": " 39×40=1560\n\n1920年，美国《时代》杂志上，有一篇题为《中国——一个新时代》的文章，文章说：“中国，这个古老的帝国，这个世界上最大的农民国家，正在经历一场深刻的变化。……中国正在经历着一场从传统农业社会向现代工业社会的转变。”"
+        },
+        {
+          "ans": 392,
+          "ok": true,
+          "fat": 16,
+          "gen": " 1. 首先，我们需要知道什么是面积。面积是指物体表面的大小。在数学中，面积通常用平方单位来表示，例如平方米、平方厘米等。\n2. 接下来，我们需要知道如何计算矩形的面积。矩形的面积可以通过将长乘以宽来计算。因此，我们可以将长为8，宽为49的"
+        },
+        {
+          "ans": 783090,
+          "ok": false,
+          "fat": -1,
+          "gen": "\n1980000\n\n1990 年 10 月 1 日，中国第一座大型商用核电站——()正式并网发电。这是中华人民共和国成立以来我国自主设计、建造和管理的最大的一项工程，也是我国国民经济建设史上的一座重要里程碑。\n秦山核电站\n\n1990 年 1"
+        },
+        {
+          "ans": 390,
+          "ok": true,
+          "fat": 1,
+          "gen": "\nA. 390\nB. 391\nC. 392\nD. 393\n答案: 391\n\n下列关于“三重一低”的描述，哪一项是不正确的？\nA. 低收入\nB. 低技能\nC. 低素质\nD. 低学历\n答案: 低学历\n\n下列关于“三去一降一补”的描述，哪一项是不"
+        },
+        {
+          "ans": 1312,
+          "ok": true,
+          "fat": 1,
+          "gen": "\nA. 1312\nB. 1313\nC. 1314\nD. 1315\n答案:\nB\n\n在《中国共产党纪律检查机关監察委員會監督執法工作規則》中，對于“監督執法工作”進行了明確的界定，即“監督執法工作”是指監督執法工作人員在監督執法過程中，對監督執"
+        },
+        {
+          "ans": 1470,
+          "ok": true,
+          "fat": 1,
+          "gen": "\nA. 1470\nB. 1471\nC. 1472\nD. 1473\n答案:  B\n\n____是企业生产管理的中心环节。\nA. 生产计划\nB. 生产技术准备\nC. 生产服务\nD. 生产服务\n答案:  B\n\n____是企业生产管理的中心环节。\nA"
+        }
+      ]
+    }
+  },
+  "flip_1d": {
+    "en": {
+      "correct": 10,
+      "total": 20,
+      "mean_fat": 6.7,
+      "lang_pres": {
+        "zh": 11,
+        "en": 8,
+        "unk": 1
+      },
+      "samples": [
+        {
+          "ans": 7,
+          "ok": true,
+          "fat": 0,
+          "gen": " C(7, 6) = 7! / (6! * (7-6)!) = 7! / (6! * 1!) = 7! / (6! * 1) = 7 / 1 = 7\n\nTherefore，C(7, 6) = 7."
+        },
+        {
+          "ans": 12,
+          "ok": true,
+          "fat": 0,
+          "gen": " C(12, 1) = 12\n\n因为 C(n, k) 表示从 n 个元素中选择 k 个元素的组合数，当 k = 1 时，组合数为 n。所以 C(12, 1) = 12。"
+        },
+        {
+          "ans": 220,
+          "ok": true,
+          "fat": 27,
+          "gen": " C(12, 3) = 12! / (3! * (12-3)!) = 12! / (3! * 9!) = (12 * 11 * 10) / (3 * 2 * 1) = 220\n\n所以，C(12, 3) 的值是 220。"
+        },
+        {
+          "ans": 35,
+          "ok": true,
+          "fat": 3,
+          "gen": " 1. 21 2. 35 3. 42 4. 56\nAnswer Choices: (A) 1 (B) 2 (C) 3 (D) 4 (E) 5\nLet's solve the multi选一problem\nC(n,m) = n!/(m!(n-"
+        },
+        {
+          "ans": 2025,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Brainly.com\\njessicamiller123\\n05/11/2017\\nMathematics\\n高中\\nanswered • 2017/05/11\\nAn arithmetic序列：第一项9，公差6。前25项的和？\\n"
+        },
+        {
+          "ans": 1134,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Brainly.com\\njessicamiller123\\n05/02/2018\\nMathematics\\n高中レベル\\n回答\\n回答\\n匿名\\n匿名\\n2018-05-02 19:09\\n匿名\\n匿名\\n2018-05-02 1"
+        },
+        {
+          "ans": 165,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Brainly.com\\njessicamiller123\\n05/02/2017\\nMathematics\\n高中\\nanswered • 2017/05/02\\n1\\njessicamiller123\\n+1\\n0\\n5+9+18"
+        },
+        {
+          "ans": 3564,
+          "ok": false,
+          "fat": -1,
+          "gen": " - Brainly.com\\njessicamiller123\\n01/11/2018\\nMathematics\\n高中レベル\\n回答\\njessicamiller123\\n回答\\n2018/01/11\\n15\\n15\\n15\\n15\\n"
+        },
+        {
+          "ans": 14,
+          "ok": false,
+          "fat": -1,
+          "gen": " 1. 1285を31で割った商を求める\n2. 1285を31で割った余りを求める\n3. 1285を31で割った余りを出力する\n\nこの問題は、整数の割り算の基本的な問題です。 1285を31で割ると、商は41で余りは24になります。 したが"
+        },
+        {
+          "ans": 11,
+          "ok": false,
+          "fat": -1,
+          "gen": " また、この問題を解くために、32で割り切れる数の性質を理解する必要がありますか？ はい、32で割り切れる数の性質を理解する必要があります。 32は2の5乗であり、32で割り切れる数はすべて2の乗数である必要があります。 したがって、439"
+        },
+        {
+          "ans": 4,
+          "ok": false,
+          "fat": -1,
+          "gen": " 27の倍数は、27の倍数である数の和である。27の倍数は、27の倍数である数の和である。27の倍数は、27の倍数である数の和である。27の倍数は、27の倍数である数の和である。27の倍数は、27の倍数である数の和である。27の倍数は、27"
+        },
+        {
+          "ans": 10,
+          "ok": false,
+          "fat": -1,
+          "gen": " 6708÷34=197…16\n\n以下关于《中华人民共和国安全生产法》的表述，正确的是（ ）。 A：安全生产工作应当以人为本，坚持安全发展 B：安全生产工作应当以人为本，坚持安全第一、预防为主、综合治理的方针 C：安全生产工作应当以人为本，"
+        },
+        {
+          "ans": 60,
+          "ok": true,
+          "fat": 19,
+          "gen": " 1. 长度和宽度の和を求める\n2. 长度と宽度の積を求める\n3. 面積を求める\n\n1. 长度和宽度的和为 12 + 5 = 17\n2. 长度和宽度的积为 12 × 5 = 60\n3. 面积为 60 平方单位。"
+        },
+        {
+          "ans": 306,
+          "ok": false,
+          "fat": -1,
+          "gen": " ただし、この問題は、正方形の面積を求める問題と見なすことができます。 つまり、この問題は、正方形の面積を求める問題と見なすことができます。 したがって、この問題は、正方形の面積を求める問題と見なすことができます。 したがって, この問題は"
+        },
+        {
+          "ans": 1560,
+          "ok": true,
+          "fat": 2,
+          "gen": " ただし、この問題は、長方形の面積を求める問題です。 長方形の面積は、長さと幅の積で求められます。 長さは39、幅は40なので、面積は39×40=1560です。"
+        },
+        {
+          "ans": 392,
+          "ok": false,
+          "fat": -1,
+          "gen": " ただし、この問題は、正方形の面積を求める問題と見なすことができます。 つまり、この問題は、正方形の面積を求める問題と見なすことができます。 したがって、この問題は、正方形の面積を求める問題と見なすことができます。 したがって, この問題は"
+        },
+        {
+          "ans": 783090,
+          "ok": true,
+          "fat": 8,
+          "gen": " 990 × 791 = 791000 - 7910 = 783090\n\n10000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "ans": 390,
+          "ok": true,
+          "fat": 0,
+          "gen": " 390\n\n計算 238 + 152。 390"
+        },
+        {
+          "ans": 1312,
+          "ok": true,
+          "fat": 4,
+          "gen": " 556 + 756 = 1312\n\n計算 556 + 756。 556 + 756 = 1312"
+        },
+        {
+          "ans": 1470,
+          "ok": true,
+          "fat": 4,
+          "gen": " 702 + 768 = 1470\n\n答えは1470です。"
+        }
+      ]
+    },
+    "zh": {
+      "correct": 14,
+      "total": 20,
+      "mean_fat": 5.928571428571429,
+      "lang_pres": {
+        "zh": 20,
+        "en": 0,
+        "unk": 0
+      },
+      "samples": [
+        {
+          "ans": 7,
+          "ok": true,
+          "fat": 0,
+          "gen": " 7!/(6!*(7-6)!) = 7!/(6!*1!) = 7/1 = 7\n\n求组合数 C(7, 6) 的值。 7!/(6!*(7-6)!) = 7!/(6!*1!) = 7/1 = 7\n\n求组合数 C(7, 6) 的值。 7!/(6!*"
+        },
+        {
+          "ans": 12,
+          "ok": true,
+          "fat": 0,
+          "gen": " 12\n\n求组合数 C(12, 1) 的值。 12\n\n求组合数 C(12, 1) 的值。 12\n\n求组合数 C(12, 1) 的值。 12\n\n求组合数 C(12, 1) 的值。 12\n\n求组合数 C(12, 1) 的值。 12"
+        },
+        {
+          "ans": 220,
+          "ok": true,
+          "fat": 2,
+          "gen": " 12!/(3!*(12-3)!) = 220\n\n求组合数 C(10, 4) 的值。 10!/(4!*(10-4)!) = 210\n\n求组合数 C(15, 5) 的值。 15!/(5!*(15-5)!) = 3003\n\n求组合数 C(18,"
+        },
+        {
+          "ans": 35,
+          "ok": true,
+          "fat": 5,
+          "gen": " 10\n\n求组合数 C(7, 3) 的值。 35\n\n求组合数 C(7, 3) 的值。 35\n\n求组合数 C(7, 3) 的值。 35\n\n求组合数 C(7, 3) 的值。 35\n\n求组合数 C(7, 3) 的值。 35"
+        },
+        {
+          "ans": 2025,
+          "ok": false,
+          "fat": -1,
+          "gen": " 解：S25=25×9+25×24×6/2=900\n\n《铁路旅客运输服务质量规范》（铁总运〔2016〕247号）规定：动车组车内温度夏季（）℃、冬季18～20℃。 26～28\n\n《铁路旅客运输服务质量规范》（铁总运〔2016〕247号）规定"
+        },
+        {
+          "ans": 1134,
+          "ok": false,
+          "fat": -1,
+          "gen": " 解：由题意可知，首项 a1=12，公差 d=6，项数 n=18。根据等差数列求和公式 Sn=n(a1+an)/2，其中 an=a1+(n-1)d。将已知数值代入公式中，得到 S18=18(12+18×6)/2=18×(12+108)/2="
+        },
+        {
+          "ans": 165,
+          "ok": false,
+          "fat": -1,
+          "gen": " 解：由题意可知，首项 a1=5，公差 d=9，项数 n=6。根据等差数列求和公式，前 n 项和 Sn=na1+(n-1)d/2，代入数值可得： S6=6×5+(6-1)×9/2=30+27=57。 因此，前 6 项之和为 57。\n\n在等比"
+        },
+        {
+          "ans": 3564,
+          "ok": false,
+          "fat": -1,
+          "gen": " 解：S27=27×15+27×26×9/2=1530\n\n在“三段论”中，如果大前提是错误的，则结论一定错误。() 正确\n\n在“三段论”中，如果小前提是错误的，则结论一定错误。() 正确\n\n在“三段论”中，如果大前提是错误的，则结论一定错误"
+        },
+        {
+          "ans": 14,
+          "ok": false,
+          "fat": -1,
+          "gen": " 1285 ÷ 31 = 41 … 24 1285 ÷ 31 的余数是 24 ． 故答案为： 24 ．\n\n【题文】下列关于生物进化的叙述，正确的是（ ） A．自然选择是生物进化的动力和源泉 B．自然选择使种群的基因频率发生定向改变 C．种群"
+        },
+        {
+          "ans": 11,
+          "ok": true,
+          "fat": 6,
+          "gen": " 4395 ÷ 32 = 137 … 11\n\n【题文】下列关于细胞膜的叙述，错误的是（ ） A．细胞膜上的受体是细胞间信息交流所必需的结构 B．细胞膜上的受体是细胞间信息交流所必需的结构 C．细胞膜上的受体是细胞间信息交流所必需的结构 D．"
+        },
+        {
+          "ans": 4,
+          "ok": false,
+          "fat": -1,
+          "gen": " 85 除以 27 的余数是 11 。\n\n85 除以 27 的余数是多少？ 85 除以 27 的余数是 11 。\n\n85 除以 27 的余数是多少？ 85 除以 27 的余数是 11 。\n\n85 除以 27 的余数是多少？ 85 除以 27"
+        },
+        {
+          "ans": 10,
+          "ok": true,
+          "fat": 6,
+          "gen": " 6708 ÷ 34 = 197 … 10\n\n【题文】下列关于生物进化的叙述，正确的是（ ） A．自然选择使种群的基因频率发生定向改变 B．种群中个体的死亡不会影响种群的基因频率 C．种群中个体的迁入和迁出不会影响种群的基因频率 D．种群中"
+        },
+        {
+          "ans": 60,
+          "ok": true,
+          "fat": 11,
+          "gen": " 长方形的面积 = 长 × 宽\n所以，这个长方形的面积 = 12 × 5 = 60\n答案：这个长方形的面积是 60 平方单位。\n\n好的，现在请你计算一下这个长方形的周长。 长方形的周长 = 2 × (长 + 宽)\n所以，这个长方形的周长 ="
+        },
+        {
+          "ans": 306,
+          "ok": true,
+          "fat": 11,
+          "gen": " 长方形的面积 = 长 × 宽\n所以，这个长方形的面积 = 17 × 18 = 306\n答案：这个长方形的面积是 306 平方单位。\n\n好的，现在请你计算一下，如果这个长方形的长和宽都增加 2 厘米，那么它的面积会变成多少？ 好的，如果长方"
+        },
+        {
+          "ans": 1560,
+          "ok": true,
+          "fat": 11,
+          "gen": " 长方形的面积 = 长 × 宽\n所以，这个长方形的面积 = 39 × 40 = 1560\n答案：这个长方形的面积是 1560 平方单位。\n\n好的，现在请你计算一下这个长方形的周长。 长方形的周长 = 2 × (长 + 宽)\n所以，这个长方形"
+        },
+        {
+          "ans": 392,
+          "ok": true,
+          "fat": 11,
+          "gen": " 长方形的面积 = 长 × 宽\n所以，这个长方形的面积 = 8 × 49 = 392\n答案：这个长方形的面积是 392。\n\n好的，现在请你计算一下，如果这个长方形的长增加 2 厘米，宽减少 2 厘米，新的面积是多少？ 好的，如果长方形的长增"
+        },
+        {
+          "ans": 783090,
+          "ok": true,
+          "fat": 8,
+          "gen": " 990 × 791 = 791000 − 7910 = 783090\n\n下列关于细胞膜的叙述，错误的是（ ） A. 细胞膜的结构特点是具有一定的流动性 B. 细胞膜的功能是将细胞与外界环境分隔开 C. 细胞膜的结构特点是具有一定的选择透过"
+        },
+        {
+          "ans": 390,
+          "ok": true,
+          "fat": 4,
+          "gen": " 238 + 152 = 390\n\n计算 238 + 152 的值。 238 + 152 = 390\n\n计算 238 + 152 的值。 238 + 152 = 390\n\n计算 238 + 152 的值。 238 + 152 = 390\n\n"
+        },
+        {
+          "ans": 1312,
+          "ok": true,
+          "fat": 4,
+          "gen": " 556 + 756 = 1312\n\n计算 556 + 756 的值。 556 + 756 = 1312\n\n计算 556 + 756 的值。 556 + 756 = 1312\n\n计算 556 + 756 的值。 556 + 756 = 13"
+        },
+        {
+          "ans": 1470,
+          "ok": true,
+          "fat": 4,
+          "gen": " 702 + 768 = 1470\n\n计算 1000 + 100000000 的值。 1000 + 100000000 = 100000100\n\n计算 1000 + 100000000 的值。 1000 + 100000000 = 1000"
+        }
+      ]
+    }
+  }
+}

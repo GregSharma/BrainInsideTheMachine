@@ -1,0 +1,167 @@
+Loading Qwen/Qwen2.5-3B...
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:   0%|          | 1/434 [00:00<01:29,  4.84it/s]Loading weights:   9%|▉         | 39/434 [00:00<00:02, 151.71it/s]Loading weights:  19%|█▉        | 82/434 [00:00<00:01, 251.52it/s]Loading weights:  29%|██▉       | 125/434 [00:00<00:00, 311.21it/s]Loading weights:  42%|████▏     | 184/434 [00:00<00:00, 395.07it/s]Loading weights:  56%|█████▌    | 242/434 [00:00<00:00, 450.13it/s]Loading weights:  76%|███████▌  | 328/434 [00:00<00:00, 570.67it/s]Loading weights:  95%|█████████▌| 413/434 [00:00<00:00, 652.62it/s]Loading weights: 100%|██████████| 434/434 [00:00<00:00, 458.69it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  Loaded in 2s — 36 layers, d=2048
+Generated 200 problems, 3 languages
+
+============================================================
+PHASE 1: Capture hidden states and MLP deltas
+============================================================
+
+  Language: en
+    50/200
+    100/200
+    150/200
+    200/200
+    Done in 5s
+
+  Language: zh
+    50/200
+    100/200
+    150/200
+    200/200
+    Done in 4s
+
+  Language: es
+    50/200
+    100/200
+    150/200
+    200/200
+    Done in 4s
+
+Capture complete. Shape check: (200, 2048)
+
+============================================================
+TEST 1: COCYCLE (Ridge R² + triangle error)
+============================================================
+  L0: R²=0.9821, cocycle_err=0.0116
+  L9: R²=0.9576, cocycle_err=0.0116
+  L18: R²=0.9409, cocycle_err=0.0075
+  L27: R²=0.9342, cocycle_err=0.0058
+  L35: R²=0.9208, cocycle_err=0.0016
+
+============================================================
+TEST 2: F-PROBE (EN→ZH category and answer transfer)
+============================================================
+  L0: cat_EN=1.000, cat_ZH=0.475, ans_EN=0.175, ans_ZH=0.150
+  L3: cat_EN=1.000, cat_ZH=0.475, ans_EN=0.200, ans_ZH=0.175
+  L6: cat_EN=1.000, cat_ZH=0.875, ans_EN=0.250, ans_ZH=0.275
+  L9: cat_EN=1.000, cat_ZH=1.000, ans_EN=0.325, ans_ZH=0.200
+  L12: cat_EN=1.000, cat_ZH=0.750, ans_EN=0.375, ans_ZH=0.275
+  L15: cat_EN=1.000, cat_ZH=1.000, ans_EN=0.375, ans_ZH=0.225
+  L18: cat_EN=1.000, cat_ZH=1.000, ans_EN=0.350, ans_ZH=0.225
+  L21: cat_EN=1.000, cat_ZH=0.750, ans_EN=0.325, ans_ZH=0.275
+  L24: cat_EN=1.000, cat_ZH=1.000, ans_EN=0.375, ans_ZH=0.275
+/home/greg/Desktop/Projects/BrainInsideTheMachine/.venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:406: ConvergenceWarning: lbfgs failed to converge after 1000 iteration(s) (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT
+
+Increase the number of iterations to improve the convergence (max_iter=1000).
+You might also want to scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+  L27: cat_EN=1.000, cat_ZH=1.000, ans_EN=0.275, ans_ZH=0.150
+/home/greg/Desktop/Projects/BrainInsideTheMachine/.venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:406: ConvergenceWarning: lbfgs failed to converge after 1000 iteration(s) (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT
+
+Increase the number of iterations to improve the convergence (max_iter=1000).
+You might also want to scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+  L30: cat_EN=1.000, cat_ZH=0.600, ans_EN=0.400, ans_ZH=0.250
+/home/greg/Desktop/Projects/BrainInsideTheMachine/.venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:406: ConvergenceWarning: lbfgs failed to converge after 1000 iteration(s) (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT
+
+Increase the number of iterations to improve the convergence (max_iter=1000).
+You might also want to scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+  L33: cat_EN=1.000, cat_ZH=0.225, ans_EN=0.325, ans_ZH=0.150
+/home/greg/Desktop/Projects/BrainInsideTheMachine/.venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:406: ConvergenceWarning: lbfgs failed to converge after 1000 iteration(s) (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT
+
+Increase the number of iterations to improve the convergence (max_iter=1000).
+You might also want to scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+  L35: cat_EN=1.000, cat_ZH=0.225, ans_EN=0.350, ans_ZH=0.225
+
+============================================================
+TEST 3: PACF INNOVATION (MLP delta predictability)
+============================================================
+  Layer | R² from prev | cos(prev,curr)
+  ---------------------------------------------
+  L 1   |     0.949     |    +0.068
+  L 2   |     0.799     |    +0.116
+  L 3   |     0.946     |    +0.076
+  L 4   |     0.926     |    +0.043
+  L 5   |     0.949     |    +0.042
+  L 6   |     0.940     |    +0.130
+  L 7   |     0.933     |    +0.068
+  L 8   |     0.929     |    -0.136
+  L 9   |     0.943     |    -0.021
+  L10   |     0.947     |    -0.053
+  L11   |     0.952     |    +0.028
+  L12   |     0.946     |    -0.046
+  L13   |     0.957     |    -0.041
+  L14   |     0.959     |    -0.162
+  L15   |     0.958     |    -0.058
+  L16   |     0.944     |    -0.048
+  L17   |     0.954     |    -0.043
+  L18   |     0.936     |    +0.095
+  L19   |     0.939     |    +0.242
+  L20   |     0.900     |    +0.265
+  L21   |     0.932     |    +0.314
+  L22   |     0.934     |    +0.039
+  L23   |     0.930     |    +0.021
+  L24   |     0.921     |    +0.119
+  L25   |     0.937     |    +0.095
+  L26   |     0.941     |    +0.157
+  L27   |     0.952     |    +0.219
+  L28   |     0.958     |    +0.132
+  L29   |     0.961     |    +0.049
+  L30   |     0.961     |    +0.130
+  L31   |     0.961     |    +0.345
+  L32   |     0.957     |    +0.352
+  L33   |     0.955     |    +0.345
+  L34   |     0.949     |    +0.325
+  L35   |     0.966     |    -0.190
+
+============================================================
+TEST 4: LANGUAGE DIRECTION (Cohen's d profile)
+============================================================
+  Layer | Cohen's d | cos(EN,ZH)
+  -----------------------------------
+  L 0   |    58.5   | 0.7122
+  L 3   |    59.9   | 0.7542
+  L 6   |    63.4   | 0.7231
+  L 9   |    74.9   | 0.6639
+  L12   |    75.4   | 0.7588
+  L15   |    79.8   | 0.7981
+  L18   |    79.5   | 0.8408
+  L21   |    81.1   | 0.8736
+  L24   |    75.3   | 0.8674
+  L27   |    75.7   | 0.8699
+  L30   |    87.4   | 0.8523
+  L33   |    91.2   | 0.8395
+
+Total time: 32s
+Saved: output/expBB_validation_Qwen_Qwen2.5-3B.json
+
+============================================================
+SUMMARY: Qwen/Qwen2.5-3B
+============================================================
+  Cocycle R² at L18: 0.9409
+  Cocycle error at L18: 0.0075
+  Best category transfer: 1.000 at L9
+  Best answer transfer: 0.275 at L6
+  Mean PACF R² (mid layers): 0.9405
+  Max Cohen's d: 108.5

@@ -1,0 +1,181 @@
+{
+  "model": "Qwen/Qwen2.5-3B",
+  "n_problems": 200,
+  "baseline_z": 24.48508644104004,
+  "conditions": [
+    {
+      "condition": "Kill top-3 at L0 (heads [6, 9, 8])",
+      "type": "single",
+      "target_layer": 0,
+      "heads_killed": {
+        "0": [
+          6,
+          9,
+          8
+        ]
+      },
+      "killed_z": 23.837953567504883,
+      "dz": -0.6471328735351562,
+      "zh_token_match": 0.77,
+      "en_token_match": 0.97,
+      "cross_lingual_match_baseline": 0.0,
+      "cross_lingual_match_killed": 0.0
+    },
+    {
+      "condition": "Kill top-3 at L7 (heads [12, 15, 14])",
+      "type": "single",
+      "target_layer": 7,
+      "heads_killed": {
+        "7": [
+          12,
+          15,
+          14
+        ]
+      },
+      "killed_z": 23.9827938079834,
+      "dz": -0.5022926330566406,
+      "zh_token_match": 0.79,
+      "en_token_match": 0.94,
+      "cross_lingual_match_baseline": 0.0,
+      "cross_lingual_match_killed": 0.0
+    },
+    {
+      "condition": "Kill top-3 at L8 (heads [2, 0, 1])",
+      "type": "single",
+      "target_layer": 8,
+      "heads_killed": {
+        "8": [
+          2,
+          0,
+          1
+        ]
+      },
+      "killed_z": 22.534563064575195,
+      "dz": -1.9505233764648438,
+      "zh_token_match": 0.785,
+      "en_token_match": 0.895,
+      "cross_lingual_match_baseline": 0.0,
+      "cross_lingual_match_killed": 0.0
+    },
+    {
+      "condition": "Kill top-3 at L10 (heads [7, 13, 10])",
+      "type": "single",
+      "target_layer": 10,
+      "heads_killed": {
+        "10": [
+          7,
+          13,
+          10
+        ]
+      },
+      "killed_z": 24.20603370666504,
+      "dz": -0.279052734375,
+      "zh_token_match": 0.855,
+      "en_token_match": 0.97,
+      "cross_lingual_match_baseline": 0.0,
+      "cross_lingual_match_killed": 0.0
+    },
+    {
+      "condition": "Kill top-3 at L11 (heads [4, 1, 14])",
+      "type": "single",
+      "target_layer": 11,
+      "heads_killed": {
+        "11": [
+          4,
+          1,
+          14
+        ]
+      },
+      "killed_z": 24.88694953918457,
+      "dz": 0.40186309814453125,
+      "zh_token_match": 0.89,
+      "en_token_match": 0.955,
+      "cross_lingual_match_baseline": 0.0,
+      "cross_lingual_match_killed": 0.0
+    },
+    {
+      "condition": "Kill top-3 at L15 (heads [5, 6, 15])",
+      "type": "single",
+      "target_layer": 15,
+      "heads_killed": {
+        "15": [
+          5,
+          6,
+          15
+        ]
+      },
+      "killed_z": 24.229293823242188,
+      "dz": -0.25579261779785156,
+      "zh_token_match": 0.835,
+      "en_token_match": 0.955,
+      "cross_lingual_match_baseline": 0.0,
+      "cross_lingual_match_killed": 0.0
+    },
+    {
+      "condition": "Kill top-3 at L18 (heads [3, 5, 4])",
+      "type": "single",
+      "target_layer": 18,
+      "heads_killed": {
+        "18": [
+          3,
+          5,
+          4
+        ]
+      },
+      "killed_z": 22.61977767944336,
+      "dz": -1.8653087615966797,
+      "zh_token_match": 0.885,
+      "en_token_match": 0.965,
+      "cross_lingual_match_baseline": 0.0,
+      "cross_lingual_match_killed": 0.0
+    },
+    {
+      "condition": "Kill top-3 at ALL 7 layers",
+      "type": "all",
+      "target_layer": "all",
+      "heads_killed": {
+        "0": [
+          6,
+          9,
+          8
+        ],
+        "7": [
+          12,
+          15,
+          14
+        ],
+        "8": [
+          2,
+          0,
+          1
+        ],
+        "10": [
+          7,
+          13,
+          10
+        ],
+        "11": [
+          4,
+          1,
+          14
+        ],
+        "15": [
+          5,
+          6,
+          15
+        ],
+        "18": [
+          3,
+          5,
+          4
+        ]
+      },
+      "killed_z": 21.75002670288086,
+      "dz": -2.7350597381591797,
+      "zh_token_match": 0.75,
+      "en_token_match": 0.92,
+      "cross_lingual_match_baseline": 0.0,
+      "cross_lingual_match_killed": 0.0
+    }
+  ]
+}

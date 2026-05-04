@@ -1,0 +1,1059 @@
+{
+  "experiment": "BQ",
+  "name": "Gram Matrix Evolution \u2014 The Von Neumann Question",
+  "method": "Pairwise cosine Gram matrix G^(L) for all 1400 vectors at each of 36 layers. Pearson correlation between upper triangles of adjacent G^(L), Frobenius norm of \u0394G, effective rank of \u0394G, within/cross language decomposition, category-aware analysis.",
+  "data": "7 languages \u00d7 200 problems \u00d7 36 layers",
+  "layer_to_layer": [
+    {
+      "layer_pair": "L0\u2192L1",
+      "gram_correlation": 0.997378,
+      "frobenius_delta_norm": 0.134859,
+      "delta_rank_99": 4,
+      "top_5_singular_values": [
+        125.4285,
+        59.2757,
+        21.1667,
+        19.4367,
+        8.4038
+      ],
+      "within_lang_mean_cos": 0.817,
+      "cross_lang_mean_cos": 0.7142
+    },
+    {
+      "layer_pair": "L1\u2192L2",
+      "gram_correlation": 0.993488,
+      "frobenius_delta_norm": 0.034186,
+      "delta_rank_99": 8,
+      "top_5_singular_values": [
+        36.0152,
+        10.229,
+        7.1631,
+        5.9114,
+        3.7877
+      ],
+      "within_lang_mean_cos": 0.8728,
+      "cross_lang_mean_cos": 0.7973
+    },
+    {
+      "layer_pair": "L2\u2192L3",
+      "gram_correlation": 0.981341,
+      "frobenius_delta_norm": 0.057576,
+      "delta_rank_99": 6,
+      "top_5_singular_values": [
+        57.9331,
+        21.6002,
+        12.8768,
+        5.3521,
+        4.8596
+      ],
+      "within_lang_mean_cos": 0.8644,
+      "cross_lang_mean_cos": 0.7709
+    },
+    {
+      "layer_pair": "L3\u2192L4",
+      "gram_correlation": 0.987717,
+      "frobenius_delta_norm": 0.045092,
+      "delta_rank_99": 9,
+      "top_5_singular_values": [
+        43.5736,
+        14.2867,
+        8.3616,
+        5.3038,
+        3.9387
+      ],
+      "within_lang_mean_cos": 0.8513,
+      "cross_lang_mean_cos": 0.7275
+    },
+    {
+      "layer_pair": "L4\u2192L5",
+      "gram_correlation": 0.996119,
+      "frobenius_delta_norm": 0.014791,
+      "delta_rank_99": 16,
+      "top_5_singular_values": [
+        9.5983,
+        7.7759,
+        4.6879,
+        4.4323,
+        2.7719
+      ],
+      "within_lang_mean_cos": 0.8423,
+      "cross_lang_mean_cos": 0.6964
+    },
+    {
+      "layer_pair": "L5\u2192L6",
+      "gram_correlation": 0.985531,
+      "frobenius_delta_norm": 0.041066,
+      "delta_rank_99": 11,
+      "top_5_singular_values": [
+        37.271,
+        12.3521,
+        8.0752,
+        6.0705,
+        4.8351
+      ],
+      "within_lang_mean_cos": 0.8429,
+      "cross_lang_mean_cos": 0.6959
+    },
+    {
+      "layer_pair": "L6\u2192L7",
+      "gram_correlation": 0.92477,
+      "frobenius_delta_norm": 0.079794,
+      "delta_rank_99": 8,
+      "top_5_singular_values": [
+        59.9776,
+        37.9727,
+        28.4926,
+        10.8716,
+        9.0763
+      ],
+      "within_lang_mean_cos": 0.8335,
+      "cross_lang_mean_cos": 0.6723
+    },
+    {
+      "layer_pair": "L7\u2192L8",
+      "gram_correlation": 0.98267,
+      "frobenius_delta_norm": 0.035649,
+      "delta_rank_99": 14,
+      "top_5_singular_values": [
+        22.3963,
+        19.3869,
+        10.4582,
+        5.6427,
+        5.5685
+      ],
+      "within_lang_mean_cos": 0.8392,
+      "cross_lang_mean_cos": 0.638
+    },
+    {
+      "layer_pair": "L8\u2192L9",
+      "gram_correlation": 0.987096,
+      "frobenius_delta_norm": 0.033743,
+      "delta_rank_99": 14,
+      "top_5_singular_values": [
+        22.826,
+        15.4415,
+        8.3319,
+        7.0907,
+        6.4674
+      ],
+      "within_lang_mean_cos": 0.8252,
+      "cross_lang_mean_cos": 0.6344
+    },
+    {
+      "layer_pair": "L9\u2192L10",
+      "gram_correlation": 0.993454,
+      "frobenius_delta_norm": 0.023945,
+      "delta_rank_99": 19,
+      "top_5_singular_values": [
+        15.6957,
+        9.0886,
+        6.2509,
+        4.9051,
+        4.8229
+      ],
+      "within_lang_mean_cos": 0.8221,
+      "cross_lang_mean_cos": 0.6238
+    },
+    {
+      "layer_pair": "L10\u2192L11",
+      "gram_correlation": 0.97847,
+      "frobenius_delta_norm": 0.046114,
+      "delta_rank_99": 13,
+      "top_5_singular_values": [
+        35.8787,
+        16.0803,
+        9.7036,
+        8.6332,
+        6.1642
+      ],
+      "within_lang_mean_cos": 0.8246,
+      "cross_lang_mean_cos": 0.63
+    },
+    {
+      "layer_pair": "L11\u2192L12",
+      "gram_correlation": 0.990175,
+      "frobenius_delta_norm": 0.074896,
+      "delta_rank_99": 9,
+      "top_5_singular_values": [
+        67.1619,
+        16.206,
+        10.6883,
+        8.7857,
+        8.0537
+      ],
+      "within_lang_mean_cos": 0.8369,
+      "cross_lang_mean_cos": 0.6468
+    },
+    {
+      "layer_pair": "L12\u2192L13",
+      "gram_correlation": 0.990164,
+      "frobenius_delta_norm": 0.02231,
+      "delta_rank_99": 16,
+      "top_5_singular_values": [
+        18.1877,
+        7.3422,
+        5.6361,
+        5.3888,
+        4.3087
+      ],
+      "within_lang_mean_cos": 0.8587,
+      "cross_lang_mean_cos": 0.6959
+    },
+    {
+      "layer_pair": "L13\u2192L14",
+      "gram_correlation": 0.99372,
+      "frobenius_delta_norm": 0.0222,
+      "delta_rank_99": 16,
+      "top_5_singular_values": [
+        19.9964,
+        7.3305,
+        4.5148,
+        3.2781,
+        2.3804
+      ],
+      "within_lang_mean_cos": 0.8598,
+      "cross_lang_mean_cos": 0.7039
+    },
+    {
+      "layer_pair": "L14\u2192L15",
+      "gram_correlation": 0.985751,
+      "frobenius_delta_norm": 0.028447,
+      "delta_rank_99": 11,
+      "top_5_singular_values": [
+        20.8715,
+        19.2821,
+        3.7293,
+        3.6325,
+        3.092
+      ],
+      "within_lang_mean_cos": 0.8653,
+      "cross_lang_mean_cos": 0.7162
+    },
+    {
+      "layer_pair": "L15\u2192L16",
+      "gram_correlation": 0.994178,
+      "frobenius_delta_norm": 0.066202,
+      "delta_rank_99": 6,
+      "top_5_singular_values": [
+        64.5154,
+        15.1628,
+        10.8909,
+        8.1997,
+        7.0466
+      ],
+      "within_lang_mean_cos": 0.8605,
+      "cross_lang_mean_cos": 0.7089
+    },
+    {
+      "layer_pair": "L16\u2192L17",
+      "gram_correlation": 0.993908,
+      "frobenius_delta_norm": 0.023091,
+      "delta_rank_99": 9,
+      "top_5_singular_values": [
+        21.8884,
+        10.6622,
+        4.1233,
+        3.3157,
+        1.878
+      ],
+      "within_lang_mean_cos": 0.8802,
+      "cross_lang_mean_cos": 0.7574
+    },
+    {
+      "layer_pair": "L17\u2192L18",
+      "gram_correlation": 0.991246,
+      "frobenius_delta_norm": 0.040877,
+      "delta_rank_99": 8,
+      "top_5_singular_values": [
+        41.7407,
+        8.4019,
+        6.6489,
+        5.2446,
+        4.1452
+      ],
+      "within_lang_mean_cos": 0.8749,
+      "cross_lang_mean_cos": 0.7453
+    },
+    {
+      "layer_pair": "L18\u2192L19",
+      "gram_correlation": 0.992201,
+      "frobenius_delta_norm": 0.01603,
+      "delta_rank_99": 10,
+      "top_5_singular_values": [
+        14.9977,
+        8.0285,
+        3.9656,
+        1.9717,
+        1.4875
+      ],
+      "within_lang_mean_cos": 0.8876,
+      "cross_lang_mean_cos": 0.7757
+    },
+    {
+      "layer_pair": "L19\u2192L20",
+      "gram_correlation": 0.990827,
+      "frobenius_delta_norm": 0.030881,
+      "delta_rank_99": 8,
+      "top_5_singular_values": [
+        31.9807,
+        8.6609,
+        5.5004,
+        4.1213,
+        3.0765
+      ],
+      "within_lang_mean_cos": 0.8879,
+      "cross_lang_mean_cos": 0.7723
+    },
+    {
+      "layer_pair": "L20\u2192L21",
+      "gram_correlation": 0.994681,
+      "frobenius_delta_norm": 0.011539,
+      "delta_rank_99": 16,
+      "top_5_singular_values": [
+        9.9283,
+        5.5296,
+        3.3529,
+        3.3227,
+        3.1065
+      ],
+      "within_lang_mean_cos": 0.8993,
+      "cross_lang_mean_cos": 0.7939
+    },
+    {
+      "layer_pair": "L21\u2192L22",
+      "gram_correlation": 0.993787,
+      "frobenius_delta_norm": 0.018881,
+      "delta_rank_99": 10,
+      "top_5_singular_values": [
+        19.7936,
+        5.9881,
+        3.5892,
+        2.7148,
+        2.1587
+      ],
+      "within_lang_mean_cos": 0.8996,
+      "cross_lang_mean_cos": 0.7981
+    },
+    {
+      "layer_pair": "L22\u2192L23",
+      "gram_correlation": 0.993901,
+      "frobenius_delta_norm": 0.028666,
+      "delta_rank_99": 8,
+      "top_5_singular_values": [
+        30.4022,
+        5.7015,
+        5.6357,
+        4.0477,
+        3.5116
+      ],
+      "within_lang_mean_cos": 0.892,
+      "cross_lang_mean_cos": 0.7851
+    },
+    {
+      "layer_pair": "L23\u2192L24",
+      "gram_correlation": 0.993193,
+      "frobenius_delta_norm": 0.013273,
+      "delta_rank_99": 12,
+      "top_5_singular_values": [
+        12.5634,
+        7.0773,
+        2.9896,
+        1.9515,
+        1.9229
+      ],
+      "within_lang_mean_cos": 0.904,
+      "cross_lang_mean_cos": 0.807
+    },
+    {
+      "layer_pair": "L24\u2192L25",
+      "gram_correlation": 0.993935,
+      "frobenius_delta_norm": 0.015978,
+      "delta_rank_99": 11,
+      "top_5_singular_values": [
+        15.4378,
+        7.8434,
+        3.9149,
+        3.3151,
+        2.4096
+      ],
+      "within_lang_mean_cos": 0.9052,
+      "cross_lang_mean_cos": 0.8135
+    },
+    {
+      "layer_pair": "L25\u2192L26",
+      "gram_correlation": 0.99273,
+      "frobenius_delta_norm": 0.030512,
+      "delta_rank_99": 8,
+      "top_5_singular_values": [
+        33.3069,
+        6.7529,
+        5.7597,
+        3.9038,
+        3.2749
+      ],
+      "within_lang_mean_cos": 0.9018,
+      "cross_lang_mean_cos": 0.8051
+    },
+    {
+      "layer_pair": "L26\u2192L27",
+      "gram_correlation": 0.928849,
+      "frobenius_delta_norm": 0.046641,
+      "delta_rank_99": 7,
+      "top_5_singular_values": [
+        46.4811,
+        24.7571,
+        11.4288,
+        7.7471,
+        5.8573
+      ],
+      "within_lang_mean_cos": 0.914,
+      "cross_lang_mean_cos": 0.8296
+    },
+    {
+      "layer_pair": "L27\u2192L28",
+      "gram_correlation": 0.988122,
+      "frobenius_delta_norm": 0.029834,
+      "delta_rank_99": 8,
+      "top_5_singular_values": [
+        31.3718,
+        9.5767,
+        6.6102,
+        4.7231,
+        3.4952
+      ],
+      "within_lang_mean_cos": 0.9174,
+      "cross_lang_mean_cos": 0.8008
+    },
+    {
+      "layer_pair": "L28\u2192L29",
+      "gram_correlation": 0.968515,
+      "frobenius_delta_norm": 0.027977,
+      "delta_rank_99": 9,
+      "top_5_singular_values": [
+        22.0406,
+        20.0392,
+        6.6124,
+        4.289,
+        3.3024
+      ],
+      "within_lang_mean_cos": 0.9121,
+      "cross_lang_mean_cos": 0.7783
+    },
+    {
+      "layer_pair": "L29\u2192L30",
+      "gram_correlation": 0.979246,
+      "frobenius_delta_norm": 0.028676,
+      "delta_rank_99": 12,
+      "top_5_singular_values": [
+        27.5622,
+        9.2478,
+        7.7226,
+        6.299,
+        4.9718
+      ],
+      "within_lang_mean_cos": 0.9147,
+      "cross_lang_mean_cos": 0.7776
+    },
+    {
+      "layer_pair": "L30\u2192L31",
+      "gram_correlation": 0.959277,
+      "frobenius_delta_norm": 0.036247,
+      "delta_rank_99": 7,
+      "top_5_singular_values": [
+        33.9365,
+        18.5099,
+        11.1099,
+        6.0795,
+        5.4877
+      ],
+      "within_lang_mean_cos": 0.9317,
+      "cross_lang_mean_cos": 0.7932
+    },
+    {
+      "layer_pair": "L31\u2192L32",
+      "gram_correlation": 0.948846,
+      "frobenius_delta_norm": 0.039733,
+      "delta_rank_99": 6,
+      "top_5_singular_values": [
+        34.1462,
+        23.555,
+        12.641,
+        7.9639,
+        5.0563
+      ],
+      "within_lang_mean_cos": 0.9324,
+      "cross_lang_mean_cos": 0.7757
+    },
+    {
+      "layer_pair": "L32\u2192L33",
+      "gram_correlation": 0.970898,
+      "frobenius_delta_norm": 0.031225,
+      "delta_rank_99": 6,
+      "top_5_singular_values": [
+        23.6669,
+        22.8068,
+        8.6093,
+        6.2784,
+        4.8968
+      ],
+      "within_lang_mean_cos": 0.9367,
+      "cross_lang_mean_cos": 0.7753
+    },
+    {
+      "layer_pair": "L33\u2192L34",
+      "gram_correlation": 0.991986,
+      "frobenius_delta_norm": 0.027188,
+      "delta_rank_99": 8,
+      "top_5_singular_values": [
+        25.7438,
+        11.1428,
+        8.9285,
+        3.9375,
+        3.4404
+      ],
+      "within_lang_mean_cos": 0.9406,
+      "cross_lang_mean_cos": 0.7653
+    },
+    {
+      "layer_pair": "L34\u2192L35",
+      "gram_correlation": 0.660369,
+      "frobenius_delta_norm": 0.268671,
+      "delta_rank_99": 4,
+      "top_5_singular_values": [
+        272.0546,
+        108.3529,
+        68.332,
+        34.2491,
+        24.477
+      ],
+      "within_lang_mean_cos": 0.9457,
+      "cross_lang_mean_cos": 0.7805
+    }
+  ],
+  "long_range_vs_L0": [
+    {
+      "layer": 1,
+      "corr_vs_L0": 0.997378,
+      "frob_delta_vs_L0": 0.134859
+    },
+    {
+      "layer": 2,
+      "corr_vs_L0": 0.987262,
+      "frob_delta_vs_L0": 0.118884
+    },
+    {
+      "layer": 3,
+      "corr_vs_L0": 0.953442,
+      "frob_delta_vs_L0": 0.108555
+    },
+    {
+      "layer": 4,
+      "corr_vs_L0": 0.911886,
+      "frob_delta_vs_L0": 0.12484
+    },
+    {
+      "layer": 5,
+      "corr_vs_L0": 0.910299,
+      "frob_delta_vs_L0": 0.124328
+    },
+    {
+      "layer": 6,
+      "corr_vs_L0": 0.855057,
+      "frob_delta_vs_L0": 0.14799
+    },
+    {
+      "layer": 7,
+      "corr_vs_L0": 0.701047,
+      "frob_delta_vs_L0": 0.19702
+    },
+    {
+      "layer": 8,
+      "corr_vs_L0": 0.690883,
+      "frob_delta_vs_L0": 0.202081
+    },
+    {
+      "layer": 9,
+      "corr_vs_L0": 0.662682,
+      "frob_delta_vs_L0": 0.213662
+    },
+    {
+      "layer": 10,
+      "corr_vs_L0": 0.677275,
+      "frob_delta_vs_L0": 0.207195
+    },
+    {
+      "layer": 11,
+      "corr_vs_L0": 0.609028,
+      "frob_delta_vs_L0": 0.211843
+    },
+    {
+      "layer": 12,
+      "corr_vs_L0": 0.608559,
+      "frob_delta_vs_L0": 0.200206
+    },
+    {
+      "layer": 13,
+      "corr_vs_L0": 0.58949,
+      "frob_delta_vs_L0": 0.202746
+    },
+    {
+      "layer": 14,
+      "corr_vs_L0": 0.586626,
+      "frob_delta_vs_L0": 0.203663
+    },
+    {
+      "layer": 15,
+      "corr_vs_L0": 0.551176,
+      "frob_delta_vs_L0": 0.209302
+    },
+    {
+      "layer": 16,
+      "corr_vs_L0": 0.5497,
+      "frob_delta_vs_L0": 0.218557
+    },
+    {
+      "layer": 17,
+      "corr_vs_L0": 0.514077,
+      "frob_delta_vs_L0": 0.220012
+    },
+    {
+      "layer": 18,
+      "corr_vs_L0": 0.46113,
+      "frob_delta_vs_L0": 0.237748
+    },
+    {
+      "layer": 19,
+      "corr_vs_L0": 0.505737,
+      "frob_delta_vs_L0": 0.230427
+    },
+    {
+      "layer": 20,
+      "corr_vs_L0": 0.50825,
+      "frob_delta_vs_L0": 0.241112
+    },
+    {
+      "layer": 21,
+      "corr_vs_L0": 0.499492,
+      "frob_delta_vs_L0": 0.244249
+    },
+    {
+      "layer": 22,
+      "corr_vs_L0": 0.52121,
+      "frob_delta_vs_L0": 0.234658
+    },
+    {
+      "layer": 23,
+      "corr_vs_L0": 0.496309,
+      "frob_delta_vs_L0": 0.250194
+    },
+    {
+      "layer": 24,
+      "corr_vs_L0": 0.477898,
+      "frob_delta_vs_L0": 0.256035
+    },
+    {
+      "layer": 25,
+      "corr_vs_L0": 0.422993,
+      "frob_delta_vs_L0": 0.256675
+    },
+    {
+      "layer": 26,
+      "corr_vs_L0": 0.388287,
+      "frob_delta_vs_L0": 0.275327
+    },
+    {
+      "layer": 27,
+      "corr_vs_L0": 0.334077,
+      "frob_delta_vs_L0": 0.265297
+    },
+    {
+      "layer": 28,
+      "corr_vs_L0": 0.306389,
+      "frob_delta_vs_L0": 0.258592
+    },
+    {
+      "layer": 29,
+      "corr_vs_L0": 0.343816,
+      "frob_delta_vs_L0": 0.253196
+    },
+    {
+      "layer": 30,
+      "corr_vs_L0": 0.325293,
+      "frob_delta_vs_L0": 0.263008
+    },
+    {
+      "layer": 31,
+      "corr_vs_L0": 0.273839,
+      "frob_delta_vs_L0": 0.262483
+    },
+    {
+      "layer": 32,
+      "corr_vs_L0": 0.192018,
+      "frob_delta_vs_L0": 0.275675
+    },
+    {
+      "layer": 33,
+      "corr_vs_L0": 0.176571,
+      "frob_delta_vs_L0": 0.273331
+    },
+    {
+      "layer": 34,
+      "corr_vs_L0": 0.193611,
+      "frob_delta_vs_L0": 0.273109
+    },
+    {
+      "layer": 35,
+      "corr_vs_L0": 0.29276,
+      "frob_delta_vs_L0": 0.310876
+    }
+  ],
+  "phase_aggregated": {
+    "early": {
+      "mean_gram_correlation": 0.98179,
+      "mean_frobenius_delta": 0.052973,
+      "min_gram_correlation": 0.92477,
+      "max_frobenius_delta": 0.134859
+    },
+    "adversarial": {
+      "mean_gram_correlation": 0.990118,
+      "mean_frobenius_delta": 0.038676,
+      "min_gram_correlation": 0.97847,
+      "max_frobenius_delta": 0.074896
+    },
+    "cooperative": {
+      "mean_gram_correlation": 0.986012,
+      "mean_frobenius_delta": 0.0236,
+      "min_gram_correlation": 0.928849,
+      "max_frobenius_delta": 0.046641
+    },
+    "late": {
+      "mean_gram_correlation": 0.933407,
+      "mean_frobenius_delta": 0.061194,
+      "min_gram_correlation": 0.660369,
+      "max_frobenius_delta": 0.268671
+    }
+  },
+  "language_metric_evolution": [
+    {
+      "layer": 0,
+      "within_lang_mean_cos": 0.817,
+      "cross_lang_mean_cos": 0.7142,
+      "gap": 0.1028
+    },
+    {
+      "layer": 1,
+      "within_lang_mean_cos": 0.8728,
+      "cross_lang_mean_cos": 0.7973,
+      "gap": 0.0755
+    },
+    {
+      "layer": 2,
+      "within_lang_mean_cos": 0.8644,
+      "cross_lang_mean_cos": 0.7709,
+      "gap": 0.0935
+    },
+    {
+      "layer": 3,
+      "within_lang_mean_cos": 0.8513,
+      "cross_lang_mean_cos": 0.7275,
+      "gap": 0.1238
+    },
+    {
+      "layer": 4,
+      "within_lang_mean_cos": 0.8423,
+      "cross_lang_mean_cos": 0.6964,
+      "gap": 0.1459
+    },
+    {
+      "layer": 5,
+      "within_lang_mean_cos": 0.8429,
+      "cross_lang_mean_cos": 0.6959,
+      "gap": 0.1469
+    },
+    {
+      "layer": 6,
+      "within_lang_mean_cos": 0.8335,
+      "cross_lang_mean_cos": 0.6723,
+      "gap": 0.1612
+    },
+    {
+      "layer": 7,
+      "within_lang_mean_cos": 0.8392,
+      "cross_lang_mean_cos": 0.638,
+      "gap": 0.2013
+    },
+    {
+      "layer": 8,
+      "within_lang_mean_cos": 0.8252,
+      "cross_lang_mean_cos": 0.6344,
+      "gap": 0.1908
+    },
+    {
+      "layer": 9,
+      "within_lang_mean_cos": 0.8221,
+      "cross_lang_mean_cos": 0.6238,
+      "gap": 0.1983
+    },
+    {
+      "layer": 10,
+      "within_lang_mean_cos": 0.8246,
+      "cross_lang_mean_cos": 0.63,
+      "gap": 0.1946
+    },
+    {
+      "layer": 11,
+      "within_lang_mean_cos": 0.8369,
+      "cross_lang_mean_cos": 0.6468,
+      "gap": 0.1901
+    },
+    {
+      "layer": 12,
+      "within_lang_mean_cos": 0.8587,
+      "cross_lang_mean_cos": 0.6959,
+      "gap": 0.1628
+    },
+    {
+      "layer": 13,
+      "within_lang_mean_cos": 0.8598,
+      "cross_lang_mean_cos": 0.7039,
+      "gap": 0.1559
+    },
+    {
+      "layer": 14,
+      "within_lang_mean_cos": 0.8653,
+      "cross_lang_mean_cos": 0.7162,
+      "gap": 0.1491
+    },
+    {
+      "layer": 15,
+      "within_lang_mean_cos": 0.8605,
+      "cross_lang_mean_cos": 0.7089,
+      "gap": 0.1516
+    },
+    {
+      "layer": 16,
+      "within_lang_mean_cos": 0.8802,
+      "cross_lang_mean_cos": 0.7574,
+      "gap": 0.1228
+    },
+    {
+      "layer": 17,
+      "within_lang_mean_cos": 0.8749,
+      "cross_lang_mean_cos": 0.7453,
+      "gap": 0.1296
+    },
+    {
+      "layer": 18,
+      "within_lang_mean_cos": 0.8876,
+      "cross_lang_mean_cos": 0.7757,
+      "gap": 0.1119
+    },
+    {
+      "layer": 19,
+      "within_lang_mean_cos": 0.8879,
+      "cross_lang_mean_cos": 0.7723,
+      "gap": 0.1157
+    },
+    {
+      "layer": 20,
+      "within_lang_mean_cos": 0.8993,
+      "cross_lang_mean_cos": 0.7939,
+      "gap": 0.1055
+    },
+    {
+      "layer": 21,
+      "within_lang_mean_cos": 0.8996,
+      "cross_lang_mean_cos": 0.7981,
+      "gap": 0.1015
+    },
+    {
+      "layer": 22,
+      "within_lang_mean_cos": 0.892,
+      "cross_lang_mean_cos": 0.7851,
+      "gap": 0.1068
+    },
+    {
+      "layer": 23,
+      "within_lang_mean_cos": 0.904,
+      "cross_lang_mean_cos": 0.807,
+      "gap": 0.097
+    },
+    {
+      "layer": 24,
+      "within_lang_mean_cos": 0.9052,
+      "cross_lang_mean_cos": 0.8135,
+      "gap": 0.0917
+    },
+    {
+      "layer": 25,
+      "within_lang_mean_cos": 0.9018,
+      "cross_lang_mean_cos": 0.8051,
+      "gap": 0.0967
+    },
+    {
+      "layer": 26,
+      "within_lang_mean_cos": 0.914,
+      "cross_lang_mean_cos": 0.8296,
+      "gap": 0.0844
+    },
+    {
+      "layer": 27,
+      "within_lang_mean_cos": 0.9174,
+      "cross_lang_mean_cos": 0.8008,
+      "gap": 0.1166
+    },
+    {
+      "layer": 28,
+      "within_lang_mean_cos": 0.9121,
+      "cross_lang_mean_cos": 0.7783,
+      "gap": 0.1338
+    },
+    {
+      "layer": 29,
+      "within_lang_mean_cos": 0.9147,
+      "cross_lang_mean_cos": 0.7776,
+      "gap": 0.1372
+    },
+    {
+      "layer": 30,
+      "within_lang_mean_cos": 0.9317,
+      "cross_lang_mean_cos": 0.7932,
+      "gap": 0.1385
+    },
+    {
+      "layer": 31,
+      "within_lang_mean_cos": 0.9324,
+      "cross_lang_mean_cos": 0.7757,
+      "gap": 0.1566
+    },
+    {
+      "layer": 32,
+      "within_lang_mean_cos": 0.9367,
+      "cross_lang_mean_cos": 0.7753,
+      "gap": 0.1614
+    },
+    {
+      "layer": 33,
+      "within_lang_mean_cos": 0.9406,
+      "cross_lang_mean_cos": 0.7653,
+      "gap": 0.1754
+    },
+    {
+      "layer": 34,
+      "within_lang_mean_cos": 0.9457,
+      "cross_lang_mean_cos": 0.7805,
+      "gap": 0.1652
+    },
+    {
+      "layer": 35,
+      "within_lang_mean_cos": 0.9233,
+      "cross_lang_mean_cos": 0.5767,
+      "gap": 0.3466
+    }
+  ],
+  "category_metric": {
+    "L0": {
+      "same_category_mean_cos": 0.9946,
+      "diff_category_mean_cos": 0.7046,
+      "category_separation": 0.29
+    },
+    "L8": {
+      "same_category_mean_cos": 0.9857,
+      "diff_category_mean_cos": 0.7719,
+      "category_separation": 0.2138
+    },
+    "L12": {
+      "same_category_mean_cos": 0.9885,
+      "diff_category_mean_cos": 0.8298,
+      "category_separation": 0.1587
+    },
+    "L17": {
+      "same_category_mean_cos": 0.9907,
+      "diff_category_mean_cos": 0.876,
+      "category_separation": 0.1147
+    },
+    "L18": {
+      "same_category_mean_cos": 0.9903,
+      "diff_category_mean_cos": 0.8862,
+      "category_separation": 0.1041
+    },
+    "L26": {
+      "same_category_mean_cos": 0.9887,
+      "diff_category_mean_cos": 0.8966,
+      "category_separation": 0.092
+    },
+    "L32": {
+      "same_category_mean_cos": 0.9874,
+      "diff_category_mean_cos": 0.884,
+      "category_separation": 0.1034
+    },
+    "L35": {
+      "same_category_mean_cos": 0.9834,
+      "diff_category_mean_cos": 0.8383,
+      "category_separation": 0.1451
+    }
+  },
+  "eigenspectra": {
+    "L0": {
+      "top_5_eigenvalues": [
+        1043.95,
+        109.36,
+        73.48,
+        52.11,
+        30.22
+      ],
+      "rank_50": 1,
+      "rank_90": 1,
+      "rank_99": 2
+    },
+    "L8": {
+      "top_5_eigenvalues": [
+        932.7,
+        93.64,
+        62.52,
+        48.81,
+        41.59
+      ],
+      "rank_50": 1,
+      "rank_90": 1,
+      "rank_99": 3
+    },
+    "L17": {
+      "top_5_eigenvalues": [
+        1074.89,
+        59.42,
+        45.64,
+        31.53,
+        24.23
+      ],
+      "rank_50": 1,
+      "rank_90": 1,
+      "rank_99": 1
+    },
+    "L26": {
+      "top_5_eigenvalues": [
+        1181.94,
+        38.72,
+        35.81,
+        18.49,
+        16.05
+      ],
+      "rank_50": 1,
+      "rank_90": 1,
+      "rank_99": 1
+    },
+    "L35": {
+      "top_5_eigenvalues": [
+        884.84,
+        130.7,
+        113.38,
+        48.73,
+        46.17
+      ],
+      "rank_50": 1,
+      "rank_90": 1,
+      "rank_99": 4
+    }
+  },
+  "elapsed_seconds": 394.9
+}

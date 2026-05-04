@@ -1,0 +1,141 @@
+{
+  "experiment": "V: Layer-by-Layer TC0 Flip",
+  "model": "Qwen/Qwen2.5-3B",
+  "scale": -0.5,
+  "max_tokens": 128,
+  "n_math": 10,
+  "n_trans": 2,
+  "baseline": {
+    "math": 2,
+    "trans": 1
+  },
+  "all_layer_flip": {
+    "math": 3,
+    "trans": 2
+  },
+  "per_layer": {
+    "9": {
+      "math_score": 2,
+      "math_delta": 0,
+      "trans_score": 1,
+      "phase": "adversarial"
+    },
+    "10": {
+      "math_score": 2,
+      "math_delta": 0,
+      "trans_score": 1,
+      "phase": "adversarial"
+    },
+    "11": {
+      "math_score": 1,
+      "math_delta": -1,
+      "trans_score": 1,
+      "phase": "adversarial"
+    },
+    "12": {
+      "math_score": 2,
+      "math_delta": 0,
+      "trans_score": 1,
+      "phase": "adversarial"
+    },
+    "13": {
+      "math_score": 1,
+      "math_delta": -1,
+      "trans_score": 1,
+      "phase": "adversarial"
+    },
+    "14": {
+      "math_score": 3,
+      "math_delta": 1,
+      "trans_score": 1,
+      "phase": "adversarial"
+    },
+    "15": {
+      "math_score": 2,
+      "math_delta": 0,
+      "trans_score": 1,
+      "phase": "adversarial"
+    },
+    "16": {
+      "math_score": 2,
+      "math_delta": 0,
+      "trans_score": 1,
+      "phase": "adversarial"
+    },
+    "17": {
+      "math_score": 3,
+      "math_delta": 1,
+      "trans_score": 1,
+      "phase": "transition"
+    },
+    "18": {
+      "math_score": 2,
+      "math_delta": 0,
+      "trans_score": 1,
+      "phase": "cooperative"
+    },
+    "19": {
+      "math_score": 1,
+      "math_delta": -1,
+      "trans_score": 1,
+      "phase": "cooperative"
+    },
+    "20": {
+      "math_score": 2,
+      "math_delta": 0,
+      "trans_score": 1,
+      "phase": "cooperative"
+    },
+    "21": {
+      "math_score": 3,
+      "math_delta": 1,
+      "trans_score": 1,
+      "phase": "reset"
+    },
+    "22": {
+      "math_score": 1,
+      "math_delta": -1,
+      "trans_score": 1,
+      "phase": "ramp"
+    },
+    "23": {
+      "math_score": 1,
+      "math_delta": -1,
+      "trans_score": 1,
+      "phase": "ramp"
+    },
+    "24": {
+      "math_score": 1,
+      "math_delta": -1,
+      "trans_score": 1,
+      "phase": "ramp"
+    },
+    "25": {
+      "math_score": 3,
+      "math_delta": 1,
+      "trans_score": 1,
+      "phase": "ramp"
+    },
+    "26": {
+      "math_score": 1,
+      "math_delta": -1,
+      "trans_score": 1,
+      "phase": "ramp"
+    }
+  },
+  "phase_averages": {
+    "adversarial_L9_L16": {
+      "avg_delta": -0.125,
+      "layers": "L9-L16"
+    },
+    "cooperative_L18_L20": {
+      "avg_delta": -0.3333333333333333,
+      "layers": "L18-L20"
+    },
+    "ramp_L21_L26": {
+      "avg_delta": -0.3333333333333333,
+      "layers": "L21-L26"
+    }
+  },
+  "runtime_seconds": 554.8837997913361
+}

@@ -1,0 +1,325 @@
+{
+  "experiment": "AQ: Latent Math Extraction via Precision-Weighted Denoising",
+  "model": "Qwen/Qwen2.5-3B",
+  "languages": [
+    "zh",
+    "en",
+    "es",
+    "ar",
+    "ja",
+    "ko",
+    "sw"
+  ],
+  "n_problems": 200,
+  "n_train": 180,
+  "n_test": 20,
+  "test_layers": [
+    0,
+    5,
+    9,
+    14,
+    18,
+    22,
+    26,
+    30,
+    35
+  ],
+  "layer_stats": {
+    "0": {
+      "cross_lang_cos": 0.35648107528686523,
+      "cross_lang_l2": 6.497797966003418,
+      "lang_variance_ratio": 0.3316148817539215,
+      "norms": {
+        "single_zh": 16.276222229003906,
+        "naive_avg": 13.6206636428833,
+        "centered_avg": 4.765204429626465,
+        "precision_weighted": 1.5571511354281233
+      },
+      "probe_latent_acc": 1.0,
+      "probe_zh_acc": 1.0,
+      "probe_cross_lang": {
+        "zh": 1.0,
+        "en": 1.0,
+        "es": 0.85,
+        "ar": 0.85,
+        "ja": 1.0,
+        "ko": 1.0,
+        "sw": 0.85
+      }
+    },
+    "5": {
+      "cross_lang_cos": 0.3133363127708435,
+      "cross_lang_l2": 11.323802947998047,
+      "lang_variance_ratio": 0.43310147523880005,
+      "norms": {
+        "single_zh": 26.342998504638672,
+        "naive_avg": 22.975608825683594,
+        "centered_avg": 7.216174125671387,
+        "precision_weighted": 3.103958014229259
+      },
+      "probe_latent_acc": 1.0,
+      "probe_zh_acc": 1.0,
+      "probe_cross_lang": {
+        "zh": 1.0,
+        "en": 1.0,
+        "es": 1.0,
+        "ar": 1.0,
+        "ja": 1.0,
+        "ko": 1.0,
+        "sw": 1.0
+      }
+    },
+    "9": {
+      "cross_lang_cos": 0.29767364263534546,
+      "cross_lang_l2": 20.027456283569336,
+      "lang_variance_ratio": 0.495220422744751,
+      "norms": {
+        "single_zh": 44.68614959716797,
+        "naive_avg": 35.605812072753906,
+        "centered_avg": 11.156930923461914,
+        "precision_weighted": 6.700336466171493
+      },
+      "probe_latent_acc": 1.0,
+      "probe_zh_acc": 1.0,
+      "probe_cross_lang": {
+        "zh": 1.0,
+        "en": 1.0,
+        "es": 1.0,
+        "ar": 1.0,
+        "ja": 1.0,
+        "ko": 1.0,
+        "sw": 1.0
+      }
+    },
+    "14": {
+      "cross_lang_cos": 0.2699936330318451,
+      "cross_lang_l2": 24.06545066833496,
+      "lang_variance_ratio": 0.4900084137916565,
+      "norms": {
+        "single_zh": 59.00165939331055,
+        "naive_avg": 50.5659294128418,
+        "centered_avg": 12.902714729309082,
+        "precision_weighted": 7.851804013554118
+      },
+      "probe_latent_acc": 1.0,
+      "probe_zh_acc": 1.0,
+      "probe_cross_lang": {
+        "zh": 1.0,
+        "en": 1.0,
+        "es": 1.0,
+        "ar": 1.0,
+        "ja": 1.0,
+        "ko": 1.0,
+        "sw": 1.0
+      }
+    },
+    "18": {
+      "cross_lang_cos": 0.3339223563671112,
+      "cross_lang_l2": 26.095964431762695,
+      "lang_variance_ratio": 0.459211140871048,
+      "norms": {
+        "single_zh": 70.1962890625,
+        "naive_avg": 64.05461120605469,
+        "centered_avg": 15.13020133972168,
+        "precision_weighted": 9.995138651299433
+      },
+      "probe_latent_acc": 1.0,
+      "probe_zh_acc": 1.0,
+      "probe_cross_lang": {
+        "zh": 1.0,
+        "en": 1.0,
+        "es": 1.0,
+        "ar": 1.0,
+        "ja": 1.0,
+        "ko": 1.0,
+        "sw": 1.0
+      }
+    },
+    "22": {
+      "cross_lang_cos": 0.3403250277042389,
+      "cross_lang_l2": 26.714330673217773,
+      "lang_variance_ratio": 0.4610411524772644,
+      "norms": {
+        "single_zh": 73.74482727050781,
+        "naive_avg": 66.91798400878906,
+        "centered_avg": 15.470220565795898,
+        "precision_weighted": 11.06871146602694
+      },
+      "probe_latent_acc": 1.0,
+      "probe_zh_acc": 1.0,
+      "probe_cross_lang": {
+        "zh": 1.0,
+        "en": 1.0,
+        "es": 1.0,
+        "ar": 1.0,
+        "ja": 1.0,
+        "ko": 1.0,
+        "sw": 1.0
+      }
+    },
+    "26": {
+      "cross_lang_cos": 0.31049251556396484,
+      "cross_lang_l2": 32.19234848022461,
+      "lang_variance_ratio": 0.47862136363983154,
+      "norms": {
+        "single_zh": 99.28559112548828,
+        "naive_avg": 91.7056655883789,
+        "centered_avg": 17.498348236083984,
+        "precision_weighted": 12.83789081806776
+      },
+      "probe_latent_acc": 1.0,
+      "probe_zh_acc": 1.0,
+      "probe_cross_lang": {
+        "zh": 1.0,
+        "en": 1.0,
+        "es": 1.0,
+        "ar": 1.0,
+        "ja": 1.0,
+        "ko": 1.0,
+        "sw": 1.0
+      }
+    },
+    "30": {
+      "cross_lang_cos": 0.2764446437358856,
+      "cross_lang_l2": 57.78767395019531,
+      "lang_variance_ratio": 0.6449803113937378,
+      "norms": {
+        "single_zh": 195.71206665039062,
+        "naive_avg": 175.72406005859375,
+        "centered_avg": 29.109447479248047,
+        "precision_weighted": 22.32342491453617
+      },
+      "probe_latent_acc": 1.0,
+      "probe_zh_acc": 1.0,
+      "probe_cross_lang": {
+        "zh": 1.0,
+        "en": 1.0,
+        "es": 1.0,
+        "ar": 1.0,
+        "ja": 1.0,
+        "ko": 1.0,
+        "sw": 1.0
+      }
+    },
+    "35": {
+      "cross_lang_cos": 0.22180713713169098,
+      "cross_lang_l2": 142.4663543701172,
+      "lang_variance_ratio": 0.7726291418075562,
+      "norms": {
+        "single_zh": 355.4269714355469,
+        "naive_avg": 313.34014892578125,
+        "centered_avg": 64.14633178710938,
+        "precision_weighted": 43.341328280134306
+      },
+      "probe_latent_acc": 1.0,
+      "probe_zh_acc": 1.0,
+      "probe_cross_lang": {
+        "zh": 1.0,
+        "en": 1.0,
+        "es": 1.0,
+        "ar": 1.0,
+        "ja": 1.0,
+        "ko": 1.0,
+        "sw": 0.8
+      }
+    }
+  },
+  "generation_results": {
+    "L0_naive": {
+      "correct": 0,
+      "total": 5,
+      "layer": 0,
+      "method": "naive"
+    },
+    "L0_centered": {
+      "correct": 0,
+      "total": 5,
+      "layer": 0,
+      "method": "centered"
+    },
+    "L0_precision": {
+      "correct": 0,
+      "total": 5,
+      "layer": 0,
+      "method": "precision"
+    },
+    "L0_dewhitened": {
+      "correct": 0,
+      "total": 5,
+      "layer": 0,
+      "method": "dewhitened"
+    },
+    "L9_naive": {
+      "correct": 0,
+      "total": 5,
+      "layer": 9,
+      "method": "naive"
+    },
+    "L9_centered": {
+      "correct": 0,
+      "total": 5,
+      "layer": 9,
+      "method": "centered"
+    },
+    "L9_precision": {
+      "correct": 0,
+      "total": 5,
+      "layer": 9,
+      "method": "precision"
+    },
+    "L9_dewhitened": {
+      "correct": 0,
+      "total": 5,
+      "layer": 9,
+      "method": "dewhitened"
+    },
+    "L18_naive": {
+      "correct": 0,
+      "total": 5,
+      "layer": 18,
+      "method": "naive"
+    },
+    "L18_centered": {
+      "correct": 0,
+      "total": 5,
+      "layer": 18,
+      "method": "centered"
+    },
+    "L18_precision": {
+      "correct": 0,
+      "total": 5,
+      "layer": 18,
+      "method": "precision"
+    },
+    "L18_dewhitened": {
+      "correct": 0,
+      "total": 5,
+      "layer": 18,
+      "method": "dewhitened"
+    },
+    "L26_naive": {
+      "correct": 0,
+      "total": 5,
+      "layer": 26,
+      "method": "naive"
+    },
+    "L26_centered": {
+      "correct": 0,
+      "total": 5,
+      "layer": 26,
+      "method": "centered"
+    },
+    "L26_precision": {
+      "correct": 0,
+      "total": 5,
+      "layer": 26,
+      "method": "precision"
+    },
+    "L26_dewhitened": {
+      "correct": 0,
+      "total": 5,
+      "layer": 26,
+      "method": "dewhitened"
+    }
+  }
+}

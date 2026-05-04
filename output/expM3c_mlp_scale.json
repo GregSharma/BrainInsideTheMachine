@@ -1,0 +1,77 @@
+{
+  "experiment": "M3c: MLP Scaling L9-L26",
+  "scales": [
+    {
+      "scale_factor": 1.0,
+      "correct": 2,
+      "coherent": 4,
+      "texts": [
+        " To calculate \\(47 + 86\\), we can use the standard addition method. Here are the",
+        " The area of a rectangle is given by the formula:\n\nArea = length \u00d7 width\n\nIn thi",
+        " The value of C(10, 3) is 120.",
+        " To calculate \\(387 \\times 29\\), we can use the standard multiplication algorith",
+        " To find the sum of the first 20 terms of an arithmetic sequence, we can use the"
+      ]
+    },
+    {
+      "scale_factor": 0.75,
+      "correct": 0,
+      "coherent": 5,
+      "texts": [
+        " To calculate \\(47 + 86\\), we can break it down into simpler steps. First, we ad",
+        " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{le",
+        " To find the value of \\( C(10, 3) \\), we need to calculate the number of combina",
+        " To calculate \\(387 \\times 29\\), we can use the standard multiplication method. ",
+        " To find the sum of the first 20 terms of an arithmetic sequence with the first "
+      ]
+    },
+    {
+      "scale_factor": 0.5,
+      "correct": 0,
+      "coherent": 4,
+      "texts": [
+        " To find the sum of 47 and 86, we can use the following steps:\n\n1. Start with th",
+        " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{le",
+        " To find the value of C(10, 3), we need to calculate the number of combinations ",
+        " To find the product of 387 and 29, we can use the standard multiplication algor",
+        " - Brainly.com\\njessicabrown12\\n04/01/2020\\nMathematics\\nHigh School\\nanswered\\n"
+      ]
+    },
+    {
+      "scale_factor": 0.25,
+      "correct": 0,
+      "coherent": 4,
+      "texts": [
+        " 100. 2. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0",
+        " If it is a rectangle, what is the area of a rectangle. If it is a rectangle, wh",
+        " If the value of C(10, 3) is 10, what is the value of C(10, 10, 3, 3, 3, 3, 3, 3",
+        "4 \u00d7 1.2, and then add 1.2 to the result. What is the value of 387 \u00d7 29.4 \u00d7 1.2?\n",
+        " If the sum of the first 20 terms is 100, what is the value of the sequence?\nTo "
+      ]
+    },
+    {
+      "scale_factor": 0.1,
+      "correct": 0,
+      "coherent": 2,
+      "texts": [
+        "5000000000000000000000000000000000000000000000000000000000000000",
+        " \" The total 1                                                         s  ",
+        " The first new in the 7560000000000000000000000000000000000000000000000000000000",
+        " 2 3 5 0  $  )                                                    ",
+        " 0 Said the Sum of About 0.09 Times the Value of the Difference from the Differe"
+      ]
+    },
+    {
+      "scale_factor": 0.0,
+      "correct": 0,
+      "coherent": 1,
+      "texts": [
+        "122\\n0 Ya Qu Lets Lets (s (   )                         i  e  e e e e e e e e e ",
+        " Tr Circ T Iom Hall Norm T S S S Use Like Bl N Large J By M Plan 191  M M  M  M ",
+        " 3              \\n\\n\\n\n\n-             (                                         ",
+        "111;1\u2013\u2013\u2013 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -",
+        " \\I Hyp\\n\\\\ \\\\\\\\\\\\\\ \\\\ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ \\\\ \\\\ \\\\ \\\\ \\\\ \\\\ \\\\ \\\\ \\\\ \\\\ \\\\ \\\\ \\\\ \\\\"
+      ]
+    }
+  ]
+}

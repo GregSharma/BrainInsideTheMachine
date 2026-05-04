@@ -1,0 +1,1564 @@
+{
+  "variant_a_logits_bias": [
+    {
+      "beta": 0.1,
+      "problem_idx": 0,
+      "category": "algebra",
+      "output": "Mathematical reasoning involves using logical steps and mathematical principles to arrive at a conclusion. It typically involves breaking down a problem into smaller parts, applying mathematical rules and formulas, and using logical deductions to arrive at a solution.",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 1,
+          "total": 14,
+          "frac": 0.071,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 1,
+      "correct": false
+    },
+    {
+      "beta": 0.1,
+      "problem_idx": 1,
+      "category": "geometry",
+      "output": "Mathematical reasoning involves using logical steps and mathematical principles to arrive at a conclusion. It typically involves the following steps:\n\n1. Understanding the problem: The first step is to understand the problem and identify the given information, as well as the goal or objective.\n\n2. Identifying the relevant mathematical concepts: Once the problem is understood, the next step is to identify the relevant mathematical concepts, formulas, or theorems that can be applied to solve the p",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 1,
+          "total": 13,
+          "frac": 0.077,
+          "has_answer": false
+        },
+        {
+          "hits": 1,
+          "total": 14,
+          "frac": 0.071,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    },
+    {
+      "beta": 0.1,
+      "problem_idx": 2,
+      "category": "number_theory",
+      "output": "Mathematical reasoning involves using logical steps and mathematical principles to arrive at a conclusion. It typically involves breaking down a problem into smaller parts, applying mathematical rules and formulas, and using logical deductions to reach a solution.",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 1,
+          "total": 14,
+          "frac": 0.071,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 1,
+      "correct": false
+    },
+    {
+      "beta": 0.3,
+      "problem_idx": 0,
+      "category": "algebra",
+      "output": "Mathematical reasoning involves applying logical thinking to solve mathematical problems. It encompasses various steps, including:\n\n1. **Understanding the Problem**: Clearly identifying the given information, the goal, and the constraints.\n2. **Formulating a Plan**: Deciding on the appropriate mathematical techniques, formulas, or algorithms to solve the problem.\n3. **Executing the Plan**: Applying the chosen methods to calculate, simplify, or manipulate the given data.\n4. **Interpreting the Sol",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": true
+        },
+        {
+          "hits": 1,
+          "total": 14,
+          "frac": 0.071,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 1,
+      "correct": false
+    },
+    {
+      "beta": 0.3,
+      "problem_idx": 1,
+      "category": "geometry",
+      "output": "Mathematical reasoning involves applying logical thinking to solve mathematical problems. It encompasses various steps, including understanding the problem, identifying relevant mathematical concepts, applying appropriate formulas, performing calculations, interpreting results, and drawing conclusions. The reasoning process ensures that the solution is accurate, logical, and well-supported.",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 1,
+          "total": 14,
+          "frac": 0.071,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 1,
+      "correct": false
+    },
+    {
+      "beta": 0.3,
+      "problem_idx": 2,
+      "category": "number_theory",
+      "output": "Mathematical reasoning involves applying logical thinking to mathematical problems to arrive at a conclusion. It typically involves using mathematical principles, theorems, and formulas to solve equations, prove theorems, or make deductions. The reasoning process involves breaking down complex problems into smaller, manageable parts, identifying relevant mathematical concepts, applying appropriate mathematical techniques, and evaluating the validity of the reasoning steps.",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 1,
+          "total": 13,
+          "frac": 0.077,
+          "has_answer": false
+        },
+        {
+          "hits": 1,
+          "total": 14,
+          "frac": 0.071,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    },
+    {
+      "beta": 0.5,
+      "problem_idx": 0,
+      "category": "algebra",
+      "output": "Mathematical reasoning involves applying logical steps to solve mathematical problems. It's the process of using mathematical principles, rules, and techniques to arrive at conclusions. Here's a breakdown:\n\n1. **Understanding the Problem**: First, you need to comprehend the problem statement. This involves identifying what needs to be solved.\n\n2. **Setting Up Equations**: Based on the problem, you set up equations that represent the relationships given. This step requires translating the problem",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 1,
+          "total": 13,
+          "frac": 0.077,
+          "has_answer": true
+        },
+        {
+          "hits": 1,
+          "total": 14,
+          "frac": 0.071,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    },
+    {
+      "beta": 0.5,
+      "problem_idx": 1,
+      "category": "geometry",
+      "output": "Mathematical reasoning involves applying logical thinking to solve mathematical problems. It encompasses the use of mathematical concepts, principles, and techniques to analyze, interpret, and draw conclusions. The reasoning process typically involves breaking down complex problems, identifying relevant mathematical relationships, applying appropriate formulas, calculations, or algorithms, and evaluating the results to determine the correctness of the solution.",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 1,
+          "total": 14,
+          "frac": 0.071,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 1,
+      "correct": false
+    },
+    {
+      "beta": 0.5,
+      "problem_idx": 2,
+      "category": "number_theory",
+      "output": "Mathematical reasoning involves applying logical thinking to mathematical problems to arrive at conclusions. It typically involves using mathematical principles, theorems, and algorithms to solve equations, analyze data, and make deductions. The reasoning process involves breaking down complex problems into smaller, manageable parts, applying mathematical techniques to solve them, and using the results to draw conclusions.",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 1,
+          "total": 13,
+          "frac": 0.077,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    },
+    {
+      "beta": 1.0,
+      "problem_idx": 0,
+      "category": "algebra",
+      "output": " spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    },
+    {
+      "beta": 1.0,
+      "problem_idx": 1,
+      "category": "geometry",
+      "output": "ToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToThe",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    },
+    {
+      "beta": 1.0,
+      "problem_idx": 2,
+      "category": "number_theory",
+      "output": "To 🎷】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】,【】",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    },
+    {
+      "beta": 2.0,
+      "problem_idx": 0,
+      "category": "algebra",
+      "output": " spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep spep",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    },
+    {
+      "beta": 2.0,
+      "problem_idx": 1,
+      "category": "geometry",
+      "output": "ToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToTheToThe",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    },
+    {
+      "beta": 2.0,
+      "problem_idx": 2,
+      "category": "number_theory",
+      "output": "ToCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCertainlyCer",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    }
+  ],
+  "variant_b_burst": [
+    {
+      "N_burst": 1,
+      "problem_idx": 0,
+      "category": "algebra",
+      "output": "MathTo describe the mathematical reasoning being performed, we need to break down the problem into its components and analyze the steps involved. Mathematical reasoning involves using logical thinking and mathematical principles to solve problems or prove statements. Here's a breakdown of the reasoning process:\n\n1. Identify the problem: The problem is to find the value of x in the equation 2x + 5 = 15.\n\n2. Understand the equation: The equation is a linear equation in one variable, x. The goal is",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 8,
+          "total": 13,
+          "frac": 0.615,
+          "has_answer": true
+        },
+        {
+          "hits": 1,
+          "total": 14,
+          "frac": 0.071,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": true
+    },
+    {
+      "N_burst": 1,
+      "problem_idx": 1,
+      "category": "geometry",
+      "output": "MathThe mathematical reasoning being performed in this statement is the process of determining the number of possible outcomes when rolling a six-sided die. The reasoning involves understanding the concept of permutations and combinations, as well as the fundamental counting principle. The reasoning can be broken down into the following steps:\n\n1. Identify the total number of possible outcomes: In this case, there are six possible outcomes when rolling a six-sided die, as each side of the die re",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": true
+        },
+        {
+          "hits": 1,
+          "total": 14,
+          "frac": 0.071,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 1,
+      "correct": false
+    },
+    {
+      "N_burst": 1,
+      "problem_idx": 2,
+      "category": "number_theory",
+      "output": "MathTo describe the mathematical reasoning being performed, we need to break down the problem into its components and analyze the steps involved. Mathematical reasoning involves using logical thinking and mathematical principles to solve problems or prove statements. Here's a breakdown of the reasoning process:\n\n1. Identify the problem: The problem is to find the value of x in the equation 2x + 3 = 7.\n\n2. Understand the equation: The equation is a linear equation in one variable, x. The goal is ",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 7,
+          "total": 13,
+          "frac": 0.538,
+          "has_answer": true
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    },
+    {
+      "N_burst": 3,
+      "problem_idx": 0,
+      "category": "algebra",
+      "output": "MathToToTo describe the mathematical reasoning being performed, we need to break down the problem into its components and analyze the steps involved. Mathematical reasoning involves using logical thinking and mathematical principles to solve problems or prove statements. In this case, we can identify the following steps:\n\n1. Identify the problem: The user has provided a description of a problem, which we need to understand and analyze.\n\n2. Analyze the problem: We need to break down the problem i",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 2,
+          "total": 13,
+          "frac": 0.154,
+          "has_answer": true
+        },
+        {
+          "hits": 1,
+          "total": 14,
+          "frac": 0.071,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": true
+    },
+    {
+      "N_burst": 3,
+      "problem_idx": 1,
+      "category": "geometry",
+      "output": "MathTheTheThe mathematical reasoning being performed in this statement is the process of determining the value of an unknown variable, x, in the equation 2x + 5 = 15. The reasoning involves isolating the variable by subtracting 5 from both sides of the equation, resulting in 2x = 10. Then, the variable is solved for by dividing both sides by 2, which gives x = 5. This process demonstrates the use of algebraic reasoning to solve for an unknown variable in an equation.\n\nIsolate the variable x in t",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 7,
+          "total": 13,
+          "frac": 0.538,
+          "has_answer": true
+        },
+        {
+          "hits": 1,
+          "total": 14,
+          "frac": 0.071,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    },
+    {
+      "N_burst": 3,
+      "problem_idx": 2,
+      "category": "number_theory",
+      "output": "MathToToTo describe the mathematical reasoning being performed, we need to break down the problem into its components and analyze the steps involved. Mathematical reasoning involves using logical thinking and mathematical principles to solve problems or prove statements. Here's a breakdown of the reasoning process:\n\n1. Identify the problem: The problem is to describe the mathematical reasoning being performed.\n\n2. Understand the components: The components of the problem are the mathematical reas",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    },
+    {
+      "N_burst": 5,
+      "problem_idx": 0,
+      "category": "algebra",
+      "output": "MathToToToToTo describe the mathematical reasoning being performed, we need to break down the problem into its components and analyze the steps involved. Mathematical reasoning involves using logical thinking and mathematical principles to solve problems or prove statements. In this case, we can identify the following steps:\n\n1. Identify the problem: The user has provided a description of a problem, which we need to understand and analyze.\n2. Analyze the problem: We need to break down the proble",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 1,
+          "total": 14,
+          "frac": 0.071,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 1,
+      "correct": false
+    },
+    {
+      "N_burst": 5,
+      "problem_idx": 1,
+      "category": "geometry",
+      "output": "MathTheTheTheTheThe mathematical reasoning being performed in this statement is the process of determining the value of an unknown variable, x, in the equation 2x + 5 = 15. To solve for x, you would first subtract 5 from both sides of the equation, resulting in 2x = 10. Then, you would divide both sides by 2, which gives you x = 5. This process demonstrates the use of algebraic reasoning to isolate the variable and find its value.",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 7,
+          "total": 13,
+          "frac": 0.538,
+          "has_answer": true
+        },
+        {
+          "hits": 1,
+          "total": 14,
+          "frac": 0.071,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    },
+    {
+      "N_burst": 5,
+      "problem_idx": 2,
+      "category": "number_theory",
+      "output": "MathToToToToTo determine the mathematical reasoning being performed, we need to analyze the given information and identify the steps involved in solving the problem. Mathematical reasoning involves using logical thinking and mathematical principles to solve problems. In this case, we need to identify the steps involved in solving the problem and determine the mathematical principles being used. Can you provide the problem statement or the given information so that I can assist you better?\n\n 🥗use",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    },
+    {
+      "N_burst": 10,
+      "problem_idx": 0,
+      "category": "algebra",
+      "output": "MathToToToToToToToToToTo determine the mathematical reasoning being performed, we need to analyze the given information and identify the steps involved in solving the problem. Mathematical reasoning involves using logical thinking and mathematical principles to solve problems. In this case, we need to identify the specific mathematical concepts and operations being used to solve the problem. Can you provide more information about the problem you are trying to solve? 🥗\n\n 🥗user\nDescribe what mathe",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    },
+    {
+      "N_burst": 10,
+      "problem_idx": 1,
+      "category": "geometry",
+      "output": "MathTheTheTheTheTheTheTheTheTheThe mathematical reasoning being performed in this scenario is the process of determining the value of a variable in an equation. In this case, the equation is 2x + 3 = 11, and the goal is to find the value of x. To solve for x, we can use the following steps:\n\n1. Subtract 3 from both sides of the equation: 2x + 3 - 3 = 11 - 3\n2. Simplify the equation: 2x = 8\n3. Divide both sides of the equation by 2: 2x / 2 = 8 / 2\n4. Simplify the equation: x = 4\n\nTherefore, the v",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 5,
+          "total": 13,
+          "frac": 0.385,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    },
+    {
+      "N_burst": 10,
+      "problem_idx": 2,
+      "category": "number_theory",
+      "output": "MathToToToToToToToToToTo perform mathematical reasoning, we need to understand the problem and apply the appropriate mathematical concepts and operations. In this case, we can use the concept of ratios and proportions to solve the problem. Let's break it down step by step:\n\n1. Identify the given information: We have two ratios, 3:4 and 6:8, and we need to find the ratio that is equivalent to the sum of these two ratios.\n\n2. Calculate the sum of the given ratios: To find the sum of the ratios, we",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 1,
+          "total": 13,
+          "frac": 0.077,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 3,
+          "total": 9,
+          "frac": 0.333,
+          "has_answer": true
+        }
+      ],
+      "best_idx": 2,
+      "correct": true
+    },
+    {
+      "N_burst": 20,
+      "problem_idx": 0,
+      "category": "algebra",
+      "output": "MathToToToToToToToToToToToToToToToToToToToTo determine the mathematical reasoning being performed, we need to analyze the given information and identify the steps involved in solving the problem. In this case, the problem is not provided, so I'll assume a common problem involving mathematical reasoning. Let's consider a problem where we need to find the value of x in the equation 2x + 3 = 7.\n\nTo solve this problem, we can follow these steps:\n\n1. Subtract 3 from both sides of the equation: 2x + 3",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 7,
+          "total": 13,
+          "frac": 0.538,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": true
+    },
+    {
+      "N_burst": 20,
+      "problem_idx": 1,
+      "category": "geometry",
+      "output": "MathTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheTheThe mathematical reasoning being performed in this scenario is the process of determining the value of a variable in an equation. In this case, the equation is 2x + 3 = 11, and the goal is to find the value of x. To solve for x, we can use the following steps:\n\n1. Subtract 3 from both sides of the equation: 2x + 3 - 3 = 11 - 3\n2. Simplify the equation: 2x = 8\n3. Divide both sides of the equation by 2: 2x / 2 = 8 / 2\n4. Simplify the equ",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 5,
+          "total": 13,
+          "frac": 0.385,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    },
+    {
+      "N_burst": 20,
+      "problem_idx": 2,
+      "category": "number_theory",
+      "output": "MathToToToToToToToToToToToToToToToToToToToTo solve this problem, we need to understand the mathematical reasoning behind it. The problem is asking for the number of ways to arrange 5 distinct items in a line. This is a permutation problem, where the order of the items matters. The formula for calculating the number of permutations of n distinct items is n! (n factorial), which is the product of all positive integers up to n. In this case, n = 5, so we need to calculate 5!:\n\n5! = 5 × 4 × 3 × 2 × ",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": true
+        },
+        {
+          "hits": 1,
+          "total": 14,
+          "frac": 0.071,
+          "has_answer": false
+        },
+        {
+          "hits": 1,
+          "total": 9,
+          "frac": 0.111,
+          "has_answer": true
+        }
+      ],
+      "best_idx": 2,
+      "correct": false
+    }
+  ],
+  "variant_c_gentime": [
+    {
+      "L_star": 10,
+      "problem_idx": 0,
+      "category": "algebra",
+      "output": "Math describe what mathematical reasoning is being performed, we need to break down the problem and analyze the steps involved. Mathematical reasoning involves using logical thinking and mathematical principles to solve problems or prove statements. It typically involves the following steps:\n\n1. Understanding the problem: The first step is to understand the problem and identify the given information and what needs to be found or proven.\n\n2. Identifying the mathematical concepts: Once the problem",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 1,
+          "total": 13,
+          "frac": 0.077,
+          "has_answer": true
+        },
+        {
+          "hits": 1,
+          "total": 14,
+          "frac": 0.071,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    },
+    {
+      "L_star": 10,
+      "problem_idx": 1,
+      "category": "geometry",
+      "output": "Math mathematical reasoning being performed in this statement is the process of determining the value of an unknown variable in an equation. In this case, the unknown variable is the number of hours worked, and the equation is 1000 = 100 * hours. The mathematical reasoning involves isolating the variable by dividing both sides of the equation by 100, resulting in hours = 1000 / 100, which simplifies to hours = 10. Therefore, the mathematical reasoning performed is the process of solving for the ",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 3,
+          "total": 13,
+          "frac": 0.231,
+          "has_answer": false
+        },
+        {
+          "hits": 1,
+          "total": 14,
+          "frac": 0.071,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    },
+    {
+      "L_star": 10,
+      "problem_idx": 2,
+      "category": "number_theory",
+      "output": "Math describe what mathematical reasoning is being performed, we need to break down the problem and analyze the steps involved. Mathematical reasoning involves using logical thinking and mathematical principles to solve problems or prove statements. It typically involves the following steps:\n\n1. Understanding the problem: The first step is to understand the problem and identify the given information and what needs to be found or proven.\n\n2. Identifying the mathematical concepts: Once the problem",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 1,
+          "total": 13,
+          "frac": 0.077,
+          "has_answer": true
+        },
+        {
+          "hits": 2,
+          "total": 14,
+          "frac": 0.143,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 1,
+      "correct": false
+    },
+    {
+      "L_star": 15,
+      "problem_idx": 0,
+      "category": "algebra",
+      "output": "Math describe what mathematical reasoning is being performed, we need to analyze the given information and identify the mathematical concepts and operations involved. Mathematical reasoning involves using logical thinking and mathematical principles to solve problems, make decisions, and draw conclusions. It involves understanding the relationships between numbers, variables, and mathematical operations, and applying these relationships to solve problems. Mathematical reasoning can be used in va",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 1,
+          "total": 13,
+          "frac": 0.077,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    },
+    {
+      "L_star": 15,
+      "problem_idx": 1,
+      "category": "geometry",
+      "output": "Math mathematical reasoning is the process of using logical and analytical thinking to solve mathematical problems. It involves applying mathematical concepts, principles, and techniques to analyze and solve problems, often requiring the use of mathematical models, algorithms, and proofs. Mathematical reasoning is an essential skill for mathematicians, scientists, engineers, and other professionals who work with mathematical concepts and data. It involves critical thinking, problem-solving, and ",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    },
+    {
+      "L_star": 15,
+      "problem_idx": 2,
+      "category": "number_theory",
+      "output": "Math describe what mathematical reasoning is being performed:",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    },
+    {
+      "L_star": 18,
+      "problem_idx": 0,
+      "category": "algebra",
+      "output": "Math describe what mathematical reasoning is being performed, we need to break down the problem and identify the mathematical concepts involved. Mathematical reasoning involves using logical thinking and mathematical principles to solve problems, prove theorems, and make deductions. In this case, the mathematical reasoning being performed is likely related to algebraic manipulation, solving equations, or applying mathematical concepts to a specific problem.",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 1,
+          "total": 13,
+          "frac": 0.077,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    },
+    {
+      "L_star": 18,
+      "problem_idx": 1,
+      "category": "geometry",
+      "output": "Math mathematical reasoning is the process of using logical and analytical thinking to solve mathematical problems. It involves applying mathematical concepts, principles, and techniques to analyze and solve problems, often requiring the use of mathematical models, algorithms, and proofs. Mathematical reasoning is an essential skill for mathematicians, scientists, engineers, and other professionals who work with mathematical concepts and data. It involves critical thinking, problem-solving, and ",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    },
+    {
+      "L_star": 18,
+      "problem_idx": 2,
+      "category": "number_theory",
+      "output": "Math describe what mathematical reasoning is being performed:",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    },
+    {
+      "L_star": 22,
+      "problem_idx": 0,
+      "category": "algebra",
+      "output": "Math describe what mathematical reasoning is being performed:",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    },
+    {
+      "L_star": 22,
+      "problem_idx": 1,
+      "category": "geometry",
+      "output": "Math mathematical reasoning is the process of using logical and mathematical principles to solve problems, make decisions, and draw conclusions. It involves the use of mathematical concepts, such as algebra, geometry, and statistics, to analyze and interpret data, identify patterns, and make predictions. Mathematical reasoning is an essential skill in many fields, including science, engineering, finance, and economics, and is used to solve complex problems and make informed decisions.",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    },
+    {
+      "L_star": 22,
+      "problem_idx": 2,
+      "category": "number_theory",
+      "output": "Math describe what mathematical reasoning is being performed:",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    },
+    {
+      "L_star": 27,
+      "problem_idx": 0,
+      "category": "algebra",
+      "output": "Math solve for x\nMathematical reasoning involves using logical steps and mathematical principles to solve problems or derive conclusions. In the case of solving for x, mathematical reasoning would involve applying algebraic rules and operations to isolate the variable x on one side of the equation. This process typically involves simplifying expressions, combining like terms, and using inverse operations to undo any previous operations applied to x. The goal is to find the value of x that satisf",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 4,
+          "total": 13,
+          "frac": 0.308,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": true
+    },
+    {
+      "L_star": 27,
+      "problem_idx": 1,
+      "category": "geometry",
+      "output": "Math mathematical reasoning is the process of using logical and mathematical principles to solve problems, make decisions, and draw conclusions. It involves the use of mathematical concepts, such as algebra, geometry, and statistics, to analyze and interpret data, identify patterns, and make predictions. Mathematical reasoning is an essential skill in many fields, including science, engineering, finance, and economics, and is used to solve complex problems and make informed decisions.",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    },
+    {
+      "L_star": 27,
+      "problem_idx": 2,
+      "category": "number_theory",
+      "output": "Math find the area of a triangle with base 10 and height 5.\n mathematical reasoning is being performed to find the area of a triangle with a given base and height. The formula for the area of a triangle is A = (base * height) / 2. In this case, the base is 10 and the height is 5. So, the area of the triangle is A = (10 * 5) / 2 = 25.",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": true
+        },
+        {
+          "hits": 6,
+          "total": 14,
+          "frac": 0.429,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 1,
+      "correct": false
+    },
+    {
+      "L_star": 33,
+      "problem_idx": 0,
+      "category": "algebra",
+      "output": "Math solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath solve\nMath ",
+      "is_garbage": true,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 14,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "correct": false
+    },
+    {
+      "L_star": 33,
+      "problem_idx": 1,
+      "category": "geometry",
+      "output": "Math area reasoning is the process of using mathematical principles and techniques to solve problems or make decisions. It involves applying mathematical concepts, such as algebra, geometry, calculus, and statistics, to analyze and interpret data, model real-world situations, and draw conclusions. Mathematical reasoning is essential in various fields, including science, engineering, finance, and economics, as it enables individuals to think logically, critically, and systematically. It helps ind",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 2,
+          "total": 14,
+          "frac": 0.143,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 1,
+      "correct": false
+    },
+    {
+      "L_star": 33,
+      "problem_idx": 2,
+      "category": "number_theory",
+      "output": "Math find the area of a triangle given the base and height.",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 4,
+          "total": 14,
+          "frac": 0.286,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 1,
+      "correct": false
+    }
+  ],
+  "variant_d_cross_problem_bias": [
+    {
+      "beta": 0.3,
+      "injected_idx": 0,
+      "injected_category": "algebra",
+      "output": "Mathematical reasoning involves applying logical thinking to solve mathematical problems. It encompasses various steps, including:\n\n1. **Understanding the Problem**: Clearly identifying the given information, the goal, and the constraints.\n2. **Formulating a Plan**: Deciding on the appropriate mathematical techniques, formulas, or algorithms to solve the problem.\n3. **Executing the Plan**: Applying the chosen methods to calculate, simplify, or manipulate the given data.\n4. **Interpreting the Sol",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": true
+        },
+        {
+          "hits": 1,
+          "total": 14,
+          "frac": 0.071,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 1,
+      "describes_injected": false
+    },
+    {
+      "beta": 0.3,
+      "injected_idx": 1,
+      "injected_category": "geometry",
+      "output": "Mathematical reasoning involves applying logical thinking to solve mathematical problems. It encompasses various steps, including understanding the problem, identifying relevant mathematical concepts, applying appropriate formulas, performing calculations, interpreting results, and drawing conclusions. The reasoning process ensures that the solution is accurate, logical, and well-supported.",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 0,
+          "total": 13,
+          "frac": 0.0,
+          "has_answer": false
+        },
+        {
+          "hits": 1,
+          "total": 14,
+          "frac": 0.071,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 1,
+      "describes_injected": false
+    },
+    {
+      "beta": 0.3,
+      "injected_idx": 2,
+      "injected_category": "number_theory",
+      "output": "Mathematical reasoning involves applying logical thinking to mathematical problems to arrive at a conclusion. It typically involves using mathematical principles, theorems, and formulas to solve equations, prove theorems, or make deductions. The reasoning process involves breaking down complex problems into smaller, manageable parts, identifying relevant mathematical concepts, applying appropriate mathematical techniques, and evaluating the validity of the reasoning steps.",
+      "is_garbage": false,
+      "scores": [
+        {
+          "hits": 1,
+          "total": 13,
+          "frac": 0.077,
+          "has_answer": false
+        },
+        {
+          "hits": 1,
+          "total": 14,
+          "frac": 0.071,
+          "has_answer": false
+        },
+        {
+          "hits": 0,
+          "total": 9,
+          "frac": 0.0,
+          "has_answer": false
+        }
+      ],
+      "best_idx": 0,
+      "describes_injected": false
+    }
+  ],
+  "summary": {
+    "elapsed_s": 149.5,
+    "variant_a_best_beta": 0.3,
+    "variant_a_by_beta": {
+      "0.1": {
+        "correct": 0,
+        "garbage": 1
+      },
+      "0.3": {
+        "correct": 0,
+        "garbage": 0
+      },
+      "0.5": {
+        "correct": 0,
+        "garbage": 1
+      },
+      "1.0": {
+        "correct": 0,
+        "garbage": 3
+      },
+      "2.0": {
+        "correct": 0,
+        "garbage": 3
+      }
+    },
+    "variant_b_by_n": {
+      "1": {
+        "correct": 1,
+        "garbage": 0
+      },
+      "3": {
+        "correct": 1,
+        "garbage": 2
+      },
+      "5": {
+        "correct": 0,
+        "garbage": 2
+      },
+      "10": {
+        "correct": 1,
+        "garbage": 1
+      },
+      "20": {
+        "correct": 1,
+        "garbage": 0
+      }
+    },
+    "variant_c_by_l": {
+      "10": {
+        "correct": 0,
+        "garbage": 2
+      },
+      "15": {
+        "correct": 0,
+        "garbage": 1
+      },
+      "18": {
+        "correct": 0,
+        "garbage": 1
+      },
+      "22": {
+        "correct": 0,
+        "garbage": 0
+      },
+      "27": {
+        "correct": 1,
+        "garbage": 0
+      },
+      "33": {
+        "correct": 0,
+        "garbage": 1
+      }
+    },
+    "variant_d_hits": 0
+  }
+}

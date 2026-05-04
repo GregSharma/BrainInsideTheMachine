@@ -1,0 +1,304 @@
+{
+  "prob0_zh": {
+    "problem_idx": 0,
+    "category": "combinatorics",
+    "language": "zh",
+    "n_steps": 125,
+    "epsilon": 38258.509367562736,
+    "eigenvalues": [
+      0.12858273371064466,
+      0.11967896530068173,
+      0.0881881182752591
+    ],
+    "r2048_path_ratio": 77.18223571777344,
+    "r2048_consec_cos": -0.35607790227646263,
+    "r2048_frac_anti": 1.0,
+    "diffusion_path_ratio": 16.338956856193633,
+    "diffusion_consec_cos": -0.17146344571302474,
+    "diffusion_frac_anti": 0.6341463414634146,
+    "path_ratio_reduction": 0.2116932310167729
+  },
+  "prob0_en": {
+    "problem_idx": 0,
+    "category": "combinatorics",
+    "language": "en",
+    "n_steps": 245,
+    "epsilon": 43224.85815843851,
+    "eigenvalues": [
+      1.0,
+      0.10105005261765329,
+      0.0730201875705905
+    ],
+    "r2048_path_ratio": 14.78410816192627,
+    "r2048_consec_cos": -0.38112266828524477,
+    "r2048_frac_anti": 0.9958847736625515,
+    "diffusion_path_ratio": 12.619006766277318,
+    "diffusion_consec_cos": -0.19328925946866882,
+    "diffusion_frac_anti": 0.6296296296296297,
+    "path_ratio_reduction": 0.8535521133953302
+  },
+  "prob0_joint": {
+    "problem_idx": 0,
+    "category": "combinatorics",
+    "n_zh": 125,
+    "n_en": 245,
+    "joint_eigenvalues": [
+      1.0,
+      0.08464902338727905,
+      0.07360424267850019
+    ],
+    "joint_epsilon": 43688.86886404082,
+    "alignment_mean_dist": 0.10544151831547316,
+    "zh_spread": 0.04602619380833865,
+    "en_spread": 0.05817647006113114,
+    "alignment_ratio": 2.023777788398101
+  },
+  "prob1_zh": {
+    "problem_idx": 1,
+    "category": "modular",
+    "language": "zh",
+    "n_steps": 241,
+    "epsilon": 34252.684830315295,
+    "eigenvalues": [
+      1.0,
+      0.18105763493337618,
+      0.11672746831653998
+    ],
+    "r2048_path_ratio": 261.9117736816406,
+    "r2048_consec_cos": -0.3090079423609077,
+    "r2048_frac_anti": 0.9707112970711297,
+    "diffusion_path_ratio": 255.0502890413621,
+    "diffusion_consec_cos": 0.18409797155268312,
+    "diffusion_frac_anti": 0.42677824267782427,
+    "path_ratio_reduction": 0.9738023054716937
+  },
+  "prob1_en": {
+    "problem_idx": 1,
+    "category": "modular",
+    "language": "en",
+    "n_steps": 154,
+    "epsilon": 42146.630792747485,
+    "eigenvalues": [
+      0.13079067803268934,
+      0.10228516600734593,
+      0.07287274349281238
+    ],
+    "r2048_path_ratio": 115.76412963867188,
+    "r2048_consec_cos": -0.3651995774309494,
+    "r2048_frac_anti": 1.0,
+    "diffusion_path_ratio": 60.41560005480237,
+    "diffusion_consec_cos": 0.04958868230689077,
+    "diffusion_frac_anti": 0.4407894736842105,
+    "path_ratio_reduction": 0.5218853218468813
+  },
+  "prob1_joint": {
+    "problem_idx": 1,
+    "category": "modular",
+    "n_zh": 241,
+    "n_en": 154,
+    "joint_eigenvalues": [
+      0.9999999999999999,
+      0.11104706113758034,
+      0.09768249011917468
+    ],
+    "joint_epsilon": 40366.33390406519,
+    "alignment_mean_dist": 0.14321819622034646,
+    "zh_spread": 0.07207542438964633,
+    "en_spread": 0.052420394486381396,
+    "alignment_ratio": 2.3007711827328494
+  },
+  "prob2_zh": {
+    "problem_idx": 2,
+    "category": "sequences",
+    "language": "zh",
+    "n_steps": 156,
+    "epsilon": 32607.42916351215,
+    "eigenvalues": [
+      0.9999999999999997,
+      0.19544976752901677,
+      0.14268971805395975
+    ],
+    "r2048_path_ratio": 156.20831298828125,
+    "r2048_consec_cos": -0.3433131062510339,
+    "r2048_frac_anti": 0.9935064935064936,
+    "diffusion_path_ratio": 269.92687988711737,
+    "diffusion_consec_cos": 0.11266018346438747,
+    "diffusion_frac_anti": 0.4155844155844156,
+    "path_ratio_reduction": 1.7279930544244932
+  },
+  "prob2_en": {
+    "problem_idx": 2,
+    "category": "sequences",
+    "language": "en",
+    "n_steps": 231,
+    "epsilon": 42610.622254745096,
+    "eigenvalues": [
+      0.10320983474153811,
+      0.07402415543373113,
+      0.0585018607510273
+    ],
+    "r2048_path_ratio": 220.1063995361328,
+    "r2048_consec_cos": -0.35449425321413963,
+    "r2048_frac_anti": 0.9956331877729258,
+    "diffusion_path_ratio": 617.8884239023047,
+    "diffusion_consec_cos": -0.10195558804922158,
+    "diffusion_frac_anti": 0.5633187772925764,
+    "path_ratio_reduction": 2.8072260743189874
+  },
+  "prob2_joint": {
+    "problem_idx": 2,
+    "category": "sequences",
+    "n_zh": 156,
+    "n_en": 231,
+    "joint_eigenvalues": [
+      1.0000000000000007,
+      0.12448184620950613,
+      0.0709887568997966
+    ],
+    "joint_epsilon": 42723.45805750602,
+    "alignment_mean_dist": 0.1536960384907951,
+    "zh_spread": 0.06053968915405475,
+    "en_spread": 0.049553991119872756,
+    "alignment_ratio": 2.7920955700341605
+  },
+  "prob10_zh": {
+    "problem_idx": 10,
+    "category": "geometry",
+    "language": "zh",
+    "n_steps": 160,
+    "epsilon": 36674.6006732957,
+    "eigenvalues": [
+      0.9999999999999991,
+      0.12483149125908162,
+      0.10210955260190509
+    ],
+    "r2048_path_ratio": 185.42457580566406,
+    "r2048_consec_cos": -0.3388924802789064,
+    "r2048_frac_anti": 0.9873417721518988,
+    "diffusion_path_ratio": 174.1046178884996,
+    "diffusion_consec_cos": 0.061759884044697705,
+    "diffusion_frac_anti": 0.4620253164556962,
+    "path_ratio_reduction": 0.9389511456721441
+  },
+  "prob10_en": {
+    "problem_idx": 10,
+    "category": "geometry",
+    "language": "en",
+    "n_steps": 214,
+    "epsilon": 42414.444079663604,
+    "eigenvalues": [
+      1.0000000000000002,
+      0.10220578068362357,
+      0.09128939773349753
+    ],
+    "r2048_path_ratio": 163.3212890625,
+    "r2048_consec_cos": -0.3541698053601101,
+    "r2048_frac_anti": 0.9905660377358491,
+    "diffusion_path_ratio": 173.20110202533556,
+    "diffusion_consec_cos": 0.05317397404348412,
+    "diffusion_frac_anti": 0.47641509433962265,
+    "path_ratio_reduction": 1.0604931115811531
+  },
+  "prob10_joint": {
+    "problem_idx": 10,
+    "category": "geometry",
+    "n_zh": 160,
+    "n_en": 214,
+    "joint_eigenvalues": [
+      0.9999999999999999,
+      0.9999963890728332,
+      0.09349950521465591
+    ],
+    "joint_epsilon": 40865.536801167764,
+    "alignment_mean_dist": 0.07226112808083318,
+    "zh_spread": 0.052618104993280214,
+    "en_spread": 0.05565630029181277,
+    "alignment_ratio": 1.3347776492618972
+  },
+  "epsilon_sweep": [
+    {
+      "eps_mult": 0.1,
+      "epsilon": 342.526848303153,
+      "path_ratio": 2601270332032.189,
+      "consec_cos": -0.31814118256513485,
+      "frac_anti": 0.706140350877193,
+      "eigenvalues": [
+        1.000009187874664,
+        1.0000060825873345,
+        1.0000043456866454
+      ]
+    },
+    {
+      "eps_mult": 0.25,
+      "epsilon": 2140.792801894706,
+      "path_ratio": 200.79915498971178,
+      "consec_cos": -0.05338985648777799,
+      "frac_anti": 0.5188284518828452,
+      "eigenvalues": [
+        1.0029318542747296,
+        1.0026197387335323,
+        1.0024940932448947
+      ]
+    },
+    {
+      "eps_mult": 0.5,
+      "epsilon": 8563.171207578824,
+      "path_ratio": 2769.366533884245,
+      "consec_cos": 0.17953968999444517,
+      "frac_anti": 0.39330543933054396,
+      "eigenvalues": [
+        0.9999999999999999,
+        0.9897796920992692,
+        0.9660240194314613
+      ]
+    },
+    {
+      "eps_mult": 1.0,
+      "epsilon": 34252.684830315295,
+      "path_ratio": 255.0502890413621,
+      "consec_cos": 0.18409797155268312,
+      "frac_anti": 0.42677824267782427,
+      "eigenvalues": [
+        1.0,
+        0.18105763493337618,
+        0.11672746831653998
+      ]
+    },
+    {
+      "eps_mult": 2.0,
+      "epsilon": 137010.73932126118,
+      "path_ratio": 298.5242818210907,
+      "consec_cos": 0.29590064727033144,
+      "frac_anti": 0.3389121338912134,
+      "eigenvalues": [
+        1.0000000000000002,
+        0.039193386842157334,
+        0.021969724628263666
+      ]
+    },
+    {
+      "eps_mult": 4.0,
+      "epsilon": 548042.9572850447,
+      "path_ratio": 622.3095203438637,
+      "consec_cos": 0.2975608148820523,
+      "frac_anti": 0.3263598326359833,
+      "eigenvalues": [
+        0.9999999740781116,
+        0.009542107695267445,
+        0.005215132151746892
+      ]
+    },
+    {
+      "eps_mult": 10.0,
+      "epsilon": 3425268.48303153,
+      "path_ratio": 7622.981599001705,
+      "consec_cos": 0.05770715712559886,
+      "frac_anti": 0.4602510460251046,
+      "eigenvalues": [
+        0.7948425176660665,
+        0.0015091964723919463,
+        0.0008196220201142344
+      ]
+    }
+  ]
+}

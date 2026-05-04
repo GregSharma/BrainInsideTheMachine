@@ -1,0 +1,346 @@
+{
+  "experiment": "Z: f-Reconstruction \u2014 Cross-Lingual Linear Probe",
+  "n_problems": 200,
+  "n_train": 160,
+  "n_test": 40,
+  "chance_category": 0.2,
+  "chance_answer_bucket": 0.047619047619047616,
+  "layers": [
+    {
+      "layer": 0,
+      "en_en_category": 1.0,
+      "en_zh_category": 0.4,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.4,
+      "en_zh_answer": 0.025,
+      "zh_zh_answer": 0.425
+    },
+    {
+      "layer": 1,
+      "en_en_category": 1.0,
+      "en_zh_category": 0.4,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.375,
+      "en_zh_answer": 0.125,
+      "zh_zh_answer": 0.35
+    },
+    {
+      "layer": 2,
+      "en_en_category": 1.0,
+      "en_zh_category": 0.8,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.325,
+      "en_zh_answer": 0.35,
+      "zh_zh_answer": 0.4
+    },
+    {
+      "layer": 3,
+      "en_en_category": 1.0,
+      "en_zh_category": 0.8,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.375,
+      "en_zh_answer": 0.175,
+      "zh_zh_answer": 0.4
+    },
+    {
+      "layer": 4,
+      "en_en_category": 1.0,
+      "en_zh_category": 1.0,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.35,
+      "en_zh_answer": 0.1,
+      "zh_zh_answer": 0.35
+    },
+    {
+      "layer": 5,
+      "en_en_category": 1.0,
+      "en_zh_category": 0.8,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.35,
+      "en_zh_answer": 0.2,
+      "zh_zh_answer": 0.4
+    },
+    {
+      "layer": 6,
+      "en_en_category": 1.0,
+      "en_zh_category": 1.0,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.35,
+      "en_zh_answer": 0.025,
+      "zh_zh_answer": 0.4
+    },
+    {
+      "layer": 7,
+      "en_en_category": 1.0,
+      "en_zh_category": 0.8,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.35,
+      "en_zh_answer": 0.0,
+      "zh_zh_answer": 0.375
+    },
+    {
+      "layer": 8,
+      "en_en_category": 1.0,
+      "en_zh_category": 0.6,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.475,
+      "en_zh_answer": 0.025,
+      "zh_zh_answer": 0.475
+    },
+    {
+      "layer": 9,
+      "en_en_category": 1.0,
+      "en_zh_category": 0.6,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.375,
+      "en_zh_answer": 0.0,
+      "zh_zh_answer": 0.4
+    },
+    {
+      "layer": 10,
+      "en_en_category": 1.0,
+      "en_zh_category": 1.0,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.4,
+      "en_zh_answer": 0.0,
+      "zh_zh_answer": 0.425
+    },
+    {
+      "layer": 11,
+      "en_en_category": 1.0,
+      "en_zh_category": 1.0,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.425,
+      "en_zh_answer": 0.0,
+      "zh_zh_answer": 0.475
+    },
+    {
+      "layer": 12,
+      "en_en_category": 1.0,
+      "en_zh_category": 1.0,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.4,
+      "en_zh_answer": 0.0,
+      "zh_zh_answer": 0.45
+    },
+    {
+      "layer": 13,
+      "en_en_category": 1.0,
+      "en_zh_category": 0.8,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.375,
+      "en_zh_answer": 0.0,
+      "zh_zh_answer": 0.525
+    },
+    {
+      "layer": 14,
+      "en_en_category": 1.0,
+      "en_zh_category": 0.6,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.425,
+      "en_zh_answer": 0.0,
+      "zh_zh_answer": 0.45
+    },
+    {
+      "layer": 15,
+      "en_en_category": 1.0,
+      "en_zh_category": 1.0,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.4,
+      "en_zh_answer": 0.05,
+      "zh_zh_answer": 0.425
+    },
+    {
+      "layer": 16,
+      "en_en_category": 1.0,
+      "en_zh_category": 1.0,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.375,
+      "en_zh_answer": 0.25,
+      "zh_zh_answer": 0.45
+    },
+    {
+      "layer": 17,
+      "en_en_category": 1.0,
+      "en_zh_category": 1.0,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.325,
+      "en_zh_answer": 0.15,
+      "zh_zh_answer": 0.425
+    },
+    {
+      "layer": 18,
+      "en_en_category": 1.0,
+      "en_zh_category": 1.0,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.425,
+      "en_zh_answer": 0.275,
+      "zh_zh_answer": 0.45
+    },
+    {
+      "layer": 19,
+      "en_en_category": 1.0,
+      "en_zh_category": 0.8,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.325,
+      "en_zh_answer": 0.075,
+      "zh_zh_answer": 0.5
+    },
+    {
+      "layer": 20,
+      "en_en_category": 1.0,
+      "en_zh_category": 0.8,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.3,
+      "en_zh_answer": 0.225,
+      "zh_zh_answer": 0.5
+    },
+    {
+      "layer": 21,
+      "en_en_category": 1.0,
+      "en_zh_category": 0.8,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.325,
+      "en_zh_answer": 0.225,
+      "zh_zh_answer": 0.475
+    },
+    {
+      "layer": 22,
+      "en_en_category": 1.0,
+      "en_zh_category": 0.8,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.325,
+      "en_zh_answer": 0.325,
+      "zh_zh_answer": 0.475
+    },
+    {
+      "layer": 23,
+      "en_en_category": 1.0,
+      "en_zh_category": 0.8,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.375,
+      "en_zh_answer": 0.175,
+      "zh_zh_answer": 0.55
+    },
+    {
+      "layer": 24,
+      "en_en_category": 1.0,
+      "en_zh_category": 0.8,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.4,
+      "en_zh_answer": 0.125,
+      "zh_zh_answer": 0.475
+    },
+    {
+      "layer": 25,
+      "en_en_category": 1.0,
+      "en_zh_category": 1.0,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.425,
+      "en_zh_answer": 0.275,
+      "zh_zh_answer": 0.475
+    },
+    {
+      "layer": 26,
+      "en_en_category": 1.0,
+      "en_zh_category": 1.0,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.45,
+      "en_zh_answer": 0.225,
+      "zh_zh_answer": 0.45
+    },
+    {
+      "layer": 27,
+      "en_en_category": 1.0,
+      "en_zh_category": 1.0,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.45,
+      "en_zh_answer": 0.225,
+      "zh_zh_answer": 0.4
+    },
+    {
+      "layer": 28,
+      "en_en_category": 1.0,
+      "en_zh_category": 1.0,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.475,
+      "en_zh_answer": 0.225,
+      "zh_zh_answer": 0.375
+    },
+    {
+      "layer": 29,
+      "en_en_category": 1.0,
+      "en_zh_category": 1.0,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.425,
+      "en_zh_answer": 0.225,
+      "zh_zh_answer": 0.425
+    },
+    {
+      "layer": 30,
+      "en_en_category": 1.0,
+      "en_zh_category": 1.0,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.425,
+      "en_zh_answer": 0.25,
+      "zh_zh_answer": 0.45
+    },
+    {
+      "layer": 31,
+      "en_en_category": 1.0,
+      "en_zh_category": 1.0,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.425,
+      "en_zh_answer": 0.2,
+      "zh_zh_answer": 0.45
+    },
+    {
+      "layer": 32,
+      "en_en_category": 1.0,
+      "en_zh_category": 1.0,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.45,
+      "en_zh_answer": 0.2,
+      "zh_zh_answer": 0.4
+    },
+    {
+      "layer": 33,
+      "en_en_category": 1.0,
+      "en_zh_category": 1.0,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.475,
+      "en_zh_answer": 0.2,
+      "zh_zh_answer": 0.425
+    },
+    {
+      "layer": 34,
+      "en_en_category": 1.0,
+      "en_zh_category": 1.0,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.475,
+      "en_zh_answer": 0.15,
+      "zh_zh_answer": 0.525
+    },
+    {
+      "layer": 35,
+      "en_en_category": 1.0,
+      "en_zh_category": 1.0,
+      "zh_zh_category": 1.0,
+      "en_en_answer": 0.45,
+      "en_zh_answer": 0.125,
+      "zh_zh_answer": 0.5
+    }
+  ],
+  "controls": {
+    "random_label_en_en_L20": 0.2,
+    "random_label_en_zh_L20": 0.225
+  },
+  "summary": {
+    "best_cross_lingual_category_transfer": 1.0,
+    "best_category_layer": 4,
+    "best_cross_lingual_answer_transfer": 0.35,
+    "best_answer_layer": 2,
+    "chance_category": 0.2,
+    "chance_answer_bucket": 0.047619047619047616
+  }
+}

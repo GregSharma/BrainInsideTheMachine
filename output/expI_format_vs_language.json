@@ -1,0 +1,384 @@
+{
+  "experiment": "I: Format Attractor vs Language Attractor",
+  "baselines": {
+    "zh_math": {
+      "prompt": "如果 x + 5 = 12，求 x 的值。",
+      "generation": "要解决这个方程，我们需要找到使等式成立的 x 的值。给定的方程是：\n\n\\[ x + 5 = 12 \\]\n\n为了求解 x，我们可以从等式的两边减去 5：\n\n\\[ x + 5 - 5 = 12 - 5 \\]\n\n这样，等式就简化为：\n\n\\[ x = 7 \\]\n\n因此，x 的值是 7。",
+      "classification": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 56,
+        "en_chars": 6
+      }
+    },
+    "en_math": {
+      "prompt": "If x + 5 = 12, find the value of x.",
+      "generation": "To find the value of \\( x \\) in the equation \\( x + 5 = 12 \\), we need to isolate \\( x \\) on one side of the equation. Here are the steps to solve for \\( x \\):\n\n1. Start with the given equation:\n   \\[\n   x + 5 = 12\n   \\]\n\n2. To isolate \\( x \\), we need to get rid of the 5 on the left side of the equation. We do this by subtracting 5 from both sides of the equation:\n   \\[\n   x + 5 - 5 = 12",
+      "classification": {
+        "language": "english",
+        "format": "math_expression",
+        "zh_chars": 0,
+        "en_chars": 224
+      }
+    },
+    "zh_prose": {
+      "prompt": "请描述一下春天的景色。",
+      "generation": "春天，这个充满生机与希望的季节，以其独特的魅力吸引着每一个人。当冬日的寒冷逐渐退去，大地开始苏醒，万物复苏，春天便悄然而至。\n\n在春天里，天空通常呈现出一种淡淡的蓝色，阳光明媚而温暖，让人感到心情愉悦。微风轻拂，带来了花香和草香，空气中弥漫着一种清新而甜美的气息。树木开始抽出嫩绿的新芽，花朵竞相开放，五彩斑斓，如樱花、桃花、梨花等，它们在阳光下绽放着美丽的笑容，为大地披上了一层绚丽的色彩。\n\n",
+      "classification": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 172,
+        "en_chars": 0
+      }
+    },
+    "en_prose": {
+      "prompt": "Describe the scenery of spring.",
+      "generation": "Spring is a season of renewal and growth, and the scenery is nothing short of breathtaking. The trees and flowers are in full bloom, and the air is filled with the sweet scent of blossoms. The grass is green and lush, and the birds are singing their sweet melodies. The sun is shining brightly, and the sky is a beautiful shade of blue. The scenery of spring is truly a sight to behold.",
+      "classification": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 305
+      }
+    },
+    "code": {
+      "prompt": "Write a Python function to compute factorial.",
+      "generation": "def factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)",
+      "classification": {
+        "language": "english",
+        "format": "code",
+        "zh_chars": 0,
+        "en_chars": 43
+      }
+    },
+    "zh_list": {
+      "prompt": "列出三种常见的水果。",
+      "generation": "以下是三种常见的水果：\n\n1. 苹果：苹果是一种非常受欢迎的水果，它有多种不同的品种，包括红苹果、绿苹果和黄苹果等。苹果富含维生素C、纤维素和抗氧化剂，有助于保持身体健康。\n\n2. 香蕉：香蕉是一种营养丰富的水果，它含有钾、维生素B6和膳食纤维。香蕉还具有抗炎和抗氧化的特性，有助于缓解压力和改善睡眠质量。\n\n3. 橙子：橙子是一种富含维生素C的水果，它还有助于增强免疫系统和促进消化。橙子还含有抗氧化剂，有助于预防",
+      "classification": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 170,
+        "en_chars": 3
+      }
+    },
+    "en_list": {
+      "prompt": "List three common fruits.",
+      "generation": "1. Apple\n2. Banana\n3. Orange",
+      "classification": {
+        "language": "english",
+        "format": "list",
+        "zh_chars": 0,
+        "en_chars": 17
+      }
+    },
+    "translate": {
+      "prompt": "Translate '你好世界' to English.",
+      "generation": "'你好世界' translates to 'Hello World' in English.",
+      "classification": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 4,
+        "en_chars": 31
+      }
+    },
+    "zh_logic": {
+      "prompt": "如果所有的猫都是动物，而小白是一只猫，那么小白是什么？",
+      "generation": "回答上面的问题，给出具体的推理逻辑。\n根据题目中的信息，我们可以进行以下推理：\n\n1. **前提条件**：\n   - 所有的猫都是动物。\n   - 小白是一只猫。\n\n2. **逻辑推理**：\n   - 既然所有的猫都是动物，那么任何一只猫也一定是动物。\n   - 因此，如果小白是一只猫，那么小白也一定是动物。\n\n综上所述，小白是动物。",
+      "classification": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 108,
+        "en_chars": 0
+      }
+    }
+  },
+  "cross_injections": [
+    {
+      "source": "zh_math",
+      "target": "en_math",
+      "hypothesis": "Same task different language → tests language control",
+      "generation": "x = 7\n\nHere's the reasoning:\n\n1. We are given the equation x + 5 = 12.\n2. To isolate x, we need to get rid of the +5 on the left side of the equation.\n3. We can do this by subtracting 5 from both sides of the equation: x + 5 - 5 = 12 - 5.\n4. Simplifying both sides, we get x = 7.\n\nTherefore, the value of x is 7.",
+      "output_classification": {
+        "language": "english",
+        "format": "math_expression",
+        "zh_chars": 0,
+        "en_chars": 194
+      },
+      "source_baseline_classification": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 56,
+        "en_chars": 6
+      },
+      "target_baseline_classification": {
+        "language": "english",
+        "format": "math_expression",
+        "zh_chars": 0,
+        "en_chars": 224
+      },
+      "language_follows_source": false,
+      "language_follows_target": true,
+      "format_follows_source": false,
+      "format_follows_target": true
+    },
+    {
+      "source": "zh_math",
+      "target": "en_prose",
+      "hypothesis": "Math state into prose prompt → tests format control",
+      "generation": "在春天，大自然呈现出一片生机勃勃的景象。树木开始抽出嫩绿的新芽，花朵竞相开放，五彩缤纷，散发出阵阵芬芳。微风轻拂，带来阵阵花香，让人心旷神怡。河流和湖泊也变得清澈见底，水面上漂浮着嫩绿的水草，鱼儿在水中欢快地游弋。田野里，麦苗茁壮成长，一片片金黄色的麦田在阳光下闪耀着光芒。春天的天空湛蓝如洗，白云悠闲地飘荡，阳光明媚，温暖而舒适。整个世界仿佛都被春天",
+      "output_classification": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 157,
+        "en_chars": 0
+      },
+      "source_baseline_classification": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 56,
+        "en_chars": 6
+      },
+      "target_baseline_classification": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 305
+      },
+      "language_follows_source": true,
+      "language_follows_target": false,
+      "format_follows_source": false,
+      "format_follows_target": true
+    },
+    {
+      "source": "zh_math",
+      "target": "code",
+      "hypothesis": "Math state into code prompt → tests format control",
+      "generation": "在Python中，我们可以使用递归或循环来计算一个数的阶乘。这里我将提供两种方法的实现。\n\n### 方法一：使用递归\n\n递归是一种直接利用函数自身来解决问题的方法。对于阶乘，递归函数可以定义为：\n\n- 如果输入的数是0或1，则返回1。\n- 否则，返回该数乘以它的前一个阶乘。\n\n```python\ndef factorial(n):\n    if n == 0 or n == 1:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\n# 测试\nprint",
+      "output_classification": {
+        "language": "mixed",
+        "format": "code",
+        "zh_chars": 104,
+        "en_chars": 63
+      },
+      "source_baseline_classification": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 56,
+        "en_chars": 6
+      },
+      "target_baseline_classification": {
+        "language": "english",
+        "format": "code",
+        "zh_chars": 0,
+        "en_chars": 43
+      },
+      "language_follows_source": false,
+      "language_follows_target": false,
+      "format_follows_source": false,
+      "format_follows_target": true
+    },
+    {
+      "source": "en_math",
+      "target": "zh_math",
+      "hypothesis": "Reverse language swap → tests symmetry",
+      "generation": "以 x + 5 = 12 为例，我们可以使用代数方法来求解 x 的值。\n首先，我们可以将等式两边都减去 5，得到：\nx + 5 - 5 = 12 - 5\nx = 7\n因此，x 的值为 7。\n另一种方法是使用反向思维，将等式两边都除以 5，得到：\nx + 5 / 5 = 12 / 5\nx + 1 = 2.4\n然后，将等式两边都减去 1，得到：\nx",
+      "output_classification": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 73,
+        "en_chars": 8
+      },
+      "source_baseline_classification": {
+        "language": "english",
+        "format": "math_expression",
+        "zh_chars": 0,
+        "en_chars": 224
+      },
+      "target_baseline_classification": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 56,
+        "en_chars": 6
+      },
+      "language_follows_source": false,
+      "language_follows_target": true,
+      "format_follows_source": false,
+      "format_follows_target": true
+    },
+    {
+      "source": "zh_prose",
+      "target": "zh_math",
+      "hypothesis": "Prose state into math prompt → tests format control",
+      "generation": "欢迎来到数学世界！让我们一起解决这个问题。\n首先，我们需要理解等式的意思。等式表示两个表达式相等。在这个问题中，等式是 x + 5 = 12。这意味着 x 和 5 相加等于 12。\n现在，我们需要解出 x 的值。为了做到这一点，我们需要将等式两边都减去 5。这样，我们就可以得到 x 的值。\nx + 5 - 5 = 12 - 5\nx = 7\n因此，x 的值是 7。\n希望这个解释对你有帮助！如果你有任何问题",
+      "output_classification": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 125,
+        "en_chars": 7
+      },
+      "source_baseline_classification": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 172,
+        "en_chars": 0
+      },
+      "target_baseline_classification": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 56,
+        "en_chars": 6
+      },
+      "language_follows_source": true,
+      "language_follows_target": true,
+      "format_follows_source": false,
+      "format_follows_target": true
+    },
+    {
+      "source": "zh_prose",
+      "target": "en_prose",
+      "hypothesis": "Same task different language → tests language control",
+      "generation": "欢迎来到春天！春天是一年四季中最美丽的季节之一。在这个季节里，大自然开始苏醒，万物复苏。树木开始长出嫩绿的新叶，花朵开始绽放，草地开始变绿，河流开始流动。天空变得湛蓝，阳光变得温暖，微风拂面，让人感到舒适和愉悦。春天的景色是如此美丽，让人不禁感叹大自然的神奇和美丽。",
+      "output_classification": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 118,
+        "en_chars": 0
+      },
+      "source_baseline_classification": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 172,
+        "en_chars": 0
+      },
+      "target_baseline_classification": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 305
+      },
+      "language_follows_source": true,
+      "language_follows_target": false,
+      "format_follows_source": true,
+      "format_follows_target": true
+    },
+    {
+      "source": "code",
+      "target": "zh_math",
+      "hypothesis": "Code state into math prompt → tests format control",
+      "generation": "For the equation x + 5 = 12, we need to isolate x. To do this, we subtract 5 from both sides of the equation:\n\nx + 5 - 5 = 12 - 5\n\nThis simplifies to:\n\nx = 7\n\nSo, the value of x is 7.",
+      "output_classification": {
+        "language": "english",
+        "format": "math_expression",
+        "zh_chars": 0,
+        "en_chars": 108
+      },
+      "source_baseline_classification": {
+        "language": "english",
+        "format": "code",
+        "zh_chars": 0,
+        "en_chars": 43
+      },
+      "target_baseline_classification": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 56,
+        "en_chars": 6
+      },
+      "language_follows_source": true,
+      "language_follows_target": false,
+      "format_follows_source": false,
+      "format_follows_target": false
+    },
+    {
+      "source": "zh_list",
+      "target": "en_prose",
+      "hypothesis": "List state into prose prompt → tests format control",
+      "generation": "春季的景色是美丽的，充满了生机和活力。春天的天空是湛蓝的，阳光明媚，温暖而舒适。树木开始发芽，花朵绽放，草地上的小草也逐渐长高。河流和湖泊也变得清澈，水面上漂浮着嫩绿的水草。春天的景色让人感到愉悦和放松，是人们享受户外活动和旅行的好季节。",
+      "output_classification": {
+        "language": "chinese",
+        "format": "prose",
+        "zh_chars": 107,
+        "en_chars": 0
+      },
+      "source_baseline_classification": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 170,
+        "en_chars": 3
+      },
+      "target_baseline_classification": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 305
+      },
+      "language_follows_source": true,
+      "language_follows_target": false,
+      "format_follows_source": false,
+      "format_follows_target": true
+    },
+    {
+      "source": "zh_logic",
+      "target": "en_math",
+      "hypothesis": "Logic state into math prompt → tests content preservation",
+      "generation": "这道题的意思是：如果 x + 5 = 12，那么 x 的值是多少？\n解题过程：\n首先，我们需要将等式两边都减去 5，以求出 x 的值。\nx + 5 - 5 = 12 - 5\nx = 7\n因此，x 的值是 7。\n答案：7",
+      "output_classification": {
+        "language": "chinese",
+        "format": "math_solution",
+        "zh_chars": 46,
+        "en_chars": 6
+      },
+      "source_baseline_classification": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 108,
+        "en_chars": 0
+      },
+      "target_baseline_classification": {
+        "language": "english",
+        "format": "math_expression",
+        "zh_chars": 0,
+        "en_chars": 224
+      },
+      "language_follows_source": true,
+      "language_follows_target": false,
+      "format_follows_source": false,
+      "format_follows_target": false
+    },
+    {
+      "source": "en_list",
+      "target": "zh_list",
+      "hypothesis": "Same task different language → tests language control",
+      "generation": "To list three common fruits, I will choose apples, bananas, and oranges. These are widely available and popular fruits that are commonly consumed around the world.",
+      "output_classification": {
+        "language": "english",
+        "format": "prose",
+        "zh_chars": 0,
+        "en_chars": 133
+      },
+      "source_baseline_classification": {
+        "language": "english",
+        "format": "list",
+        "zh_chars": 0,
+        "en_chars": 17
+      },
+      "target_baseline_classification": {
+        "language": "chinese",
+        "format": "list",
+        "zh_chars": 170,
+        "en_chars": 3
+      },
+      "language_follows_source": true,
+      "language_follows_target": false,
+      "format_follows_source": false,
+      "format_follows_target": false
+    }
+  ],
+  "summary": {
+    "language_follows_source": 7,
+    "language_follows_target": 3,
+    "format_follows_source": 1,
+    "format_follows_target": 7,
+    "total_tests": 10
+  }
+}

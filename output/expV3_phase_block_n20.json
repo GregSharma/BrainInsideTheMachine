@@ -1,0 +1,21 @@
+{
+  "experiment": "V3: Phase Block TC0 Flip (N=20)",
+  "model": "Qwen/Qwen2.5-3B",
+  "scale": -0.5,
+  "max_tokens": 128,
+  "n_test": 20,
+  "results": {
+    "baseline": 5,
+    "adversarial_L9-L17": 5,
+    "cooperative_L18-L21": 5,
+    "ramp_L22-L26": 4,
+    "all_TC0_L9-L26": 5,
+    "all_LANG_L9-L26": 13
+  },
+  "additivity": {
+    "sum_blocks": 4,
+    "all": 5,
+    "superadditive": true
+  },
+  "runtime_seconds": 297.0402874946594
+}

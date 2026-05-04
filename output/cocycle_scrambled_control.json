@@ -1,0 +1,9 @@
+{
+  "real_cocycle_mean": 0.02860247530043125,
+  "real_cocycle_std": 0.0018187494715675712,
+  "scrambled_cocycle_mean": 0.17056235671043396,
+  "scrambled_cocycle_std": 0.015230227261781693,
+  "ratio": 5.963202476501465,
+  "n_splits": 10,
+  "n_scrambles_per_split": 5
+}

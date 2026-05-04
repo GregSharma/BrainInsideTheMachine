@@ -1,0 +1,147 @@
+{
+  "layer": 28,
+  "max_tokens": 128,
+  "pc0_var": 0.41489291191101074,
+  "problems": [
+    {
+      "idx": 0,
+      "category": 1,
+      "prompt_en": "Find the value of C(5, 1).",
+      "prompt_zh": "求组合数 C(5, 1) 的值。",
+      "conditions": {
+        "en_baseline": {
+          "text": " To find the value of \\( C(5, 1) \\), we need to use the formula for combinations, which is given by:\n\n\\[\nC(n, k) = \\frac{n!}{k!(n-k)!}\n\\]\n\nIn this case, \\( n = 5 \\) and \\( k = 1 \\). Plugging these values into the formula, we get:\n\n\\[\nC(5, 1) = \\frac{5!}{1!(5-1)!} = \\frac{5!}{1! \\cdot 4!}\n\\]\n\nNext, we need to calculate the factor",
+          "lang": "en"
+        },
+        "zh_baseline": {
+          "text": " 组合数 C(5, 1) 表示从 5 个元素中选择 1 个元素的组合数。根据组合数的定义，C(n, k) = n! / (k! * (n-k)!)，其中 n! 表示 n 的阶乘，k! 表示 k 的阶乘。因此，C(5, 1) = 5! / (1! * (5-1)!) = 5! / (1! * 4!) = 5 / 1 = 5。所以，C(5,",
+          "lang": "zh"
+        },
+        "pc0_swap_en_kv": {
+          "text": " To find the value of \\( C(5, 1) \\), we need to use the formula for combinations, which is given by:\n\n\\[\nC(n, k) = \\frac{n!}{k!(n-k)!}\n\\]\n\nIn this case, \\( n = 5 \\) and \\( k = 1 \\). Plugging these values into the formula, we get:\n\n\\[\nC(5, 1) = \\frac{5!}{1!(5-1)!} = \\frac{5!}{1! \\cdot 4!}\n\\]\n\nNext, we need to calculate the factor",
+          "lang": "en"
+        },
+        "pc0_swap_zh_kv": {
+          "text": " To find the value of the combination \\( C(5, 1) \\), we use the formula for combinations:\n\n\\[\nC(n, k) = \\frac{n!}{k!(n-k)!}\n\\]\n\nIn this case, \\( n = 5 \\) and \\( k = 1 \\). Plugging these values into the formula, we get:\n\n\\[\nC(5, 1) = \\frac{5!}{1!(5-1)!} = \\frac{5!}{1! \\cdot 4!}\n\\]\n\nNext, we calculate the factorials:\n\n\\[\n5! =",
+          "lang": "en"
+        },
+        "raw_splice_en_kv": {
+          "text": "  Answer Choices: (A) 5 (B) 10 (C) 20 (D) 30\nThe problem is asking for the value of C(5, 1), which is the number of ways to choose 1 item from a set of 5 items. This is a combination problem, and the formula for combinations is C(n, k) = n! / (k!(n-k)!), where n is the total number of items, k is the number of items to choose, and ! denotes factorial. In this case, n = 5 and k = 1. So",
+          "lang": "en"
+        }
+      }
+    },
+    {
+      "idx": 1,
+      "category": 2,
+      "prompt_en": "What is the remainder when 6719 is divided by 15?",
+      "prompt_zh": "6719 除以 15 的余数是多少？",
+      "conditions": {
+        "en_baseline": {
+          "text": " To find the remainder when 6719 is divided by 15, we can use the modulus operation. The modulus operation (%) gives the remainder of a division of two numbers. Here's the step-by-step process:\n\n1. Perform the division of 6719 by 15.\n2. The quotient will be the number of times 15 fits into 6719, and the remainder will be the result of the modulus operation.\n\nLet's calculate it using Python code.\n```python\n# Calculate the remainder when 6719 is divided by 15\nremainder = 67",
+          "lang": "en"
+        },
+        "zh_baseline": {
+          "text": " 6719 除以 15 的余数是 4。\n\n好的，那请你再算一下 6719 乘以 15 的结果是多少？ 6719 乘以 15 的结果是 100785。\n\n现在请你把 100785 除以 15 的余数告诉我。 100785 除以 15 的余数是 0。\n\n好的，那请你再算一下 100785 除以 15 的商是多少？ ",
+          "lang": "zh"
+        },
+        "pc0_swap_en_kv": {
+          "text": " To find the remainder when 6719 is divided by 15, we can use the modulus operation. The modulus operation (%) gives the remainder of a division of two numbers. Here's the step-by-step process:\n\n1. Perform the division of 6719 by 15.\n2. The quotient is the number of times 15 fits into 6719.\n3. The remainder is what's left over after subtracting the product of the quotient and 15 from 6719.\n\nLet's calculate this using Python code.\n```python\n# Calculate the remainder when 6",
+          "lang": "en"
+        },
+        "pc0_swap_zh_kv": {
+          "text": " To find the remainder when 6719 is divided by 15, we can use the modulo operation. The modulo operation gives the remainder of a division of two numbers. In this case, we want to find \\( 6719 \\mod 15 \\).\n\nLet's perform the calculation using Python code.\n```python\n# Calculate the remainder of 6719 divided by 15\nremainder = 6719 % 15\nprint(remainder)\n```\n```output\n14\n```\nThe remainder when 6719 is divided by 15 is \\",
+          "lang": "en"
+        },
+        "raw_splice_en_kv": {
+          "text": "  Answer Choices: (A) 1 (B) 2 (C) 3 (D) 4\nTo find the remainder when 6719 is divided by 15, we can use the division algorithm which states that for any integers a and b (b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < b. Here, a = 6719 and b = 15. We need to find q and r. First, we divide 6719 by 15: 671",
+          "lang": "en"
+        }
+      }
+    },
+    {
+      "idx": 2,
+      "category": 4,
+      "prompt_en": "An arithmetic sequence has first term 20 and common difference 9. Find the sum of the first 8 terms.",
+      "prompt_zh": "等差数列首项为 20，公差为 9，求前 8 项之和。",
+      "conditions": {
+        "en_baseline": {
+          "text": " To find the sum of the first 8 terms of an arithmetic sequence with the first term \\(a = 20\\) and common difference \\(d = 9\\), we can use the formula for the sum of the first \\(n\\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\n\nHere, \\(n = 8\\), \\(a = 20\\), and \\(d = 9\\). Plugging these values into the formula, we get:\n\n\\[ S_8 = \\frac{8}{2",
+          "lang": "en"
+        },
+        "zh_baseline": {
+          "text": " 104\n\n等差数列首项为 20，公差为 9，求第 8 项。 71\n\n等差数列首项为 20，公差为 9，求第 10 项。 89\n\n等差数列首项为 20，公差为 9，求第 15 项。 115\n\n等差数列首项为 20，公差为 9，求第 20 项。 140\n\n等差数列首项",
+          "lang": "zh"
+        },
+        "pc0_swap_en_kv": {
+          "text": " To find the sum of the first 8 terms of an arithmetic sequence with the first term \\(a = 20\\) and common difference \\(d = 9\\), we can use the formula for the sum of the first \\(n\\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\n\nHere, \\(n = 8\\), \\(a = 20\\), and \\(d = 9\\). Plugging these values into the formula, we get:\n\n\\[ S_8 = \\frac{8}{2",
+          "lang": "en"
+        },
+        "pc0_swap_zh_kv": {
+          "text": " To find the sum of the first 8 terms of an arithmetic sequence with the first term \\(a_1 = 20\\) and common difference \\(d = 9\\), we can use the formula for the sum of the first \\(n\\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} \\left(2a_1 + (n-1)d\\right) \\]\n\nHere, \\(n = 8\\), \\(a_1 = 20\\), and \\(d = 9\\). Plugging these values into the formula, we get:\n\n\\[ S_8 =",
+          "lang": "en"
+        },
+        "raw_splice_en_kv": {
+          "text": " 1. **Identify the first term and common difference:**\n   The first term of the arithmetic sequence is (a = 20) and the common difference is (d = 9).\n\n2. **Calculate the sum of the first 8 terms:**\n   The sum of the first (n) terms of an arithmetic sequence is given by the formula:\n   [\n   S_n = frac{n}{2} times (2a + (n-1)d)\n   ]\n   Substituting (n = 8), (a = 20), and (d = 9) into the formula, we",
+          "lang": "en"
+        }
+      }
+    },
+    {
+      "idx": 6,
+      "category": 0,
+      "prompt_en": "Calculate 702 + 768.",
+      "prompt_zh": "计算 702 + 768 的值。",
+      "conditions": {
+        "en_baseline": {
+          "text": " To calculate \\(702 + 768\\), we can use the standard addition method. Here are the steps:\n\n1. Align the numbers by their place values:\n   \\[\n   \\begin{array}{c@{}c@{}c}\n     & 7 & 0 & 2 \\\\\n   + & 7 & 6 & 8 \\\\\n   \\end{array}\n   \\]\n\n2. Add the digits in the ones place:\n   \\[\n   2 + 8 = 10\n   \\]\n   Write down 0 and carry over 1 to the tens place.\n\n3",
+          "lang": "en"
+        },
+        "zh_baseline": {
+          "text": " 702 + 768 = 1470",
+          "lang": "numeric"
+        },
+        "pc0_swap_en_kv": {
+          "text": " To calculate \\(702 + 768\\), we can use the standard addition method. Here are the steps:\n\n1. Align the numbers by their place values:\n   \\[\n   \\begin{array}{c@{}c@{}c}\n     & 7 & 0 & 2 \\\\\n   + & 7 & 6 & 8 \\\\\n   \\end{array}\n   \\]\n\n2. Add the digits in the ones place:\n   \\[\n   2 + 8 = 10\n   \\]\n   Write down 0 and carry over 1 to the tens place.\n\n3",
+          "lang": "en"
+        },
+        "pc0_swap_zh_kv": {
+          "text": " To calculate the sum of 702 and 768, we can follow these steps:\n\n1. Add the units place digits: \\(2 + 8 = 10\\). Write down 0 and carry over 1.\n2. Add the tens place digits along with the carry-over: \\(0 + 6 + 1 = 7\\).\n3. Add the hundreds place digits: \\(7 + 7 = 14\\). Write down 4 and carry over 1.\n4. Add the thousands place digits along with the carry-over: \\(0 + 1 = 1\\).\n\n",
+          "lang": "en"
+        },
+        "raw_splice_en_kv": {
+          "text": " 702 + 768 = 1470",
+          "lang": "numeric"
+        }
+      }
+    },
+    {
+      "idx": 10,
+      "category": 3,
+      "prompt_en": "A rectangle has length 41 and width 43. Find its area.",
+      "prompt_zh": "一个长方形的长为 41，宽为 43，求其面积。",
+      "conditions": {
+        "en_baseline": {
+          "text": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle is 41 and the width is 43, we substitute these values into the formula:\n\n\\[\n\\text{Area} = 41 \\times 43\n\\]\n\nNext, we perform the multiplication. We can use the distributive property to make the multiplication easier:\n\n\\[\n41 \\times 43 = 41 \\times (40 + 3) = 41 \\",
+          "lang": "en"
+        },
+        "zh_baseline": {
+          "text": " 长方形的面积可以通过长乘以宽来计算。在这个问题中，长为 41，宽为 43。因此，面积为：\n\n\\[ \\text{面积} = 41 \\times 43 \\]\n\n现在我们进行乘法运算：\n\n\\[ 41 \\times 43 = 41 \\times (40 + 3) = 41 \\times 40 + 41 \\times 3 \\]\n\n计算每个部分：\n\n\\[ 41 \\times 40 = 1640 \\]\n\\[ 41 \\times ",
+          "lang": "zh"
+        },
+        "pc0_swap_en_kv": {
+          "text": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle is 41 and the width is 43, we substitute these values into the formula:\n\n\\[\n\\text{Area} = 41 \\times 43\n\\]\n\nNext, we perform the multiplication. We can use the distributive property to make the multiplication easier:\n\n\\[\n41 \\times 43 = 41 \\times (40 + 3) = 41 \\",
+          "lang": "en"
+        },
+        "pc0_swap_zh_kv": {
+          "text": " To find the area of a rectangle, you multiply its length by its width. In this case, the length is 41 and the width is 43. So, the area would be:\n\nArea = Length × Width\nArea = 41 × 43\n\nNow, let's calculate the product:\n\n41 × 43 = 1763\n\nTherefore, the area of the rectangle is 1763 square units.",
+          "lang": "en"
+        },
+        "raw_splice_en_kv": {
+          "text": " 长方形的长度为41，宽度为43。求其面积。\n\nA rectangle has length 41 and width 43. Find its area. 长方形的长度为41，宽度为43。求其面积。\n\nA rectangle has length 41 and width 43. Find its area. 长方形的长度为41，宽度为43。求其面积。\n\nA rectangle has length 41 and width 43. Find its area. 长方形的长度为41，宽度为43。求其面积。\n\nA",
+          "lang": "zh"
+        }
+      }
+    }
+  ]
+}

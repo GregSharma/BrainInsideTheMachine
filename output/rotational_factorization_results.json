@@ -1,0 +1,47 @@
+{
+  "L8": {
+    "rotation_magnitude": 5.822539154530126,
+    "rotation_normalized": 0.5822539154530126,
+    "mean_angle_deg": 23.184249877929688,
+    "max_angle_deg": 179.4840087890625,
+    "n_significant_rotations": 66,
+    "nn_procrustes": 0.085,
+    "mean_relative_error": 1.1193379163742065
+  },
+  "L16": {
+    "rotation_magnitude": 7.7037389508007195,
+    "rotation_normalized": 0.7703738950800719,
+    "mean_angle_deg": 34.71027374267578,
+    "max_angle_deg": 163.53298950195312,
+    "n_significant_rotations": 78,
+    "nn_procrustes": 0.125,
+    "mean_relative_error": 0.9506319165229797
+  },
+  "L24": {
+    "rotation_magnitude": 8.142250746045528,
+    "rotation_normalized": 0.8142250746045528,
+    "mean_angle_deg": 37.97195053100586,
+    "max_angle_deg": 173.389404296875,
+    "n_significant_rotations": 80,
+    "nn_procrustes": 0.12,
+    "mean_relative_error": 0.8739866018295288
+  },
+  "L32": {
+    "rotation_magnitude": 9.813921840957542,
+    "rotation_normalized": 0.9813921840957542,
+    "mean_angle_deg": 50.8251953125,
+    "max_angle_deg": 180.0,
+    "n_significant_rotations": 89,
+    "nn_procrustes": 0.755,
+    "mean_relative_error": 0.31958767771720886
+  },
+  "L34": {
+    "rotation_magnitude": 10.50406692456097,
+    "rotation_normalized": 1.050406692456097,
+    "mean_angle_deg": 56.240478515625,
+    "max_angle_deg": 180.0,
+    "n_significant_rotations": 89,
+    "nn_procrustes": 0.595,
+    "mean_relative_error": 0.32040107250213623
+  }
+}

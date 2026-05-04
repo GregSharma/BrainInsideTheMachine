@@ -1,0 +1,96 @@
+{
+  "experiment": "K: Destruction Tests",
+  "K1_kill_language": {
+    "fmt_survived_count": 8,
+    "lang_destroyed_count": 1,
+    "total": 8
+  },
+  "K2_kill_format": {
+    "results": [
+      {
+        "prompt": "zh_math",
+        "expected_lang": "chinese",
+        "expected_fmt": "math",
+        "output_lang": "chinese",
+        "output_fmt": "math",
+        "lang_survived": true,
+        "fmt_destroyed": false,
+        "text": "要解决这个方程，我们需要找到使等式成立的 x 的值。给定的方程是：\n\n\\[ x + 5 = 12 \\]\n\n为了求解 x，我们可以从等式的两边减去 5：\n\n\\[ x + 5 - 5 = 12 - 5 \\]\n\n这样，等式就简化为：\n\n\\[ x = 7 \\]\n\n因此，x 的值是 7。"
+      },
+      {
+        "prompt": "en_math",
+        "expected_lang": "english",
+        "expected_fmt": "math",
+        "output_lang": "english",
+        "output_fmt": "math",
+        "lang_survived": true,
+        "fmt_destroyed": false,
+        "text": "To find the value of \\( x \\) in the equation \\( x + 5 = 12 \\), we need to isolate \\( x \\) on one side of the equation. Here are the steps to solve for \\( x \\):\n\n1. Start with the given equation:\n   \\[\n   x + 5 = 12\n   \\]\n\n2. To isolate \\( x \\), we need to get rid of the 5 on the left side of the equation. We do this by subtracting 5 from both sides of the equation:\n   \\[\n   x + 5 - 5 = 12"
+      },
+      {
+        "prompt": "zh_prose",
+        "expected_lang": "chinese",
+        "expected_fmt": "prose",
+        "output_lang": "chinese",
+        "output_fmt": "prose",
+        "lang_survived": true,
+        "fmt_destroyed": false,
+        "text": "春天，这个充满生机与希望的季节，以其独特的魅力吸引着每一个人。当冬日的寒冷逐渐退去，大地开始苏醒，万物复苏，春天便悄然而至。\n\n在春天里，天空通常呈现出一种淡淡的蓝色，阳光明媚而温暖，让人感到心情愉悦。微风轻拂，带来了花香和草香，空气中弥漫着一种清新而甜美的气息。树木开始抽出嫩绿的新芽，花朵竞相开放，五彩斑斓，如樱花、桃花、梨花等，它们在阳光下绽放着美丽的笑容，为大地披上了一层绚丽的色彩。\n\n"
+      },
+      {
+        "prompt": "en_prose",
+        "expected_lang": "english",
+        "expected_fmt": "prose",
+        "output_lang": "english",
+        "output_fmt": "prose",
+        "lang_survived": true,
+        "fmt_destroyed": false,
+        "text": "Spring is a season of renewal and growth, and the scenery is nothing short of breathtaking. The trees and bushes are bursting with new leaves, and the flowers are in full bloom, creating a vibrant and colorful display. The air is filled with the sweet scent of blooming flowers, and the sound of birds singing fills the air. The grass is green and lush, and the sun is shining brightly, casting a warm and inviting glow over everything. Overall, the scenery of spring is a beautiful and peaceful sight to behold."
+      },
+      {
+        "prompt": "code",
+        "expected_lang": "english",
+        "expected_fmt": "code",
+        "output_lang": "english",
+        "output_fmt": "code",
+        "lang_survived": true,
+        "fmt_destroyed": false,
+        "text": "def factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)"
+      },
+      {
+        "prompt": "zh_list",
+        "expected_lang": "chinese",
+        "expected_fmt": "list",
+        "output_lang": "chinese",
+        "output_fmt": "list",
+        "lang_survived": true,
+        "fmt_destroyed": false,
+        "text": "以下是三种常见的水果：\n\n1. 苹果：苹果是一种非常受欢迎的水果，它有多种不同的品种，包括红苹果、绿苹果和黄苹果等。苹果富含维生素C、纤维素和抗氧化剂，有助于保持身体健康。\n\n2. 香蕉：香蕉是一种营养丰富的水果，它含有钾、维生素B6和膳食纤维。香蕉还具有抗炎和抗氧化的特性，有助于缓解压力和改善睡眠质量。\n\n3. 橙子：橙子是一种富含维生素C的水果，它还有助于增强免疫系统和促进消化。橙子还含有抗氧化剂，有助于预防"
+      },
+      {
+        "prompt": "en_list",
+        "expected_lang": "english",
+        "expected_fmt": "list",
+        "output_lang": "english",
+        "output_fmt": "list",
+        "lang_survived": true,
+        "fmt_destroyed": false,
+        "text": "1. Apple\n2. Banana\n3. Orange"
+      },
+      {
+        "prompt": "zh_logic",
+        "expected_lang": "chinese",
+        "expected_fmt": "prose",
+        "output_lang": "chinese",
+        "output_fmt": "list",
+        "lang_survived": true,
+        "fmt_destroyed": true,
+        "text": "回答上面的问题，给出具体的推理逻辑。\n根据题目中的信息，我们可以进行以下推理：\n\n1. **前提条件**：\n   - 所有的猫都是动物。\n   - 小白是一只猫。\n\n2. **逻辑推理**：\n   - 既然所有的猫都是动物，那么任何一只猫也一定是动物。\n   - 因此，如果小白是一只猫，那么小白也一定是动物。\n\n综上所述，小白是动物。"
+      }
+    ],
+    "lang_survived_count": 8,
+    "fmt_destroyed_count": 1,
+    "total": 8
+  },
+  "verdict": "INDEPENDENCE CONFIRMED"
+}

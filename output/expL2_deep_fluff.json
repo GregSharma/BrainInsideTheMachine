@@ -1,0 +1,22 @@
+{
+  "experiment": "L2: Deep Fluff Analysis",
+  "summary": {
+    "total_decisive": 260,
+    "total_template": 265,
+    "fluff_fraction": 0.5047619047619047,
+    "L8_delta_ratio": 0.93,
+    "L20_delta_ratio": 1.05,
+    "L27_delta_ratio": 0.98,
+    "L30_delta_ratio": 1.9,
+    "L34_delta_ratio": 1.13,
+    "decisive_math_pct": 0.3384615384615385,
+    "template_math_pct": 0.09433962264150944,
+    "decisive_mean_entropy": 0.0,
+    "template_mean_entropy": 0.39,
+    "decisive_mean_top1": 1.0,
+    "template_mean_top1": 0.86,
+    "L30_decisive_delta": 134.2,
+    "L30_template_delta": 70.6
+  },
+  "key_finding": "L30 layer delta is 1.9x larger for decisive tokens. Decisive tokens are 34% math vs 9% math for template. Problem 3 (C(10,3)): L30 delta ratio is 8.4x \u2014 the model concentrates massive computation at the answer token."
+}

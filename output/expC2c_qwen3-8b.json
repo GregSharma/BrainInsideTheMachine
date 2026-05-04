@@ -1,0 +1,1533 @@
+{
+  "config": {
+    "model": "Qwen/Qwen3-8B",
+    "model_key": "qwen3-8b",
+    "n_layers": 36,
+    "d": 4096,
+    "tied": false,
+    "k": 20,
+    "max_new": 128,
+    "seed": 42,
+    "n_cache_problems": 200,
+    "n_test_problems": 20
+  },
+  "baselines": {
+    "en": 4,
+    "zh": 7
+  },
+  "baseline_details": {
+    "en": {
+      "correct": 4,
+      "total": 20,
+      "details": [
+        {
+          "ok": false,
+          "gen": "  C(n, k) = n! / [k!(n - k)!]  So, C(18, 3) = 18! / [3!(18 - 3)!]  = 18! / [3!15!]  = (18 × 17 × 16 × 15!) / [3!15!]  = (18 × 17 × 16) / 3!  = (18 × 1",
+          "cat": "combinatorics"
+        },
+        {
+          "ok": false,
+          "gen": " C(n, k) is the number of combinations of n things taken k at a time. So, C(5, 3) is the number of ways to choose 3 items from a set of 5. The formula",
+          "cat": "combinatorics"
+        },
+        {
+          "ok": true,
+          "gen": " The value of C(17, 1) is 17. C(n, 1) is always equal to n because there are n ways to choose 1 item from n items. So, C(17, 1) = 17.\nThe value of C(1",
+          "cat": "combinatorics"
+        },
+        {
+          "ok": true,
+          "gen": " C(n, k) is the number of combinations of n things taken k at a time. The formula for combinations is C(n, k) = n! / (k!(n - k)!).\n\nTo find the value ",
+          "cat": "combinatorics"
+        },
+        {
+          "ok": false,
+          "gen": " To find the sum of the first 20 terms of an arithmetic sequence with first term 8 and common difference 4, we can use the formula for the sum of the ",
+          "cat": "sequences"
+        },
+        {
+          "ok": false,
+          "gen": " - Brainly.com\nprofile\nprofile\njessicamcclure\n04/10/2020\nMathematics\nMiddle School\nanswer\nanswer\nanswered\nAn arithmetic sequence has first term 16 and",
+          "cat": "sequences"
+        },
+        {
+          "ok": false,
+          "gen": " To find the sum of the first 27 terms of an arithmetic sequence with the first term 15 and common difference 6, we can use the formula for the sum of",
+          "cat": "sequences"
+        },
+        {
+          "ok": false,
+          "gen": " To find the sum of the first 22 terms of an arithmetic sequence with the first term 1 and common difference 3, we can use the formula for the sum of ",
+          "cat": "sequences"
+        },
+        {
+          "ok": false,
+          "gen": " Also, what is the remainder when 7442 is divided by 5? Additionally, can you explain the divisibility rules for 3 and 5? Finally, how do we find the ",
+          "cat": "modular"
+        },
+        {
+          "ok": false,
+          "gen": " Also, can you explain how to find the remainder when a number is divided by 11?\n\nTo find the remainder when 8850 is divided by 11, we can use the div",
+          "cat": "modular"
+        },
+        {
+          "ok": false,
+          "gen": " Also, what is the remainder when 1980 is divided by 17? Additionally, what is the remainder when 1980 is divided by 19? Finally, what is the remainde",
+          "cat": "modular"
+        },
+        {
+          "ok": false,
+          "gen": " Also, can you explain how to find the remainder when dividing by a number?\n\nTo find the remainder when 4268 is divided by 19, we can use the division",
+          "cat": "modular"
+        },
+        {
+          "ok": true,
+          "gen": " To find the area of a rectangle, we use the formula:\n\n$$\n\\text{Area} = \\text{length} \\times \\text{width}\n$$\n\nGiven:\n- Length = 12\n- Width = 29\n\nSubst",
+          "cat": "geometry"
+        },
+        {
+          "ok": true,
+          "gen": " To find the area of a rectangle, we use the formula:\n\n$$\n\\text{Area} = \\text{length} \\times \\text{width}\n$$\n\nGiven:\n- Length = 12\n- Width = 9\n\nSubsti",
+          "cat": "geometry"
+        },
+        {
+          "ok": false,
+          "gen": " To find the area of a rectangle, we use the formula:\n\n$$\n\\text{Area} = \\text{length} \\times \\text{width}\n$$\n\nGiven:\n- Length = 49\n- Width = 13\n\nSubst",
+          "cat": "geometry"
+        },
+        {
+          "ok": false,
+          "gen": " To find the area of a rectangle, we use the formula:\n\n$$\n\\text{Area} = \\text{length} \\times \\text{width}\n$$\n\nGiven:\n- Length = 35\n- Width = 22\n\nSubst",
+          "cat": "geometry"
+        },
+        {
+          "ok": false,
+          "gen": " Show your work.\n\nOkay, let me try to figure out how to add 484 and 68. Hmm, I think I should start by aligning the numbers properly. Let me write the",
+          "cat": "arithmetic"
+        },
+        {
+          "ok": false,
+          "gen": " What is the result?\n\nTo calculate 710 + 30, we can add the tens place first. 710 has 7 hundreds, 1 ten, and 0 ones. Adding 30 (which is 3 tens) to 71",
+          "cat": "arithmetic"
+        },
+        {
+          "ok": false,
+          "gen": " Let me think. Hmm, 11 times 400 would be 4400, right? So maybe I can subtract 11 from that? Because 399 is 400 minus 1. So 11 × 399 = 11 × (400 - 1) ",
+          "cat": "arithmetic"
+        },
+        {
+          "ok": false,
+          "gen": " What is the result?\n\nTo calculate 131 + 476, we can add the numbers step by step. Starting from the rightmost digits: 1 + 6 = 7. Then the middle digi",
+          "cat": "arithmetic"
+        }
+      ]
+    },
+    "zh": {
+      "correct": 7,
+      "total": 20,
+      "details": [
+        {
+          "ok": false,
+          "gen": " 要计算组合数 $ C(18, 3) $，我们可以使用组合数的公式：\n\n$$\nC(n, k) = \\frac{n!}{k!(n - k)!}\n$$\n\n其中，$ n = 18 $，$ k = 3 $。代入公式得：\n\n$$\nC(18, 3) = \\frac{18!}{3!(18 - 3)!} = \\fr",
+          "cat": "combinatorics"
+        },
+        {
+          "ok": false,
+          "gen": " 组合数 C(n, k) 的计算公式是 C(n, k) = n! / (k!(n - k)! )，其中 n! 表示 n 的阶乘。 请计算 C(5, 3) 的值。\n要计算组合数 $ C(5, 3) $，我们使用组合数的公式：\n\n$$\nC(n, k) = \\frac{n!}{k!(n - k)!}\n$$",
+          "cat": "combinatorics"
+        },
+        {
+          "ok": true,
+          "gen": " 组合数 C(n, k) 表示从 n 个不同元素中取出 k 个元素的组合数，计算公式为 C(n, k) = n! / (k!(n - k)! )，其中 \"!\" 表示阶乘运算。\n\n要计算 C(17, 1)，我们可以直接代入公式：\n\nC(17, 1) = 17! / (1!(17 - 1)!) = 17",
+          "cat": "combinatorics"
+        },
+        {
+          "ok": true,
+          "gen": " 组合数 C(n, k) 表示从 n 个不同元素中取出 k 个元素的组合数，计算公式为 C(n, k) = n! / (k!(n - k)! )，其中 \"!\" 表示阶乘。\n\n要计算 C(5, 1)，我们代入公式：\n\nC(5, 1) = 5! / (1!(5 - 1)! ) = 5! / (1!4! ",
+          "cat": "combinatorics"
+        },
+        {
+          "ok": false,
+          "gen": " 要计算等差数列的前20项之和，我们可以使用等差数列求和公式：\n\n$$ S_n = \\frac{n}{2} \\times [2a + (n - 1)d] $$\n\n其中：\n- $ S_n $ 是前 $ n $ 项的和\n- $ a $ 是首项\n- $ d $ 是公差\n- $ n $ 是项数\n\n已知：\n-",
+          "cat": "sequences"
+        },
+        {
+          "ok": false,
+          "gen": " 要计算等差数列的前12项之和，我们可以使用等差数列求和公式：\n\n$$ S_n = \\frac{n}{2} \\times [2a + (n - 1)d] $$\n\n其中：\n- $ S_n $ 是前 $ n $ 项的和\n- $ a $ 是首项\n- $ d $ 是公差\n- $ n $ 是项数\n\n已知：\n-",
+          "cat": "sequences"
+        },
+        {
+          "ok": false,
+          "gen": " 要计算等差数列的前27项之和，我们可以使用等差数列求和公式：\n\n$$ S_n = \\frac{n}{2} \\times [2a + (n - 1)d] $$\n\n其中：\n- $ S_n $ 是前 $ n $ 项的和\n- $ a $ 是首项\n- $ d $ 是公差\n- $ n $ 是项数\n\n已知：\n-",
+          "cat": "sequences"
+        },
+        {
+          "ok": false,
+          "gen": " 要计算等差数列的前22项之和，我们首先需要明确等差数列的基本公式。等差数列的前n项和公式为：\n\n$$ S_n = \\frac{n}{2} \\times [2a + (n - 1)d] $$\n\n其中：\n- $ S_n $ 是前n项的和，\n- $ a $ 是首项，\n- $ d $ 是公差，\n- $ n",
+          "cat": "sequences"
+        },
+        {
+          "ok": true,
+          "gen": " 7442 除以 3 的余数是多少？\n\n要计算 7442 除以 3 的余数，我们可以使用模运算。首先，我们可以将 7442 分解为各个位数上的数字之和，然后计算这个和除以 3 的余数。\n\n7442 的各位数字之和为 7 + 4 + 4 + 2 = 17。\n\n接下来，我们计算 17 除以 3 的余数。",
+          "cat": "modular"
+        },
+        {
+          "ok": false,
+          "gen": " 8850 ÷ 11 的余数是多少？\n\n要计算 8850 除以 11 的余数，我们可以使用模运算。首先，我们可以将 8850 分解为 11 的倍数加上余数的形式。\n\n首先，我们可以用 8850 除以 11，得到商和余数。或者，我们可以使用模运算的性质来简化计算。\n\n注意到 11 × 804 = 88",
+          "cat": "modular"
+        },
+        {
+          "ok": true,
+          "gen": " 1980 ÷ 18 的余数是多少？\n\n要计算 1980 除以 18 的余数，我们可以使用模运算。首先，我们可以将 1980 除以 18，得到商和余数。\n\n1980 ÷ 18 = 110 余 0\n\n因此，1980 除以 18 的余数是 0。\n\n不过，为了确保正确性，我们可以使用另一种方法来验证。我们",
+          "cat": "modular"
+        },
+        {
+          "ok": true,
+          "gen": " 4268 ÷ 19 的余数是多少？\n\n要计算 4268 除以 19 的余数，我们可以使用模运算。首先，我们可以尝试将 4268 除以 19，找到商和余数。\n\n19 × 224 = 4256\n\n4268 - 4256 = 12\n\n因此，4268 除以 19 的余数是 12。\n\n或者，我们可以使用模运",
+          "cat": "modular"
+        },
+        {
+          "ok": false,
+          "gen": " 要计算一个长方形的面积，我们需要使用公式：面积 = 长 × 宽。\n\n在这个问题中，长方形的长是 12，宽是 29。因此，我们可以将这些数值代入公式中：\n\n面积 = 12 × 29\n\n接下来，我们进行乘法运算。为了简化计算，我们可以将 29 分解为 30 - 1，这样计算会更方便：\n\n12 × 29",
+          "cat": "geometry"
+        },
+        {
+          "ok": true,
+          "gen": " 要计算一个长方形的面积，我们需要使用公式：面积 = 长 × 宽。\n\n在这个问题中，长方形的长是 12，宽是 9。将这些数值代入公式中：\n\n面积 = 12 × 9\n\n进行乘法运算：\n\n12 × 9 = 108\n\n因此，这个长方形的面积是 108。\n\n答案：这个长方形的面积是 108。\n因此，答案是 ",
+          "cat": "geometry"
+        },
+        {
+          "ok": false,
+          "gen": " 一个长方形的面积计算公式是长乘以宽。所以，面积 = 长 × 宽 = 49 × 13。\n\n现在我需要计算 49 乘以 13 的结果。我可以使用分配律来简化这个计算：49 × 13 = 49 × (10 + 3) = 49 × 10 + 49 × 3。\n\n首先计算 49 × 10，这等于 490。\n\n",
+          "cat": "geometry"
+        },
+        {
+          "ok": false,
+          "gen": " 要计算一个长方形的面积，我们需要使用公式：面积 = 长 × 宽。\n\n在这个问题中，长方形的长是 35，宽是 22。因此，我们可以将这些数值代入公式中：\n\n面积 = 35 × 22\n\n接下来，我们进行乘法运算。为了简化计算，我们可以将 22 分解为 20 + 2，然后分别计算 35 × 20 和 3",
+          "cat": "geometry"
+        },
+        {
+          "ok": false,
+          "gen": " 要计算 484 加上 68 的和，我们可以按照以下步骤进行：\n\n首先，将个位数相加：4（来自484）加上8（来自68）等于12。我们将2写在个位，而将进位的1带到十位。\n\n接下来，将十位数相加：8（来自484）加上6（来自68）等于14，再加上之前的进位1，总共是15。我们将5写在十位，而将进位的",
+          "cat": "arithmetic"
+        },
+        {
+          "ok": false,
+          "gen": " 要计算 710 加上 30 的值，我们可以按照以下步骤进行：\n\n首先，将两个数对齐，个位对个位，十位对十位，百位对百位：\n```\n 710\n+ 30\n-----\n```\n\n接下来，从个位开始相加。0 加 0 等于 0，所以个位是 0。\n\n然后是十位。1 加 3 等于 4，所以十位是 4。\n\n最后是",
+          "cat": "arithmetic"
+        },
+        {
+          "ok": false,
+          "gen": " 要计算 $11 \\times 399$ 的值，我们可以使用分配律来简化计算。具体步骤如下：\n\n1. 将 399 表示为 $400 - 1$，即 $399 = 400 - 1$。\n2. 应用分配律：$11 \\times (400 - 1) = 11 \\times 400 - 11 \\times 1$",
+          "cat": "arithmetic"
+        },
+        {
+          "ok": true,
+          "gen": " 要计算 131 加上 476 的值，我们可以按照以下步骤进行：\n\n1. 首先，将两个数的个位数相加：1 + 6 = 7。\n2. 接着，将十位数相加：3 + 7 = 10。\n3. 然后，将百位数相加：1 + 4 = 5。\n4. 最后，将所有结果组合起来，得到 607。\n\n因此，131 + 476 的",
+          "cat": "arithmetic"
+        }
+      ]
+    }
+  },
+  "rank_trajectory": {
+    "last_token": {
+      "L0": {
+        "rank_50": 2,
+        "rank_90": 9,
+        "rank_95": 13
+      },
+      "L1": {
+        "rank_50": 3,
+        "rank_90": 13,
+        "rank_95": 21
+      },
+      "L2": {
+        "rank_50": 4,
+        "rank_90": 16,
+        "rank_95": 23
+      },
+      "L3": {
+        "rank_50": 4,
+        "rank_90": 17,
+        "rank_95": 24
+      },
+      "L4": {
+        "rank_50": 4,
+        "rank_90": 18,
+        "rank_95": 25
+      },
+      "L5": {
+        "rank_50": 4,
+        "rank_90": 18,
+        "rank_95": 25
+      },
+      "L6": {
+        "rank_50": 4,
+        "rank_90": 21,
+        "rank_95": 32
+      },
+      "L7": {
+        "rank_50": 5,
+        "rank_90": 23,
+        "rank_95": 34
+      },
+      "L8": {
+        "rank_50": 5,
+        "rank_90": 26,
+        "rank_95": 40
+      },
+      "L9": {
+        "rank_50": 5,
+        "rank_90": 27,
+        "rank_95": 42
+      },
+      "L10": {
+        "rank_50": 5,
+        "rank_90": 27,
+        "rank_95": 42
+      },
+      "L11": {
+        "rank_50": 5,
+        "rank_90": 27,
+        "rank_95": 45
+      },
+      "L12": {
+        "rank_50": 5,
+        "rank_90": 30,
+        "rank_95": 52
+      },
+      "L13": {
+        "rank_50": 5,
+        "rank_90": 28,
+        "rank_95": 51
+      },
+      "L14": {
+        "rank_50": 5,
+        "rank_90": 29,
+        "rank_95": 54
+      },
+      "L15": {
+        "rank_50": 5,
+        "rank_90": 29,
+        "rank_95": 54
+      },
+      "L16": {
+        "rank_50": 5,
+        "rank_90": 30,
+        "rank_95": 58
+      },
+      "L17": {
+        "rank_50": 5,
+        "rank_90": 31,
+        "rank_95": 61
+      },
+      "L18": {
+        "rank_50": 5,
+        "rank_90": 31,
+        "rank_95": 62
+      },
+      "L19": {
+        "rank_50": 5,
+        "rank_90": 29,
+        "rank_95": 57
+      },
+      "L20": {
+        "rank_50": 5,
+        "rank_90": 29,
+        "rank_95": 56
+      },
+      "L21": {
+        "rank_50": 5,
+        "rank_90": 28,
+        "rank_95": 55
+      },
+      "L22": {
+        "rank_50": 5,
+        "rank_90": 26,
+        "rank_95": 47
+      },
+      "L23": {
+        "rank_50": 5,
+        "rank_90": 24,
+        "rank_95": 42
+      },
+      "L24": {
+        "rank_50": 5,
+        "rank_90": 21,
+        "rank_95": 35
+      },
+      "L25": {
+        "rank_50": 4,
+        "rank_90": 20,
+        "rank_95": 32
+      },
+      "L26": {
+        "rank_50": 4,
+        "rank_90": 20,
+        "rank_95": 31
+      },
+      "L27": {
+        "rank_50": 4,
+        "rank_90": 19,
+        "rank_95": 30
+      },
+      "L28": {
+        "rank_50": 4,
+        "rank_90": 19,
+        "rank_95": 30
+      },
+      "L29": {
+        "rank_50": 3,
+        "rank_90": 18,
+        "rank_95": 28
+      },
+      "L30": {
+        "rank_50": 3,
+        "rank_90": 17,
+        "rank_95": 27
+      },
+      "L31": {
+        "rank_50": 3,
+        "rank_90": 17,
+        "rank_95": 27
+      },
+      "L32": {
+        "rank_50": 3,
+        "rank_90": 16,
+        "rank_95": 26
+      },
+      "L33": {
+        "rank_50": 3,
+        "rank_90": 17,
+        "rank_95": 27
+      },
+      "L34": {
+        "rank_50": 3,
+        "rank_90": 18,
+        "rank_95": 27
+      },
+      "L35": {
+        "rank_50": 2,
+        "rank_90": 7,
+        "rank_95": 13
+      }
+    },
+    "context_mean": {
+      "L0": {
+        "rank_50": 4,
+        "rank_90": 23,
+        "rank_95": 30
+      },
+      "L1": {
+        "rank_50": 3,
+        "rank_90": 21,
+        "rank_95": 28
+      },
+      "L2": {
+        "rank_50": 2,
+        "rank_90": 19,
+        "rank_95": 26
+      },
+      "L3": {
+        "rank_50": 3,
+        "rank_90": 18,
+        "rank_95": 26
+      },
+      "L4": {
+        "rank_50": 3,
+        "rank_90": 20,
+        "rank_95": 27
+      },
+      "L5": {
+        "rank_50": 4,
+        "rank_90": 22,
+        "rank_95": 30
+      },
+      "L6": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L7": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L8": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L9": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L10": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L11": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L12": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L13": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L14": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L15": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L16": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L17": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L18": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L19": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L20": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L21": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L22": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L23": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L24": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 2
+      },
+      "L25": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 3
+      },
+      "L26": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 5
+      },
+      "L27": {
+        "rank_50": 1,
+        "rank_90": 2,
+        "rank_95": 6
+      },
+      "L28": {
+        "rank_50": 1,
+        "rank_90": 3,
+        "rank_95": 8
+      },
+      "L29": {
+        "rank_50": 1,
+        "rank_90": 5,
+        "rank_95": 10
+      },
+      "L30": {
+        "rank_50": 1,
+        "rank_90": 6,
+        "rank_95": 11
+      },
+      "L31": {
+        "rank_50": 1,
+        "rank_90": 8,
+        "rank_95": 13
+      },
+      "L32": {
+        "rank_50": 1,
+        "rank_90": 9,
+        "rank_95": 15
+      },
+      "L33": {
+        "rank_50": 1,
+        "rank_90": 10,
+        "rank_95": 17
+      },
+      "L34": {
+        "rank_50": 2,
+        "rank_90": 13,
+        "rank_95": 22
+      },
+      "L35": {
+        "rank_50": 1,
+        "rank_90": 6,
+        "rank_95": 9
+      }
+    }
+  },
+  "conditions": {
+    "last_only_N36": {
+      "mode": "last_only",
+      "n_layers": 36,
+      "layers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "en": {
+        "correct": 4,
+        "total": 20,
+        "details": [
+          {
+            "i": 0,
+            "ok": false,
+            "gen": " Remember that C(n, k) is the number of combinations of n items taken k at a time. The formula for combinations is C(n, ",
+            "lang_out": "en",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 1,
+            "ok": false,
+            "gen": " Remember that C(n, k) is the number of combinations of n items taken k at a time. Also, remember that C(n, k) = C(n, n ",
+            "lang_out": "en",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 2,
+            "ok": true,
+            "gen": " Remember that C(n, k) is the number of combinations of n items taken k at a time. Also, remember that C(n, k) = C(n, n ",
+            "lang_out": "en",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 3,
+            "ok": true,
+            "gen": " Remember that C(n, k) is the number of combinations of n things taken k at a time. Also, remember that C(n, k) = C(n, n",
+            "lang_out": "en",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 4,
+            "ok": false,
+            "gen": " To find the sum of the first 20 terms of an arithmetic sequence with first term 8 and common difference 4, we can use t",
+            "lang_out": "en",
+            "cat": "sequences"
+          },
+          {
+            "i": 5,
+            "ok": false,
+            "gen": " To find the sum of the first 12 terms of an arithmetic sequence with first term 16 and common difference 9, we can use ",
+            "lang_out": "en",
+            "cat": "sequences"
+          },
+          {
+            "i": 6,
+            "ok": false,
+            "gen": " To find the sum of the first 27 terms of an arithmetic sequence with first term 15 and common difference 6, we can use ",
+            "lang_out": "en",
+            "cat": "sequences"
+          },
+          {
+            "i": 7,
+            "ok": false,
+            "gen": " To find the sum of the first 22 terms of an arithmetic sequence with the first term 1 and common difference 3, we can u",
+            "lang_out": "en",
+            "cat": "sequences"
+          },
+          {
+            "i": 8,
+            "ok": false,
+            "gen": " How do you find the remainder when dividing by 3? What is the remainder when 7442 is divided by 3? What is the remainde",
+            "lang_out": "en",
+            "cat": "modular"
+          },
+          {
+            "i": 9,
+            "ok": false,
+            "gen": " How do you divide 8850 by 11 and find the remainder? What is the quotient when 8850 is divided by 11? What is 8850 divi",
+            "lang_out": "en",
+            "cat": "modular"
+          },
+          {
+            "i": 10,
+            "ok": false,
+            "gen": " How do you find the remainder when dividing numbers? What is the remainder when 1980 is divided by 17? What is the rema",
+            "lang_out": "en",
+            "cat": "modular"
+          },
+          {
+            "i": 11,
+            "ok": false,
+            "gen": " How do you find the remainder when dividing by 19? What is the remainder when 19 is divided by 4? What is the remainder",
+            "lang_out": "en",
+            "cat": "modular"
+          },
+          {
+            "i": 12,
+            "ok": true,
+            "gen": " Area of a rectangle is length multiplied by width. So, the area is 12 multiplied by 29. Let me calculate that. 12 times",
+            "lang_out": "en",
+            "cat": "geometry"
+          },
+          {
+            "i": 13,
+            "ok": false,
+            "gen": " Area of a rectangle is length multiplied by width. So, the area is 12 * 9 = 108.\nThe area of the rectangle is 108. The ",
+            "lang_out": "en",
+            "cat": "geometry"
+          },
+          {
+            "i": 14,
+            "ok": false,
+            "gen": " Area of a rectangle is length multiplied by width. So, the area is 49 * 13. Let me calculate that. 49 * 10 is 490, and ",
+            "lang_out": "en",
+            "cat": "geometry"
+          },
+          {
+            "i": 15,
+            "ok": false,
+            "gen": " Area of a rectangle is length multiplied by width. So, the area is 35 multiplied by 22. Let me calculate that. 35 times",
+            "lang_out": "en",
+            "cat": "geometry"
+          },
+          {
+            "i": 16,
+            "ok": false,
+            "gen": " How many times does the digit 8 appear in the sum?\n\nOkay, let me try to figure out this problem. So, the question is as",
+            "lang_out": "en",
+            "cat": "arithmetic"
+          },
+          {
+            "i": 17,
+            "ok": true,
+            "gen": " How many tens are in the sum?\n\nTo solve this, first add 710 and 30. \n\n710 + 30 = 740\n\nNow, to find how many tens are in",
+            "lang_out": "en",
+            "cat": "arithmetic"
+          },
+          {
+            "i": 18,
+            "ok": false,
+            "gen": " First, find the product of 11 and 400, then subtract 11 from the result. What is the final answer?\n\nTo calculate $11 \\t",
+            "lang_out": "en",
+            "cat": "arithmetic"
+          },
+          {
+            "i": 19,
+            "ok": false,
+            "gen": " First, add the ones place. Then the tens place. Then the hundreds place. What is the sum?\n\nTo calculate 131 + 476, we c",
+            "lang_out": "en",
+            "cat": "arithmetic"
+          }
+        ]
+      },
+      "zh": {
+        "correct": 10,
+        "total": 20,
+        "details": [
+          {
+            "i": 0,
+            "ok": true,
+            "gen": "选项是：A. 816，B. 680，C. 684，D. 612。请给出详细解答过程。\n要计算组合数 $ C(18, 3) $，我们可以使用组合数的公式：\n\n$$\nC(n, k) = \\frac{n!}{k!(n - k)!}\n$$\n\n其中，",
+            "lang_out": "zh",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 1,
+            "ok": true,
+            "gen": "选项是：A. 10，B. 15，C. 20，D. 25。正确答案是哪一个？\n答案:\nA\n\n在进行带电作业时，如果设备突然停电，作业人员应当如何处理？\nA. 立即停止作业\nB. 继续作业\nC. 视情况决定是否停止\nD. 与调度中心联系确认\n答",
+            "lang_out": "zh",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 2,
+            "ok": true,
+            "gen": "选项是：A. 17，B. 16，C. 15，D. 14。正确答案是哪一个？\n答案:\nA\n\n在进行带电作业时，如果设备突然停电，作业人员应当如何处理？\nA. 立即停止作业\nB. 继续作业\nC. 视情况决定是否停止\nD. 以上都不对\n答案:\nA",
+            "lang_out": "zh",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 3,
+            "ok": true,
+            "gen": "选项是：A. 5，B. 10，C. 15，D. 20。正确答案是哪一个？\n答案:\nA\n\n在进行带电作业时，如果设备突然停电，作业人员应当如何处理？\nA. 立即停止作业\nB. 继续作业\nC. 视情况决定是否停止\nD. 与调度中心联系确认情况\n",
+            "lang_out": "zh",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 4,
+            "ok": false,
+            "gen": "要详细步骤，不要用公式，用文字描述。 要详细步骤，不要用公式，用文字描述。 要详细步骤，不要用公式，用文字描述。 要详细步骤，不要用公式，用文字描述。 要详细步骤，不要用公式，用文字描述。 要详细步骤，不要用公式，用文字描述。 要详细步骤，",
+            "lang_out": "zh",
+            "cat": "sequences"
+          },
+          {
+            "i": 5,
+            "ok": false,
+            "gen": "要详细步骤，不要用公式，用文字描述。 要详细步骤，不要用公式，用文字描述。 要详细步骤，不要用公式，用文字描述。 要详细步骤，不要用公式，用文字描述。 要详细步骤，不要用公式，用文字描述。 要详细步骤，不要用公式，用文字描述。 要详细步骤，",
+            "lang_out": "zh",
+            "cat": "sequences"
+          },
+          {
+            "i": 6,
+            "ok": false,
+            "gen": "要详细步骤，不要用公式，用文字描述。 要详细步骤，不要用公式，用文字描述。 要详细步骤，不要用公式，用文字描述。 要详细步骤，不要用公式，用文字描述。 要详细步骤，不要用公式，用文字描述。 要详细步骤，不要用公式，用文字描述。 要详细步骤，",
+            "lang_out": "zh",
+            "cat": "sequences"
+          },
+          {
+            "i": 7,
+            "ok": false,
+            "gen": "要详细步骤，不要用公式，用等差数列的定义来推导。 要详细步骤，不要用公式，用等差数列的定义来推导。\n好的，我现在要解决的是一个等差数列的问题，题目是说首项是1，公差是3，求前22项的和。题目还特别要求不要用公式，而是用等差数列的定义来推导，",
+            "lang_out": "zh",
+            "cat": "sequences"
+          },
+          {
+            "i": 8,
+            "ok": true,
+            "gen": "余数的计算方法是怎样的？ 7442 除以 3 的余数是多少？余数的计算方法是怎样的？\n要计算 7442 除以 3 的余数，我们可以使用模运算。具体步骤如下：\n\n1. **直接除法法**：将 7442 除以 3，得到商和余数。计算 7442 ",
+            "lang_out": "zh",
+            "cat": "modular"
+          },
+          {
+            "i": 9,
+            "ok": true,
+            "gen": "余数的计算方法是怎样的？ 8850 除以 11 的余数是多少？余数的计算方法是怎样的？\n要计算 8850 除以 11 的余数，我们可以使用模运算。具体步骤如下：\n\n1. **直接除法法**：将 8850 除以 11，得到商和余数。\n   -",
+            "lang_out": "zh",
+            "cat": "modular"
+          },
+          {
+            "i": 10,
+            "ok": true,
+            "gen": "余数的计算方法是怎样的？ 1980 ÷ 18 的余数是多少？余数的计算方法是怎样的？\n\n要计算 1980 除以 18 的余数，我们可以使用模运算。首先，我们找到 18 的倍数，直到接近 1980 但不超过它。18 × 110 = 1980，",
+            "lang_out": "zh",
+            "cat": "modular"
+          },
+          {
+            "i": 11,
+            "ok": false,
+            "gen": "余数的计算方法是怎样的？ 4268 ÷ 19 的余数是多少？余数的计算方法是怎样的？\n\n要计算 4268 除以 19 的余数，我们可以使用模运算。具体步骤如下：\n\n1. **确定除数和被除数**：除数是 19，被除数是 4268。\n2. *",
+            "lang_out": "zh",
+            "cat": "modular"
+          },
+          {
+            "i": 12,
+            "ok": true,
+            "gen": "单位是平方厘米。 要计算一个长方形的面积，我们需要使用公式：面积 = 长 × 宽。\n\n在这个问题中，长方形的长是 12 厘米，宽是 29 厘米。因此，面积为：\n\n面积 = 12 × 29\n\n接下来，我们进行乘法运算：\n\n12 × 29 = ",
+            "lang_out": "zh",
+            "cat": "geometry"
+          },
+          {
+            "i": 13,
+            "ok": true,
+            "gen": "面积的计算公式是长乘以宽。 该长方形的面积是 12 × 9 = 108。\n\n因此，答案是 108。 该长方形的面积是 108。 \n\n**答案**\n\\boxed{108}\n一个长方形的长为 12，宽为 9，求其面积。面积的计算公式是长乘以宽。",
+            "lang_out": "zh",
+            "cat": "geometry"
+          },
+          {
+            "i": 14,
+            "ok": false,
+            "gen": "单位是平方厘米。 要计算一个长方形的面积，我们需要使用公式：面积 = 长 × 宽。\n\n在这个问题中，长方形的长是 49 厘米，宽是 13 厘米。因此，面积为：\n\n$$\n面积 = 49 \\times 13\n$$\n\n接下来，我们进行乘法运算：\n",
+            "lang_out": "zh",
+            "cat": "geometry"
+          },
+          {
+            "i": 15,
+            "ok": true,
+            "gen": "单位是平方厘米。 要计算一个长方形的面积，我们需要使用公式：面积 = 长 × 宽。\n\n在这个问题中，长方形的长是 35 厘米，宽是 22 厘米。因此，面积为：\n\n面积 = 35 × 22\n\n接下来，我们进行乘法运算：\n\n35 × 22 = ",
+            "lang_out": "zh",
+            "cat": "geometry"
+          },
+          {
+            "i": 16,
+            "ok": false,
+            "gen": "需要详细步骤。 好的，我现在要计算484加68的结果。让我仔细想想应该怎么做。首先，我应该回忆一下加法的基本方法，可能需要列竖式来计算，或者分步相加。不过，不管用哪种方法，都要确保每一步都正确，避免出错。\n\n首先，我可能会想到把这两个数对齐",
+            "lang_out": "zh",
+            "cat": "arithmetic"
+          },
+          {
+            "i": 17,
+            "ok": false,
+            "gen": "需要详细步骤。 好的，我现在要计算710加30的值。让我仔细想想这个过程，确保每一步都正确。\n\n首先，我应该回忆一下加法的基本方法。通常，加法是从个位开始，然后是十位，再是百位，依此类推。不过，这里可能不需要那么复杂的步骤，因为这两个数都是",
+            "lang_out": "zh",
+            "cat": "arithmetic"
+          },
+          {
+            "i": 18,
+            "ok": false,
+            "gen": "需要详细步骤，不能使用计算器。 要计算 $11 \\times 399$ 的值，我们可以使用分配律来简化计算。首先，将 399 表示为 $400 - 1$，这样可以更容易地进行乘法运算。\n\n步骤如下：\n\n1. 将 399 分解为 $400 -",
+            "lang_out": "zh",
+            "cat": "arithmetic"
+          },
+          {
+            "i": 19,
+            "ok": false,
+            "gen": "需要详细步骤。 好的，我现在要计算131加476的值。让我仔细想想应该怎么做。首先，我应该回忆一下加法的基本步骤，可能需要列竖式来计算，或者分位数相加。不过不管用哪种方法，都要确保每一位数相加的时候没有错误。\n\n首先，我应该确认这两个数的位",
+            "lang_out": "zh",
+            "cat": "arithmetic"
+          }
+        ]
+      }
+    },
+    "all_tokens_N1": {
+      "mode": "all_tokens",
+      "n_layers": 1,
+      "layers": [
+        18
+      ],
+      "en": {
+        "correct": 0,
+        "total": 20,
+        "details": [
+          {
+            "i": 0,
+            "ok": false,
+            "gen": "  ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ",
+            "lang_out": "unk",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 1,
+            "ok": false,
+            "gen": "  ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ",
+            "lang_out": "unk",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 2,
+            "ok": false,
+            "gen": "                                                                                                                        ",
+            "lang_out": "unk",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 3,
+            "ok": false,
+            "gen": "                                                                                                                        ",
+            "lang_out": "unk",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 4,
+            "ok": false,
+            "gen": "______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______._",
+            "lang_out": "unk",
+            "cat": "sequences"
+          },
+          {
+            "i": 5,
+            "ok": false,
+            "gen": "______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______._",
+            "lang_out": "unk",
+            "cat": "sequences"
+          },
+          {
+            "i": 6,
+            "ok": false,
+            "gen": "______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______._",
+            "lang_out": "unk",
+            "cat": "sequences"
+          },
+          {
+            "i": 7,
+            "ok": false,
+            "gen": "______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______._",
+            "lang_out": "unk",
+            "cat": "sequences"
+          },
+          {
+            "i": 8,
+            "ok": false,
+            "gen": "________________________________________________________________________________________________________________________",
+            "lang_out": "unk",
+            "cat": "modular"
+          },
+          {
+            "i": 9,
+            "ok": false,
+            "gen": "________________________________________________________________________________________________________________________",
+            "lang_out": "unk",
+            "cat": "modular"
+          },
+          {
+            "i": 10,
+            "ok": false,
+            "gen": "________________________________________________________________________________________________________________________",
+            "lang_out": "unk",
+            "cat": "modular"
+          },
+          {
+            "i": 11,
+            "ok": false,
+            "gen": "________________________________________________________________________________________________________________________",
+            "lang_out": "unk",
+            "cat": "modular"
+          },
+          {
+            "i": 12,
+            "ok": false,
+            "gen": "______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______._",
+            "lang_out": "unk",
+            "cat": "geometry"
+          },
+          {
+            "i": 13,
+            "ok": false,
+            "gen": "________________________________________________________________________________________________________________________",
+            "lang_out": "unk",
+            "cat": "geometry"
+          },
+          {
+            "i": 14,
+            "ok": false,
+            "gen": "______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______._",
+            "lang_out": "unk",
+            "cat": "geometry"
+          },
+          {
+            "i": 15,
+            "ok": false,
+            "gen": "______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______._",
+            "lang_out": "unk",
+            "cat": "geometry"
+          },
+          {
+            "i": 16,
+            "ok": false,
+            "gen": "______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______._",
+            "lang_out": "unk",
+            "cat": "arithmetic"
+          },
+          {
+            "i": 17,
+            "ok": false,
+            "gen": "______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______._",
+            "lang_out": "unk",
+            "cat": "arithmetic"
+          },
+          {
+            "i": 18,
+            "ok": false,
+            "gen": "  ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ",
+            "lang_out": "unk",
+            "cat": "arithmetic"
+          },
+          {
+            "i": 19,
+            "ok": false,
+            "gen": "______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______._",
+            "lang_out": "unk",
+            "cat": "arithmetic"
+          }
+        ]
+      },
+      "zh": {
+        "correct": 0,
+        "total": 20,
+        "details": [
+          {
+            "i": 0,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 1,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 2,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 3,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 4,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "sequences"
+          },
+          {
+            "i": 5,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "sequences"
+          },
+          {
+            "i": 6,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "sequences"
+          },
+          {
+            "i": 7,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "sequences"
+          },
+          {
+            "i": 8,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "modular"
+          },
+          {
+            "i": 9,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "modular"
+          },
+          {
+            "i": 10,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "modular"
+          },
+          {
+            "i": 11,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "modular"
+          },
+          {
+            "i": 12,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "geometry"
+          },
+          {
+            "i": 13,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "geometry"
+          },
+          {
+            "i": 14,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "geometry"
+          },
+          {
+            "i": 15,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "geometry"
+          },
+          {
+            "i": 16,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "arithmetic"
+          },
+          {
+            "i": 17,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "arithmetic"
+          },
+          {
+            "i": 18,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "arithmetic"
+          },
+          {
+            "i": 19,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "arithmetic"
+          }
+        ]
+      }
+    },
+    "context_only_L18": {
+      "mode": "context_only",
+      "n_layers": 1,
+      "layers": [
+        18
+      ],
+      "en": {
+        "correct": 0,
+        "total": 20,
+        "details": [
+          {
+            "i": 0,
+            "ok": false,
+            "gen": ".?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?",
+            "lang_out": "unk",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 1,
+            "ok": false,
+            "gen": ".?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?",
+            "lang_out": "unk",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 2,
+            "ok": false,
+            "gen": ".?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?",
+            "lang_out": "unk",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 3,
+            "ok": false,
+            "gen": ".?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?",
+            "lang_out": "unk",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 4,
+            "ok": false,
+            "gen": "______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______._",
+            "lang_out": "unk",
+            "cat": "sequences"
+          },
+          {
+            "i": 5,
+            "ok": false,
+            "gen": "______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______._",
+            "lang_out": "unk",
+            "cat": "sequences"
+          },
+          {
+            "i": 6,
+            "ok": false,
+            "gen": "______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______._",
+            "lang_out": "unk",
+            "cat": "sequences"
+          },
+          {
+            "i": 7,
+            "ok": false,
+            "gen": "______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______._",
+            "lang_out": "unk",
+            "cat": "sequences"
+          },
+          {
+            "i": 8,
+            "ok": false,
+            "gen": "________________________________________________________________________________________________________________________",
+            "lang_out": "unk",
+            "cat": "modular"
+          },
+          {
+            "i": 9,
+            "ok": false,
+            "gen": "________________________________________________________________________________________________________________________",
+            "lang_out": "unk",
+            "cat": "modular"
+          },
+          {
+            "i": 10,
+            "ok": false,
+            "gen": "________________________________________________________________________________________________________________________",
+            "lang_out": "unk",
+            "cat": "modular"
+          },
+          {
+            "i": 11,
+            "ok": false,
+            "gen": "________________________________________________________________________________________________________________________",
+            "lang_out": "unk",
+            "cat": "modular"
+          },
+          {
+            "i": 12,
+            "ok": false,
+            "gen": "______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______._",
+            "lang_out": "unk",
+            "cat": "geometry"
+          },
+          {
+            "i": 13,
+            "ok": false,
+            "gen": "________________________________________________________________________________________________________________________",
+            "lang_out": "unk",
+            "cat": "geometry"
+          },
+          {
+            "i": 14,
+            "ok": false,
+            "gen": "______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______._",
+            "lang_out": "unk",
+            "cat": "geometry"
+          },
+          {
+            "i": 15,
+            "ok": false,
+            "gen": "______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______._",
+            "lang_out": "unk",
+            "cat": "geometry"
+          },
+          {
+            "i": 16,
+            "ok": false,
+            "gen": "______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______._",
+            "lang_out": "unk",
+            "cat": "arithmetic"
+          },
+          {
+            "i": 17,
+            "ok": false,
+            "gen": "______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______._",
+            "lang_out": "unk",
+            "cat": "arithmetic"
+          },
+          {
+            "i": 18,
+            "ok": false,
+            "gen": "  ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ",
+            "lang_out": "unk",
+            "cat": "arithmetic"
+          },
+          {
+            "i": 19,
+            "ok": false,
+            "gen": "______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______.______._",
+            "lang_out": "unk",
+            "cat": "arithmetic"
+          }
+        ]
+      },
+      "zh": {
+        "correct": 0,
+        "total": 20,
+        "details": [
+          {
+            "i": 0,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 1,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 2,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 3,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 4,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "sequences"
+          },
+          {
+            "i": 5,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "sequences"
+          },
+          {
+            "i": 6,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "sequences"
+          },
+          {
+            "i": 7,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "sequences"
+          },
+          {
+            "i": 8,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "modular"
+          },
+          {
+            "i": 9,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "modular"
+          },
+          {
+            "i": 10,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "modular"
+          },
+          {
+            "i": 11,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "modular"
+          },
+          {
+            "i": 12,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "geometry"
+          },
+          {
+            "i": 13,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "geometry"
+          },
+          {
+            "i": 14,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "geometry"
+          },
+          {
+            "i": 15,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "geometry"
+          },
+          {
+            "i": 16,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "arithmetic"
+          },
+          {
+            "i": 17,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "arithmetic"
+          },
+          {
+            "i": 18,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "arithmetic"
+          },
+          {
+            "i": 19,
+            "ok": false,
+            "gen": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "lang_out": "unk",
+            "cat": "arithmetic"
+          }
+        ]
+      }
+    }
+  },
+  "elapsed_s": 1151.2025017738342
+}

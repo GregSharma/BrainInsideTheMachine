@@ -1,0 +1,702 @@
+{
+  "experiment": "AX: Cross-Model Flip Intervention",
+  "model": "Qwen/Qwen3-8B",
+  "n_layers": 36,
+  "d_model": 4096,
+  "intervention_layers": [
+    9,
+    27
+  ],
+  "max_tokens": 128,
+  "conditions": {
+    "baseline": {
+      "en_correct": 4,
+      "en_total": 10,
+      "zh_correct": 2,
+      "zh_total": 10,
+      "total_correct": 6,
+      "total": 20,
+      "en_details": [
+        {
+          "idx": 0,
+          "correct": true,
+          "answer": "133",
+          "extracted": "133",
+          "lang": "en",
+          "first_50": " Let me think. 47 plus 80 is 127, and then add 6 m"
+        },
+        {
+          "idx": 1,
+          "correct": true,
+          "answer": "60",
+          "extracted": "60",
+          "lang": "en",
+          "first_50": " To find the area of a rectangle, we use the formu"
+        },
+        {
+          "idx": 2,
+          "correct": true,
+          "answer": "2",
+          "extracted": "2",
+          "lang": "en",
+          "first_50": " Also, can you explain how to find the remainder w"
+        },
+        {
+          "idx": 3,
+          "correct": true,
+          "answer": "120",
+          "extracted": "120",
+          "lang": "en",
+          "first_50": " Then, calculate 15 \u00d7 80. Then, calculate 15 \u00d7 800"
+        },
+        {
+          "idx": 4,
+          "correct": false,
+          "answer": "40",
+          "extracted": "2",
+          "lang": "en",
+          "first_50": " To find the sum of the first 5 terms of an arithm"
+        },
+        {
+          "idx": 5,
+          "correct": false,
+          "answer": "11223",
+          "extracted": "2",
+          "lang": "en",
+          "first_50": " Let me think. So, first, I need to multiply 387 b"
+        },
+        {
+          "idx": 6,
+          "correct": false,
+          "answer": "120",
+          "extracted": "10",
+          "lang": "en",
+          "first_50": " C(n, k) is the number of combinations of n things"
+        },
+        {
+          "idx": 7,
+          "correct": false,
+          "answer": "34",
+          "extracted": "37",
+          "lang": "en",
+          "first_50": " Also, can you explain how to find the remainder w"
+        },
+        {
+          "idx": 8,
+          "correct": false,
+          "answer": "3475",
+          "extracted": "11",
+          "lang": "en",
+          "first_50": " To find the sum of the first 25 terms of an arith"
+        },
+        {
+          "idx": 9,
+          "correct": false,
+          "answer": "1551",
+          "extracted": "47",
+          "lang": "en",
+          "first_50": " To find the area of a rectangle, we use the formu"
+        }
+      ],
+      "zh_details": [
+        {
+          "idx": 0,
+          "correct": false,
+          "answer": "133",
+          "extracted": "25",
+          "lang": "zh",
+          "first_50": " \u8981\u8ba1\u7b97 47 \u52a0 86 \u7684\u503c\uff0c\u6211\u4eec\u53ef\u4ee5\u6309\u7167\u4ee5\u4e0b\u6b65\u9aa4\u8fdb\u884c\uff1a\n\n1. \u9996\u5148\uff0c\u5c06\u4e2a\u4f4d\u6570\u76f8\u52a0\uff1a7 + 6 "
+        },
+        {
+          "idx": 1,
+          "correct": true,
+          "answer": "60",
+          "extracted": "60",
+          "lang": "zh",
+          "first_50": " \u8981\u8ba1\u7b97\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u9762\u79ef\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u516c\u5f0f\uff1a\u9762\u79ef = \u957f \u00d7 \u5bbd\u3002\n\n\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u65b9\u5f62\u7684\u957f\u662f 1"
+        },
+        {
+          "idx": 2,
+          "correct": false,
+          "answer": "2",
+          "extracted": "1",
+          "lang": "zh",
+          "first_50": " 100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11"
+        },
+        {
+          "idx": 3,
+          "correct": true,
+          "answer": "120",
+          "extracted": "120",
+          "lang": "zh",
+          "first_50": " 15 \u00d7 8 \u7684\u503c\u662f 120\u3002\n\n\u597d\u7684\uff0c\u6211\u73b0\u5728\u8981\u8ba1\u7b9715\u4e58\u4ee58\u7684\u7ed3\u679c\u3002\u9996\u5148\uff0c\u6211\u5e94\u8be5\u56de\u5fc6\u4e00\u4e0b\u4e58\u6cd5\u7684\u57fa"
+        },
+        {
+          "idx": 4,
+          "correct": false,
+          "answer": "40",
+          "extracted": "5",
+          "lang": "zh",
+          "first_50": " \u8981\u8ba1\u7b97\u7b49\u5dee\u6570\u5217\u7684\u524d5\u9879\u4e4b\u548c\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u7b49\u5dee\u6570\u5217\u6c42\u548c\u516c\u5f0f\uff1a\n\n$$ S_n = \\frac{n}{"
+        },
+        {
+          "idx": 5,
+          "correct": false,
+          "answer": "11223",
+          "extracted": "1161",
+          "lang": "en",
+          "first_50": " \u8981\u8ba1\u7b97 $387 \\times 29$\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u5206\u914d\u5f8b\u6765\u7b80\u5316\u8ba1\u7b97\u3002\u9996\u5148\uff0c\u5c06 29 \u5206\u89e3\u4e3a $3"
+        },
+        {
+          "idx": 6,
+          "correct": false,
+          "answer": "120",
+          "extracted": "10",
+          "lang": "zh",
+          "first_50": " \u7ec4\u5408\u6570 C(n, k) \u7684\u8ba1\u7b97\u516c\u5f0f\u662f C(n, k) = n! / (k! * (n - k)! "
+        },
+        {
+          "idx": 7,
+          "correct": false,
+          "answer": "34",
+          "extracted": "7400",
+          "lang": "zh",
+          "first_50": " 7654 \u00f7 37 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\n\n\u8981\u8ba1\u7b97 7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u6a21\u8fd0\u7b97\u3002\u9996"
+        },
+        {
+          "idx": 8,
+          "correct": false,
+          "answer": "3475",
+          "extracted": "25",
+          "lang": "zh",
+          "first_50": " \u8981\u8ba1\u7b97\u7b49\u5dee\u6570\u5217\u7684\u524d25\u9879\u4e4b\u548c\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u7b49\u5dee\u6570\u5217\u6c42\u548c\u516c\u5f0f\uff1a\n\n$$ S_n = \\frac{n}"
+        },
+        {
+          "idx": 9,
+          "correct": false,
+          "answer": "1551",
+          "extracted": "1200",
+          "lang": "zh",
+          "first_50": " \u8981\u8ba1\u7b97\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u9762\u79ef\uff0c\u6211\u4eec\u9700\u8981\u4f7f\u7528\u516c\u5f0f\uff1a\u9762\u79ef = \u957f \u00d7 \u5bbd\u3002\n\n\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u65b9\u5f62\u7684\u957f\u662f 4"
+        }
+      ]
+    },
+    "flip_lang": {
+      "en_correct": 3,
+      "en_total": 10,
+      "zh_correct": 4,
+      "zh_total": 10,
+      "total_correct": 7,
+      "total": 20,
+      "en_details": [
+        {
+          "idx": 0,
+          "correct": true,
+          "answer": "133",
+          "extracted": "133",
+          "lang": "zh",
+          "first_50": " 47 + 86 = 133\n\n\u8ba1\u7b97 47 + 86 \u7684\u6b65\u9aa4\u5982\u4e0b\uff1a\n\n1. \u5148\u8ba1\u7b97\u4e2a\u4f4d\uff1a7 + 6 "
+        },
+        {
+          "idx": 1,
+          "correct": false,
+          "answer": "60",
+          "extracted": "",
+          "lang": "zh",
+          "first_50": " - \u96e8\u9732\u5b66\u4e60\u4e92\u52a9\n\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u662f12\uff0c\u5bbd\u662f5\uff0c\u6c42\u9762\u79ef\u3002 \u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u662f12\uff0c\u5bbd\u662f5\uff0c\u6c42\u9762\u79ef\u3002 "
+        },
+        {
+          "idx": 2,
+          "correct": true,
+          "answer": "2",
+          "extracted": "2",
+          "lang": "zh",
+          "first_50": " 100 \u00f7 7 = 14 \u4f59 2\uff0c\u6240\u4ee5\u4f59\u6570\u662f 2\u3002\n\n\u90a3\u5982\u679c\u6211\u8981\u8ba1\u7b97 100 \u00f7 7 \u7684\u4f59\u6570\uff0c\u6709\u6ca1"
+        },
+        {
+          "idx": 3,
+          "correct": false,
+          "answer": "120",
+          "extracted": "132",
+          "lang": "zh",
+          "first_50": "  \nA. 120  \nB. 125  \nC. 128  \nD. 130  \nE. 132\n\nOka"
+        },
+        {
+          "idx": 4,
+          "correct": false,
+          "answer": "40",
+          "extracted": "3",
+          "lang": "zh",
+          "first_50": " - \u96e8\u9732\u5b66\u4e60\u4e92\u52a9\n\u4e00\u4e2a\u7b49\u5dee\u6570\u5217\uff0c\u9996\u9879\u662f2\uff0c\u516c\u5dee\u662f3\uff0c\u6c42\u524d5\u9879\u7684\u548c\u3002\n\u4e00\u4e2a\u7b49\u5dee\u6570\u5217\uff0c\u9996\u9879\u662f2\uff0c\u516c\u5dee\u662f"
+        },
+        {
+          "idx": 5,
+          "correct": false,
+          "answer": "11223",
+          "extracted": "38",
+          "lang": "en",
+          "first_50": " 387 \u00d7 29 = 387 \u00d7 (30 - 1) = 387 \u00d7 30 - 387 \u00d7 1 = "
+        },
+        {
+          "idx": 6,
+          "correct": true,
+          "answer": "120",
+          "extracted": "120",
+          "lang": "en",
+          "first_50": " C(10, 3) is the number of ways to choose 3 items "
+        },
+        {
+          "idx": 7,
+          "correct": false,
+          "answer": "34",
+          "extracted": "",
+          "lang": "zh",
+          "first_50": " \u8981\u6c42\uff1a\u7528\u4e2d\u6587\u89e3\u91ca\uff0c\u5206\u6b65\u9aa4\u8bf4\u660e\u3002 \u7528\u4e2d\u6587\u89e3\u91ca\uff0c\u5206\u6b65\u9aa4\u8bf4\u660e\u3002 \u7528\u4e2d\u6587\u89e3\u91ca\uff0c\u5206\u6b65\u9aa4\u8bf4\u660e\u3002 \u7528\u4e2d\u6587\u89e3\u91ca\uff0c\u5206"
+        },
+        {
+          "idx": 8,
+          "correct": false,
+          "answer": "3475",
+          "extracted": "11",
+          "lang": "zh",
+          "first_50": " - \u96e8\u9732\u5b66\u4e60\u4e92\u52a9\n\u4e00\u4e2a\u7b49\u5dee\u6570\u5217\uff0c\u9996\u9879\u662f7\uff0c\u516c\u5dee\u662f11\uff0c\u6c42\u524d25\u9879\u7684\u548c\u3002\n\u4e00\u4e2a\u7b49\u5dee\u6570\u5217\uff0c\u9996\u9879\u662f7\uff0c\u516c"
+        },
+        {
+          "idx": 9,
+          "correct": false,
+          "answer": "1551",
+          "extracted": "",
+          "lang": "zh",
+          "first_50": " - \u96e8\u9732\u5b66\u4e60\u4e92\u52a9\n\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u662f47\uff0c\u5bbd\u662f33\uff0c\u6c42\u9762\u79ef\u3002 \u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u957f\u662f47\uff0c\u5bbd\u662f33\uff0c\u6c42\u9762\u79ef"
+        }
+      ],
+      "zh_details": [
+        {
+          "idx": 0,
+          "correct": true,
+          "answer": "133",
+          "extracted": "133",
+          "lang": "zh",
+          "first_50": " 47 + 86 = 133\n\n\u8ba1\u7b97 47 + 86 \u7684\u503c\u3002 47 + 86 = 133\n\n\u8ba1\u7b97 4"
+        },
+        {
+          "idx": 1,
+          "correct": true,
+          "answer": "60",
+          "extracted": "60",
+          "lang": "zh",
+          "first_50": " \u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u9762\u79ef\u7b49\u4e8e\u957f\u4e58\u4ee5\u5bbd\u3002\u6240\u4ee5\uff0c\u9762\u79ef = 12 \u00d7 5 = 60\u3002\n\n60\n\n\u597d\u7684\uff0c\u6211\u73b0\u5728\u8981\u89e3"
+        },
+        {
+          "idx": 2,
+          "correct": false,
+          "answer": "2",
+          "extracted": "7",
+          "lang": "zh",
+          "first_50": " 100 \u00f7 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 100 \u00f7 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 100 \u00f7 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 1"
+        },
+        {
+          "idx": 3,
+          "correct": true,
+          "answer": "120",
+          "extracted": "120",
+          "lang": "zh",
+          "first_50": " 15 \u00d7 8 = 120\u3002 \n\n\u8ba1\u7b97 15 \u00d7 8 \u7684\u503c\u3002 15 \u00d7 8 = 120\u3002 \n\n\u8ba1\u7b97 "
+        },
+        {
+          "idx": 4,
+          "correct": false,
+          "answer": "40",
+          "extracted": "1",
+          "lang": "zh",
+          "first_50": " \u9009\u9879\uff1aA. 25 B. 35 C. 45 D. 55\n\u597d\u7684\uff0c\u6211\u73b0\u5728\u8981\u89e3\u51b3\u8fd9\u4e2a\u7b49\u5dee\u6570\u5217\u7684\u524d\u4e94\u9879\u548c\u7684\u95ee"
+        },
+        {
+          "idx": 5,
+          "correct": false,
+          "answer": "11223",
+          "extracted": "1",
+          "lang": "en",
+          "first_50": " 387 \u00d7 29 = 387 \u00d7 (30 - 1) = 387 \u00d7 30 - 387 \u00d7 1 = "
+        },
+        {
+          "idx": 6,
+          "correct": false,
+          "answer": "120",
+          "extracted": "6",
+          "lang": "zh",
+          "first_50": " C(10,3) = 10! / (3! * (10-3)! ) = 10! / (3! * 7! "
+        },
+        {
+          "idx": 7,
+          "correct": false,
+          "answer": "34",
+          "extracted": "",
+          "lang": "zh",
+          "first_50": "  \u7528\u6a21\u8fd0\u7b97\u7684\u6027\u8d28\u6765\u8ba1\u7b97\u3002  \u7528\u6a21\u8fd0\u7b97\u7684\u6027\u8d28\u6765\u8ba1\u7b97\u3002  \u7528\u6a21\u8fd0\u7b97\u7684\u6027\u8d28\u6765\u8ba1\u7b97\u3002  \u7528\u6a21\u8fd0\u7b97\u7684\u6027\u8d28\u6765\u8ba1"
+        },
+        {
+          "idx": 8,
+          "correct": false,
+          "answer": "3475",
+          "extracted": "25",
+          "lang": "zh",
+          "first_50": " \u4e3a\u4e86\u89e3\u51b3\u8fd9\u4e2a\u95ee\u9898\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u7b49\u5dee\u6570\u5217\u7684\u6c42\u548c\u516c\u5f0f\uff1a\n\n$$ S_n = \\frac{n}{2} \\"
+        },
+        {
+          "idx": 9,
+          "correct": true,
+          "answer": "1551",
+          "extracted": "1551",
+          "lang": "zh",
+          "first_50": " 47\u00d733=\uff0850-3\uff09\u00d7\uff0830+3\uff09=50\u00d730+50\u00d73-3\u00d730-3\u00d73=1500+150-"
+        }
+      ]
+    },
+    "flip_random": {
+      "en_correct": 3,
+      "en_total": 10,
+      "zh_correct": 3,
+      "zh_total": 10,
+      "total_correct": 6,
+      "total": 20,
+      "en_details": [
+        {
+          "idx": 0,
+          "correct": false,
+          "answer": "133",
+          "extracted": "3",
+          "lang": "en",
+          "first_50": " Let me do this step by step. First, I can break d"
+        },
+        {
+          "idx": 1,
+          "correct": true,
+          "answer": "60",
+          "extracted": "60",
+          "lang": "en",
+          "first_50": " To find the area of a rectangle, we use the formu"
+        },
+        {
+          "idx": 2,
+          "correct": true,
+          "answer": "2",
+          "extracted": "2",
+          "lang": "en",
+          "first_50": " Also, can you explain how to find the remainder w"
+        },
+        {
+          "idx": 3,
+          "correct": true,
+          "answer": "120",
+          "extracted": "120",
+          "lang": "en",
+          "first_50": " Then, calculate 15 \u00d7 80. Then, calculate 15 \u00d7 800"
+        },
+        {
+          "idx": 4,
+          "correct": false,
+          "answer": "40",
+          "extracted": "3",
+          "lang": "en",
+          "first_50": " To find the sum of the first 5 terms of an arithm"
+        },
+        {
+          "idx": 5,
+          "correct": false,
+          "answer": "11223",
+          "extracted": "387",
+          "lang": "en",
+          "first_50": " What is the result?\n\nTo calculate 387 \u00d7 29, we ca"
+        },
+        {
+          "idx": 6,
+          "correct": false,
+          "answer": "120",
+          "extracted": "10",
+          "lang": "en",
+          "first_50": " C(n, k) is the number of combinations of n things"
+        },
+        {
+          "idx": 7,
+          "correct": false,
+          "answer": "34",
+          "extracted": "7400",
+          "lang": "en",
+          "first_50": " Also, what is the remainder when 7654 is divided "
+        },
+        {
+          "idx": 8,
+          "correct": false,
+          "answer": "3475",
+          "extracted": "1",
+          "lang": "en",
+          "first_50": " To find the sum of the first 25 terms of an arith"
+        },
+        {
+          "idx": 9,
+          "correct": false,
+          "answer": "1551",
+          "extracted": "47",
+          "lang": "en",
+          "first_50": " To find the area of a rectangle, we use the formu"
+        }
+      ],
+      "zh_details": [
+        {
+          "idx": 0,
+          "correct": false,
+          "answer": "133",
+          "extracted": "25",
+          "lang": "zh",
+          "first_50": " \u8981\u8ba1\u7b97 47 \u52a0 86 \u7684\u548c\uff0c\u6211\u4eec\u53ef\u4ee5\u6309\u7167\u4ee5\u4e0b\u6b65\u9aa4\u8fdb\u884c\uff1a\n\n\u9996\u5148\uff0c\u5c06\u4e2a\u4f4d\u6570\u76f8\u52a0\uff1a7 + 6 = 1"
+        },
+        {
+          "idx": 1,
+          "correct": true,
+          "answer": "60",
+          "extracted": "60",
+          "lang": "zh",
+          "first_50": " \u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u5c06\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u662f 12\uff0c\u5bbd\u662f 5\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u662f 12 "
+        },
+        {
+          "idx": 2,
+          "correct": true,
+          "answer": "2",
+          "extracted": "2",
+          "lang": "zh",
+          "first_50": " 100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\n\n\u8981\u8ba1\u7b97 100 \u9664\u4ee5 7 \u7684\u4f59\u6570\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u6a21\u8fd0\u7b97\u3002\u9996\u5148\uff0c\u6211"
+        },
+        {
+          "idx": 3,
+          "correct": true,
+          "answer": "120",
+          "extracted": "120",
+          "lang": "zh",
+          "first_50": " 15 \u00d7 8 \u7684\u503c\u662f 120\u3002\n\n\u597d\u7684\uff0c\u6211\u73b0\u5728\u8981\u8ba1\u7b9715\u4e58\u4ee58\u7684\u7ed3\u679c\u3002\u9996\u5148\uff0c\u6211\u5e94\u8be5\u56de\u5fc6\u4e00\u4e0b\u4e58\u6cd5\u7684\u57fa"
+        },
+        {
+          "idx": 4,
+          "correct": false,
+          "answer": "40",
+          "extracted": "5",
+          "lang": "zh",
+          "first_50": " \u8981\u8ba1\u7b97\u7b49\u5dee\u6570\u5217\u7684\u524d5\u9879\u4e4b\u548c\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u7b49\u5dee\u6570\u5217\u6c42\u548c\u516c\u5f0f\uff1a\n\n$$ S_n = \\frac{n}{"
+        },
+        {
+          "idx": 5,
+          "correct": false,
+          "answer": "11223",
+          "extracted": "11610",
+          "lang": "zh",
+          "first_50": " \u8981\u8ba1\u7b97 387 \u00d7 29\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u5206\u914d\u5f8b\u6765\u7b80\u5316\u8ba1\u7b97\u3002\u9996\u5148\uff0c\u5c06 29 \u5206\u89e3\u4e3a 30 - 1\uff0c\u8fd9\u6837"
+        },
+        {
+          "idx": 6,
+          "correct": false,
+          "answer": "120",
+          "extracted": "10",
+          "lang": "zh",
+          "first_50": " \u7ec4\u5408\u6570 C(n, k) \u7684\u8ba1\u7b97\u516c\u5f0f\u662f C(n, k) = n! / (k! * (n - k)! "
+        },
+        {
+          "idx": 7,
+          "correct": false,
+          "answer": "34",
+          "extracted": "7400",
+          "lang": "zh",
+          "first_50": " 7654 \u00f7 37 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\n\n\u8981\u8ba1\u7b97 7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u6a21\u8fd0\u7b97\u3002\u9996"
+        },
+        {
+          "idx": 8,
+          "correct": false,
+          "answer": "3475",
+          "extracted": "25",
+          "lang": "zh",
+          "first_50": " \u8981\u8ba1\u7b97\u7b49\u5dee\u6570\u5217\u7684\u524d25\u9879\u4e4b\u548c\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u7b49\u5dee\u6570\u5217\u6c42\u548c\u516c\u5f0f\uff1a\n\n$$ S_n = \\frac{n}"
+        },
+        {
+          "idx": 9,
+          "correct": false,
+          "answer": "1551",
+          "extracted": "15",
+          "lang": "zh",
+          "first_50": " \u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u9762\u79ef\u53ef\u4ee5\u901a\u8fc7\u5c06\u957f\u4e58\u4ee5\u5bbd\u6765\u8ba1\u7b97\u3002\u7ed9\u5b9a\u7684\u957f\u662f 47\uff0c\u5bbd\u662f 33\u3002\u56e0\u6b64\uff0c\u9762\u79ef\u662f 47 \u4e58\u4ee5 "
+        }
+      ]
+    },
+    "project_1d_surgery": {
+      "en_correct": 4,
+      "en_total": 10,
+      "zh_correct": 3,
+      "zh_total": 10,
+      "total_correct": 7,
+      "total": 20,
+      "en_details": [
+        {
+          "idx": 0,
+          "correct": true,
+          "answer": "133",
+          "extracted": "133",
+          "lang": "en",
+          "first_50": " What is the result?\n\nTo calculate 47 + 86, we can"
+        },
+        {
+          "idx": 1,
+          "correct": true,
+          "answer": "60",
+          "extracted": "60",
+          "lang": "en",
+          "first_50": " To find the area of a rectangle, we use the formu"
+        },
+        {
+          "idx": 2,
+          "correct": false,
+          "answer": "2",
+          "extracted": "98",
+          "lang": "en",
+          "first_50": " Also, can you explain how to find the remainder w"
+        },
+        {
+          "idx": 3,
+          "correct": true,
+          "answer": "120",
+          "extracted": "120",
+          "lang": "en",
+          "first_50": " Then, calculate 15 \u00d7 80. Then, calculate 15 \u00d7 800"
+        },
+        {
+          "idx": 4,
+          "correct": false,
+          "answer": "40",
+          "extracted": "3",
+          "lang": "en",
+          "first_50": " To find the sum of the first 5 terms of an arithm"
+        },
+        {
+          "idx": 5,
+          "correct": true,
+          "answer": "11223",
+          "extracted": "11223",
+          "lang": "en",
+          "first_50": " To calculate 387 \u00d7 29, we can use the standard mu"
+        },
+        {
+          "idx": 6,
+          "correct": false,
+          "answer": "120",
+          "extracted": "1",
+          "lang": "en",
+          "first_50": " C(n, k) is the number of combinations of n things"
+        },
+        {
+          "idx": 7,
+          "correct": false,
+          "answer": "34",
+          "extracted": "37",
+          "lang": "en",
+          "first_50": " To find the remainder when 7654 is divided by 37,"
+        },
+        {
+          "idx": 8,
+          "correct": false,
+          "answer": "3475",
+          "extracted": "1",
+          "lang": "en",
+          "first_50": " To find the sum of the first 25 terms of an arith"
+        },
+        {
+          "idx": 9,
+          "correct": false,
+          "answer": "1551",
+          "extracted": "47",
+          "lang": "en",
+          "first_50": " To find the area of a rectangle, we use the formu"
+        }
+      ],
+      "zh_details": [
+        {
+          "idx": 0,
+          "correct": true,
+          "answer": "133",
+          "extracted": "133",
+          "lang": "zh",
+          "first_50": " 47 + 86 = ?\n\n\u8981\u8ba1\u7b97 47 + 86\uff0c\u6211\u4eec\u53ef\u4ee5\u5206\u6b65\u8fdb\u884c\uff1a\n\n1. \u5148\u8ba1\u7b97\u4e2a\u4f4d\u6570\u76f8\u52a0\uff1a7"
+        },
+        {
+          "idx": 1,
+          "correct": true,
+          "answer": "60",
+          "extracted": "60",
+          "lang": "zh",
+          "first_50": " \u8981\u8ba1\u7b97\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u9762\u79ef\uff0c\u6211\u4eec\u9700\u8981\u4f7f\u7528\u516c\u5f0f\uff1a\u9762\u79ef = \u957f \u00d7 \u5bbd\u3002\n\n\u5728\u8fd9\u4e2a\u95ee\u9898\u4e2d\uff0c\u957f\u65b9\u5f62\u7684\u957f\u662f 1"
+        },
+        {
+          "idx": 2,
+          "correct": false,
+          "answer": "2",
+          "extracted": "1",
+          "lang": "zh",
+          "first_50": " 100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f 100 \u9664\u4ee5 7 \u7684\u4f59\u6570\u662f\u591a\u5c11"
+        },
+        {
+          "idx": 3,
+          "correct": true,
+          "answer": "120",
+          "extracted": "120",
+          "lang": "zh",
+          "first_50": " 15 \u00d7 8 = ?\n\n15 \u00d7 8 \u7684\u8ba1\u7b97\u53ef\u4ee5\u5206\u89e3\u4e3a\uff1a\n\n15 \u00d7 8 = (10 + 5) \u00d7"
+        },
+        {
+          "idx": 4,
+          "correct": false,
+          "answer": "40",
+          "extracted": "5",
+          "lang": "zh",
+          "first_50": " \u8981\u8ba1\u7b97\u7b49\u5dee\u6570\u5217\u7684\u524d5\u9879\u4e4b\u548c\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u7b49\u5dee\u6570\u5217\u6c42\u548c\u516c\u5f0f\uff1a\n\n$$ S_n = \\frac{n}{"
+        },
+        {
+          "idx": 5,
+          "correct": false,
+          "answer": "11223",
+          "extracted": "387",
+          "lang": "zh",
+          "first_50": " 387 \u00d7 29 = ?\n\n\u8981\u8ba1\u7b97 387 \u00d7 29\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u5206\u914d\u5f8b\u6765\u7b80\u5316\u8ba1\u7b97\u3002\n\n\u9996\u5148\uff0c\u5c06 "
+        },
+        {
+          "idx": 6,
+          "correct": false,
+          "answer": "120",
+          "extracted": "10",
+          "lang": "zh",
+          "first_50": " \u7ec4\u5408\u6570 C(n, k) \u7684\u8ba1\u7b97\u516c\u5f0f\u662f C(n, k) = n! / (k! * (n - k)! "
+        },
+        {
+          "idx": 7,
+          "correct": false,
+          "answer": "34",
+          "extracted": "254",
+          "lang": "zh",
+          "first_50": " 7654 \u00f7 37 \u7684\u4f59\u6570\u662f\u591a\u5c11\uff1f\n\n\u8981\u8ba1\u7b97 7654 \u9664\u4ee5 37 \u7684\u4f59\u6570\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u6a21\u8fd0\u7b97\u3002\u9996"
+        },
+        {
+          "idx": 8,
+          "correct": false,
+          "answer": "3475",
+          "extracted": "11",
+          "lang": "zh",
+          "first_50": " \u8981\u8ba1\u7b97\u7b49\u5dee\u6570\u5217\u7684\u524d25\u9879\u4e4b\u548c\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528\u7b49\u5dee\u6570\u5217\u6c42\u548c\u516c\u5f0f\uff1a\n\n$$ S_n = \\frac{n}"
+        },
+        {
+          "idx": 9,
+          "correct": false,
+          "answer": "1551",
+          "extracted": "47",
+          "lang": "zh",
+          "first_50": " \u8981\u8ba1\u7b97\u4e00\u4e2a\u957f\u65b9\u5f62\u7684\u9762\u79ef\uff0c\u6211\u4eec\u9700\u8981\u5c06\u5b83\u7684\u957f\u548c\u5bbd\u76f8\u4e58\u3002\u9898\u76ee\u4e2d\u7ed9\u51fa\u7684\u957f\u662f 47\uff0c\u5bbd\u662f 33\u3002\u56e0\u6b64\uff0c\u9762\u79ef "
+        }
+      ]
+    }
+  },
+  "elapsed_s": 708.4618773460388
+}

@@ -1,0 +1,11 @@
+################################################################################
+  Exp MS3: Procrustes-Based Convention Surgery
+################################################################################
+Model:      Qwen/Qwen2.5-3B
+Problems:   20 x 7 langs
+Max tokens: 1024
+Surgery:    L13-L35 (above l_c)
+Convention: Procrustes rotation deviation (21 pairs)
+
+Computing Procrustes convention directions...
+  L 0: mean_rot=88.74°, sv1=1.3101, sv1/sv2=1.00

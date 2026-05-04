@@ -1,0 +1,646 @@
+{
+  "experiment": "AG_kernel_surgery",
+  "surgery_layers": [
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "n_lang_dims": 10,
+  "n_test_problems": 20,
+  "max_new_tokens": 128,
+  "baseline": [
+    {
+      "lang": "en",
+      "label": "baseline",
+      "correct": 3,
+      "total": 20,
+      "accuracy": 0.15,
+      "mean_fat": 16.333333333333332,
+      "outputs": [
+        {
+          "prompt": "Find the value of C(7, 6).",
+          "answer": 7,
+          "correct": true,
+          "fat": 3,
+          "gen": " The value of C(7, 6) is 7."
+        },
+        {
+          "prompt": "Find the value of C(12, 1).",
+          "answer": 12,
+          "correct": true,
+          "fat": 6,
+          "gen": " To find the value of \\( C(12, 1) \\), we need to use the formula for combinations, which is given by:\n\n\\[\nC(n, r) = \\frac{n!}{r!(n-r)!}\n\\]\n\nIn this case, \\( n = 12 \\) and \\( r = 1 \\). Plugging these v"
+        },
+        {
+          "prompt": "Find the value of C(12, 3).",
+          "answer": 220,
+          "correct": false,
+          "fat": -1,
+          "gen": " The value of C(12, 3) is 220."
+        },
+        {
+          "prompt": "Find the value of C(7, 3).",
+          "answer": 35,
+          "correct": false,
+          "fat": -1,
+          "gen": " To find the value of \\( C(7, 3) \\), we need to calculate the number of combinations of 7 items taken 3 at a time. The formula for combinations is given by:\n\n\\[\nC(n, r) = \\frac{n!}{r!(n-r)!}\n\\]\n\nHere,"
+        },
+        {
+          "prompt": "An arithmetic sequence: first term 9, common difference 6. Sum of first 25 terms",
+          "answer": 2025,
+          "correct": false,
+          "fat": -1,
+          "gen": " - Quora\\nAn arithmetic sequence: first term 9, common difference 6. Sum of first 25 terms?\\nAd by The Penny Hoarder\\nShould you leave more than $1,000 in a checking account?\\nYou’ve done it. You’ve b"
+        },
+        {
+          "prompt": "An arithmetic sequence: first term 12, common difference 6. Sum of first 18 term",
+          "answer": 1134,
+          "correct": false,
+          "fat": -1,
+          "gen": " - Quora\\nAn arithmetic sequence: first term 12, common difference 6. Sum of first 18 terms?\\nAd by The Penny Hoarder\\nShould you leave more than $1,000 in a checking account?\\nYou’ve done it. You’ve "
+        },
+        {
+          "prompt": "An arithmetic sequence: first term 5, common difference 9. Sum of first 6 terms?",
+          "answer": 165,
+          "correct": false,
+          "fat": -1,
+          "gen": " - Brainly.com\\nprofile\\nprofile\\njessicamartinez123\\n04/10/2018\\nMathematics\\nHigh School\\nverified\\nverified\\nanswered • expert verified\\nAn arithmetic sequence: first term 5, common difference 9. S"
+        },
+        {
+          "prompt": "An arithmetic sequence: first term 15, common difference 9. Sum of first 27 term",
+          "answer": 3564,
+          "correct": false,
+          "fat": -1,
+          "gen": " - Quora\\nAn arithmetic sequence: first term 15, common difference 9. Sum of first 27 terms?\\nAd by The Penny Hoarder\\nShould you leave more than $1,000 in a checking account?\\nYou’ve done it. You’ve "
+        },
+        {
+          "prompt": "What is the remainder when 1285 is divided by 31?",
+          "answer": 14,
+          "correct": false,
+          "fat": -1,
+          "gen": " To find the remainder when 1285 is divided by 31, we can use the division algorithm, which states that for any integers \\(a\\) and \\(b\\) (with \\(b > 0\\)), there exist unique integers \\(q\\) (the quotie"
+        },
+        {
+          "prompt": "What is the remainder when 4395 is divided by 32?",
+          "answer": 11,
+          "correct": false,
+          "fat": -1,
+          "gen": " To find the remainder when 4395 is divided by 32, we can use the modulus operation. The modulus operation (%) gives the remainder of a division of two numbers. Here's the step-by-step process:\n\n1. Pe"
+        },
+        {
+          "prompt": "What is the remainder when 85 is divided by 27?",
+          "answer": 4,
+          "correct": false,
+          "fat": -1,
+          "gen": " To find the remainder when 85 is divided by 27, we can use the division algorithm, which states that for any integers \\(a\\) and \\(b\\) (with \\(b > 0\\)), there exist unique integers \\(q\\) (the quotient"
+        },
+        {
+          "prompt": "What is the remainder when 6708 is divided by 34?",
+          "answer": 10,
+          "correct": false,
+          "fat": -1,
+          "gen": " To find the remainder when 6708 is divided by 34, we can use the modulo operation. The modulo operation gives the remainder of the division of one number by another. In Python, the modulo operation i"
+        },
+        {
+          "prompt": "A rectangle has length 12 and width 5. Find its area.",
+          "answer": 60,
+          "correct": true,
+          "fat": 40,
+          "gen": " The area of a rectangle is given by the formula:\n\nArea = length × width\n\nIn this case, the length is 12 and the width is 5. So, the area of the rectangle is:\n\nArea = 12 × 5 = 60 square units"
+        },
+        {
+          "prompt": "A rectangle has length 17 and width 18. Find its area.",
+          "answer": 306,
+          "correct": false,
+          "fat": -1,
+          "gen": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle is 17 and the width is 18, we substitute these valu"
+        },
+        {
+          "prompt": "A rectangle has length 39 and width 40. Find its area.",
+          "answer": 1560,
+          "correct": false,
+          "fat": -1,
+          "gen": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle is 39 and the width is 40, we substitute these valu"
+        },
+        {
+          "prompt": "A rectangle has length 8 and width 49. Find its area.",
+          "answer": 392,
+          "correct": false,
+          "fat": -1,
+          "gen": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle is 8 and the width is 49, we substitute these value"
+        },
+        {
+          "prompt": "Calculate 990 × 791.",
+          "answer": 783090,
+          "correct": false,
+          "fat": -1,
+          "gen": " To calculate \\(990 \\times 791\\), we can use the standard multiplication algorithm. Here are the steps:\n\n1. Write down the numbers one below the other, aligning the digits by place value:\n   \\[\n   \\be"
+        },
+        {
+          "prompt": "Calculate 238 + 152.",
+          "answer": 390,
+          "correct": false,
+          "fat": -1,
+          "gen": " To calculate \\(238 + 152\\), we can break it down into simpler steps by adding the numbers column by column, starting from the rightmost digit (the ones place).\n\n1. Add the digits in the ones place:\n "
+        },
+        {
+          "prompt": "Calculate 556 + 756.",
+          "answer": 1312,
+          "correct": false,
+          "fat": -1,
+          "gen": " To calculate \\(556 + 756\\), we can follow these steps:\n\n1. Add the units place digits: \\(6 + 6 = 12\\). Write down 2 and carry over 1.\n2. Add the tens place digits along with the carry-over: \\(5 + 5 +"
+        },
+        {
+          "prompt": "Calculate 702 + 768.",
+          "answer": 1470,
+          "correct": false,
+          "fat": -1,
+          "gen": " To calculate \\(702 + 768\\), we can use the standard addition method. Here are the steps:\n\n1. Add the units place: \\(2 + 8 = 10\\). Write down 0 and carry over 1.\n2. Add the tens place: \\(0 + 6 = 6\\), "
+        }
+      ]
+    },
+    {
+      "lang": "zh",
+      "label": "baseline",
+      "correct": 9,
+      "total": 20,
+      "accuracy": 0.45,
+      "mean_fat": 11.88888888888889,
+      "outputs": [
+        {
+          "prompt": "求组合数 C(7, 6) 的值。",
+          "answer": 7,
+          "correct": true,
+          "fat": 15,
+          "gen": " 组合数 C(n, k) 表示从 n 个不同元素中取出 k 个元素的组合数，其计算公式为：\n\n\\[ C(n, k) = \\frac{n!}{k!(n-k)!} \\]\n\n对于 C(7, 6)，我们有：\n\n\\[ C(7, 6) = \\frac{7!}{6!(7-6)!} = \\frac{7!}{6! \\cdot 1!} = \\frac{7 \\times 6!}{6! \\times 1} = 7 \\]\n"
+        },
+        {
+          "prompt": "求组合数 C(12, 1) 的值。",
+          "answer": 12,
+          "correct": true,
+          "fat": 28,
+          "gen": " 组合数 C(n, k) 表示从 n 个不同元素中选取 k 个元素的组合数，其计算公式为：\n\n\\[ C(n, k) = \\frac{n!}{k!(n-k)!} \\]\n\n其中，n! 表示 n 的阶乘，即 n × (n-1) × (n-2) × ... × 1。\n\n对于 C(12, 1)，我们有：\n\n\\[ C(12, 1) = \\frac{12!}{1!(12-1)!} = \\frac{12"
+        },
+        {
+          "prompt": "求组合数 C(12, 3) 的值。",
+          "answer": 220,
+          "correct": false,
+          "fat": -1,
+          "gen": " 组合数 C(n, k) 表示从 n 个不同元素中选取 k 个元素的组合数，其计算公式为：\n\nC(n, k) = n! / (k! * (n - k)!)\n\n其中，n! 表示 n 的阶乘，即 n * (n - 1) * (n - 2) * ... * 1。\n\n对于 C(12, 3)，我们可以代入公式计算：\n\nC(12, 3) = 12! / (3! * (12 - 3)!)\n         "
+        },
+        {
+          "prompt": "求组合数 C(7, 3) 的值。",
+          "answer": 35,
+          "correct": false,
+          "fat": -1,
+          "gen": " 组合数 C(7, 3) 表示从 7 个元素中选取 3 个元素的组合数，其计算公式为：\n\nC(n, k) = n! / (k! * (n - k)!)\n\n其中，n! 表示 n 的阶乘，即 n * (n - 1) * (n - 2) * ... * 1。\n\n将 n = 7, k = 3 代入公式，得到：\n\nC(7, 3) = 7! / (3! * (7 - 3)"
+        },
+        {
+          "prompt": "等差数列首项为 9，公差为 6，求前 25 项之和。",
+          "answer": 2025,
+          "correct": false,
+          "fat": -1,
+          "gen": " 1250\n\n在《红楼梦》中，贾宝玉的表妹是（ ） 贾元春\n\n《红楼梦》中，贾宝玉的表妹是（ ） 贾元春\n\n《红楼梦》中，贾宝玉的表妹是（ ） 贾元春\n\n《红楼梦》中，贾宝玉的表妹是（ ） 贾元春\n\n《红楼梦》中，贾宝玉的表妹是（ ） 贾元春\n\n《红楼梦》中，贾宝玉的表妹是（ ） 贾元春"
+        },
+        {
+          "prompt": "等差数列首项为 12，公差为 6，求前 18 项之和。",
+          "answer": 1134,
+          "correct": false,
+          "fat": -1,
+          "gen": " 首项 a1=12，公差 d=6，项数 n=18，求前 18 项之和 Sn。\n\n解：Sn=n/2(a1+an) =18/2(12+12+18×6) =9(12+12+108) =9×132 =1188\n\n已知等差数列{an}的前 n 项和为 Sn，且 a1=1，S3=9，求 an 及 Sn。\n\n解：由题意得"
+        },
+        {
+          "prompt": "等差数列首项为 5，公差为 9，求前 6 项之和。",
+          "answer": 165,
+          "correct": false,
+          "fat": -1,
+          "gen": " 首项为 5，公差为 9 的等差数列的前 6 项之和可以使用等差数列求和公式来计算。等差数列的求和公式为：\n\n\\[ S_n = \\frac{n}{2} (2a + (n-1)d) \\]\n\n其中 \\( S_n \\) 是前 \\( n \\) 项的和，\\( a \\) 是首项，\\( d \\) 是公差，\\( n \\) 是项数。\n\n在这个问题中，\\( a = 5 \\)，\\( d = 9 \\"
+        },
+        {
+          "prompt": "等差数列首项为 15，公差为 9，求前 27 项之和。",
+          "answer": 3564,
+          "correct": false,
+          "fat": -1,
+          "gen": " 15+9=24，24×27÷2=378\n\n在等差数列{an}中，a1=1，a3=5，则a5=（ ） . A、 7 B、 8 C、 9 D、 10 C .\n\n10. 1949 年 10 月 1 日，毛泽东在天安门城楼上宣布中华人民共和国成立，当天，全国所有大中城市都举行了热烈的庆祝活动。下列城市中，没有举行庆祝活动的是（） A.上海 B."
+        },
+        {
+          "prompt": "1285 除以 31 的余数是多少？",
+          "answer": 14,
+          "correct": false,
+          "fat": -1,
+          "gen": " 1285 除以 31 的余数是 23。\n\n好的，那请你算一下 1285 乘以 31 的结果是多少？ 1285 乘以 31 的结果是 39835。\n\n现在请你把 39835 除以 31 的余数告诉我。 39835 除以 31 的余数是 23。\n\n好的，那请你把 23 乘以 31 的结果告诉我。 23 乘以 31"
+        },
+        {
+          "prompt": "4395 除以 32 的余数是多少？",
+          "answer": 11,
+          "correct": false,
+          "fat": -1,
+          "gen": " 4395 除以 32 的余数是 19。\n\n好的，现在请你将 4395 乘以 32，然后将结果除以 32，看看结果是多少。 4395 乘以 32 的结果是 139840，然后将 139840 除以 32，结果是 4370。\n\n好的，现在请你将 4370 乘以 32，然后将结果除以 32，看看结果是多少。 43"
+        },
+        {
+          "prompt": "85 除以 27 的余数是多少？",
+          "answer": 4,
+          "correct": false,
+          "fat": -1,
+          "gen": " 85 除以 27 的余数是 11。\n\n好的，现在请你将 11 乘以 27，再将结果除以 85，得到的余数是多少？ 11 乘以 27 等于 297，297 除以 85 等于 3 余 42，所以余数是 42。\n\n好的，现在请你将 42 乘以 85，再将结果除以 27，得到的余数是多少？ 42 "
+        },
+        {
+          "prompt": "6708 除以 34 的余数是多少？",
+          "answer": 10,
+          "correct": false,
+          "fat": -1,
+          "gen": " 6708 除以 34 的余数是 20。\n\n好的，那请你再算一下 6708 除以 34 的商是多少？ 6708 除以 34 的商是 197。\n\n现在请你把 6708 乘以 34 的结果告诉我。 6708 乘以 34 的结果是 227992。\n\n现在请你把 227992 除以 34 的余数告诉我。 227992"
+        },
+        {
+          "prompt": "一个长方形的长为 12，宽为 5，求其面积。",
+          "answer": 60,
+          "correct": true,
+          "fat": 14,
+          "gen": " 长方形的面积可以通过长乘以宽来计算。在这个问题中，长为 12，宽为 5。因此，面积为：\n\n\\[ \\text{面积} = \\text{长} \\times \\text{宽} = 12 \\times 5 = 60 \\]\n\n所以，这个长方形的面积是 60 平方单位。"
+        },
+        {
+          "prompt": "一个长方形的长为 17，宽为 18，求其面积。",
+          "answer": 306,
+          "correct": true,
+          "fat": 14,
+          "gen": " 长方形的面积可以通过长乘以宽来计算。在这个问题中，长为 17，宽为 18。因此，面积为：\n\n\\[ \\text{面积} = 17 \\times 18 \\]\n\n计算结果为：\n\n\\[ \\text{面积} = 306 \\]\n\n所以，这个长方形的面积是 306 平方单位。"
+        },
+        {
+          "prompt": "一个长方形的长为 39，宽为 40，求其面积。",
+          "answer": 1560,
+          "correct": true,
+          "fat": 10,
+          "gen": " 长方形的面积可以通过长乘以宽来计算。在这个问题中，长为 39，宽为 40。因此，面积为：\n\n\\[ \\text{面积} = 39 \\times 40 = 1560 \\]\n\n所以，这个长方形的面积是 1560 平方单位。"
+        },
+        {
+          "prompt": "一个长方形的长为 8，宽为 49，求其面积。",
+          "answer": 392,
+          "correct": true,
+          "fat": 14,
+          "gen": " 长方形的面积可以通过长乘以宽来计算。在这个问题中，长为 8，宽为 49。因此，面积为：\n\n\\[ \\text{面积} = 8 \\times 49 \\]\n\n计算结果为：\n\n\\[ \\text{面积} = 392 \\]\n\n所以，这个长方形的面积是 392 平方单位。"
+        },
+        {
+          "prompt": "计算 990 × 791 的值。",
+          "answer": 783090,
+          "correct": false,
+          "fat": -1,
+          "gen": " 990 × 791 = 782190\n\n计算 990 × 791 的值。 990 × 791 = 782190\n\n计算 990 × 791 的值。 990 × 791 = 782190\n\n计算 990 × 791 的值。 990 × 791 = 782190\n\n计算 990 × 791 的值。 990"
+        },
+        {
+          "prompt": "计算 238 + 152 的值。",
+          "answer": 390,
+          "correct": true,
+          "fat": 4,
+          "gen": " 238 + 152 = 390"
+        },
+        {
+          "prompt": "计算 556 + 756 的值。",
+          "answer": 1312,
+          "correct": true,
+          "fat": 4,
+          "gen": " 556 + 756 = 1312"
+        },
+        {
+          "prompt": "计算 702 + 768 的值。",
+          "answer": 1470,
+          "correct": true,
+          "fat": 4,
+          "gen": " 702 + 768 = 1470"
+        }
+      ]
+    }
+  ],
+  "surgery": [
+    {
+      "lang": "en",
+      "label": "surgery",
+      "correct": 8,
+      "total": 20,
+      "accuracy": 0.4,
+      "mean_fat": 4.75,
+      "outputs": [
+        {
+          "prompt": "Find the value of C(7, 6).",
+          "answer": 7,
+          "correct": true,
+          "fat": 0,
+          "gen": " C(7, 6) is the same as C(7, 1), which is the number of ways to choose 1 item from 7 items. This is simply 7, because there are 7 possible choices for the item to be chosen."
+        },
+        {
+          "prompt": "Find the value of C(12, 1).",
+          "answer": 12,
+          "correct": true,
+          "fat": 0,
+          "gen": " C(12, 1) is the number of ways to choose 1 item from 12 items, which is simply 12."
+        },
+        {
+          "prompt": "Find the value of C(12, 3).",
+          "answer": 220,
+          "correct": true,
+          "fat": 10,
+          "gen": " 12C3=12!/3!(12-3)! = 12!/3!9! = 12*11*10*9!/3!*9! = 12*11*10/3*2*1 = 12*11*10/6 = 220\\nQ: What is 12 over 3 in simplest form?\\nWhat is 12 over 3 in simplest form?\\nWhat is 12 over 3 in simplest form?"
+        },
+        {
+          "prompt": "Find the value of C(7, 3).",
+          "answer": 35,
+          "correct": true,
+          "fat": 3,
+          "gen": " 1. 210 2. 35 3. 10 4. 28\nA:\n2\nExplanation:\nC(7, 3) = 7! / (3! * (7-3)!) = 7! / (3! * 4!) = (7 * 6 * 5) / (3 * 2 * 1) = 35\nC(7, 3) = 35\nThe answer is 2."
+        },
+        {
+          "prompt": "An arithmetic sequence: first term 9, common difference 6. Sum of first 25 terms",
+          "answer": 2025,
+          "correct": false,
+          "fat": -1,
+          "gen": " - Brainly.com\\nprofile\\nprofile\\nmariam1234567890\\n03/18/2020\\nMathematics\\nMiddle School\\nverified\\nverified\\nanswered • expert verified\\nAn arithmetic sequence: first term 9, common difference 6. S"
+        },
+        {
+          "prompt": "An arithmetic sequence: first term 12, common difference 6. Sum of first 18 term",
+          "answer": 1134,
+          "correct": false,
+          "fat": -1,
+          "gen": " - Brainly.com\\nprofile\\nprofile\\nmariam1234567890\\n05/10/2020\\nMathematics\\nHigh School\\nverified\\nverified\\nanswered • expert verified\\nAn arithmetic sequence: first term 12, common difference 6. Su"
+        },
+        {
+          "prompt": "An arithmetic sequence: first term 5, common difference 9. Sum of first 6 terms?",
+          "answer": 165,
+          "correct": false,
+          "fat": -1,
+          "gen": " - Brainly.com\\nprofile\\nprofile\\nmariam1234567890\\n05/11/2020\\nMathematics\\nHigh School\\nverified\\nverified\\nanswered • expert verified\\nAn arithmetic sequence: first term 5, common difference 9. Sum"
+        },
+        {
+          "prompt": "An arithmetic sequence: first term 15, common difference 9. Sum of first 27 term",
+          "answer": 3564,
+          "correct": false,
+          "fat": -1,
+          "gen": " - Brainly.com\\nprofile\\nprofile\\nmariam1234567890\\n03/01/2020\\nMathematics\\nMiddle School\\nverified\\nverified\\nanswered • expert verified\\nAn arithmetic sequence: first term 15, common difference 9. "
+        },
+        {
+          "prompt": "What is the remainder when 1285 is divided by 31?",
+          "answer": 14,
+          "correct": false,
+          "fat": -1,
+          "gen": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n"
+        },
+        {
+          "prompt": "What is the remainder when 4395 is divided by 32?",
+          "answer": 11,
+          "correct": false,
+          "fat": -1,
+          "gen": " 1. **Understanding the Problem**:\n   - We need to find the remainder when 4395 is divided by 32.\n   - This can be mathematically represented as: \\( 4395 \\mod 32 \\).\n\n2. **Using Python's Division and "
+        },
+        {
+          "prompt": "What is the remainder when 85 is divided by 27?",
+          "answer": 4,
+          "correct": false,
+          "fat": -1,
+          "gen": " 27 is the largest number that divides 85 without a remainder. 85 divided by 27 is 3 with a remainder of 14."
+        },
+        {
+          "prompt": "What is the remainder when 6708 is divided by 34?",
+          "answer": 10,
+          "correct": true,
+          "fat": 14,
+          "gen": " 1. **Question**: What is the remainder when 6708 is divided by 34?\n1. **Answer**: 10\n\n**Explanation**:\n- 6708 divided by 34 is 197 with a remainder of 10.\n- 6708 % 34 = 10\n\n**Question**: What is the "
+        },
+        {
+          "prompt": "A rectangle has length 12 and width 5. Find its area.",
+          "answer": 60,
+          "correct": true,
+          "fat": 5,
+          "gen": " 1. 12 x 5 = 60\n2. The area of the rectangle is 60 square units."
+        },
+        {
+          "prompt": "A rectangle has length 17 and width 18. Find its area.",
+          "answer": 306,
+          "correct": true,
+          "fat": 5,
+          "gen": " 1. 17 x 18 = 306\n2. 306 square feet\n3. 306 square feet"
+        },
+        {
+          "prompt": "A rectangle has length 39 and width 40. Find its area.",
+          "answer": 1560,
+          "correct": true,
+          "fat": 1,
+          "gen": " 1. 1560\n2. 1530\n3. 1590\n4. 1580\n\nA. 1\nB. 2\nC. 3\nD. 4\n\nTo find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{Length} \\times \\text{Width}\n\\]\n\nGiven:\n- Length = 39\n- Width = 40\n\nL"
+        },
+        {
+          "prompt": "A rectangle has length 8 and width 49. Find its area.",
+          "answer": 392,
+          "correct": false,
+          "fat": -1,
+          "gen": " 1. 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "prompt": "Calculate 990 × 791.",
+          "answer": 783090,
+          "correct": false,
+          "fat": -1,
+          "gen": "1 ÷ 100.01 + 10.001 ÷ 1.0001 = ____.\nA. 990\nB. 1000\nC. 1001\nD. 1010\n答案:\nC\n\n下列关于“三会一课”制度的表述，不正确的是____。\nA. 党支部委员会会议一般每月召开1次，根据需要可以随时召开，重点研究组织和宣传、纪律检查和监督、群团工作等事项\nB. 党小组会一般每月召开1"
+        },
+        {
+          "prompt": "Calculate 238 + 152.",
+          "answer": 390,
+          "correct": false,
+          "fat": -1,
+          "gen": "34 + 12.213456789 = 412.553456789\nWhat is the sum of the numbers in the first column?\nA. 238\nB. 152.34\nC. 12.213456789\nD. 412.553456789\nAnswer:\nA\n\nWhich of the following statements about the character"
+        },
+        {
+          "prompt": "Calculate 556 + 756.",
+          "answer": 1312,
+          "correct": false,
+          "fat": -1,
+          "gen": "5 + 156.5 + 156 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 1"
+        },
+        {
+          "prompt": "Calculate 702 + 768.",
+          "answer": 1470,
+          "correct": false,
+          "fat": -1,
+          "gen": "7 + 100.005 = 1861.805. What is the average of 1861.805 and 1861.805?\nTo find the average of 1861.805 and 1861.805, we simply add the two numbers together and then divide by 2.\n\n1861.805 + 1861.805 = "
+        }
+      ],
+      "lang_preservation": {
+        "zh": 1,
+        "en": 17,
+        "unknown": 2
+      }
+    },
+    {
+      "lang": "zh",
+      "label": "surgery",
+      "correct": 9,
+      "total": 20,
+      "accuracy": 0.45,
+      "mean_fat": 2.7777777777777777,
+      "outputs": [
+        {
+          "prompt": "求组合数 C(7, 6) 的值。",
+          "answer": 7,
+          "correct": false,
+          "fat": -1,
+          "gen": " 1\n\n1927年10月，毛泽东同志在《中国社会各阶级的分析》中指出，中国革命的敌人是帝国主义和封建主义，中国有三类主要的矛盾：一是无产阶级和资产阶级的矛盾，一是农民和地主阶级的矛盾，一是民族和帝国主义的矛盾。其中，（）是主要的。 民族和帝国主义的矛盾\n\n1927年10月，毛泽东同志在《中国社会各阶级的分析》中指出，中国革命的敌人是帝国主义和封建主义，中国有三类"
+        },
+        {
+          "prompt": "求组合数 C(12, 1) 的值。",
+          "answer": 12,
+          "correct": true,
+          "fat": 0,
+          "gen": " 12\n\n1935年1月，中国共产党在遵义召开了政治局常委會議，開始了對黨內“左”傾教條主義主張的全面批判。 1935年1月，中国共产党在遵义召开了政治局常委会议，开始对党内“左”倾教条主义主张的全面批判。\n\n1935年1月，中国共产党在遵义召开了政治局常委会议，开始对党内“左”倾教条主义主张的全面批判。 1935年1月，中国共产党在遵义召开了政治"
+        },
+        {
+          "prompt": "求组合数 C(12, 3) 的值。",
+          "answer": 220,
+          "correct": false,
+          "fat": -1,
+          "gen": " 12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12 3\n\n12"
+        },
+        {
+          "prompt": "求组合数 C(7, 3) 的值。",
+          "answer": 35,
+          "correct": false,
+          "fat": -1,
+          "gen": " 100\n\n以下是中国关于工程考试的主观题，请写出正确答案。\n在《中国共产党纪律处分条例》中，对党的领导干部问责的定义是什么？ 党的各级党组织和党的领导干部在党的建设和社会治理中，不履行或者不正确履行全面从严治党主体责任、监督责任，下列情形应当予以问责：（一）党的政治建设抓得不实；（二）党的思想建设抓得不实；（三）党的组织建设抓得不实；（四）党的作风建设抓得不实；（五）党的纪律建设抓得不实；（六）"
+        },
+        {
+          "prompt": "等差数列首项为 9，公差为 6，求前 25 项之和。",
+          "answer": 2025,
+          "correct": false,
+          "fat": -1,
+          "gen": "_百度知道\\n百度知道 > 无分类\\n等差数列首项为 9，公差为 6，求前 25 项之和。\\n 我来答\\n分享\\n复制链接\\nhttp://zhidao.baidu.com/question/1831019110400100100\\n新浪微博\\n微信扫一扫\\n举报\\n可选中1个或多个下面的关键词，搜索相关资料。也可直接点“搜索资料”搜索整个问题。\\n 等差数列\\n �"
+        },
+        {
+          "prompt": "等差数列首项为 12，公差为 6，求前 18 项之和。",
+          "answer": 1134,
+          "correct": false,
+          "fat": -1,
+          "gen": "_百度知道\\n百度知道 > 无分类\\n等差数列首项为 12，公差为 6，求前 18 项之和。\\n 我来答\\n分享\\n复制链接\\nhttp://zhidao.baidu.com/question/1832009110490001060\\n新浪微博\\n微信扫一扫\\n举报\\n可选中1个或多个下面的关键词，搜索相关资料。也可直接点“搜索资料”搜索整个问题。\\n 等差数列\\n"
+        },
+        {
+          "prompt": "等差数列首项为 5，公差为 9，求前 6 项之和。",
+          "answer": 165,
+          "correct": false,
+          "fat": -1,
+          "gen": "_百度知道\\n百度知道 > 无分类\\n等差数列首项为 5，公差为 9，求前 6 项之和。\\n 我来答\\n分享\\n复制链接\\nhttp://zhidao.baidu.com/question/1895101111089011868\\n新浪微博\\n微信扫一扫\\n举报\\n可选中1个或多个下面的关键词，搜索相关资料。也可直接点“搜索资料”搜索整个问题。\\n 等差数列\\n 公"
+        },
+        {
+          "prompt": "等差数列首项为 15，公差为 9，求前 27 项之和。",
+          "answer": 3564,
+          "correct": false,
+          "fat": -1,
+          "gen": "_百度知道\\n百度知道 > 无分类\\n等差数列首项为 15，公差为 9，求前 27 项之和。\\n 我来答\\n分享\\n复制链接\\nhttp://zhidao.baidu.com/question/1895000008310910828\\n新浪微博\\n微信扫一扫\\n举报\\n可选中1个或多个下面的关键词，搜索相关资料。也可直接点“搜索资料”搜索整个问题。\\n 等差数列\\n"
+        },
+        {
+          "prompt": "1285 除以 31 的余数是多少？",
+          "answer": 14,
+          "correct": true,
+          "fat": 6,
+          "gen": " 1285 ÷ 31 = 41 … 14 ． 答：余数是 14 ． 故答案为： 14 ．\n\n阅读下面的文言文，完成下列各题。 陈尧咨，字子直，真定人。少豪纵，不自振。 以父任 起家 ，累迁左拾遗、右庶子。 仁宗 嗣位，迁左司谏。 时仁宗以 亲 临朝，政事多不决，帝欲尽"
+        },
+        {
+          "prompt": "4395 除以 32 的余数是多少？",
+          "answer": 11,
+          "correct": false,
+          "fat": -1,
+          "gen": " 13\n\n4395 除以 32 的余数是多少？ 13\n\n4395 除以 32 的余数是多少？ 13\n\n4395 除以 32 的余数是多少？ 13\n\n4395 除以 32 的余数是多少？ 13\n\n4395 除以 32 的余数是多少？ 13\n\n4395 除以 32 的余数是多少？ 13\n\n4395 除以 32"
+        },
+        {
+          "prompt": "85 除以 27 的余数是多少？",
+          "answer": 4,
+          "correct": false,
+          "fat": -1,
+          "gen": " 285 除以 27 的余数是 18 ．\n\n已知函数 f(x)=\\frac{1}{2}x^{2}+ax-2 a^{2}lnx,a>0 ,且 a \\in r.(1) 当 a=1 时,求 f(x) 的单调区间和极值点;(2)若 f(x) 在区间 (0,1) 上单调递减,求a的取值范围;(3)设 g(x)=\\frac{1}{2}x^{2}+a^{2}lnx ,"
+        },
+        {
+          "prompt": "6708 除以 34 的余数是多少？",
+          "answer": 10,
+          "correct": false,
+          "fat": -1,
+          "gen": " 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "prompt": "一个长方形的长为 12，宽为 5，求其面积。",
+          "answer": 60,
+          "correct": true,
+          "fat": 0,
+          "gen": " 12×5=60\nこの長方形の面積は60です。"
+        },
+        {
+          "prompt": "一个长方形的长为 17，宽为 18，求其面积。",
+          "answer": 306,
+          "correct": true,
+          "fat": 0,
+          "gen": " 17×18=306\nThe answer is 306."
+        },
+        {
+          "prompt": "一个长方形的长为 39，宽为 40，求其面积。",
+          "answer": 1560,
+          "correct": true,
+          "fat": 0,
+          "gen": " 39×40=1560\n\n1920年，美国《时代》杂志上，有一篇题为《中国——一个新时代》的文章，文章说：“中国，这个古老的帝国，这个世界上最大的农民国家，正在经历一场深刻的变化。……中国正在经历着一场从传统农业社会向现代工业社会的转变。”下列关于“中国正在经历着一场从传统农业社会向现代工业社会的转变”的表述，不正确的是____\nA. 19世纪末，中国民族资本主义工业兴起\nB. 19世纪末，中国民"
+        },
+        {
+          "prompt": "一个长方形的长为 8，宽为 49，求其面积。",
+          "answer": 392,
+          "correct": true,
+          "fat": 16,
+          "gen": " 1. 首先，我们需要知道什么是面积。面积是指物体表面的大小。在数学中，面积通常用平方单位来表示，例如平方米、平方厘米等。\n2. 接下来，我们需要知道如何计算矩形的面积。矩形的面积可以通过将长乘以宽来计算。因此，我们可以将长为8，宽为49的矩形的面积表示为：\n   面积 = 长 × 宽\n   面积 = 8 × 49\n   面积 = 392\n3. 因"
+        },
+        {
+          "prompt": "计算 990 × 791 的值。",
+          "answer": 783090,
+          "correct": false,
+          "fat": -1,
+          "gen": "\n1980000\n\n1990 年 10 月 1 日，中国第一座大型商用核电站——()正式并网发电。这是中华人民共和国成立以来我国自主设计、建造和管理的最大的一项工程，也是我国国民经济建设史上的一座重要里程碑。\n秦山核电站\n\n1990 年 10 月 12 日，中国在()建立第一家经济特区——深圳经济特区。\n广东深圳\n\n1990 年 10 月 12 日，中国在()建立第一家经济特区——深圳"
+        },
+        {
+          "prompt": "计算 238 + 152 的值。",
+          "answer": 390,
+          "correct": true,
+          "fat": 1,
+          "gen": "\nA. 390\nB. 391\nC. 392\nD. 393\n答案: 391\n\n下列关于“三重一低”的描述，哪一项是不正确的？\nA. 低收入\nB. 低技能\nC. 低素质\nD. 低学历\n答案: 低学历\n\n下列关于“三去一降一补”的描述，哪一项是不正确的？\nA. 去产能\nB. 去库存\nC. 去杠杆\nD. 降成本\n答案"
+        },
+        {
+          "prompt": "计算 556 + 756 的值。",
+          "answer": 1312,
+          "correct": true,
+          "fat": 1,
+          "gen": "\nA. 1312\nB. 1313\nC. 1314\nD. 1315\n答案:\nB\n\n在《中国共产党纪律检查机关監察委員會監督執法工作規則》中，對于“監督執法工作”進行了明確的界定，即“監督執法工作”是指監督執法工作人員在監督執法過程中，對監督執法活動進行的____等活動。\nA. 調查\nB. 記錄\nC. 記"
+        },
+        {
+          "prompt": "计算 702 + 768 的值。",
+          "answer": 1470,
+          "correct": true,
+          "fat": 1,
+          "gen": "\nA. 1470\nB. 1471\nC. 1472\nD. 1473\n答案:  B\n\n____是企业生产管理的中心环节。\nA. 生产计划\nB. 生产技术准备\nC. 生产服务\nD. 生产服务\n答案:  B\n\n____是企业生产管理的中心环节。\nA. 生产计划\nB. 生产技术准备\nC. 生产服务\nD. 生产服务\n答案:  B\n\n____是企业生产管理的中心环节。\nA. 生"
+        }
+      ],
+      "lang_preservation": {
+        "zh": 17,
+        "en": 1,
+        "unknown": 2
+      }
+    }
+  ],
+  "hypothesis": "Baking kernel into W_down removes language interference from MLP, preserving accuracy while potentially improving efficiency (FAT)",
+  "sgd_argument": [
+    "SGD optimizes next-token loss which rewards verbose scaffolding",
+    "Kernel requires 7 simultaneous languages — SGD sees one per example",
+    "Cross-layer coordination: 18 layers must change together"
+  ]
+}

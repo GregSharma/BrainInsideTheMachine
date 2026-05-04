@@ -1,0 +1,322 @@
+{
+  "experiment": "BQ3",
+  "name": "Lyapunov-Guided Layer Pruning",
+  "method": "Skip layers by \u0394G Frobenius ranking (BQ) and Lyapunov magnitude ranking (BQ2). Controls: random skip, destructive skip (top-\u0394G and top-Lyapunov layers).",
+  "model": "Qwen/Qwen2.5-3B",
+  "n_problems": 20,
+  "max_new_tokens": 128,
+  "baseline": {
+    "en": 3,
+    "zh": 9
+  },
+  "dg_ranking": [
+    21,
+    24,
+    5,
+    25,
+    19,
+    22,
+    14,
+    13,
+    17,
+    10
+  ],
+  "lyap_ranking": [
+    24,
+    19,
+    21,
+    5,
+    17,
+    10,
+    15,
+    29,
+    13,
+    11
+  ],
+  "dg_destructive": [
+    1,
+    7,
+    12,
+    16,
+    35
+  ],
+  "lyap_destructive": [
+    1,
+    2,
+    3,
+    16,
+    35
+  ],
+  "results": [
+    {
+      "label": "baseline",
+      "skip_layers": [],
+      "n_skipped": 0,
+      "en_correct": 3,
+      "en_total": 20,
+      "zh_correct": 9,
+      "zh_total": 20
+    },
+    {
+      "label": "dg_skip_3",
+      "skip_layers": [
+        5,
+        21,
+        24
+      ],
+      "n_skipped": 3,
+      "en_correct": 6,
+      "en_total": 20,
+      "zh_correct": 8,
+      "zh_total": 20
+    },
+    {
+      "label": "dg_skip_5",
+      "skip_layers": [
+        5,
+        19,
+        21,
+        24,
+        25
+      ],
+      "n_skipped": 5,
+      "en_correct": 5,
+      "en_total": 20,
+      "zh_correct": 8,
+      "zh_total": 20
+    },
+    {
+      "label": "dg_skip_8",
+      "skip_layers": [
+        5,
+        13,
+        14,
+        19,
+        21,
+        22,
+        24,
+        25
+      ],
+      "n_skipped": 8,
+      "en_correct": 2,
+      "en_total": 20,
+      "zh_correct": 2,
+      "zh_total": 20
+    },
+    {
+      "label": "lyap_skip_3",
+      "skip_layers": [
+        19,
+        21,
+        24
+      ],
+      "n_skipped": 3,
+      "en_correct": 6,
+      "en_total": 20,
+      "zh_correct": 8,
+      "zh_total": 20
+    },
+    {
+      "label": "lyap_skip_5",
+      "skip_layers": [
+        5,
+        17,
+        19,
+        21,
+        24
+      ],
+      "n_skipped": 5,
+      "en_correct": 6,
+      "en_total": 20,
+      "zh_correct": 6,
+      "zh_total": 20
+    },
+    {
+      "label": "lyap_skip_8",
+      "skip_layers": [
+        5,
+        10,
+        15,
+        17,
+        19,
+        21,
+        24,
+        29
+      ],
+      "n_skipped": 8,
+      "en_correct": 3,
+      "en_total": 20,
+      "zh_correct": 1,
+      "zh_total": 20
+    },
+    {
+      "label": "random_3_s42",
+      "skip_layers": [
+        16,
+        20,
+        28
+      ],
+      "n_skipped": 3,
+      "en_correct": 5,
+      "en_total": 20,
+      "zh_correct": 7,
+      "zh_total": 20
+    },
+    {
+      "label": "random_3_s123",
+      "skip_layers": [
+        6,
+        9,
+        28
+      ],
+      "n_skipped": 3,
+      "en_correct": 3,
+      "en_total": 20,
+      "zh_correct": 8,
+      "zh_total": 20
+    },
+    {
+      "label": "random_3_s777",
+      "skip_layers": [
+        4,
+        9,
+        16
+      ],
+      "n_skipped": 3,
+      "en_correct": 8,
+      "en_total": 20,
+      "zh_correct": 9,
+      "zh_total": 20
+    },
+    {
+      "label": "random_5_s42",
+      "skip_layers": [
+        9,
+        16,
+        20,
+        27,
+        28
+      ],
+      "n_skipped": 5,
+      "en_correct": 3,
+      "en_total": 20,
+      "zh_correct": 1,
+      "zh_total": 20
+    },
+    {
+      "label": "random_5_s123",
+      "skip_layers": [
+        6,
+        9,
+        17,
+        28,
+        31
+      ],
+      "n_skipped": 5,
+      "en_correct": 0,
+      "en_total": 20,
+      "zh_correct": 3,
+      "zh_total": 20
+    },
+    {
+      "label": "random_5_s777",
+      "skip_layers": [
+        4,
+        9,
+        10,
+        16,
+        18
+      ],
+      "n_skipped": 5,
+      "en_correct": 2,
+      "en_total": 20,
+      "zh_correct": 7,
+      "zh_total": 20
+    },
+    {
+      "label": "random_8_s42",
+      "skip_layers": [
+        9,
+        13,
+        16,
+        20,
+        22,
+        25,
+        27,
+        28
+      ],
+      "n_skipped": 8,
+      "en_correct": 2,
+      "en_total": 20,
+      "zh_correct": 1,
+      "zh_total": 20
+    },
+    {
+      "label": "random_8_s123",
+      "skip_layers": [
+        6,
+        8,
+        9,
+        17,
+        19,
+        28,
+        31,
+        32
+      ],
+      "n_skipped": 8,
+      "en_correct": 1,
+      "en_total": 20,
+      "zh_correct": 1,
+      "zh_total": 20
+    },
+    {
+      "label": "random_8_s777",
+      "skip_layers": [
+        4,
+        7,
+        9,
+        10,
+        13,
+        16,
+        18,
+        31
+      ],
+      "n_skipped": 8,
+      "en_correct": 1,
+      "en_total": 20,
+      "zh_correct": 1,
+      "zh_total": 20
+    },
+    {
+      "label": "dg_destructive_5",
+      "skip_layers": [
+        1,
+        7,
+        12,
+        16,
+        35
+      ],
+      "n_skipped": 5,
+      "en_correct": 0,
+      "en_total": 20,
+      "zh_correct": 0,
+      "zh_total": 20
+    },
+    {
+      "label": "lyap_destructive_5",
+      "skip_layers": [
+        1,
+        2,
+        3,
+        16,
+        35
+      ],
+      "n_skipped": 5,
+      "en_correct": 2,
+      "en_total": 20,
+      "zh_correct": 0,
+      "zh_total": 20
+    }
+  ],
+  "elapsed_seconds": 1630.8
+}

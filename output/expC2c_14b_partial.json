@@ -1,0 +1,806 @@
+{
+  "config": {
+    "model": "Qwen/Qwen2.5-14B",
+    "model_key": "14b",
+    "n_layers": 48,
+    "d": 5120,
+    "tied": false,
+    "k": 20,
+    "max_new": 128,
+    "seed": 42
+  },
+  "baselines": {
+    "en": 5,
+    "zh": 10
+  },
+  "rank_trajectory": {
+    "last_token": {
+      "L0": {
+        "rank_50": 2,
+        "rank_90": 9,
+        "rank_95": 14
+      },
+      "L1": {
+        "rank_50": 3,
+        "rank_90": 10,
+        "rank_95": 15
+      },
+      "L2": {
+        "rank_50": 3,
+        "rank_90": 12,
+        "rank_95": 17
+      },
+      "L3": {
+        "rank_50": 3,
+        "rank_90": 13,
+        "rank_95": 19
+      },
+      "L4": {
+        "rank_50": 4,
+        "rank_90": 16,
+        "rank_95": 24
+      },
+      "L5": {
+        "rank_50": 4,
+        "rank_90": 17,
+        "rank_95": 25
+      },
+      "L6": {
+        "rank_50": 5,
+        "rank_90": 18,
+        "rank_95": 25
+      },
+      "L7": {
+        "rank_50": 5,
+        "rank_90": 20,
+        "rank_95": 27
+      },
+      "L8": {
+        "rank_50": 4,
+        "rank_90": 19,
+        "rank_95": 27
+      },
+      "L9": {
+        "rank_50": 4,
+        "rank_90": 19,
+        "rank_95": 27
+      },
+      "L10": {
+        "rank_50": 4,
+        "rank_90": 20,
+        "rank_95": 28
+      },
+      "L11": {
+        "rank_50": 4,
+        "rank_90": 21,
+        "rank_95": 29
+      },
+      "L12": {
+        "rank_50": 4,
+        "rank_90": 22,
+        "rank_95": 30
+      },
+      "L13": {
+        "rank_50": 5,
+        "rank_90": 22,
+        "rank_95": 30
+      },
+      "L14": {
+        "rank_50": 5,
+        "rank_90": 23,
+        "rank_95": 31
+      },
+      "L15": {
+        "rank_50": 5,
+        "rank_90": 22,
+        "rank_95": 32
+      },
+      "L16": {
+        "rank_50": 5,
+        "rank_90": 23,
+        "rank_95": 33
+      },
+      "L17": {
+        "rank_50": 5,
+        "rank_90": 23,
+        "rank_95": 33
+      },
+      "L18": {
+        "rank_50": 5,
+        "rank_90": 24,
+        "rank_95": 35
+      },
+      "L19": {
+        "rank_50": 5,
+        "rank_90": 25,
+        "rank_95": 36
+      },
+      "L20": {
+        "rank_50": 5,
+        "rank_90": 25,
+        "rank_95": 35
+      },
+      "L21": {
+        "rank_50": 5,
+        "rank_90": 25,
+        "rank_95": 36
+      },
+      "L22": {
+        "rank_50": 6,
+        "rank_90": 26,
+        "rank_95": 39
+      },
+      "L23": {
+        "rank_50": 6,
+        "rank_90": 27,
+        "rank_95": 41
+      },
+      "L24": {
+        "rank_50": 6,
+        "rank_90": 27,
+        "rank_95": 41
+      },
+      "L25": {
+        "rank_50": 6,
+        "rank_90": 27,
+        "rank_95": 42
+      },
+      "L26": {
+        "rank_50": 6,
+        "rank_90": 28,
+        "rank_95": 43
+      },
+      "L27": {
+        "rank_50": 6,
+        "rank_90": 28,
+        "rank_95": 43
+      },
+      "L28": {
+        "rank_50": 6,
+        "rank_90": 28,
+        "rank_95": 44
+      },
+      "L29": {
+        "rank_50": 5,
+        "rank_90": 26,
+        "rank_95": 42
+      },
+      "L30": {
+        "rank_50": 5,
+        "rank_90": 26,
+        "rank_95": 41
+      },
+      "L31": {
+        "rank_50": 5,
+        "rank_90": 25,
+        "rank_95": 40
+      },
+      "L32": {
+        "rank_50": 5,
+        "rank_90": 24,
+        "rank_95": 38
+      },
+      "L33": {
+        "rank_50": 5,
+        "rank_90": 24,
+        "rank_95": 36
+      },
+      "L34": {
+        "rank_50": 5,
+        "rank_90": 23,
+        "rank_95": 35
+      },
+      "L35": {
+        "rank_50": 4,
+        "rank_90": 22,
+        "rank_95": 33
+      },
+      "L36": {
+        "rank_50": 4,
+        "rank_90": 21,
+        "rank_95": 31
+      },
+      "L37": {
+        "rank_50": 4,
+        "rank_90": 20,
+        "rank_95": 31
+      },
+      "L38": {
+        "rank_50": 4,
+        "rank_90": 20,
+        "rank_95": 31
+      },
+      "L39": {
+        "rank_50": 4,
+        "rank_90": 20,
+        "rank_95": 30
+      },
+      "L40": {
+        "rank_50": 3,
+        "rank_90": 18,
+        "rank_95": 28
+      },
+      "L41": {
+        "rank_50": 3,
+        "rank_90": 18,
+        "rank_95": 28
+      },
+      "L42": {
+        "rank_50": 3,
+        "rank_90": 19,
+        "rank_95": 28
+      },
+      "L43": {
+        "rank_50": 3,
+        "rank_90": 19,
+        "rank_95": 28
+      },
+      "L44": {
+        "rank_50": 4,
+        "rank_90": 20,
+        "rank_95": 30
+      },
+      "L45": {
+        "rank_50": 4,
+        "rank_90": 20,
+        "rank_95": 29
+      },
+      "L46": {
+        "rank_50": 3,
+        "rank_90": 18,
+        "rank_95": 27
+      },
+      "L47": {
+        "rank_50": 3,
+        "rank_90": 8,
+        "rank_95": 16
+      }
+    },
+    "context_mean": {
+      "L0": {
+        "rank_50": 7,
+        "rank_90": 27,
+        "rank_95": 33
+      },
+      "L1": {
+        "rank_50": 5,
+        "rank_90": 25,
+        "rank_95": 32
+      },
+      "L2": {
+        "rank_50": 4,
+        "rank_90": 23,
+        "rank_95": 30
+      },
+      "L3": {
+        "rank_50": 5,
+        "rank_90": 24,
+        "rank_95": 30
+      },
+      "L4": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L5": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L6": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L7": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L8": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L9": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L10": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L11": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L12": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L13": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L14": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L15": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L16": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L17": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L18": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L19": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L20": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L21": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L22": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L23": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L24": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L25": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L26": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L27": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L28": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L29": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L30": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L31": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L32": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L33": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L34": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L35": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L36": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 1
+      },
+      "L37": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 2
+      },
+      "L38": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 3
+      },
+      "L39": {
+        "rank_50": 1,
+        "rank_90": 1,
+        "rank_95": 4
+      },
+      "L40": {
+        "rank_50": 1,
+        "rank_90": 2,
+        "rank_95": 5
+      },
+      "L41": {
+        "rank_50": 1,
+        "rank_90": 2,
+        "rank_95": 6
+      },
+      "L42": {
+        "rank_50": 1,
+        "rank_90": 3,
+        "rank_95": 7
+      },
+      "L43": {
+        "rank_50": 1,
+        "rank_90": 4,
+        "rank_95": 8
+      },
+      "L44": {
+        "rank_50": 1,
+        "rank_90": 8,
+        "rank_95": 14
+      },
+      "L45": {
+        "rank_50": 2,
+        "rank_90": 11,
+        "rank_95": 21
+      },
+      "L46": {
+        "rank_50": 4,
+        "rank_90": 15,
+        "rank_95": 25
+      },
+      "L47": {
+        "rank_50": 3,
+        "rank_90": 7,
+        "rank_95": 11
+      }
+    }
+  },
+  "conditions_completed": 1,
+  "conditions_total": 12,
+  "conditions": {
+    "last_only_N1": {
+      "mode": "last_only",
+      "n_layers": 1,
+      "layers": [
+        24
+      ],
+      "en": {
+        "correct": 5,
+        "total": 20,
+        "details": [
+          {
+            "i": 0,
+            "ok": false,
+            "gen": " To find the value of \\( C(18, 3) \\), which represents the number of combinations of 18 items taken 3 at a time, we use ",
+            "lang_out": "en",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 1,
+            "ok": false,
+            "gen": " To find the value of \\( C(5, 3) \\), which represents the number of combinations of 5 items taken 3 at a time, we use th",
+            "lang_out": "en",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 2,
+            "ok": true,
+            "gen": " To find the value of \\( C(17, 1) \\), we need to use the formula for combinations, which is given by:\n\n\\[\nC(n, r) = \\fra",
+            "lang_out": "en",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 3,
+            "ok": true,
+            "gen": " To find the value of \\( C(5, 1) \\), we need to use the formula for combinations, which is given by:\n\n\\[\nC(n, r) = \\frac",
+            "lang_out": "en",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 4,
+            "ok": false,
+            "gen": " To find the sum of the first 20 terms of an arithmetic sequence with the first term \\(a = 8\\) and common difference \\(d",
+            "lang_out": "en",
+            "cat": "sequences"
+          },
+          {
+            "i": 5,
+            "ok": false,
+            "gen": " To find the sum of the first 12 terms of an arithmetic sequence with the first term \\(a = 16\\) and common difference \\(",
+            "lang_out": "en",
+            "cat": "sequences"
+          },
+          {
+            "i": 6,
+            "ok": false,
+            "gen": " To find the sum of the first 27 terms of an arithmetic sequence with the first term \\(a = 15\\) and common difference \\(",
+            "lang_out": "en",
+            "cat": "sequences"
+          },
+          {
+            "i": 7,
+            "ok": false,
+            "gen": " To find the sum of the first 22 terms of an arithmetic sequence with the first term \\(a = 1\\) and common difference \\(d",
+            "lang_out": "en",
+            "cat": "sequences"
+          },
+          {
+            "i": 8,
+            "ok": true,
+            "gen": " To find the remainder when 7442 is divided by 3, we can use the property that a number is congruent to the sum of its d",
+            "lang_out": "en",
+            "cat": "modular"
+          },
+          {
+            "i": 9,
+            "ok": false,
+            "gen": " To find the remainder when 8850 is divided by 11, we can use the property of alternating sums of digits. This property ",
+            "lang_out": "en",
+            "cat": "modular"
+          },
+          {
+            "i": 10,
+            "ok": true,
+            "gen": " To find the remainder when 1980 is divided by 18, we can use the division algorithm, which states that for any integers",
+            "lang_out": "en",
+            "cat": "modular"
+          },
+          {
+            "i": 11,
+            "ok": false,
+            "gen": " To find the remainder when 4268 is divided by 19, we can use the division algorithm, which states that for any integers",
+            "lang_out": "en",
+            "cat": "modular"
+          },
+          {
+            "i": 12,
+            "ok": false,
+            "gen": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven the ",
+            "lang_out": "en",
+            "cat": "geometry"
+          },
+          {
+            "i": 13,
+            "ok": true,
+            "gen": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that",
+            "lang_out": "en",
+            "cat": "geometry"
+          },
+          {
+            "i": 14,
+            "ok": false,
+            "gen": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven the ",
+            "lang_out": "en",
+            "cat": "geometry"
+          },
+          {
+            "i": 15,
+            "ok": false,
+            "gen": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven the ",
+            "lang_out": "en",
+            "cat": "geometry"
+          },
+          {
+            "i": 16,
+            "ok": false,
+            "gen": " To calculate \\(484 + 68\\), we can break it down into simpler steps. Here's the step-by-step process:\n\n1. Add the tens a",
+            "lang_out": "en",
+            "cat": "arithmetic"
+          },
+          {
+            "i": 17,
+            "ok": false,
+            "gen": " To calculate \\(710 + 30\\), we can follow these steps:\n\n1. Align the numbers by their place values:\n   \\[\n   \\begin{arra",
+            "lang_out": "en",
+            "cat": "arithmetic"
+          },
+          {
+            "i": 18,
+            "ok": false,
+            "gen": " To calculate \\(11 \\times 399\\), we can use the distributive property of multiplication over subtraction. Notice that \\(",
+            "lang_out": "en",
+            "cat": "arithmetic"
+          },
+          {
+            "i": 19,
+            "ok": false,
+            "gen": " To calculate \\(131 + 476\\), we can add the numbers step by step, starting from the rightmost digit (the units place) an",
+            "lang_out": "en",
+            "cat": "arithmetic"
+          }
+        ]
+      },
+      "zh": {
+        "correct": 13,
+        "total": 20,
+        "details": [
+          {
+            "i": 0,
+            "ok": true,
+            "gen": " A. 816 B. 815 C. 814 D. 813\n答案:\n\nA\n\n在进行高处作业时，是否可以将安全带系挂在移动或不牢固的物件上？\nA. 可以\nB. 不可以\n答案:\n\nB\n\n在进行高处作业时，是否可以将安全带系挂在移动或不牢固的物件上",
+            "lang_out": "zh",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 1,
+            "ok": true,
+            "gen": " 10\n\n请计算 2 的 10 次方。 1024\n\n请计算 10 的 3 次方。 1000\n\n请计算 5 的 4 次方。 625\n\n请计算 7 的 2 次方。 49\n\n请计算 12 的 3 次方。 1728\n\n请计算 15 的 2 次方。 ",
+            "lang_out": "zh",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 2,
+            "ok": true,
+            "gen": " A. 17 B. 16 C. 15 D. 14\n答案:\n\nA\n\n在进行高处作业时，是否可以将安全带系挂在移动或不牢固的物件上？\nA. 可以\nB. 不可以\n答案:\n\nB\n\n在进行高处作业时，是否可以将安全带系挂在移动或不牢固的物件上？\nA.",
+            "lang_out": "zh",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 3,
+            "ok": true,
+            "gen": " A. 1 B. 5 C. 10 D. 20\n答案:\n\nB\n\n在进行高处作业时，是否可以将安全带系挂在移动或不牢固的物件上？\nA. 可以\nB. 不可以\n答案:\n\nB\n\n在进行高处作业时，是否可以将安全带系挂在移动或不牢固的物件上？\nA. 可",
+            "lang_out": "zh",
+            "cat": "combinatorics"
+          },
+          {
+            "i": 4,
+            "ok": false,
+            "gen": " 首先，我们需要知道等差数列的通项公式：\n$$a_n = a_1 + (n-1)d$$\n其中，$a_n$ 表示第 $n$ 项，$a_1$ 表示首项，$d$ 表示公差。\n根据题目所给条件，我们可以得到：\n$$a_1 = 8$$\n$$d = 4",
+            "lang_out": "zh",
+            "cat": "sequences"
+          },
+          {
+            "i": 5,
+            "ok": false,
+            "gen": " 首先，我们需要知道等差数列的通项公式：\n$$a_n = a_1 + (n-1)d$$\n其中，$a_n$ 表示第 $n$ 项，$a_1$ 表示首项，$d$ 表示公差。\n根据题目所给条件，我们可以得到：\n$$a_1 = 16$$\n$$d = ",
+            "lang_out": "zh",
+            "cat": "sequences"
+          },
+          {
+            "i": 6,
+            "ok": false,
+            "gen": " 首先，我们需要知道等差数列的通项公式：\n$$a_n = a_1 + (n-1)d$$\n其中，$a_n$ 表示第 $n$ 项，$a_1$ 表示首项，$d$ 表示公差。\n根据题目所给条件，我们可以得到：\n$$a_1 = 15$$\n$$d = ",
+            "lang_out": "zh",
+            "cat": "sequences"
+          },
+          {
+            "i": 7,
+            "ok": false,
+            "gen": " 首先，我们需要知道等差数列的通项公式：\n$$a_n = a_1 + (n-1)d$$\n其中，$a_n$ 表示第 $n$ 项，$a_1$ 表示首项，$d$ 表示公差。\n根据题目，首项 $a_1 = 1$，公差 $d = 3$，我们需要求前 ",
+            "lang_out": "zh",
+            "cat": "sequences"
+          },
+          {
+            "i": 8,
+            "ok": false,
+            "gen": " 7442 除以 3 的余数是 1。",
+            "lang_out": "zh",
+            "cat": "modular"
+          },
+          {
+            "i": 9,
+            "ok": false,
+            "gen": " 8850 除以 11 的余数是 1。",
+            "lang_out": "zh",
+            "cat": "modular"
+          },
+          {
+            "i": 10,
+            "ok": true,
+            "gen": " 1980 除以 18 的余数是 0。因为 1980 是 18 的倍数（1980 = 18 × 110）。",
+            "lang_out": "zh",
+            "cat": "modular"
+          },
+          {
+            "i": 11,
+            "ok": false,
+            "gen": " 4268 除以 19 的余数是 15。",
+            "lang_out": "zh",
+            "cat": "modular"
+          },
+          {
+            "i": 12,
+            "ok": true,
+            "gen": " 要计算一个长方形的面积，我们可以使用公式：面积 = 长 × 宽。在这个问题中，长方形的长是 12，宽是 29。因此，我们可以将这些值代入公式中进行计算：\n\n面积 = 12 × 29\n\n现在我们来进行乘法运算：\n\n12 × 29 = 348",
+            "lang_out": "zh",
+            "cat": "geometry"
+          },
+          {
+            "i": 13,
+            "ok": true,
+            "gen": " 长方形的面积可以通过长乘以宽来计算。在这个问题中，长方形的长是12，宽是9。因此，面积的计算如下：\n\n\\[ \\text{面积} = \\text{长} \\times \\text{宽} = 12 \\times 9 = 108 \\]\n\n所以，这",
+            "lang_out": "zh",
+            "cat": "geometry"
+          },
+          {
+            "i": 14,
+            "ok": true,
+            "gen": " 要计算一个长方形的面积，我们需要使用公式：面积 = 长 × 宽。在这个问题中，长方形的长是 49，宽是 13。因此，我们可以将这些值代入公式中进行计算。\n\n面积 = 49 × 13\n\n现在我们来进行乘法运算：\n\n49 × 13 = 637",
+            "lang_out": "zh",
+            "cat": "geometry"
+          },
+          {
+            "i": 15,
+            "ok": true,
+            "gen": " 要计算一个长方形的面积，我们需要使用公式：面积 = 长 × 宽。在这个问题中，长是 35，宽是 22。所以，我们可以将这些值代入公式中进行计算。\n\n面积 = 35 × 22\n\n现在我们来进行乘法运算：\n\n35 × 22 = 770\n\n因此",
+            "lang_out": "zh",
+            "cat": "geometry"
+          },
+          {
+            "i": 16,
+            "ok": true,
+            "gen": " 484 + 68 = 552",
+            "lang_out": "unk",
+            "cat": "arithmetic"
+          },
+          {
+            "i": 17,
+            "ok": true,
+            "gen": " 710 + 30 = 740",
+            "lang_out": "unk",
+            "cat": "arithmetic"
+          },
+          {
+            "i": 18,
+            "ok": true,
+            "gen": " 11 × 399 = 11 × (400 - 1) = 11 × 400 - 11 × 1 = 4400 - 11 = 4389\n\n阅读下面的文字，完成下列各题。 ①“中国”一词最早见于西周初年的青铜器“何尊”的铭文，铭文中的“宅兹中国”",
+            "lang_out": "zh",
+            "cat": "arithmetic"
+          },
+          {
+            "i": 19,
+            "ok": true,
+            "gen": " 131 + 476 = 607",
+            "lang_out": "unk",
+            "cat": "arithmetic"
+          }
+        ]
+      }
+    }
+  },
+  "elapsed_s_so_far": 663.6565957069397
+}

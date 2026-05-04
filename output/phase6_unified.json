@@ -1,0 +1,102 @@
+{
+  "bridge": {
+    "r2_train": 0.97689288854599,
+    "r2_test": 0.9759626984596252,
+    "random_mean": 0.668963611125946,
+    "random_std": 0.078323595225811,
+    "percentile": 100.0,
+    "scale": 313786.8125
+  },
+  "patching": {
+    "clean": {
+      "correct": 3,
+      "total": 10
+    },
+    "z_patch": {
+      "correct": 1,
+      "total": 10
+    },
+    "zperp_patch": {
+      "correct": 2,
+      "total": 10
+    },
+    "random_patch": {
+      "correct": 4,
+      "total": 10
+    }
+  },
+  "layer_sweep": {
+    "8": {
+      "pooled_acc": 0.8299999999999998,
+      "random_mean": 0.8730000000000001,
+      "percentile": 6.0,
+      "n_lang_dirs": 1,
+      "energy": 0.01724260486662388,
+      "energy_ratio": 1.765642762184143
+    },
+    "12": {
+      "pooled_acc": 0.8099999999999999,
+      "random_mean": 0.825,
+      "percentile": 30.0,
+      "n_lang_dirs": 1,
+      "energy": 0.025911375880241394,
+      "energy_ratio": 2.653324842453003
+    },
+    "16": {
+      "pooled_acc": 0.8300000000000001,
+      "random_mean": 0.8262,
+      "percentile": 56.00000000000001,
+      "n_lang_dirs": 1,
+      "energy": 0.026039157062768936,
+      "energy_ratio": 2.666409730911255
+    },
+    "20": {
+      "pooled_acc": 0.86,
+      "random_mean": 0.8193999999999998,
+      "percentile": 90.0,
+      "n_lang_dirs": 1,
+      "energy": 0.03330333158373833,
+      "energy_ratio": 3.4102611541748047
+    },
+    "24": {
+      "pooled_acc": 0.76,
+      "random_mean": 0.6954,
+      "percentile": 98.0,
+      "n_lang_dirs": 1,
+      "energy": 0.04420033097267151,
+      "energy_ratio": 4.526113986968994
+    },
+    "28": {
+      "pooled_acc": 0.68,
+      "random_mean": 0.5284,
+      "percentile": 100.0,
+      "n_lang_dirs": 3,
+      "energy": 0.08343826234340668,
+      "energy_ratio": 8.54407787322998
+    },
+    "32": {
+      "pooled_acc": 0.61,
+      "random_mean": 0.3328000000000001,
+      "percentile": 100.0,
+      "n_lang_dirs": 5,
+      "energy": 0.2400931566953659,
+      "energy_ratio": 24.585538864135742
+    },
+    "33": {
+      "pooled_acc": 0.48,
+      "random_mean": 0.2562,
+      "percentile": 100.0,
+      "n_lang_dirs": 5,
+      "energy": 0.2291029393672943,
+      "energy_ratio": 23.460140228271484
+    },
+    "34": {
+      "pooled_acc": 0.39,
+      "random_mean": 0.23800000000000004,
+      "percentile": 100.0,
+      "n_lang_dirs": 5,
+      "energy": 0.27909594774246216,
+      "energy_ratio": 28.579425811767578
+    }
+  }
+}

@@ -1,0 +1,110 @@
+Loading model (eager attention)...
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:   7%|▋         | 29/434 [00:00<00:01, 285.88it/s]Loading weights:  23%|██▎       | 100/434 [00:00<00:00, 529.11it/s]Loading weights:  39%|███▉      | 171/434 [00:00<00:00, 585.08it/s]Loading weights:  56%|█████▌    | 243/434 [00:00<00:00, 628.89it/s]Loading weights:  73%|███████▎  | 315/434 [00:00<00:00, 641.69it/s]Loading weights:  89%|████████▉ | 387/434 [00:00<00:00, 651.72it/s]Loading weights: 100%|██████████| 434/434 [00:00<00:00, 627.00it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loaded. 36 layers.
+
+
+======================================================================
+PROBLEM: p9_complex (correct: E)
+======================================================================
+  step 200...
+  step 400...
+  step 600...
+--- 711 tokens, 13.5s ---
+
+======================================================================
+PROBLEM: p3_age (correct: A)
+======================================================================
+  step 200...
+  step 400...
+--- 579 tokens, 10.8s ---
+
+======================================================================
+PROBLEM: p12_harmonic (correct: B)
+======================================================================
+  step 200...
+  step 400...
+  step 600...
+  step 800...
+  step 1000...
+  step 1200...
+  step 1400...
+  step 1600...
+  step 1800...
+  step 2000...
+--- 2048 tokens, 39.3s ---
+
+Saved to output/diag_attn_pacf.json
+
+======================================================================
+SUMMARY
+======================================================================
+
+p9_complex (711 tok, correct=E):
+  L5: cos_sim  mean=0.9892  Q1=0.9906  Q4=0.9876  delta=-0.0031
+        eff_rank first=17.4(T=139)  last=24.0(T=839)  ratio_last=0.188
+        norm_ent Q1=0.2811  Q4=0.3012  delta=+0.0201
+  L17: cos_sim  mean=0.9434  Q1=0.9522  Q4=0.9378  delta=-0.0145
+        eff_rank first=14.0(T=139)  last=15.1(T=839)  ratio_last=0.118
+        norm_ent Q1=0.5670  Q4=0.5725  delta=+0.0056
+  L27: cos_sim  mean=0.9120  Q1=0.9114  Q4=0.9203  delta=+0.0089
+        eff_rank first=8.3(T=139)  last=7.2(T=839)  ratio_last=0.056
+        norm_ent Q1=0.6410  Q4=0.5957  delta=-0.0453
+  L30: cos_sim  mean=0.9560  Q1=0.9681  Q4=0.9525  delta=-0.0156
+        eff_rank first=14.0(T=139)  last=14.8(T=839)  ratio_last=0.116
+        norm_ent Q1=0.4750  Q4=0.5134  delta=+0.0384
+  L35: cos_sim  mean=0.8509  Q1=0.8759  Q4=0.8375  delta=-0.0384
+        eff_rank first=5.3(T=139)  last=7.3(T=839)  ratio_last=0.057
+        norm_ent Q1=0.6303  Q4=0.5610  delta=-0.0693
+  ACF cos_sim (lags 1-5):
+    L5: [np.float64(0.634), np.float64(0.434), np.float64(0.293), np.float64(0.218), np.float64(0.174)]
+    L17: [np.float64(0.575), np.float64(0.223), np.float64(0.163), np.float64(0.128), np.float64(0.116)]
+    L27: [np.float64(0.143), np.float64(0.152), np.float64(0.193), np.float64(0.134), np.float64(0.147)]
+    L30: [np.float64(0.362), np.float64(0.166), np.float64(0.191), np.float64(0.156), np.float64(0.059)]
+    L35: [np.float64(-0.151), np.float64(-0.127), np.float64(0.148), np.float64(0.088), np.float64(-0.064)]
+
+p3_age (579 tok, correct=A):
+  L5: cos_sim  mean=0.9853  Q1=0.9903  Q4=0.9851  delta=-0.0052
+        eff_rank first=18.8(T=191)  last=23.0(T=766)  ratio_last=0.180
+        norm_ent Q1=0.2885  Q4=0.3097  delta=+0.0213
+  L17: cos_sim  mean=0.9004  Q1=0.9393  Q4=0.8913  delta=-0.0480
+        eff_rank first=15.3(T=191)  last=14.7(T=766)  ratio_last=0.115
+        norm_ent Q1=0.5682  Q4=0.5858  delta=+0.0176
+  L27: cos_sim  mean=0.8944  Q1=0.8883  Q4=0.9019  delta=+0.0136
+        eff_rank first=9.2(T=191)  last=8.0(T=766)  ratio_last=0.063
+        norm_ent Q1=0.6294  Q4=0.6164  delta=-0.0130
+  L30: cos_sim  mean=0.9426  Q1=0.9661  Q4=0.9322  delta=-0.0339
+        eff_rank first=15.6(T=191)  last=15.4(T=766)  ratio_last=0.120
+        norm_ent Q1=0.4968  Q4=0.5570  delta=+0.0602
+  L35: cos_sim  mean=0.8564  Q1=0.8573  Q4=0.8509  delta=-0.0064
+        eff_rank first=5.3(T=191)  last=6.5(T=766)  ratio_last=0.051
+        norm_ent Q1=0.6222  Q4=0.5755  delta=-0.0466
+  ACF cos_sim (lags 1-5):
+    L5: [np.float64(0.724), np.float64(0.415), np.float64(0.259), np.float64(0.178), np.float64(0.16)]
+    L17: [np.float64(0.636), np.float64(0.284), np.float64(0.25), np.float64(0.32), np.float64(0.35)]
+    L27: [np.float64(0.091), np.float64(0.064), np.float64(0.072), np.float64(0.075), np.float64(0.017)]
+    L30: [np.float64(0.391), np.float64(0.166), np.float64(0.132), np.float64(0.053), np.float64(0.041)]
+    L35: [np.float64(0.052), np.float64(-0.002), np.float64(0.047), np.float64(-0.018), np.float64(-0.024)]
+
+p12_harmonic (2048 tok, correct=B):
+  L5: cos_sim  mean=0.9857  Q1=0.9861  Q4=0.9884  delta=+0.0023
+        eff_rank first=20.3(T=270)  last=23.6(T=2295)  ratio_last=0.185
+        norm_ent Q1=0.2867  Q4=0.3666  delta=+0.0799
+  L17: cos_sim  mean=0.9413  Q1=0.9419  Q4=0.9474  delta=+0.0055
+        eff_rank first=16.4(T=270)  last=16.0(T=2295)  ratio_last=0.125
+        norm_ent Q1=0.5547  Q4=0.5821  delta=+0.0275
+  L27: cos_sim  mean=0.9327  Q1=0.9040  Q4=0.9781  delta=+0.0742
+        eff_rank first=9.5(T=270)  last=8.1(T=2295)  ratio_last=0.063
+        norm_ent Q1=0.6139  Q4=0.6069  delta=-0.0069
+  L30: cos_sim  mean=0.9647  Q1=0.9587  Q4=0.9853  delta=+0.0265
+        eff_rank first=18.6(T=270)  last=14.0(T=2295)  ratio_last=0.109
+        norm_ent Q1=0.4844  Q4=0.6115  delta=+0.1271
+  L35: cos_sim  mean=0.8142  Q1=0.8412  Q4=0.7971  delta=-0.0441
+        eff_rank first=6.7(T=270)  last=7.9(T=2295)  ratio_last=0.061
+        norm_ent Q1=0.5780  Q4=0.5360  delta=-0.0420
+  ACF cos_sim (lags 1-5):
+    L5: [np.float64(0.602), np.float64(0.265), np.float64(0.137), np.float64(0.094), np.float64(0.058)]
+    L17: [np.float64(0.593), np.float64(0.26), np.float64(0.124), np.float64(0.008), np.float64(-0.014)]
+    L27: [np.float64(0.419), np.float64(0.381), np.float64(0.313), np.float64(0.341), np.float64(0.288)]
+    L30: [np.float64(0.274), np.float64(0.293), np.float64(0.174), np.float64(0.09), np.float64(0.102)]
+    L35: [np.float64(-0.14), np.float64(-0.085), np.float64(0.063), np.float64(0.079), np.float64(0.045)]

@@ -1,0 +1,344 @@
+{
+  "experiment": "U: TC0 Verbosity Direction (Phase 1)",
+  "model": "Qwen/Qwen2.5-3B",
+  "method": "Category proxy: combos+areas=direct, arithmetic+sequences=verbose. EN only for TC0.",
+  "n_direct": 80,
+  "n_verbose": 80,
+  "avg_cosines": {
+    "tc0_lang": -0.010913420468568802,
+    "tc0i_lang": -0.01847507804632187,
+    "tc0_tc0i": 0.9773855209350586,
+    "tc0en_tc0zh": 0.427975594997406
+  },
+  "per_layer_cosines": {
+    "9": {
+      "cos_tc0_lang": -0.1816612184047699,
+      "cos_tc0innov_lang": -0.1825842261314392,
+      "cos_tc0_tc0innov": 0.9971489310264587,
+      "cos_tc0en_tc0zh": 0.33306652307510376
+    },
+    "10": {
+      "cos_tc0_lang": 0.014870760962367058,
+      "cos_tc0innov_lang": 0.0034398245625197887,
+      "cos_tc0_tc0innov": 0.9817298650741577,
+      "cos_tc0en_tc0zh": 0.308834433555603
+    },
+    "11": {
+      "cos_tc0_lang": 0.0006986279040575027,
+      "cos_tc0innov_lang": 0.005745627451688051,
+      "cos_tc0_tc0innov": 0.977556049823761,
+      "cos_tc0en_tc0zh": 0.4068058133125305
+    },
+    "12": {
+      "cos_tc0_lang": -0.0909612849354744,
+      "cos_tc0innov_lang": -0.08341405540704727,
+      "cos_tc0_tc0innov": 0.9809855222702026,
+      "cos_tc0en_tc0zh": 0.4995947778224945
+    },
+    "13": {
+      "cos_tc0_lang": -0.02155275270342827,
+      "cos_tc0innov_lang": -0.013174477964639664,
+      "cos_tc0_tc0innov": 0.978977620601654,
+      "cos_tc0en_tc0zh": 0.47841617465019226
+    },
+    "14": {
+      "cos_tc0_lang": 0.04606087505817413,
+      "cos_tc0innov_lang": 0.04581904038786888,
+      "cos_tc0_tc0innov": 0.9818185567855835,
+      "cos_tc0en_tc0zh": 0.47590890526771545
+    },
+    "15": {
+      "cos_tc0_lang": 0.016031436622142792,
+      "cos_tc0innov_lang": 0.004791795276105404,
+      "cos_tc0_tc0innov": 0.9746434688568115,
+      "cos_tc0en_tc0zh": 0.42930781841278076
+    },
+    "16": {
+      "cos_tc0_lang": -0.11832120269536972,
+      "cos_tc0innov_lang": -0.1050594374537468,
+      "cos_tc0_tc0innov": 0.9853450655937195,
+      "cos_tc0en_tc0zh": 0.5530644655227661
+    },
+    "17": {
+      "cos_tc0_lang": -0.044746316969394684,
+      "cos_tc0innov_lang": -0.04361359030008316,
+      "cos_tc0_tc0innov": 0.9833962917327881,
+      "cos_tc0en_tc0zh": 0.48608914017677307
+    },
+    "18": {
+      "cos_tc0_lang": 0.009667335078120232,
+      "cos_tc0innov_lang": -0.023669332265853882,
+      "cos_tc0_tc0innov": 0.9719329476356506,
+      "cos_tc0en_tc0zh": 0.41242820024490356
+    },
+    "19": {
+      "cos_tc0_lang": -0.09624438732862473,
+      "cos_tc0innov_lang": -0.11350557208061218,
+      "cos_tc0_tc0innov": 0.9868295192718506,
+      "cos_tc0en_tc0zh": 0.42783114314079285
+    },
+    "20": {
+      "cos_tc0_lang": -0.03824317455291748,
+      "cos_tc0innov_lang": -0.03856941685080528,
+      "cos_tc0_tc0innov": 0.9736067652702332,
+      "cos_tc0en_tc0zh": 0.3978009819984436
+    },
+    "21": {
+      "cos_tc0_lang": 0.03432072699069977,
+      "cos_tc0innov_lang": 0.01620567962527275,
+      "cos_tc0_tc0innov": 0.9570415019989014,
+      "cos_tc0en_tc0zh": 0.39812368154525757
+    },
+    "22": {
+      "cos_tc0_lang": 0.08659742772579193,
+      "cos_tc0innov_lang": 0.07194049656391144,
+      "cos_tc0_tc0innov": 0.9819741249084473,
+      "cos_tc0en_tc0zh": 0.48847323656082153
+    },
+    "23": {
+      "cos_tc0_lang": 0.03437735140323639,
+      "cos_tc0innov_lang": 0.03883599489927292,
+      "cos_tc0_tc0innov": 0.9739388227462769,
+      "cos_tc0en_tc0zh": 0.39859670400619507
+    },
+    "24": {
+      "cos_tc0_lang": 0.15467225015163422,
+      "cos_tc0innov_lang": 0.10815243422985077,
+      "cos_tc0_tc0innov": 0.9618111252784729,
+      "cos_tc0en_tc0zh": 0.40313753485679626
+    },
+    "25": {
+      "cos_tc0_lang": 0.0836862176656723,
+      "cos_tc0innov_lang": 0.043581753969192505,
+      "cos_tc0_tc0innov": 0.9744413495063782,
+      "cos_tc0en_tc0zh": 0.46730995178222656
+    },
+    "26": {
+      "cos_tc0_lang": -0.08569424599409103,
+      "cos_tc0innov_lang": -0.06747398525476456,
+      "cos_tc0_tc0innov": 0.9697626829147339,
+      "cos_tc0en_tc0zh": 0.33877140283584595
+    }
+  },
+  "math_results": {
+    "baseline": {
+      "found": 2,
+      "total": 5,
+      "items": [
+        {
+          "prompt": "Calculate 47 + 86.",
+          "found": false,
+          "output": " To calculate \\(47 + 86\\), we can use the standard addition method. Here are the steps:\n\n1. **Align the numbers by their place values:**\n   \\[\n   \\begin{array}{c@{}c@{}c}\n     & 4 & 7 \\\\\n   + & 8 & 6 ",
+          "n_tokens": 128
+        },
+        {
+          "prompt": "What is the remainder when 100 is divided by 7?",
+          "found": false,
+          "output": " To find the remainder when 100 is divided by 7, we can use the division algorithm, which states that for any integers \\(a\\) and \\(b\\) (with \\(b > 0\\)), there exist unique integers \\(q\\) (the quotient",
+          "n_tokens": 128
+        },
+        {
+          "prompt": "Find the value of C(10, 3).",
+          "found": true,
+          "output": " The value of C(10, 3) is 120.",
+          "n_tokens": 18
+        },
+        {
+          "prompt": "A rectangle has length 12 and width 5. Find its area.",
+          "found": true,
+          "output": " The area of a rectangle is given by the formula:\n\nArea = length \u00d7 width\n\nIn this case, the length is 12 and the width is 5. So, the area of the rectangle is:\n\nArea = 12 \u00d7 5 = 60 square units",
+          "n_tokens": 58
+        },
+        {
+          "prompt": "Calculate 15 \u00d7 8.",
+          "found": false,
+          "output": " To calculate \\(15 \\times 8\\), we can use the standard multiplication method. Here are the steps:\n\n1. Write down the numbers to be multiplied:\n   \\[\n   \\begin{array}{c}\n     15 \\\\\n   \\times 8 \\\\\n   \\e",
+          "n_tokens": 128
+        }
+      ]
+    },
+    "lang_flip_-0.5": {
+      "found": 3,
+      "total": 5,
+      "items": [
+        {
+          "prompt": "Calculate 47 + 86.",
+          "found": true,
+          "output": " The sum of 47 and 86 is 133.",
+          "n_tokens": 17
+        },
+        {
+          "prompt": "What is the remainder when 100 is divided by 7?",
+          "found": false,
+          "output": " To find the remainder when 100 is divided by 7, we can use the division algorithm, which states that for any integers \\(a\\) and \\(b\\) (with \\(b > 0\\)), there exist unique integers \\(q\\) (the quotient",
+          "n_tokens": 128
+        },
+        {
+          "prompt": "Find the value of C(10, 3).",
+          "found": true,
+          "output": " The value of C(10, 3) is 120.",
+          "n_tokens": 18
+        },
+        {
+          "prompt": "A rectangle has length 12 and width 5. Find its area.",
+          "found": true,
+          "output": " The area of a rectangle is calculated by multiplying its length by its width. Given the length is 12 and the width is 5, the area can be calculated as follows:\n\n\\[\n\\text{Area} = \\text{length} \\times ",
+          "n_tokens": 89
+        },
+        {
+          "prompt": "Calculate 15 \u00d7 8.",
+          "found": false,
+          "output": "5 - 12 \u00d7 4.5. To solve the expression \\(15 \\times 8.5 - 12 \\times 4.5\\), we will follow these steps:\n\n1. Calculate \\(15 \\times 8.5\\).\n2. Calculate \\(12 \\times 4.5\\).\n3. Subtract the result of step 2 f",
+          "n_tokens": 128
+        }
+      ]
+    },
+    "tc0_raw_-0.5": {
+      "found": 3,
+      "total": 5,
+      "items": [
+        {
+          "prompt": "Calculate 47 + 86.",
+          "found": true,
+          "output": "4 - 23.12. To calculate \\(47 + 86.4 - 23.12\\), we will follow these steps:\n\n1. Add 47 and 86.4.\n2. Subtract 23.12 from the result of the addition.\n\nLet's start with the first step:\n\n\\[47 + 86.4 = 133.",
+          "n_tokens": 128
+        },
+        {
+          "prompt": "What is the remainder when 100 is divided by 7?",
+          "found": true,
+          "output": " We can use long division to find the remainder.\nDividing 100 by 7 gives a quotient of 14 and a remainder of 2.\nTherefore, the remainder when 100 is divided by 7 is $\\boxed{2}$.The answer is: 2",
+          "n_tokens": 61
+        },
+        {
+          "prompt": "Find the value of C(10, 3).",
+          "found": false,
+          "output": " To find the value of \\( C(10, 3) \\), which represents the number of combinations of 10 items taken 3 at a time, we use the combination formula:\n\n\\[\nC(n, r) = \\frac{n!}{r!(n-r)!}\n\\]\n\nHere, \\( n = 10 \\",
+          "n_tokens": 128
+        },
+        {
+          "prompt": "A rectangle has length 12 and width 5. Find its area.",
+          "found": true,
+          "output": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle is 12 and the width is 5, we substitute these value",
+          "n_tokens": 121
+        },
+        {
+          "prompt": "Calculate 15 \u00d7 8.",
+          "found": false,
+          "output": "5 + 15 \u00d7 1.5 using the distributive property of multiplication over addition. To calculate \\(15 \\times 8.5 + 15 \\times 1.5\\) using the distributive property of multiplication over addition, we can fol",
+          "n_tokens": 128
+        }
+      ]
+    },
+    "tc0_innov_-0.5": {
+      "found": 2,
+      "total": 5,
+      "items": [
+        {
+          "prompt": "Calculate 47 + 86.",
+          "found": true,
+          "output": " To calculate \\(47 + 86\\), we can break it down into simpler steps. Here's the step-by-step process:\n\n1. Add the tens place digits: \\(40 + 80 = 120\\).\n2. Add the ones place digits: \\(7 + 6 = 13\\).\n3. ",
+          "n_tokens": 120
+        },
+        {
+          "prompt": "What is the remainder when 100 is divided by 7?",
+          "found": false,
+          "output": " To find the remainder when 100 is divided by 7, we can use the division algorithm, which states that for any integers \\(a\\) and \\(b\\) (with \\(b > 0\\)), there exist unique integers \\(q\\) (the quotient",
+          "n_tokens": 128
+        },
+        {
+          "prompt": "Find the value of C(10, 3).",
+          "found": false,
+          "output": " To find the value of \\( C(10, 3) \\), we need to calculate the binomial coefficient, which is the number of ways to choose 3 elements from a set of 10 elements without regard to the order of selection",
+          "n_tokens": 128
+        },
+        {
+          "prompt": "A rectangle has length 12 and width 5. Find its area.",
+          "found": true,
+          "output": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven that the length of the rectangle is 12 and the width is 5, we substitute these value",
+          "n_tokens": 121
+        },
+        {
+          "prompt": "Calculate 15 \u00d7 8.",
+          "found": false,
+          "output": "5 + 15 \u00d7 1.5 using the distributive property.\nTo calculate \\(15 \\times 8.5 + 15 \\times 1.5\\) using the distributive property, we can follow these steps:\n\n1. Identify the common factor in the expressio",
+          "n_tokens": 128
+        }
+      ]
+    }
+  },
+  "translation_canary": {
+    "baseline": {
+      "found": 1,
+      "total": 2,
+      "items": [
+        {
+          "prompt": "Translate 'I love programming' to Chinese.",
+          "found": true,
+          "output": " 'I love programming' in Chinese is '\u6211\u7231\u7f16\u7a0b'.",
+          "n_tokens": 14
+        },
+        {
+          "prompt": "Translate '\u4eca\u5929\u5929\u6c14\u5f88\u597d' to English.",
+          "found": false,
+          "output": " '\u4eca\u5929\u5929\u6c14\u5f88\u597d' translates to 'The weather is nice today' in English.",
+          "n_tokens": 18
+        }
+      ]
+    },
+    "lang_flip_-0.5": {
+      "found": 1,
+      "total": 2,
+      "items": [
+        {
+          "prompt": "Translate 'I love programming' to Chinese.",
+          "found": true,
+          "output": " 'I love programming' in Chinese is '\u6211\u7231\u7f16\u7a0b'.",
+          "n_tokens": 14
+        },
+        {
+          "prompt": "Translate '\u4eca\u5929\u5929\u6c14\u5f88\u597d' to English.",
+          "found": false,
+          "output": " '\u4eca\u5929\u5929\u6c14\u5f88\u597d' translates to 'The weather is nice today' in English.",
+          "n_tokens": 18
+        }
+      ]
+    },
+    "tc0_raw_-0.5": {
+      "found": 2,
+      "total": 2,
+      "items": [
+        {
+          "prompt": "Translate 'I love programming' to Chinese.",
+          "found": true,
+          "output": " The translation of \"I love programming\" in Chinese is \"\u6211\u559c\u6b22\u7f16\u7a0b\".",
+          "n_tokens": 16
+        },
+        {
+          "prompt": "Translate '\u4eca\u5929\u5929\u6c14\u5f88\u597d' to English.",
+          "found": true,
+          "output": " A. Today is a good day. B. Today is a bad day. C. Today is a good weather. D. Today is a bad weather.\nAnswer:\nA\n\nWhich of the following statements about the relationship between the 'Four Comprehensi",
+          "n_tokens": 128
+        }
+      ]
+    },
+    "tc0_innov_-0.5": {
+      "found": 1,
+      "total": 2,
+      "items": [
+        {
+          "prompt": "Translate 'I love programming' to Chinese.",
+          "found": true,
+          "output": " The translation of \"I love programming\" in Chinese is \"\u6211\u559c\u6b22\u7f16\u7a0b\".",
+          "n_tokens": 16
+        },
+        {
+          "prompt": "Translate '\u4eca\u5929\u5929\u6c14\u5f88\u597d' to English.",
+          "found": false,
+          "output": " The translation of \"\u4eca\u5929\u5929\u6c14\u5f88\u597d\" to English is \"The weather is nice today.\"",
+          "n_tokens": 19
+        }
+      ]
+    }
+  },
+  "runtime_seconds": 52.0522243976593
+}

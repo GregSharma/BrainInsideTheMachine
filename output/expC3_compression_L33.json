@@ -1,0 +1,1510 @@
+{
+  "experiment": "C3: Constructive Compression Test",
+  "model": "Qwen/Qwen2.5-3B",
+  "target_layer": 33,
+  "k_values": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    12,
+    20,
+    50
+  ],
+  "n_basis_problems": 10,
+  "n_test_problems": 10,
+  "max_new": 128,
+  "basis_readout_shape": [
+    1927,
+    2048
+  ],
+  "singular_values_top50": [
+    774.2473754882812,
+    343.9665832519531,
+    277.16851806640625,
+    263.9743347167969,
+    242.01971435546875,
+    224.19830322265625,
+    206.41607666015625,
+    201.9649658203125,
+    190.04940795898438,
+    179.6071014404297,
+    174.87265014648438,
+    165.54783630371094,
+    158.35508728027344,
+    147.99671936035156,
+    145.340087890625,
+    140.06259155273438,
+    136.33395385742188,
+    131.69142150878906,
+    127.18724822998047,
+    121.4095687866211,
+    119.53187561035156,
+    114.67256164550781,
+    112.25119018554688,
+    108.4144058227539,
+    108.0658187866211,
+    105.37794494628906,
+    101.34610748291016,
+    98.34261322021484,
+    97.5765151977539,
+    95.64384460449219,
+    95.27722930908203,
+    91.20042419433594,
+    90.4489517211914,
+    89.9735107421875,
+    87.4463119506836,
+    85.64855194091797,
+    84.56449127197266,
+    83.29058074951172,
+    82.90422058105469,
+    81.6672592163086,
+    79.19588470458984,
+    78.0572280883789,
+    75.72868347167969,
+    74.95578002929688,
+    73.74413299560547,
+    72.19100952148438,
+    72.03862762451172,
+    70.71664428710938,
+    70.19725036621094,
+    69.82475280761719
+  ],
+  "cross_problem_rank_90pct": 69,
+  "elapsed_s": 445.1283977031708,
+  "basis_variance_explained": {
+    "1": 0.32675397396087646,
+    "2": 0.39124420285224915,
+    "3": 0.43311864137649536,
+    "4": 0.4711012542247772,
+    "5": 0.5030286312103271,
+    "6": 0.5304270386695862,
+    "8": 0.5758854746818542,
+    "12": 0.644764244556427,
+    "20": 0.7290158867835999,
+    "50": 0.8619242906570435,
+    "69": 0.9006901979446411
+  },
+  "results": {
+    "baseline": {
+      "accuracy": 0.5,
+      "correct": 10,
+      "total": 20,
+      "per_problem": [
+        {
+          "problem_idx": 0,
+          "lang": "en",
+          "category": "combinatorics",
+          "correct": true,
+          "text": "To find the value of C(17, 1), we can use the formula for combinations, which is given by:\n\nC(n, r) = n! / (r! * (n - r)!)\n\nIn this case, n = 17 and r = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we have:\n\nC(17, 1) = 17! / (1! *"
+        },
+        {
+          "problem_idx": 0,
+          "lang": "zh",
+          "category": "combinatorics",
+          "correct": true,
+          "text": "To calculate the combination C(17, 1), we use the formula for combinations:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we have:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSince 1!"
+        },
+        {
+          "problem_idx": 1,
+          "lang": "en",
+          "category": "combinatorics",
+          "correct": true,
+          "text": "To find the value of C(5, 1), we can use the formula for combinations, which is given by:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1!(5-1)!)\n\nSimplifying the expression, we get:\n\nC(5, 1) = 5! / (1! * 4!)\n\nCalculating "
+        },
+        {
+          "problem_idx": 1,
+          "lang": "zh",
+          "category": "combinatorics",
+          "correct": true,
+          "text": "To calculate the combination C(5, 1), we use the formula:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1! * (5 - 1)!)\n\nC(5, 1) = 5! / (1! * 4!)\n\nC(5, 1) = (5 * 4 * 3 * 2 * 1) / (1"
+        },
+        {
+          "problem_idx": 2,
+          "lang": "en",
+          "category": "sequences",
+          "correct": false,
+          "text": "To find the sum of the first 27 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 27, a = 15, and d = 6. Plugging these val"
+        },
+        {
+          "problem_idx": 2,
+          "lang": "zh",
+          "category": "sequences",
+          "correct": false,
+          "text": "The sum of an arithmetic series can be calculated using the formula:\nSn = n/2 * (2a + (n-1)d)\nwhere Sn is the sum of the first n terms, a is the first term, d is the common difference, and n is the number of terms.\nIn this case, a = 15, d = 6, and n = 27.\nPlugging these values into the formula, we g"
+        },
+        {
+          "problem_idx": 3,
+          "lang": "en",
+          "category": "sequences",
+          "correct": false,
+          "text": "To find the sum of the first 22 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 22, a = 1, and d = 3. Plugging these valu"
+        },
+        {
+          "problem_idx": 3,
+          "lang": "zh",
+          "category": "sequences",
+          "correct": false,
+          "text": "The sum of an arithmetic series can be calculated using the formula:\nSn = n/2 * (a1 + an)\nwhere Sn is the sum of the first n terms, a1 is the first term, and an is the nth term.\nIn this case, a1 = 1 and d = 3, so the nth term can be calculated as:\nan = a1 + (n-1)d\nSubstituting the values, we get:\nan"
+        },
+        {
+          "problem_idx": 4,
+          "lang": "en",
+          "category": "modular",
+          "correct": true,
+          "text": "To find the remainder when 1980 is divided by 18, we can use the division algorithm, which states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 1980 and b = 18. We want to find q and r such that 1980 = 18q +"
+        },
+        {
+          "problem_idx": 4,
+          "lang": "zh",
+          "category": "modular",
+          "correct": true,
+          "text": "To find the remainder when 1980 is divided by 18, we can use the division algorithm. The division algorithm states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 1980 and b = 18. We can find q and r by perfor"
+        },
+        {
+          "problem_idx": 5,
+          "lang": "en",
+          "category": "modular",
+          "correct": false,
+          "text": "To find the remainder when 4268 is divided by 19, we can use the modulo operation. The modulo operation gives the remainder of a division of two numbers. In this case, we want to find the remainder when 4268 is divided by 19. We can use the modulo operator (%) to find the remainder. The expression 4"
+        },
+        {
+          "problem_idx": 5,
+          "lang": "zh",
+          "category": "modular",
+          "correct": false,
+          "text": "To find the remainder when 4268 is divided by 19, we can use the division algorithm, which states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 4268 and b = 19.\n\nFirst, we divide 4268 by 19:\n\n4268 ÷ 19 = 224"
+        },
+        {
+          "problem_idx": 6,
+          "lang": "en",
+          "category": "geometry",
+          "correct": false,
+          "text": "The area of a rectangle is given by the formula A = l × w, where l is the length and w is the width. In this case, the length is 49 and the width is 13. So, the area is A = 49 × 13 = 637."
+        },
+        {
+          "problem_idx": 6,
+          "lang": "zh",
+          "category": "geometry",
+          "correct": true,
+          "text": "The area of a rectangle is calculated by multiplying its length by its width. In this case, the length is 49 and the width is 13. So, the area of the rectangle is 49 * 13 = 637 square units."
+        },
+        {
+          "problem_idx": 7,
+          "lang": "en",
+          "category": "geometry",
+          "correct": false,
+          "text": "The area of a rectangle is given by the formula A = l × w, where l is the length and w is the width. In this case, the length is 35 and the width is 22. So, the area is A = 35 × 22 = 770."
+        },
+        {
+          "problem_idx": 7,
+          "lang": "zh",
+          "category": "geometry",
+          "correct": true,
+          "text": "The area of a rectangle is calculated by multiplying its length by its width. In this case, the length is 35 and the width is 22. So, the area of the rectangle is 35 * 22 = 770 square units."
+        },
+        {
+          "problem_idx": 8,
+          "lang": "en",
+          "category": "arithmetic",
+          "correct": false,
+          "text": "To calculate 11 × 399, we can use the distributive property of multiplication over addition. We can break down 399 into 400 - 1 and then distribute the 11 to both terms.\n\n11 × (400 - 1) = 11 × 400 - 11 × 1\n\nNow, we can calculate each term separately:\n\n11 × 400 = 4400\n11 × 1 = 11\n\nFinally, we subtrac"
+        },
+        {
+          "problem_idx": 8,
+          "lang": "zh",
+          "category": "arithmetic",
+          "correct": true,
+          "text": "To calculate 11 × 399, we can use the distributive property of multiplication over addition. We can break down 399 into 400 - 1 and then distribute the 11 to both terms.\n\n11 × 399 = 11 × (400 - 1)\n= 11 × 400 - 11 × 1\n= 4400 - 11\n= 4389\n\nSo, the value of 11 × 399 is 4389."
+        },
+        {
+          "problem_idx": 9,
+          "lang": "en",
+          "category": "arithmetic",
+          "correct": false,
+          "text": "To calculate 131 + 476, we can use the standard addition algorithm. We start by adding the ones place, which is 1 + 6 = 7. Then we move to the tens place, which is 3 + 7 = 10. We write down the 0 and carry the 1 to the hundreds place. Finally, we add the hundreds place, which is 1 + 4 + 1 (the carri"
+        },
+        {
+          "problem_idx": 9,
+          "lang": "zh",
+          "category": "arithmetic",
+          "correct": true,
+          "text": "131 + 476 = 607 🕻"
+        }
+      ]
+    },
+    "k=1": {
+      "accuracy": 0.45,
+      "correct": 9,
+      "total": 20,
+      "per_problem": [
+        {
+          "problem_idx": 10,
+          "lang": "en",
+          "correct": true,
+          "text": "To find the value of C(17, 1), we can use the formula for combinations, which is:\n\nC(n, r) = n! / (r! * (n - r)!)\n\nIn this case, n = 17 and r = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we get:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSin"
+        },
+        {
+          "problem_idx": 10,
+          "lang": "zh",
+          "correct": true,
+          "text": "To calculate the combination C(17, 1), we use the formula for combinations:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we have:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSince 1!"
+        },
+        {
+          "problem_idx": 11,
+          "lang": "en",
+          "correct": true,
+          "text": "To find the value of C(5, 1), we can use the formula for combinations, which is given by:\n\nC(n, r) = n! / (r!(n-r)!)\n\nIn this case, n = 5 and r = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1!(5-1)!)\n\nSimplifying the expression, we get:\n\nC(5, 1) = 5! / (1! * 4!)\n\nCalculating "
+        },
+        {
+          "problem_idx": 11,
+          "lang": "zh",
+          "correct": true,
+          "text": "To calculate the combination C(5, 1), we use the formula:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1! * (5 - 1)!)\n\nSimplifying the factorial terms, we have:\n\nC(5, 1) = 5! / (1! * 4!)\n\nCalculating the factorials, "
+        },
+        {
+          "problem_idx": 12,
+          "lang": "en",
+          "correct": false,
+          "text": "To find the sum of the first 27 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\n\nwhere:\n- \\( S_n \\) is the sum of the first \\( n \\) terms,\n- \\( n \\) is the number of terms,\n- \\( a \\) is the first term,\n- \\"
+        },
+        {
+          "problem_idx": 12,
+          "lang": "zh",
+          "correct": false,
+          "text": "The sum of an arithmetic series can be found using the formula:\n\\[ S_n = \\frac{n}{2} (2a + (n-1)d) \\]\nwhere \\( S_n \\) is the sum of the first \\( n \\) terms, \\( a \\) is the first term, \\( d \\) is the common difference, and \\( n \\) is the number of terms.\n\nIn this problem, we have:\n- \\( a = 15 \\) (the"
+        },
+        {
+          "problem_idx": 13,
+          "lang": "en",
+          "correct": false,
+          "text": "To find the sum of the first 22 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nS_n = n/2 * (a_1 + a_n)\n\nwhere:\n- S_n is the sum of the first n terms\n- n is the number of terms\n- a_1 is the first term\n- a_n is the nth term\n\nIn this case, we have:\n- n = 2"
+        },
+        {
+          "problem_idx": 13,
+          "lang": "zh",
+          "correct": false,
+          "text": "The sum of an arithmetic series can be found using the formula:\n\\[ S_n = \\frac{n}{2} (2a + (n-1)d) \\]\nwhere \\( S_n \\) is the sum of the first \\( n \\) terms, \\( a \\) is the first term, \\( d \\) is the common difference, and \\( n \\) is the number of terms.\n\nIn this case, the first term \\( a \\) is 1, th"
+        },
+        {
+          "problem_idx": 14,
+          "lang": "en",
+          "correct": true,
+          "text": "To find the remainder when 1980 is divided by 18, we can use the division algorithm, which states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 1980 and b = 18. We want to find the quotient q and the remaind"
+        },
+        {
+          "problem_idx": 14,
+          "lang": "zh",
+          "correct": true,
+          "text": "To find the remainder when 1980 is divided by 18, we can use the division algorithm. The division algorithm states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 1980 and b = 18. We can find q and r by perfor"
+        },
+        {
+          "problem_idx": 15,
+          "lang": "en",
+          "correct": false,
+          "text": "To find the remainder when 4268 is divided by 19, we can use the modulo operation. The modulo operation gives the remainder of a division of two numbers. In this case, we want to find the remainder when 4268 is divided by 19. We can use the following formula: remainder = (dividend - (divisor * quoti"
+        },
+        {
+          "problem_idx": 15,
+          "lang": "zh",
+          "correct": false,
+          "text": "To find the remainder when 4268 is divided by 19, we can use the division algorithm, which states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 4268 and b = 19.\n\nFirst, we divide 4268 by 19 to find the quoti"
+        },
+        {
+          "problem_idx": 16,
+          "lang": "en",
+          "correct": false,
+          "text": "The area of a rectangle is given by the formula A = l * w, where l is the length and w is the width. In this case, the length is 49 and the width is 13. So, the area of the rectangle is A = 49 * 13 = 637."
+        },
+        {
+          "problem_idx": 16,
+          "lang": "zh",
+          "correct": false,
+          "text": "The area of a rectangle is calculated by multiplying its length by its width. In this case, the length is 49 and the width is 13. So, the area of the rectangle is 49 * 13 = 637. 🕻"
+        },
+        {
+          "problem_idx": 17,
+          "lang": "en",
+          "correct": false,
+          "text": "The area of a rectangle is given by the formula A = l * w, where l is the length and w is the width. In this case, the length is 35 and the width is 22. So, the area is A = 35 * 22 = 770."
+        },
+        {
+          "problem_idx": 17,
+          "lang": "zh",
+          "correct": true,
+          "text": "The area of a rectangle is calculated by multiplying its length by its width. In this case, the length is 35 and the width is 22. So, the area of the rectangle is 35 * 22 = 770 square units."
+        },
+        {
+          "problem_idx": 18,
+          "lang": "en",
+          "correct": false,
+          "text": "To calculate 11 × 399, we can use the distributive property of multiplication over addition. We can break down 399 into 400 - 1 and then distribute the 11 to both terms.\n\n11 × (400 - 1) = 11 × 400 - 11 × 1\n\nNow, we can calculate each term separately:\n\n11 × 400 = 4400\n11 × 1 = 11\n\nFinally, we subtrac"
+        },
+        {
+          "problem_idx": 18,
+          "lang": "zh",
+          "correct": true,
+          "text": "To calculate 11 × 399, we can use the distributive property of multiplication over addition. We can break down 399 into 400 - 1 and then distribute the 11 to both terms.\n\n11 × 399 = 11 × (400 - 1)\n= 11 × 400 - 11 × 1\n= 4400 - 11\n= 4389\n\nSo, the value of 11 × 399 is 4389."
+        },
+        {
+          "problem_idx": 19,
+          "lang": "en",
+          "correct": false,
+          "text": "To calculate 131 + 476, we can use the standard addition algorithm. We start by adding the ones place, which is 1 + 6 = 7. Then we move to the tens place, which is 3 + 7 = 10. We write down the 0 and carry the 1 to the hundreds place. Finally, we add the hundreds place, which is 1 + 4 + 1 (the carri"
+        },
+        {
+          "problem_idx": 19,
+          "lang": "zh",
+          "correct": true,
+          "text": "131 + 476 = 607 🕻"
+        }
+      ]
+    },
+    "k=2": {
+      "accuracy": 0.5,
+      "correct": 10,
+      "total": 20,
+      "per_problem": [
+        {
+          "problem_idx": 10,
+          "lang": "en",
+          "correct": true,
+          "text": "To find the value of C(17, 1), we can use the formula for combinations, which is given by:\n\nC(n, r) = n! / (r!(n-r)!)\n\nIn this case, n = 17 and r = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1!(17-1)!)\n\nSimplifying the expression, we get:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSinc"
+        },
+        {
+          "problem_idx": 10,
+          "lang": "zh",
+          "correct": true,
+          "text": "To calculate the combination C(17, 1), we use the formula for combinations:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we have:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSince 1!"
+        },
+        {
+          "problem_idx": 11,
+          "lang": "en",
+          "correct": true,
+          "text": "To find the value of C(5, 1), we can use the formula for combinations, which is given by:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1!(5-1)!)\n\nSimplifying the expression, we have:\n\nC(5, 1) = 5! / (1! * 4!)\n\nCalculating"
+        },
+        {
+          "problem_idx": 11,
+          "lang": "zh",
+          "correct": true,
+          "text": "To calculate the combination C(5, 1), we use the formula:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1!(5-"
+        },
+        {
+          "problem_idx": 12,
+          "lang": "en",
+          "correct": false,
+          "text": "To find the sum of the first 27 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nS_n = n/2 * (a_1 + a_n)\n\nwhere:\n- S_n is the sum of the first n terms\n- n is the number of terms\n- a_1 is the first term\n- a_n is the nth term\n\nIn this case, we have:\n- n = 2"
+        },
+        {
+          "problem_idx": 12,
+          "lang": "zh",
+          "correct": false,
+          "text": "The sum of an arithmetic series can be found using the formula:\n\\[ S_n = \\frac{n}{2} (2a + (n-1)d) \\]\nwhere \\( S_n \\) is the sum of the first \\( n \\) terms, \\( a \\) is the first term, \\( d \\) is the common difference, and \\( n \\) is the number of terms.\n\nIn this problem, we have:\n- \\( a = 15 \\) (the"
+        },
+        {
+          "problem_idx": 13,
+          "lang": "en",
+          "correct": false,
+          "text": "To find the sum of the first 22 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nS_n = n/2 * (a_1 + a_n)\n\nwhere:\n- S_n is the sum of the first n terms\n- n is the number of terms\n- a_1 is the first term\n- a_n is the nth term\n\nIn this case, we have:\n- n = 2"
+        },
+        {
+          "problem_idx": 13,
+          "lang": "zh",
+          "correct": false,
+          "text": "The sum of an arithmetic series can be found using the formula:\n\\[ S_n = \\frac{n}{2} (2a + (n-1)d) \\]\nwhere \\( S_n \\) is the sum of the first \\( n \\) terms, \\( a \\) is the first term, \\( d \\) is the common difference, and \\( n \\) is the number of terms.\n\nIn this case, the first term \\( a \\) is 1, th"
+        },
+        {
+          "problem_idx": 14,
+          "lang": "en",
+          "correct": true,
+          "text": "To find the remainder when 1980 is divided by 18, we can use the division algorithm, which states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 1980 and b = 18. We want to find the quotient q and the remaind"
+        },
+        {
+          "problem_idx": 14,
+          "lang": "zh",
+          "correct": true,
+          "text": "To find the remainder when 1980 is divided by 18, we can use the division algorithm. The division algorithm states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 1980 and b = 18. We can find q and r by perfor"
+        },
+        {
+          "problem_idx": 15,
+          "lang": "en",
+          "correct": false,
+          "text": "To find the remainder when 4268 is divided by 19, we can use the modulo operation. The modulo operation gives the remainder of a division of two numbers. In this case, we want to find the remainder when 4268 is divided by 19. We can use the following formula:\n\nremainder = (dividend - (divisor * quot"
+        },
+        {
+          "problem_idx": 15,
+          "lang": "zh",
+          "correct": false,
+          "text": "To find the remainder when 4268 is divided by 19, we can use the division algorithm, which states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 4268 and b = 19.\n\nFirst, we divide 4268 by 19:\n\n4268 ÷ 19 = 224"
+        },
+        {
+          "problem_idx": 16,
+          "lang": "en",
+          "correct": false,
+          "text": "The area of a rectangle is given by the formula A = l * w, where l is the length and w is the width. In this case, the length is 49 and the width is 13. So, the area of the rectangle is A = 49 * 13 = 637."
+        },
+        {
+          "problem_idx": 16,
+          "lang": "zh",
+          "correct": true,
+          "text": "The area of a rectangle is calculated by multiplying its length by its width. In this case, the length is 49 and the width is 13. So, the area of the rectangle is 49 * 13 = 637 square units."
+        },
+        {
+          "problem_idx": 17,
+          "lang": "en",
+          "correct": false,
+          "text": "The area of a rectangle is given by the formula A = l × w, where l is the length and w is the width. In this case, the length is 35 and the width is 22. So, the area is A = 35 × 22 = 770."
+        },
+        {
+          "problem_idx": 17,
+          "lang": "zh",
+          "correct": true,
+          "text": "The area of a rectangle is calculated by multiplying its length by its width. In this case, the length is 35 and the width is 22. So, the area of the rectangle is 35 * 22 = 770 square units."
+        },
+        {
+          "problem_idx": 18,
+          "lang": "en",
+          "correct": false,
+          "text": "To calculate 11 × 399, we can use the distributive property of multiplication over addition. We can break down 399 into 400 - 1 and then distribute the 11 to both terms.\n\n11 × (400 - 1) = 11 × 400 - 11 × 1\n\nNow, we can calculate each term separately:\n\n11 × 400 = 4400\n11 × 1 = 11\n\nFinally, we subtrac"
+        },
+        {
+          "problem_idx": 18,
+          "lang": "zh",
+          "correct": true,
+          "text": "To calculate 11 × 399, we can use the distributive property of multiplication over addition. We can break down 399 into 400 - 1 and then distribute the 11 to both terms.\n\n11 × 399 = 11 × (400 - 1)\n= 11 × 400 - 11 × 1\n= 4400 - 11\n= 4389\n\nSo, the value of 11 × 399 is 4389."
+        },
+        {
+          "problem_idx": 19,
+          "lang": "en",
+          "correct": false,
+          "text": "To calculate 131 + 476, we can use the standard addition algorithm. We start by adding the ones place, which is 1 + 6 = 7. Then we move to the tens place, which is 3 + 7 = 10. We write down the 0 and carry the 1 to the hundreds place. Finally, we add the hundreds place, which is 1 + 4 + 1 (the carri"
+        },
+        {
+          "problem_idx": 19,
+          "lang": "zh",
+          "correct": true,
+          "text": "131 + 476 = 607 🕻"
+        }
+      ]
+    },
+    "k=3": {
+      "accuracy": 0.45,
+      "correct": 9,
+      "total": 20,
+      "per_problem": [
+        {
+          "problem_idx": 10,
+          "lang": "en",
+          "correct": true,
+          "text": "To find the value of C(17, 1), we can use the formula for combinations, which is given by:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1!(17-1)!)\n\nSimplifying the expression, we have:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSin"
+        },
+        {
+          "problem_idx": 10,
+          "lang": "zh",
+          "correct": true,
+          "text": "To calculate the combination C(17, 1), we use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1!(17-1)!)\n\nSimplifying the expression, we have:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSince 1! is equal "
+        },
+        {
+          "problem_idx": 11,
+          "lang": "en",
+          "correct": true,
+          "text": "To find the value of C(5, 1), we can use the formula for combinations, which is given by:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1!(5-1)!)\n\nSimplifying the expression, we have:\n\nC(5, 1) = 5! / (1! * 4!)\n\nCalculating"
+        },
+        {
+          "problem_idx": 11,
+          "lang": "zh",
+          "correct": true,
+          "text": "To calculate the combination C(5, 1), we use the formula:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1! * (5 - 1)!)\n\nSimplifying the factorial terms, we have:\n\nC(5, 1) = 5! / (1! * 4!)\n\nCalculating the factorials, "
+        },
+        {
+          "problem_idx": 12,
+          "lang": "en",
+          "correct": false,
+          "text": "To find the sum of the first 27 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nS_n = n/2 * (a_1 + a_n)\n\nwhere:\n- S_n is the sum of the first n terms\n- n is the number of terms\n- a_1 is the first term\n- a_n is the nth term\n\nIn this case, we have:\n- n = 2"
+        },
+        {
+          "problem_idx": 12,
+          "lang": "zh",
+          "correct": false,
+          "text": "The sum of an arithmetic series can be found using the formula:\n\\[ S_n = \\frac{n}{2} (2a + (n-1)d) \\]\nwhere \\( S_n \\) is the sum of the first \\( n \\) terms, \\( a \\) is the first term, \\( d \\) is the common difference, and \\( n \\) is the number of terms.\n\nIn this problem, we have:\n- \\( a = 15 \\) (the"
+        },
+        {
+          "problem_idx": 13,
+          "lang": "en",
+          "correct": false,
+          "text": "To find the sum of the first 22 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nS_n = n/2 * (a_1 + a_n)\n\nwhere:\n- S_n is the sum of the first n terms\n- n is the number of terms\n- a_1 is the first term\n- a_n is the nth term\n\nIn this case, we have:\n- n = 2"
+        },
+        {
+          "problem_idx": 13,
+          "lang": "zh",
+          "correct": false,
+          "text": "The sum of an arithmetic series can be found using the formula:\n\\[ S_n = \\frac{n}{2} (2a + (n-1)d) \\]\nwhere \\( S_n \\) is the sum of the first \\( n \\) terms, \\( a \\) is the first term, \\( d \\) is the common difference, and \\( n \\) is the number of terms.\n\nIn this case, the first term \\( a \\) is 1, th"
+        },
+        {
+          "problem_idx": 14,
+          "lang": "en",
+          "correct": true,
+          "text": "To find the remainder when 1980 is divided by 18, we can use the division algorithm, which states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 1980 and b = 18. We want to find the quotient q and the remaind"
+        },
+        {
+          "problem_idx": 14,
+          "lang": "zh",
+          "correct": true,
+          "text": "To find the remainder when 1980 is divided by 18, we can use the division algorithm. The division algorithm states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 1980 and b = 18. We can find q and r by perfor"
+        },
+        {
+          "problem_idx": 15,
+          "lang": "en",
+          "correct": false,
+          "text": "To find the remainder when 4268 is divided by 19, we can use the modulo operation. The modulo operation gives the remainder of a division of two numbers. In this case, we want to find the remainder when 4268 is divided by 19. We can use the following formula: remainder = (dividend - (divisor * quoti"
+        },
+        {
+          "problem_idx": 15,
+          "lang": "zh",
+          "correct": false,
+          "text": "To find the remainder when 4268 is divided by 19, we can use the division algorithm, which states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 4268 and b = 19.\n\nFirst, we divide 4268 by 19:\n\n4268 ÷ 19 = 224"
+        },
+        {
+          "problem_idx": 16,
+          "lang": "en",
+          "correct": false,
+          "text": "The area of a rectangle is given by the formula A = l × w, where l is the length and w is the width. In this case, the length is 49 and the width is 13. So, the area is A = 49 × 13 = 637."
+        },
+        {
+          "problem_idx": 16,
+          "lang": "zh",
+          "correct": false,
+          "text": "The area of a rectangle is calculated by multiplying its length by its width. In this case, the length is 49 and the width is 13. So, the area of the rectangle is 49 * 13 = 637. 🕻"
+        },
+        {
+          "problem_idx": 17,
+          "lang": "en",
+          "correct": false,
+          "text": "The area of a rectangle is given by the formula A = l × w, where l is the length and w is the width. In this case, the length is 35 and the width is 22. So, the area is A = 35 × 22 = 770."
+        },
+        {
+          "problem_idx": 17,
+          "lang": "zh",
+          "correct": true,
+          "text": "The area of a rectangle is calculated by multiplying its length by its width. In this case, the length is 35 and the width is 22. So, the area of the rectangle is 35 * 22 = 770 square units."
+        },
+        {
+          "problem_idx": 18,
+          "lang": "en",
+          "correct": false,
+          "text": "To calculate 11 × 399, we can use the distributive property of multiplication over addition. We can break down 399 into 400 - 1 and then distribute the 11 to both terms.\n\n11 × (400 - 1) = 11 × 400 - 11 × 1\n\nNow, we can calculate each term separately:\n\n11 × 400 = 4400\n11 × 1 = 11\n\nFinally, we subtrac"
+        },
+        {
+          "problem_idx": 18,
+          "lang": "zh",
+          "correct": true,
+          "text": "To calculate 11 × 399, we can use the distributive property of multiplication over addition. We can break down 399 into 400 - 1 and then distribute the 11 to both terms.\n\n11 × 399 = 11 × (400 - 1)\n= 11 × 400 - 11 × 1\n= 4400 - 11\n= 4389\n\nSo, the value of 11 × 399 is 4389."
+        },
+        {
+          "problem_idx": 19,
+          "lang": "en",
+          "correct": false,
+          "text": "To calculate 131 + 476, we can use the standard addition algorithm. We start by adding the ones place, which is 1 + 6 = 7. Then we move to the tens place, which is 3 + 7 = 10. We write down the 0 and carry the 1 to the hundreds place. Finally, we add the hundreds place, which is 1 + 4 + 1 (the carri"
+        },
+        {
+          "problem_idx": 19,
+          "lang": "zh",
+          "correct": true,
+          "text": "131 + 476 = 607 🕻"
+        }
+      ]
+    },
+    "k=4": {
+      "accuracy": 0.45,
+      "correct": 9,
+      "total": 20,
+      "per_problem": [
+        {
+          "problem_idx": 10,
+          "lang": "en",
+          "correct": true,
+          "text": "To find the value of C(17, 1), we can use the formula for combinations, which is given by:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1!(17-1)!)\n\nSimplifying the expression, we have:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSin"
+        },
+        {
+          "problem_idx": 10,
+          "lang": "zh",
+          "correct": true,
+          "text": "To calculate the combination C(17, 1), we use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1!(17-1)!)\n\nSimplifying the expression, we have:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSince 1! is equal "
+        },
+        {
+          "problem_idx": 11,
+          "lang": "en",
+          "correct": true,
+          "text": "To find the value of C(5, 1), we can use the formula for combinations, which is given by:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1!(5-1)!)\n\nSimplifying the expression, we have:\n\nC(5, 1) = 5! / (1! * 4!)\n\nCalculating"
+        },
+        {
+          "problem_idx": 11,
+          "lang": "zh",
+          "correct": true,
+          "text": "To calculate the combination C(5, 1), we use the formula:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1! * (5 - 1)!)\n\nSimplifying the factorial terms, we have:\n\nC(5, 1) = 5! / (1! * 4!)\n\nCalculating the factorials, "
+        },
+        {
+          "problem_idx": 12,
+          "lang": "en",
+          "correct": false,
+          "text": "To find the sum of the first 27 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nS_n = n/2 * (a_1 + a_n)\n\nwhere:\n- S_n is the sum of the first n terms\n- n is the number of terms\n- a_1 is the first term\n- a_n is the nth term\n\nIn this case, we have:\n- n = 2"
+        },
+        {
+          "problem_idx": 12,
+          "lang": "zh",
+          "correct": false,
+          "text": "The sum of an arithmetic series can be found using the formula:\n\\[ S_n = \\frac{n}{2} (2a + (n-1)d) \\]\nwhere \\( S_n \\) is the sum of the first \\( n \\) terms, \\( a \\) is the first term, \\( d \\) is the common difference, and \\( n \\) is the number of terms.\n\nIn this problem, we have:\n- \\( a = 15 \\) (the"
+        },
+        {
+          "problem_idx": 13,
+          "lang": "en",
+          "correct": false,
+          "text": "To find the sum of the first 22 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nS_n = n/2 * (a_1 + a_n)\n\nwhere:\n- S_n is the sum of the first n terms\n- n is the number of terms\n- a_1 is the first term\n- a_n is the nth term\n\nIn this case, we have:\n- n = 2"
+        },
+        {
+          "problem_idx": 13,
+          "lang": "zh",
+          "correct": false,
+          "text": "The sum of an arithmetic series can be found using the formula:\n\\[ S_n = \\frac{n}{2} (2a + (n-1)d) \\]\nwhere \\( S_n \\) is the sum of the first \\( n \\) terms, \\( a \\) is the first term, \\( d \\) is the common difference, and \\( n \\) is the number of terms.\n\nIn this case, the first term \\( a \\) is 1, th"
+        },
+        {
+          "problem_idx": 14,
+          "lang": "en",
+          "correct": true,
+          "text": "To find the remainder when 1980 is divided by 18, we can use the division algorithm, which states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 1980 and b = 18. We want to find the quotient q and the remaind"
+        },
+        {
+          "problem_idx": 14,
+          "lang": "zh",
+          "correct": true,
+          "text": "To find the remainder when 1980 is divided by 18, we can use the division algorithm. The division algorithm states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 1980 and b = 18. We can find q and r by perfor"
+        },
+        {
+          "problem_idx": 15,
+          "lang": "en",
+          "correct": false,
+          "text": "To find the remainder when 4268 is divided by 19, we can use the modulo operation. The modulo operation gives the remainder of a division of two numbers. In this case, we want to find the remainder when 4268 is divided by 19. We can use the following formula: remainder = (dividend - (divisor * quoti"
+        },
+        {
+          "problem_idx": 15,
+          "lang": "zh",
+          "correct": false,
+          "text": "To find the remainder when 4268 is divided by 19, we can use the division algorithm, which states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 4268 and b = 19.\n\nFirst, we divide 4268 by 19 to find the quoti"
+        },
+        {
+          "problem_idx": 16,
+          "lang": "en",
+          "correct": false,
+          "text": "The area of a rectangle is given by the formula A = l * w, where l is the length and w is the width. In this case, the length is 49 and the width is 13. So, the area of the rectangle is A = 49 * 13 = 637."
+        },
+        {
+          "problem_idx": 16,
+          "lang": "zh",
+          "correct": false,
+          "text": "The area of a rectangle is calculated by multiplying its length by its width. In this case, the length is 49 and the width is 13. So, the area of the rectangle is 49 * 13 = 637. 🕻"
+        },
+        {
+          "problem_idx": 17,
+          "lang": "en",
+          "correct": false,
+          "text": "The area of a rectangle is given by the formula A = l × w, where l is the length and w is the width. In this case, the length is 35 and the width is 22. So, the area is A = 35 × 22 = 770."
+        },
+        {
+          "problem_idx": 17,
+          "lang": "zh",
+          "correct": true,
+          "text": "The area of a rectangle is calculated by multiplying its length by its width. In this case, the length is 35 and the width is 22. So, the area of the rectangle is 35 * 22 = 770 square units."
+        },
+        {
+          "problem_idx": 18,
+          "lang": "en",
+          "correct": false,
+          "text": "To calculate 11 × 399, we can use the distributive property of multiplication over addition. We can break down 399 into 400 - 1 and then distribute the 11 to both terms.\n\n11 × (400 - 1) = 11 × 400 - 11 × 1\n\nNow, we can calculate each term separately:\n\n11 × 400 = 4400\n11 × 1 = 11\n\nFinally, we subtrac"
+        },
+        {
+          "problem_idx": 18,
+          "lang": "zh",
+          "correct": true,
+          "text": "To calculate 11 × 399, we can use the distributive property of multiplication over addition. We can break down 399 into 400 - 1 and then distribute the 11 to both terms.\n\n11 × 399 = 11 × (400 - 1)\n= 11 × 400 - 11 × 1\n= 4400 - 11\n= 4389\n\nSo, the value of 11 × 399 is 4389."
+        },
+        {
+          "problem_idx": 19,
+          "lang": "en",
+          "correct": false,
+          "text": "To calculate 131 + 476, we can use the standard addition algorithm. We start by adding the ones place, which is 1 + 6 = 7. Then we move to the tens place, which is 3 + 7 = 10. We write down the 0 and carry the 1 to the hundreds place. Finally, we add the hundreds place, which is 1 + 4 + 1 (the carri"
+        },
+        {
+          "problem_idx": 19,
+          "lang": "zh",
+          "correct": true,
+          "text": "131 + 476 = 607 🕻"
+        }
+      ]
+    },
+    "k=5": {
+      "accuracy": 0.45,
+      "correct": 9,
+      "total": 20,
+      "per_problem": [
+        {
+          "problem_idx": 10,
+          "lang": "en",
+          "correct": true,
+          "text": "To find the value of C(17, 1), we can use the formula for combinations, which is:\n\nC(n, r) = n! / (r! * (n - r)!)\n\nIn this case, n = 17 and r = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we get:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSin"
+        },
+        {
+          "problem_idx": 10,
+          "lang": "zh",
+          "correct": true,
+          "text": "To calculate the combination C(17, 1), we use the formula for combinations:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we have:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSince 1!"
+        },
+        {
+          "problem_idx": 11,
+          "lang": "en",
+          "correct": true,
+          "text": "To find the value of C(5, 1), we can use the formula for combinations, which is given by:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1!(5-1)!)\n\nSimplifying the expression, we have:\n\nC(5, 1) = 5! / (1! * 4!)\n\nCalculating"
+        },
+        {
+          "problem_idx": 11,
+          "lang": "zh",
+          "correct": true,
+          "text": "To calculate the combination C(5, 1), we use the formula:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1!(5-"
+        },
+        {
+          "problem_idx": 12,
+          "lang": "en",
+          "correct": false,
+          "text": "To find the sum of the first 27 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nS_n = n/2 * (a_1 + a_n)\n\nwhere:\n- S_n is the sum of the first n terms\n- n is the number of terms\n- a_1 is the first term\n- a_n is the nth term\n\nIn this case, we have:\n- n = 2"
+        },
+        {
+          "problem_idx": 12,
+          "lang": "zh",
+          "correct": false,
+          "text": "The sum of an arithmetic series can be found using the formula:\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\nwhere \\( S_n \\) is the sum of the first \\( n \\) terms, \\( a \\) is the first term, \\( d \\) is the common difference, and \\( n \\) is the number of terms.\n\nIn this problem, we have:\n- \\( a ="
+        },
+        {
+          "problem_idx": 13,
+          "lang": "en",
+          "correct": false,
+          "text": "To find the sum of the first 22 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 22, a = 1, and d = 3. Plugging these valu"
+        },
+        {
+          "problem_idx": 13,
+          "lang": "zh",
+          "correct": false,
+          "text": "The sum of an arithmetic series can be found using the formula:\n\\[ S_n = \\frac{n}{2} (2a + (n-1)d) \\]\nwhere \\( S_n \\) is the sum of the first \\( n \\) terms, \\( a \\) is the first term, \\( d \\) is the common difference, and \\( n \\) is the number of terms.\n\nIn this case, the first term \\( a \\) is 1, th"
+        },
+        {
+          "problem_idx": 14,
+          "lang": "en",
+          "correct": true,
+          "text": "To find the remainder when 1980 is divided by 18, we can use the division algorithm, which states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 1980 and b = 18. We want to find the quotient q and the remaind"
+        },
+        {
+          "problem_idx": 14,
+          "lang": "zh",
+          "correct": true,
+          "text": "To find the remainder when 1980 is divided by 18, we can use the division algorithm, which states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 1980 and b = 18. We want to find the values of q and r that sat"
+        },
+        {
+          "problem_idx": 15,
+          "lang": "en",
+          "correct": false,
+          "text": "To find the remainder when 4268 is divided by 19, we can use the modulo operation. The modulo operation gives the remainder of a division of two numbers. In this case, we want to find the remainder when 4268 is divided by 19. We can use the following formula: remainder = (dividend - (divisor * quoti"
+        },
+        {
+          "problem_idx": 15,
+          "lang": "zh",
+          "correct": false,
+          "text": "To find the remainder when 4268 is divided by 19, we can use the division algorithm, which states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 4268 and b = 19.\n\nFirst, we divide 4268 by 19 to find the quoti"
+        },
+        {
+          "problem_idx": 16,
+          "lang": "en",
+          "correct": false,
+          "text": "The area of a rectangle is given by the formula A = l * w, where l is the length and w is the width. In this case, the length is 49 and the width is 13. So, the area is A = 49 * 13 = 637."
+        },
+        {
+          "problem_idx": 16,
+          "lang": "zh",
+          "correct": false,
+          "text": "The area of a rectangle is calculated by multiplying its length by its width. In this case, the length is 49 and the width is 13. So, the area of the rectangle is 49 * 13 = 637. 🕻"
+        },
+        {
+          "problem_idx": 17,
+          "lang": "en",
+          "correct": false,
+          "text": "The area of a rectangle is given by the formula A = l × w, where l is the length and w is the width. In this case, the length is 35 and the width is 22. So, the area is A = 35 × 22 = 770."
+        },
+        {
+          "problem_idx": 17,
+          "lang": "zh",
+          "correct": true,
+          "text": "The area of a rectangle is calculated by multiplying its length by its width. In this case, the length is 35 and the width is 22. So, the area of the rectangle is 35 * 22 = 770 square units."
+        },
+        {
+          "problem_idx": 18,
+          "lang": "en",
+          "correct": false,
+          "text": "To calculate 11 × 399, we can use the distributive property of multiplication over addition. We can break down 399 into 400 - 1 and then distribute the 11 to both terms.\n\n11 × (400 - 1) = 11 × 400 - 11 × 1\n\nNow, we can calculate each term separately:\n\n11 × 400 = 4400\n11 × 1 = 11\n\nFinally, we subtrac"
+        },
+        {
+          "problem_idx": 18,
+          "lang": "zh",
+          "correct": true,
+          "text": "To calculate 11 × 399, we can use the distributive property of multiplication over addition. We can break down 399 into 400 - 1 and then distribute the 11 to both terms.\n\n11 × 399 = 11 × (400 - 1)\n= 11 × 400 - 11 × 1\n= 4400 - 11\n= 4389\n\nSo, the value of 11 × 399 is 4389."
+        },
+        {
+          "problem_idx": 19,
+          "lang": "en",
+          "correct": false,
+          "text": "To calculate 131 + 476, we can use the standard addition algorithm. We start by adding the ones place, which is 1 + 6 = 7. Then we move to the tens place, which is 3 + 7 = 10. We write down the 0 and carry the 1 to the hundreds place. Finally, we add the hundreds place, which is 1 + 4 + 1 (the carri"
+        },
+        {
+          "problem_idx": 19,
+          "lang": "zh",
+          "correct": true,
+          "text": "131 + 476 = 607 🕻"
+        }
+      ]
+    },
+    "k=6": {
+      "accuracy": 0.45,
+      "correct": 9,
+      "total": 20,
+      "per_problem": [
+        {
+          "problem_idx": 10,
+          "lang": "en",
+          "correct": true,
+          "text": "To find the value of C(17, 1), we can use the formula for combinations, which is:\n\nC(n, r) = n! / (r! * (n - r)!)\n\nIn this case, n = 17 and r = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we get:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSin"
+        },
+        {
+          "problem_idx": 10,
+          "lang": "zh",
+          "correct": true,
+          "text": "To calculate the combination C(17, 1), we use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1!(17-1)!)\n\nSimplifying the expression, we have:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSince 1! is equal "
+        },
+        {
+          "problem_idx": 11,
+          "lang": "en",
+          "correct": true,
+          "text": "To find the value of C(5, 1), we can use the formula for combinations, which is given by:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1!(5-1)!)\n\nSimplifying the expression, we have:\n\nC(5, 1) = 5! / (1! * 4!)\n\nCalculating"
+        },
+        {
+          "problem_idx": 11,
+          "lang": "zh",
+          "correct": true,
+          "text": "To calculate the combination C(5, 1), we use the formula:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1! * (5 - 1)!)\n\nSimplifying the factorial terms, we have:\n\nC(5, 1) = 5! / (1! * 4!)\n\nCalculating the factorials, "
+        },
+        {
+          "problem_idx": 12,
+          "lang": "en",
+          "correct": false,
+          "text": "To find the sum of the first 27 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nS_n = n/2 * (a_1 + a_n)\n\nwhere:\n- S_n is the sum of the first n terms\n- n is the number of terms\n- a_1 is the first term\n- a_n is the nth term\n\nIn this case, we have:\n- n = 2"
+        },
+        {
+          "problem_idx": 12,
+          "lang": "zh",
+          "correct": false,
+          "text": "The sum of an arithmetic series can be found using the formula:\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\nwhere \\( S_n \\) is the sum of the first \\( n \\) terms, \\( a \\) is the first term, \\( d \\) is the common difference, and \\( n \\) is the number of terms.\n\nIn this problem, we have:\n- \\( a ="
+        },
+        {
+          "problem_idx": 13,
+          "lang": "en",
+          "correct": false,
+          "text": "To find the sum of the first 22 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 22, a = 1, and d = 3. Plugging these valu"
+        },
+        {
+          "problem_idx": 13,
+          "lang": "zh",
+          "correct": false,
+          "text": "The sum of an arithmetic series can be found using the formula:\n\\[ S_n = \\frac{n}{2} (2a + (n-1)d) \\]\nwhere \\( S_n \\) is the sum of the first \\( n \\) terms, \\( a \\) is the first term, \\( d \\) is the common difference, and \\( n \\) is the number of terms.\n\nIn this case, the first term \\( a \\) is 1, th"
+        },
+        {
+          "problem_idx": 14,
+          "lang": "en",
+          "correct": true,
+          "text": "To find the remainder when 1980 is divided by 18, we can use the division algorithm, which states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 1980 and b = 18. We want to find the quotient q and the remaind"
+        },
+        {
+          "problem_idx": 14,
+          "lang": "zh",
+          "correct": true,
+          "text": "To find the remainder when 1980 is divided by 18, we can use the division algorithm. The division algorithm states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 1980 and b = 18. We can find q and r by perfor"
+        },
+        {
+          "problem_idx": 15,
+          "lang": "en",
+          "correct": false,
+          "text": "To find the remainder when 4268 is divided by 19, we can use the modulo operation. The modulo operation gives the remainder of a division of two numbers. In this case, we want to find the remainder when 4268 is divided by 19. We can use the following formula: remainder = (dividend - (divisor * quoti"
+        },
+        {
+          "problem_idx": 15,
+          "lang": "zh",
+          "correct": false,
+          "text": "To find the remainder when 4268 is divided by 19, we can use the division algorithm, which states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 4268 and b = 19.\n\nFirst, we divide 4268 by 19:\n\n4268 ÷ 19 = 224"
+        },
+        {
+          "problem_idx": 16,
+          "lang": "en",
+          "correct": false,
+          "text": "The area of a rectangle is given by the formula A = l * w, where l is the length and w is the width. In this case, the length is 49 and the width is 13. So, the area is A = 49 * 13 = 637."
+        },
+        {
+          "problem_idx": 16,
+          "lang": "zh",
+          "correct": false,
+          "text": "The area of a rectangle is calculated by multiplying its length by its width. In this case, the length is 49 and the width is 13. So, the area of the rectangle is 49 * 13 = 637. 🕻"
+        },
+        {
+          "problem_idx": 17,
+          "lang": "en",
+          "correct": false,
+          "text": "The area of a rectangle is given by the formula A = l × w, where l is the length and w is the width. In this case, the length is 35 and the width is 22. So, the area is A = 35 × 22 = 770."
+        },
+        {
+          "problem_idx": 17,
+          "lang": "zh",
+          "correct": true,
+          "text": "The area of a rectangle is calculated by multiplying its length by its width. In this case, the length is 35 and the width is 22. So, the area of the rectangle is 35 * 22 = 770 square units."
+        },
+        {
+          "problem_idx": 18,
+          "lang": "en",
+          "correct": false,
+          "text": "To calculate 11 × 399, we can use the distributive property of multiplication over addition. We can break down 399 into 400 - 1 and then distribute the 11 to both terms.\n\n11 × (400 - 1) = 11 × 400 - 11 × 1\n\nNow, we can calculate each term separately:\n\n11 × 400 = 4400\n11 × 1 = 11\n\nFinally, we subtrac"
+        },
+        {
+          "problem_idx": 18,
+          "lang": "zh",
+          "correct": true,
+          "text": "To calculate 11 × 399, we can use the distributive property of multiplication over addition. We can break down 399 into 400 - 1 and then distribute the 11 to both terms.\n\n11 × 399 = 11 × (400 - 1)\n= 11 × 400 - 11 × 1\n= 4400 - 11\n= 4389\n\nSo, the value of 11 × 399 is 4389."
+        },
+        {
+          "problem_idx": 19,
+          "lang": "en",
+          "correct": false,
+          "text": "To calculate 131 + 476, we can use the standard addition algorithm. We start by adding the ones place, which is 1 + 6 = 7. Then we move to the tens place, which is 3 + 7 = 10. We write down the 0 and carry the 1 to the hundreds place. Finally, we add the hundreds place, which is 1 + 4 + 1 (the carri"
+        },
+        {
+          "problem_idx": 19,
+          "lang": "zh",
+          "correct": true,
+          "text": "131 + 476 = 607 🕻"
+        }
+      ]
+    },
+    "k=8": {
+      "accuracy": 0.5,
+      "correct": 10,
+      "total": 20,
+      "per_problem": [
+        {
+          "problem_idx": 10,
+          "lang": "en",
+          "correct": true,
+          "text": "To find the value of C(17, 1), we can use the formula for combinations, which is given by:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1!(17-1)!)\n\nSimplifying the expression, we have:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSin"
+        },
+        {
+          "problem_idx": 10,
+          "lang": "zh",
+          "correct": true,
+          "text": "To calculate the combination C(17, 1), we use the formula for combinations:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we have:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSince 1!"
+        },
+        {
+          "problem_idx": 11,
+          "lang": "en",
+          "correct": true,
+          "text": "To find the value of C(5, 1), we can use the formula for combinations, which is given by:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1!(5-1)!)\n\nSimplifying the expression, we have:\n\nC(5, 1) = 5! / (1! * 4!)\n\nCalculating"
+        },
+        {
+          "problem_idx": 11,
+          "lang": "zh",
+          "correct": true,
+          "text": "To calculate the combination C(5, 1), we use the formula:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1! * (5 - 1)!)\n\nSimplifying the factorial terms, we have:\n\nC(5, 1) = 5! / (1! * 4!)\n\nCalculating the factorials, "
+        },
+        {
+          "problem_idx": 12,
+          "lang": "en",
+          "correct": false,
+          "text": "To find the sum of the first 27 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nS_n = n/2 * (a_1 + a_n)\n\nwhere:\n- S_n is the sum of the first n terms\n- n is the number of terms\n- a_1 is the first term\n- a_n is the nth term\n\nIn this case, we have:\n- n = 2"
+        },
+        {
+          "problem_idx": 12,
+          "lang": "zh",
+          "correct": false,
+          "text": "The sum of an arithmetic series can be found using the formula:\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right) \\]\nwhere \\( S_n \\) is the sum of the first \\( n \\) terms, \\( a \\) is the first term, \\( d \\) is the common difference, and \\( n \\) is the number of terms.\n\nIn this problem, we have:\n- \\( a ="
+        },
+        {
+          "problem_idx": 13,
+          "lang": "en",
+          "correct": false,
+          "text": "To find the sum of the first 22 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 22, a = 1, and d = 3. Plugging these valu"
+        },
+        {
+          "problem_idx": 13,
+          "lang": "zh",
+          "correct": false,
+          "text": "The sum of an arithmetic series can be found using the formula:\n\\[ S_n = \\frac{n}{2} (2a + (n-1)d) \\]\nwhere \\( S_n \\) is the sum of the first \\( n \\) terms, \\( a \\) is the first term, \\( d \\) is the common difference, and \\( n \\) is the number of terms.\n\nIn this problem, we have:\n- \\( a = 1 \\) (the "
+        },
+        {
+          "problem_idx": 14,
+          "lang": "en",
+          "correct": true,
+          "text": "To find the remainder when 1980 is divided by 18, we can use the division algorithm, which states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 1980 and b = 18. We want to find the quotient q and the remaind"
+        },
+        {
+          "problem_idx": 14,
+          "lang": "zh",
+          "correct": true,
+          "text": "To find the remainder when 1980 is divided by 18, we can use the division algorithm. The division algorithm states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 1980 and b = 18. We can find q and r by perfor"
+        },
+        {
+          "problem_idx": 15,
+          "lang": "en",
+          "correct": false,
+          "text": "To find the remainder when 4268 is divided by 19, we can use the modulo operation. The modulo operation gives the remainder of a division of two numbers. In this case, we want to find the remainder when 4268 is divided by 19. We can use the following formula: remainder = (dividend - (divisor * quoti"
+        },
+        {
+          "problem_idx": 15,
+          "lang": "zh",
+          "correct": false,
+          "text": "To find the remainder when 4268 is divided by 19, we can use the division algorithm, which states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 4268 and b = 19.\n\nFirst, we divide 4268 by 19:\n\n4268 ÷ 19 = 224"
+        },
+        {
+          "problem_idx": 16,
+          "lang": "en",
+          "correct": false,
+          "text": "The area of a rectangle is given by the formula A = l × w, where l is the length and w is the width. In this case, the length is 49 and the width is 13. So, the area is A = 49 × 13 = 637."
+        },
+        {
+          "problem_idx": 16,
+          "lang": "zh",
+          "correct": true,
+          "text": "The area of a rectangle is calculated by multiplying its length by its width. In this case, the length is 49 and the width is 13. So, the area of the rectangle is 49 * 13 = 637 square units."
+        },
+        {
+          "problem_idx": 17,
+          "lang": "en",
+          "correct": false,
+          "text": "The area of a rectangle is given by the formula A = l × w, where l is the length and w is the width. In this case, the length is 35 and the width is 22. So, the area is A = 35 × 22 = 770."
+        },
+        {
+          "problem_idx": 17,
+          "lang": "zh",
+          "correct": true,
+          "text": "The area of a rectangle is calculated by multiplying its length by its width. In this case, the length is 35 and the width is 22. So, the area of the rectangle is 35 * 22 = 770 square units."
+        },
+        {
+          "problem_idx": 18,
+          "lang": "en",
+          "correct": false,
+          "text": "To calculate 11 × 399, we can use the distributive property of multiplication over addition. We can break down 399 into 400 - 1 and then distribute the 11 to both terms.\n\n11 × (400 - 1) = 11 × 400 - 11 × 1\n\nNow, we can calculate each term separately:\n\n11 × 400 = 4400\n11 × 1 = 11\n\nFinally, we subtrac"
+        },
+        {
+          "problem_idx": 18,
+          "lang": "zh",
+          "correct": true,
+          "text": "To calculate 11 × 399, we can use the distributive property of multiplication over addition. We can break down 399 into 400 - 1 and then distribute the 11 to both terms.\n\n11 × 399 = 11 × (400 - 1)\n= 11 × 400 - 11 × 1\n= 4400 - 11\n= 4389\n\nSo, the value of 11 × 399 is 4389."
+        },
+        {
+          "problem_idx": 19,
+          "lang": "en",
+          "correct": false,
+          "text": "To calculate 131 + 476, we can use the standard addition algorithm. We start by adding the ones place, which is 1 + 6 = 7. Then we move to the tens place, which is 3 + 7 = 10. We write down the 0 and carry the 1 to the hundreds place. Finally, we add the hundreds place, which is 1 + 4 + 1 (the carri"
+        },
+        {
+          "problem_idx": 19,
+          "lang": "zh",
+          "correct": true,
+          "text": "131 + 476 = 607 🕻"
+        }
+      ]
+    },
+    "k=12": {
+      "accuracy": 0.5,
+      "correct": 10,
+      "total": 20,
+      "per_problem": [
+        {
+          "problem_idx": 10,
+          "lang": "en",
+          "correct": true,
+          "text": "To find the value of C(17, 1), we can use the formula for combinations, which is:\n\nC(n, r) = n! / (r! * (n - r)!)\n\nIn this case, n = 17 and r = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we get:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSin"
+        },
+        {
+          "problem_idx": 10,
+          "lang": "zh",
+          "correct": true,
+          "text": "To calculate the combination C(17, 1), we use the formula for combinations:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we have:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSince 1!"
+        },
+        {
+          "problem_idx": 11,
+          "lang": "en",
+          "correct": true,
+          "text": "To find the value of C(5, 1), we can use the formula for combinations, which is given by:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1!(5-1)!)\n\nSimplifying the expression, we have:\n\nC(5, 1) = 5! / (1! * 4!)\n\nCalculating"
+        },
+        {
+          "problem_idx": 11,
+          "lang": "zh",
+          "correct": true,
+          "text": "To calculate the combination C(5, 1), we use the formula:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere n is the total number of items, k is the number of items to choose, and ! denotes the factorial function.\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1!(5-"
+        },
+        {
+          "problem_idx": 12,
+          "lang": "en",
+          "correct": false,
+          "text": "To find the sum of the first 27 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 27, a = 15, and d = 6. Plugging these val"
+        },
+        {
+          "problem_idx": 12,
+          "lang": "zh",
+          "correct": false,
+          "text": "The sum of an arithmetic series can be found using the formula:\nSum = (n/2) * (2a + (n-1)d)\nwhere n is the number of terms, a is the first term, and d is the common difference.\nIn this case, n = 27, a = 15, and d = 6.\nSubstituting these values into the formula, we get:\nSum = (27/2) * (2*15 + (27-1)*"
+        },
+        {
+          "problem_idx": 13,
+          "lang": "en",
+          "correct": false,
+          "text": "To find the sum of the first 22 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 22, a = 1, and d = 3. Plugging these valu"
+        },
+        {
+          "problem_idx": 13,
+          "lang": "zh",
+          "correct": false,
+          "text": "The sum of an arithmetic series can be found using the formula:\n\\[ S_n = \\frac{n}{2} (2a + (n-1)d) \\]\nwhere \\( S_n \\) is the sum of the first \\( n \\) terms, \\( a \\) is the first term, \\( d \\) is the common difference, and \\( n \\) is the number of terms.\n\nIn this case, the first term \\( a \\) is 1, th"
+        },
+        {
+          "problem_idx": 14,
+          "lang": "en",
+          "correct": true,
+          "text": "To find the remainder when 1980 is divided by 18, we can use the division algorithm, which states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 1980 and b = 18. We want to find the quotient q and the remaind"
+        },
+        {
+          "problem_idx": 14,
+          "lang": "zh",
+          "correct": true,
+          "text": "To find the remainder when 1980 is divided by 18, we can use the division algorithm. The division algorithm states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 1980 and b = 18. We can find q and r by perfor"
+        },
+        {
+          "problem_idx": 15,
+          "lang": "en",
+          "correct": false,
+          "text": "To find the remainder when 4268 is divided by 19, we can use the modulo operation. The modulo operation gives the remainder of a division of two numbers. In this case, we want to find the remainder when 4268 is divided by 19. We can use the following formula: remainder = (dividend - (divisor * quoti"
+        },
+        {
+          "problem_idx": 15,
+          "lang": "zh",
+          "correct": false,
+          "text": "To find the remainder when 4268 is divided by 19, we can use the division algorithm, which states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 4268 and b = 19.\n\nFirst, we divide 4268 by 19:\n\n4268 ÷ 19 = 224"
+        },
+        {
+          "problem_idx": 16,
+          "lang": "en",
+          "correct": false,
+          "text": "The area of a rectangle is given by the formula A = l × w, where l is the length and w is the width. In this case, the length is 49 and the width is 13. So, the area is A = 49 × 13 = 637."
+        },
+        {
+          "problem_idx": 16,
+          "lang": "zh",
+          "correct": true,
+          "text": "The area of a rectangle is calculated by multiplying its length by its width. In this case, the length is 49 and the width is 13. So, the area of the rectangle is 49 * 13 = 637 square units."
+        },
+        {
+          "problem_idx": 17,
+          "lang": "en",
+          "correct": false,
+          "text": "The area of a rectangle is given by the formula A = l × w, where l is the length and w is the width. In this case, the length is 35 and the width is 22. So, the area is A = 35 × 22 = 770."
+        },
+        {
+          "problem_idx": 17,
+          "lang": "zh",
+          "correct": true,
+          "text": "The area of a rectangle is calculated by multiplying its length by its width. In this case, the length is 35 and the width is 22. So, the area of the rectangle is 35 * 22 = 770 square units."
+        },
+        {
+          "problem_idx": 18,
+          "lang": "en",
+          "correct": false,
+          "text": "To calculate 11 × 399, we can use the distributive property of multiplication over addition. We can break down 399 into 400 - 1 and then distribute the 11 to both terms.\n\n11 × (400 - 1) = 11 × 400 - 11 × 1\n\nNow, we can calculate each term separately:\n\n11 × 400 = 4400\n11 × 1 = 11\n\nFinally, we subtrac"
+        },
+        {
+          "problem_idx": 18,
+          "lang": "zh",
+          "correct": true,
+          "text": "To calculate 11 × 399, we can use the distributive property of multiplication over addition. We can break down 399 into 400 - 1 and then distribute the 11 to both terms.\n\n11 × 399 = 11 × (400 - 1)\n= 11 × 400 - 11 × 1\n= 4400 - 11\n= 4389\n\nSo, the value of 11 × 399 is 4389."
+        },
+        {
+          "problem_idx": 19,
+          "lang": "en",
+          "correct": false,
+          "text": "To calculate 131 + 476, we can use the standard addition algorithm. We start by adding the ones place, which is 1 + 6 = 7. Then we move to the tens place, which is 3 + 7 = 10. We write down the 0 and carry the 1 to the hundreds place. Finally, we add the hundreds place, which is 1 + 4 + 1 (the carri"
+        },
+        {
+          "problem_idx": 19,
+          "lang": "zh",
+          "correct": true,
+          "text": "131 + 476 = 607 🕻"
+        }
+      ]
+    },
+    "k=20": {
+      "accuracy": 0.5,
+      "correct": 10,
+      "total": 20,
+      "per_problem": [
+        {
+          "problem_idx": 10,
+          "lang": "en",
+          "correct": true,
+          "text": "To find the value of C(17, 1), we can use the formula for combinations, which is given by:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1!(17-1)!)\n\nSimplifying the expression, we have:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSin"
+        },
+        {
+          "problem_idx": 10,
+          "lang": "zh",
+          "correct": true,
+          "text": "To calculate the combination C(17, 1), we use the formula for combinations:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1!(17-1)!)\n\nSimplifying the expression, we have:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSince 1! is equal "
+        },
+        {
+          "problem_idx": 11,
+          "lang": "en",
+          "correct": true,
+          "text": "To find the value of C(5, 1), we can use the formula for combinations, which is:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1!(5-1)!)\n\nSimplifying the expression, we get:\n\nC(5, 1) = 5! / (1!4!)\n\nC(5, 1) = (5*4*3*2*1"
+        },
+        {
+          "problem_idx": 11,
+          "lang": "zh",
+          "correct": true,
+          "text": "To calculate the combination C(5, 1), we use the formula:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1! * (5 - 1)!)\n\nC(5, 1) = 5! / (1! * 4!)\n\nC(5, 1) = (5 * 4 * 3 * 2 * 1) / (1"
+        },
+        {
+          "problem_idx": 12,
+          "lang": "en",
+          "correct": false,
+          "text": "To find the sum of the first 27 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 27, a = 15, and d = 6. Plugging these val"
+        },
+        {
+          "problem_idx": 12,
+          "lang": "zh",
+          "correct": false,
+          "text": "The sum of an arithmetic sequence can be calculated using the formula:\nSum = (n/2) * (2a + (n-1)d)\nwhere n is the number of terms, a is the first term, and d is the common difference.\nIn this case, n = 27, a = 15, and d = 6.\nSubstituting these values into the formula, we get:\nSum = (27/2) * (2*15 + "
+        },
+        {
+          "problem_idx": 13,
+          "lang": "en",
+          "correct": false,
+          "text": "To find the sum of the first 22 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 22, a = 1, and d = 3. Plugging these valu"
+        },
+        {
+          "problem_idx": 13,
+          "lang": "zh",
+          "correct": false,
+          "text": "The sum of an arithmetic series can be found using the formula:\n\\[ S_n = \\frac{n}{2} (2a + (n-1)d) \\]\nwhere \\( S_n \\) is the sum of the first \\( n \\) terms, \\( a \\) is the first term, \\( d \\) is the common difference, and \\( n \\) is the number of terms.\n\nIn this case, the first term \\( a \\) is 1, th"
+        },
+        {
+          "problem_idx": 14,
+          "lang": "en",
+          "correct": true,
+          "text": "To find the remainder when 1980 is divided by 18, we can use the division algorithm, which states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 1980 and b = 18. We want to find the quotient q and the remaind"
+        },
+        {
+          "problem_idx": 14,
+          "lang": "zh",
+          "correct": true,
+          "text": "To find the remainder when 1980 is divided by 18, we can use the division algorithm, which states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 1980 and b = 18. We want to find the quotient q and the remaind"
+        },
+        {
+          "problem_idx": 15,
+          "lang": "en",
+          "correct": false,
+          "text": "To find the remainder when 4268 is divided by 19, we can use the modulo operation. The modulo operation gives the remainder of a division of two numbers. In this case, we want to find the remainder when 4268 is divided by 19. We can use the following formula:\n\nremainder = 4268 % 19\n\nUsing a calculat"
+        },
+        {
+          "problem_idx": 15,
+          "lang": "zh",
+          "correct": false,
+          "text": "To find the remainder when 4268 is divided by 19, we can use the division algorithm, which states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 4268 and b = 19.\n\nFirst, we divide 4268 by 19:\n\n4268 ÷ 19 = 224"
+        },
+        {
+          "problem_idx": 16,
+          "lang": "en",
+          "correct": false,
+          "text": "The area of a rectangle is given by the formula A = l × w, where l is the length and w is the width. In this case, the length is 49 and the width is 13. So, the area is A = 49 × 13 = 637."
+        },
+        {
+          "problem_idx": 16,
+          "lang": "zh",
+          "correct": true,
+          "text": "The area of a rectangle is calculated by multiplying its length by its width. In this case, the length is 49 and the width is 13. So, the area of the rectangle is 49 * 13 = 637 square units."
+        },
+        {
+          "problem_idx": 17,
+          "lang": "en",
+          "correct": false,
+          "text": "The area of a rectangle is given by the formula A = l × w, where l is the length and w is the width. In this case, the length is 35 and the width is 22. So, the area is A = 35 × 22 = 770."
+        },
+        {
+          "problem_idx": 17,
+          "lang": "zh",
+          "correct": true,
+          "text": "The area of a rectangle is calculated by multiplying its length by its width. In this case, the length is 35 and the width is 22. So, the area of the rectangle is 35 * 22 = 770 square units."
+        },
+        {
+          "problem_idx": 18,
+          "lang": "en",
+          "correct": false,
+          "text": "To calculate 11 × 399, we can use the distributive property of multiplication over addition. We can break down 399 into 400 - 1 and then distribute the 11 to both terms.\n\n11 × (400 - 1) = 11 × 400 - 11 × 1\n\nNow, we can calculate each term separately:\n\n11 × 400 = 4400\n11 × 1 = 11\n\nFinally, we subtrac"
+        },
+        {
+          "problem_idx": 18,
+          "lang": "zh",
+          "correct": true,
+          "text": "To calculate 11 × 399, we can use the distributive property of multiplication over addition. We can break down 399 into 400 - 1 and then distribute the 11 to both terms.\n\n11 × 399 = 11 × (400 - 1)\n= 11 × 400 - 11 × 1\n= 4400 - 11\n= 4389\n\nSo, the value of 11 × 399 is 4389."
+        },
+        {
+          "problem_idx": 19,
+          "lang": "en",
+          "correct": false,
+          "text": "To calculate 131 + 476, we can use the standard addition algorithm. We start by adding the ones place, which is 1 + 6 = 7. Then we move to the tens place, which is 3 + 7 = 10. We write down the 0 and carry the 1 to the hundreds place. Finally, we add the hundreds place, which is 1 + 4 + 1 (the carri"
+        },
+        {
+          "problem_idx": 19,
+          "lang": "zh",
+          "correct": true,
+          "text": "131 + 476 = 607 🕻"
+        }
+      ]
+    },
+    "k=50": {
+      "accuracy": 0.5,
+      "correct": 10,
+      "total": 20,
+      "per_problem": [
+        {
+          "problem_idx": 10,
+          "lang": "en",
+          "correct": true,
+          "text": "To find the value of C(17, 1), we can use the formula for combinations, which is:\n\nC(n, r) = n! / (r! * (n - r)!)\n\nIn this case, n = 17 and r = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we get:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSin"
+        },
+        {
+          "problem_idx": 10,
+          "lang": "zh",
+          "correct": true,
+          "text": "To calculate the combination C(17, 1), we use the formula for combinations:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 17 and k = 1. Plugging these values into the formula, we get:\n\nC(17, 1) = 17! / (1! * (17 - 1)!)\n\nSimplifying the expression, we have:\n\nC(17, 1) = 17! / (1! * 16!)\n\nSince 1!"
+        },
+        {
+          "problem_idx": 11,
+          "lang": "en",
+          "correct": true,
+          "text": "To find the value of C(5, 1), we can use the formula for combinations, which is given by:\n\nC(n, k) = n! / (k!(n-k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1!(5-1)!)\n\nSimplifying the expression, we have:\n\nC(5, 1) = 5! / (1! * 4!)\n\nCalculating"
+        },
+        {
+          "problem_idx": 11,
+          "lang": "zh",
+          "correct": true,
+          "text": "To calculate the combination C(5, 1), we use the formula:\n\nC(n, k) = n! / (k! * (n - k)!)\n\nIn this case, n = 5 and k = 1. Plugging these values into the formula, we get:\n\nC(5, 1) = 5! / (1! * (5 - 1)!)\n\nC(5, 1) = 5! / (1! * 4!)\n\nC(5, 1) = (5 * 4 * 3 * 2 * 1) / (1"
+        },
+        {
+          "problem_idx": 12,
+          "lang": "en",
+          "correct": false,
+          "text": "To find the sum of the first 27 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 27, a = 15, and d = 6. Plugging these val"
+        },
+        {
+          "problem_idx": 12,
+          "lang": "zh",
+          "correct": false,
+          "text": "The sum of an arithmetic sequence can be calculated using the formula:\nSn = n/2 * (2a + (n-1)d)\nwhere:\n- Sn is the sum of the first n terms\n- a is the first term\n- d is the common difference\n- n is the number of terms\nIn this case, we have:\n- a = 15\n- d = 6\n- n = 27\nPlugging these values into the fo"
+        },
+        {
+          "problem_idx": 13,
+          "lang": "en",
+          "correct": false,
+          "text": "To find the sum of the first 22 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic series:\n\nSum = (n/2) * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 22, a = 1, and d = 3. Plugging these valu"
+        },
+        {
+          "problem_idx": 13,
+          "lang": "zh",
+          "correct": false,
+          "text": "The sum of an arithmetic sequence can be calculated using the formula:\n\nSum = n/2 * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the first term, and d is the common difference.\n\nIn this case, n = 22, a = 1, and d = 3. Plugging these values into the formula, we get:\n\nSum = 22/2 * (2*1 + (22-1)"
+        },
+        {
+          "problem_idx": 14,
+          "lang": "en",
+          "correct": true,
+          "text": "To find the remainder when 1980 is divided by 18, we can use the division algorithm, which states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 1980 and b = 18. We want to find the quotient q and the remaind"
+        },
+        {
+          "problem_idx": 14,
+          "lang": "zh",
+          "correct": true,
+          "text": "To find the remainder when 1980 is divided by 18, we can use the division algorithm, which states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 1980 and b = 18. We want to find the remainder r.\n\nFirst, we di"
+        },
+        {
+          "problem_idx": 15,
+          "lang": "en",
+          "correct": false,
+          "text": "To find the remainder when 4268 is divided by 19, we can use the modulo operation. The modulo operation gives the remainder of a division of two numbers. In this case, we want to find the remainder when 4268 is divided by 19. We can use the following formula:\n\nremainder = (dividend - (divisor * quot"
+        },
+        {
+          "problem_idx": 15,
+          "lang": "zh",
+          "correct": false,
+          "text": "To find the remainder when 4268 is divided by 19, we can use the division algorithm, which states that for any integers a and b (with b ≠ 0), there exist unique integers q and r such that a = bq + r, where 0 ≤ r < |b|. In this case, a = 4268 and b = 19.\n\nFirst, we divide 4268 by 19 to find the quoti"
+        },
+        {
+          "problem_idx": 16,
+          "lang": "en",
+          "correct": false,
+          "text": "The area of a rectangle is given by the formula A = l × w, where l is the length and w is the width. In this case, the length is 49 and the width is 13. So, the area is A = 49 × 13 = 637."
+        },
+        {
+          "problem_idx": 16,
+          "lang": "zh",
+          "correct": true,
+          "text": "The area of a rectangle is calculated by multiplying its length by its width. In this case, the length is 49 and the width is 13. So, the area of the rectangle is 49 * 13 = 637 square units."
+        },
+        {
+          "problem_idx": 17,
+          "lang": "en",
+          "correct": false,
+          "text": "The area of a rectangle is given by the formula A = l × w, where l is the length and w is the width. In this case, the length is 35 and the width is 22. So, the area is A = 35 × 22 = 770."
+        },
+        {
+          "problem_idx": 17,
+          "lang": "zh",
+          "correct": true,
+          "text": "The area of a rectangle is calculated by multiplying its length by its width. In this case, the length is 35 and the width is 22. So, the area of the rectangle is 35 * 22 = 770 square units."
+        },
+        {
+          "problem_idx": 18,
+          "lang": "en",
+          "correct": false,
+          "text": "To calculate 11 × 399, we can use the distributive property of multiplication over addition. We can break down 399 into 400 - 1 and then distribute the 11 to both terms.\n\n11 × (400 - 1) = 11 × 400 - 11 × 1\n\nNow, we can calculate each term separately:\n\n11 × 400 = 4400\n11 × 1 = 11\n\nFinally, we subtrac"
+        },
+        {
+          "problem_idx": 18,
+          "lang": "zh",
+          "correct": true,
+          "text": "To calculate 11 × 399, we can use the distributive property of multiplication over addition. We can break down 399 into 400 - 1 and then distribute the 11 to both terms.\n\n11 × 399 = 11 × (400 - 1)\n= 11 × 400 - 11 × 1\n= 4400 - 11\n= 4389\n\nSo, the value of 11 × 399 is 4389."
+        },
+        {
+          "problem_idx": 19,
+          "lang": "en",
+          "correct": false,
+          "text": "To calculate 131 + 476, we can use the standard addition algorithm. We start by adding the ones place, which is 1 + 6 = 7. Then we move to the tens place, which is 3 + 7 = 10. We write down the 0 and carry the 1 to the hundreds place. Finally, we add the hundreds place, which is 1 + 4 + 1 (the carri"
+        },
+        {
+          "problem_idx": 19,
+          "lang": "zh",
+          "correct": true,
+          "text": "131 + 476 = 607 🕹️"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,154 @@
+[
+  {
+    "problem": 1,
+    "correct": "E",
+    "l35_corrected_vote": "D",
+    "l35_correct": false,
+    "value_vote": "C",
+    "value_correct": false
+  },
+  {
+    "problem": 2,
+    "correct": "B",
+    "l35_corrected_vote": "A",
+    "l35_correct": false,
+    "value_vote": "A",
+    "value_correct": false
+  },
+  {
+    "problem": 3,
+    "correct": "A",
+    "l35_corrected_vote": "A",
+    "l35_correct": true,
+    "value_vote": "A",
+    "value_correct": true
+  },
+  {
+    "problem": 4,
+    "correct": "B",
+    "l35_corrected_vote": "D",
+    "l35_correct": false,
+    "value_vote": "B",
+    "value_correct": true
+  },
+  {
+    "problem": 6,
+    "correct": "B",
+    "l35_corrected_vote": "E",
+    "l35_correct": false,
+    "value_vote": null,
+    "value_correct": null
+  },
+  {
+    "problem": 7,
+    "correct": "C",
+    "l35_corrected_vote": "E",
+    "l35_correct": false,
+    "value_vote": null,
+    "value_correct": null
+  },
+  {
+    "problem": 8,
+    "correct": "E",
+    "l35_corrected_vote": "D",
+    "l35_correct": false,
+    "value_vote": null,
+    "value_correct": null
+  },
+  {
+    "problem": 9,
+    "correct": "E",
+    "l35_corrected_vote": "E",
+    "l35_correct": true,
+    "value_vote": "B",
+    "value_correct": false
+  },
+  {
+    "problem": 11,
+    "correct": "A",
+    "l35_corrected_vote": "D",
+    "l35_correct": false,
+    "value_vote": null,
+    "value_correct": null
+  },
+  {
+    "problem": 12,
+    "correct": "B",
+    "l35_corrected_vote": "E",
+    "l35_correct": false,
+    "value_vote": "A",
+    "value_correct": false
+  },
+  {
+    "problem": 13,
+    "correct": "D",
+    "l35_corrected_vote": "E",
+    "l35_correct": false,
+    "value_vote": null,
+    "value_correct": null
+  },
+  {
+    "problem": 15,
+    "correct": "C",
+    "l35_corrected_vote": "A",
+    "l35_correct": false,
+    "value_vote": "C",
+    "value_correct": true
+  },
+  {
+    "problem": 16,
+    "correct": "D",
+    "l35_corrected_vote": "B",
+    "l35_correct": false,
+    "value_vote": null,
+    "value_correct": null
+  },
+  {
+    "problem": 17,
+    "correct": "A",
+    "l35_corrected_vote": "E",
+    "l35_correct": false,
+    "value_vote": "C",
+    "value_correct": false
+  },
+  {
+    "problem": 18,
+    "correct": "C",
+    "l35_corrected_vote": "E",
+    "l35_correct": false,
+    "value_vote": "C",
+    "value_correct": true
+  },
+  {
+    "problem": 19,
+    "correct": "E",
+    "l35_corrected_vote": "E",
+    "l35_correct": true,
+    "value_vote": null,
+    "value_correct": null
+  },
+  {
+    "problem": 21,
+    "correct": "A",
+    "l35_corrected_vote": "D",
+    "l35_correct": false,
+    "value_vote": "C",
+    "value_correct": false
+  },
+  {
+    "problem": 22,
+    "correct": "E",
+    "l35_corrected_vote": "E",
+    "l35_correct": true,
+    "value_vote": "A",
+    "value_correct": false
+  },
+  {
+    "problem": 23,
+    "correct": "C",
+    "l35_corrected_vote": "D",
+    "l35_correct": false,
+    "value_vote": null,
+    "value_correct": null
+  }
+]

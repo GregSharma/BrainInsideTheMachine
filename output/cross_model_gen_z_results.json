@@ -1,0 +1,160 @@
+{
+  "Qwen2.5-1.5B": {
+    "model": "Qwen/Qwen2.5-1.5B",
+    "target_layer": 24,
+    "z_basis_layer": 24,
+    "n_problems": 20,
+    "overall": {
+      "full_mean": 0.5525,
+      "full_std": 0.1267,
+      "z_mean": 0.8957,
+      "z_std": 0.0609,
+      "rand_mean": 0.4389,
+      "rand_std": 0.2009,
+      "z_random_gap": 0.4568,
+      "z_full_gap": 0.3432
+    },
+    "per_problem": [
+      {
+        "prob": 0,
+        "T": 22,
+        "full_mean": 0.6599,
+        "z_mean": 0.9027,
+        "rand_mean": 0.5137
+      },
+      {
+        "prob": 1,
+        "T": 160,
+        "full_mean": 0.6015,
+        "z_mean": 0.8899,
+        "rand_mean": 0.4298
+      },
+      {
+        "prob": 2,
+        "T": 256,
+        "full_mean": 0.4448,
+        "z_mean": 0.8528,
+        "rand_mean": 0.403
+      },
+      {
+        "prob": 3,
+        "T": 256,
+        "full_mean": 0.5545,
+        "z_mean": 0.9114,
+        "rand_mean": 0.4142
+      },
+      {
+        "prob": 4,
+        "T": 183,
+        "full_mean": 0.5921,
+        "z_mean": 0.8805,
+        "rand_mean": 0.4859
+      },
+      {
+        "prob": 5,
+        "T": 35,
+        "full_mean": 0.5833,
+        "z_mean": 0.8704,
+        "rand_mean": 0.5103
+      },
+      {
+        "prob": 6,
+        "T": 256,
+        "full_mean": 0.5434,
+        "z_mean": 0.9126,
+        "rand_mean": 0.4101
+      },
+      {
+        "prob": 7,
+        "T": 249,
+        "full_mean": 0.4985,
+        "z_mean": 0.8798,
+        "rand_mean": 0.4514
+      },
+      {
+        "prob": 8,
+        "T": 160,
+        "full_mean": 0.6048,
+        "z_mean": 0.8904,
+        "rand_mean": 0.4248
+      },
+      {
+        "prob": 9,
+        "T": 256,
+        "full_mean": 0.4346,
+        "z_mean": 0.8483,
+        "rand_mean": 0.4104
+      },
+      {
+        "prob": 10,
+        "T": 235,
+        "full_mean": 0.67,
+        "z_mean": 0.9355,
+        "rand_mean": 0.5596
+      },
+      {
+        "prob": 11,
+        "T": 143,
+        "full_mean": 0.551,
+        "z_mean": 0.9178,
+        "rand_mean": 0.4268
+      },
+      {
+        "prob": 12,
+        "T": 180,
+        "full_mean": 0.5676,
+        "z_mean": 0.9084,
+        "rand_mean": 0.4332
+      },
+      {
+        "prob": 13,
+        "T": 118,
+        "full_mean": 0.5914,
+        "z_mean": 0.9134,
+        "rand_mean": 0.4787
+      },
+      {
+        "prob": 14,
+        "T": 256,
+        "full_mean": 0.5293,
+        "z_mean": 0.9152,
+        "rand_mean": 0.4273
+      },
+      {
+        "prob": 15,
+        "T": 256,
+        "full_mean": 0.5251,
+        "z_mean": 0.8971,
+        "rand_mean": 0.3823
+      },
+      {
+        "prob": 16,
+        "T": 120,
+        "full_mean": 0.5772,
+        "z_mean": 0.9078,
+        "rand_mean": 0.4569
+      },
+      {
+        "prob": 17,
+        "T": 148,
+        "full_mean": 0.6144,
+        "z_mean": 0.8956,
+        "rand_mean": 0.4356
+      },
+      {
+        "prob": 18,
+        "T": 121,
+        "full_mean": 0.5651,
+        "z_mean": 0.9003,
+        "rand_mean": 0.4644
+      },
+      {
+        "prob": 19,
+        "T": 189,
+        "full_mean": 0.6088,
+        "z_mean": 0.8946,
+        "rand_mean": 0.4409
+      }
+    ]
+  }
+}

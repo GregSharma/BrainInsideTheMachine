@@ -1,0 +1,217 @@
+{
+  "experiment": "P3: Flip Scale Sweep",
+  "sweeps": [
+    {
+      "scale": -2.0,
+      "correct": 0,
+      "texts": [
+        " I was just reading a book. I was just reading a book. I was just reading a book",
+        " What is the area of the rectangle? The area of the rectangle is 12. To be preci",
+        " When 100 is divided by 7, the answer is 3. There is no remainder. What is the r",
+        " 2014: The year of the first female president in China. On March 10, 2014, the 1",
+        " The sum of the first 5 terms is 10. Find the value of the common ratio. To solv",
+        " That's a good start! What's next? How can we ensure that the information is acc",
+        " There are 100000000000000000000000000000000000000000000000000000000000000000000",
+        " 37 is a prime number. What is your name? What is your profession? What is your ",
+        " The sum of the first 25 terms is 125. Find the value of the common difference. ",
+        " What is the area of the rectangle? (Note: the answer is not 666!) A: 33. 错误\n\nA:"
+      ]
+    },
+    {
+      "scale": -1.5,
+      "correct": 7,
+      "texts": [
+        " The result is 133. What is the result of 47 + 86? The result of 47 + 86 is 133.",
+        " To find the area of the rectangle, we need to multiply the length by the width.",
+        " What is the remainder when 100 is divided by 10? What is the remainder when 100",
+        " The result is 120. How can I get 120 from 15 × 8?\nTo get 120 from 15 × 8, you c",
+        " (The sum of the first 5 terms is 100.) What is the value of 5? To solve this pr",
+        " What is the product of 387 and 29? The product of 387 and 29 is 11223.",
+        " The value of C(10, 3) is 120. The combination formula is nCr = n! / (r! * (n-r)",
+        " 7654 is divided by 37? - Brainly.com\\njessica1234567890\\n02/02/2019\\nMath\\nMidd",
+        " 1000. What is the value of the common difference?\nA. 11\nB. 12\nC. 13\nD. 14\nE. 15",
+        " To find the area of the rectangle, we need to multiply the length by the width."
+      ]
+    },
+    {
+      "scale": -1.0,
+      "correct": 5,
+      "texts": [
+        " The sum of 47 and 86 is 133.",
+        " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{le",
+        " 100 divided by 7 is 14 with a remainder of 2.",
+        " To calculate \\( 15 \\times 8 \\), we can use the standard multiplication method:\n",
+        " (Give your answer as a decimal rounded to the nearest tenth.)\\nAn arithmetic se",
+        " What is the units digit of the result? To calculate the units digit of \\(387 \\t",
+        " C(10, 3) = 120.",
+        "  (Hint: You don't need to find the remainder to solve the problem.  You can use",
+        " (Give your answer as a decimal rounded to the nearest whole number.)\\nAn arithm",
+        " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{le"
+      ]
+    },
+    {
+      "scale": -0.5,
+      "correct": 3,
+      "texts": [
+        " The sum of 47 and 86 is 133.",
+        " The area of a rectangle is given by the formula: Area = length × width. In this",
+        " To find the remainder when 100 is divided by 7, we can use the division algorit",
+        " To calculate \\(15 \\times 8\\), we can use the standard multiplication method. He",
+        " To find the sum of the first 5 terms of an arithmetic sequence with the first t",
+        " To calculate \\(387 \\times 29\\), we can use the standard multiplication method. ",
+        " The value of C(10, 3) is 120.",
+        " To find the remainder when 7654 is divided by 37, we can use the modulus operat",
+        " To find the sum of the first 25 terms of an arithmetic sequence with the first ",
+        " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{le"
+      ]
+    },
+    {
+      "scale": 0.0,
+      "correct": 2,
+      "texts": [
+        " To calculate \\(47 + 86\\), we can use the standard addition method. Here are the",
+        " The area of a rectangle is given by the formula:\n\nArea = length × width\n\nIn thi",
+        " To find the remainder when 100 is divided by 7, we can use the division algorit",
+        " To calculate \\(15 \\times 8\\), we can use the standard multiplication method. He",
+        " To find the sum of the first 5 terms of an arithmetic sequence with the first t",
+        " To calculate \\(387 \\times 29\\), we can use the standard multiplication algorith",
+        " The value of C(10, 3) is 120.",
+        " To find the remainder when 7654 is divided by 37, we can use the modulus operat",
+        " To find the sum of the first 25 terms of an arithmetic sequence with the first ",
+        " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{le"
+      ]
+    },
+    {
+      "scale": 0.5,
+      "correct": 2,
+      "texts": [
+        " To calculate \\(47 + 86\\), we can use the standard addition method. Here are the",
+        " The area of a rectangle is given by the formula:\n\nArea = length × width\n\nIn thi",
+        " To find the remainder when 100 is divided by 7, we can use the division algorit",
+        " To calculate \\(15 \\times 8\\), we can use the standard multiplication method. He",
+        " To find the sum of the first 5 terms of an arithmetic sequence with the first t",
+        " To calculate \\(387 \\times 29\\), we can use the standard multiplication algorith",
+        " The value of C(10, 3) is 120.",
+        " To find the remainder when 7654 is divided by 37, we can use the modulus operat",
+        " To find the sum of the first 25 terms of an arithmetic sequence with the first ",
+        " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{le"
+      ]
+    },
+    {
+      "scale": 1.0,
+      "correct": 2,
+      "texts": [
+        " To calculate \\(47 + 86\\), we can use the standard addition method. Here are the",
+        " The area of a rectangle is given by the formula:\n\nArea = length × width\n\nIn thi",
+        " To find the remainder when 100 is divided by 7, we can use the division algorit",
+        " To calculate \\(15 \\times 8\\), we can use the standard multiplication method. He",
+        " To find the sum of the first 5 terms of an arithmetic sequence with the first t",
+        " To calculate \\(387 \\times 29\\), we can use the standard multiplication algorith",
+        " The value of C(10, 3) is 120.",
+        " To find the remainder when 7654 is divided by 37, we can use the modulus operat",
+        " To find the sum of the first 25 terms of an arithmetic sequence with the first ",
+        " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{le"
+      ]
+    },
+    {
+      "scale": 1.5,
+      "correct": 2,
+      "texts": [
+        " To calculate \\(47 + 86\\), we can break it down into simpler steps. Here's the s",
+        " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{le",
+        " To find the remainder when 100 is divided by 7, we can use the division algorit",
+        " To calculate \\(15 \\times 8\\), we can use the standard multiplication method. He",
+        " To find the sum of the first 5 terms of an arithmetic sequence with the first t",
+        " To calculate \\(387 \\times 29\\), we can use the standard multiplication algorith",
+        " To find the value of \\( C(10, 3) \\), we need to calculate the binomial coeffici",
+        " To find the remainder when 7654 is divided by 37, we can use the modulus operat",
+        " To find the sum of the first 25 terms of an arithmetic sequence with the first ",
+        " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{le"
+      ]
+    },
+    {
+      "scale": 2.0,
+      "correct": 2,
+      "texts": [
+        " To calculate \\(47 + 86\\), we can break it down into simpler steps. Here's the s",
+        " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{le",
+        " To find the remainder when 100 is divided by 7, we can use the division algorit",
+        " To calculate \\(15 \\times 8\\), we can use the distributive property of multiplic",
+        " To find the sum of the first 5 terms of an arithmetic sequence with the first t",
+        " To calculate \\(387 \\times 29\\), we can use the standard multiplication algorith",
+        " To find the value of \\( C(10, 3) \\), we need to calculate the binomial coeffici",
+        " To find the remainder when 7654 is divided by 37, we can use the modulus operat",
+        " To find the sum of the first 25 terms of an arithmetic sequence with the first ",
+        " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{le"
+      ]
+    },
+    {
+      "scale": 3.0,
+      "correct": 4,
+      "texts": [
+        " To calculate \\(47 + 86\\), we can follow these steps:\n\n1. Add the units digits: ",
+        " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{le",
+        " To find the remainder when 100 is divided by 7, we can use the division algorit",
+        " To calculate \\(15 \\times 8\\), we can use the distributive property of multiplic",
+        " Answer Choices: (A) 30 (B) 35 (C) 40 (D) 45\nThe sum of the first n terms of an ",
+        " To calculate \\(387 \\times 29\\), we can use the distributive property of multipl",
+        " To find the value of \\( C(10, 3) \\), we need to calculate the binomial coeffici",
+        " To find the remainder when 7654 is divided by 37, we can use the modulus operat",
+        " To find the sum of the first 25 terms of an arithmetic sequence, we can use the",
+        " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{le"
+      ]
+    },
+    {
+      "scale": -1.0,
+      "correct": 2,
+      "random": true
+    },
+    {
+      "scale": 0.0,
+      "correct": 2,
+      "random": true
+    }
+  ],
+  "zh_sweeps": [
+    {
+      "scale": -2.0,
+      "correct": 6
+    },
+    {
+      "scale": -1.5,
+      "correct": 6
+    },
+    {
+      "scale": -1.0,
+      "correct": 7
+    },
+    {
+      "scale": -0.5,
+      "correct": 6
+    },
+    {
+      "scale": 0.0,
+      "correct": 5
+    },
+    {
+      "scale": 0.5,
+      "correct": 5
+    },
+    {
+      "scale": 1.0,
+      "correct": 5
+    },
+    {
+      "scale": 1.5,
+      "correct": 6
+    },
+    {
+      "scale": 2.0,
+      "correct": 5
+    },
+    {
+      "scale": 3.0,
+      "correct": 4
+    }
+  ]
+}

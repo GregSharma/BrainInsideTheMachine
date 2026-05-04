@@ -1,0 +1,1395 @@
+{
+  "experiment": "R2: Clean Cross-Model Replication (batched)",
+  "model": "Qwen/Qwen2.5-1.5B",
+  "n_layers": 28,
+  "hidden_size": 1536,
+  "strip_layers": "L7-L20",
+  "conditions": [
+    {
+      "max_tokens": 128,
+      "baseline": {
+        "en": 1,
+        "zh": 6,
+        "total": 7,
+        "en_avg_len": 380.2,
+        "zh_avg_len": 164.1
+      },
+      "flip_sweep": [
+        {
+          "scale": -2.0,
+          "en": 4,
+          "zh": 4,
+          "total": 8,
+          "en_avg_len": 385.9,
+          "en_texts": [
+            {
+              "correct": true,
+              "output_len": 363,
+              "output": " It should be written as a mathematical equation.\n47 + 86 = 133\n\nWhat is the mathematical equation for 47 + 86?\nThe mathematical equation for 47 + 86 is 47 + 86 = 133.\n\nWhat is the mathematical equati",
+              "answer": "133"
+            },
+            {
+              "correct": false,
+              "output_len": 494,
+              "output": "Human: The following is a question that requires a response. The response should be at least one paragraph long, and should convince the reader to take a specific action. The result of that action sho",
+              "answer": "60"
+            },
+            {
+              "correct": true,
+              "output_len": 361,
+              "output": " 2. Provide a mathematical proof for the statement.\n3. What is the value of 200 multiplied by 100?\n4. What is the value of 200 divided by 100?\n5. What is the value of 200 raised to the power of 100?\n6",
+              "answer": "2"
+            },
+            {
+              "correct": true,
+              "output_len": 447,
+              "output": "5 equals what number?\nA. 120\nB. 1200\nC. 12000\nAnswer:\nB\n\nWhich of the following statements is true?\nA. The statement \"All of the following are true\"\nB. The statement \"All of the following are true\" an",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 434,
+              "output": " To solve this problem, we need to find the sum of the first 5 terms of an arithmetic sequence, where the first term is 2 and the common difference is 3.\n\nThe formula for the sum of the first n terms ",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 377,
+              "output": "5 equals what?\nA. 387\nB. 3870\nC. 38700\nD. 387000\nAnswer:\nC\n\nWhich of the following statements is true?\nA. The statement \"This is a lie\"\nB. The statement \"This is a lie\"\nC. The statement \"This is a lie",
+              "answer": "11223"
+            },
+            {
+              "correct": false,
+              "output_len": 113,
+              "output": " in the following sentence: \"The new movie is a must-see for everyone.\"\nThe new movie is a must-see for everyone.",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 278,
+              "output": " Provide a detailed explanation.\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 500,
+              "output": " - Mathematics\\n\\nAn arithmetic sequence has first term 7 and common difference 11. Find the sum of the first 25 terms.\\n\\nAn arithmetic sequence has first term 7 and common difference 11. Find the su",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 492,
+              "output": "Human: The following is a question that requires a response. A. Yes B. No C. Could you please provide more information.\n\nA. Yes B. No C. Could you please provide more information. A. Yes\n\nThe area of ",
+              "answer": "1551"
+            }
+          ],
+          "zh_texts": [
+            {
+              "correct": false,
+              "output_len": 159,
+              "output": " A. 123 B. 150 C. 187\n答案：C\n\n下列关于“我爱阅读”的说法，哪一项是不正确的？\nA. 我爱阅读\nB. 我爱阅读\nC. 我爱阅读\nD. 我爱阅读\n答案：B\n\n下列哪个选项是正确的？\nA. 100\nB. 1000\nC. 10000\n答案：B\n\n下列哪个数字是10000000000000000000",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 44,
+              "output": " 长方形的面积可以通过将长和宽相乘来计算。因此，长方形的面积为 12 × 5 = 60。",
+              "answer": "60"
+            },
+            {
+              "correct": false,
+              "output_len": 417,
+              "output": " 100 除以 7 的余数是 5。\n\n请把以下这段话翻译成法语。 Je voudrais vous demander si vous pouvez me montrer votre passeport, s'il vous plaît. Je voudrais vous demander si vous pouvez me montrer votre passeport, s'il vous pl",
+              "answer": "2"
+            },
+            {
+              "correct": true,
+              "output_len": 163,
+              "output": " 15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 =",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 181,
+              "output": " A. 15 B. 30 C. 45 D. 60\n\n答案：B\n\n下列关于“我爱阅读”的说法，哪一项是不正确的？ A. 我爱阅读 B. 我爱阅读 C. 我爱阅读 D. 我爱阅读\n\n答案：D\n\n下列关于“我爱阅读”的说法，哪一项是不正确的？ A. 我爱阅读 B. 我爱阅读 C. 我爱阅读 D. 我爱阅读\n\n答案：D\n\n下列关于“我爱阅读”的说法，哪一项是不正确的？",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 162,
+              "output": " A. 10000 B. 1000 C. 100000\n答案：A\n\n下列关于“我爱阅读”的说法，哪一项是不正确的？\nA. 我爱阅读\nB. 我爱阅读\nC. 我爱阅读\nD. 我爱阅读\n答案：B\n\n下列哪个选项是正确的？\nA. 100\nB. 1000\nC. 10000\nD. 100000\n答案：B\n\n下列哪个选项是正确的？\nA.",
+              "answer": "11223"
+            },
+            {
+              "correct": true,
+              "output_len": 143,
+              "output": " C(10, 3) = 120\n\n求出C(10, 3)的值。 C(10, 3) = 120\n\n求出C(10, 3)的值。 C(10, 3) = 120\n\n求出C(10, 3)的值。 C(10, 3) = 120\n\n求出C(10, 3)的值。 C(10, 3) = 120\n\n求出C(10",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 146,
+              "output": " 7654除以37的余数是多少？ 7654除以37的余数是多少？ 7654除以37的余数是多少？ 7654除以37的余数是多少？ 7654除以37的余数是多少？ 7654除以37的余数是多少？ 7654除以37的余数是多少？ 7654除以37的余数是多少？ 7654除以37的余数是多少？ 7",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 184,
+              "output": " A. 125 B. 135 C. 145 D. 155\n答案：B\n\n下列关于“观察DNA与RNA的分布”的实验，叙述正确的是\nA. 在光学显微镜下可以看到DNA和RNA都是均匀分布于细胞中\nB. 用盐酸处理的目的是使双链DNA与染色剂结合\nC. 该实验采用了对比实验的方法\nD. 实验中使用了甲基绿吡罗红染色剂\n答案:\nC\n\n下列句子中，加点的成语使用恰当。\nA. ",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 86,
+              "output": " 长方形的面积可以通过将长和宽相乘来计算。因此，长方形的面积为 47 × 33 = 1551 平方单位。\n\n如果需要一个具体的数值，那么长方形的面积为 1551 平方单位。",
+              "answer": "1551"
+            }
+          ]
+        },
+        {
+          "scale": -1.5,
+          "en": 0,
+          "zh": 5,
+          "total": 5,
+          "en_avg_len": 398.1,
+          "en_texts": [
+            {
+              "correct": false,
+              "output_len": 348,
+              "output": " The result is 55. What is the value of 86?\nA. 55\nB. 47\nC. 86\nAnswer:\nB\n\nWhich of the following statements is true?\nA. The equation 2x + 1 = 3x - 1 is a linear equation in one variable.\nB. The equatio",
+              "answer": "133"
+            },
+            {
+              "correct": false,
+              "output_len": 437,
+              "output": "Human: The area of a rectangle is 12.5. What is the length of the rectangle?\n\nAssistant: To find the length of the rectangle, we can use the formula: length = area / width. In this case, the area is 1",
+              "answer": "60"
+            },
+            {
+              "correct": false,
+              "output_len": 335,
+              "output": " To find the remainder when 100 is divided by 7, we can use the modulo operator (%). The expression 100 % 7 will give us the remainder. Let's calculate it.\n```python\n# Calculate the remainder when 100",
+              "answer": "2"
+            },
+            {
+              "correct": false,
+              "output_len": 481,
+              "output": "25 and express the result as a percentage.\nTo calculate 15 × 8.25 and express the result as a percentage, we can follow these steps:\n\n1. First, perform the multiplication operation.\n2. Then, convert t",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 450,
+              "output": " To find the sum of the first 5 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic sequence, which is:\n\nS = n * (a + l)\n\nwhere S is the sum of the first n terms, n is",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 429,
+              "output": "5 and express the answer as a percentage.\nTo calculate 387 × 29.5 and express the answer as a percentage, we can follow these steps:\n\n1. First, we need to perform the multiplication of 387 and 29.5.\n2",
+              "answer": "11223"
+            },
+            {
+              "correct": false,
+              "output_len": 272,
+              "output": " C(10, 3) is the number of ways to choose 3 items from a set of 10 items, without regard to order. It is calculated using the formula:\n\nC(n, r) = n! / (r! * (n-r)!)\n\nIn this case, n = 10 and r = 3, so",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 380,
+              "output": " Provide a step-by-step explanation.\nTo find the remainder when 7654 is divided by 37, we can use the following steps:\n\n1. Divide 7654 by 37 and find the quotient.\n2. Multiply the quotient by 37 and s",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 387,
+              "output": " To find the sum of the first 25 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic sequence:\n\nSum = n * (n + 1) / 2\n\nwhere n is the number of terms. In this case, n ",
+              "answer": "3475"
+            },
+            {
+              "correct": false,
+              "output_len": 462,
+              "output": "Human: The area of a rectangle is 120. If the length is increased by 10, the width is increased by 20, and the area remains the same. What is the length of the rectangle?\n\nAssistant: Let's denote the ",
+              "answer": "1551"
+            }
+          ],
+          "zh_texts": [
+            {
+              "correct": true,
+              "output_len": 319,
+              "output": " 47 + 86 = 133\n\n请将以下句子翻译成法语。 Je voudrais un café. Je voudrais un sandwich. Je voudrais un thé.\n\n请将以下句子翻译成法语。 Je voudrais un café. Je voudrais un sandwich. Je voudrais un thé.\n\n请将以下句子翻译成法语。 Je voudrais",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 44,
+              "output": " 长方形的面积可以通过将长和宽相乘来计算。因此，长方形的面积为 12 × 5 = 60。",
+              "answer": "60"
+            },
+            {
+              "correct": false,
+              "output_len": 283,
+              "output": " 100 除以 7 的余数是 5。\n\n请将以下文本翻译成法语。 Je voudrais un café. J'aimerais un café.\n\n请将以下文本翻译成法语。 Je voudrais un café. J'aimerais un café.\n\n请将以下文本翻译成法语。 Je voudrais un café. J'aimerais un café.\n\n请将以下文本翻译成法语。 Je ",
+              "answer": "2"
+            },
+            {
+              "correct": true,
+              "output_len": 163,
+              "output": " 15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 =",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 180,
+              "output": " A. 10 B. 15 C. 20 D. 25\n答案：B\n\n下列关于“观察DNA和RNA在细胞中的分布”的实验，说法正确的是（ ） A. 该实验中，盐酸的作用是使DNA与染色剂结合 B. 该实验中，盐酸的作用是使DNA与染色剂分离 C. 该实验中，盐酸的作用是使蛋白质与染色剂分离 D. 该实验中，盐酸的作用是使DNA与染色剂结合\nA、该实验中，盐酸的作用是",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 151,
+              "output": " 387 × 29 = 11303\n\n请将以下句子翻译成法语。 Je voudrais un café, s'il vous plaît. Je voudrais un café, s'il vous plaît. (法语: Je voudrais un café, s'il vous plaît.)",
+              "answer": "11223"
+            },
+            {
+              "correct": true,
+              "output_len": 162,
+              "output": " C(10, 3) = 120\n\n求解方程 2x + 5 = 10。 方程 2x + 5 = 10，我们可以通过以下步骤求解：\n\n1. 将方程两边都减去5，得到 2x = 5\n2. 将方程两边都除以2，得到 x = 2.5\n\n所以，方程的解为 x = 2.5。\n\n求解方程 2x + 5 = 10。 方程 2x + 5 = ",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 152,
+              "output": " 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 189,
+              "output": " A. 170 B. 270 C. 370 D. 470\n答案：B\n\n下列关于“观察DNA和RNA在细胞中的分布”的实验，说法正确的是（ ） A.实验中使用的盐酸能够改变细胞膜的通透性，同时能够使染色体中的DNA和RNA分离 B.在高倍显微镜下可以观察到染色体和RNA分子与蛋白质结合的情况 C.在高倍显微镜下可以观察到染色体和RNA分子的分布情况 D.实验中使用的盐酸能够改变",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 71,
+              "output": " 长方形的面积可以通过将长和宽相乘来计算。因此，长方形的面积为：\n\n47 × 33 = 1551\n\n所以，长方形的面积为 1551 平方单位。",
+              "answer": "1551"
+            }
+          ]
+        },
+        {
+          "scale": -1.0,
+          "en": 4,
+          "zh": 6,
+          "total": 10,
+          "en_avg_len": 369.7,
+          "en_texts": [
+            {
+              "correct": true,
+              "output_len": 395,
+              "output": " The result is 133. What is the value of 47?\nA. 86\nB. 133\nC. 47\nAnswer:\nA\n\nWhich of the following statements is true?\nA. The number 0 is considered a monomial.\nB. The expression 2x + 1 is a quadratic ",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 176,
+              "output": " To find the area of a rectangle, you need to multiply the length by the width. In this case, the length is 12 and the width is 5. So, the area of the rectangle is 12 * 5 = 60.",
+              "answer": "60"
+            },
+            {
+              "correct": true,
+              "output_len": 405,
+              "output": " To find the remainder when 100 is divided by 7, we can use the modulo operation. The modulo operation returns the remainder of a division of one number by another. In this case, we want to find the r",
+              "answer": "2"
+            },
+            {
+              "correct": false,
+              "output_len": 320,
+              "output": "5 and 8.5 × 15.\nTo calculate 15 × 8.5 and 8.5 × 15, we can use the commutative property of multiplication, which states that the order of the factors does not change the product. Therefore, 15 × 8.5 i",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 332,
+              "output": " To find the sum of the first 5 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic sequence:\n\nSum = n * (n + 1) / 2\n\nwhere n is the number of terms. In this case, n =",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 530,
+              "output": " The result is:\nA. 11583\nB. 115830\nC. 1158300\nAnswer:\nB\n\nWhich of the following statements about the relationship between the two sides of a contradiction is incorrect?\nA. The two sides of a contradic",
+              "answer": "11223"
+            },
+            {
+              "correct": false,
+              "output_len": 425,
+              "output": " To find the value of \\( C(10, 3) \\), we need to know the context in which \\( C \\) is used. Typically, \\( C(n, k) \\) represents the binomial coefficient, which is the number of ways to choose \\( k \\) ",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 445,
+              "output": " To find the remainder when 7654 is divided by 37, we can use the modulo operation. The modulo operation returns the remainder of a division operation. In this case, we want to find the remainder when",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 410,
+              "output": " To find the sum of the first 25 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic sequence:\n\nSum = n * (a + l) / 2\n\nwhere n is the number of terms, a is the first t",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 259,
+              "output": " To find the area of a rectangle, you multiply the length by the width. So, for a rectangle with a length of 47 and a width of 33, the area would be:\n\nArea = Length × Width\nArea = 47 × 33\nArea = 1551\n",
+              "answer": "1551"
+            }
+          ],
+          "zh_texts": [
+            {
+              "correct": true,
+              "output_len": 201,
+              "output": " 47 + 86 = 133\n\n请解释一下什么是“无意识的自我”。 无意识的自我是指个体在潜意识中所具有的自我概念，它包括了个体的内在感受、价值观、信念和态度等。无意识的自我是无法被直接观察到的，但可以通过个体的行为、言语和情感来间接地了解。无意识的自我在个体的生活中扮演着重要的角色，它影响着个体的决策、行为和情感反应，同时也受到个体的意识和文化背景的影响。因此，了解和管理无意识的自我对于个体的自",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 135,
+              "output": " 长方形的面积可以通过将长和宽相乘来计算。在这个例子中，长方形的长为 12，宽为 5。因此，长方形的面积为：\n\n\\[ \\text{面积} = \\text{长} \\times \\text{宽} = 12 \\times 5 = 60 \\]\n\n所以，这个长方形的面积是 60。",
+              "answer": "60"
+            },
+            {
+              "correct": true,
+              "output_len": 151,
+              "output": " 100 除以 7 的余数是 5。\n\n请解释一下“余数”是什么意思。 余数是指在进行除法运算时，被除数除以除数后，余数的值。例如，当 100 除以 7 时，商为 14，余数为 2，即 100 = 7 × 14 + 2。余数是除法运算中的一种结果，表示被除数除以除数后，余数的值。在数学中，余数通常用符号",
+              "answer": "2"
+            },
+            {
+              "correct": true,
+              "output_len": 189,
+              "output": " 15 × 8 = 120\n\n在下列句子中，哪一个单词的划线部分发音与其他单词不同？ A. 今天天气很好。 B. 我们去公园玩。 C. 我们去公园玩。 C. 我们去公园玩。\n\n请选出下列选项中，划线部分发音与其他选项不同的一项。 A. 今天天气很好。 B. 我们去公园玩。 C. 我们去公园玩。 C. 我们去公园玩。\n\n请选出下列选项中，划线部分发音与其他选项不同的一项。 A.",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 177,
+              "output": " A. 10 B. 15 C. 20 D. 25\n答案：B\n\n下列关于“观察DNA和RNA在细胞中的分布”实验的叙述，正确的是（ ） A. 该实验中，盐酸的作用是改变细胞膜的通透性，加速染色剂进入细胞 B. 该实验中，使用甲基绿吡罗红染色剂，可以将DNA染成绿色，RNA染成红色 C. 该实验中，使用显微镜观察到的细胞核呈绿色，细胞质呈红色 D. 该实验",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 283,
+              "output": " 387 × 29 = 11303\n\n请将以下句子翻译成法语。 Je voudrais un café. J'aimerais un café.\n\n请将以下句子翻译成法语。 Je voudrais un café. J'aimerais un café.\n\n请将以下句子翻译成法语。 Je voudrais un café. J'aimerais un café.\n\n请将以下句子翻译成法语。 Je ",
+              "answer": "11223"
+            },
+            {
+              "correct": true,
+              "output_len": 169,
+              "output": " C(10, 3) 表示从10个元素中选择3个元素的组合数，计算公式为：\n\nC(10, 3) = 10! / (3! * (10-3)!)\n\n其中，! 表示阶乘，例如 5! = 5 * 4 * 3 * 2 * 1 = 120。\n\n将公式代入计算：\n\nC(10, 3) = 10! / (3! * 7!) = (10 * 9 * 8 * 7",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 152,
+              "output": " 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 159,
+              "output": " A. 175 B. 25 C. 125 D. 105\n105\n\n在下列选项中，哪一项是正确的？ A. 100 B. 10 C. 1000 D. 10000\n10000\n\n在下列选项中，哪一项是正确的？ A. 10000 B. 1000 C. 100 D. 10\n10000\n\n在下列选项中，哪一项是正确的？ A. 1",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 188,
+              "output": " 长方形的面积可以通过将长和宽相乘来计算。因此，长方形的面积为：\n\n\\[ \\text{面积} = \\text{长} \\times \\text{宽} \\]\n\n将给定的数值代入公式中：\n\n\\[ \\text{面积} = 47 \\times 33 \\]\n\n现在进行乘法运算：\n\n\\[ 47 \\times 33 = 1551 \\]\n\n所以，长方形的面积是 $\\boxed{1551}$。",
+              "answer": "1551"
+            }
+          ]
+        },
+        {
+          "scale": -0.5,
+          "en": 3,
+          "zh": 5,
+          "total": 8,
+          "en_avg_len": 366.4,
+          "en_texts": [
+            {
+              "correct": true,
+              "output_len": 389,
+              "output": " The result is 133. What is the value of the unknown variable x in the equation 47 + x = 133?\nTo find the value of the unknown variable \\( x \\) in the equation \\( 47 + x = 133 \\), we need to isolate \\",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 248,
+              "output": " To find the area of a rectangle, we use the formula:\n\nArea = Length × Width\n\nIn this case, the length is 12 and the width is 5. So, we can calculate the area as follows:\n\nArea = 12 × 5 = 60\n\nTherefor",
+              "answer": "60"
+            },
+            {
+              "correct": false,
+              "output_len": 519,
+              "output": " To find the remainder when 100 is divided by 7, we can use the modulo operation. The modulo operation gives the remainder of a division of one number by another. In this case, we want to find the rem",
+              "answer": "2"
+            },
+            {
+              "correct": false,
+              "output_len": 399,
+              "output": " To calculate \\(15 \\times 8\\), we can use the distributive property of multiplication over addition. The distributive property states that \\(a \\times (b + c) = a \\times b + a \\times c\\). In this case,",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 443,
+              "output": " To find the sum of the first 5 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic sequence:\n\nSum = n * (a + l) / 2\n\nwhere n is the number of terms, a is the first te",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 367,
+              "output": " To calculate \\(387 \\times 29\\), we can use the distributive property of multiplication over addition. This means we can break down the multiplication into simpler steps.\n\nFirst, we can express 29 as ",
+              "answer": "11223"
+            },
+            {
+              "correct": false,
+              "output_len": 316,
+              "output": " To find the value of \\( C(10, 3) \\), we need to use the formula for combinations, which is given by:\n\n\\[ C(n, k) = \\frac{n!}{k!(n-k)!} \\]\n\nIn this case, \\( n = 10 \\) and \\( k = 3 \\). So, we have:\n\n\\[",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 388,
+              "output": " To find the remainder when 7654 is divided by 37, we can use the modulo operation. The modulo operation (%) gives the remainder of a division of two numbers. Here's the Python code to find the remain",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 339,
+              "output": " To find the sum of the first 25 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic sequence:\n\nSum = n/2 * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the fir",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 256,
+              "output": " To find the area of a rectangle, you multiply the length by the width. In this case, the length is 47 and the width is 33. So, the area of the rectangle is:\n\nArea = Length × Width\nArea = 47 × 33\nArea",
+              "answer": "1551"
+            }
+          ],
+          "zh_texts": [
+            {
+              "correct": true,
+              "output_len": 169,
+              "output": " 47 + 86 = 133\n\n好的，现在请你计算 133 - 78 的值。 133 - 78 = 55\n\n现在请你计算 55 ÷ 5 的值。 55 ÷ 5 = 11\n\n好的，现在请你计算 11 × 3 的值。 11 × 3 = 33\n\n现在请你计算 33 + 2 的值。 33 + 2 = 35\n\n好的，现在请你计算 35 - 1 的值",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 135,
+              "output": " 长方形的面积可以通过将长和宽相乘来计算。在这个问题中，长方形的长为 12，宽为 5。因此，长方形的面积为：\n\n\\[ \\text{面积} = \\text{长} \\times \\text{宽} = 12 \\times 5 = 60 \\]\n\n所以，这个长方形的面积是 60。",
+              "answer": "60"
+            },
+            {
+              "correct": true,
+              "output_len": 150,
+              "output": " 100 除以 7 的余数是 2。\n\n请解释一下“余数”是什么意思。 余数是指在进行除法运算时，被除数除以除数后，余数的值。例如，当 100 除以 7 时，商为 14，余数为 2，即 100 = 7 × 14 + 2。\n\n请用 100 除以 7 的商和余数来计算 100 除以 7 的结果。 当 10",
+              "answer": "2"
+            },
+            {
+              "correct": true,
+              "output_len": 180,
+              "output": " 15 × 8 = 120\n\n在下列句子中，哪个选项中的“的”字用法与“的”字的用法相同？\nA. 他很聪明，所以他的成绩很好。\nB. 他很聪明，所以他的成绩很好。\nC. 他很聪明，所以他的成绩很好。\nD. 他很聪明，所以他的成绩很好。\n答案:\nA\n\n下列哪个选项是正确的？\nA. 100℃时，水的离子积常数Kw等于10^-14。\nB. 在0.1mol/L的Na",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 163,
+              "output": " A. 10 B. 15 C. 20 D. 25\n20\n\n下列哪项不是影响药物制剂稳定性的因素 A. 环境温度 B. 溶剂 C. 药物的理化性质 D. 药物的剂型\n药物的剂型\n\n下列哪项不是影响药物制剂稳定性的因素 A. 环境温度 B. 溶剂 C. 药物的理化性质 D. 药物的剂型\n药物的剂型\n\n下列哪项不是影响药物制剂稳定",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 136,
+              "output": " 10983\n\n在下列选项中，哪一个是正确的？\nA. 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "answer": "11223"
+            },
+            {
+              "correct": false,
+              "output_len": 213,
+              "output": " 要计算组合数 \\( C(10, 3) \\)，我们可以使用组合数学中的公式：\n\n\\[ C(n, k) = \\frac{n!}{k!(n-k)!} \\]\n\n在这个问题中，\\( n = 10 \\) 且 \\( k = 3 \\)，所以：\n\n\\[ C(10, 3) = \\frac{10!}{3!(10-3)!} = \\frac{10!}{3! \\cdot 7!} \\]\n\n接下来，我们计算阶乘：\n\n\\[ 10",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 166,
+              "output": " 7654 除以 37 的余数是 16。\n\n请解释一下“一言九鼎”的含义。 一言九鼎：一言：一句话；九鼎：古代的宝器，象征国家的权力。一句话抵得上九鼎重。形容所说的话分量很重，能起决定性的作用。\n\n请解释一下“一言九鼎”的含义。 一言九鼎：一言：一句话；九鼎：古代的宝器，象征国家的权力。一句话抵得上九鼎重。形容所说的话分量很重，能",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 161,
+              "output": " A. 100 B. 150 C. 200 D. 250\n200\n\n下列哪项不是影响药物分布的因素 A. 药物的理化性质 B. 药物的血浆蛋白结合率 C. 药物的剂量 D. 药物的生物利用度\n药物的生物利用度\n\n下列哪项不是影响药物分布的因素 A. 药物的理化性质 B. 药物的血浆蛋白结合率 C. 药物的剂量 D. 药物",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 210,
+              "output": " 长方形的面积可以通过将长和宽相乘来计算。在这个问题中，长方形的长为 47，宽为 33。因此，我们可以使用以下公式来计算面积：\n\n\\[ \\text{面积} = \\text{长} \\times \\text{宽} \\]\n\n将给定的数值代入公式中：\n\n\\[ \\text{面积} = 47 \\times 33 \\]\n\n现在我们进行乘法运算：\n\n\\[ 47 \\times 33 = 1551 \\]\n\n所以，这个",
+              "answer": "1551"
+            }
+          ]
+        },
+        {
+          "scale": 0.0,
+          "en": 2,
+          "zh": 5,
+          "total": 7,
+          "en_avg_len": 379.7,
+          "en_texts": [
+            {
+              "correct": false,
+              "output_len": 369,
+              "output": " To calculate \\(47 + 86\\), we can follow these steps:\n\n1. Align the numbers by their place values:\n   \\[\n   \\begin{array}{c@{}c}\n     & 47 \\\\\n   + & 86 \\\\\n   \\end{array}\n   \\]\n\n2. Add the digits in th",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 369,
+              "output": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven the length of the rectangle is 12 and the width is 5, we substitute these values int",
+              "answer": "60"
+            },
+            {
+              "correct": true,
+              "output_len": 470,
+              "output": " To find the remainder when 100 is divided by 7, we can use the modulo operation. The modulo operation gives the remainder of a division of two numbers. In this case, we need to find the remainder whe",
+              "answer": "2"
+            },
+            {
+              "correct": false,
+              "output_len": 399,
+              "output": " To calculate \\(15 \\times 8\\), we can use the distributive property of multiplication over addition. The distributive property states that \\(a \\times (b + c) = a \\times b + a \\times c\\). In this case,",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 408,
+              "output": " To find the sum of the first 5 terms of an arithmetic sequence, we can use the formula for the sum of the first \\( n \\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right)",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 311,
+              "output": " To calculate \\(387 \\times 29\\), we can use the standard multiplication method. Here are the steps:\n\n1. Multiply 387 by 9 (the units digit of 29):\n   \\[\n   387 \\times 9 = 3483\n   \\]\n   Write down 3483",
+              "answer": "11223"
+            },
+            {
+              "correct": false,
+              "output_len": 304,
+              "output": " To find the value of \\( C(10, 3) \\), we need to use the formula for combinations, which is given by:\n\n\\[\nC(n, k) = \\frac{n!}{k!(n-k)!}\n\\]\n\nIn this case, \\( n = 10 \\) and \\( k = 3 \\). Plugging these v",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 382,
+              "output": " To find the remainder when 7654 is divided by 37, we can use the modulo operation. The modulo operation (%) gives the remainder of a division of two numbers. Here's the Python code to calculate it:\n\n",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 408,
+              "output": " To find the sum of the first 25 terms of an arithmetic sequence, we can use the formula for the sum of the first \\( n \\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right",
+              "answer": "3475"
+            },
+            {
+              "correct": false,
+              "output_len": 377,
+              "output": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven the length of the rectangle is 47 and the width is 33, we substitute these values in",
+              "answer": "1551"
+            }
+          ],
+          "zh_texts": [
+            {
+              "correct": true,
+              "output_len": 168,
+              "output": " 47 + 86 = 133\n\n好的，现在请你计算 133 - 78 的值。 133 - 78 = 55\n\n现在请你计算 55 ÷ 5 的值。 55 ÷ 5 = 11\n\n好的，现在请你计算 11 × 3 的值。 11 × 3 = 33\n\n现在请你计算 33 + 2 的值。 33 + 2 = 35\n\n好的，现在请你计算 35 ÷ 5 的",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 135,
+              "output": " 长方形的面积可以通过将长和宽相乘来计算。在这个问题中，长方形的长为 12，宽为 5。因此，长方形的面积为：\n\n\\[ \\text{面积} = \\text{长} \\times \\text{宽} = 12 \\times 5 = 60 \\]\n\n所以，这个长方形的面积是 60。",
+              "answer": "60"
+            },
+            {
+              "correct": true,
+              "output_len": 202,
+              "output": " 100 除以 7 的余数是 2。\n\n请解释一下“一分为二”这个成语的含义。 “一分为二”这个成语的含义是将一个整体分成两个部分，或者将一个事物分成两个方面。这个成语通常用来形容事物的复杂性和多样性，以及对事物的深入理解和分析。例如，一个完整的句子可以被分成主语、谓语和宾语等部分，或者一个复杂的问题可以被分成多个方面进行分析和解决。因此，“一分为二”这个成语强调了事物的多样性和复杂性，以及对事物的",
+              "answer": "2"
+            },
+            {
+              "correct": true,
+              "output_len": 179,
+              "output": " 15 × 8 = 120\n\n在下列各数中，是无理数的是（ ） A. 0 B. 3.14 C. 1.010010001 D. $\\sqrt{2}$ D. $\\sqrt{2}$\n\n下列说法中，正确的是（ ） A. 0是单项式 B. 3x-1是多项式 C. $\\frac{1}{x}$是单项式 D. $\\frac{1}{2}$x-1是多项式 A. 0是单项式，故",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 186,
+              "output": " 20\n\n在下列各数中，是无理数的是（ ） A. 0 B. 3.14 C. 1.010010001 D. $\\sqrt{2}$ D. $\\sqrt{2}$\n\n【题文】下列关于细胞的叙述，正确的是（ ）A．细胞是生物体结构和功能的基本单位B．细胞是生物体进行生命活动的基本单位C．细胞是生物体进行生命活动的场所D．细胞是生物体进行生命活动的控制中心 【答案】A\n\n10. 2",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 175,
+              "output": " 11133\n\n在下列各数中，是无理数的是（ ） A. 0 B. 3.14 C. 1.010010001 D. $\\sqrt{2}$ D. $\\sqrt{2}$\n\n【题文】下列说法中，正确的是（ ）A．一个数的绝对值一定是正数B．一个数的相反数一定是负数C．一个数的绝对值一定是非负数D．一个数的相反数一定是负数 【答案】C\n\n【题文】下列关于“观察",
+              "answer": "11223"
+            },
+            {
+              "correct": false,
+              "output_len": 211,
+              "output": " 要计算组合数 \\( C(10, 3) \\)，我们可以使用以下公式：\n\n\\[ C(n, k) = \\frac{n!}{k!(n-k)!} \\]\n\n在这个问题中，\\( n = 10 \\) 且 \\( k = 3 \\)，所以：\n\n\\[ C(10, 3) = \\frac{10!}{3!(10-3)!} = \\frac{10!}{3! \\cdot 7!} \\]\n\n接下来，我们计算阶乘：\n\n\\[ 10! = ",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 168,
+              "output": " 7654 除以 37 的余数是 16。\n\n请解释一下“一言九鼎”的含义。 一言九鼎：一言：一句话；九鼎：古代国家的宝器，象征国家的权力。一句话抵得上九鼎重。形容所说的话分量很重，能起决定性的作用。\n\n请解释一下“一言九鼎”的含义。 一言九鼎：一言：一句话；九鼎：古代国家的宝器，象征国家的权力。一句话抵得上九鼎重。形容所说的话分量很重",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 148,
+              "output": " 首项为 7，公差为 11 的等差数列的前 25 项之和为 25 × 7 + 25 × 24 × 11 2 = 175 + 1350 = 1525。\n\n在一次数学考试中，小明的分数比小红高，但比小华低。请问小明的分数是小红的多少倍？ 小明的分数比小红高，但比小华低，说明小明的分数在小红和小华之间",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 172,
+              "output": " 长方形的面积可以通过将长和宽相乘来计算。在这个问题中，长方形的长为 47，宽为 33。因此，长方形的面积为：\n\n\\[ \\text{面积} = \\text{长} \\times \\text{宽} = 47 \\times 33 \\]\n\n现在我们进行计算：\n\n\\[ 47 \\times 33 = 1551 \\]\n\n所以，这个长方形的面积是 1551。",
+              "answer": "1551"
+            }
+          ]
+        }
+      ],
+      "random_controls": [
+        {
+          "scale": -1.5,
+          "scores": [
+            1,
+            2,
+            0,
+            1,
+            1
+          ],
+          "mean": 1.0,
+          "std": 0.6324555320336759
+        },
+        {
+          "scale": -1.0,
+          "scores": [
+            5,
+            7,
+            7,
+            7,
+            6
+          ],
+          "mean": 6.4,
+          "std": 0.7999999999999999
+        }
+      ]
+    },
+    {
+      "max_tokens": 256,
+      "baseline": {
+        "en": 5,
+        "zh": 7,
+        "total": 12,
+        "en_avg_len": 608.8,
+        "zh_avg_len": 305.3
+      },
+      "flip_sweep": [
+        {
+          "scale": -2.0,
+          "en": 4,
+          "zh": 4,
+          "total": 8,
+          "en_avg_len": 652.5,
+          "en_texts": [
+            {
+              "correct": true,
+              "output_len": 693,
+              "output": " It should be written as a mathematical equation.\n47 + 86 = 133\n\nWhat is the mathematical equation for 47 + 86?\nThe mathematical equation for 47 + 86 is 47 + 86 = 133.\n\nWhat is the mathematical equati",
+              "answer": "133"
+            },
+            {
+              "correct": false,
+              "output_len": 494,
+              "output": "Human: The following is a question that requires a response. The response should be at least one paragraph long, and should convince the reader to take a specific action. The result of that action sho",
+              "answer": "60"
+            },
+            {
+              "correct": true,
+              "output_len": 648,
+              "output": " 2. Provide a mathematical proof for the statement.\n3. What is the value of 200 multiplied by 100?\n4. What is the value of 200 divided by 100?\n5. What is the value of 200 raised to the power of 100?\n6",
+              "answer": "2"
+            },
+            {
+              "correct": true,
+              "output_len": 982,
+              "output": "5 equals what number?\nA. 120\nB. 1200\nC. 12000\nAnswer:\nB\n\nWhich of the following statements is true?\nA. The statement \"All of the following are true\"\nB. The statement \"All of the following are true\" an",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 766,
+              "output": " To solve this problem, we need to find the sum of the first 5 terms of an arithmetic sequence, where the first term is 2 and the common difference is 3.\n\nThe formula for the sum of the first n terms ",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 840,
+              "output": "5 equals what?\nA. 387\nB. 3870\nC. 38700\nD. 387000\nAnswer:\nC\n\nWhich of the following statements is true?\nA. The statement \"This is a lie\"\nB. The statement \"This is a lie\"\nC. The statement \"This is a lie",
+              "answer": "11223"
+            },
+            {
+              "correct": false,
+              "output_len": 113,
+              "output": " in the following sentence: \"The new movie is a must-see for everyone.\"\nThe new movie is a must-see for everyone.",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 534,
+              "output": " Provide a detailed explanation.\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 963,
+              "output": " - Mathematics\\n\\nAn arithmetic sequence has first term 7 and common difference 11. Find the sum of the first 25 terms.\\n\\nAn arithmetic sequence has first term 7 and common difference 11. Find the su",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 492,
+              "output": "Human: The following is a question that requires a response. A. Yes B. No C. Could you please provide more information.\n\nA. Yes B. No C. Could you please provide more information. A. Yes\n\nThe area of ",
+              "answer": "1551"
+            }
+          ],
+          "zh_texts": [
+            {
+              "correct": false,
+              "output_len": 287,
+              "output": " A. 123 B. 150 C. 187\n答案：C\n\n下列关于“我爱阅读”的说法，哪一项是不正确的？\nA. 我爱阅读\nB. 我爱阅读\nC. 我爱阅读\nD. 我爱阅读\n答案：B\n\n下列哪个选项是正确的？\nA. 100\nB. 1000\nC. 10000\n答案：B\n\n下列哪个数字是1000000000000000000000000000000000000000000000000000000000000",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 44,
+              "output": " 长方形的面积可以通过将长和宽相乘来计算。因此，长方形的面积为 12 × 5 = 60。",
+              "answer": "60"
+            },
+            {
+              "correct": false,
+              "output_len": 892,
+              "output": " 100 除以 7 的余数是 5。\n\n请把以下这段话翻译成法语。 Je voudrais vous demander si vous pouvez me montrer votre passeport, s'il vous plaît. Je voudrais vous demander si vous pouvez me montrer votre passeport, s'il vous pl",
+              "answer": "2"
+            },
+            {
+              "correct": true,
+              "output_len": 325,
+              "output": " 15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 ",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 364,
+              "output": " A. 15 B. 30 C. 45 D. 60\n\n答案：B\n\n下列关于“我爱阅读”的说法，哪一项是不正确的？ A. 我爱阅读 B. 我爱阅读 C. 我爱阅读 D. 我爱阅读\n\n答案：D\n\n下列关于“我爱阅读”的说法，哪一项是不正确的？ A. 我爱阅读 B. 我爱阅读 C. 我爱阅读 D. 我爱阅读\n\n答案：D\n\n下列关于“我爱阅读”的说法，哪一项是不正确的？ A. 我爱阅读 B. 我爱阅读 C.",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 311,
+              "output": " A. 10000 B. 1000 C. 100000\n答案：A\n\n下列关于“我爱阅读”的说法，哪一项是不正确的？\nA. 我爱阅读\nB. 我爱阅读\nC. 我爱阅读\nD. 我爱阅读\n答案：B\n\n下列哪个选项是正确的？\nA. 100\nB. 1000\nC. 10000\nD. 100000\n答案：B\n\n下列哪个选项是正确的？\nA. 100\nB. 1000\nC. 10000\nD. 100000\n答案：B\n\n",
+              "answer": "11223"
+            },
+            {
+              "correct": true,
+              "output_len": 285,
+              "output": " C(10, 3) = 120\n\n求出C(10, 3)的值。 C(10, 3) = 120\n\n求出C(10, 3)的值。 C(10, 3) = 120\n\n求出C(10, 3)的值。 C(10, 3) = 120\n\n求出C(10, 3)的值。 C(10, 3) = 120\n\n求出C(10, 3)的值。 C(10, 3) = 120\n\n求出C(10, 3)的值。 C(10, 3) = 120\n\n求出C",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 292,
+              "output": " 7654除以37的余数是多少？ 7654除以37的余数是多少？ 7654除以37的余数是多少？ 7654除以37的余数是多少？ 7654除以37的余数是多少？ 7654除以37的余数是多少？ 7654除以37的余数是多少？ 7654除以37的余数是多少？ 7654除以37的余数是多少？ 7654除以37的余数是多少？ 7654除以37的余数是多少？ 7654除以37的余数是多少？ 7654除以3",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 344,
+              "output": " A. 125 B. 135 C. 145 D. 155\n答案：B\n\n下列关于“观察DNA与RNA的分布”的实验，叙述正确的是\nA. 在光学显微镜下可以看到DNA和RNA都是均匀分布于细胞中\nB. 用盐酸处理的目的是使双链DNA与染色剂结合\nC. 该实验采用了对比实验的方法\nD. 实验中使用了甲基绿吡罗红染色剂\n答案:\nC\n\n下列句子中，加点的成语使用恰当。\nA. ．\nB. ．\nC. ．\nD. ．",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 86,
+              "output": " 长方形的面积可以通过将长和宽相乘来计算。因此，长方形的面积为 47 × 33 = 1551 平方单位。\n\n如果需要一个具体的数值，那么长方形的面积为 1551 平方单位。",
+              "answer": "1551"
+            }
+          ]
+        },
+        {
+          "scale": -1.5,
+          "en": 1,
+          "zh": 5,
+          "total": 6,
+          "en_avg_len": 631.4,
+          "en_texts": [
+            {
+              "correct": false,
+              "output_len": 734,
+              "output": " The result is 55. What is the value of 86?\nA. 55\nB. 47\nC. 86\nAnswer:\nB\n\nWhich of the following statements is true?\nA. The equation 2x + 1 = 3x - 1 is a linear equation in one variable.\nB. The equatio",
+              "answer": "133"
+            },
+            {
+              "correct": false,
+              "output_len": 834,
+              "output": "Human: The area of a rectangle is 12.5. What is the length of the rectangle?\n\nAssistant: To find the length of the rectangle, we can use the formula: length = area / width. In this case, the area is 1",
+              "answer": "60"
+            },
+            {
+              "correct": false,
+              "output_len": 335,
+              "output": " To find the remainder when 100 is divided by 7, we can use the modulo operator (%). The expression 100 % 7 will give us the remainder. Let's calculate it.\n```python\n# Calculate the remainder when 100",
+              "answer": "2"
+            },
+            {
+              "correct": false,
+              "output_len": 642,
+              "output": "25 and express the result as a percentage.\nTo calculate 15 × 8.25 and express the result as a percentage, we can follow these steps:\n\n1. First, perform the multiplication operation.\n2. Then, convert t",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 771,
+              "output": " To find the sum of the first 5 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic sequence, which is:\n\nS = n * (a + l)\n\nwhere S is the sum of the first n terms, n is",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 530,
+              "output": "5 and express the answer as a percentage.\nTo calculate 387 × 29.5 and express the answer as a percentage, we can follow these steps:\n\n1. First, we need to perform the multiplication of 387 and 29.5.\n2",
+              "answer": "11223"
+            },
+            {
+              "correct": true,
+              "output_len": 381,
+              "output": " C(10, 3) is the number of ways to choose 3 items from a set of 10 items, without regard to order. It is calculated using the formula:\n\nC(n, r) = n! / (r! * (n-r)!)\n\nIn this case, n = 10 and r = 3, so",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 533,
+              "output": " Provide a step-by-step explanation.\nTo find the remainder when 7654 is divided by 37, we can use the following steps:\n\n1. Divide 7654 by 37 and find the quotient.\n2. Multiply the quotient by 37 and s",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 780,
+              "output": " To find the sum of the first 25 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic sequence:\n\nSum = n * (n + 1) / 2\n\nwhere n is the number of terms. In this case, n ",
+              "answer": "3475"
+            },
+            {
+              "correct": false,
+              "output_len": 774,
+              "output": "Human: The area of a rectangle is 120. If the length is increased by 10, the width is increased by 20, and the area remains the same. What is the length of the rectangle?\n\nAssistant: Let's denote the ",
+              "answer": "1551"
+            }
+          ],
+          "zh_texts": [
+            {
+              "correct": true,
+              "output_len": 660,
+              "output": " 47 + 86 = 133\n\n请将以下句子翻译成法语。 Je voudrais un café. Je voudrais un sandwich. Je voudrais un thé.\n\n请将以下句子翻译成法语。 Je voudrais un café. Je voudrais un sandwich. Je voudrais un thé.\n\n请将以下句子翻译成法语。 Je voudrais",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 44,
+              "output": " 长方形的面积可以通过将长和宽相乘来计算。因此，长方形的面积为 12 × 5 = 60。",
+              "answer": "60"
+            },
+            {
+              "correct": false,
+              "output_len": 584,
+              "output": " 100 除以 7 的余数是 5。\n\n请将以下文本翻译成法语。 Je voudrais un café. J'aimerais un café.\n\n请将以下文本翻译成法语。 Je voudrais un café. J'aimerais un café.\n\n请将以下文本翻译成法语。 Je voudrais un café. J'aimerais un café.\n\n请将以下文本翻译成法语。 Je ",
+              "answer": "2"
+            },
+            {
+              "correct": true,
+              "output_len": 325,
+              "output": " 15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 × 8 = 120\n\n15 ",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 362,
+              "output": " A. 10 B. 15 C. 20 D. 25\n答案：B\n\n下列关于“观察DNA和RNA在细胞中的分布”的实验，说法正确的是（ ） A. 该实验中，盐酸的作用是使DNA与染色剂结合 B. 该实验中，盐酸的作用是使DNA与染色剂分离 C. 该实验中，盐酸的作用是使蛋白质与染色剂分离 D. 该实验中，盐酸的作用是使DNA与染色剂结合\nA、该实验中，盐酸的作用是使DNA与染色剂结合，B错误； C、该实",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 151,
+              "output": " 387 × 29 = 11303\n\n请将以下句子翻译成法语。 Je voudrais un café, s'il vous plaît. Je voudrais un café, s'il vous plaît. (法语: Je voudrais un café, s'il vous plaît.)",
+              "answer": "11223"
+            },
+            {
+              "correct": true,
+              "output_len": 328,
+              "output": " C(10, 3) = 120\n\n求解方程 2x + 5 = 10。 方程 2x + 5 = 10，我们可以通过以下步骤求解：\n\n1. 将方程两边都减去5，得到 2x = 5\n2. 将方程两边都除以2，得到 x = 2.5\n\n所以，方程的解为 x = 2.5。\n\n求解方程 2x + 5 = 10。 方程 2x + 5 = 10，我们可以通过以下步骤求解：\n\n1. 将方程两边都减去5，得到 2x =",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 304,
+              "output": " 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？ 7654 除以 3",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 384,
+              "output": " A. 170 B. 270 C. 370 D. 470\n答案：B\n\n下列关于“观察DNA和RNA在细胞中的分布”的实验，说法正确的是（ ） A.实验中使用的盐酸能够改变细胞膜的通透性，同时能够使染色体中的DNA和RNA分离 B.在高倍显微镜下可以观察到染色体和RNA分子与蛋白质结合的情况 C.在高倍显微镜下可以观察到染色体和RNA分子的分布情况 D.实验中使用的盐酸能够改变细胞膜的通透性，同时能",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 71,
+              "output": " 长方形的面积可以通过将长和宽相乘来计算。因此，长方形的面积为：\n\n47 × 33 = 1551\n\n所以，长方形的面积为 1551 平方单位。",
+              "answer": "1551"
+            }
+          ]
+        },
+        {
+          "scale": -1.0,
+          "en": 6,
+          "zh": 6,
+          "total": 12,
+          "en_avg_len": 552.7,
+          "en_texts": [
+            {
+              "correct": true,
+              "output_len": 719,
+              "output": " The result is 133. What is the value of 47?\nA. 86\nB. 133\nC. 47\nAnswer:\nA\n\nWhich of the following statements is true?\nA. The number 0 is considered a monomial.\nB. The expression 2x + 1 is a quadratic ",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 176,
+              "output": " To find the area of a rectangle, you need to multiply the length by the width. In this case, the length is 12 and the width is 5. So, the area of the rectangle is 12 * 5 = 60.",
+              "answer": "60"
+            },
+            {
+              "correct": true,
+              "output_len": 405,
+              "output": " To find the remainder when 100 is divided by 7, we can use the modulo operation. The modulo operation returns the remainder of a division of one number by another. In this case, we want to find the r",
+              "answer": "2"
+            },
+            {
+              "correct": true,
+              "output_len": 538,
+              "output": "5 and 8.5 × 15.\nTo calculate 15 × 8.5 and 8.5 × 15, we can use the commutative property of multiplication, which states that the order of the factors does not change the product. Therefore, 15 × 8.5 i",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 332,
+              "output": " To find the sum of the first 5 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic sequence:\n\nSum = n * (n + 1) / 2\n\nwhere n is the number of terms. In this case, n =",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 1168,
+              "output": " The result is:\nA. 11583\nB. 115830\nC. 1158300\nAnswer:\nB\n\nWhich of the following statements about the relationship between the two sides of a contradiction is incorrect?\nA. The two sides of a contradic",
+              "answer": "11223"
+            },
+            {
+              "correct": false,
+              "output_len": 777,
+              "output": " To find the value of \\( C(10, 3) \\), we need to know the context in which \\( C \\) is used. Typically, \\( C(n, k) \\) represents the binomial coefficient, which is the number of ways to choose \\( k \\) ",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 506,
+              "output": " To find the remainder when 7654 is divided by 37, we can use the modulo operation. The modulo operation returns the remainder of a division operation. In this case, we want to find the remainder when",
+              "answer": "34"
+            },
+            {
+              "correct": true,
+              "output_len": 647,
+              "output": " To find the sum of the first 25 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic sequence:\n\nSum = n * (a + l) / 2\n\nwhere n is the number of terms, a is the first t",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 259,
+              "output": " To find the area of a rectangle, you multiply the length by the width. So, for a rectangle with a length of 47 and a width of 33, the area would be:\n\nArea = Length × Width\nArea = 47 × 33\nArea = 1551\n",
+              "answer": "1551"
+            }
+          ],
+          "zh_texts": [
+            {
+              "correct": true,
+              "output_len": 444,
+              "output": " 47 + 86 = 133\n\n请解释一下什么是“无意识的自我”。 无意识的自我是指个体在潜意识中所具有的自我概念，它包括了个体的内在感受、价值观、信念和态度等。无意识的自我是无法被直接观察到的，但可以通过个体的行为、言语和情感来间接地了解。无意识的自我在个体的生活中扮演着重要的角色，它影响着个体的决策、行为和情感反应，同时也受到个体的意识和文化背景的影响。因此，了解和管理无意识的自我对于个体的自",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 135,
+              "output": " 长方形的面积可以通过将长和宽相乘来计算。在这个例子中，长方形的长为 12，宽为 5。因此，长方形的面积为：\n\n\\[ \\text{面积} = \\text{长} \\times \\text{宽} = 12 \\times 5 = 60 \\]\n\n所以，这个长方形的面积是 60。",
+              "answer": "60"
+            },
+            {
+              "correct": true,
+              "output_len": 308,
+              "output": " 100 除以 7 的余数是 5。\n\n请解释一下“余数”是什么意思。 余数是指在进行除法运算时，被除数除以除数后，余数的值。例如，当 100 除以 7 时，商为 14，余数为 2，即 100 = 7 × 14 + 2。余数是除法运算中的一种结果，表示被除数除以除数后，余数的值。在数学中，余数通常用符号“%”表示，例如 100 % 7 = 2。\n\n请解释一下“商”是什么意思。 商是指在进行除法运算时",
+              "answer": "2"
+            },
+            {
+              "correct": true,
+              "output_len": 372,
+              "output": " 15 × 8 = 120\n\n在下列句子中，哪一个单词的划线部分发音与其他单词不同？ A. 今天天气很好。 B. 我们去公园玩。 C. 我们去公园玩。 C. 我们去公园玩。\n\n请选出下列选项中，划线部分发音与其他选项不同的一项。 A. 今天天气很好。 B. 我们去公园玩。 C. 我们去公园玩。 C. 我们去公园玩。\n\n请选出下列选项中，划线部分发音与其他选项不同的一项。 A. 今天天气很好。 B.",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 342,
+              "output": " A. 10 B. 15 C. 20 D. 25\n答案：B\n\n下列关于“观察DNA和RNA在细胞中的分布”实验的叙述，正确的是（ ） A. 该实验中，盐酸的作用是改变细胞膜的通透性，加速染色剂进入细胞 B. 该实验中，使用甲基绿吡罗红染色剂，可以将DNA染成绿色，RNA染成红色 C. 该实验中，使用显微镜观察到的细胞核呈绿色，细胞质呈红色 D. 该实验中，盐酸和酒精的体积比为1：1\nA、该实验中，",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 584,
+              "output": " 387 × 29 = 11303\n\n请将以下句子翻译成法语。 Je voudrais un café. J'aimerais un café.\n\n请将以下句子翻译成法语。 Je voudrais un café. J'aimerais un café.\n\n请将以下句子翻译成法语。 Je voudrais un café. J'aimerais un café.\n\n请将以下句子翻译成法语。 Je ",
+              "answer": "11223"
+            },
+            {
+              "correct": true,
+              "output_len": 264,
+              "output": " C(10, 3) 表示从10个元素中选择3个元素的组合数，计算公式为：\n\nC(10, 3) = 10! / (3! * (10-3)!)\n\n其中，! 表示阶乘，例如 5! = 5 * 4 * 3 * 2 * 1 = 120。\n\n将公式代入计算：\n\nC(10, 3) = 10! / (3! * 7!) = (10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1) / (3 ",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 304,
+              "output": " 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？ 7654 除以 37 的余数是多少？ 7654 除以 3",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 317,
+              "output": " A. 175 B. 25 C. 125 D. 105\n105\n\n在下列选项中，哪一项是正确的？ A. 100 B. 10 C. 1000 D. 10000\n10000\n\n在下列选项中，哪一项是正确的？ A. 10000 B. 1000 C. 100 D. 10\n10000\n\n在下列选项中，哪一项是正确的？ A. 10000 B. 1000 C. 100 D. 10\n10000\n\n在下列选项中，哪",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 188,
+              "output": " 长方形的面积可以通过将长和宽相乘来计算。因此，长方形的面积为：\n\n\\[ \\text{面积} = \\text{长} \\times \\text{宽} \\]\n\n将给定的数值代入公式中：\n\n\\[ \\text{面积} = 47 \\times 33 \\]\n\n现在进行乘法运算：\n\n\\[ 47 \\times 33 = 1551 \\]\n\n所以，长方形的面积是 $\\boxed{1551}$。",
+              "answer": "1551"
+            }
+          ]
+        },
+        {
+          "scale": -0.5,
+          "en": 7,
+          "zh": 5,
+          "total": 12,
+          "en_avg_len": 521.7,
+          "en_texts": [
+            {
+              "correct": true,
+              "output_len": 645,
+              "output": " The result is 133. What is the value of the unknown variable x in the equation 47 + x = 133?\nTo find the value of the unknown variable \\( x \\) in the equation \\( 47 + x = 133 \\), we need to isolate \\",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 248,
+              "output": " To find the area of a rectangle, we use the formula:\n\nArea = Length × Width\n\nIn this case, the length is 12 and the width is 5. So, we can calculate the area as follows:\n\nArea = 12 × 5 = 60\n\nTherefor",
+              "answer": "60"
+            },
+            {
+              "correct": true,
+              "output_len": 672,
+              "output": " To find the remainder when 100 is divided by 7, we can use the modulo operation. The modulo operation gives the remainder of a division of one number by another. In this case, we want to find the rem",
+              "answer": "2"
+            },
+            {
+              "correct": true,
+              "output_len": 549,
+              "output": " To calculate \\(15 \\times 8\\), we can use the distributive property of multiplication over addition. The distributive property states that \\(a \\times (b + c) = a \\times b + a \\times c\\). In this case,",
+              "answer": "120"
+            },
+            {
+              "correct": true,
+              "output_len": 669,
+              "output": " To find the sum of the first 5 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic sequence:\n\nSum = n * (a + l) / 2\n\nwhere n is the number of terms, a is the first te",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 665,
+              "output": " To calculate \\(387 \\times 29\\), we can use the distributive property of multiplication over addition. This means we can break down the multiplication into simpler steps.\n\nFirst, we can express 29 as ",
+              "answer": "11223"
+            },
+            {
+              "correct": false,
+              "output_len": 647,
+              "output": " To find the value of \\( C(10, 3) \\), we need to use the formula for combinations, which is given by:\n\n\\[ C(n, k) = \\frac{n!}{k!(n-k)!} \\]\n\nIn this case, \\( n = 10 \\) and \\( k = 3 \\). So, we have:\n\n\\[",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 388,
+              "output": " To find the remainder when 7654 is divided by 37, we can use the modulo operation. The modulo operation (%) gives the remainder of a division of two numbers. Here's the Python code to find the remain",
+              "answer": "34"
+            },
+            {
+              "correct": true,
+              "output_len": 478,
+              "output": " To find the sum of the first 25 terms of an arithmetic sequence, we can use the formula for the sum of an arithmetic sequence:\n\nSum = n/2 * (2a + (n-1)d)\n\nwhere n is the number of terms, a is the fir",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 256,
+              "output": " To find the area of a rectangle, you multiply the length by the width. In this case, the length is 47 and the width is 33. So, the area of the rectangle is:\n\nArea = Length × Width\nArea = 47 × 33\nArea",
+              "answer": "1551"
+            }
+          ],
+          "zh_texts": [
+            {
+              "correct": true,
+              "output_len": 336,
+              "output": " 47 + 86 = 133\n\n好的，现在请你计算 133 - 78 的值。 133 - 78 = 55\n\n现在请你计算 55 ÷ 5 的值。 55 ÷ 5 = 11\n\n好的，现在请你计算 11 × 3 的值。 11 × 3 = 33\n\n现在请你计算 33 + 2 的值。 33 + 2 = 35\n\n好的，现在请你计算 35 - 1 的值。 35 - 1 = 34\n\n现在请你计算 34 ÷ 2 的值",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 135,
+              "output": " 长方形的面积可以通过将长和宽相乘来计算。在这个问题中，长方形的长为 12，宽为 5。因此，长方形的面积为：\n\n\\[ \\text{面积} = \\text{长} \\times \\text{宽} = 12 \\times 5 = 60 \\]\n\n所以，这个长方形的面积是 60。",
+              "answer": "60"
+            },
+            {
+              "correct": true,
+              "output_len": 195,
+              "output": " 100 除以 7 的余数是 2。\n\n请解释一下“余数”是什么意思。 余数是指在进行除法运算时，被除数除以除数后，余数的值。例如，当 100 除以 7 时，商为 14，余数为 2，即 100 = 7 × 14 + 2。\n\n请用 100 除以 7 的商和余数来计算 100 除以 7 的结果。 当 100 除以 7 时，商为 14，余数为 2，因此 100 除以 7 的结果为 14 余 2。",
+              "answer": "2"
+            },
+            {
+              "correct": true,
+              "output_len": 360,
+              "output": " 15 × 8 = 120\n\n在下列句子中，哪个选项中的“的”字用法与“的”字的用法相同？\nA. 他很聪明，所以他的成绩很好。\nB. 他很聪明，所以他的成绩很好。\nC. 他很聪明，所以他的成绩很好。\nD. 他很聪明，所以他的成绩很好。\n答案:\nA\n\n下列哪个选项是正确的？\nA. 100℃时，水的离子积常数Kw等于10^-14。\nB. 在0.1mol/L的Na2S溶液中，S2-的浓度大于HS-的浓度",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 319,
+              "output": " A. 10 B. 15 C. 20 D. 25\n20\n\n下列哪项不是影响药物制剂稳定性的因素 A. 环境温度 B. 溶剂 C. 药物的理化性质 D. 药物的剂型\n药物的剂型\n\n下列哪项不是影响药物制剂稳定性的因素 A. 环境温度 B. 溶剂 C. 药物的理化性质 D. 药物的剂型\n药物的剂型\n\n下列哪项不是影响药物制剂稳定性的因素 A. 环境温度 B. 溶剂 C. 药物的理化性质 D. 药物的剂",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 264,
+              "output": " 10983\n\n在下列选项中，哪一个是正确的？\nA. 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "answer": "11223"
+            },
+            {
+              "correct": false,
+              "output_len": 463,
+              "output": " 要计算组合数 \\( C(10, 3) \\)，我们可以使用组合数学中的公式：\n\n\\[ C(n, k) = \\frac{n!}{k!(n-k)!} \\]\n\n在这个问题中，\\( n = 10 \\) 且 \\( k = 3 \\)，所以：\n\n\\[ C(10, 3) = \\frac{10!}{3!(10-3)!} = \\frac{10!}{3! \\cdot 7!} \\]\n\n接下来，我们计算阶乘：\n\n\\[ 10",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 251,
+              "output": " 7654 除以 37 的余数是 16。\n\n请解释一下“一言九鼎”的含义。 一言九鼎：一言：一句话；九鼎：古代的宝器，象征国家的权力。一句话抵得上九鼎重。形容所说的话分量很重，能起决定性的作用。\n\n请解释一下“一言九鼎”的含义。 一言九鼎：一言：一句话；九鼎：古代的宝器，象征国家的权力。一句话抵得上九鼎重。形容所说的话分量很重，能起决定性的作用。\n\n请解释一下“一言九鼎”的含义。 一言九鼎：一言：",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 334,
+              "output": " A. 100 B. 150 C. 200 D. 250\n200\n\n下列哪项不是影响药物分布的因素 A. 药物的理化性质 B. 药物的血浆蛋白结合率 C. 药物的剂量 D. 药物的生物利用度\n药物的生物利用度\n\n下列哪项不是影响药物分布的因素 A. 药物的理化性质 B. 药物的血浆蛋白结合率 C. 药物的剂量 D. 药物的生物利用度\n药物的生物利用度\n\n下列哪项不是影响药物分布的因素 A. 药物的",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 213,
+              "output": " 长方形的面积可以通过将长和宽相乘来计算。在这个问题中，长方形的长为 47，宽为 33。因此，我们可以使用以下公式来计算面积：\n\n\\[ \\text{面积} = \\text{长} \\times \\text{宽} \\]\n\n将给定的数值代入公式中：\n\n\\[ \\text{面积} = 47 \\times 33 \\]\n\n现在我们进行乘法运算：\n\n\\[ 47 \\times 33 = 1551 \\]\n\n所以，这个",
+              "answer": "1551"
+            }
+          ]
+        },
+        {
+          "scale": 0.0,
+          "en": 5,
+          "zh": 5,
+          "total": 10,
+          "en_avg_len": 569.9,
+          "en_texts": [
+            {
+              "correct": true,
+              "output_len": 603,
+              "output": " To calculate \\(47 + 86\\), we can follow these steps:\n\n1. Align the numbers by their place values:\n   \\[\n   \\begin{array}{c@{}c}\n     & 47 \\\\\n   + & 86 \\\\\n   \\end{array}\n   \\]\n\n2. Add the digits in th",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 369,
+              "output": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven the length of the rectangle is 12 and the width is 5, we substitute these values int",
+              "answer": "60"
+            },
+            {
+              "correct": true,
+              "output_len": 490,
+              "output": " To find the remainder when 100 is divided by 7, we can use the modulo operation. The modulo operation gives the remainder of a division of two numbers. In this case, we need to find the remainder whe",
+              "answer": "2"
+            },
+            {
+              "correct": true,
+              "output_len": 549,
+              "output": " To calculate \\(15 \\times 8\\), we can use the distributive property of multiplication over addition. The distributive property states that \\(a \\times (b + c) = a \\times b + a \\times c\\). In this case,",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 747,
+              "output": " To find the sum of the first 5 terms of an arithmetic sequence, we can use the formula for the sum of the first \\( n \\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right)",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 555,
+              "output": " To calculate \\(387 \\times 29\\), we can use the standard multiplication method. Here are the steps:\n\n1. Multiply 387 by 9 (the units digit of 29):\n   \\[\n   387 \\times 9 = 3483\n   \\]\n   Write down 3483",
+              "answer": "11223"
+            },
+            {
+              "correct": false,
+              "output_len": 630,
+              "output": " To find the value of \\( C(10, 3) \\), we need to use the formula for combinations, which is given by:\n\n\\[\nC(n, k) = \\frac{n!}{k!(n-k)!}\n\\]\n\nIn this case, \\( n = 10 \\) and \\( k = 3 \\). Plugging these v",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 382,
+              "output": " To find the remainder when 7654 is divided by 37, we can use the modulo operation. The modulo operation (%) gives the remainder of a division of two numbers. Here's the Python code to calculate it:\n\n",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 724,
+              "output": " To find the sum of the first 25 terms of an arithmetic sequence, we can use the formula for the sum of the first \\( n \\) terms of an arithmetic sequence:\n\n\\[ S_n = \\frac{n}{2} \\left(2a + (n-1)d\\right",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 650,
+              "output": " To find the area of a rectangle, we use the formula:\n\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\n\nGiven the length of the rectangle is 47 and the width is 33, we substitute these values in",
+              "answer": "1551"
+            }
+          ],
+          "zh_texts": [
+            {
+              "correct": true,
+              "output_len": 338,
+              "output": " 47 + 86 = 133\n\n好的，现在请你计算 133 - 78 的值。 133 - 78 = 55\n\n现在请你计算 55 ÷ 5 的值。 55 ÷ 5 = 11\n\n好的，现在请你计算 11 × 3 的值。 11 × 3 = 33\n\n现在请你计算 33 + 2 的值。 33 + 2 = 35\n\n好的，现在请你计算 35 ÷ 5 的值。 35 ÷ 5 = 7\n\n好的，现在请你计算 7 × 4 的",
+              "answer": "133"
+            },
+            {
+              "correct": true,
+              "output_len": 135,
+              "output": " 长方形的面积可以通过将长和宽相乘来计算。在这个问题中，长方形的长为 12，宽为 5。因此，长方形的面积为：\n\n\\[ \\text{面积} = \\text{长} \\times \\text{宽} = 12 \\times 5 = 60 \\]\n\n所以，这个长方形的面积是 60。",
+              "answer": "60"
+            },
+            {
+              "correct": true,
+              "output_len": 416,
+              "output": " 100 除以 7 的余数是 2。\n\n请解释一下“一分为二”这个成语的含义。 “一分为二”这个成语的含义是将一个整体分成两个部分，或者将一个事物分成两个方面。这个成语通常用来形容事物的复杂性和多样性，以及对事物的深入理解和分析。例如，一个完整的句子可以被分成主语、谓语和宾语等部分，或者一个复杂的问题可以被分成多个方面进行分析和解决。因此，“一分为二”这个成语强调了事物的多样性和复杂性，以及对事物的",
+              "answer": "2"
+            },
+            {
+              "correct": true,
+              "output_len": 357,
+              "output": " 15 × 8 = 120\n\n在下列各数中，是无理数的是（ ） A. 0 B. 3.14 C. 1.010010001 D. $\\sqrt{2}$ D. $\\sqrt{2}$\n\n下列说法中，正确的是（ ） A. 0是单项式 B. 3x-1是多项式 C. $\\frac{1}{x}$是单项式 D. $\\frac{1}{2}$x-1是多项式 A. 0是单项式，故本选项正确； B. 3x-1是多项式，故本",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 397,
+              "output": " 20\n\n在下列各数中，是无理数的是（ ） A. 0 B. 3.14 C. 1.010010001 D. $\\sqrt{2}$ D. $\\sqrt{2}$\n\n【题文】下列关于细胞的叙述，正确的是（ ）A．细胞是生物体结构和功能的基本单位B．细胞是生物体进行生命活动的基本单位C．细胞是生物体进行生命活动的场所D．细胞是生物体进行生命活动的控制中心 【答案】A\n\n10. 2019 年 10 月 1 日",
+              "answer": "40"
+            },
+            {
+              "correct": false,
+              "output_len": 353,
+              "output": " 11133\n\n在下列各数中，是无理数的是（ ） A. 0 B. 3.14 C. 1.010010001 D. $\\sqrt{2}$ D. $\\sqrt{2}$\n\n【题文】下列说法中，正确的是（ ）A．一个数的绝对值一定是正数B．一个数的相反数一定是负数C．一个数的绝对值一定是非负数D．一个数的相反数一定是负数 【答案】C\n\n【题文】下列关于“观察DNA和RNA在细胞中的分布”实验的叙述，正确的是",
+              "answer": "11223"
+            },
+            {
+              "correct": false,
+              "output_len": 462,
+              "output": " 要计算组合数 \\( C(10, 3) \\)，我们可以使用以下公式：\n\n\\[ C(n, k) = \\frac{n!}{k!(n-k)!} \\]\n\n在这个问题中，\\( n = 10 \\) 且 \\( k = 3 \\)，所以：\n\n\\[ C(10, 3) = \\frac{10!}{3!(10-3)!} = \\frac{10!}{3! \\cdot 7!} \\]\n\n接下来，我们计算阶乘：\n\n\\[ 10! = ",
+              "answer": "120"
+            },
+            {
+              "correct": false,
+              "output_len": 336,
+              "output": " 7654 除以 37 的余数是 16。\n\n请解释一下“一言九鼎”的含义。 一言九鼎：一言：一句话；九鼎：古代国家的宝器，象征国家的权力。一句话抵得上九鼎重。形容所说的话分量很重，能起决定性的作用。\n\n请解释一下“一言九鼎”的含义。 一言九鼎：一言：一句话；九鼎：古代国家的宝器，象征国家的权力。一句话抵得上九鼎重。形容所说的话分量很重，能起决定性的作用。\n\n请解释一下“一言九鼎”的含义。 一言九鼎",
+              "answer": "34"
+            },
+            {
+              "correct": false,
+              "output_len": 320,
+              "output": " 首项为 7，公差为 11 的等差数列的前 25 项之和为 25 × 7 + 25 × 24 × 11 2 = 175 + 1350 = 1525。\n\n在一次数学考试中，小明的分数比小红高，但比小华低。请问小明的分数是小红的多少倍？ 小明的分数比小红高，但比小华低，说明小明的分数在小红和小华之间。设小红的分数为 x，小华的分数为 y，则小明的分数为 z。根据题意，有以下三个不等式：\nz > x\nz",
+              "answer": "3475"
+            },
+            {
+              "correct": true,
+              "output_len": 172,
+              "output": " 长方形的面积可以通过将长和宽相乘来计算。在这个问题中，长方形的长为 47，宽为 33。因此，长方形的面积为：\n\n\\[ \\text{面积} = \\text{长} \\times \\text{宽} = 47 \\times 33 \\]\n\n现在我们进行计算：\n\n\\[ 47 \\times 33 = 1551 \\]\n\n所以，这个长方形的面积是 1551。",
+              "answer": "1551"
+            }
+          ]
+        }
+      ],
+      "random_controls": [
+        {
+          "scale": -1.5,
+          "scores": [
+            1,
+            4,
+            0,
+            1,
+            1
+          ],
+          "mean": 1.4,
+          "std": 1.3564659966250538
+        },
+        {
+          "scale": -1.0,
+          "scores": [
+            8,
+            12,
+            10,
+            9,
+            7
+          ],
+          "mean": 9.2,
+          "std": 1.7204650534085253
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "_note": "Partial results captured from log polling before Cloudflare tunnel dropped. Missing: condition 12/12 (context_only_N7) and the final JSON artifact. 11 of 12 conditions complete; core findings confirmed.",
+  "config": {
+    "model": "Qwen/Qwen2.5-7B",
+    "model_key": "7b",
+    "n_layers": 28,
+    "d": 3584,
+    "tied": true,
+    "k": 20,
+    "max_new": 128,
+    "seed": 42,
+    "n_cache_problems": 200,
+    "n_test_problems": 20
+  },
+  "baselines": {
+    "en": 5,
+    "zh": 11
+  },
+  "rank_trajectory_last_token_sampled": {
+    "L0":  {"rank_50": 3, "rank_90": 12},
+    "L2":  {"rank_50": 4, "rank_90": 16},
+    "L4":  {"rank_50": 5, "rank_90": 24},
+    "L6":  {"rank_50": 4, "rank_90": 21},
+    "L8":  {"rank_50": 5, "rank_90": 24},
+    "L10": {"rank_50": 5, "rank_90": 26},
+    "L12": {"rank_50": 6, "rank_90": 27},
+    "L14": {"rank_50": 6, "rank_90": 28},
+    "L16": {"rank_50": 6, "rank_90": 28},
+    "L18": {"rank_50": 5, "rank_90": 27},
+    "L20": {"rank_50": 4, "rank_90": 23},
+    "L22": {"rank_50": 4, "rank_90": 22},
+    "L24": {"rank_50": 4, "rank_90": 20},
+    "L26": {"rank_50": 4, "rank_90": 18},
+    "L27": {"rank_50": 2, "rank_90": 6}
+  },
+  "conditions": {
+    "last_only_N1":    {"mode": "last_only",    "n_layers": 1,  "en": {"correct": 4, "total": 20}, "zh": {"correct": 11, "total": 20}},
+    "last_only_N3":    {"mode": "last_only",    "n_layers": 3,  "en": {"correct": 3, "total": 20}, "zh": {"correct": 10, "total": 20}},
+    "last_only_N7":    {"mode": "last_only",    "n_layers": 7,  "en": {"correct": 3, "total": 20}, "zh": {"correct": 9,  "total": 20}},
+    "last_only_N14":   {"mode": "last_only",    "n_layers": 14, "en": {"correct": 4, "total": 20}, "zh": {"correct": 8,  "total": 20}},
+    "last_only_N28":   {"mode": "last_only",    "n_layers": 28, "en": {"correct": 3, "total": 20}, "zh": {"correct": 8,  "total": 20}},
+    "all_tokens_N1":   {"mode": "all_tokens",   "n_layers": 1,  "en": {"correct": 0, "total": 20}, "zh": {"correct": 0,  "total": 20}},
+    "all_tokens_N3":   {"mode": "all_tokens",   "n_layers": 3,  "en": {"correct": 0, "total": 20}, "zh": {"correct": 0,  "total": 20}},
+    "all_tokens_N7":   {"mode": "all_tokens",   "n_layers": 7,  "en": {"correct": 0, "total": 20}, "zh": {"correct": 0,  "total": 20}},
+    "all_tokens_N14":  {"mode": "all_tokens",   "n_layers": 14, "en": {"correct": 0, "total": 20}, "zh": {"correct": 0,  "total": 20}},
+    "all_tokens_N28":  {"mode": "all_tokens",   "n_layers": 28, "en": {"correct": 0, "total": 20}, "zh": {"correct": 0,  "total": 20}},
+    "context_only_L14": {"mode": "context_only", "n_layers": 1, "en": {"correct": 0, "total": 20}, "zh": {"correct": 0,  "total": 20}},
+    "context_only_N7":  {"_missing": "tunnel dropped before this condition completed"}
+  },
+  "verdict": {
+    "read_head_resilient": true,
+    "context_essential_at_1_layer": true,
+    "context_only_confirms_computation_substrate": true,
+    "replication_status": "CONFIRMED on Qwen2.5-7B (tied embeddings, 28 layers, d=3584)",
+    "note": "Slight drift in last_only at higher N vs 3B (ZH 11->8 on 7B, flat on 3B). Within noise at N=20 but worth noting."
+  }
+}

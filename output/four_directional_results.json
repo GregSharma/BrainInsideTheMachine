@@ -1,0 +1,63 @@
+{
+  "Q1_category_asymmetry": {
+    "arithmetic": {
+      "dep_mean": 1052.1700540542602,
+      "ret_mean": 149.45763878822328,
+      "ratio_ret_over_dep": 0.14204703718028053,
+      "n_departures": 16,
+      "n_returns": 16,
+      "n_problems": 4
+    },
+    "combinatorics": {
+      "dep_mean": 302.5178971732535,
+      "ret_mean": 195.64627329508465,
+      "ratio_ret_over_dep": 0.6467262767697908,
+      "n_departures": 164,
+      "n_returns": 126,
+      "n_problems": 4
+    },
+    "geometry": {
+      "dep_mean": 236.38628943027595,
+      "ret_mean": 224.54563545093202,
+      "ratio_ret_over_dep": 0.949909726118712,
+      "n_departures": 156,
+      "n_returns": 114,
+      "n_problems": 4
+    },
+    "modular": {
+      "dep_mean": 185.1219273376465,
+      "ret_mean": 228.35164600588243,
+      "ratio_ret_over_dep": 1.233520249545526,
+      "n_departures": 160,
+      "n_returns": 106,
+      "n_problems": 4
+    },
+    "sequences": {
+      "dep_mean": 421.2070035506268,
+      "ret_mean": 196.68164121566278,
+      "ratio_ret_over_dep": 0.46694769924931395,
+      "n_departures": 98,
+      "n_returns": 62,
+      "n_problems": 4
+    }
+  },
+  "Q2_departure_pca": {
+    "n_vectors": 594,
+    "pc1_variance": 0.9163438081741333,
+    "pc1_pc2_variance": 0.9209887385368347,
+    "top5_variance": 0.9310587644577026,
+    "cos_dep_pc1_lang_diff": null
+  },
+  "Q3_return_retraces": {
+    "cos_avg_dep_ret": -0.8049839735031128,
+    "cos_pc1_dep_ret": 0.9994009733200073,
+    "mean_paired_cosine": -0.010465433821082115,
+    "std_paired_cosine": 0.11715339124202728,
+    "median_paired_cosine": -0.03540220111608505
+  },
+  "Q4_compass": {
+    "return_pc1_variance": 0.757333517074585,
+    "frac_positive_pc1": 0.47877358490566035,
+    "cos_return_pc1_lang_diff": null
+  }
+}
