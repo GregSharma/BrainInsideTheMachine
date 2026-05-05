@@ -1,6 +1,27 @@
 # The Brain Inside The Machine
 > **Status (May 2026):** This document describes the original hypothesis (February 2026). Since then, 170+ causal intervention experiments across 4 model families. Results in [`docs/`](docs/) and [`output/`](output/). Interactive knowledge graph: [prosodic.org/showcases](https://prosodic.org/showcases).
 
+
+## Selected experiments
+
+| Script | Question | Result |
+|--------|----------|--------|
+| `exp_z_encoder.py` | Can a linear probe identify problem identity across unseen languages? | 100% (4 langs, 9D at L33) |
+| `expC2b_dose_response.py` | Is the last token a read head or a reasoner? | all-tokens N=1 → 0/20; last-only N=36 → baseline |
+| `expC2c_crossmodel.py` | Does read-head finding replicate on 7B, 14B, Qwen3-8B? | Yes (14B: removing V⊥ improves EN +6) |
+| `expMS1b_robust_surgery.py` | Remove convention from MLP weights — does reasoning survive? | +6 to +8 accuracy (202 problems × 3 langs) |
+| `exp_crossmodel_surgery.py` | Convention surgery across Phi-3, Qwen3-4B, Qwen2.5-3B? | All positive (+2 to +7 on safe problems) |
+| `expC3_7b_compression.py` | Generation-time readout rank at L27 (7B)? | k=1 lossless (12/20 = baseline) |
+| `expC6b_mean_dissection.py` | Replace attention output with constant mean vector? | Lossless (12/20 = baseline) |
+| `expBQ2_crossmodel_lyapunov.py` | Universal 4-phase Gram trajectory across models? | rank_50=1 at all layers, all 4 models |
+| `expBR_diverse_gram.py` | Same pattern for logic, analogy, common sense? | Yes (200 diverse problems, 7 languages) |
+| `exp_cache_split.py` | Break echo loops by freezing top-layer KV? | Loop broken, wrong basin (anti-echo ≠ basin selection) |
+| `exp_convention_qk_deflation.py` | Is convention direction = loop-breaking direction? | No (cos=0.117, orthogonal mechanisms) |
+| `exp_silu_commitment.py` | Do gate patterns freeze during loops? | No (18-25% Hamming churn per step) |
+| `exp_phase_diagram.py` | Phase boundary of deflation-mediated loop escape? | δ=0.10 onset≤25 works; 1/δ scaling falsified (CV=0.68) |
+| `exp_svd_convergence.py` | Does top SVD direction drift toward answer during loops? | Yes (cos 0.3→0.6 over 500 steps) |
+| `exp_attention_anatomy.py` | Does read head focus differ for content vs glue tokens? | Yes (p<0.0001 at L32-35, 37/37 problems) |
+| `expGATE_causal.py` | Does encoding-time subspace transfer to generation? | No (9.6% overlap, 0/20 at all k) |
 ---
 
 
