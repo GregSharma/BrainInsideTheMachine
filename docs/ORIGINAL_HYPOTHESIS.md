@@ -1,8 +1,4 @@
 # The Brain Inside The Machine
-> **Status (May 2026):** This document describes the original hypothesis (February 2026). Since then, 170+ causal intervention experiments have been run across 4 model families. Key results — including the read-head discovery (C2/C2b/C2c), convention separability via kernel surgery (MS1/MS2b), rank-1 generation-time compression (C3/C6b), and the Lyapunov 4-phase funnel (BQ/BQ2-XM) — are documented in [`LYAPUNOV_GRAM_APPRAISAL.md`](LYAPUNOV_GRAM_APPRAISAL.md) and [`docs/`](docs/). Interactive knowledge graph: [prosodic.org/showcases](https://prosodic.org/showcases).
-
----
-
 
 ## Can we isolate a language-agnostic reasoning subspace inside a transformer?
 
