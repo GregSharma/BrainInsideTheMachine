@@ -1,5 +1,5 @@
 # The Brain Inside The Machine
-> **Status (May 2026):** This document describes the original hypothesis (February 2026). Since then, 170+ causal intervention experiments across 4 model families. Results in [`docs/`](docs/) and [`output/`](output/). Interactive knowledge graph: [prosodic.org/showcases](https://prosodic.org/showcases).
+> **Status (May 2026):** This document describes the original hypothesis (February 2026). Since then, 170+ causal intervention experiments across 4 model families. Results in [`docs/`](docs/) and [`output/`](output/). Interactive knowledge graph (live): [prosodic.org/showcases](https://prosodic.org/showcases).
 
 
 ## Selected experiments
