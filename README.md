@@ -93,20 +93,22 @@ Experiments are named `exp<PREFIX><NUMBER>_<description>.py`. Prefixes are rough
 
 These are selected results, not an exhaustive index. Full results are in `output/`.
 
-| Script | Question | Result |
-|--------|----------|--------|
-| `exp_z_encoder.py` | Linear probe for problem identity across unseen languages? | 100% on 4 unseen languages, 9 dimensions, L33 |
-| `expC2b_dose_response.py` | Last token: read head or reasoner? | all-tokens N=1 → 0/20; last-only N=36 → baseline |
-| `expC6b_mean_dissection.py` | What does last-token attention contribute? | Constant bias. mean_only = baseline. |
-| `expC3_7b_compression.py` | Readout rank at L27 on 7B? | k=1 lossless. Statistical rank 92, causal rank 1. |
-| `expMS1_kernel_surgery.py` | Remove convention from W_down? | +6 to +8 accuracy, 200+ problems, 3 languages |
-| `exp_crossmodel_surgery.py` | Convention surgery on Phi-3, Qwen3-4B? | Both positive (+2 to +7) |
-| `expBQ2_crossmodel_lyapunov.py` | Gram dynamics across 4 models? | rank_50=1 all layers, all models |
-| `expG1e_14b_bun_inversion.py` | Blind prompt reads math from KV cache? | 14B: zero garbage, correct answers |
-| `exp_attention_anatomy.py` | Read-head focus: content vs glue tokens? | p < 0.0001 at L32-35, 37/37 problems |
-| `expBS_svd_truncation.py` | Compress inference to Gram rank_90? | 0/20 at all k. Observation ≠ intervention. |
+| Script | Question | Result | Output |
+|--------|----------|--------|--------|
+| `exp_z_encoder.py` | Linear probe for problem identity across unseen languages? | 100% on 4 unseen languages, 9 dimensions, L33 | `output/exp_z_encoder.json` |
+| `expC2b_dose_response.py` | Last token: read head or reasoner? | all-tokens N=1 → 0/20; last-only N=36 → baseline | `output/expC2b_dose_response.json` |
+| `expC6b_mean_dissection.py` | What does last-token attention contribute? | Constant bias. mean_only = baseline. | `output/expC6b_mean_dissection_7b.json` |
+| `expC3_7b_compression.py` | Readout rank at L27 on 7B? | k=1 lossless. Statistical rank 92, causal rank 1. | `output/expC3_7b_compression_L27.json` |
+| `expMS1_kernel_surgery.py` | Remove convention from W_down? | +6 to +8 accuracy, 200+ problems, 3 languages | `output/expMS1_kernel_surgery.json` |
+| `exp_crossmodel_surgery.py` | Convention surgery on Phi-3, Qwen3-4B? | Both positive (+2 to +7) | `output/exp_crossmodel_*.json` |
+| `expBQ2_crossmodel_lyapunov.py` | Gram dynamics across 4 models? | rank_50=1 all layers, all models | `output/expBQ2_crossmodel_lyapunov.json` |
+| `expG1e_14b_bun_inversion.py` | Blind prompt reads math from KV cache? | 14B: zero garbage, correct answers | `output/expG1e_14b_bun_inversion.json` |
+| `exp_attention_anatomy.py` | Read-head focus: content vs glue tokens? | p < 0.0001 at L32-35, 37/37 problems | `output/exp_attention_anatomy_3b.json` |
+| `expBS_svd_truncation.py` | Compress inference to Gram rank_90? | 0/20 at all k. Observation ≠ intervention. | `output/expBS_svd_truncation.json` |
 
 *Grading caveat: early experiments used a substring-matching grader that inflated absolute accuracy. Directional claims (treatment vs control) are unaffected — both arms use the same grader. Strict regrading confirmed all directional results hold or strengthen.*
+
+*Output note: `probe_spectral_fingerprint.py`, `probe_echo_vs_novel.py`, and `probe_decisive3.py` printed results to stdout without saving JSON. Numbers in the findings section are from session logs recorded at experiment time. JSON output reruns pending.*
 
 ---
 
