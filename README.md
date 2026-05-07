@@ -6,7 +6,7 @@
 
 ---
 
-A transformer prompted in Chinese solves math problems it fails in English — same weights, same temperature. If the model's output is invariant under input language but the reasoning is correct, that invariance doesn't automatically mean a language-agnostic reasoning core exists *inside* the model. It could be a surface-level phenomenon. Whether the internal computation factorizes as $Q_\lambda(x) = h'_\lambda(f^*(h_\lambda(x)))$ — thin language wrappers around a shared reasoning core — is a separate, harder question. This repo is 193 experiments trying to answer it.
+A transformer prompted in Chinese solves math problems it fails in English — same weights, same temperature. If the model's output is invariant under input language but the reasoning is correct, that invariance doesn't automatically mean a language-agnostic reasoning core exists *inside* the model. It could be a surface-level phenomenon. Whether the internal computation factorizes as `encode(language) → reason(language-agnostic) → decode(language)` — thin language wrappers around a shared reasoning core — is a separate, harder question. This repo is 193 experiments trying to answer it.
 
 Side project, started February 2026 with no prior mechanistic interpretability experience.
 
