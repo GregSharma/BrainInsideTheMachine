@@ -2,7 +2,7 @@
 
 **Can we isolate a language-agnostic reasoning subspace inside a transformer?**
 
-prosodic.org/showcases — interactive knowledge graph of all concepts and sessions
+[prosodic.org/showcases](https://prosodic.org/showcases) — interactive knowledge graph of all concepts and sessions
 
 ---
 
