@@ -68,6 +68,36 @@ prompt it was never optimized against — and from **1 vector** if you only need
 it under the prompt you trained on. Naive dimensionality reduction of the raw
 embeddings does not work; an optimized injection does.
 
+## Can we argmax it onto a real token? (snap test, no training)
+
+Follow-up `exp_subway_snap.py`. The optimized vector recites 9/9, but how far
+from the vocabulary does it live, and does snapping it back to the nearest real
+token preserve anything?
+
+| k | soft-token hits | nearest-token cosine | snapped token(s) | snapped hits |
+|---|---|---|---|---|
+| 1 | 9/9 | **0.163** | `' Doming'` | 0/9 |
+| 2 | 9/9 | 0.151, 0.174 | `' DO'`, `' DO'` | 1/9 |
+| 4 | 9/9 | 0.15–0.18 | `'"Not'`,`'istol'`,`' car'`,`' onPostExecute'` | 0/9 |
+
+The working vector's cosine to its **nearest** of 151,936 real tokens is only
+**~0.16** — essentially orthogonal to the entire vocabulary. It does not sit
+near any token; it sits *between* the lattice points, in the interstitial
+volume of embedding space. Argmax (snap to grid) collapses 9/9 → 0/9. The
+nearest tokens are junk (`' Doming'`, `' onPostExecute'`).
+
+And a purely **gradient-free discrete search** — pick the real token(s) that
+maximize P(sentence | tokens) by forward passes only — also fails: the best
+single token (`' subway'`) and best pair (`' subway'+' lean'`) both give 0/9.
+No short *readable* prompt carries the sentence.
+
+**Takeaway.** The compression is not expressible on the token grid. A real
+token holds ~log2(151936) ≈ 17 bits; the continuous vector exploits the full
+~896-dim channel. Snapping to the lattice rounds the payload away. The win
+*requires* "non-readable words" — points off the vocabulary lattice — which is
+also why this compresses *positions / KV / attention cost*, not storable bytes,
+and is tied to these exact weights.
+
 ## Caveats / next
 
 - 0.5B, one sentence — a demonstration, not a sweep. Natural follow-ups:
