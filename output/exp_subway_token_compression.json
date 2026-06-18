@@ -1,0 +1,561 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "sentence": "do not lean on car doors on the subway",
+  "words": [
+    "do",
+    "not",
+    "lean",
+    "on",
+    "car",
+    "doors",
+    "on",
+    "the",
+    "subway"
+  ],
+  "n_tokens": 9,
+  "k_values": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "conditions": {
+    "baseline_text": {
+      "k": 9,
+      "comp_ratio": 1.0,
+      "n_hit": 9,
+      "hits": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "recovered": [
+        "do",
+        "not",
+        "lean",
+        "on",
+        "car",
+        "doors",
+        "on",
+        "the",
+        "subway"
+      ],
+      "raw": "Do not lean on car doors on the subway."
+    },
+    "meanpool_k1": {
+      "k": 1,
+      "comp_ratio": 9.0,
+      "n_hit": 0,
+      "hits": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "recovered": [
+        "the",
+        "quick",
+        "brown",
+        "fox",
+        "jumps",
+        "over",
+        "the",
+        "lazy",
+        "dog"
+      ],
+      "raw": "The quick brown fox jumps over the lazy dog."
+    },
+    "meanpool_k2": {
+      "k": 2,
+      "comp_ratio": 4.5,
+      "n_hit": 0,
+      "hits": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "recovered": [
+        "on",
+        "the",
+        "car"
+      ],
+      "raw": "on the car"
+    },
+    "meanpool_k3": {
+      "k": 3,
+      "comp_ratio": 3.0,
+      "n_hit": 0,
+      "hits": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "recovered": [
+        "don",
+        "t",
+        "come"
+      ],
+      "raw": "don't come"
+    },
+    "meanpool_k4": {
+      "k": 4,
+      "comp_ratio": 2.25,
+      "n_hit": 0,
+      "hits": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "recovered": [
+        "don",
+        "t",
+        "on",
+        "cars"
+      ],
+      "raw": "Don't on cars."
+    },
+    "stride_k1": {
+      "k": 1,
+      "comp_ratio": 9.0,
+      "n_hit": 1,
+      "hits": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "recovered": [
+        "do"
+      ],
+      "raw": "Do."
+    },
+    "stride_k2": {
+      "k": 2,
+      "comp_ratio": 4.5,
+      "n_hit": 1,
+      "hits": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "recovered": [
+        "do",
+        "subway"
+      ],
+      "raw": "do subway"
+    },
+    "stride_k3": {
+      "k": 3,
+      "comp_ratio": 3.0,
+      "n_hit": 1,
+      "hits": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "recovered": [
+        "do",
+        "car",
+        "subway"
+      ],
+      "raw": "do car subway"
+    },
+    "stride_k4": {
+      "k": 4,
+      "comp_ratio": 2.25,
+      "n_hit": 1,
+      "hits": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "recovered": [
+        "do",
+        "lean",
+        "doors",
+        "subway"
+      ],
+      "raw": "Do lean doors subway"
+    },
+    "svd_k1": {
+      "k": 1,
+      "comp_ratio": 9.0,
+      "n_hit": 0,
+      "hits": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "recovered": [
+        "on"
+      ],
+      "raw": "on"
+    },
+    "svd_k2": {
+      "k": 2,
+      "comp_ratio": 4.5,
+      "n_hit": 0,
+      "hits": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "recovered": [
+        "on",
+        "the",
+        "sea"
+      ],
+      "raw": "On the sea."
+    },
+    "svd_k3": {
+      "k": 3,
+      "comp_ratio": 3.0,
+      "n_hit": 0,
+      "hits": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "recovered": [
+        "on",
+        "the",
+        "other",
+        "hand",
+        "it",
+        "s",
+        "important",
+        "to",
+        "remember"
+      ],
+      "raw": "On the other hand, it's important to remember that words have different meanings and can be used in various contexts."
+    },
+    "svd_k4": {
+      "k": 4,
+      "comp_ratio": 2.25,
+      "n_hit": 1,
+      "hits": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "recovered": [
+        "m",
+        "not",
+        "sure",
+        "what",
+        "you",
+        "re",
+        "asking",
+        "for",
+        "could"
+      ],
+      "raw": "On the other hand, I'm not sure what you're asking for. Could you please provide more context or clarify your"
+    },
+    "_opt_loss": {
+      "k1": 0.0045,
+      "k2": 0.0041,
+      "k3": 0.002,
+      "k4": 0.0021
+    },
+    "opt_k1": {
+      "k": 1,
+      "comp_ratio": 9.0,
+      "n_hit": 9,
+      "hits": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "recovered": [
+        "do",
+        "not",
+        "lean",
+        "on",
+        "car",
+        "doors",
+        "on",
+        "the",
+        "subway"
+      ],
+      "raw": "do not lean on car doors on the subway"
+    },
+    "opt_k2": {
+      "k": 2,
+      "comp_ratio": 4.5,
+      "n_hit": 9,
+      "hits": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "recovered": [
+        "do",
+        "not",
+        "lean",
+        "on",
+        "car",
+        "doors",
+        "on",
+        "the",
+        "subway"
+      ],
+      "raw": "do not lean on car doors on the subway"
+    },
+    "opt_k3": {
+      "k": 3,
+      "comp_ratio": 3.0,
+      "n_hit": 9,
+      "hits": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "recovered": [
+        "do",
+        "not",
+        "lean",
+        "on",
+        "car",
+        "doors",
+        "on",
+        "the",
+        "subway"
+      ],
+      "raw": "do not lean on car doors on the subway"
+    },
+    "opt_k4": {
+      "k": 4,
+      "comp_ratio": 2.25,
+      "n_hit": 9,
+      "hits": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "recovered": [
+        "do",
+        "not",
+        "lean",
+        "on",
+        "car",
+        "doors",
+        "on",
+        "the",
+        "subway"
+      ],
+      "raw": "do not lean on car doors on the subway"
+    },
+    "opt_k1_GEN": {
+      "k": 1,
+      "comp_ratio": 9.0,
+      "n_hit": 1,
+      "hits": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "recovered": [
+        "sentence",
+        "echo",
+        "this",
+        "sentence",
+        "verbatim",
+        "output",
+        "only",
+        "the",
+        "sentence"
+      ],
+      "raw": "echo this sentence verbatim, output only the sentence: echo this sentence verbatim, output only the sentence: echo this"
+    },
+    "opt_k2_GEN": {
+      "k": 2,
+      "comp_ratio": 4.5,
+      "n_hit": 9,
+      "hits": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "recovered": [
+        "do",
+        "not",
+        "lean",
+        "on",
+        "car",
+        "doors",
+        "on",
+        "the",
+        "subway"
+      ],
+      "raw": "do not lean on car doors on the subway"
+    },
+    "opt_k3_GEN": {
+      "k": 3,
+      "comp_ratio": 3.0,
+      "n_hit": 7,
+      "hits": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "recovered": [
+        "do",
+        "not",
+        "lean",
+        "on",
+        "car",
+        "doors",
+        "in",
+        "the",
+        "public"
+      ],
+      "raw": "do not lean on car doors in the public domain"
+    },
+    "opt_k4_GEN": {
+      "k": 4,
+      "comp_ratio": 2.25,
+      "n_hit": 9,
+      "hits": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "recovered": [
+        "do",
+        "not",
+        "lean",
+        "on",
+        "car",
+        "doors",
+        "on",
+        "the",
+        "subway"
+      ],
+      "raw": "do not lean on car doors on the subway"
+    }
+  }
+}
