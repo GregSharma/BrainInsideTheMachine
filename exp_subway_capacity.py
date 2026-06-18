@@ -51,7 +51,7 @@ def prefix_suffix():
 PRE, SUF = prefix_suffix()
 with torch.no_grad(): PE, SE = emb(PRE), emb(SUF)
 
-def optimize(target_ids, k, steps=250, lr=0.05):
+def optimize(target_ids, k, steps=200, lr=0.05, tol=0.01):
     tgt = torch.tensor([target_ids + [tok.eos_token_id]])
     with torch.no_grad(): TE = emb(tgt)
     # warm start: mean-pool target embeddings into k slots
@@ -60,6 +60,7 @@ def optimize(target_ids, k, steps=250, lr=0.05):
     init = torch.stack([Etg[idx[i]:max(idx[i+1],idx[i]+1)].mean(0) for i in range(k)])
     P = init.clone().requires_grad_(True)
     opt = torch.optim.Adam([P], lr=lr)
+    loss = torch.tensor(99.0)
     for _ in range(steps):
         opt.zero_grad()
         full = torch.cat([PE, P.unsqueeze(0), SE, TE], dim=1)
@@ -68,6 +69,7 @@ def optimize(target_ids, k, steps=250, lr=0.05):
         pred = logits[:, ctx-1:ctx-1+tgt.shape[1], :]
         loss = F.cross_entropy(pred.reshape(-1, pred.shape[-1]), tgt.reshape(-1))
         loss.backward(); opt.step()
+        if loss.item() < tol: break   # converged; no need to grind
     return P.detach(), loss.item()
 
 @torch.no_grad()
@@ -86,14 +88,14 @@ def gen_match(P, target_ids):
 print("\n" + "="*72)
 print("CAPACITY of a SINGLE vector (k=1): tokens reconstructed vs length")
 print("="*72)
-print(f"{'n':>4} {'natural':>14} {'random':>14}")
-for n in [4, 8, 12, 16, 24, 32, 48, 64]:
+print(f"{'n':>4} {'natural':>16} {'random':>16}")
+for n in [4, 8, 12, 16, 24, 32]:
     if n > len(NAT_IDS): break
     nat = NAT_IDS[:n]
     rnd = [random.randint(1000, V-1000) for _ in range(n)]
-    Pn,_ = optimize(nat, 1); cn, fmn = gen_match(Pn, nat)
-    Pr,_ = optimize(rnd, 1); cr, fmr = gen_match(Pr, rnd)
-    print(f"{n:>4} {f'{cn}/{n} (fm@{fmn})':>14} {f'{cr}/{n} (fm@{fmr})':>14}")
+    Pn,ln = optimize(nat, 1); cn, fmn = gen_match(Pn, nat)
+    Pr,lr = optimize(rnd, 1); cr, fmr = gen_match(Pr, rnd)
+    print(f"{n:>4} {f'{cn}/{n} (fm@{fmn}, L={ln:.2f})':>16} {f'{cr}/{n} (fm@{fmr}, L={lr:.2f})':>16}", flush=True)
 
 print("\n" + "="*72)
 print("MIN-k: fix a 32-token natural target, grow k until full reconstruction")
