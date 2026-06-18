@@ -139,6 +139,50 @@ real near-orthogonal binding keys, keeping k>1 positions so RoPE's scaffold
 survives. Until then: existence of a cheap analytic encoder is **unproven**, and
 SGD (or a learned amortized encoder) remains the only thing demonstrated to work.
 
+## Capacity: how many tokens fit in ONE vector? (exp_subway_capacity.py)
+
+Single optimized vector (k=1), free-generation reconstruction, vs target length:
+
+| n tokens | natural English | random tokens |
+|---|---|---|
+| 4 | 4/4 | 4/4 |
+| 8 | 8/8 | 8/8 |
+| 12 | 12/12 | 11/12 (loss 1.28) |
+| 16 | 16/16 | **0/16** (loss 4.84) |
+| 24 | 24/24 | 0/24 |
+| 32 | **32/32** | 0/32 |
+
+One 896-dim vector reconstructs **32 tokens of English verbatim** (32×; never
+broke within our 49-token pool), while **random/incompressible tokens collapse
+at ~12–16**. The natural-vs-random gap is linguistic redundancy: compressible
+content packs ~3× further. Min-k on a 32-token natural target: k=1 already gives
+32/32, so larger k is redundant at this length.
+
+Honest caveat: the random ceiling here is **optimization-limited**, not proven
+to be the information ceiling — at n≥16 the optimizer failed to fit the *training*
+loss (4.8–8.4) in 200 steps, so "0/16" means "couldn't be found in budget," not
+"provably impossible." The JL/superposition bound for linear decode is ~d/log2(V)
+≈ 52 random slots; we're well under it because the readout is nonlinear and the
+budget is small. The qualitative law (natural ≫ random, capacity scales) holds.
+
+## Prior art — this is a faithful REPRODUCTION, not a discovery
+
+Novelty check (web search, June 2026): single-vector / soft-prompt context
+compression is an established, active subfield. The experiment here — optimize
+one continuous input vector by gradient descent so a frozen LLM reconstructs a
+sequence — is essentially **"Cramming 1568 Tokens into a Single Vector and Back
+Again"** (Kuratov et al., arXiv 2502.13063, Feb 2025), which crams up to **1,568
+tokens into one vector** and includes the capacity + data-compressibility
+(natural-vs-random) analysis our toy reproduces. Adjacent: GIST (Mu 2023, ~26×),
+AutoCompressors (Chevalier 2023), ICAE (Ge, ICLR 2024, ~4×), 500xCompressor
+(Cambridge 2024, up to 480× into ~1 token), KV-Distill / Cartridges (2025).
+
+What these papers do *not* settle, and where original work could live: a
+**training-free, closed-form** encoder (they all either train an encoder or run
+per-instance GD), and a mechanistic *theory of why* the capacity is what it is
+(VSA / RoPE-as-binding). Our input-layer closed-form attempt FAILED, so that
+remains open, not claimed.
+
 ## Caveats / next
 
 - 0.5B, one sentence — a demonstration, not a sweep. Natural follow-ups:
