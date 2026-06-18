@@ -98,6 +98,47 @@ token holds ~log2(151936) ≈ 17 bits; the continuous vector exploits the full
 also why this compresses *positions / KV / attention cost*, not storable bytes,
 and is tied to these exact weights.
 
+## Can we COMPUTE the carrier instead of training it? (closed-form, no SGD)
+
+`exp_subway_closedform.py`. The dream: if mid-layer representations are
+near-additive, the carrier could be built by a formula — sum the token
+contributions, optionally bind position multiplicatively (a Vector Symbolic
+Architecture / holographic encoding, with RoPE as the bind) — instead of found
+by gradient descent. Every training-free single-vector construction, injected
+at the input (embedding) layer:
+
+| construction | hits |
+|---|---|
+| meanpool (mean of 9 embeddings) | 0/9 |
+| bag_sum (raw sum) | 0/9 |
+| bag_norm (sum, rescaled) | 0/9 |
+| rope_bind (Σ RoPE-rotate(Eᵢ, i)) | 1/9 (spurious) |
+| rope_bind_n (rescaled) | 0/9 |
+| **opt_1 (150-step SGD, reference)** | **9/9** |
+
+**Negative result, stated straight.** At the input boundary, no naive additive
+or holographic construction recovers the sentence; SGD is still required. The
+"transformer is a VSA you can write to analytically" idea, in its *cheapest*
+form (sum embeddings at layer 0), is false here.
+
+Two honest reasons this is a *weak* test of the deeper conjecture, not a
+refutation of it:
+1. **Wrong space.** The additivity/superposition hypothesis is about *mid-layer*
+   residual stream, after attention has mixed positions — not raw input
+   embeddings. RoPE binds *inside attention*, not on embeddings, so rotating
+   embeddings and injecting at layer 0 is not how the model uses position.
+2. **Weak binding keys.** RoPE's low-frequency schedule (θ=1e6) leaves most of
+   an 896-dim vector nearly unrotated at positions 0–8, so `rope_bind` ≈
+   `bag_sum` — it never actually tested holographic binding with near-orthogonal
+   keys.
+
+What it *does* establish: the closed form, if one exists, does **not** live at
+the input boundary. The proper next test is to construct/inject in *mid-layer*
+residual-stream space (where the repo's kernel/Z work already lives) and to use
+real near-orthogonal binding keys, keeping k>1 positions so RoPE's scaffold
+survives. Until then: existence of a cheap analytic encoder is **unproven**, and
+SGD (or a learned amortized encoder) remains the only thing demonstrated to work.
+
 ## Caveats / next
 
 - 0.5B, one sentence — a demonstration, not a sweep. Natural follow-ups:
