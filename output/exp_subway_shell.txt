@@ -1,0 +1,32 @@
+PART 1  ambient law: sum of k unit vectors in R^d (no model)
+================================================================
+  d= 896 k=10: ||S||= 3.16±0.07 (sqrt(k)=3.16)  cos=-0.0001±0.0333 (1/sqrt(d)=0.0334)  top-axis frac=0.0026 (iso~0.0011)
+  d= 896 k=50: ||S||= 7.06±0.16 (sqrt(k)=7.07)  cos=+0.0002±0.0334 (1/sqrt(d)=0.0334)  top-axis frac=0.0027 (iso~0.0011)
+  d=2048 k=10: ||S||= 3.16±0.05 (sqrt(k)=3.16)  cos=+0.0000±0.0222 (1/sqrt(d)=0.0221)  top-axis frac=0.0016 (iso~0.0005)
+  d=2048 k=50: ||S||= 7.07±0.11 (sqrt(k)=7.07)  cos=+0.0001±0.0221 (1/sqrt(d)=0.0221)  top-axis frac=0.0016 (iso~0.0005)
+
+================================================================
+PART 2  real carriers: are they uniform shell directions?
+================================================================
+optimizing 12 carriers...
+  carrier  0: loss 0.002  norm 17.07
+  carrier  1: loss 0.002  norm 15.99
+  carrier  2: loss 0.002  norm 17.25
+  carrier  3: loss 0.001  norm 17.21
+  carrier  4: loss 0.001  norm 24.87
+  carrier  5: loss 0.001  norm 16.59
+  carrier  6: loss 0.001  norm 17.42
+  carrier  7: loss 0.001  norm 17.14
+  carrier  8: loss 0.002  norm 17.09
+  carrier  9: loss 0.001  norm 17.98
+  carrier 10: loss 0.011  norm 25.23
+  carrier 11: loss 0.002  norm 16.48
+
+d = 896,  1/sqrt(d) = 0.0334
+  carrier norms        : mean 18.36  range [15.99, 25.23]
+  carrier pairwise cos : mean +0.0423  std 0.0399  max 0.1269
+  RANDOM pairwise cos  : mean +0.0034  std 0.0327  max 0.0746
+  carrier top-axis frac: 0.1265   RANDOM top-axis frac: 0.0995   (iso lower ~0.0833)
+
+If carrier rows ~ random rows -> S_t is a thinned isotropic shell.
+Done.

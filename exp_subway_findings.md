@@ -387,6 +387,38 @@ subfield (Cramming-1568, GIST, ICAE, 500xCompressor); the genuinely open edge is
 *why* the working point is an isolated off-manifold attractor and whether any
 non-optimization route can reach it.
 
+## Is S_t a thinned isotropic shell? Mostly — plus a small residual.
+(exp_subway_shell.py)
+
+Cross-validation of the roots-of-unity / sum-of-unit-vectors picture.
+
+PART 1 (ambient law, no model): sum of k iid unit vectors in R^d behaves
+exactly as the CLT predicts — ‖S‖≈√k, direction uniform, pairwise cosine
+N(0, 1/√d), no preferred axis. The February roots-of-unity toy IS the ambient
+law.
+
+PART 2 (12 real carriers, d=896, 1/√d=0.0334):
+
+| stat | carriers | random null | iso floor |
+|---|---|---|---|
+| pairwise cos mean | **+0.0423** | +0.0034 | 0 |
+| pairwise cos std | 0.0399 | 0.0327 | — |
+| top-axis fraction | **0.1265** | 0.0995 | 0.0833 |
+| norms | mean 18.4, range 16–25 | — | — |
+
+Carriers are **mostly** an isotropic high-norm shell (the toy/baseline
+dominates) **plus a small shared positive component**: mean pairwise cosine is
+~12× the null and variance concentrates in a shared axis more than random. That
+residual = a candidate "readout fingerprint."
+
+Honest caveats (do not overclaim): n=12 is underpowered (+0.042 is suggestive,
+not nailed), and it is **confounded** — every carrier solves the same task with
+the same prefix/suffix, so the shared axis could be generic "recite-mode" /
+prompt geometry rather than anything about the sentence. The decisive test is
+within-sentence vs across-sentence alignment (exp_subway_concept.py): only if
+same-sentence carriers align more than cross-sentence ones is the residual
+sentence-specific structure rather than mundane prompt geometry.
+
 ## Caveats / next
 
 - 0.5B, one sentence — a demonstration, not a sweep. Natural follow-ups:
