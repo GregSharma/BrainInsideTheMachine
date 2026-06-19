@@ -1,0 +1,32 @@
+carrier ||c|| = 10.74   mean token norm = 0.42
+
+============================================================
+Is the carrier a superposition of the 9 token directions?
+============================================================
+  residual NOT in span(sentence embeddings) :  98.6%  -> 1.4% explained
+  (control) mean-pool vec, same span        :   0.0%
+  (control) carrier vs 9 RANDOM embeddings   :  99.2%
+
+Least-squares coefficients on each sentence token:
+    do       +2.842
+    not      -0.533
+    lean     -1.030
+    on       -0.840
+    car      -0.288
+    doors    +0.691
+    on       -0.840
+    the      -0.389
+    subway   +0.556
+
+Per-token cosine(carrier, embedding):
+    do       +0.131
+    not      -0.043
+    lean     -0.033
+    on       -0.082
+    car      -0.008
+    doors    +0.066
+    on       -0.082
+    the      -0.052
+    subway   +0.039
+
+Done.

@@ -267,6 +267,37 @@ at ~6/9 and makes deep-layer transplant fail outright. So this is directional
 support, not a clean monotone curve. A faithful version would inject the full
 per-layer residual stack for each slot.
 
+## Is the carrier a superposition of token directions? No — orthogonal & huge.
+(exp_subway_span.py)
+
+Least-squares projection of the trained carrier onto the span of its own 9
+sentence-token embeddings:
+
+| quantity | value |
+|---|---|
+| carrier norm ‖c‖ | **10.74** (mean token norm 0.42 → ~25×) |
+| residual NOT in span(sentence embeddings) | **98.6%** (1.4% explained) |
+| control: mean-pool vector, same span | 0.0% (in-span by construction) |
+| control: carrier vs 9 *random* embeddings | 99.2% |
+| per-token cosine(carrier, embedding) | 0.13 ("do"), ~0 for the rest |
+
+The carrier is **not** a bundle of the words it encodes. It is a high-magnitude
+(~25× normal) vector pointing almost entirely **orthogonal** to every token that
+composes the sentence — the sentence's own embeddings explain it barely better
+than random ones. Capacity is reached by driving the input *off the manifold*
+into an unused, near-orthogonal, high-norm region that downstream
+attention+nonlinearity decode — not by linearly summing the constituent tokens.
+
+This **refutes the simplest VSA / superposition-of-token-vectors hypothesis** at
+the input layer. (Scope: a VSA story could still hold in a mid-layer/transformed
+space or against unembedding rows; but orthogonal + 25×-norm is robust here.)
+
+Combined picture across all probes — the carrier is off the **token lattice**
+(cos 0.16), off the **activation manifold** (mid-layer harvest 0/9), off the
+**readout path** (logit-lens junk), and off the **token-embedding span**
+(98.6% orthogonal, 25× norm). It is an off-manifold, high-norm, attention-
+addressed code that only gradient descent (or a trained encoder) can reach.
+
 ## Caveats / next
 
 - 0.5B, one sentence — a demonstration, not a sweep. Natural follow-ups:
