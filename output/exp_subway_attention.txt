@@ -1,0 +1,15 @@
+attention-to-slot  and  recall   vs   carrier norm
+================================================================
+   norm     x  attn->slot  recall
+   2.68  0.25      0.0526     0/9  ###
+   5.36  0.50      0.0514     2/9  ###
+   8.04  0.75      0.0552     2/9  ###
+  10.72  1.00      0.0670     9/9  ####
+  13.40  1.25      0.0622     4/9  ###
+  16.09  1.50      0.0585     2/9  ###
+  21.45  2.00      0.0619     1/9  ###
+  32.17  3.00      0.0543     0/9  ###
+
+Prediction: attn->slot rises monotonically with norm (vMF concentration);
+recall peaks at intermediate norm (read but not saturated).
+Done.

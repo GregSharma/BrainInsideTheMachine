@@ -451,6 +451,38 @@ sum-of-units toy as the model of the content geometry, and pinning the only
 structured residual as task/prefix harness. The pre-registration discipline
 prevented reporting 0.435 as a "sentence concept direction."
 
+## The norm is NOT attention-concentration (vMF theory refuted)
+(exp_subway_attention.py)
+
+Direct test of the claim "‖z‖ acts as the softmax/vMF concentration." Measured
+downstream attention-to-slot across a carrier norm sweep:
+
+| norm (×) | attn→slot | recall |
+|---|---|---|
+| 0.25 | 0.053 | 0/9 |
+| 0.50 | 0.051 | 2/9 |
+| 0.75 | 0.055 | 2/9 |
+| **1.00** | **0.067** | **9/9** |
+| 1.25 | 0.062 | 4/9 |
+| 1.50 | 0.059 | 2/9 |
+| 2.00 | 0.062 | 1/9 |
+| 3.00 | 0.054 | 0/9 |
+
+Attention-to-slot is **nearly flat** (~0.05–0.067), not monotone/saturating.
+The vMF-concentration theory is **refuted** — because **RMSNorm normalizes the
+slot residual before the K/V projection**, so input magnitude largely cancels
+out of the attention logits. (There is a small +20% attention bump exactly at
+the working norm, coincident with the recall peak, but it is secondary.)
+
+Refined hypothesis (testable): RMSNorm makes the *read* ~scale-invariant, so the
+norm must act through the **balance between the injected direction and per-layer
+updates**. Layer 0: slot residual = z; each layer adds O(1) updates from
+normalized inputs. Huge ‖z‖ → updates negligible → slot **frozen** as raw z
+(layers can't sculpt it) → fail. Tiny ‖z‖ → updates swamp z → content lost →
+fail. Sweet spot = z imprints the direction yet layers still process it. A
+residual-write-magnitude resonance, not an attention one. (Next:
+exp_subway_drift.py — slot residual drift across layers vs ‖z‖.)
+
 ## Caveats / next
 
 - 0.5B, one sentence — a demonstration, not a sweep. Natural follow-ups:
