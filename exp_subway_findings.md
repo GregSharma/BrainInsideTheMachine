@@ -1,5 +1,35 @@
 # Subway sentence: can 9 words ride in fewer than 9 tokens?
 
+## TL;DR (the whole arc, honest)
+
+Yes — one optimized 896-dim vector makes a frozen Qwen2.5-0.5B recite all 9
+words; capacity ~32 natural / ~12 random tokens per vector. **This reproduces an
+established subfield** (Cramming-1568, GIST, ICAE, 500xCompressor), not a new
+result. The investigation then characterized *what the carrier is*:
+
+- off the token lattice (cos 0.16), off the natural activation manifold (mid-layer
+  harvest 0/9), off the readout path (logit-lens junk → KV/attention-addressed),
+  off its own words' span (98.6% orthogonal, ~25× norm);
+- a **sharp isolated point** (basin ~1% angular tolerance), and there are **many**
+  mutually near-orthogonal ones (a constellation);
+- its content geometry matches the **sum-of-unit-vectors / roots-of-unity** toy
+  (isotropic high-norm shell, pairwise cos ≈ 1/√d).
+
+**Hypotheses tested and refuted** (the honest part): closed-form input-layer
+encoder (no); VSA superposition of token vectors (no, orthogonal); a
+sentence-specific "concept" axis in the shared component (no — it's generic
+recite-mode geometry, cos 0.43 across different sentences); norm = softmax/vMF
+concentration (no — RMSNorm cancels it; attention-to-slot is flat). The norm
+resonance is only weakly explained by "freeze vs sculpt" and its sharpness
+remains open. Net: a clean, self-correcting mechanistic characterization; the
+genuinely open edge is *why* the working set is a constellation of isolated
+off-manifold points and whether any non-optimization route reaches one.
+
+(Sections below in experiment order. Caveat throughout: 0.5B, one/two sentences,
+small samples — a demonstration and characterization, not a statistical sweep.)
+
+---
+
 **Question (Greg).** Take a short sentence —
 
 > *do not lean on car doors on the subway*
@@ -483,9 +513,31 @@ fail. Sweet spot = z imprints the direction yet layers still process it. A
 residual-write-magnitude resonance, not an attention one. (Next:
 exp_subway_drift.py — slot residual drift across layers vs ‖z‖.)
 
+## Does the slot freeze at high norm? Weakly. (exp_subway_drift.py)
+
+Testing the refined "freeze vs sculpt" hypothesis — slot residual drift across
+layers vs ‖z‖:
+
+| norm × | mean rel drift/layer | cos(z, h_final) | recall |
+|---|---|---|---|
+| 0.25 | 0.683 | +0.003 | 0/9 |
+| 0.50 | 0.650 | −0.033 | 2/9 |
+| **1.00** | 0.659 | **−0.042** | **9/9** |
+| 1.50 | 0.596 | +0.003 | 2/9 |
+| 2.00 | 0.540 | +0.019 | 0/9 |
+| 3.00 | 0.482 | +0.075 | 0/9 |
+
+Directionally consistent (drift falls and input-alignment rises with norm = mild
+freezing), but the magnitudes are small — even at 3× the slot is still nearly
+orthogonal to its input. Clean empirical fact: **recall peaks exactly where the
+slot residual is most transformed away from its input** (most negative cos), and
+both norm extremes reduce that transformation. Neither freezing nor attention-
+concentration fully explains the *sharpness* of the resonance; mechanism open.
+
 ## Caveats / next
 
-- 0.5B, one sentence — a demonstration, not a sweep. Natural follow-ups:
+- 0.5B, one/two sentences, small samples — a demonstration and characterization,
+  not a statistical sweep. Natural follow-ups:
   multiple sentences, longer text (where 1-vector won't hold), the 3B model
   (where ordinal *counting* works, so we could verify by literally asking
   "what was the 7th word"), and measuring how k scales with sentence length /

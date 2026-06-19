@@ -1,0 +1,13 @@
+slot residual drift & freezing vs norm
+================================================================
+   norm     x  mean rel drift/layer  cos(z,h_final)  recall
+   2.69  0.25                0.6826           0.003     0/9
+   5.37  0.50                0.6503          -0.033     2/9
+   8.06  0.75                0.6435          -0.037     2/9
+  10.74  1.00                0.6591          -0.042     9/9
+  16.11  1.50                0.5959           0.003     2/9
+  21.48  2.00                0.5403           0.019     0/9
+  32.22  3.00                0.4821           0.075     0/9
+
+Frozen (high cos(z,h_final), low drift) at high norm => slot can't be sculpted.
+Done.
