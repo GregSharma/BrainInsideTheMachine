@@ -1,0 +1,10 @@
+DEFINITIVE content-structure test (3 sentences, indep seeds)
+============================================================
+  1/sqrt(d) = 0.0334
+  RAW      within = +0.0541   across = +0.0132   gap = +0.0409
+  mean-dir pairwise cosines (shared axis): [0.118, 0.006, 0.06]
+  AFTER removing global axis:
+  RESIDUAL within = -0.0282   across = -0.0716   gap = +0.0434
+  residual within > across => content structure survives (interesting)
+  residual within ~ across => content geometry isotropic (mundane, robust)
+Done.

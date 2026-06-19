@@ -452,6 +452,13 @@ sentence-specific structure rather than mundane prompt geometry.
 ## Decisive test: the shared axis is MUNDANE (content-independent)
 (exp_subway_concept.py)
 
+> ⚠️ SUPERSEDED — this conclusion was driven by a bug (see exp_subway_concept2
+> below). The 0.435 cross-sentence alignment was a SHARED-INIT-SEED artifact.
+> With independent seeds the cross-sentence mean-dir cosines drop to ~0.006–0.118
+> and a within>across signal appears. Reading retained for the record; conclusion
+> retracted.
+
+
 Pre-registered: within-sentence ≫ across-sentence carrier alignment => the
 shared axis is sentence-specific (interesting). Result for two sentences
 (subway vs train), 7 carriers each:
@@ -534,10 +541,37 @@ slot residual is most transformed away from its input** (most negative cos), and
 both norm extremes reduce that transformation. Neither freezing nor attention-
 concentration fully explains the *sharpness* of the resonance; mechanism open.
 
+## Definitive concept test, flaw fixed (exp_subway_concept2.py)
+
+Independent seeds, 3 sentences, 6 carriers each. Also projects out the global
+mean carrier direction and re-tests on the residual.
+
+| | within | across | gap |
+|---|---|---|---|
+| RAW | +0.054 | +0.013 | **+0.041** |
+| residual (global axis removed) | −0.028 | −0.072 | **+0.043** |
+
+cross-sentence mean-dir cosines: 0.118, 0.006, 0.060 (near-orthogonal).
+
+Two updates:
+1. **Retraction.** The earlier "content-independent 0.435 axis (mundane)" was a
+   shared-init-seed artifact. Independent seeds give near-orthogonal cross-
+   sentence mean directions — no large generic axis.
+2. **Suggestive signal.** Same-sentence carriers align more than cross-sentence
+   ones (gap +0.04), robust to removing the global axis. Faint sentence-specific
+   structure on the isotropic shell — the pre-registered "interesting" outcome.
+
+NOT a claim yet: n=3 sentences, effect ~0.04 (~1.6×/√d), no significance test,
+no token-overlap control. Needs a powered permutation test (exp_subway_concept3)
+before anything is asserted. Lesson logged: a confident negative was overturned
+by fixing my own confound — verify the harness before trusting the verdict.
+
 ## Caveats / next
 
-- 0.5B, one/two sentences, small samples — a demonstration and characterization,
-  not a statistical sweep. Natural follow-ups:
+- 0.5B, few sentences, small samples — a demonstration and characterization,
+  not a statistical sweep. A confident conclusion here was already overturned by
+  a harness bug (seed reuse); treat all effect-size claims as provisional pending
+  powered, controlled reruns. Natural follow-ups:
   multiple sentences, longer text (where 1-vector won't hold), the 3B model
   (where ordinal *counting* works, so we could verify by literally asking
   "what was the 7th word"), and measuring how k scales with sentence length /
