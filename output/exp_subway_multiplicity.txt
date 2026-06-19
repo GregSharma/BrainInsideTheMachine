@@ -1,0 +1,14 @@
+optimizing carriers from different inits...
+  carrier 0: recall 9/9  norm 10.72
+  carrier 1: recall 9/9  norm 17.79
+  carrier 2: recall 9/9  norm 17.19
+  carrier 3: recall 9/9  norm 19.30
+
+pairwise cosine similarity between carriers:
+     c0 c1 c2 c3
+  c0 +1.00 +0.05 +0.03 +0.03
+  c1 +0.05 +1.00 +0.08 +0.09
+  c2 +0.03 +0.08 +1.00 +0.11
+  c3 +0.03 +0.09 +0.11 +1.00
+
+Done.

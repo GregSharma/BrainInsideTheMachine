@@ -353,6 +353,27 @@ tolerance) in 896-dim space. This is the unifying reason every shortcut failed:
 closed-form, mid-layer harvest, snap-to-token, and superposition-bundle all miss
 the point by *far* more than the basin width. Only optimization lands on it.
 
+## One carrier or many? A constellation. (exp_subway_multiplicity.py)
+
+Optimize the same sentence from 4 different initialisations:
+
+| carrier | init | recall | norm |
+|---|---|---|---|
+| 0 | warm start | 9/9 | 10.72 |
+| 1 | random | 9/9 | 17.79 |
+| 2 | random | 9/9 | 17.19 |
+| 3 | random | 9/9 | 19.30 |
+
+Pairwise cosine similarity: **0.03–0.11** — mutually near-orthogonal. The carrier
+is *not unique*: there is a **constellation of isolated, near-orthogonal solutions**,
+each in its own sharp basin, each reciting all 9 words, at different norms
+(10.7–19.3, so magnitude is not fixed across solutions either). The preimage of
+"recite this sentence" under the frozen model is many scattered points in the
+high-norm shell. Finding *a* carrier is easy because the space is dense with them
+(JL: ~e^{cd} near-orthogonal directions); the only requirement is landing in some
+sharp basin — what gradient descent does and the closed-form / harvest / snap
+routes cannot.
+
 ## Summary — the subway carrier, in one paragraph
 
 A frozen 0.5B recites a 9-word sentence from one injected vector (and from 2
