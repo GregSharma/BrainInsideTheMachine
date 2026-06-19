@@ -607,6 +607,18 @@ claim: interpretability/decodability of the per-content direction, larger scale,
 and a literature check (the area is crowded). The effect is faint: most of each
 carrier is still free/isotropic.
 
+## Is the content-direction interpretable? Inconclusive (exp_subway_decode.py)
+
+Cross-aligned each sentence's mean carrier direction d_X with the model's natural
+representation m_Y (mean last-layer hidden). All cos ≈ 0 (−0.11…+0.10); diag
++0.009 vs off −0.014 (the +0.023 is per-row offset, not a real diagonal). So the
+carrier direction looks orthogonal to the raw representation — BUT the test is
+compromised: the meaning vectors are mutually **0.875** similar (transformer
+hidden-state anisotropy), i.e. they barely separate the sentences. You can't test
+semantic alignment against a degenerate basis. **Inconclusive.** Fix for a proper
+redo: mean-center/whiten the meaning vectors (or use a real sentence encoder)
+before comparing. (Flaw caught by the built-in sanity check.)
+
 ## Caveats / next
 
 - 0.5B, few sentences, small samples — a demonstration and characterization,

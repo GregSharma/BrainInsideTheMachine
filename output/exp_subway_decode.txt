@@ -1,0 +1,18 @@
+cross-alignment  cos(carrier-dir d_X , model-meaning m_Y)
+============================================================
+      m0 m1 m2 m3 m4 m5
+  d0 -0.06 -0.08 -0.08 -0.05 -0.09 -0.11
+  d1 +0.03 +0.04 +0.02 +0.04 +0.05 +0.01
+  d2 -0.03 +0.01 +0.01 +0.01 +0.00 +0.01
+  d3 -0.06 -0.04 -0.02 +0.01 -0.03 -0.03
+  d4 +0.08 +0.06 +0.07 +0.08 +0.10 +0.08
+  d5 -0.11 -0.06 -0.08 -0.05 -0.07 -0.04
+
+  diagonal (same)   mean = +0.0093
+  off-diag (diff)   mean = -0.0138
+  diag - off = +0.0231
+  (sanity) mean off-diag cos among model-meaning vecs = +0.875
+
+  diag>>off => carrier dir tracks model semantics (interpretable)
+  diag~off~0 => carrier dir is an off-manifold code
+Done.
