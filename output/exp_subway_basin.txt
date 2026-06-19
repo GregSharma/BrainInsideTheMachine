@@ -1,0 +1,15 @@
+carrier norm 10.74
+
+============================================================
+DIRECTIONAL perturbation at FIXED norm: recall vs cos(perturbed, c)
+============================================================
+(median over 3 random perturbation directions per target cosine)
+  cos=1.000  recall(median)=9/9   trials=[9, 9, 9]
+  cos=0.999  recall(median)=9/9   trials=[9, 9, 9]
+  cos=0.990  recall(median)=6/9   trials=[4, 6, 6]
+  cos=0.950  recall(median)=2/9   trials=[2, 2, 2]
+  cos=0.900  recall(median)=0/9   trials=[0, 0, 1]
+  cos=0.800  recall(median)=0/9   trials=[0, 0, 1]
+
+Compare to radial sweep (prior exp): 0.5x->2/9, 1.0x->9/9, 1.5x->2/9.
+Done.

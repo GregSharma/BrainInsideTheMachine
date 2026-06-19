@@ -330,6 +330,42 @@ tokens' own principal subspace, orthogonal to the constituent tokens.** Reached
 only by optimization. The "free/closed-form/superposition" routes are all closed;
 what remains open is *why* a single narrow-basin magnitude unlocks the capacity.
 
+## The norm wasn't special — it's a narrow basin in ALL directions
+(exp_subway_basin.py)
+
+Correction to the "norm resonance" reading above. Perturb the carrier
+DIRECTIONALLY at fixed norm (median of 3 random directions per target cosine):
+
+| cos(perturbed, carrier) | recall |
+|---|---|
+| 1.000 | 9/9 |
+| 0.999 | 9/9 |
+| 0.990 | 6/9 |
+| 0.950 | 2/9 |
+| 0.900 | 0/9 |
+
+A 1% rotation costs 3 words; 18° (cos 0.95) is essentially dead. In tip-
+displacement terms a ~31% angular move kills recall vs ~50% radially — so the
+norm is *not* privileged; the earlier radial sweep was just one cross-section.
+
+**The solution is a sharp, isolated point** (near-point attractor, ~1% angular
+tolerance) in 896-dim space. This is the unifying reason every shortcut failed:
+closed-form, mid-layer harvest, snap-to-token, and superposition-bundle all miss
+the point by *far* more than the basin width. Only optimization lands on it.
+
+## Summary — the subway carrier, in one paragraph
+
+A frozen 0.5B recites a 9-word sentence from one injected vector (and from 2
+vectors under an unseen instruction); one vector holds ~32 natural / ~12 random
+tokens. That vector is off the token lattice (cos 0.16), off the activation
+manifold (natural mid-layer harvest 0/9), off the readout path (logit-lens junk
+— it is attention/KV-addressed write-only memory), and off its own words' span
+(98.6% orthogonal, 25x norm). It sits at a sharp isolated point reachable only
+by gradient descent (or a trained encoder). This reproduces an established
+subfield (Cramming-1568, GIST, ICAE, 500xCompressor); the genuinely open edge is
+*why* the working point is an isolated off-manifold attractor and whether any
+non-optimization route can reach it.
+
 ## Caveats / next
 
 - 0.5B, one sentence — a demonstration, not a sweep. Natural follow-ups:
