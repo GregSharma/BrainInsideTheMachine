@@ -28,8 +28,9 @@ more than cross-sentence ones (within 0.058 vs across 0.016; gap +0.042,
 +0.12, overlaps ~0). An earlier run wrongly called this "mundane" due to a
 shared-init-seed bug; fixing the harness reversed the verdict. So: carrier =
 faint content-specific direction (reproducible) + large free isotropic component.
-Caveats: faint effect, 0.5B / 6 sentences, sentence-length not yet controlled,
-direction not shown interpretable.
+Robust to seed, vocabulary-overlap, AND length confounds (concept2/3/4).
+Caveats: faint effect, 0.5B / 6 sentences, direction not shown interpretable,
+novelty unestablished.
 
 Net: a clean, self-correcting mechanistic characterization; the
 genuinely open edge is *why* the working set is a constellation of isolated
@@ -596,10 +597,15 @@ on the carrier shell.** This confirms the pre-registered "interesting" outcome
 and rescues the intuition that the concept2 retraction pointed to — on solid
 statistical ground.
 
-Remaining controls before any external claim: sentence **length** (not yet
-controlled — a length direction could contribute), interpretability/decodability
-of the per-content direction, larger scale, and a literature check (the area is
-crowded). The effect is faint: most of each carrier is still free/isotropic.
+**Length control (exp_subway_concept4.py):** repeat with every target truncated
+to the same length K=8. Gap persists: within +0.0676, across +0.0181, gap
+**+0.0495, p<0.0005 (~6.8σ)**. Length is ruled out.
+
+So the signal is robust to all three obvious confounds — seed (concept2),
+vocabulary overlap (concept3), length (concept4). Remaining before any external
+claim: interpretability/decodability of the per-content direction, larger scale,
+and a literature check (the area is crowded). The effect is faint: most of each
+carrier is still free/isotropic.
 
 ## Caveats / next
 

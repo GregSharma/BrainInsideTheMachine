@@ -1,0 +1,7 @@
+LENGTH-CONTROLLED within>across test
+============================================================
+  carriers 22, all targets length 8
+  within = +0.0676  across = +0.0181  gap = +0.0495
+  permutation null gap -0.0001 +/- 0.0073;  p = 0.0000
+  gap still positive & significant => content, not length.
+Done.
