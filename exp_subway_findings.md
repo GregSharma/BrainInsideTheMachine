@@ -16,12 +16,22 @@ result. The investigation then characterized *what the carrier is*:
   (isotropic high-norm shell, pairwise cos ≈ 1/√d).
 
 **Hypotheses tested and refuted** (the honest part): closed-form input-layer
-encoder (no); VSA superposition of token vectors (no, orthogonal); a
-sentence-specific "concept" axis in the shared component (no — it's generic
-recite-mode geometry, cos 0.43 across different sentences); norm = softmax/vMF
-concentration (no — RMSNorm cancels it; attention-to-slot is flat). The norm
-resonance is only weakly explained by "freeze vs sculpt" and its sharpness
-remains open. Net: a clean, self-correcting mechanistic characterization; the
+encoder (no); VSA superposition of token vectors (no, orthogonal); norm =
+softmax/vMF concentration (no — RMSNorm cancels it; attention-to-slot is flat).
+The norm resonance is only weakly explained by "freeze vs sculpt" and its
+sharpness remains open.
+
+**One hypothesis CONFIRMED (after correcting my own bug):** content leaves a
+faint but statistically real geometric signature. Same-sentence carriers align
+more than cross-sentence ones (within 0.058 vs across 0.016; gap +0.042,
+**permutation p<0.0005, ~7σ**), and it is NOT a token-overlap artifact (corr
++0.12, overlaps ~0). An earlier run wrongly called this "mundane" due to a
+shared-init-seed bug; fixing the harness reversed the verdict. So: carrier =
+faint content-specific direction (reproducible) + large free isotropic component.
+Caveats: faint effect, 0.5B / 6 sentences, sentence-length not yet controlled,
+direction not shown interpretable.
+
+Net: a clean, self-correcting mechanistic characterization; the
 genuinely open edge is *why* the working set is a constellation of isolated
 off-manifold points and whether any non-optimization route reaches one.
 
@@ -565,6 +575,31 @@ NOT a claim yet: n=3 sentences, effect ~0.04 (~1.6×/√d), no significance test
 no token-overlap control. Needs a powered permutation test (exp_subway_concept3)
 before anything is asserted. Lesson logged: a confident negative was overturned
 by fixing my own confound — verify the harness before trusting the verdict.
+
+## Powered + controlled: the signal is REAL (exp_subway_concept3.py)
+
+6 sentences × 4 carriers (all reciting, loss<0.05), permutation test + overlap
+control:
+
+| stat | value |
+|---|---|
+| within | +0.0583 |
+| across | +0.0163 |
+| **gap** | **+0.0420** |
+| permutation null gap | −0.0003 ± 0.0060 |
+| **p-value (null ≥ observed)** | **0.0000 (0/2000, ~7σ)** |
+| token-overlap × cross-cosine corr | +0.120 (overlaps 0–0.07 Jaccard) |
+
+The within>across gap is highly significant and not explained by shared
+vocabulary. **Content leaves a faint but reproducible sentence-specific direction
+on the carrier shell.** This confirms the pre-registered "interesting" outcome
+and rescues the intuition that the concept2 retraction pointed to — on solid
+statistical ground.
+
+Remaining controls before any external claim: sentence **length** (not yet
+controlled — a length direction could contribute), interpretability/decodability
+of the per-content direction, larger scale, and a literature check (the area is
+crowded). The effect is faint: most of each carrier is still free/isotropic.
 
 ## Caveats / next
 

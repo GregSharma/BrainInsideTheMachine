@@ -1,0 +1,9 @@
+POWERED + CONTROLLED within>across test
+============================================================
+  carriers kept: 24  across 6 sentences
+  within = +0.0583   across = +0.0163   gap = +0.0420
+  permutation null gap: mean -0.0003  std 0.0060
+  p-value (null gap >= observed): 0.0000
+  token-overlap vs cross-cosine correlation: +0.120  (high => overlap confound)
+  pair overlaps: [0.0, 0.07, 0.07, 0.07, 0.06, 0.0, 0.0, 0.0, 0.0, 0.07, 0.07, 0.06, 0.07, 0.06, 0.06]
+Done.
