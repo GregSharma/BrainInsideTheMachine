@@ -1,0 +1,22 @@
+carrier norm 10.74; mean token norm 0.421
+
+============================================================
+(1) NORM-SENSITIVITY: rescale carrier direction to target norm
+============================================================
+  norm   0.42 (0.04x) (=token norm)  -> 0/9
+  norm   2.69 (0.25x)                -> 0/9
+  norm   5.37 (0.50x)                -> 2/9
+  norm   8.06 (0.75x)                -> 2/9
+  norm  10.74 (1.00x)                -> 9/9
+  norm  16.11 (1.50x)                -> 2/9
+  norm  21.48 (2.00x)                -> 0/9
+
+============================================================
+(2) SUBSPACE: carrier energy in token-embedding eigenbasis
+============================================================
+  cumulative energy in top 10% / 25% / 50% variance directions:
+    carrier      :  15.8% /  31.6% /  54.8%
+    token ('do') :  14.1% /  27.0% /  52.2%
+  (if carrier's bars are LOWER, it lives more in low-variance / unused directions)
+
+Done.

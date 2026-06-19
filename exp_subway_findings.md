@@ -298,6 +298,38 @@ Combined picture across all probes — the carrier is off the **token lattice**
 (98.6% orthogonal, 25× norm). It is an off-manifold, high-norm, attention-
 addressed code that only gradient descent (or a trained encoder) can reach.
 
+## Why does it work: norm is a sharp resonance; it uses the tokens' own subspace
+(exp_subway_norm_subspace.py)
+
+**(1) Norm-sensitivity.** Rescale the carrier's exact direction to other norms:
+
+| norm | recall | | norm | recall |
+|---|---|---|---|---|
+| 0.42 (=token norm) | 0/9 | | 10.74 (**1.0×, trained**) | **9/9** |
+| 2.69 (0.25×) | 0/9 | | 16.11 (1.5×) | 2/9 |
+| 5.37 (0.50×) | 2/9 | | 21.48 (2.0×) | 0/9 |
+| 8.06 (0.75×) | 2/9 | | | |
+
+It works *only* at its trained magnitude — a narrow basin, collapsing on both
+sides. Magnitude is a precisely-tuned operating point, not "bigger is better."
+
+**(2) Subspace (hypothesis refuted).** Hypothesis was: the carrier hides in the
+low-variance directions tokens leave unused. False. Its energy across the
+token-embedding eigenbasis matches a normal token's:
+
+| energy in top 10% / 25% / 50% variance dirs | carrier | token "do" |
+|---|---|---|
+| | 15.8 / 31.6 / 54.8% | 14.1 / 27.0 / 52.2% |
+
+The carrier lives in the *same principal subspace* tokens use (if anything
+slightly more concentrated up top), just at 25× magnitude and orthogonal to its
+own words — not in a dead tail.
+
+Refined mechanism: a **high-norm vector at a sharply-tuned magnitude, inside the
+tokens' own principal subspace, orthogonal to the constituent tokens.** Reached
+only by optimization. The "free/closed-form/superposition" routes are all closed;
+what remains open is *why* a single narrow-basin magnitude unlocks the capacity.
+
 ## Caveats / next
 
 - 0.5B, one sentence — a demonstration, not a sweep. Natural follow-ups:
