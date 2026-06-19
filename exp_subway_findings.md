@@ -183,6 +183,38 @@ per-instance GD), and a mechanistic *theory of why* the capacity is what it is
 (VSA / RoPE-as-binding). Our input-layer closed-form attempt FAILED, so that
 remains open, not claimed.
 
+## Is the sentence in any single MID-LAYER vector? No. (exp_subway_midlayer.py)
+
+The deeper conjecture / "free encoder" hope: maybe the sentence is recoverable
+from one mid-layer residual the model *already* produces (cost = one forward
+pass, no training). Test: capture the last-sentence-token residual at every
+layer (causal attention => it has seen the whole sentence), inject it at a
+single slot, ask the model to recite. Result, **every layer L=0..22: 0/9.**
+
+| L | real-vector recite | what the model says |
+|---|---|---|
+| 0–6 | 0/9 | just "subway" (the last token only) |
+| 8–10 | 0/9 | "...I gave you, word for word." |
+| 12–20 | 0/9 | **"I'm sorry, but I cannot repeat a sentence"** |
+| 22 | 0/9 | "I gave you nothing else." |
+
+No-injection control (neutral slot): 0/9. Norm-matched random: 0/9.
+
+**The model knows it was given nothing.** The single mid-layer residual the model
+naturally produces at the last position does NOT carry the recitable sentence.
+This is the load-bearing negative:
+
+> In normal operation the sentence lives **distributed across all 9 positions'
+> KV cache**, not compressed into any one vector. The SGD soft token works
+> *because it forces all of it into a single position* — somewhere the model's
+> own dynamics never go. The compression is **off-manifold**: that is exactly
+> why you cannot harvest it from a natural activation, and why optimization (or
+> a trained encoder, à la GIST/ICAE) is mandatory rather than optional.
+
+Consequence for the "cheap activations / free encoder" idea: you cannot grab a
+mid-layer vector and call it the compressed carrier. The carrier is a point the
+forward pass never produces; reaching it requires pushing off the manifold.
+
 ## Caveats / next
 
 - 0.5B, one sentence — a demonstration, not a sweep. Natural follow-ups:

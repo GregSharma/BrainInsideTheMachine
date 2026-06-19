@@ -1,0 +1,23 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+loaded layers=24 sentence=9 tok
+
+========================================================================
+MID-LAYER single-vector injection (no training): recite from s_L alone
+========================================================================
+/usr/local/lib/python3.11/dist-packages/transformers/generation/utils.py:1119: UserWarning: Passing `repetition_penalty` with `inputs_embeds` and without `input_ids` to `generate` will apply the penalty only to newly generated tokens, not to the prompt.
+  warnings.warn(
+  L= 0: real 0/9  rand 0/9   real->'subway'
+  L= 2: real 0/9  rand 0/9   real->'subway'
+  L= 4: real 0/9  rand 0/9   real->'Subway'
+  L= 6: real 0/9  rand 0/9   real->'Subway'
+  L= 8: real 0/9  rand 0/9   real->'I gave you, word for word.'
+  L=10: real 0/9  rand 0/9   real->'I gave you, word for word.'
+  L=12: real 0/9  rand 0/9   real->"I'm sorry, but I cannot repeat a sentence "
+  L=14: real 0/9  rand 0/9   real->"I'm sorry, but I cannot repeat a sentence "
+  L=16: real 0/9  rand 0/9   real->"I'm sorry, but I cannot repeat a sentence "
+  L=18: real 0/9  rand 0/9   real->"I'm sorry, but I cannot repeat a sentence "
+  L=20: real 0/9  rand 0/9   real->"I'm sorry, but I cannot repeat a sentence "
+  L=22: real 0/9  rand 0/9   real->'I gave you nothing else.'
+
+  no-injection (neutral slot): 0/9
+Done.
