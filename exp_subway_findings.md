@@ -215,6 +215,58 @@ Consequence for the "cheap activations / free encoder" idea: you cannot grab a
 mid-layer vector and call it the compressed carrier. The carrier is a point the
 forward pass never produces; reaching it requires pushing off the manifold.
 
+## What is the trained vector, mechanistically? Write-only attention memory.
+(exp_subway_lens.py)
+
+Logit-lens the slot position layer by layer for the working SGD vector vs the
+failing mean-pool vector. The working vector is **not decodable into the
+sentence at any layer** — its top tokens are junk at every depth:
+
+```
+L0  dni / dess / dif        L8  ibri/oola      L16 '].'/ / ��이
+L4  CGPointMake / rames     L12 '].'/          L24 were / broke / soared
+```
+
+It never surfaces "do"/"not"/"lean". So the carrier is **write-only memory for
+attention**: recitation is produced at the *suffix* positions, which read the
+slot through its keys/values; the slot's own residual->unembedding path is
+irrelevant and stays junk. The vector is optimized to be *attended to*, not to
+be *decoded*.
+
+This is the same fact seen three ways:
+- off the **token lattice** (nearest-token cosine 0.16; snap -> 0/9),
+- off the **activation manifold** (harvesting a natural mid-layer vector -> 0/9),
+- off the **readout path** (logit-lens junk at every layer).
+
+It is an attention-addressed memory cell — not a token, not a readable state.
+(Caveat: residual streams predict the *next* token, so a slot need not lens to
+its own content even normally; but "not decodable to the sentence at any depth"
+is the strong, pinning observation.)
+
+## Control: is B's negative just "injection doesn't work"? No. (exp_subway_positions.py)
+
+Transplant the model's own layer-L residuals for the last m of 9 sentence
+positions into m of 9 slots; recite; sweep m. Recall (/9):
+
+| L | m=1 | m=3 | m=5 | m=7 | m=9 |
+|---|---|---|---|---|---|
+| 4 | 0 | 1 | 0 | 0 | **6** |
+| 8 | 0 | 1 | 1 | 1 | **6** |
+| 12 | 0 | 1 | 1 | 0 | 0 |
+| 16,20 | 0 | 0 | 0 | 0 | 0 |
+
+Two clean reads: (1) **injection works** — all-9 transplant at shallow layers
+recites 6/9 vs 0/9 for one position, so B's single-vector negative is not an
+artifact of broken machinery; (2) **you need ~all positions** — any subset
+(m≤7) recovers essentially nothing. Both corroborate: the sentence is
+distributed across positions, not held in any few.
+
+Honest confound (not hidden): we overwrite only layer L while the slots' layers
+< L carry a neutral seed, corrupting lower-layer attention — that ceilings m=9
+at ~6/9 and makes deep-layer transplant fail outright. So this is directional
+support, not a clean monotone curve. A faithful version would inject the full
+per-layer residual stack for each slot.
+
 ## Caveats / next
 
 - 0.5B, one sentence — a demonstration, not a sweep. Natural follow-ups:

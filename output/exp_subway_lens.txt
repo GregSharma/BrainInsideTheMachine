@@ -1,0 +1,31 @@
+LOGIT-LENS of the slot position, layer by layer  (top-1 / top-3)
+========================================================================
+  L  OPT (works)                  MEANPOOL (fails)            
+  0  ['dni', 'dess', 'dif']       ['on', 'not', 'do']         
+  1  ['客运', 'emente', '折']        ['阵', '-field', 'оказ']     
+  2  ['emente', '_Do', '客运']      [".'<", ".'&", "'/');"]     
+  3  ['翃', '{return', 'emente']   ['."&', '>",', ".'<"]       
+  4  ['CGPointMake', 'rames', 'emente'] ["('.');", '."&', 'forces'] 
+  5  ['��이', 'rames', '翃']        ["('.');", 'inition', 'eworld']
+  6  ['itical', 'oom', '��이']     ['".$_', '\')."', "('.');"] 
+  7  ['oola', '粲', 'oom']         ['räg', ".'.$", "('.');"]   
+  8  ['ibri', 'oola', 'クト']       ['\')."', '."&', "('.');"]  
+  9  ['ropri', 'criptor', 'baugh'] ['".$_', '},{', 'بيعي']     
+ 10  ['stringBuffer', 'oola', '(ConfigurationManager'] ['".$_', ".'.$", 'بيعي']    
+ 11  ["'].'/", 'elfast', 'oola']  ['بيعي', 'tti', "'].'/"]    
+ 12  ["'].'/", '(ConfigurationManager', '-prepend'] ['ewe', 'بيعي', '><?']      
+ 13  ["'].'/", '(ConfigurationManager', '/ay'] ["('.');", 'InitializeComponent', '},{']
+ 14  ["'].$", "'].'/", '九州']      ['✌', '✕', 'بيعي']          
+ 15  ["'].$", "'].'/", '(ConfigurationManager'] ['✌', 'нская', '❤']         
+ 16  ["'].'/", '��이', "'].$"]     ['✌', '},{', ':green']      
+ 17  ['swallow', "'].'/", 'ㅤ']    [':green', 'rush', '?>>']   
+ 18  ['swallow', 'ursday', '(ConfigurationManager'] ['?>>', '%@",', "',//"]     
+ 19  ['swallow', 'ogie', 'dbContext'] ['orado', '?>>', 'cí']      
+ 20  ['await', 'swallow', '!']    ['cí', 'redients', '/ay']   
+ 21  ['ились', 'broke', 'swallow'] ['-ts', 'cí', '/']          
+ 22  ['broke', 'were', 'ride']    ['cí', "'t", 'ewe']         
+ 23  ['broke', 'finally', 'were'] ["'t", '', 'er']            
+ 24  ['were', 'broke', 'soared']  ['the', 'you', "'t"]        
+
+Note: the sentence starts 'do not lean ...' — watch which column ever shows it.
+Done.

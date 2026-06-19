@@ -1,0 +1,11 @@
+RECALL vs #positions injected (last m of 9 natural residuals at layer L)
+========================================================================
+  L m=1 m=3 m=5 m=7 m=9
+  4   0   1   0   0   6
+  8   0   1   1   1   6
+ 12   0   1   1   0   0
+     (m=9 sample: "I'm sorry, but I cannot fulfill that request.")
+ 16   0   0   0   0   0
+ 20   0   0   0   0   0
+
+Done.
