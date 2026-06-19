@@ -1,0 +1,15 @@
+optimizing carriers (1/sqrt(d)=0.0334)...
+  done 'do not lean on car doors on th' (7 carriers, last loss 0.002)
+  done 'the early train always arrives' (7 carriers, last loss 0.001)
+
+============================================================
+DECISIVE TEST: within-sentence vs across-sentence cosine
+============================================================
+  within-A (subway)   mean cos = +0.0594
+  within-B (train)    mean cos = +0.0628
+  across  A vs B      mean cos = +0.0849
+  cos(meanDirA, meanDirB)      = +0.4351
+  within - across gap          = -0.0238
+  within >> across  => sentence-specific structure (interesting)
+  within  ~ across  => generic recite/prefix geometry (mundane)
+Done.

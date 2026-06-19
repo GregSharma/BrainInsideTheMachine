@@ -419,6 +419,38 @@ within-sentence vs across-sentence alignment (exp_subway_concept.py): only if
 same-sentence carriers align more than cross-sentence ones is the residual
 sentence-specific structure rather than mundane prompt geometry.
 
+## Decisive test: the shared axis is MUNDANE (content-independent)
+(exp_subway_concept.py)
+
+Pre-registered: within-sentence ≫ across-sentence carrier alignment => the
+shared axis is sentence-specific (interesting). Result for two sentences
+(subway vs train), 7 carriers each:
+
+| comparison | mean cos |
+|---|---|
+| within-A (subway) | +0.059 |
+| within-B (train) | +0.063 |
+| across A vs B | +0.085 |
+| **cos(meanDir_A, meanDir_B)** | **+0.435** |
+| within − across gap | −0.024 (wrong sign) |
+
+Across ≈ within, and the two sentences' mean carrier directions align at 0.435
+(vs ~1/√d≈0.03 if it were content). **The shared component is a content-
+independent "recite/injection mode," not a concept direction.** The novelty
+hypothesis for this residual is refuted.
+
+Design flaw owned: carrier s of A and of B shared an init seed, which can inflate
+the across-sentence cosine — so the negative within−across gap is muddied. But
+cos(meanDir_A, meanDir_B)=0.435 averages over 7 carriers each and is robust to it;
+pure isotropy would give ~0. Conclusion stands.
+
+Net decomposition (clean, not novel):
+    carrier = generic recite-mode axis (shared, cos~0.43)  ⊕  isotropic content code
+The *content* lives in the near-orthogonal isotropic part — confirming the
+sum-of-units toy as the model of the content geometry, and pinning the only
+structured residual as task/prefix harness. The pre-registration discipline
+prevented reporting 0.435 as a "sentence concept direction."
+
 ## Caveats / next
 
 - 0.5B, one sentence — a demonstration, not a sweep. Natural follow-ups:
