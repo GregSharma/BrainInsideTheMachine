@@ -1,0 +1,614 @@
+{
+  "model": "Qwen/Qwen2.5-3B",
+  "K": 8,
+  "temperature": 0.8,
+  "pos_prompt": "A quote you could hear from a grieving person: \"",
+  "neg_prompt": "A quote you could hear in everyday conversation: \"",
+  "pos_exemplars": [
+    "I'm a broken record, my heart's torn to shreds.",
+    "Why do bad things have to happen to good people? I would do anything for them and yet they still get sick and die.",
+    "My husband, who was always so healthy, just died of a stroke.",
+    "I'm too young for this!",
+    "My child was perfect. If only he hadn't died.",
+    "I feel like there's a hole inside of me, like a cavity.",
+    "I need to do something good to get my mind off it.",
+    "I can't move on. My life is a mess, and I feel like I can't even breathe."
+  ],
+  "neg_exemplars": [
+    "I can't do it all myself. I need help.",
+    "A man's home is his castle.",
+    "I don't like it when you do that",
+    "I'm going to the gym to get in shape.",
+    "I'm feeling blue today, what do you say to me? Say something cheerful!",
+    "I'm not a math person",
+    "I just want to make money, so I'm going to work with my hands, making products.",
+    "Do you know what time it is?"
+  ],
+  "summary": {
+    "synth_dir": {
+      "by_layer": [
+        {
+          "overall": 0.525,
+          "uncued": 0.525,
+          "trap": 0.5
+        },
+        {
+          "overall": 0.685,
+          "uncued": 0.705,
+          "trap": 0.62
+        },
+        {
+          "overall": 0.7025,
+          "uncued": 0.695,
+          "trap": 0.65
+        },
+        {
+          "overall": 0.82,
+          "uncued": 0.74,
+          "trap": 0.83
+        },
+        {
+          "overall": 0.835,
+          "uncued": 0.78,
+          "trap": 0.83
+        },
+        {
+          "overall": 0.785,
+          "uncued": 0.695,
+          "trap": 0.77
+        },
+        {
+          "overall": 0.795,
+          "uncued": 0.695,
+          "trap": 0.8
+        },
+        {
+          "overall": 0.815,
+          "uncued": 0.73,
+          "trap": 0.8
+        },
+        {
+          "overall": 0.8175,
+          "uncued": 0.75,
+          "trap": 0.79
+        },
+        {
+          "overall": 0.805,
+          "uncued": 0.745,
+          "trap": 0.75
+        },
+        {
+          "overall": 0.8125,
+          "uncued": 0.745,
+          "trap": 0.77
+        },
+        {
+          "overall": 0.7625,
+          "uncued": 0.69,
+          "trap": 0.71
+        },
+        {
+          "overall": 0.725,
+          "uncued": 0.655,
+          "trap": 0.62
+        },
+        {
+          "overall": 0.7075,
+          "uncued": 0.62,
+          "trap": 0.63
+        },
+        {
+          "overall": 0.685,
+          "uncued": 0.595,
+          "trap": 0.6
+        },
+        {
+          "overall": 0.7,
+          "uncued": 0.615,
+          "trap": 0.6
+        },
+        {
+          "overall": 0.695,
+          "uncued": 0.625,
+          "trap": 0.56
+        },
+        {
+          "overall": 0.725,
+          "uncued": 0.66,
+          "trap": 0.58
+        },
+        {
+          "overall": 0.745,
+          "uncued": 0.69,
+          "trap": 0.6
+        },
+        {
+          "overall": 0.755,
+          "uncued": 0.685,
+          "trap": 0.65
+        },
+        {
+          "overall": 0.7375,
+          "uncued": 0.665,
+          "trap": 0.62
+        },
+        {
+          "overall": 0.79,
+          "uncued": 0.725,
+          "trap": 0.71
+        },
+        {
+          "overall": 0.7375,
+          "uncued": 0.69,
+          "trap": 0.61
+        },
+        {
+          "overall": 0.7425,
+          "uncued": 0.665,
+          "trap": 0.68
+        },
+        {
+          "overall": 0.7275,
+          "uncued": 0.66,
+          "trap": 0.68
+        },
+        {
+          "overall": 0.7225,
+          "uncued": 0.655,
+          "trap": 0.67
+        },
+        {
+          "overall": 0.73,
+          "uncued": 0.665,
+          "trap": 0.67
+        },
+        {
+          "overall": 0.7325,
+          "uncued": 0.665,
+          "trap": 0.7
+        },
+        {
+          "overall": 0.785,
+          "uncued": 0.73,
+          "trap": 0.73
+        },
+        {
+          "overall": 0.755,
+          "uncued": 0.7,
+          "trap": 0.71
+        },
+        {
+          "overall": 0.76,
+          "uncued": 0.7,
+          "trap": 0.71
+        },
+        {
+          "overall": 0.7575,
+          "uncued": 0.705,
+          "trap": 0.71
+        },
+        {
+          "overall": 0.755,
+          "uncued": 0.685,
+          "trap": 0.73
+        },
+        {
+          "overall": 0.7575,
+          "uncued": 0.695,
+          "trap": 0.71
+        },
+        {
+          "overall": 0.7025,
+          "uncued": 0.62,
+          "trap": 0.65
+        },
+        {
+          "overall": 0.72,
+          "uncued": 0.62,
+          "trap": 0.7
+        },
+        {
+          "overall": 0.595,
+          "uncued": 0.495,
+          "trap": 0.58
+        }
+      ],
+      "best_layer": 4,
+      "best": {
+        "overall": 0.835,
+        "uncued": 0.78,
+        "trap": 0.83
+      }
+    },
+    "hyde_cos": {
+      "by_layer": [
+        {
+          "overall": 0.525,
+          "uncued": 0.525,
+          "trap": 0.5
+        },
+        {
+          "overall": 0.85,
+          "uncued": 0.82,
+          "trap": 0.79
+        },
+        {
+          "overall": 0.87,
+          "uncued": 0.83,
+          "trap": 0.85
+        },
+        {
+          "overall": 0.8975,
+          "uncued": 0.855,
+          "trap": 0.9
+        },
+        {
+          "overall": 0.865,
+          "uncued": 0.825,
+          "trap": 0.85
+        },
+        {
+          "overall": 0.835,
+          "uncued": 0.79,
+          "trap": 0.8
+        },
+        {
+          "overall": 0.82,
+          "uncued": 0.755,
+          "trap": 0.83
+        },
+        {
+          "overall": 0.855,
+          "uncued": 0.785,
+          "trap": 0.89
+        },
+        {
+          "overall": 0.8525,
+          "uncued": 0.79,
+          "trap": 0.88
+        },
+        {
+          "overall": 0.8225,
+          "uncued": 0.725,
+          "trap": 0.85
+        },
+        {
+          "overall": 0.8325,
+          "uncued": 0.725,
+          "trap": 0.89
+        },
+        {
+          "overall": 0.8,
+          "uncued": 0.695,
+          "trap": 0.84
+        },
+        {
+          "overall": 0.8025,
+          "uncued": 0.685,
+          "trap": 0.87
+        },
+        {
+          "overall": 0.765,
+          "uncued": 0.665,
+          "trap": 0.76
+        },
+        {
+          "overall": 0.7425,
+          "uncued": 0.6,
+          "trap": 0.8
+        },
+        {
+          "overall": 0.7575,
+          "uncued": 0.61,
+          "trap": 0.84
+        },
+        {
+          "overall": 0.7325,
+          "uncued": 0.59,
+          "trap": 0.76
+        },
+        {
+          "overall": 0.75,
+          "uncued": 0.615,
+          "trap": 0.8
+        },
+        {
+          "overall": 0.7575,
+          "uncued": 0.65,
+          "trap": 0.73
+        },
+        {
+          "overall": 0.78,
+          "uncued": 0.67,
+          "trap": 0.78
+        },
+        {
+          "overall": 0.81,
+          "uncued": 0.72,
+          "trap": 0.81
+        },
+        {
+          "overall": 0.8125,
+          "uncued": 0.725,
+          "trap": 0.81
+        },
+        {
+          "overall": 0.7975,
+          "uncued": 0.705,
+          "trap": 0.79
+        },
+        {
+          "overall": 0.825,
+          "uncued": 0.745,
+          "trap": 0.82
+        },
+        {
+          "overall": 0.8325,
+          "uncued": 0.76,
+          "trap": 0.83
+        },
+        {
+          "overall": 0.8475,
+          "uncued": 0.785,
+          "trap": 0.84
+        },
+        {
+          "overall": 0.8275,
+          "uncued": 0.765,
+          "trap": 0.8
+        },
+        {
+          "overall": 0.8175,
+          "uncued": 0.78,
+          "trap": 0.75
+        },
+        {
+          "overall": 0.84,
+          "uncued": 0.815,
+          "trap": 0.75
+        },
+        {
+          "overall": 0.83,
+          "uncued": 0.8,
+          "trap": 0.75
+        },
+        {
+          "overall": 0.835,
+          "uncued": 0.8,
+          "trap": 0.77
+        },
+        {
+          "overall": 0.7925,
+          "uncued": 0.765,
+          "trap": 0.75
+        },
+        {
+          "overall": 0.795,
+          "uncued": 0.76,
+          "trap": 0.74
+        },
+        {
+          "overall": 0.785,
+          "uncued": 0.76,
+          "trap": 0.72
+        },
+        {
+          "overall": 0.795,
+          "uncued": 0.77,
+          "trap": 0.74
+        },
+        {
+          "overall": 0.7875,
+          "uncued": 0.75,
+          "trap": 0.75
+        },
+        {
+          "overall": 0.715,
+          "uncued": 0.69,
+          "trap": 0.67
+        }
+      ],
+      "best_layer": 3,
+      "best": {
+        "overall": 0.8975,
+        "uncued": 0.855,
+        "trap": 0.9
+      }
+    },
+    "embed_cos": {
+      "by_layer": [
+        {
+          "overall": 0.525,
+          "uncued": 0.525,
+          "trap": 0.5
+        },
+        {
+          "overall": 0.4975,
+          "uncued": 0.495,
+          "trap": 0.49
+        },
+        {
+          "overall": 0.5925,
+          "uncued": 0.59,
+          "trap": 0.54
+        },
+        {
+          "overall": 0.65,
+          "uncued": 0.665,
+          "trap": 0.62
+        },
+        {
+          "overall": 0.5725,
+          "uncued": 0.62,
+          "trap": 0.46
+        },
+        {
+          "overall": 0.695,
+          "uncued": 0.695,
+          "trap": 0.5
+        },
+        {
+          "overall": 0.6325,
+          "uncued": 0.555,
+          "trap": 0.52
+        },
+        {
+          "overall": 0.6525,
+          "uncued": 0.575,
+          "trap": 0.57
+        },
+        {
+          "overall": 0.6525,
+          "uncued": 0.555,
+          "trap": 0.63
+        },
+        {
+          "overall": 0.68,
+          "uncued": 0.55,
+          "trap": 0.72
+        },
+        {
+          "overall": 0.6825,
+          "uncued": 0.535,
+          "trap": 0.75
+        },
+        {
+          "overall": 0.665,
+          "uncued": 0.505,
+          "trap": 0.72
+        },
+        {
+          "overall": 0.7575,
+          "uncued": 0.64,
+          "trap": 0.85
+        },
+        {
+          "overall": 0.685,
+          "uncued": 0.55,
+          "trap": 0.72
+        },
+        {
+          "overall": 0.6875,
+          "uncued": 0.505,
+          "trap": 0.83
+        },
+        {
+          "overall": 0.67,
+          "uncued": 0.495,
+          "trap": 0.83
+        },
+        {
+          "overall": 0.6675,
+          "uncued": 0.53,
+          "trap": 0.79
+        },
+        {
+          "overall": 0.665,
+          "uncued": 0.525,
+          "trap": 0.81
+        },
+        {
+          "overall": 0.6625,
+          "uncued": 0.53,
+          "trap": 0.79
+        },
+        {
+          "overall": 0.685,
+          "uncued": 0.565,
+          "trap": 0.8
+        },
+        {
+          "overall": 0.7125,
+          "uncued": 0.635,
+          "trap": 0.78
+        },
+        {
+          "overall": 0.6675,
+          "uncued": 0.605,
+          "trap": 0.74
+        },
+        {
+          "overall": 0.645,
+          "uncued": 0.59,
+          "trap": 0.69
+        },
+        {
+          "overall": 0.6925,
+          "uncued": 0.625,
+          "trap": 0.75
+        },
+        {
+          "overall": 0.675,
+          "uncued": 0.65,
+          "trap": 0.68
+        },
+        {
+          "overall": 0.66,
+          "uncued": 0.635,
+          "trap": 0.67
+        },
+        {
+          "overall": 0.585,
+          "uncued": 0.58,
+          "trap": 0.61
+        },
+        {
+          "overall": 0.5875,
+          "uncued": 0.575,
+          "trap": 0.62
+        },
+        {
+          "overall": 0.5875,
+          "uncued": 0.57,
+          "trap": 0.64
+        },
+        {
+          "overall": 0.625,
+          "uncued": 0.59,
+          "trap": 0.65
+        },
+        {
+          "overall": 0.635,
+          "uncued": 0.6,
+          "trap": 0.67
+        },
+        {
+          "overall": 0.67,
+          "uncued": 0.66,
+          "trap": 0.63
+        },
+        {
+          "overall": 0.7275,
+          "uncued": 0.695,
+          "trap": 0.67
+        },
+        {
+          "overall": 0.7575,
+          "uncued": 0.745,
+          "trap": 0.68
+        },
+        {
+          "overall": 0.7775,
+          "uncued": 0.745,
+          "trap": 0.7
+        },
+        {
+          "overall": 0.78,
+          "uncued": 0.745,
+          "trap": 0.7
+        },
+        {
+          "overall": 0.5775,
+          "uncued": 0.565,
+          "trap": 0.48
+        }
+      ],
+      "best_layer": 35,
+      "best": {
+        "overall": 0.78,
+        "uncued": 0.745,
+        "trap": 0.7
+      }
+    }
+  }
+}

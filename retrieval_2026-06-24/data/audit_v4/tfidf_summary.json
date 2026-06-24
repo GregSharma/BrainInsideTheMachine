@@ -1,0 +1,56 @@
+{
+  "apology_en": {
+    "tfidf_auc": 0.9637,
+    "raw": 0.9637,
+    "verdict": "LEAKAGE",
+    "n": 180
+  },
+  "apology_es": {
+    "tfidf_auc": 1.0,
+    "raw": 1.0,
+    "verdict": "LEAKAGE",
+    "n": 180
+  },
+  "apology_zh": {
+    "tfidf_auc": 0.991,
+    "raw": 0.991,
+    "verdict": "LEAKAGE",
+    "n": 180
+  },
+  "flirt_es": {
+    "tfidf_auc": 0.5926,
+    "raw": 0.5926,
+    "verdict": "CLEAN",
+    "n": 180
+  },
+  "grief_en": {
+    "tfidf_auc": 0.7443,
+    "raw": 0.7443,
+    "verdict": "LEAKAGE",
+    "n": 180
+  },
+  "grief_zh": {
+    "tfidf_auc": 1.0,
+    "raw": 1.0,
+    "verdict": "LEAKAGE",
+    "n": 180
+  },
+  "sarcasm_es": {
+    "tfidf_auc": 0.6873,
+    "raw": 0.3127,
+    "verdict": "BORDERLINE",
+    "n": 180
+  },
+  "uncertainty_en": {
+    "tfidf_auc": 1.0,
+    "raw": 1.0,
+    "verdict": "LEAKAGE",
+    "n": 180
+  },
+  "uncertainty_es": {
+    "tfidf_auc": 1.0,
+    "raw": 1.0,
+    "verdict": "LEAKAGE",
+    "n": 180
+  }
+}

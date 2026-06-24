@@ -1,0 +1,327 @@
+{
+  "apology_en": {
+    "tfidf_auc": 1.0,
+    "n": 360,
+    "verdict": "LEAKAGE",
+    "top_pos": [
+      "will",
+      "to",
+      "were",
+      "you were",
+      "were just",
+      "make",
+      "will make",
+      "be"
+    ],
+    "top_neg": [
+      "and if",
+      "if",
+      "if you",
+      "had",
+      "you had",
+      "would",
+      "would have",
+      "was just"
+    ]
+  },
+  "apology_es": {
+    "tfidf_auc": 0.9988,
+    "n": 360,
+    "verdict": "LEAKAGE",
+    "top_pos": [
+      "voy",
+      "ser",
+      "mejor",
+      "ser mejor",
+      "m\u00e1s",
+      "de",
+      "puedo",
+      "esforzarme"
+    ],
+    "top_neg": [
+      "tan",
+      "no",
+      "est\u00e1s",
+      "t\u00fa",
+      "no habr\u00eda",
+      "yo no",
+      "tan grave",
+      "grave"
+    ]
+  },
+  "apology_zh": {
+    "tfidf_auc": 0.9716,
+    "n": 360,
+    "verdict": "LEAKAGE",
+    "top_pos": [
+      "\u4f60\u5bf9\u6211\u5f88\u91cd\u8981",
+      "\u4e8b\u60c5\u6211\u4f1a\u5904\u7406\u597d",
+      "\u6211\u4f1a\u5bf9\u4f60\u66f4\u597d",
+      "\u4f60\u7684\u611f\u53d7\u662f\u5bf9\u7684",
+      "\u4e8b\u60c5\u4f1a\u597d\u8d77\u6765\u7684",
+      "\u6211\u4e0d\u60f3\u8ba9\u4f60\u4f24\u5fc3",
+      "\u6211\u4f1a\u7528\u884c\u52a8\u8bc1\u660e",
+      "\u6211\u7406\u89e3\u4f60\u7684\u611f\u53d7"
+    ],
+    "top_neg": [
+      "\u4f60\u4e5f\u6709\u5f88\u591a\u95ee\u9898",
+      "\u522b\u592a\u5f80\u5fc3\u91cc\u53bb",
+      "\u4f60\u4e5f\u4e0d\u60f3\u8fd9\u6837\u5427",
+      "\u4f60\u4e5f\u6709\u8d23\u4efb",
+      "\u8fd9\u4e8b\u5c31\u8fd9\u6837\u5427",
+      "\u4f60\u4e5f\u5f88\u91cd\u8981",
+      "\u4f60\u4e5f\u80fd\u7406\u89e3\u5427",
+      "\u4f60\u7684\u611f\u53d7\u6211\u4e5f\u61c2"
+    ]
+  },
+  "deception_en": {
+    "tfidf_auc": 0.3191,
+    "n": 360,
+    "verdict": "CLEAN",
+    "top_pos": [
+      "because the",
+      "terrible",
+      "feel terrible",
+      "terrible about",
+      "because know",
+      "up but",
+      "it but",
+      "know"
+    ],
+    "top_neg": [
+      "because was",
+      "awful",
+      "just",
+      "truly",
+      "bad",
+      "not",
+      "good",
+      "feel awful"
+    ]
+  },
+  "deception_es": {
+    "tfidf_auc": 0.7285,
+    "n": 360,
+    "verdict": "LEAKAGE",
+    "top_pos": [
+      "fue",
+      "oculto nada",
+      "oculto",
+      "nada",
+      "no oculto",
+      "as\u00ed fue",
+      "as\u00ed",
+      "saben"
+    ],
+    "top_neg": [
+      "aunque",
+      "pero",
+      "pero no",
+      "aunque no",
+      "tiempo aunque",
+      "no tengo",
+      "tengo certeza",
+      "tengo"
+    ]
+  },
+  "deception_zh": {
+    "tfidf_auc": 0.4451,
+    "n": 360,
+    "verdict": "CLEAN",
+    "top_pos": [
+      "\u90a3\u5929\u7684\u4e8b",
+      "\u6709\u4e9b\u4e8b\u8bf4\u4e0d\u6e05\u695a",
+      "\u8bf4\u5b9e\u8bdd \u8fd9\u4e2a\u95ee\u9898",
+      "\u6211\u4e5f\u6709\u6211\u7684\u82e6\u8877",
+      "\u6211\u60f3\u4e86\u60f3 \u5176\u5b9e",
+      "\u6709\u4e9b\u4e8b\u786e\u5b9e\u4e0d\u597d\u8bf4",
+      "\u4e0d\u8fc7\u6211\u4f1a\u8ba4\u771f\u53cd\u601d\u7684",
+      "\u771f\u7684"
+    ],
+    "top_neg": [
+      "\u90a3\u4ef6\u4e8b",
+      "\u6211\u77e5\u9053",
+      "\u90a3\u4ef6\u4e8b \u88ab\u4f60\u4e00\u8bf4\u6211\u60f3\u8d77\u6765\u4e86",
+      "\u6211\u53d1\u8a93 \u4f60\u544a\u8bc9\u6211\u7684",
+      "\u4f60\u653e\u5fc3",
+      "\u88ab\u4f60\u4e00\u8bf4",
+      "\u4f46\u4f60\u4e5f\u77e5\u9053\u7684",
+      "\u6211\u4ee5\u540e\u4e00\u5b9a\u6ce8\u610f"
+    ]
+  },
+  "flirt_en": {
+    "tfidf_auc": 0.554,
+    "n": 360,
+    "verdict": "CLEAN",
+    "top_pos": [
+      "that",
+      "something",
+      "means",
+      "like",
+      "really means",
+      "like how",
+      "means something",
+      "like that"
+    ],
+    "top_neg": [
+      "good",
+      "just",
+      "on",
+      "it was",
+      "seeing",
+      "seeing you",
+      "you re",
+      "re"
+    ]
+  },
+  "flirt_zh": {
+    "tfidf_auc": 0.3784,
+    "n": 360,
+    "verdict": "CLEAN",
+    "top_pos": [
+      "\u4f60\u522b\u6015",
+      "\u4f60\u522b\u614c",
+      "\u4f60\u522b\u62c5\u5fc3",
+      "\u4f60\u522b\u6025",
+      "\u4f60\u522b\u50ac",
+      "\u8def\u4e0a\u6ce8\u610f\u5b89\u5168",
+      "\u4f60\u4eca\u5929\u8f9b\u82e6\u4e86",
+      "\u4f60\u522b\u7740\u6025"
+    ],
+    "top_neg": [
+      "\u8def\u4e0a\u5c0f\u5fc3",
+      "\u5f85\u5728\u5ba4\u5185\u4e5f\u633a\u597d",
+      "\u65e9\u70b9\u4f11\u606f",
+      "\u653e\u8f7b\u677e",
+      "\u6309\u65f6\u6309\u91cf",
+      "\u6211\u4eec\u652f\u6301\u4f60",
+      "\u597d\u597d\u4f11\u606f",
+      "\u6162\u6162\u8d70 \u6ce8\u610f\u5b89\u5168"
+    ]
+  },
+  "grief_en": {
+    "tfidf_auc": 0.8237,
+    "n": 252,
+    "verdict": "LEAKAGE",
+    "top_pos": [
+      "he",
+      "his",
+      "not",
+      "still",
+      "now",
+      "was",
+      "have",
+      "have not"
+    ],
+    "top_neg": [
+      "should",
+      "my",
+      "because",
+      "from",
+      "good",
+      "this",
+      "morning",
+      "down"
+    ]
+  },
+  "grief_es": {
+    "tfidf_auc": 0.6869,
+    "n": 360,
+    "verdict": "BORDERLINE",
+    "top_pos": [
+      "siempre",
+      "ventana",
+      "la ventana",
+      "tal",
+      "cual",
+      "tal cual",
+      "sin",
+      "junto la"
+    ],
+    "top_neg": [
+      "ahora",
+      "el despacho",
+      "despacho",
+      "hoy",
+      "de",
+      "despu\u00e9s",
+      "luego",
+      "el coj\u00edn"
+    ]
+  },
+  "sarcasm_en": {
+    "tfidf_auc": 0.2219,
+    "n": 360,
+    "verdict": "CLEAN",
+    "top_pos": [
+      "three",
+      "forty",
+      "to",
+      "twice",
+      "except",
+      "nothing",
+      "but",
+      "only"
+    ],
+    "top_neg": [
+      "every",
+      "perfect",
+      "and",
+      "exactly",
+      "single",
+      "with",
+      "time",
+      "what"
+    ]
+  },
+  "sarcasm_zh": {
+    "tfidf_auc": 0.2881,
+    "n": 360,
+    "verdict": "CLEAN",
+    "top_pos": [
+      "\u771f\u4e0d\u9519",
+      "\u633a\u4e0d\u9519\u7684\u554a",
+      "\u4f60\u505a\u7684\u6c99\u62c9\u771f\u6e05\u723d",
+      "\u4f60\u5e2e\u540c\u4e8b\u89e3\u51b3\u95ee\u9898\u771f\u53ca\u65f6",
+      "\u4f60\u63d0\u7684\u95ee\u9898\u771f\u6709\u4ef7\u503c",
+      "\u4f60\u771f\u7684\u5f88\u9760\u8c31",
+      "\u4f60\u6253\u7684\u8fd9\u5c40\u7403\u771f\u7cbe\u5f69",
+      "\u4f60\u5f39\u7684\u66f2\u5b50\u771f\u6709\u611f\u60c5"
+    ],
+    "top_neg": [
+      "\u771f\u597d\u7684\u5462",
+      "\u4f60\u4e3e\u7684\u4f8b\u5b50\u771f\u6709\u8bf4\u670d\u529b",
+      "\u4f60\u505a\u7684\u76d1\u63a7\u771f\u53ca\u65f6",
+      "\u4f60\u505a\u7684\u52a8\u753b\u771f\u6709\u8da3",
+      "\u4f60\u5bf9\u7cfb\u7edf\u638c\u63e1\u771f\u5168\u9762",
+      "\u4f60\u716e\u7684\u7ca5\u771f\u7ef5\u5bc6",
+      "\u4f60\u6062\u590d\u7684\u901f\u5ea6\u771f\u5feb",
+      "\u4f60\u51c6\u5907\u7684\u60ca\u559c\u771f\u7528\u5fc3"
+    ]
+  },
+  "uncertainty_zh": {
+    "tfidf_auc": 0.6239,
+    "n": 360,
+    "verdict": "BORDERLINE",
+    "top_pos": [
+      "\u5728\u6559\u80b2\u9886\u57df\u4e5f\u6709\u7c7b\u4f3c\u7684\u60c5\u51b5",
+      "\u6216\u8bb8\u4e24\u79cd\u90fd\u6709\u4e00\u5b9a\u7684\u5408\u7406\u6027",
+      "\u76f8\u5173\u7684\u7814\u7a76\u8fd8\u5728\u7ee7\u7eed\u8fdb\u884c",
+      "\u4e5f\u8bb8\u4e24\u79cd\u56e0\u7d20\u90fd\u5728\u8d77\u4f5c\u7528",
+      "\u53ef\u80fd\u5404\u6709\u8d21\u732e",
+      "\u8fd1\u5e74\u6765\u8fd9\u4e2a\u9886\u57df\u7684\u8fdb\u5c55\u4e5f\u6bd4\u8f83\u660e\u663e",
+      "\u8fd9\u4e9b\u53d1\u73b0\u5bf9\u540e\u7eed\u7684\u7814\u7a76\u6709\u4e00\u5b9a\u542f\u53d1",
+      "\u53ef\u80fd\u90fd\u6709\u9053\u7406"
+    ],
+    "top_neg": [
+      "\u4e0d\u540c\u9886\u57df\u7684\u5b66\u8005\u5bf9\u6b64\u6709\u4e0d\u540c\u7684\u770b\u6cd5",
+      "\u8fd9\u4e2a\u95ee\u9898\u503c\u5f97\u6301\u7eed\u5173\u6ce8",
+      "\u6216\u8bb8\u5c31\u662f\u8fd9\u6837\u56de\u4e8b",
+      "\u6216\u8bb8\u5c31\u662f\u8fd9\u6837\u6ca1\u9519",
+      "\u4ece\u65b9\u6cd5\u8bba\u7684\u89d2\u5ea6\u6765\u8bf4\u6709\u5f88\u591a\u503c\u5f97\u501f\u9274\u7684\u5730\u65b9",
+      "\u8fd9\u662f\u4e00\u4e2a\u503c\u5f97\u7ee7\u7eed\u63a2\u8ba8\u7684\u95ee\u9898",
+      "\u4ece\u793e\u4f1a\u53d1\u5c55\u7684\u89d2\u5ea6\u6765\u770b\u503c\u5f97\u5173\u6ce8",
+      "\u6216\u8bb8\u5c31\u662f\u8fd9\u4e2a\u610f\u601d"
+    ]
+  }
+}
