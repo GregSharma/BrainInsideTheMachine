@@ -55,3 +55,6 @@ TODAY_SESSION_NOTES.md
 
 # Private/personal files
 .private/
+
+# Rebuildable local provenance views (events.jsonl remains append-only on disk)
+.bitm-ledger/
